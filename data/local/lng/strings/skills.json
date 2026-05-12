@@ -32455,7 +32455,7 @@
     {
         "id": 22215,
         "Key": "Skillsd266",
-        "enUS": "Charge-up Skill\n\n adds poison damage to finishing moves",
+        "enUS": "Charge-up Skill\n\nadds poison damage, poison clouds, and poison novas to finishing moves",
         "zhTW": "集氣技能\n\n使終結技附加生命和法力竊取效果",
         "deDE": "Aufladefertigkeit\n\nVerstärkt Finishing-Moves mit Lebens- und Manadiebstahl.",
         "esES": "Habilidad de cargas:\n\naumenta las sustracciones de vida y maná a los remates",
@@ -32472,7 +32472,7 @@
     {
         "id": 22216,
         "Key": "Skillld266",
-        "enUS": "Charge-up Skill\n\nconsecutive hits add poison damage\nto finishing moves\nmust use a dragon finishing move or\nnormal attack to release charges",
+        "enUS": "Charge-up Skill\n\nconsecutive hits add poison effects\nto finishing moves\ncharge 1 adds poison damage\ncharge 2 releases a poison cloud\ncharge 3 releases a small poison nova",
         "zhTW": "集氣技能\n\n連擊可以使終結技附加生命和法力竊取效果\n必須使用龍系終結技或普通攻擊來釋放聚集的力量",
         "deDE": "Aufladefertigkeit\n\nAufeinanderfolgende Treffer fügen\nFinishing-Moves Lebens- und Manaraub hinzu.\nAufladungen werden mit Drachen-Finishing-Moves\noder normalen Angriffen freigesetzt.",
         "esES": "Habilidad de cargas\n\nLos golpes consecutivos añaden robo de vida y maná\na los remates. Debes utilizar\nun remate de dragón o un ataque normal\npara liberar cargas.",
@@ -34083,6 +34083,31 @@
         "ptBR": "Carga 3 - Dano de Seta de Gelo do Caos: %d-%d",
         "ruRU": "3 заряда – урон от «Ледяной стрелы хаоса»: %d–%d",
         "zhCN": "2次充能 - 混沌冰霜弹伤害: %d-%d"
+    },
+    {
+        "id": 56100,
+        "Key": "Eskillcobra1",
+        "enUS": "Charge 1 - Poison Damage: %d-%d"
+    },
+    {
+        "id": 56101,
+        "Key": "Eskillcobra2",
+        "enUS": "Charge 2 - Poison Cloud Damage: %d-%d"
+    },
+    {
+        "id": 56102,
+        "Key": "Eskillcobra3",
+        "enUS": "Charge 3 - Poison Nova Damage: %d-%d"
+    },
+    {
+        "id": 56103,
+        "Key": "EskillcobraRadius2",
+        "enUS": "Charge 2 - Cloud Radius: %d yards"
+    },
+    {
+        "id": 56104,
+        "Key": "EskillcobraRadius3",
+        "enUS": "Charge 3 - Nova Radius: %d yards"
     },
     {
         "id": 22311,
