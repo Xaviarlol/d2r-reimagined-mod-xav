@@ -10,6 +10,13 @@ The first stage is intentionally harmless:
 
 Use this only for offline single-player testing. Do not use injected DLLs on Battle.net.
 
+## Current Status
+
+- The side mod installs and launches against retail D2R `3.1.92198`.
+- The no-op DLL builds and loads in a normal local process.
+- Retail D2R currently returns null from remote `LoadLibraryW` for this DLL and the prebuilt retail `D2RHud` DLL, while signed Windows DLLs load. That means remote injection is not the working retail path yet.
+- Next likely path: startup/proxy loading or a closer reproduction of the current D2RLaunch runtime behavior.
+
 ## Build
 
 ```powershell

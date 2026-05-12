@@ -35,7 +35,7 @@ $CmdText = @"
 @echo off
 call "$VsDevCmd" -arch=x64 -host_arch=x64 -no_logo
 if errorlevel 1 exit /b %errorlevel%
-cl /nologo /std:c++17 /EHsc /O2 /LD "$HookSource" /Fe:"$HookDll" /Fo:"$BuildRoot\\" /link version.lib
+cl /nologo /std:c++17 /EHsc /O2 /LD "$HookSource" /Fe:"$HookDll" /Fo:"$BuildRoot\\"
 if errorlevel 1 exit /b %errorlevel%
 cl /nologo /std:c++17 /EHsc /O2 "$InjectorSource" /Fe:"$InjectorExe" /Fo:"$BuildRoot\\"
 if errorlevel 1 exit /b %errorlevel%
