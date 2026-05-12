@@ -1,5 +1,6 @@
 param(
-    [string]$D2RPath = "E:\Diablo II Resurrected",
+    [Parameter(Mandatory = $true)]
+    [string]$D2RLANPath,
     [string]$ModName = "XavReimaginedLAN"
 )
 
@@ -17,26 +18,38 @@ if (-not (Test-Path -LiteralPath $SourceModInfo)) {
     throw "modinfo.json not found: $SourceModInfo"
 }
 
-if (-not (Test-Path -LiteralPath $D2RPath)) {
-    throw "D2R install path not found: $D2RPath"
+if (-not (Test-Path -LiteralPath $D2RLANPath)) {
+    throw "D2RLAN path not found: $D2RLANPath"
 }
 
-$ModsRoot = Join-Path $D2RPath "mods"
+$ResolvedInput = (Resolve-Path -LiteralPath $D2RLANPath).Path
+$CandidateD2R = Join-Path $ResolvedInput "D2R"
+
+if (Test-Path -LiteralPath (Join-Path $ResolvedInput "D2R.exe")) {
+    $D2RPath = $ResolvedInput
+}
+elseif (Test-Path -LiteralPath (Join-Path $CandidateD2R "D2R.exe")) {
+    $D2RPath = (Resolve-Path -LiteralPath $CandidateD2R).Path
+}
+else {
+    throw "Could not find D2R.exe. Pass either the D2RLAN root folder or its nested D2R folder."
+}
+
+$ModsRoot = Join-Path $D2RPath "Mods"
 $ModRoot = Join-Path $ModsRoot $ModName
 $MpqRoot = Join-Path $ModRoot "$ModName.mpq"
 $DestData = Join-Path $MpqRoot "data"
 
-$ResolvedD2R = (Resolve-Path -LiteralPath $D2RPath).Path
-$ExpectedPrefix = Join-Path $ResolvedD2R "mods\$ModName\$ModName.mpq"
+$ExpectedPrefix = Join-Path $D2RPath "Mods\$ModName\$ModName.mpq"
 $TargetFullPath = [System.IO.Path]::GetFullPath($DestData)
 
 if (-not $TargetFullPath.StartsWith([System.IO.Path]::GetFullPath($ExpectedPrefix), [System.StringComparison]::OrdinalIgnoreCase)) {
-    throw "Refusing to copy outside the expected mod folder: $TargetFullPath"
+    throw "Refusing to copy outside the expected D2RLAN mod folder: $TargetFullPath"
 }
 
 New-Item -ItemType Directory -Force -Path $MpqRoot | Out-Null
 
-Write-Host "Installing $ModName to:"
+Write-Host "Installing $ModName to D2RLAN:"
 Write-Host "  $MpqRoot"
 
 robocopy $SourceData $DestData /MIR /E /IS /IT
@@ -50,5 +63,5 @@ Copy-Item -LiteralPath $SourceModInfo -Destination (Join-Path $MpqRoot "modinfo.
 
 Write-Host ""
 Write-Host "Done."
-Write-Host "Launch arguments:"
+Write-Host "D2RLAN should launch this side mod as:"
 Write-Host "  -mod $ModName -txt"

@@ -1,0 +1,18 @@
+{
+  "MemoryConfigs": [
+    {
+      "Name": "Disable Run Penalty for Defense",
+      "Description": "Experimental XavReimaginedLAN patch copied from ReMoDDeD/D2RLAN. The animation mode used for the running defense check is changed to an invalid mode.",
+      "Category": "Alteration",
+      "Addresses": [
+        "329F70",
+        "BCA5A0"
+      ],
+      "Length": 1,
+      "Type": "Integer",
+      "Values": "255",
+      "OriginalValues": "3",
+      "ModdedValues": "255"
+    }
+  ]
+}
