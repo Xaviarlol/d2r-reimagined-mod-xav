@@ -2,7 +2,8 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$D2RLANPath,
     [string]$ModName = "XavReimaginedLAN",
-    [switch]$AllowMissingD2RExe
+    [switch]$AllowMissingD2RExe,
+    [switch]$KeepD2RHUDInjection
 )
 
 $ErrorActionPreference = "Stop"
@@ -136,6 +137,42 @@ function Set-D2RLANUserSettingJson {
     Write-Host "  HUDDebug = False"
 }
 
+function Disable-D2RHUDInjection {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$LauncherRoot
+    )
+
+    $LoaderPath = Join-Path $LauncherRoot "D2RHUD-Loader.exe"
+    $BackupPath = Join-Path $LauncherRoot "D2RHUD-Loader.original.exe"
+    $TempPath = Join-Path $LauncherRoot "_D2RHUD-Loader.noop.exe"
+
+    if ((Test-Path -LiteralPath $LoaderPath) -and -not (Test-Path -LiteralPath $BackupPath)) {
+        Copy-Item -LiteralPath $LoaderPath -Destination $BackupPath -Force
+        Write-Host "Backed up original D2RHUD loader:"
+        Write-Host "  $BackupPath"
+    }
+
+    if (Test-Path -LiteralPath $TempPath) {
+        Remove-Item -LiteralPath $TempPath -Force
+    }
+
+    $ClassName = "NoopD2RHUDLoader_" + ([Guid]::NewGuid().ToString("N"))
+    $Code = @"
+public static class $ClassName
+{
+    public static int Main(string[] args)
+    {
+        return 0;
+    }
+}
+"@
+
+    Add-Type -TypeDefinition $Code -OutputAssembly $TempPath -OutputType ConsoleApplication
+    Move-Item -LiteralPath $TempPath -Destination $LoaderPath -Force
+    Write-Host "Disabled D2RHUD injection with a no-op loader."
+}
+
 if (-not (Test-Path -LiteralPath $SourceData)) {
     throw "Source data directory not found: $SourceData"
 }
@@ -240,6 +277,10 @@ if (Test-Path -LiteralPath $LauncherConfig) {
 
 if (Test-Path -LiteralPath $LauncherRoot) {
     Use-PackagedD2RHUD -D2RLANRoot $D2RLANRoot -LauncherRoot $LauncherRoot
+
+    if (-not $KeepD2RHUDInjection) {
+        Disable-D2RHUDInjection -LauncherRoot $LauncherRoot
+    }
 }
 
 Write-Host ""
