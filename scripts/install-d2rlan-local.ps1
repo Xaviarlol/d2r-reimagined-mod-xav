@@ -39,14 +39,13 @@ function Set-D2RLANSetting {
         [void]$Settings.AppendChild($Setting)
     }
 
-    $ValueElement = $Setting.SelectSingleNode("value")
-
-    if (-not $ValueElement) {
-        $ValueElement = $Config.CreateElement("value")
-        [void]$Setting.AppendChild($ValueElement)
+    @($Setting.SelectNodes("value")) | ForEach-Object {
+        [void]$Setting.RemoveChild($_)
     }
 
+    $ValueElement = $Config.CreateElement("value")
     $ValueElement.InnerText = $Value
+    [void]$Setting.AppendChild($ValueElement)
     $Config.Save($Path)
 }
 
