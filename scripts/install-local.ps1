@@ -1,5 +1,5 @@
 param(
-    [string]$D2RPath = "C:\Program Files (x86)\Diablo II Resurrected",
+    [string]$D2RPath = "E:\Diablo II Resurrected",
     [string]$ModName = "XavReimagined"
 )
 

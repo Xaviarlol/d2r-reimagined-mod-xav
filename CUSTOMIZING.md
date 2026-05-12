@@ -28,7 +28,7 @@ From this repo:
 powershell -ExecutionPolicy Bypass -File .\scripts\install-local.ps1
 ```
 
-If Diablo II Resurrected is installed somewhere else:
+This installs to `E:\Diablo II Resurrected` by default. If Diablo II Resurrected is installed somewhere else:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\install-local.ps1 -D2RPath "D:\Games\Diablo II Resurrected"
