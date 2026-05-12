@@ -13,6 +13,14 @@ struct TIMECAPS {
 using LPTIMECAPS = TIMECAPS*;
 using LPMMTIME = void*;
 using LPTIMECALLBACK = void*;
+using HWAVEOUT = HANDLE;
+using LPHWAVEOUT = HWAVEOUT*;
+using LPWAVEFORMATEX = void*;
+using LPWAVEHDR = void*;
+using LPWAVEOUTCAPSA = void*;
+using LPWAVEOUTCAPSW = void*;
+using LPUINT = UINT*;
+using LPDWORD = DWORD*;
 
 constexpr MMRESULT kMmsysErrError = 1;
 
@@ -189,6 +197,177 @@ extern "C" __declspec(dllexport) MMRESULT WINAPI timeSetEvent(
     }
 
     return real_time_set_event(delay, resolution, callback, user, event_flags);
+}
+
+extern "C" __declspec(dllexport) UINT WINAPI waveOutGetNumDevs()
+{
+    using Fn = UINT(WINAPI*)();
+    const auto fn = resolve_real_proc<Fn>("waveOutGetNumDevs");
+    return fn == nullptr ? 0 : fn();
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutGetDevCapsA(UINT_PTR device_id, LPWAVEOUTCAPSA caps, UINT size)
+{
+    using Fn = MMRESULT(WINAPI*)(UINT_PTR, LPWAVEOUTCAPSA, UINT);
+    const auto fn = resolve_real_proc<Fn>("waveOutGetDevCapsA");
+    return fn == nullptr ? kMmsysErrError : fn(device_id, caps, size);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutGetDevCapsW(UINT_PTR device_id, LPWAVEOUTCAPSW caps, UINT size)
+{
+    using Fn = MMRESULT(WINAPI*)(UINT_PTR, LPWAVEOUTCAPSW, UINT);
+    const auto fn = resolve_real_proc<Fn>("waveOutGetDevCapsW");
+    return fn == nullptr ? kMmsysErrError : fn(device_id, caps, size);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutGetErrorTextA(MMRESULT error, LPSTR text, UINT size)
+{
+    using Fn = MMRESULT(WINAPI*)(MMRESULT, LPSTR, UINT);
+    const auto fn = resolve_real_proc<Fn>("waveOutGetErrorTextA");
+    return fn == nullptr ? kMmsysErrError : fn(error, text, size);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutGetErrorTextW(MMRESULT error, LPWSTR text, UINT size)
+{
+    using Fn = MMRESULT(WINAPI*)(MMRESULT, LPWSTR, UINT);
+    const auto fn = resolve_real_proc<Fn>("waveOutGetErrorTextW");
+    return fn == nullptr ? kMmsysErrError : fn(error, text, size);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutOpen(
+    LPHWAVEOUT wave_out,
+    UINT_PTR device_id,
+    LPWAVEFORMATEX format,
+    DWORD_PTR callback,
+    DWORD_PTR instance,
+    DWORD flags)
+{
+    using Fn = MMRESULT(WINAPI*)(LPHWAVEOUT, UINT_PTR, LPWAVEFORMATEX, DWORD_PTR, DWORD_PTR, DWORD);
+    const auto fn = resolve_real_proc<Fn>("waveOutOpen");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, device_id, format, callback, instance, flags);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutClose(HWAVEOUT wave_out)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT);
+    const auto fn = resolve_real_proc<Fn>("waveOutClose");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutPrepareHeader(HWAVEOUT wave_out, LPWAVEHDR header, UINT size)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, LPWAVEHDR, UINT);
+    const auto fn = resolve_real_proc<Fn>("waveOutPrepareHeader");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, header, size);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutUnprepareHeader(HWAVEOUT wave_out, LPWAVEHDR header, UINT size)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, LPWAVEHDR, UINT);
+    const auto fn = resolve_real_proc<Fn>("waveOutUnprepareHeader");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, header, size);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutWrite(HWAVEOUT wave_out, LPWAVEHDR header, UINT size)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, LPWAVEHDR, UINT);
+    const auto fn = resolve_real_proc<Fn>("waveOutWrite");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, header, size);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutPause(HWAVEOUT wave_out)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT);
+    const auto fn = resolve_real_proc<Fn>("waveOutPause");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutRestart(HWAVEOUT wave_out)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT);
+    const auto fn = resolve_real_proc<Fn>("waveOutRestart");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutReset(HWAVEOUT wave_out)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT);
+    const auto fn = resolve_real_proc<Fn>("waveOutReset");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutBreakLoop(HWAVEOUT wave_out)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT);
+    const auto fn = resolve_real_proc<Fn>("waveOutBreakLoop");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutGetPosition(HWAVEOUT wave_out, LPMMTIME time, UINT size)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, LPMMTIME, UINT);
+    const auto fn = resolve_real_proc<Fn>("waveOutGetPosition");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, time, size);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutGetPitch(HWAVEOUT wave_out, LPDWORD pitch)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, LPDWORD);
+    const auto fn = resolve_real_proc<Fn>("waveOutGetPitch");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, pitch);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutSetPitch(HWAVEOUT wave_out, DWORD pitch)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, DWORD);
+    const auto fn = resolve_real_proc<Fn>("waveOutSetPitch");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, pitch);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutGetPlaybackRate(HWAVEOUT wave_out, LPDWORD rate)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, LPDWORD);
+    const auto fn = resolve_real_proc<Fn>("waveOutGetPlaybackRate");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, rate);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutSetPlaybackRate(HWAVEOUT wave_out, DWORD rate)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, DWORD);
+    const auto fn = resolve_real_proc<Fn>("waveOutSetPlaybackRate");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, rate);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutGetVolume(HWAVEOUT wave_out, LPDWORD volume)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, LPDWORD);
+    const auto fn = resolve_real_proc<Fn>("waveOutGetVolume");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, volume);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutSetVolume(HWAVEOUT wave_out, DWORD volume)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, DWORD);
+    const auto fn = resolve_real_proc<Fn>("waveOutSetVolume");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, volume);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutGetID(HWAVEOUT wave_out, LPUINT device_id)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, LPUINT);
+    const auto fn = resolve_real_proc<Fn>("waveOutGetID");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, device_id);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI waveOutMessage(
+    HWAVEOUT wave_out,
+    UINT message,
+    DWORD_PTR param1,
+    DWORD_PTR param2)
+{
+    using Fn = MMRESULT(WINAPI*)(HWAVEOUT, UINT, DWORD_PTR, DWORD_PTR);
+    const auto fn = resolve_real_proc<Fn>("waveOutMessage");
+    return fn == nullptr ? kMmsysErrError : fn(wave_out, message, param1, param2);
 }
 
 BOOL APIENTRY DllMain(HMODULE module, DWORD reason, LPVOID)
