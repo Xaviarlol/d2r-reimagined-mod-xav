@@ -3,6 +3,7 @@
 #include <strsafe.h>
 
 using MMRESULT = UINT;
+using DWORD_PTR = ULONG_PTR;
 
 struct TIMECAPS {
     UINT wPeriodMin;
@@ -10,6 +11,8 @@ struct TIMECAPS {
 };
 
 using LPTIMECAPS = TIMECAPS*;
+using LPMMTIME = void*;
+using LPTIMECALLBACK = void*;
 
 constexpr MMRESULT kMmsysErrError = 1;
 
@@ -115,6 +118,77 @@ extern "C" __declspec(dllexport) MMRESULT WINAPI timeGetDevCaps(LPTIMECAPS ptc, 
     }
 
     return real_time_get_dev_caps(ptc, cbtc);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI timeBeginPeriod(UINT period)
+{
+    using TimeBeginPeriod = MMRESULT(WINAPI*)(UINT);
+    const auto real_time_begin_period = resolve_real_proc<TimeBeginPeriod>("timeBeginPeriod");
+    if (real_time_begin_period == nullptr) {
+        return kMmsysErrError;
+    }
+
+    return real_time_begin_period(period);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI timeEndPeriod(UINT period)
+{
+    using TimeEndPeriod = MMRESULT(WINAPI*)(UINT);
+    const auto real_time_end_period = resolve_real_proc<TimeEndPeriod>("timeEndPeriod");
+    if (real_time_end_period == nullptr) {
+        return kMmsysErrError;
+    }
+
+    return real_time_end_period(period);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI timeGetSystemTime(LPMMTIME time, UINT size)
+{
+    using TimeGetSystemTime = MMRESULT(WINAPI*)(LPMMTIME, UINT);
+    const auto real_time_get_system_time = resolve_real_proc<TimeGetSystemTime>("timeGetSystemTime");
+    if (real_time_get_system_time == nullptr) {
+        return kMmsysErrError;
+    }
+
+    return real_time_get_system_time(time, size);
+}
+
+extern "C" __declspec(dllexport) DWORD WINAPI timeGetTime()
+{
+    using TimeGetTime = DWORD(WINAPI*)();
+    const auto real_time_get_time = resolve_real_proc<TimeGetTime>("timeGetTime");
+    if (real_time_get_time == nullptr) {
+        return GetTickCount();
+    }
+
+    return real_time_get_time();
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI timeKillEvent(UINT timer_id)
+{
+    using TimeKillEvent = MMRESULT(WINAPI*)(UINT);
+    const auto real_time_kill_event = resolve_real_proc<TimeKillEvent>("timeKillEvent");
+    if (real_time_kill_event == nullptr) {
+        return kMmsysErrError;
+    }
+
+    return real_time_kill_event(timer_id);
+}
+
+extern "C" __declspec(dllexport) MMRESULT WINAPI timeSetEvent(
+    UINT delay,
+    UINT resolution,
+    LPTIMECALLBACK callback,
+    DWORD_PTR user,
+    UINT event_flags)
+{
+    using TimeSetEvent = MMRESULT(WINAPI*)(UINT, UINT, LPTIMECALLBACK, DWORD_PTR, UINT);
+    const auto real_time_set_event = resolve_real_proc<TimeSetEvent>("timeSetEvent");
+    if (real_time_set_event == nullptr) {
+        return 0;
+    }
+
+    return real_time_set_event(delay, resolution, callback, user, event_flags);
 }
 
 BOOL APIENTRY DllMain(HMODULE module, DWORD reason, LPVOID)
