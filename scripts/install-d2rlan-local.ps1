@@ -173,6 +173,42 @@ public static class $ClassName
     Write-Host "Disabled D2RHUD injection with a no-op loader."
 }
 
+function Remove-ExperimentalMemoryConfigs {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$D2RPath,
+        [Parameter(Mandatory = $true)]
+        [string]$ModName
+    )
+
+    $ConfigPath = Join-Path $D2RPath "HUDConfig_$ModName.json"
+
+    if (-not (Test-Path -LiteralPath $ConfigPath)) {
+        return
+    }
+
+    $Config = Get-Content -Raw -LiteralPath $ConfigPath | ConvertFrom-Json
+
+    if (-not $Config.MemoryConfigs) {
+        return
+    }
+
+    $DisabledNames = @(
+        "Disable Run Penalty for Defense",
+        "Auto-Collect Player Corpse"
+    )
+
+    $OriginalCount = @($Config.MemoryConfigs).Count
+    $Config.MemoryConfigs = @($Config.MemoryConfigs | Where-Object { $_.Name -notin $DisabledNames })
+    $NewCount = @($Config.MemoryConfigs).Count
+
+    if ($NewCount -ne $OriginalCount) {
+        $Config | ConvertTo-Json -Depth 20 | Set-Content -LiteralPath $ConfigPath -Encoding UTF8
+        Write-Host "Removed disabled experimental memory configs from HUD config:"
+        Write-Host "  $($OriginalCount - $NewCount) entries"
+    }
+}
+
 if (-not (Test-Path -LiteralPath $SourceData)) {
     throw "Source data directory not found: $SourceData"
 }
@@ -233,6 +269,7 @@ if ($RoboCopyExitCode -ge 8) {
 
 Copy-Item -LiteralPath $SourceModInfo -Destination (Join-Path $MpqRoot "modinfo.json") -Force
 Set-D2RLANUserSettingJson -Path (Join-Path $MpqRoot "MyUserSettings.json") -ModName $ModName
+Remove-ExperimentalMemoryConfigs -D2RPath $D2RPath -ModName $ModName
 
 $LauncherConfig = Join-Path (Split-Path -Parent $D2RPath) "Launcher\D2RLAN.dll.config"
 $D2RLANRoot = Split-Path -Parent $D2RPath
