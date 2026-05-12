@@ -113,6 +113,29 @@ function Use-PackagedD2RHUD {
     }
 }
 
+function Set-D2RLANUserSettingJson {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Path,
+        [Parameter(Mandatory = $true)]
+        [string]$ModName
+    )
+
+    if (-not (Test-Path -LiteralPath $Path)) {
+        Write-Warning "D2RLAN user settings not found yet, launcher update checks may run once before this file exists: $Path"
+        return
+    }
+
+    $Settings = Get-Content -Raw -LiteralPath $Path | ConvertFrom-Json
+    $Settings | Add-Member -NotePropertyName "LANOffline" -NotePropertyValue $true -Force
+    $Settings | Add-Member -NotePropertyName "HUDDebug" -NotePropertyValue $false -Force
+    $Settings | Add-Member -NotePropertyName "CurrentD2RArgs" -NotePropertyValue "-mod $ModName -txt -enablerespec" -Force
+    $Settings | ConvertTo-Json -Compress -Depth 20 | Set-Content -LiteralPath $Path -Encoding UTF8
+    Write-Host "Updated D2RLAN user settings:"
+    Write-Host "  LANOffline = True"
+    Write-Host "  HUDDebug = False"
+}
+
 if (-not (Test-Path -LiteralPath $SourceData)) {
     throw "Source data directory not found: $SourceData"
 }
@@ -172,6 +195,7 @@ if ($RoboCopyExitCode -ge 8) {
 }
 
 Copy-Item -LiteralPath $SourceModInfo -Destination (Join-Path $MpqRoot "modinfo.json") -Force
+Set-D2RLANUserSettingJson -Path (Join-Path $MpqRoot "MyUserSettings.json") -ModName $ModName
 
 $LauncherConfig = Join-Path (Split-Path -Parent $D2RPath) "Launcher\D2RLAN.dll.config"
 $D2RLANRoot = Split-Path -Parent $D2RPath
