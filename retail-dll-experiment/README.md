@@ -17,6 +17,22 @@ Use this only for offline single-player testing. Do not use injected DLLs on Bat
 - Retail D2R currently returns null from remote `LoadLibraryW` for this DLL and the prebuilt retail `D2RHud` DLL, while signed Windows DLLs load. That means remote injection is not the working retail path yet.
 - Next likely path: startup/proxy loading or a closer reproduction of the current D2RLaunch runtime behavior.
 
+## Startup Proxy Test
+
+Retail `D2R.exe` imports `D2R_loader.dll`, and that loader imports `WINMM.dll` only for `timeGetDevCaps`. The startup proxy test installs an app-local `winmm.dll` that forwards `timeGetDevCaps` to the real Windows DLL and writes a log when it loads.
+
+Install:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-retail-proxy-loader.ps1 -D2RPath "E:\Diablo II Resurrected"
+```
+
+Remove:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\remove-retail-proxy-loader.ps1 -D2RPath "E:\Diablo II Resurrected"
+```
+
 ## Build
 
 ```powershell

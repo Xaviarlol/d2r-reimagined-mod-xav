@@ -27,8 +27,10 @@ New-Item -ItemType Directory -Force -Path $BuildRoot | Out-Null
 
 $HookSource = Join-Path $SourceRoot "xav_hook.cpp"
 $InjectorSource = Join-Path $SourceRoot "xav_injector.cpp"
+$WinmmProxySource = Join-Path $SourceRoot "winmm_proxy.cpp"
 $HookDll = Join-Path $BuildRoot "xav-retail-hook.dll"
 $InjectorExe = Join-Path $BuildRoot "xav-retail-injector.exe"
+$WinmmProxyDll = Join-Path $BuildRoot "winmm.dll"
 $BuildCmd = Join-Path $BuildRoot "build.cmd"
 
 $CmdText = @"
@@ -38,6 +40,8 @@ if errorlevel 1 exit /b %errorlevel%
 cl /nologo /std:c++17 /EHsc /O2 /LD "$HookSource" /Fe:"$HookDll" /Fo:"$BuildRoot\\"
 if errorlevel 1 exit /b %errorlevel%
 cl /nologo /std:c++17 /EHsc /O2 "$InjectorSource" /Fe:"$InjectorExe" /Fo:"$BuildRoot\\"
+if errorlevel 1 exit /b %errorlevel%
+cl /nologo /std:c++17 /EHsc /O2 /LD "$WinmmProxySource" /Fe:"$WinmmProxyDll" /Fo:"$BuildRoot\\"
 if errorlevel 1 exit /b %errorlevel%
 "@
 
@@ -51,3 +55,4 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host "Built:"
 Write-Host "  $HookDll"
 Write-Host "  $InjectorExe"
+Write-Host "  $WinmmProxyDll"
