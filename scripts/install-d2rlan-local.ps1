@@ -67,6 +67,52 @@ function Get-D2RLANSetting {
     return $null
 }
 
+function Use-PackagedD2RHUD {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$D2RLANRoot,
+        [Parameter(Mandatory = $true)]
+        [string]$LauncherRoot
+    )
+
+    $CoreZip = Join-Path (Split-Path -Parent $D2RLANRoot) "D2RLAN_CoreFiles.zip"
+
+    if (-not (Test-Path -LiteralPath $CoreZip)) {
+        Write-Warning "D2RLAN_CoreFiles.zip not found, leaving current D2RHUD DLLs in place."
+        return
+    }
+
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    $Archive = [System.IO.Compression.ZipFile]::OpenRead($CoreZip)
+
+    try {
+        $Entry = $Archive.Entries | Where-Object { $_.FullName -ieq "D2RLAN/Launcher/d2rhud.dll" } | Select-Object -First 1
+
+        if (-not $Entry) {
+            Write-Warning "Packaged d2rhud.dll not found in D2RLAN_CoreFiles.zip, leaving current D2RHUD DLLs in place."
+            return
+        }
+
+        $TempDll = Join-Path $LauncherRoot "_packaged_d2rhud.dll"
+
+        if (Test-Path -LiteralPath $TempDll) {
+            Remove-Item -LiteralPath $TempDll -Force
+        }
+
+        [System.IO.Compression.ZipFileExtensions]::ExtractToFile($Entry, $TempDll)
+
+        foreach ($DllName in @("D2RHUD.dll", "D2RHUD_RELEASE.dll", "d2rhudb.dll")) {
+            Copy-Item -LiteralPath $TempDll -Destination (Join-Path $LauncherRoot $DllName) -Force
+        }
+
+        Remove-Item -LiteralPath $TempDll -Force
+        Write-Host "Pinned packaged D2RHUD DLL from D2RLAN_CoreFiles.zip."
+    }
+    finally {
+        $Archive.Dispose()
+    }
+}
+
 if (-not (Test-Path -LiteralPath $SourceData)) {
     throw "Source data directory not found: $SourceData"
 }
@@ -128,6 +174,8 @@ if ($RoboCopyExitCode -ge 8) {
 Copy-Item -LiteralPath $SourceModInfo -Destination (Join-Path $MpqRoot "modinfo.json") -Force
 
 $LauncherConfig = Join-Path (Split-Path -Parent $D2RPath) "Launcher\D2RLAN.dll.config"
+$D2RLANRoot = Split-Path -Parent $D2RPath
+$LauncherRoot = Join-Path $D2RLANRoot "Launcher"
 
 if (Test-Path -LiteralPath $LauncherConfig) {
     $InstallPathSetting = $D2RPath
@@ -138,8 +186,11 @@ if (Test-Path -LiteralPath $LauncherConfig) {
 
     Set-D2RLANSetting -Path $LauncherConfig -Name "SelectedMod" -Value $ModName
     Set-D2RLANSetting -Path $LauncherConfig -Name "InstallPath" -Value $InstallPathSetting
+    Set-D2RLANSetting -Path $LauncherConfig -Name "LANOffline" -Value "True"
+    Set-D2RLANSetting -Path $LauncherConfig -Name "HUDDebug" -Value "False"
     Write-Host "Updated launcher defaults:"
     Write-Host "  SelectedMod = $ModName"
+    Write-Host "  LANOffline = True"
 
     $UserConfigRoot = Join-Path $env:LOCALAPPDATA "D2RLAN"
 
@@ -150,6 +201,8 @@ if (Test-Path -LiteralPath $LauncherConfig) {
 
                 if ($SavedInstallPath -eq $InstallPathSetting) {
                     Set-D2RLANSetting -Path $_.FullName -Name "SelectedMod" -Value $ModName
+                    Set-D2RLANSetting -Path $_.FullName -Name "LANOffline" -Value "True"
+                    Set-D2RLANSetting -Path $_.FullName -Name "HUDDebug" -Value "False"
                     Write-Host "Updated saved launcher selection:"
                     Write-Host "  $($_.FullName)"
                 }
@@ -159,6 +212,10 @@ if (Test-Path -LiteralPath $LauncherConfig) {
             }
         }
     }
+}
+
+if (Test-Path -LiteralPath $LauncherRoot) {
+    Use-PackagedD2RHUD -D2RLANRoot $D2RLANRoot -LauncherRoot $LauncherRoot
 }
 
 Write-Host ""
