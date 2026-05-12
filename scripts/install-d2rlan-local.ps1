@@ -11,6 +11,63 @@ $RepoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
 $SourceData = Join-Path $RepoRoot "data"
 $SourceModInfo = Join-Path $RepoRoot "modinfo.json"
 
+function Set-D2RLANSetting {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Path,
+        [Parameter(Mandatory = $true)]
+        [string]$Name,
+        [Parameter(Mandatory = $true)]
+        [string]$Value
+    )
+
+    [xml]$Config = Get-Content -Raw -LiteralPath $Path
+    $Settings = $Config.SelectSingleNode("/configuration/userSettings/D2RLAN.Properties.Settings")
+
+    if (-not $Settings) {
+        throw "D2RLAN settings section not found: $Path"
+    }
+
+    $Setting = $Config.SelectSingleNode("/configuration/userSettings/D2RLAN.Properties.Settings/setting[@name='$Name']")
+
+    if (-not $Setting) {
+        $Setting = $Config.CreateElement("setting")
+        $Setting.SetAttribute("name", $Name)
+        $Setting.SetAttribute("serializeAs", "String")
+        $ValueNode = $Config.CreateElement("value")
+        [void]$Setting.AppendChild($ValueNode)
+        [void]$Settings.AppendChild($Setting)
+    }
+
+    $ValueElement = $Setting.SelectSingleNode("value")
+
+    if (-not $ValueElement) {
+        $ValueElement = $Config.CreateElement("value")
+        [void]$Setting.AppendChild($ValueElement)
+    }
+
+    $ValueElement.InnerText = $Value
+    $Config.Save($Path)
+}
+
+function Get-D2RLANSetting {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Path,
+        [Parameter(Mandatory = $true)]
+        [string]$Name
+    )
+
+    [xml]$Config = Get-Content -Raw -LiteralPath $Path
+    $ValueElement = $Config.SelectSingleNode("/configuration/userSettings/D2RLAN.Properties.Settings/setting[@name='$Name']/value")
+
+    if ($ValueElement) {
+        return $ValueElement.InnerText
+    }
+
+    return $null
+}
+
 if (-not (Test-Path -LiteralPath $SourceData)) {
     throw "Source data directory not found: $SourceData"
 }
@@ -70,6 +127,40 @@ if ($RoboCopyExitCode -ge 8) {
 }
 
 Copy-Item -LiteralPath $SourceModInfo -Destination (Join-Path $MpqRoot "modinfo.json") -Force
+
+$LauncherConfig = Join-Path (Split-Path -Parent $D2RPath) "Launcher\D2RLAN.dll.config"
+
+if (Test-Path -LiteralPath $LauncherConfig) {
+    $InstallPathSetting = $D2RPath
+
+    if (-not $InstallPathSetting.EndsWith([System.IO.Path]::DirectorySeparatorChar)) {
+        $InstallPathSetting += [System.IO.Path]::DirectorySeparatorChar
+    }
+
+    Set-D2RLANSetting -Path $LauncherConfig -Name "SelectedMod" -Value $ModName
+    Set-D2RLANSetting -Path $LauncherConfig -Name "InstallPath" -Value $InstallPathSetting
+    Write-Host "Updated launcher defaults:"
+    Write-Host "  SelectedMod = $ModName"
+
+    $UserConfigRoot = Join-Path $env:LOCALAPPDATA "D2RLAN"
+
+    if (Test-Path -LiteralPath $UserConfigRoot) {
+        Get-ChildItem -Path $UserConfigRoot -Recurse -Filter "user.config" -ErrorAction SilentlyContinue | ForEach-Object {
+            try {
+                $SavedInstallPath = Get-D2RLANSetting -Path $_.FullName -Name "InstallPath"
+
+                if ($SavedInstallPath -eq $InstallPathSetting) {
+                    Set-D2RLANSetting -Path $_.FullName -Name "SelectedMod" -Value $ModName
+                    Write-Host "Updated saved launcher selection:"
+                    Write-Host "  $($_.FullName)"
+                }
+            }
+            catch {
+                Write-Warning "Could not update saved launcher settings: $($_.FullName)"
+            }
+        }
+    }
+}
 
 Write-Host ""
 Write-Host "Done."
