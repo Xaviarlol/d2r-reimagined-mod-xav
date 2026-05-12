@@ -24,6 +24,8 @@ These memory offsets are version-specific. They are intended for the D2RLAN/TCP 
 
 Do not use this path on Battle.net.
 
+The full Reimagined data targets current retail D2R `3.1.92198`. The D2RLAN TCP executable in this setup is `1.2.69270`, so a full Reimagined copy can crash or exit before the main menu. Use `scripts/install-d2rlan-probe.ps1` to build `XavLANProbe`, a smaller D2RLAN-compatible side mod for testing these memory edits against the older TCP runtime.
+
 ## Install Helper
 
 After D2RLAN is installed, copy this side mod into the D2RLAN D2R folder:

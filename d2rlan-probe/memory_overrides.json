@@ -1,0 +1,29 @@
+{
+  "MemoryConfigs": [
+    {
+      "Name": "Disable Run Penalty for Defense",
+      "Description": "Disables the old running defense penalty by making the animation-mode check miss running.",
+      "Category": "Alteration",
+      "Addresses": [
+        "329F70",
+        "BCA5A0"
+      ],
+      "Length": 1,
+      "Type": "Integer",
+      "Values": "255",
+      "OriginalValues": "3",
+      "ModdedValues": "255"
+    },
+    {
+      "Name": "Auto-Collect Player Corpse",
+      "Description": "Automatically retrieves the player corpse after respawning in town. Gold still drops.",
+      "Category": "Alteration",
+      "Address": "3136B6",
+      "Length": 5,
+      "Type": "Hex",
+      "Values": "9090909090",
+      "OriginalValues": "E825C3FFFF",
+      "ModdedValues": "9090909090"
+    }
+  ]
+}
