@@ -32455,7 +32455,7 @@
     {
         "id": 22215,
         "Key": "Skillsd266",
-        "enUS": "Charge-up Skill\n\n adds life and mana stealing to finishing moves",
+        "enUS": "Charge-up Skill\n\n adds poison damage to finishing moves",
         "zhTW": "集氣技能\n\n使終結技附加生命和法力竊取效果",
         "deDE": "Aufladefertigkeit\n\nVerstärkt Finishing-Moves mit Lebens- und Manadiebstahl.",
         "esES": "Habilidad de cargas:\n\naumenta las sustracciones de vida y maná a los remates",
@@ -32472,7 +32472,7 @@
     {
         "id": 22216,
         "Key": "Skillld266",
-        "enUS": "Charge-up Skill\n\nconsecutive hits add life and mana stealing\nto finishing moves\nmust use a dragon finishing move or\nnormal attack to release charges",
+        "enUS": "Charge-up Skill\n\nconsecutive hits add poison damage\nto finishing moves\nmust use a dragon finishing move or\nnormal attack to release charges",
         "zhTW": "集氣技能\n\n連擊可以使終結技附加生命和法力竊取效果\n必須使用龍系終結技或普通攻擊來釋放聚集的力量",
         "deDE": "Aufladefertigkeit\n\nAufeinanderfolgende Treffer fügen\nFinishing-Moves Lebens- und Manaraub hinzu.\nAufladungen werden mit Drachen-Finishing-Moves\noder normalen Angriffen freigesetzt.",
         "esES": "Habilidad de cargas\n\nLos golpes consecutivos añaden robo de vida y maná\na los remates. Debes utilizar\nun remate de dragón o un ataque normal\npara liberar cargas.",
