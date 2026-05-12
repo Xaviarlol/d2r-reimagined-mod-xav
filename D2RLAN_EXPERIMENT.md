@@ -6,6 +6,7 @@ This branch is a side experiment for testing D2RLAN/D2RHUD-style hardcode edits 
 
 - Mod name: `XavReimaginedLAN`
 - Save path: `XavReimaginedLAN/`
+- Walk speed restored to normal so the run-defense memory patch can be tested directly
 - Added `data/D2RLAN/memory_overrides.json`
 - Added an experimental memory edit copied from ReMoDDeD/D2RLAN:
   - `Disable Run Penalty for Defense`
