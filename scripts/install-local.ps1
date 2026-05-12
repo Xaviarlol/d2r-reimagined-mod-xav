@@ -1,6 +1,6 @@
 param(
     [string]$D2RPath = "E:\Diablo II Resurrected",
-    [string]$ModName = "XavReimaginedLAN"
+    [string]$ModName = "XavReimagined"
 )
 
 $ErrorActionPreference = "Stop"
