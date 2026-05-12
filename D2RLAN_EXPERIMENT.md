@@ -32,3 +32,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-d2rlan-loc
 ```
 
 The script accepts either the D2RLAN root folder or the nested folder that contains `D2R.exe`.
+
+If you have only extracted the D2RLAN launcher and have not downloaded the Base TCP files yet, you can stage the mod folder first:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-d2rlan-local.ps1 -D2RLANPath "C:\Path\To\D2RLAN" -AllowMissingD2RExe
+```

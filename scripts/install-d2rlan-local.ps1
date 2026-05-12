@@ -1,7 +1,8 @@
 param(
     [Parameter(Mandatory = $true)]
     [string]$D2RLANPath,
-    [string]$ModName = "XavReimaginedLAN"
+    [string]$ModName = "XavReimaginedLAN",
+    [switch]$AllowMissingD2RExe
 )
 
 $ErrorActionPreference = "Stop"
@@ -24,6 +25,7 @@ if (-not (Test-Path -LiteralPath $D2RLANPath)) {
 
 $ResolvedInput = (Resolve-Path -LiteralPath $D2RLANPath).Path
 $CandidateD2R = Join-Path $ResolvedInput "D2R"
+$CandidateLauncher = Join-Path $ResolvedInput "Launcher\D2RLAN.exe"
 
 if (Test-Path -LiteralPath (Join-Path $ResolvedInput "D2R.exe")) {
     $D2RPath = $ResolvedInput
@@ -31,8 +33,16 @@ if (Test-Path -LiteralPath (Join-Path $ResolvedInput "D2R.exe")) {
 elseif (Test-Path -LiteralPath (Join-Path $CandidateD2R "D2R.exe")) {
     $D2RPath = (Resolve-Path -LiteralPath $CandidateD2R).Path
 }
+elseif ($AllowMissingD2RExe -and (Test-Path -LiteralPath $CandidateLauncher)) {
+    $D2RPath = $CandidateD2R
+    New-Item -ItemType Directory -Force -Path $D2RPath | Out-Null
+}
+elseif ($AllowMissingD2RExe -and ((Split-Path -Leaf $ResolvedInput) -ieq "D2R")) {
+    $D2RPath = $ResolvedInput
+    New-Item -ItemType Directory -Force -Path $D2RPath | Out-Null
+}
 else {
-    throw "Could not find D2R.exe. Pass either the D2RLAN root folder or its nested D2R folder."
+    throw "Could not find D2R.exe. Pass either the D2RLAN root folder or its nested D2R folder, or use -AllowMissingD2RExe to stage files before installing Base TCP files."
 }
 
 $ModsRoot = Join-Path $D2RPath "Mods"
