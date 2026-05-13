@@ -125,6 +125,33 @@ Test plan:
 - Compare weak weapon vs strong weapon while dragging the same monster type through the cloud.
 - If damage becomes predictable, tune cloud around expected collision applications per second.
 
+## Blade Fury Comparison
+
+Blade Fury is a useful comparison because it feels collision/re-hit based in game.
+
+In this mod, the active Blade Fury skill uses the Reimagined missile chain:
+
+```text
+Blade Fury skill -> ri_bladefury -> ri_bladefuryspread -> ri_bladefuryspread_2
+```
+
+The older-looking `bladefury1`, `bladefury2`, `bladefury3`, and `bladefragment*` rows still exist, but the active `skills.txt` row points at `ri_bladefury`.
+
+Relevant active missile values:
+
+| Missile | pSrvDoFunc | pSrvHitFunc | pSrvDmgFunc | LastCollide | NextHit | NextDelay | CollideKill | Pierce | Range | Size |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `ri_bladefury` | 1 | 20 | 1 | 1 | 1 | 1 | 1 | 1 | 25 | 1 |
+| `ri_bladefuryspread` | 1 | 20 | 1 | 1 | blank | blank | 1 | blank | 12 | 1 |
+| `ri_bladefuryspread_2` | 1 | blank | 1 | 1 | blank | blank | 1 | blank | 12 | 1 |
+
+Interpretation:
+
+- Blade Fury's first missile explicitly uses `NextHit=1`, `NextDelay=1`.
+- `NextDelay=1` is only a one-frame cooldown, so it is not a meaningful damage throttle by itself. It mostly means "use the next-hit system, but allow very frequent hits."
+- The follow-up spread missiles rely on `LastCollide=1` and `CollideKill=1`, not `NextDelay`.
+- Copying Blade Fury's `NextDelay=1` onto a lingering poison cloud would probably not normalize much. For Cobra cloud testing, start much higher, such as `NextDelay=12` or `25`.
+
 ## Phoenix Strike And Fists Of Fire Notes
 
 - The internal `skills.txt` row for Phoenix Strike is named `Royal Strike`, even though the game displays Phoenix Strike.
