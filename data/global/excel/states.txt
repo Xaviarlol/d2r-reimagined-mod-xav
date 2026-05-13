@@ -286,3 +286,4 @@ Armor_Green	283																																																						tors	cgrn		
 Armor_Yellow	284																																																						tors	lyel																		0
 Armor_Purple	285																																																						tors	dpur																		0
 Armor_Orange	286																																																						tors	oran																		0
+progressive_poison	287																																				1										progressive_steal_1			progressive_poison	1	1																						0
