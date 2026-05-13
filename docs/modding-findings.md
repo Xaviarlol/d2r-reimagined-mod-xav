@@ -55,18 +55,19 @@ Practical implication: raw poison numbers in the table are not already final dis
 
 Current design direction:
 
-- Charge 1: direct poison payload, can use `SrcDamage=128`.
-- Charge 2: poison cloud, dangerous with `SrcDamage=128` because cloud collision can reapply source damage.
-- Charge 3: poison nova, can use `SrcDamage=128` because it behaves more like a discrete release payload.
-- Flat poison should stay low if source damage is the main scaling component.
+- Charge 1: direct poison payload, `SrcDamage=128`, plus flat poison over 4 seconds.
+- Charge 2: no longer uses `cobrastrikecloud`; it falls back to the direct progressive poison release path, `SrcDamage=128`, plus a stronger flat poison payload over 8 seconds.
+- Charge 3: poison nova missile, `SrcDamage=128`, plus flat poison over 2 seconds.
+- Flat poison should stay moderate because source damage is the main scaling component.
 
 Important current-value note:
 
-- Cobra's charge-up skill row was reduced to `EMin=1`, `EMax=2`, all poison growth columns `0`, with `ELen=50` and `HitShift=4`, to stop no-charge Cobra Strike from showing hundreds of extra poison damage.
+- Cobra's charge-up skill row currently uses `EMin=2`, `EMax=4`, growth columns `1/1/2/3/4` and `1/2/3/4/5`, with `ELen=100`, `HitShift=4`, and `SrcDam=128`.
+- Because charge 2 now uses the direct progressive release instead of a missile cloud, the same base duration produces 4 seconds at charge 1 and 8 seconds at charge 2.
 
 ## Poison Cloud Collision Behavior
 
-User testing found an important behavior for Cobra charge 2:
+Historical note from the removed Cobra charge 2 cloud experiment:
 
 - Monsters do not simply stand in the cloud and take a normal periodic DOT.
 - The monster must move through or across cloud collision areas.
