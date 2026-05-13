@@ -32047,7 +32047,7 @@
     {
         "id": 22191,
         "Key": "Skillsd260",
-        "enUS": "Charge-up Skill\n\nadds fire damage to finishing moves",
+        "enUS": "Charge-up Skill\n\nadds fire damage and weapon damage to finishing moves",
         "zhTW": "集氣技能\n\n使終結技附加火焰傷害",
         "deDE": "Aufladefertigkeit\n\nVerstärkt Finishing-Moves mit Feuerschaden.",
         "esES": "Habilidad de cargas:\n\nañade daño de fuego a los remates",
@@ -32064,7 +32064,7 @@
     {
         "id": 22192,
         "Key": "Skillld260",
-        "enUS": "Charge-up Skill\n\nconsecutive hits add fire damage\nto finishing moves\ncan only be used with claw class weapons\nmust use a dragon finishing move or\nnormal attack to release charges",
+        "enUS": "Charge-up Skill\n\nconsecutive hits add fire damage\nand weapon damage to finishing moves\ncan only be used with claw class weapons\nmust use a dragon finishing move or\nnormal attack to release charges",
         "zhTW": "集氣技能\n\n連擊可以使終結技附加火焰傷害\n裝備爪類武器才可使用\n必須使用龍系終結技或普通攻擊來釋放聚集的力量",
         "deDE": "Aufladefertigkeit\n\nAufeinanderfolgende Treffer fügen\nFinishing-Moves Feuerschaden hinzu.\nKann nur mit Klauenwaffen verwendet werden.\nAufladungen werden mit Drachen-Finishing-Moves\noder normalen Angriffen freigesetzt.",
         "esES": "Habilidad de cargas\n\nLos golpes consecutivos añaden daño de fuego\na los remates. Solo se puede utilizar\ncon armas de tipo garra. Debes utilizar\nun remate de dragón o un ataque normal\npara liberar cargas.",
@@ -34163,7 +34163,7 @@
     {
         "id": 22314,
         "Key": "Eskillfistsoffire1",
-        "enUS": "Charge 1 - Fire Damage: %d-%d",
+        "enUS": "Charge 1 - Fire Damage: %d-%d + 100% weapon damage as fire",
         "zhTW": "一次集氣 - 火焰傷害：%d - %d 點",
         "deDE": "Ladung 1 - Feuerschaden: %d-%d",
         "esES": "Carga 1: daño de fuego: %d-%d p.",
@@ -34180,7 +34180,7 @@
     {
         "id": 22315,
         "Key": "Eskillfistsoffire2",
-        "enUS": "Charge 2 - Fire Damage Radius: %d yards",
+        "enUS": "Charge 2 - Fire Damage Radius: %d yards + 100% weapon damage as fire",
         "zhTW": "兩次集氣 - 火焰傷害範圍：%d 碼",
         "deDE": "Ladung 2 - Feuerschadensradius: %d Meter",
         "esES": "Carga 2: radio del daño de fuego: %d m",

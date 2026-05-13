@@ -157,7 +157,8 @@ Interpretation:
 
 - The internal `skills.txt` row for Phoenix Strike is named `Royal Strike`, even though the game displays Phoenix Strike.
 - Phoenix Strike's released elemental effects mostly come from missiles and do not use `SrcDamage` on the released payloads the way we first hoped.
-- Fists of Fire has `SrcDam=128` on the skill row, but its released fire effects do not appear to carry `SrcDamage` as their own missile source-damage payloads.
+- Fists of Fire has `SrcDam=128` on the skill row. For charge 1/2 weapon scaling, use the skill row's progressive conversion lever: `prgdam=4` with `calc1=100`, described in the table as `% Weapon Damage dealt as Fire for progressive release`.
+- Avoid putting `SrcDamage` directly on `fistsoffirefirewall`; it is a lingering collision fire field and has the same class of repeated-hit risk as the old Cobra cloud experiment.
 - Dragon Claw can feel strong with Fists of Fire because multiple charge-release payloads can happen across the two claw attacks. Poison is trickier because poison applications compete/refresh rather than simply stacking like separate fire hits.
 
 ## References Worth Keeping Handy
