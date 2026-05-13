@@ -34087,7 +34087,7 @@
     {
         "id": 56100,
         "Key": "Eskillcobra1",
-        "enUS": "Charge 1 - Poison: %d-%d over 2 sec + 5x weapon hit"
+        "enUS": "Charge 1 - Poison: %d-%d over 2 sec + 4x weapon hit"
     },
     {
         "id": 56101,
@@ -34097,7 +34097,7 @@
     {
         "id": 56102,
         "Key": "Eskillcobra3",
-        "enUS": "Charge 3 - Nova Poison: %d-%d over 2 sec + 5x weapon hit"
+        "enUS": "Charge 3 - Nova Poison: %d-%d over 2 sec + 4x weapon hit"
     },
     {
         "id": 56103,
