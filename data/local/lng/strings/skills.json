@@ -34087,17 +34087,17 @@
     {
         "id": 56100,
         "Key": "Eskillcobra1",
-        "enUS": "Charge 1 - Poison Damage: %d-%d"
+        "enUS": "Charge 1 - Poison Damage: %d-%d over 2 seconds"
     },
     {
         "id": 56101,
         "Key": "Eskillcobra2",
-        "enUS": "Charge 2 - Poison Cloud Damage: %d-%d"
+        "enUS": "Charge 2 - Poison Cloud Damage: %d-%d over 4 seconds"
     },
     {
         "id": 56102,
         "Key": "Eskillcobra3",
-        "enUS": "Charge 3 - Poison Nova Damage: %d-%d"
+        "enUS": "Charge 3 - Poison Nova Damage: %d-%d over 2 seconds"
     },
     {
         "id": 56103,
