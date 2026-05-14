@@ -1,0 +1,166 @@
+diff --git a/data/global/excel/base/skills.txt b/data/global/excel/base/skills.txt
+index 34a649dd..0f763009 100644
+--- a/data/global/excel/base/skills.txt
++++ b/data/global/excel/base/skills.txt
+@@ -279,7 +279,7 @@ Death Sentry	276	ass	death sentry		45
+ Blade Shield	277	ass	blade shield	28	54													blade shield attachment					33667	bladeshield		ln12	par4																																																																						assassin_bladeshield																																	1	0		none													SC	SC	SC				1																										30	25					Blade Fury									0	1				0	0	8	0	0	1	1		1	par3																												45000	Duration baseline	0	Duration per level	15	Periodic Damage Delay	6	Radius							10	Damage synergy																									1	25	15		32		3		8	96	10	4	5	6	7	11	20	5	6	7	8	12	(skill('Blade Sentinel'.blvl)+skill('Blade Fury'.blvl))*par8																				1		512	15360	0
+ Venom	278	ass	venom		18																			venomclaws		ln12		poisonmindam	enms	poisonmaxdam	exms	skill_poison_override_length	edma																																																																assassin_venom																																	1	0		none													SC	SC	SC				1																1										30	25					Fade			1						0	1				0	0	8	0	0	1	1																															45000	Duration baseline	0	Duration per level																																					1								6															pois	24	6	8	10	12	14	32	6	8	10	12	14		10					1		512	15360	0
+ Shadow Master	279	ass	shadow master		49																			shadowwarrior				tohit	lvl*par2	strength	lvl*10	dexterity	lvl*10	passive_fire_mastery	stat('passive_fire_mastery'.accr)	passive_ltng_pierce	stat('passive_ltng_pierce'.accr)	passive_ltng_mastery	stat('passive_ltng_mastery'.accr)												item_pierce_cold_immunity	stat('item_pierce_cold_immunity'.accr)	item_pierce_fire_immunity	stat('item_pierce_fire_immunity'.accr)	item_pierce_light_immunity	stat('item_pierce_light_immunity'.accr)	item_pierce_poison_immunity	stat('item_pierce_poison_immunity'.accr)	item_pierce_damage_immunity	stat('item_pierce_damage_immunity'.accr)	passive_fire_pierce	stat('passive_fire_pierce'.accr)	velocitypercent	min(50+lvl*5+stat('item_fastermovevelocity'.accr),175)															shadowmaster	shadowwarrior	1 + stat('extra_shadow_masters'.accr)		NU											42			assassin_summon																																	1	0		none													SC	SC	SC				1																1										30	25					Shadow Warrior							15		0	1				1	1	8	40	0	1	1																															15	HP % per level	40	Attack Rating % per level	5	Resistance % Min	90	Resistance % Max	24	Magic Item Level baseline	3	Magic Item Level per level																													1								8																																		3		512	15360	0
+-Royal Strike	280	ass	royal strike	23	34			40	143	41		par6	par5					royalstrikemeteorcenter	royalstrikechainlightning	royalstrikechaosice				progressive_other		par9	par1	progressive_other		progressive_tohit	par7																																																																																			14	83	15		royalstrikemeteorcenter	royalstrikechainlightning	royalstrikechaosice										1	0		h2h			mele										A1	A1	A2				1		1	1								1		1			1										30	25					Cobra Strike	Blades of Ice								1	1				0	0	8	0	0	1	1									1		par2	Meteor Explosion Radius																			8	Chain Lightning Radius of jump to next target	6	Meteor Explosion Radius	30	Duration of ground fire baseline	15	Duration of ground fire per level	16	# of Ice Bolt Missiles created	10	Chain Lightning Missiles Created Modifier (used as 64/#=Total Chain Lightning Missiles created) (if <=0, then use AuraRangeCalc)	25	Attack Rating % per Charge			750	Duration																							1	25	10						8	128																																	4	-3	512	15360	0
++Royal Strike	280	ass	royal strike	23	34		1	40	143	41		par6	par5					royalstrikemeteorcenter	royalstrikechainlightning	royalstrikechaosice				progressive_other		par9	par1	progressive_other		progressive_tohit	par7																																																																																			14	83	15		royalstrikemeteorcenter	royalstrikechainlightning	royalstrikechaosice										1	0		h2h			mele										A1	A1	A2				1		1	1								1		1			1										30	25					Cobra Strike	Blades of Ice								1	1				0	0	8	0	0	1	1									1		par2	Meteor Explosion Radius																			8	Chain Lightning Radius of jump to next target	6	Meteor Explosion Radius	30	Duration of ground fire baseline	15	Duration of ground fire per level	16	# of Ice Bolt Missiles created	10	Chain Lightning Missiles Created Modifier (used as 64/#=Total Chain Lightning Missiles created) (if <=0, then use AuraRangeCalc)	25	Attack Rating % per Charge			750	Duration																							1	25	10						8	128																																	4	-3	512	15360	0
+ Wake Of Destruction Sentry	281				125													wake of destruction maker																																																																																														70						wake of destruction maker												1	0		none													SQ	SQ	S2				1																1										1															0	0									1	1																	par8+(skill('Wake of Fire Sentry'.blvl)/par6)	# of shots																							5	base levels to gain an additional shot			5	# of shots (must match Wake of Fire Sentry Param1)																									1								8																																					0	0
+ Imp Inferno	282			59	126													impinfernoflame1																																																																																														71						impinfernoflame1	impinfernoflame2			8	Missile Z Offset		Range per level (Duration of missile)					1	0		none													SQ	SQ	SC	6			1																										1															0	0									1	1											rand(par3,par4)	Anim Frame Adder (Min=1)	lvl-1	Range per level (Duration of missile)																	30	Range baseline (Duration of missile)			100	Anim Frame Adder Min	120	Anim Frame Adder Max																																	1								4															fire	18	15	22	22	22	22	37	15	22	22	22	22										0	0
+ Imp Fireball	283														impfireball		1																																																																																sorceress_cast_fire											fire_cast_2				72						impfireball				40	Missile Z Offset							1	0		none													SQ	SQ	S2				1																										1															0	0									1	1																																																																							1								8																																					0	0
+diff --git a/data/global/excel/skills.txt b/data/global/excel/skills.txt
+index fc04cd87..68d76d8a 100644
+--- a/data/global/excel/skills.txt
++++ b/data/global/excel/skills.txt
+@@ -279,7 +279,7 @@ Death Sentry	276	ass	death sentry		45
+ Blade Shield	277	ass	blade shield	28	54													blade shield attachment					33667	bladeshield		ln12	par4																																																																						assassin_bladeshield																																	1	0		none													SC	SC	SC				1																										30	25					Blade Fury									0	1				0	0	8	0	0	1	1		1	par3																												45000	Duration baseline	0	Duration per level	15	Periodic Damage Delay	6	Radius							10	Damage synergy																									1	25	15		32		3		8	96	10	4	5	6	7	11	20	5	6	7	8	12	(skill('Blade Sentinel'.blvl)+skill('Blade Fury'.blvl))*par8																				1		512	15360	0
+ Venom	278	ass	venom		18																			venomclaws		ln12		poisonmindam	enms	poisonmaxdam	exms	skill_poison_override_length	edma																																																																assassin_venom																																	1	0		none													SC	SC	SC				1																1										30	25					Fade			1						0	1				0	0	8	0	0	1	1																															45000	Duration baseline	0	Duration per level																																					1								6															pois	24	6	8	10	12	14	32	6	8	10	12	14		10					1		512	15360	0
+ Shadow Master	279	ass	shadow master		49																			shadowwarrior				tohit	lvl*par2	strength	lvl*10	dexterity	lvl*10	passive_fire_mastery	stat('passive_fire_mastery'.accr)	passive_ltng_pierce	stat('passive_ltng_pierce'.accr)	passive_ltng_mastery	stat('passive_ltng_mastery'.accr)												item_pierce_cold_immunity	stat('item_pierce_cold_immunity'.accr)	item_pierce_fire_immunity	stat('item_pierce_fire_immunity'.accr)	item_pierce_light_immunity	stat('item_pierce_light_immunity'.accr)	item_pierce_poison_immunity	stat('item_pierce_poison_immunity'.accr)	item_pierce_damage_immunity	stat('item_pierce_damage_immunity'.accr)	passive_fire_pierce	stat('passive_fire_pierce'.accr)	velocitypercent	min(50+lvl*5+stat('item_fastermovevelocity'.accr),175)															shadowmaster	shadowwarrior	1 + stat('extra_shadow_masters'.accr)		NU											42			assassin_summon																																	1	0		none													SC	SC	SC				1																1										30	25					Shadow Warrior							15		0	1				1	1	8	40	0	1	1																															15	HP % per level	40	Attack Rating % per level	5	Resistance % Min	90	Resistance % Max	24	Magic Item Level baseline	3	Magic Item Level per level																													1								8																																		3		512	15360	0
+-Royal Strike	280	ass	royal strike	23	34			40	143	41		par6	par5					royalstrikemeteorcenter	royalstrikechainlightning	royalstrikechaosice				progressive_other		par9	par1	progressive_other		progressive_tohit	par7																																																																																			14	83	15		royalstrikemeteorcenter	royalstrikechainlightning	royalstrikechaosice										1	0		h2h			mele										A1	A1	A2				1		1	1								1		1			1										30	25					Cobra Strike	Blades of Ice								1	1				0	0	8	0	0	1	1									1		par2	Meteor Explosion Radius																			8	Chain Lightning Radius of jump to next target	6	Meteor Explosion Radius	30	Duration of ground fire baseline	15	Duration of ground fire per level	16	# of Ice Bolt Missiles created	10	Chain Lightning Missiles Created Modifier (used as 64/#=Total Chain Lightning Missiles created) (if <=0, then use AuraRangeCalc)	25	Attack Rating % per Charge			750	Duration																							1	25	10						8	128																																	4	-3	512	15360	0
++Royal Strike	280	ass	royal strike	23	34		1	40	143	41		par6	par5					royalstrikemeteorcenter	royalstrikechainlightning	royalstrikechaosice				progressive_other		par9	par1	progressive_other		progressive_tohit	par7																																																																																			14	83	15		royalstrikemeteorcenter	royalstrikechainlightning	royalstrikechaosice										1	0		h2h			mele										A1	A1	A2				1		1	1								1		1			1										30	25					Cobra Strike	Blades of Ice								1	1				0	0	8	0	0	1	1									1		par2	Meteor Explosion Radius																			8	Chain Lightning Radius of jump to next target	6	Meteor Explosion Radius	30	Duration of ground fire baseline	15	Duration of ground fire per level	16	# of Ice Bolt Missiles created	10	Chain Lightning Missiles Created Modifier (used as 64/#=Total Chain Lightning Missiles created) (if <=0, then use AuraRangeCalc)	25	Attack Rating % per Charge			750	Duration																							1	25	10						8	128																																	4	-3	512	15360	0
+ Wake Of Destruction Sentry	281				125													wake of destruction maker																																																																																														70						wake of destruction maker												1	0		none													SQ	SQ	S2				1																1										1															0	0									1	1																	par8+(skill('Wake of Fire Sentry'.blvl)/par6)	# of shots																							5	base levels to gain an additional shot			5	# of shots (must match Wake of Fire Sentry Param1)																									1								8																																					0	0
+ Imp Inferno	282			59	126													impinfernoflame1																																																																																														71						impinfernoflame1	impinfernoflame2			8	Missile Z Offset		Range per level (Duration of missile)					1	0		none													SQ	SQ	SC	6			1																										1															0	0									1	1											rand(par3,par4)	Anim Frame Adder (Min=1)	lvl-1	Range per level (Duration of missile)																	30	Range baseline (Duration of missile)			100	Anim Frame Adder Min	120	Anim Frame Adder Max																																	1								4															fire	18	15	22	22	22	22	37	15	22	22	22	22										0	0
+ Imp Fireball	283														impfireball		1																																																																																sorceress_cast_fire											fire_cast_2				72						impfireball				40	Missile Z Offset							1	0		none													SQ	SQ	S2				1																										1															0	0									1	1																																																																							1								8																																					0	0
+diff --git a/docs/ai-review/tasks/2026-05-15-0104-phoenix-prgstack/design.md b/docs/ai-review/tasks/2026-05-15-0104-phoenix-prgstack/design.md
+new file mode 100644
+index 00000000..95b8b738
+--- /dev/null
++++ b/docs/ai-review/tasks/2026-05-15-0104-phoenix-prgstack/design.md
+@@ -0,0 +1,52 @@
++# Phoenix Strike Prgstack
++
++## Context
++
++The stack-style elemental charge-ups use `prgstack=1`:
++
++```text
++Fists of Fire      prgstack=1
++Claws of Thunder   prgstack=1
++Blades of Ice      prgstack=1
++```
++
++Phoenix Strike is displayed in-game as Phoenix Strike but stored internally as:
++
++```text
++Royal Strike
++```
++
++Before this change, `Royal Strike` had blank `prgstack`, so its charge release selected one payload rather than clearly opting into the stacked lower-charge behavior.
++
++## Change
++
++Set `Royal Strike` to:
++
++```text
++prgstack=1
++```
++
++Do this in both:
++
++```text
++data/global/excel/skills.txt
++data/global/excel/base/skills.txt
++```
++
++## Non-Goals
++
++- Do not change Phoenix/Royal Strike `srvdofunc` or progressive functions.
++- Do not change `royalstrikemeteor`, `royalstrikechainlightning`, `royalstrikechaosice`, or `royalstrikemeteorfire`.
++- Do not change Fists of Fire, Claws of Thunder, Blades of Ice, Cobra Strike, or finishing moves.
++- Do not change Phoenix tooltip strings in this pass.
++
++## Risk / Verification Note
++
++This is a direct test of the `prgstack` flag on `Royal Strike`. It may still need in-game verification because `Royal Strike` uses `srvdofunc=34`, while Fists of Fire / Claws of Thunder / Blades of Ice use `srvdofunc=35`.
++
++## Validation Plan
++
++- Check active/base `skills.txt` both remain 322 columns.
++- Check active/base `Royal Strike` rows match.
++- Check only `Royal Strike` gains `prgstack=1`.
++- Confirm Phoenix missile rows are untouched.
+diff --git a/docs/ai-review/tasks/2026-05-15-0104-phoenix-prgstack/request.md b/docs/ai-review/tasks/2026-05-15-0104-phoenix-prgstack/request.md
+new file mode 100644
+index 00000000..fd16c24f
+--- /dev/null
++++ b/docs/ai-review/tasks/2026-05-15-0104-phoenix-prgstack/request.md
+@@ -0,0 +1,64 @@
++---
++schema: ai-review-task-v1
++id: 2026-05-15-0104-phoenix-prgstack
++status: ready_for_claude
++phase: code_review
++round: 1
++max_rounds: 3
++created_by: codex
++created_at: 2026-05-15T01:04:00+02:00
++updated_at: 2026-05-15T01:04:00+02:00
++repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
++branch: xav-custom
++base_ref: HEAD
++head_ref:
++original_user_request_included: true
++live_publish_allowed: true
++last_review:
++last_verdict:
++claimed_by:
++claimed_at:
++reviewed_at:
++---
++
++# Review Request
++
++## Original User Request
++
++```text
++change phoenix strike to use prgstack also.
++```
++
++## Prior Context
++
++Eric asked whether charge-up skills such as Fists of Fire / Claws of Thunder combine lower charge payloads into a 3-charge finisher. The local data shows those stack-style elemental skills use `prgstack=1`, while Phoenix Strike is internally named `Royal Strike` and previously had `prgstack` blank.
++
++## Goal
++
++Set Phoenix Strike / `Royal Strike` to use `prgstack=1` in active and base `skills.txt`.
++
++Expected gameplay experiment:
++
++- A 3-charge Phoenix Strike finisher should also release lower charge payloads.
++- A 2-charge Phoenix Strike finisher should also release charge 1.
++
++## Phase
++
++code_review
++
++## Scope
++
++- `data/global/excel/skills.txt`
++- `data/global/excel/base/skills.txt`
++- `docs/modding-findings.md`
++
++## Design Or Diff
++
++See `design.md` and `diff.patch`.
++
++## Review Questions
++
++1. Is `Royal Strike` the correct internal row for Phoenix Strike?
++2. Is setting `prgstack=1` the narrowest change to test stacked Phoenix charge releases?
++3. Do active/base `skills.txt` remain synchronized and TSV-safe?
++4. Does this avoid changing Cobra Strike, Fists of Fire, Claws of Thunder, Blades of Ice, and Phoenix missile payload rows?
+diff --git a/docs/modding-findings.md b/docs/modding-findings.md
+index d1586875..e332ba4a 100644
+--- a/docs/modding-findings.md
++++ b/docs/modding-findings.md
+@@ -171,6 +171,7 @@ Interpretation:
+ ## Phoenix Strike And Fists Of Fire Notes
+
+ - The internal `skills.txt` row for Phoenix Strike is named `Royal Strike`, even though the game displays Phoenix Strike.
++- Phoenix Strike/Royal Strike now has `prgstack=1` so it can be tested like the stack-style elemental charge-ups. The expected result is that a 3-charge finisher releases the lower charge payloads as well, but this still needs in-game verification because Royal Strike uses `srvdofunc=34` while Fists of Fire / Claws of Thunder / Blades of Ice use `srvdofunc=35`.
+ - Phoenix Strike's released elemental effects mostly come from missiles. The three direct release payloads are `royalstrikemeteor`, `royalstrikechainlightning`, and `royalstrikechaosice`; these should carry `SrcDamage=128` when Phoenix charges are intended to add 100% source/weapon damage.
+ - Do not put `SrcDamage` on `royalstrikemeteorfire` unless specifically testing repeated ground-fire collision/tick behavior; that is the lingering burning-ground payload and was intentionally excluded.
+ - Fists of Fire has `SrcDam=128` on the skill row. For charge 1/2 weapon scaling, use the skill row's progressive conversion lever: `prgdam=4` with `calc1=100`, described in the table as `% Weapon Damage dealt as Fire for progressive release`.

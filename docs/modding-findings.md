@@ -171,6 +171,7 @@ Interpretation:
 ## Phoenix Strike And Fists Of Fire Notes
 
 - The internal `skills.txt` row for Phoenix Strike is named `Royal Strike`, even though the game displays Phoenix Strike.
+- Phoenix Strike/Royal Strike now has `prgstack=1` so it can be tested like the stack-style elemental charge-ups. The expected result is that a 3-charge finisher releases the lower charge payloads as well, but this still needs in-game verification because Royal Strike uses `srvdofunc=34` while Fists of Fire / Claws of Thunder / Blades of Ice use `srvdofunc=35`.
 - Phoenix Strike's released elemental effects mostly come from missiles. The three direct release payloads are `royalstrikemeteor`, `royalstrikechainlightning`, and `royalstrikechaosice`; these should carry `SrcDamage=128` when Phoenix charges are intended to add 100% source/weapon damage.
 - Do not put `SrcDamage` on `royalstrikemeteorfire` unless specifically testing repeated ground-fire collision/tick behavior; that is the lingering burning-ground payload and was intentionally excluded.
 - Fists of Fire has `SrcDam=128` on the skill row. For charge 1/2 weapon scaling, use the skill row's progressive conversion lever: `prgdam=4` with `calc1=100`, described in the table as `% Weapon Damage dealt as Fire for progressive release`.
