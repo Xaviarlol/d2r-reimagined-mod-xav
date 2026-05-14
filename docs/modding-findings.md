@@ -56,7 +56,7 @@ Practical implication: raw poison numbers in the table are not already final dis
 - `128` means 100 percent source damage.
 - Values above `128` are unsafe. D2RDoc marks this field as 8-bit, and our test with `512` caused broken-looking character sheet damage such as `0-1`.
 - Use `128` as the practical max unless a specific row proves otherwise.
-- For Cobra Strike, weapon scaling felt good after flat poison was reduced to nearly nothing and `SrcDamage=128` was used, but current testing suggests the source-damage contribution may only be reliably applying on the charge 3 missile path.
+- For Cobra Strike, weapon scaling felt good after flat poison was reduced to nearly nothing and `SrcDamage=128` was used, but source damage is risky on DOT/cloud-style effects. Current Cobra charge 2 cloud rows keep `SrcDamage=0`; charge 3 remains the source-damage test path.
 - Active Tiger Strike charges did not appear to multiply Cobra Strike's source-damage release in testing. Hard-point synergy from `EDmgSymPerCalc = skill('Tiger Strike'.blvl)*10` still applies.
 
 ## Cobra Strike Current Model
@@ -67,14 +67,14 @@ Current design direction:
 - Charge 2: currently routed through the dedicated `cobrastrikecloudhit` server missile so charge 2 can be balanced independently from charge 3.
 - Charge 2 uses `cltprgfunc2=9`, `prgcalc2=par1+((lvl-1)/6)`, and `cltmissileb=cobrastrikecloud` as the client-only poison cloud visual. The client cloud visual now uses `Range=150`, which is 6 seconds at 25 frames per second.
 - Charge 3: poison nova missile, `SrcDamage=128`, plus flat poison over 2 seconds. Its missile range is intentionally modest and grows slowly.
-- Flat poison should stay moderate because source damage is the main scaling component.
+- Flat poison should stay moderate on DOT/cloud-style effects because source damage can create unclear repeated-hit scaling.
 - Current playtest note: charge 2 cloud visuals work when `cltmissileb=cobrastrikecloud` and `prgcalc2` stays populated. Charge 1 must not use the helper missile path, because that made it behave like the charge 2 AoE.
 
 Important current-value note:
 
 - Cobra's charge-up skill row currently carries direct `EType` / `EMin` / `EMax` / `ELen` so charge 1 releases as a single-target poison finisher.
 - `cobrastrikehit` was removed after testing because it made charge 1 behave like an AoE release.
-- `cobrastrikecloudhit` is a charge 2-only copy of the nova-style server payload with lower poison values, `HitShift=3`, `SrcDamage=64`, and `ELen=150`. This is intended to make the total charge 2 flat poison payload about half of the previous 2-second payload while lasting 6 seconds.
+- `cobrastrikecloudhit` is a charge 2-only copy of the nova-style server payload with lower poison values, `HitShift=3`, `SrcDamage=0`, and `ELen=150`. This is intended to make the total charge 2 flat poison payload about half of the previous 2-second payload while lasting 6 seconds, without adding source/weapon damage to the DOT cloud.
 - `cobrastrikenova` in `missiles.txt` remains the charge 3 payload with the previous poison curve, `HitShift=4`, `ELen=50`, and `SrcDamage=128`.
 - `prgcalc2` must stay populated for `cltprgfunc2=9`; otherwise charge 2 can work mechanically while drawing no poison cloud visual.
 - `cobrastrikecloud` should not be reintroduced as the charge 2 server missile without retesting repeated collision damage; it is currently only the charge 2 client visual.
@@ -87,7 +87,7 @@ Historical note from the removed Cobra charge 2 cloud experiment:
 - Monsters do not simply stand in the cloud and take a normal periodic DOT.
 - The monster must move through or across cloud collision areas.
 - Damage is applied on collision/hit events as the monster crosses cloud pieces.
-- With `SrcDamage=128`, weapon damage is applied through those collision events.
+- With `SrcDamage=128`, weapon damage was applied through those collision events. Current cloud rows use `SrcDamage=0` until this behavior is safer to reason about.
 - This means the cloud can behave more like repeated collision damage than a passive poison puddle.
 
 Current `cobrastrikecloud` row characteristics:
@@ -103,7 +103,7 @@ NextDelay = blank
 Size = 2
 Range = 150
 HitShift = 4
-SrcDamage = 128
+SrcDamage = 0
 EType = pois
 ELen = 100
 ```
