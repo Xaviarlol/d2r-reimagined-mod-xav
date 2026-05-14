@@ -1,0 +1,210 @@
+diff --git a/data/global/excel/base/skilldesc.txt b/data/global/excel/base/skilldesc.txt
+index e705a866..6b59e0ce 100644
+--- a/data/global/excel/base/skilldesc.txt
++++ b/data/global/excel/base/skilldesc.txt
+@@ -203,7 +203,7 @@ charged bolt sentry	1	3	1	1	6		Skillname262	Skillld262	Skillld262	Skillan262	6
+ wake of fire sentry	1	3	2	1	8		Skillname263	Skillld263	Skillld263	Skillan263	5																75	StrSkill5		enma	exma	36	StrSkill3		usmc	256																					74	ESkillShoots		clc4																						40	Sksyn	Skillname263	2		76	Firedplev	Skillname252	par8		76	Firedplev	Skillname273	par8		77	ShotsSynergy	Skillname263	1	par6																		0
+ weapon block	2	3	2	2	26		Skillname264	Skillld264	Skillld264	Skillan264																	74	StrSkill24		dm12		74	ModStr1i		ln34																																																																																				0
+ snowlash sentry	1	3	3	1	24		Skillname265	Skillld265	Skillld265	Skillan265	5																75	StrSkill6		enma	exma	36	StrSkillColdLengthSingular	StrSkill13	edln	50	74	StrSkill120		par2		36	StrSkill3		usmc	256											74	ESkillShoots		clc4																						40	Sksyn	Skillname265	2		76	Colddplev	Skillname254	par8		76	Colddplev	Skillname274	par8		77	ShotsSynergy	Skillname265	1	par6																		0
+-cobra strike	3	3	2	3	50		Skillname266	Skillld266	Skillld266	Skillan266	5			pois	(12+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*8+max(min(lvl,22)-16,0)*9+max(min(lvl,28)-22,0)*15+max(lvl-28,0)*21)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(21+max(min(lvl,8)-1,0)*9+max(min(lvl,16)-8,0)*11+max(min(lvl,22)-16,0)*15+max(min(lvl,28)-22,0)*20+max(lvl-28,0)*29)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	pois	(3+max(min(lvl,8)-1,0)*1+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*2+max(min(lvl,28)-22,0)*3+max(lvl-28,0)*5)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	(5+max(min(lvl,8)-1,0)*2+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*3+max(min(lvl,28)-22,0)*4+max(lvl-28,0)*6)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	pois	(8+max(min(lvl,8)-1,0)*4+max(min(lvl,16)-8,0)*5+max(min(lvl,22)-16,0)*6+max(min(lvl,28)-22,0)*10+max(lvl-28,0)*14)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(14+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*7+max(min(lvl,22)-16,0)*10+max(min(lvl,28)-22,0)*13+max(lvl-28,0)*19)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	2			cobrastrikenova	75	Eskillcobra1		(12+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*8+max(min(lvl,22)-16,0)*9+max(min(lvl,28)-22,0)*15+max(lvl-28,0)*21)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(21+max(min(lvl,8)-1,0)*9+max(min(lvl,16)-8,0)*11+max(min(lvl,22)-16,0)*15+max(min(lvl,28)-22,0)*20+max(lvl-28,0)*29)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	75	Eskillcobra2		(3+max(min(lvl,8)-1,0)*1+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*2+max(min(lvl,28)-22,0)*3+max(lvl-28,0)*5)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	(5+max(min(lvl,8)-1,0)*2+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*3+max(min(lvl,28)-22,0)*4+max(lvl-28,0)*6)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	74	EskillcobraRadius2		par1+((lvl-1)/6)		75	Eskillcobra3		(8+max(min(lvl,8)-1,0)*4+max(min(lvl,16)-8,0)*5+max(min(lvl,22)-16,0)*6+max(min(lvl,28)-22,0)*10+max(lvl-28,0)*14)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(14+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*7+max(min(lvl,22)-16,0)*10+max(min(lvl,28)-22,0)*13+max(lvl-28,0)*19)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	75	EskillcobraRadius3		par2+((lvl-1)/6)	(((lvl-1)-((lvl-1)/6)*6)/3)*5	74	StrSkill22		toht		36	StrSkill3		usmc	256																					40	Sksyn	Skillname266	2		76	Poisdplev	Skillname255	par8																													0
++cobra strike	3	3	2	3	50		Skillname266	Skillld266	Skillld266	Skillan266	5			pois	(12+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*8+max(min(lvl,22)-16,0)*9+max(min(lvl,28)-22,0)*15+max(lvl-28,0)*21)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(21+max(min(lvl,8)-1,0)*9+max(min(lvl,16)-8,0)*11+max(min(lvl,22)-16,0)*15+max(min(lvl,28)-22,0)*20+max(lvl-28,0)*29)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	pois	(3+max(min(lvl,8)-1,0)*1+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*2+max(min(lvl,28)-22,0)*3+max(lvl-28,0)*5)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	(5+max(min(lvl,8)-1,0)*2+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*3+max(min(lvl,28)-22,0)*4+max(lvl-28,0)*6)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	pois	(8+max(min(lvl,8)-1,0)*4+max(min(lvl,16)-8,0)*5+max(min(lvl,22)-16,0)*6+max(min(lvl,28)-22,0)*10+max(lvl-28,0)*14)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(14+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*7+max(min(lvl,22)-16,0)*10+max(min(lvl,28)-22,0)*13+max(lvl-28,0)*19)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	2			cobrastrikenova	75	EskillcobraRadius3		par2+((lvl-1)/6)	(((lvl-1)-((lvl-1)/6)*6)/3)*5	75	Eskillcobra3		(8+max(min(lvl,8)-1,0)*4+max(min(lvl,16)-8,0)*5+max(min(lvl,22)-16,0)*6+max(min(lvl,28)-22,0)*10+max(lvl-28,0)*14)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(14+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*7+max(min(lvl,22)-16,0)*10+max(min(lvl,28)-22,0)*13+max(lvl-28,0)*19)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	74	EskillcobraRadius2		par1+((lvl-1)/6)		75	Eskillcobra2		(3+max(min(lvl,8)-1,0)*1+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*2+max(min(lvl,28)-22,0)*3+max(lvl-28,0)*5)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	(5+max(min(lvl,8)-1,0)*2+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*3+max(min(lvl,28)-22,0)*4+max(lvl-28,0)*6)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	75	Eskillcobra1		(12+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*8+max(min(lvl,22)-16,0)*9+max(min(lvl,28)-22,0)*15+max(lvl-28,0)*21)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(21+max(min(lvl,8)-1,0)*9+max(min(lvl,16)-8,0)*11+max(min(lvl,22)-16,0)*15+max(min(lvl,28)-22,0)*20+max(lvl-28,0)*29)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	74	StrSkill22		toht		36	StrSkill3		usmc	256																					40	Sksyn	Skillname266	2		76	Poisdplev	Skillname255	par8																													0
+ blade fury	2	4	3	1	10		Skillname267	Skillld267	Skillld267	Skillan267	5												1				36	StrSkill3		usmc	256	75	StrSkillAddedFlatPhys		pnma	pxma	74	StrSkill22		toht																	74	StrSkillRicochet		2		74	StrSkill120		clc1		74	WeapDamsk		96*100/128												40	Sksyn	Skillname267	2		76	Damplev	Skillname258	par8		76	Damplev	Skillname278	par8																								0
+ fade	2	4	1	2	30		Skillname268	Skillld268	Skillld268	Skillan268																	36	StrSkillDurationSingular	StrSkill20	ln56	25	74	StrSkill54		dm12		74	ModStr2uPercent		ln78		74	StrSkill85		dm34												36	StrSkill3		usmc	256																																																										0
+ shadow warrior	2	4	2	2	38		Skillname269	Skillld269	Skillld269	Skillan269																	36	StrSkill3		usmc	256	74	StrSkill21		(lvl-1)*par3		74	StrSkillAttackRating		lvl*par2		13	StrSkill42		(lvl-1)*par1												36	StrSkillCastingDelaySingular	StrSkillCastingDelayPlural	15	25																																																										0
+diff --git a/data/global/excel/skilldesc.txt b/data/global/excel/skilldesc.txt
+index 34512f05..9741325a 100644
+--- a/data/global/excel/skilldesc.txt
++++ b/data/global/excel/skilldesc.txt
+@@ -203,7 +203,7 @@ charged bolt sentry	1	3	1	1	6		Skillname262	Skillld262	Skillld262	Skillan262	6
+ wake of fire sentry	1	3	2	1	8		Skillname263	Skillld263	Skillld263	Skillan263	5																75	StrSkill5		enma	exma	36	StrSkill3		usmc	256																					74	ESkillShoots		clc4																						40	Sksyn	Skillname263	2		76	Firedplev	Skillname252	par8		76	Firedplev	Skillname273	par8		77	ShotsSynergy	Skillname263	1	par6																		0
+ weapon block	2	3	2	2	26		Skillname264	Skillld264	Skillld264	Skillan264																	74	StrSkill24		dm12		74	ModStr1i		ln34																																																																																				0
+ snowlash sentry	1	3	3	1	24		Skillname265	Skillld265	Skillld265	Skillan265	5																75	StrSkill6		enma	exma	36	StrSkillColdLengthSingular	StrSkill13	edln	50	74	StrSkill120		par2		36	StrSkill3		usmc	256											74	ESkillShoots		clc4																						40	Sksyn	Skillname265	2		76	Colddplev	Skillname254	par8		76	Colddplev	Skillname274	par8		77	ShotsSynergy	Skillname265	1	par6																		0
+-cobra strike	3	3	2	3	50		Skillname266	Skillld266	Skillld266	Skillan266	5			pois	(12+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*8+max(min(lvl,22)-16,0)*9+max(min(lvl,28)-22,0)*15+max(lvl-28,0)*21)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(21+max(min(lvl,8)-1,0)*9+max(min(lvl,16)-8,0)*11+max(min(lvl,22)-16,0)*15+max(min(lvl,28)-22,0)*20+max(lvl-28,0)*29)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	pois	(3+max(min(lvl,8)-1,0)*1+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*2+max(min(lvl,28)-22,0)*3+max(lvl-28,0)*5)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	(5+max(min(lvl,8)-1,0)*2+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*3+max(min(lvl,28)-22,0)*4+max(lvl-28,0)*6)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	pois	(8+max(min(lvl,8)-1,0)*4+max(min(lvl,16)-8,0)*5+max(min(lvl,22)-16,0)*6+max(min(lvl,28)-22,0)*10+max(lvl-28,0)*14)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(14+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*7+max(min(lvl,22)-16,0)*10+max(min(lvl,28)-22,0)*13+max(lvl-28,0)*19)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	2			cobrastrikenova	75	Eskillcobra1		(12+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*8+max(min(lvl,22)-16,0)*9+max(min(lvl,28)-22,0)*15+max(lvl-28,0)*21)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(21+max(min(lvl,8)-1,0)*9+max(min(lvl,16)-8,0)*11+max(min(lvl,22)-16,0)*15+max(min(lvl,28)-22,0)*20+max(lvl-28,0)*29)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	75	Eskillcobra2		(3+max(min(lvl,8)-1,0)*1+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*2+max(min(lvl,28)-22,0)*3+max(lvl-28,0)*5)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	(5+max(min(lvl,8)-1,0)*2+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*3+max(min(lvl,28)-22,0)*4+max(lvl-28,0)*6)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	74	EskillcobraRadius2		par1+((lvl-1)/6)		75	Eskillcobra3		(8+max(min(lvl,8)-1,0)*4+max(min(lvl,16)-8,0)*5+max(min(lvl,22)-16,0)*6+max(min(lvl,28)-22,0)*10+max(lvl-28,0)*14)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(14+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*7+max(min(lvl,22)-16,0)*10+max(min(lvl,28)-22,0)*13+max(lvl-28,0)*19)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	75	EskillcobraRadius3		par2+((lvl-1)/6)	(((lvl-1)-((lvl-1)/6)*6)/3)*5	74	StrSkill22		toht		36	StrSkill3		usmc	256																					40	Sksyn	Skillname266	2		76	Poisdplev	Skillname255	par8																													0
++cobra strike	3	3	2	3	50		Skillname266	Skillld266	Skillld266	Skillan266	5			pois	(12+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*8+max(min(lvl,22)-16,0)*9+max(min(lvl,28)-22,0)*15+max(lvl-28,0)*21)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(21+max(min(lvl,8)-1,0)*9+max(min(lvl,16)-8,0)*11+max(min(lvl,22)-16,0)*15+max(min(lvl,28)-22,0)*20+max(lvl-28,0)*29)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	pois	(3+max(min(lvl,8)-1,0)*1+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*2+max(min(lvl,28)-22,0)*3+max(lvl-28,0)*5)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	(5+max(min(lvl,8)-1,0)*2+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*3+max(min(lvl,28)-22,0)*4+max(lvl-28,0)*6)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	pois	(8+max(min(lvl,8)-1,0)*4+max(min(lvl,16)-8,0)*5+max(min(lvl,22)-16,0)*6+max(min(lvl,28)-22,0)*10+max(lvl-28,0)*14)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(14+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*7+max(min(lvl,22)-16,0)*10+max(min(lvl,28)-22,0)*13+max(lvl-28,0)*19)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	2			cobrastrikenova	75	EskillcobraRadius3		par2+((lvl-1)/6)	(((lvl-1)-((lvl-1)/6)*6)/3)*5	75	Eskillcobra3		(8+max(min(lvl,8)-1,0)*4+max(min(lvl,16)-8,0)*5+max(min(lvl,22)-16,0)*6+max(min(lvl,28)-22,0)*10+max(lvl-28,0)*14)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(14+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*7+max(min(lvl,22)-16,0)*10+max(min(lvl,28)-22,0)*13+max(lvl-28,0)*19)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	74	EskillcobraRadius2		par1+((lvl-1)/6)		75	Eskillcobra2		(3+max(min(lvl,8)-1,0)*1+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*2+max(min(lvl,28)-22,0)*3+max(lvl-28,0)*5)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	(5+max(min(lvl,8)-1,0)*2+max(min(lvl,16)-8,0)*2+max(min(lvl,22)-16,0)*3+max(min(lvl,28)-22,0)*4+max(lvl-28,0)*6)*150/32*(100+skill('Tiger Strike'.blvl)*par8)/100	75	Eskillcobra1		(12+max(min(lvl,8)-1,0)*6+max(min(lvl,16)-8,0)*8+max(min(lvl,22)-16,0)*9+max(min(lvl,28)-22,0)*15+max(lvl-28,0)*21)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	(21+max(min(lvl,8)-1,0)*9+max(min(lvl,16)-8,0)*11+max(min(lvl,22)-16,0)*15+max(min(lvl,28)-22,0)*20+max(lvl-28,0)*29)*50/16*(100+skill('Tiger Strike'.blvl)*par8)/100	74	StrSkill22		toht		36	StrSkill3		usmc	256																					40	Sksyn	Skillname266	2		76	Poisdplev	Skillname255	par8																													0
+ blade fury	2	4	3	1	10		Skillname267	Skillld267	Skillld267	Skillan267	5												1				36	StrSkill3		usmc	256	75	StrSkillAddedFlatPhys		pnma	pxma	74	StrSkill22		toht																	74	StrSkillRicochet		2		74	StrSkill120		clc1		74	WeapDamsk		96*100/128												40	Sksyn	Skillname267	2		76	Damplev	Skillname258	par8		76	Damplev	Skillname278	par8																								0
+ fade	2	4	1	2	30		Skillname268	Skillld268	Skillld268	Skillan268																	36	StrSkillDurationSingular	StrSkill20	ln56	25	74	StrSkill54		dm12		74	ModStr2uPercent		ln78		74	StrSkill85		dm34												36	StrSkill3		usmc	256																																																										0
+ shadow warrior	2	4	2	2	38		Skillname269	Skillld269	Skillld269	Skillan269																	36	StrSkill3		usmc	256	74	StrSkill21		(lvl-1)*par3		74	StrSkillAttackRating		lvl*par2		13	StrSkill42		(lvl-1)*par1												36	StrSkillCastingDelaySingular	StrSkillCastingDelayPlural	15	25																																																										0
+diff --git a/data/local/lng/strings/skills.json b/data/local/lng/strings/skills.json
+index 58c885c4..76c7459a 100644
+--- a/data/local/lng/strings/skills.json
++++ b/data/local/lng/strings/skills.json
+@@ -32455,7 +32455,7 @@
+     {
+         "id": 22215,
+         "Key": "Skillsd266",
+-        "enUS": "Charge-up Skill\n\nadds weapon damage and poison effects to finishing moves",
++        "enUS": "Charge-up Skill\n\nadds poison effects and 100%% weapon damage to finishing moves",
+         "zhTW": "集氣技能\n\n使終結技附加生命和法力竊取效果",
+         "deDE": "Aufladefertigkeit\n\nVerstärkt Finishing-Moves mit Lebens- und Manadiebstahl.",
+         "esES": "Habilidad de cargas:\n\naumenta las sustracciones de vida y maná a los remates",
+@@ -32472,7 +32472,7 @@
+     {
+         "id": 22216,
+         "Key": "Skillld266",
+-        "enUS": "Charge-up Skill\n\nconsecutive hits add poison effects\nto finishing moves\ncharge 1 adds weapon damage and poison\ncharge 2 splashes poison around the target\ncharge 3 releases a small poison nova",
++        "enUS": "Charge-up Skill\n\nconsecutive hits add poison effects\nto finishing moves\nall charges add 100%% weapon damage\ncharge 1 poisons the target\ncharge 2 splashes poison around the target\ncharge 3 releases a small poison nova",
+         "zhTW": "集氣技能\n\n連擊可以使終結技附加生命和法力竊取效果\n必須使用龍系終結技或普通攻擊來釋放聚集的力量",
+         "deDE": "Aufladefertigkeit\n\nAufeinanderfolgende Treffer fügen\nFinishing-Moves Lebens- und Manaraub hinzu.\nAufladungen werden mit Drachen-Finishing-Moves\noder normalen Angriffen freigesetzt.",
+         "esES": "Habilidad de cargas\n\nLos golpes consecutivos añaden robo de vida y maná\na los remates. Debes utilizar\nun remate de dragón o un ataque normal\npara liberar cargas.",
+@@ -34087,7 +34087,7 @@
+     {
+         "id": 56100,
+         "Key": "Eskillcobra1",
+-        "enUS": "Charge 1 - Poison Damage: %d-%d over 2 sec + weapon damage"
++        "enUS": "Charge 1 - Poison Damage: %d-%d over 2 sec + 100%% weapon damage"
+     },
+     {
+         "id": 56101,
+@@ -34097,7 +34097,7 @@
+     {
+         "id": 56102,
+         "Key": "Eskillcobra3",
+-        "enUS": "Charge 3 - Nova Poison: %d-%d over 2 sec + weapon damage"
++        "enUS": "Charge 3 - Nova Poison: %d-%d over 2 sec + 100%% weapon damage"
+     },
+     {
+         "id": 56103,
+diff --git a/docs/ai-review/tasks/2026-05-15-0116-cobra-tooltip-order-weapon-wording/design.md b/docs/ai-review/tasks/2026-05-15-0116-cobra-tooltip-order-weapon-wording/design.md
+new file mode 100644
+index 00000000..9f4e285c
+--- /dev/null
++++ b/docs/ai-review/tasks/2026-05-15-0116-cobra-tooltip-order-weapon-wording/design.md
+@@ -0,0 +1,50 @@
++# Cobra Tooltip Order And Weapon Wording
++
++## Context
++
++The game renders the detailed charge section in reverse slot order. Other Assassin charge-up skills place charge 3 in lower-numbered `descline` slots and charge 1 in a later slot so the tooltip displays:
++
++```text
++Charge 1
++Charge 2
++Charge 3
++```
++
++Cobra Strike was authored the other way around, so it rendered charge 3 first.
++
++## Change
++
++Move Cobra Strike's `skilldesc.txt` detailed charge slots without changing the formulas:
++
++```text
++descline5 -> Charge 1 poison damage
++descline4 -> Charge 2 poison cloud damage
++descline3 -> Charge 2 splash radius
++descline2 -> Charge 3 nova poison damage
++descline1 -> Charge 3 nova radius
++descline6 -> Attack Rating, unchanged
++```
++
++Update English strings:
++
++```text
++Eskillcobra1: ... + 100%% weapon damage
++Eskillcobra2: already ... + 100%% weapon damage
++Eskillcobra3: ... + 100%% weapon damage
++```
++
++Also update the short and long Cobra English descriptions to mention `100%% weapon damage`.
++
++## Non-Goals
++
++- Do not change Cobra gameplay fields in `skills.txt` or `missiles.txt`.
++- Do not change Cobra charge damage formulas.
++- Do not change non-English localizations in this pass.
++- Do not change Phoenix, Fists of Fire, Claws of Thunder, or Blades of Ice tooltips.
++
++## Validation Plan
++
++- Parse `data/local/lng/strings/skills.json` as JSON.
++- Check active/base `skilldesc.txt` both remain 120 columns.
++- Check active/base Cobra skilldesc rows match.
++- Check Cobra detailed slot order is charge 3/radius3 in low slots and charge 1 in high slot, matching the reverse-render pattern.
+diff --git a/docs/ai-review/tasks/2026-05-15-0116-cobra-tooltip-order-weapon-wording/request.md b/docs/ai-review/tasks/2026-05-15-0116-cobra-tooltip-order-weapon-wording/request.md
+new file mode 100644
+index 00000000..8a5bc002
+--- /dev/null
++++ b/docs/ai-review/tasks/2026-05-15-0116-cobra-tooltip-order-weapon-wording/request.md
+@@ -0,0 +1,71 @@
++---
++schema: ai-review-task-v1
++id: 2026-05-15-0116-cobra-tooltip-order-weapon-wording
++status: ready_for_claude
++phase: code_review
++round: 1
++max_rounds: 3
++created_by: codex
++created_at: 2026-05-15T01:16:00+02:00
++updated_at: 2026-05-15T01:16:00+02:00
++repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
++branch: xav-custom
++base_ref: HEAD
++head_ref:
++original_user_request_included: true
++live_publish_allowed: true
++last_review:
++last_verdict:
++claimed_by:
++claimed_at:
++reviewed_at:
++---
++
++# Review Request
++
++## Original User Request
++
++```text
++btw the tooltips need some consistency around weapon damage, AND the charges are in the wrong order (other charge up skills have charge 1 at top and 3 at bottom of the charge section)
++```
++
++## Prior Context
++
++Cobra Strike currently has 100% weapon/source damage on all three charge release paths:
++
++- Charge 1 uses the Cobra skill row with `SrcDam=128`
++- Charge 2 uses `cobrastrikecloudhit` with `SrcDamage=128`
++- Charge 3 uses `cobrastrikenova` with `SrcDamage=128`
++
++The detailed tooltip was rendering charge 3 above charge 2 above charge 1. The other Assassin charge-up skills author their `skilldesc.txt` detailed charge lines in reverse slot order so the game renders charge 1 at the top and charge 3 at the bottom.
++
++## Goal
++
++1. Reorder Cobra Strike's detailed tooltip charge section so it renders:
++   - Charge 1
++   - Charge 2
++   - Charge 3
++2. Make Cobra Strike's English weapon-damage wording consistent by using `100%% weapon damage` for all three detailed charge lines.
++3. Update the Cobra short/long English descriptions so they mention 100% weapon damage consistently.
++
++## Phase
++
++code_review
++
++## Scope
++
++- `data/global/excel/skilldesc.txt`
++- `data/global/excel/base/skilldesc.txt`
++- `data/local/lng/strings/skills.json`
++- `docs/modding-findings.md`
++
++## Design Or Diff
++
++See `design.md` and `diff.patch`.
++
++## Review Questions
++
++1. Does the `skilldesc.txt` Cobra charge section now match the rendering order used by the other charge-up skills?
++2. Are the Cobra charge formulas preserved while only moving their display slots?
++3. Is the `100%% weapon damage` wording correct and properly escaped for JSON tooltip rendering?
++4. Do active/base `skilldesc.txt` remain synchronized and TSV-safe?
+diff --git a/docs/modding-findings.md b/docs/modding-findings.md
+index e332ba4a..6194a55f 100644
+--- a/docs/modding-findings.md
++++ b/docs/modding-findings.md
+@@ -79,6 +79,7 @@ Important current-value note:
+ - `prgcalc2` must stay populated for `cltprgfunc2=9`; otherwise charge 2 can work mechanically while drawing no poison cloud visual.
+ - `cobrastrikecloud` should not be reintroduced as the charge 2 server missile without retesting repeated collision damage; it is currently only the charge 2 client visual.
+ - Charge 1, charge 2, and charge 3 tooltips can diverge because the tooltip is formula-driven and may not reflect whether a payload comes from the skill row or missile row unless `skilldesc.txt` is updated alongside gameplay fields.
++- Cobra's detailed charge tooltip lines are authored in reverse slot order in `skilldesc.txt` so the game renders charge 1 at the top and charge 3 at the bottom, matching the other Assassin charge-up skills.
+
+ ## Poison Cloud Collision Behavior

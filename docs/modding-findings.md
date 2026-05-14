@@ -79,6 +79,7 @@ Important current-value note:
 - `prgcalc2` must stay populated for `cltprgfunc2=9`; otherwise charge 2 can work mechanically while drawing no poison cloud visual.
 - `cobrastrikecloud` should not be reintroduced as the charge 2 server missile without retesting repeated collision damage; it is currently only the charge 2 client visual.
 - Charge 1, charge 2, and charge 3 tooltips can diverge because the tooltip is formula-driven and may not reflect whether a payload comes from the skill row or missile row unless `skilldesc.txt` is updated alongside gameplay fields.
+- Cobra's detailed charge tooltip lines are authored in reverse slot order in `skilldesc.txt` so the game renders charge 1 at the top and charge 3 at the bottom, matching the other Assassin charge-up skills.
 
 ## Poison Cloud Collision Behavior
 
