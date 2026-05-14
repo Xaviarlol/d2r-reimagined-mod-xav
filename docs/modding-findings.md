@@ -63,9 +63,9 @@ Practical implication: raw poison numbers in the table are not already final dis
 
 Current design direction:
 
-- Charge 1: restored to the original direct single-target poison finisher model. `srvprgfunc1`, `srvmissilea`, `cltprgfunc1`, and `cltmissilea` stay blank, while the main skill row carries `EType=pois` and its poison curve.
-- Charge 2: currently routed through the `cobrastrikenova` missile for the server payload.
-- Charge 2 uses `cltprgfunc2=9`, `prgcalc2=par1+((lvl-1)/6)`, and `cltmissileb=cobrastrikecloud` as the client-only poison cloud visual. The server payload remains `srvmissileb=cobrastrikenova`.
+- Charge 1: restored to the original direct single-target poison finisher model. `srvprgfunc1`, `srvmissilea`, `cltprgfunc1`, and `cltmissilea` stay blank, while the main skill row carries `EType=pois` and its poison curve. Current charge 1 poison rate is roughly 50% higher than the earlier equalized test curve, with `ELen=50`.
+- Charge 2: currently routed through the dedicated `cobrastrikecloudhit` server missile so charge 2 can be balanced independently from charge 3.
+- Charge 2 uses `cltprgfunc2=9`, `prgcalc2=par1+((lvl-1)/6)`, and `cltmissileb=cobrastrikecloud` as the client-only poison cloud visual. The client cloud visual now uses `Range=150`, which is 6 seconds at 25 frames per second.
 - Charge 3: poison nova missile, `SrcDamage=128`, plus flat poison over 2 seconds. Its missile range is intentionally modest and grows slowly.
 - Flat poison should stay moderate because source damage is the main scaling component.
 - Current playtest note: charge 2 cloud visuals work when `cltmissileb=cobrastrikecloud` and `prgcalc2` stays populated. Charge 1 must not use the helper missile path, because that made it behave like the charge 2 AoE.
@@ -74,10 +74,11 @@ Important current-value note:
 
 - Cobra's charge-up skill row currently carries direct `EType` / `EMin` / `EMax` / `ELen` so charge 1 releases as a single-target poison finisher.
 - `cobrastrikehit` was removed after testing because it made charge 1 behave like an AoE release.
-- `cobrastrikenova` in `missiles.txt` mirrors the same poison curve and `ELen=50`, with `SrcDamage=128`.
+- `cobrastrikecloudhit` is a charge 2-only copy of the nova-style server payload with lower poison values, `HitShift=3`, `SrcDamage=64`, and `ELen=150`. This is intended to make the total charge 2 flat poison payload about half of the previous 2-second payload while lasting 6 seconds.
+- `cobrastrikenova` in `missiles.txt` remains the charge 3 payload with the previous poison curve, `HitShift=4`, `ELen=50`, and `SrcDamage=128`.
 - `prgcalc2` must stay populated for `cltprgfunc2=9`; otherwise charge 2 can work mechanically while drawing no poison cloud visual.
 - `cobrastrikecloud` should not be reintroduced as the charge 2 server missile without retesting repeated collision damage; it is currently only the charge 2 client visual.
-- Charge 1, charge 2, and charge 3 tooltips can be equal while gameplay differs, because the tooltip is formula-driven and may not reflect whether a payload comes from the skill row or missile row.
+- Charge 1, charge 2, and charge 3 tooltips can diverge because the tooltip is formula-driven and may not reflect whether a payload comes from the skill row or missile row unless `skilldesc.txt` is updated alongside gameplay fields.
 
 ## Poison Cloud Collision Behavior
 
@@ -100,7 +101,7 @@ ClientCol = 1
 NextHit = blank
 NextDelay = blank
 Size = 2
-Range = 60
+Range = 150
 HitShift = 4
 SrcDamage = 128
 EType = pois
