@@ -34087,12 +34087,12 @@
     {
         "id": 56100,
         "Key": "Eskillcobra1",
-        "enUS": "Charge 1 - Poison Damage: %d-%d over 4 sec + weapon damage"
+        "enUS": "Charge 1 - Poison Damage: %d-%d over 2 sec + weapon damage"
     },
     {
         "id": 56101,
         "Key": "Eskillcobra2",
-        "enUS": "Charge 2 - Poison Splash: %d-%d over 4 sec + weapon damage"
+        "enUS": "Charge 2 - Poison Splash: %d-%d over 2 sec + weapon damage"
     },
     {
         "id": 56102,
