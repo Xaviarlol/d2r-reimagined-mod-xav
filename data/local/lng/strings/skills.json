@@ -34163,7 +34163,7 @@
     {
         "id": 22314,
         "Key": "Eskillfistsoffire1",
-        "enUS": "Charge 1 - Fire Damage: %d-%d + 100% weapon damage as fire",
+        "enUS": "Charge 1 - Fire Damage: %d-%d + 100%% weapon damage as fire",
         "zhTW": "一次集氣 - 火焰傷害：%d - %d 點",
         "deDE": "Ladung 1 - Feuerschaden: %d-%d",
         "esES": "Carga 1: daño de fuego: %d-%d p.",
@@ -34180,7 +34180,7 @@
     {
         "id": 22315,
         "Key": "Eskillfistsoffire2",
-        "enUS": "Charge 2 - Fire Damage Radius: %d yards + 100% weapon damage as fire",
+        "enUS": "Charge 2 - Fire Damage Radius: %d yards + 100%% weapon damage as fire",
         "zhTW": "兩次集氣 - 火焰傷害範圍：%d 碼",
         "deDE": "Ladung 2 - Feuerschadensradius: %d Meter",
         "esES": "Carga 2: radio del daño de fuego: %d m",

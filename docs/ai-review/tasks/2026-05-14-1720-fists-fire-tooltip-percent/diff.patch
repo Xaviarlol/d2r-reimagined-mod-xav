@@ -1,0 +1,82 @@
+diff --git a/data/local/lng/strings/skills.json b/data/local/lng/strings/skills.json
+index 6c42e803..59fa2c56 100644
+--- a/data/local/lng/strings/skills.json
++++ b/data/local/lng/strings/skills.json
+@@ -34163,7 +34163,7 @@
+     {
+         "id": 22314,
+         "Key": "Eskillfistsoffire1",
+-        "enUS": "Charge 1 - Fire Damage: %d-%d + 100% weapon damage as fire",
++        "enUS": "Charge 1 - Fire Damage: %d-%d + 100%% weapon damage as fire",
+         "zhTW": "一次集氣 - 火焰傷害：%d - %d 點",
+         "deDE": "Ladung 1 - Feuerschaden: %d-%d",
+         "esES": "Carga 1: daño de fuego: %d-%d p.",
+@@ -34180,7 +34180,7 @@
+     {
+         "id": 22315,
+         "Key": "Eskillfistsoffire2",
+-        "enUS": "Charge 2 - Fire Damage Radius: %d yards + 100% weapon damage as fire",
++        "enUS": "Charge 2 - Fire Damage Radius: %d yards + 100%% weapon damage as fire",
+         "zhTW": "兩次集氣 - 火焰傷害範圍：%d 碼",
+         "deDE": "Ladung 2 - Feuerschadensradius: %d Meter",
+         "esES": "Carga 2: radio del daño de fuego: %d m",
+diff --git a/docs/modding-findings.md b/docs/modding-findings.md
+index ed73b2da..f9017209 100644
+--- a/docs/modding-findings.md
++++ b/docs/modding-findings.md
+@@ -2,7 +2,7 @@
+
+ Living notes for discoveries made while testing XavReimagined. Treat this as practical project knowledge, not a full D2R data-file reference.
+
+-Updated: 2026-05-13.
++Updated: 2026-05-14.
+
+ ## Workflow Notes
+
+@@ -18,7 +18,8 @@ Updated: 2026-05-13.
+ - Skill tooltips are largely controlled by `skilldesc.txt` and string JSON files.
+ - Skill behavior is controlled by `skills.txt`, `missiles.txt`, and related data rows.
+ - These can absolutely disagree. A tooltip can show a value that is not the exact runtime behavior if the formula is wrong, if the missile applies damage differently, or if the skill row itself is carrying hidden damage.
+-- Cobra Strike showed this clearly: the skill row itself still had scaling poison damage, so the character sheet showed unexpectedly high no-charge damage even before charge releases mattered.
++- Cobra Strike showed this clearly: when the main charge-up skill row itself carries poison `EType` / `EMin` / `EMax`, the first Cobra builder hit can apply that poison before any finisher release happens.
++- Literal percent signs in string JSON must be escaped as `%%`. A raw `%` inside tooltip text can be interpreted as another printf placeholder and render garbage numeric text, as happened with Fists of Fire's "100% weapon damage as fire" note.
+
+ ## Poison Damage Math
+
+@@ -48,22 +49,24 @@ Practical implication: raw poison numbers in the table are not already final dis
+ - `128` means 100 percent source damage.
+ - Values above `128` are unsafe. D2RDoc marks this field as 8-bit, and our test with `512` caused broken-looking character sheet damage such as `0-1`.
+ - Use `128` as the practical max unless a specific row proves otherwise.
+-- For Cobra Strike, weapon scaling felt good after flat poison was reduced to nearly nothing and `SrcDamage=128` was used.
++- For Cobra Strike, weapon scaling felt good after flat poison was reduced to nearly nothing and `SrcDamage=128` was used, but current testing suggests the source-damage contribution may only be reliably applying on the charge 3 missile path.
+ - Active Tiger Strike charges did not appear to multiply Cobra Strike's source-damage release in testing. Hard-point synergy from `EDmgSymPerCalc = skill('Tiger Strike'.blvl)*10` still applies.
+
+ ## Cobra Strike Current Model
+
+ Current design direction:
+
+-- Charge 1: direct poison payload, `SrcDamage=128`, plus flat poison over 4 seconds.
+-- Charge 2: no longer uses `cobrastrikecloud`. Testing showed a direct charge 2 did not get a separate 8 second poison duration, so it now uses progressive function `38` as a target-centered poison splash with `SrcDamage=128`.
++- Charge 1: currently routed through the `cobrastrikenova` missile instead of direct skill-row poison, to avoid poisoning on the builder hit.
++- Charge 2: currently routed through the `cobrastrikenova` missile instead of direct skill-row poison, to avoid poisoning on the builder hit.
+ - Charge 3: poison nova missile, `SrcDamage=128`, plus flat poison over 2 seconds. Its missile range is intentionally modest and grows slowly.
+ - Flat poison should stay moderate because source damage is the main scaling component.
++- Current suspicion: charge 1 and charge 2 do not safely support direct skill-row poison without also poisoning on the builder hit. The present test workaround makes all released Cobra payloads use the missile path.
+
+ Important current-value note:
+
+-- Cobra's charge-up skill row currently uses `EMin=2`, `EMax=4`, growth columns `1/1/2/3/4` and `1/2/3/4/5`, with `ELen=100`, `HitShift=4`, and `SrcDam=128`.
+-- Charge 1 and charge 2 both use the same 4 second poison duration, but charge 2 adds splash coverage instead of more duration.
++- Cobra's charge-up skill row currently leaves direct `EType` / `EMin` / `EMax` / `ELen` blank to prevent builder-hit poison.
++- `cobrastrikenova` in `missiles.txt` mirrors the same poison curve and `ELen=50`, with `SrcDamage=128`.
++- Charge 1, charge 2, and charge 3 tooltips can be equal while gameplay differs, because the tooltip is formula-driven and may not reflect whether a payload comes from the skill row or missile row.
+
+ ## Poison Cloud Collision Behavior
+
+@@ -158,6 +161,7 @@ Interpretation:
+ - The internal `skills.txt` row for Phoenix Strike is named `Royal Strike`, even though the game displays Phoenix Strike.
+ - Phoenix Strike's released elemental effects mostly come from missiles and do not use `SrcDamage` on the released payloads the way we first hoped.
+ - Fists of Fire has `SrcDam=128` on the skill row. For charge 1/2 weapon scaling, use the skill row's progressive conversion lever: `prgdam=4` with `calc1=100`, described in the table as `% Weapon Damage dealt as Fire for progressive release`.
++- Fists of Fire's charge 1/2 tooltip text hardcodes `100%% weapon damage as fire`; keep that string in sync if `calc1` changes from `100`.
+ - Avoid putting `SrcDamage` directly on `fistsoffirefirewall`; it is a lingering collision fire field and has the same class of repeated-hit risk as the old Cobra cloud experiment.
+ - Dragon Claw can feel strong with Fists of Fire because multiple charge-release payloads can happen across the two claw attacks. Poison is trickier because poison applications compete/refresh rather than simply stacking like separate fire hits.

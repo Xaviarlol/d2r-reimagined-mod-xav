@@ -2,7 +2,7 @@
 
 Living notes for discoveries made while testing XavReimagined. Treat this as practical project knowledge, not a full D2R data-file reference.
 
-Updated: 2026-05-13.
+Updated: 2026-05-14.
 
 ## Workflow Notes
 
@@ -10,15 +10,23 @@ Updated: 2026-05-13.
 - The mirror/reference tables live under `data/global/excel/base/`.
 - When changing a table that has a `base/` counterpart, update both unless there is a deliberate reason not to. We already hit this with `setitems.txt`: gameplay was correct in the active file, but `base/setitems.txt` drifted and could have confused future scripts.
 - Publish to the live game with `scripts/install-local.ps1`.
-- Current live target is `E:\Diablo II Resurrected\mods\XavReimagined\XavReimagined.mpq`.
-- Current launch args are `-mod XavReimagined -txt`.
+- Current live target is `C:\Program Files (x86)\Diablo II Resurrected\mods\XavReimagined\XavReimagined.mpq`.
+- Current launch args are `-mod XavReimagined -txt -enablerespec`.
+- After gameplay/data changes are validated, commit and push them to `origin/xav-custom`; keep the relevant docs/review notes in the same commit.
 
 ## Tooltips Vs Mechanics
 
 - Skill tooltips are largely controlled by `skilldesc.txt` and string JSON files.
 - Skill behavior is controlled by `skills.txt`, `missiles.txt`, and related data rows.
 - These can absolutely disagree. A tooltip can show a value that is not the exact runtime behavior if the formula is wrong, if the missile applies damage differently, or if the skill row itself is carrying hidden damage.
-- Cobra Strike showed this clearly: the skill row itself still had scaling poison damage, so the character sheet showed unexpectedly high no-charge damage even before charge releases mattered.
+- Cobra Strike showed this clearly: when the main charge-up skill row itself carries poison `EType` / `EMin` / `EMax`, the first Cobra builder hit can apply that poison before any finisher release happens.
+- Literal percent signs in string JSON must be escaped as `%%`. A raw `%` inside tooltip text can be interpreted as another printf placeholder and render garbage numeric text, as happened with Fists of Fire's "100% weapon damage as fire" note.
+
+## Cube Recipe Item Codes
+
+- In `cubemain.txt`, `qty=N` on a loose item code such as `ooi,qty=11` is valid for matching multiple loose cube inputs of that item.
+- This mod's player-facing Topaz and Emerald item codes are `gmt` and `gme`.
+- Vanilla perfect gem codes such as `gpy` and `gpg` may still exist in `misc.txt`, but they are not the Topaz/Emerald items used by the mod's active cube recipes.
 
 ## Poison Damage Math
 
@@ -48,22 +56,28 @@ Practical implication: raw poison numbers in the table are not already final dis
 - `128` means 100 percent source damage.
 - Values above `128` are unsafe. D2RDoc marks this field as 8-bit, and our test with `512` caused broken-looking character sheet damage such as `0-1`.
 - Use `128` as the practical max unless a specific row proves otherwise.
-- For Cobra Strike, weapon scaling felt good after flat poison was reduced to nearly nothing and `SrcDamage=128` was used.
+- For Cobra Strike, weapon scaling felt good after flat poison was reduced to nearly nothing and `SrcDamage=128` was used, but current testing suggests the source-damage contribution may only be reliably applying on the charge 3 missile path.
 - Active Tiger Strike charges did not appear to multiply Cobra Strike's source-damage release in testing. Hard-point synergy from `EDmgSymPerCalc = skill('Tiger Strike'.blvl)*10` still applies.
 
 ## Cobra Strike Current Model
 
 Current design direction:
 
-- Charge 1: direct poison payload, `SrcDamage=128`, plus flat poison over 4 seconds.
-- Charge 2: no longer uses `cobrastrikecloud`. Testing showed a direct charge 2 did not get a separate 8 second poison duration, so it now uses progressive function `38` as a target-centered poison splash with `SrcDamage=128`.
+- Charge 1: restored to the original direct single-target poison finisher model. `srvprgfunc1`, `srvmissilea`, `cltprgfunc1`, and `cltmissilea` stay blank, while the main skill row carries `EType=pois` and its poison curve.
+- Charge 2: currently routed through the `cobrastrikenova` missile for the server payload.
+- Charge 2 uses `cltprgfunc2=9`, `prgcalc2=par1+((lvl-1)/6)`, and `cltmissileb=cobrastrikecloud` as the client-only poison cloud visual. The server payload remains `srvmissileb=cobrastrikenova`.
 - Charge 3: poison nova missile, `SrcDamage=128`, plus flat poison over 2 seconds. Its missile range is intentionally modest and grows slowly.
 - Flat poison should stay moderate because source damage is the main scaling component.
+- Current playtest note: charge 2 cloud visuals work when `cltmissileb=cobrastrikecloud` and `prgcalc2` stays populated. Charge 1 must not use the helper missile path, because that made it behave like the charge 2 AoE.
 
 Important current-value note:
 
-- Cobra's charge-up skill row currently uses `EMin=2`, `EMax=4`, growth columns `1/1/2/3/4` and `1/2/3/4/5`, with `ELen=100`, `HitShift=4`, and `SrcDam=128`.
-- Charge 1 and charge 2 both use the same 4 second poison duration, but charge 2 adds splash coverage instead of more duration.
+- Cobra's charge-up skill row currently carries direct `EType` / `EMin` / `EMax` / `ELen` so charge 1 releases as a single-target poison finisher.
+- `cobrastrikehit` was removed after testing because it made charge 1 behave like an AoE release.
+- `cobrastrikenova` in `missiles.txt` mirrors the same poison curve and `ELen=50`, with `SrcDamage=128`.
+- `prgcalc2` must stay populated for `cltprgfunc2=9`; otherwise charge 2 can work mechanically while drawing no poison cloud visual.
+- `cobrastrikecloud` should not be reintroduced as the charge 2 server missile without retesting repeated collision damage; it is currently only the charge 2 client visual.
+- Charge 1, charge 2, and charge 3 tooltips can be equal while gameplay differs, because the tooltip is formula-driven and may not reflect whether a payload comes from the skill row or missile row.
 
 ## Poison Cloud Collision Behavior
 
@@ -158,6 +172,7 @@ Interpretation:
 - The internal `skills.txt` row for Phoenix Strike is named `Royal Strike`, even though the game displays Phoenix Strike.
 - Phoenix Strike's released elemental effects mostly come from missiles and do not use `SrcDamage` on the released payloads the way we first hoped.
 - Fists of Fire has `SrcDam=128` on the skill row. For charge 1/2 weapon scaling, use the skill row's progressive conversion lever: `prgdam=4` with `calc1=100`, described in the table as `% Weapon Damage dealt as Fire for progressive release`.
+- Fists of Fire's charge 1/2 tooltip text hardcodes `100%% weapon damage as fire`; keep that string in sync if `calc1` changes from `100`.
 - Avoid putting `SrcDamage` directly on `fistsoffirefirewall`; it is a lingering collision fire field and has the same class of repeated-hit risk as the old Cobra cloud experiment.
 - Dragon Claw can feel strong with Fists of Fire because multiple charge-release payloads can happen across the two claw attacks. Poison is trickier because poison applications compete/refresh rather than simply stacking like separate fire hits.
 
