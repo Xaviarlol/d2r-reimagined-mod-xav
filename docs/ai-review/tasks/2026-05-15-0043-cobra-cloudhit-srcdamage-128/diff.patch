@@ -1,0 +1,229 @@
+diff --git a/data/global/excel/base/missiles.txt b/data/global/excel/base/missiles.txt
+index 5dc61222..d8b78f8c 100644
+--- a/data/global/excel/base/missiles.txt
++++ b/data/global/excel/base/missiles.txt
+@@ -913,4 +913,4 @@ arcticblast_explode	910	6		23					0																																								0	Stu
+ arcticblast_linger	911	1		1																																													0	Stun Length (If 0 & Skill is not null, then use Skill's Calc2 instead)							40		4		255	255	255	0	0	1	expansion\twister	1024	40	16		1	18	36	3								1	0				2																1						2	1																	cold	8	7	13	20	62	96	10	9	16	25	68	102	(skill('Firestorm'.clc5)-skill('Arctic Blast'.blvl))*skill('Arctic Blast'.par8)+skill('Summon Spirit Wolf'.blvl)*skill('Arctic Blast'.par5)	50				32	4																								0
+ cobrastrikecloud	912	4		3					10	Velocity for Increment 1	4	Velocity for Increment 2									24	Missile Spawn Rate (CltSubMissile1)	1	# of Missiles created (CltSubMissile1)	6	Radius to randomly create Missiles (CltSubMissile1)																															150				128	255	128	0	0	1	PoisonSparks	1024	31	16		1	10	19	3			1	1	1		1						2											1					1						4		0																pois	1	0	0	0	0	0	2	0	0	0	0	0	skill('Tiger Strike'.blvl)*10	100				6	8			object_poison_loop													poisonpuff								0
+ cobrastrikenova	913	1		1					4	Nova range baseline; +0.5 yards per level																																											10	10			15+((skill('Cobra Strike'.lvl)-1)*15)/24				75	255	150	0	0	0	poisonNova	1024	30	16					3			1					1	4				1												1				1				4		4		128																pois	8	4	5	6	10	14	14	6	7	10	13	19	skill('Tiger Strike'.blvl)*10	50				80	32			necromancer_poisonnova																					0
+-cobrastrikecloudhit	914	1		1					4	Nova range baseline; +0.5 yards per level																																											10	10			15+((skill('Cobra Strike'.lvl)-1)*15)/24				75	255	150	0	0	0	poisonNova	1024	30	16					3			1					1	4				1												1				1				4		3		0																pois	3	1	2	2	3	5	5	2	2	3	4	6	skill('Tiger Strike'.blvl)*10	150				80	32			necromancer_poisonnova																					0
++cobrastrikecloudhit	914	1		1					4	Nova range baseline; +0.5 yards per level																																											10	10			15+((skill('Cobra Strike'.lvl)-1)*15)/24				75	255	150	0	0	0	poisonNova	1024	30	16					3			1					1	4				1												1				1				4		3		128																pois	3	1	2	2	3	5	5	2	2	3	4	6	skill('Tiger Strike'.blvl)*10	150				80	32			necromancer_poisonnova																					0
+diff --git a/data/global/excel/missiles.txt b/data/global/excel/missiles.txt
+index 5dc61222..d8b78f8c 100644
+--- a/data/global/excel/missiles.txt
++++ b/data/global/excel/missiles.txt
+@@ -913,4 +913,4 @@ arcticblast_explode	910	6		23					0																																								0	Stu
+ arcticblast_linger	911	1		1																																													0	Stun Length (If 0 & Skill is not null, then use Skill's Calc2 instead)							40		4		255	255	255	0	0	1	expansion\twister	1024	40	16		1	18	36	3								1	0				2																1						2	1																	cold	8	7	13	20	62	96	10	9	16	25	68	102	(skill('Firestorm'.clc5)-skill('Arctic Blast'.blvl))*skill('Arctic Blast'.par8)+skill('Summon Spirit Wolf'.blvl)*skill('Arctic Blast'.par5)	50				32	4																								0
+ cobrastrikecloud	912	4		3					10	Velocity for Increment 1	4	Velocity for Increment 2									24	Missile Spawn Rate (CltSubMissile1)	1	# of Missiles created (CltSubMissile1)	6	Radius to randomly create Missiles (CltSubMissile1)																															150				128	255	128	0	0	1	PoisonSparks	1024	31	16		1	10	19	3			1	1	1		1						2											1					1						4		0																pois	1	0	0	0	0	0	2	0	0	0	0	0	skill('Tiger Strike'.blvl)*10	100				6	8			object_poison_loop													poisonpuff								0
+ cobrastrikenova	913	1		1					4	Nova range baseline; +0.5 yards per level																																											10	10			15+((skill('Cobra Strike'.lvl)-1)*15)/24				75	255	150	0	0	0	poisonNova	1024	30	16					3			1					1	4				1												1				1				4		4		128																pois	8	4	5	6	10	14	14	6	7	10	13	19	skill('Tiger Strike'.blvl)*10	50				80	32			necromancer_poisonnova																					0
+-cobrastrikecloudhit	914	1		1					4	Nova range baseline; +0.5 yards per level																																											10	10			15+((skill('Cobra Strike'.lvl)-1)*15)/24				75	255	150	0	0	0	poisonNova	1024	30	16					3			1					1	4				1												1				1				4		3		0																pois	3	1	2	2	3	5	5	2	2	3	4	6	skill('Tiger Strike'.blvl)*10	150				80	32			necromancer_poisonnova																					0
++cobrastrikecloudhit	914	1		1					4	Nova range baseline; +0.5 yards per level																																											10	10			15+((skill('Cobra Strike'.lvl)-1)*15)/24				75	255	150	0	0	0	poisonNova	1024	30	16					3			1					1	4				1												1				1				4		3		128																pois	3	1	2	2	3	5	5	2	2	3	4	6	skill('Tiger Strike'.blvl)*10	150				80	32			necromancer_poisonnova																					0
+diff --git a/data/local/lng/strings/skills.json b/data/local/lng/strings/skills.json
+index fd6eed7c..58c885c4 100644
+--- a/data/local/lng/strings/skills.json
++++ b/data/local/lng/strings/skills.json
+@@ -34092,7 +34092,7 @@
+     {
+         "id": 56101,
+         "Key": "Eskillcobra2",
+-        "enUS": "Charge 2 - Poison Cloud: %d-%d over 6 sec"
++        "enUS": "Charge 2 - Poison Cloud: %d-%d over 6 sec + 100%% weapon damage"
+     },
+     {
+         "id": 56102,
+diff --git a/docs/ai-review/tasks/2026-05-15-0043-cobra-cloudhit-srcdamage-128/design.md b/docs/ai-review/tasks/2026-05-15-0043-cobra-cloudhit-srcdamage-128/design.md
+new file mode 100644
+index 00000000..55fe0217
+--- /dev/null
++++ b/docs/ai-review/tasks/2026-05-15-0043-cobra-cloudhit-srcdamage-128/design.md
+@@ -0,0 +1,67 @@
++# Cobra Cloudhit SrcDamage 128
++
++## Context
++
++Cobra Strike charge 2 currently uses a split path:
++
++```text
++server payload: cobrastrikecloudhit
++client visual:  cobrastrikecloud
++```
++
++The old dangerous setup was source damage on a lingering cloud/collision missile. That could apply weapon damage repeatedly as the cloud collision checked targets.
++
++The safer setup is to place source damage only on the dedicated one-shot server payload:
++
++```text
++cobrastrikecloudhit
++```
++
++## Change
++
++Set source damage to 100% on the charge 2 server payload in active and base `missiles.txt`:
++
++```text
++cobrastrikecloudhit  SrcDamage=128
++```
++
++Keep the lingering visual cloud at zero source damage:
++
++```text
++cobrastrikecloud     SrcDamage=0
++```
++
++Keep charge 3 unchanged:
++
++```text
++cobrastrikenova      SrcDamage=128
++```
++
++Update `Eskillcobra2` from:
++
++```text
++Charge 2 - Poison Cloud: %d-%d over 6 sec
++```
++
++to:
++
++```text
++Charge 2 - Poison Cloud: %d-%d over 6 sec + 100%% weapon damage
++```
++
++## Non-Goals
++
++- Do not change Cobra charge 1 damage or release behavior.
++- Do not change Cobra charge 2 flat poison values, `HitShift`, `ELen`, range, or visual duration.
++- Do not set source damage on `cobrastrikecloud`.
++- Do not change Cobra charge 3 nova fields.
++- Do not alter Phoenix Strike source-damage rows in this pass.
++
++## Validation Plan
++
++- Check active/base `missiles.txt` both remain 172 columns.
++- Check active/base Cobra rows match.
++- Check `cobrastrikecloudhit` has `SrcDamage=128`.
++- Check `cobrastrikecloud` remains `SrcDamage=0`.
++- Check `cobrastrikenova` remains `SrcDamage=128`.
++- Parse `data/local/lng/strings/skills.json` as JSON.
+diff --git a/docs/ai-review/tasks/2026-05-15-0043-cobra-cloudhit-srcdamage-128/request.md b/docs/ai-review/tasks/2026-05-15-0043-cobra-cloudhit-srcdamage-128/request.md
+new file mode 100644
+index 00000000..ced050fe
+--- /dev/null
++++ b/docs/ai-review/tasks/2026-05-15-0043-cobra-cloudhit-srcdamage-128/request.md
+@@ -0,0 +1,78 @@
++---
++schema: ai-review-task-v1
++id: 2026-05-15-0043-cobra-cloudhit-srcdamage-128
++status: ready_for_claude
++phase: code_review
++round: 1
++max_rounds: 3
++created_by: codex
++created_at: 2026-05-15T00:43:00+02:00
++updated_at: 2026-05-15T00:43:00+02:00
++repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
++branch: xav-custom
++base_ref: HEAD
++head_ref:
++original_user_request_included: true
++live_publish_allowed: true
++last_review:
++last_verdict:
++claimed_by:
++claimed_at:
++reviewed_at:
++---
++
++# Review Request
++
++## Original User Request
++
++```text
++ok. Lets the weapon damage back on, but set to 128 (100%)
++```
++
++## Prior Context
++
++Eric wants Cobra Strike charge 2 to regain weapon/source damage, but only in the safer shape that seemed to behave normally before it was temporarily removed. The old broken behavior came from attaching source damage to a lingering cloud/collision missile, which could pulse weapon damage many times per second.
++
++The current intended split is:
++
++- `cobrastrikecloudhit`: charge 2 server damage payload
++- `cobrastrikecloud`: charge 2 client visual / lingering cloud row
++- `cobrastrikenova`: charge 3 payload
++
++## Goal
++
++Set Cobra Strike charge 2's one-shot server payload to 100% source/weapon damage:
++
++- `cobrastrikecloudhit` should use `SrcDamage=128`
++
++Keep the lingering visual cloud row disabled for source damage:
++
++- `cobrastrikecloud` should stay `SrcDamage=0`
++
++Keep charge 3 unchanged:
++
++- `cobrastrikenova` should stay `SrcDamage=128`
++
++Update the charge 2 tooltip so it again advertises 100% weapon damage.
++
++## Phase
++
++code_review
++
++## Scope
++
++- `data/global/excel/missiles.txt`
++- `data/global/excel/base/missiles.txt`
++- `data/local/lng/strings/skills.json`
++- `docs/modding-findings.md`
++
++## Design Or Diff
++
++See `design.md` and `diff.patch`.
++
++## Review Questions
++
++1. Does this restore 100% source damage only on `cobrastrikecloudhit`?
++2. Does `cobrastrikecloud` remain at `SrcDamage=0`, avoiding the old repeated-collision weapon damage risk?
++3. Is the tooltip consistent with the new gameplay fields?
++4. Are active/base `missiles.txt` synchronized and TSV-safe?
+diff --git a/docs/modding-findings.md b/docs/modding-findings.md
+index f3d17aca..d1586875 100644
+--- a/docs/modding-findings.md
++++ b/docs/modding-findings.md
+@@ -56,7 +56,7 @@ Practical implication: raw poison numbers in the table are not already final dis
+ - `128` means 100 percent source damage.
+ - Values above `128` are unsafe. D2RDoc marks this field as 8-bit, and our test with `512` caused broken-looking character sheet damage such as `0-1`.
+ - Use `128` as the practical max unless a specific row proves otherwise.
+-- For Cobra Strike, weapon scaling felt good after flat poison was reduced to nearly nothing and `SrcDamage=128` was used, but source damage is risky on DOT/cloud-style effects. Current Cobra charge 2 cloud rows keep `SrcDamage=0`; charge 3 remains the source-damage test path.
++- For Cobra Strike, weapon scaling felt good after flat poison was reduced to nearly nothing and `SrcDamage=128` was used, but source damage is risky on lingering DOT/cloud-style collision missiles. Current Cobra charge 2 keeps `SrcDamage=128` only on the dedicated one-shot `cobrastrikecloudhit` server payload; the lingering visual cloud row stays at `SrcDamage=0`.
+ - Active Tiger Strike charges did not appear to multiply Cobra Strike's source-damage release in testing. Hard-point synergy from `EDmgSymPerCalc = skill('Tiger Strike'.blvl)*10` still applies.
+
+ ## Cobra Strike Current Model
+@@ -67,14 +67,14 @@ Current design direction:
+ - Charge 2: currently routed through the dedicated `cobrastrikecloudhit` server missile so charge 2 can be balanced independently from charge 3.
+ - Charge 2 uses `cltprgfunc2=9`, `prgcalc2=par1+((lvl-1)/6)`, and `cltmissileb=cobrastrikecloud` as the client-only poison cloud visual. The client cloud visual now uses `Range=150`, which is 6 seconds at 25 frames per second.
+ - Charge 3: poison nova missile, `SrcDamage=128`, plus flat poison over 2 seconds. Its missile range is intentionally modest and grows slowly.
+-- Flat poison should stay moderate on DOT/cloud-style effects because source damage can create unclear repeated-hit scaling.
++- Flat poison should stay moderate on DOT/cloud-style effects because source damage can create unclear repeated-hit scaling when it is attached to a lingering collision cloud.
+ - Current playtest note: charge 2 cloud visuals work when `cltmissileb=cobrastrikecloud` and `prgcalc2` stays populated. Charge 1 must not use the helper missile path, because that made it behave like the charge 2 AoE.
+
+ Important current-value note:
+
+ - Cobra's charge-up skill row currently carries direct `EType` / `EMin` / `EMax` / `ELen` so charge 1 releases as a single-target poison finisher.
+ - `cobrastrikehit` was removed after testing because it made charge 1 behave like an AoE release.
+-- `cobrastrikecloudhit` is a charge 2-only copy of the nova-style server payload with lower poison values, `HitShift=3`, `SrcDamage=0`, and `ELen=150`. This is intended to make the total charge 2 flat poison payload about half of the previous 2-second payload while lasting 6 seconds, without adding source/weapon damage to the DOT cloud.
++- `cobrastrikecloudhit` is a charge 2-only copy of the nova-style server payload with lower poison values, `HitShift=3`, `SrcDamage=128`, and `ELen=150`. This is intended to add one 100% source/weapon damage payload while keeping the total charge 2 flat poison payload about half of the previous 2-second payload over 6 seconds.
+ - `cobrastrikenova` in `missiles.txt` remains the charge 3 payload with the previous poison curve, `HitShift=4`, `ELen=50`, and `SrcDamage=128`.
+ - `prgcalc2` must stay populated for `cltprgfunc2=9`; otherwise charge 2 can work mechanically while drawing no poison cloud visual.
+ - `cobrastrikecloud` should not be reintroduced as the charge 2 server missile without retesting repeated collision damage; it is currently only the charge 2 client visual.
+@@ -87,7 +87,7 @@ Historical note from the removed Cobra charge 2 cloud experiment:
+ - Monsters do not simply stand in the cloud and take a normal periodic DOT.
+ - The monster must move through or across cloud collision areas.
+ - Damage is applied on collision/hit events as the monster crosses cloud pieces.
+-- With `SrcDamage=128`, weapon damage was applied through those collision events. Current cloud rows use `SrcDamage=0` until this behavior is safer to reason about.
++- With `SrcDamage=128`, weapon damage was applied through those collision events. Keep `SrcDamage=0` on the lingering `cobrastrikecloud` visual/collision row; put weapon damage only on the dedicated one-shot `cobrastrikecloudhit` server payload.
+ - This means the cloud can behave more like repeated collision damage than a passive poison puddle.
+
+ Current `cobrastrikecloud` row characteristics:
