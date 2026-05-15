@@ -33475,7 +33475,7 @@
     {
         "id": 22275,
         "Key": "Skillsd281",
-        "enUS": "Charge-up Skill\n\nadds elemental novas to finishing moves",
+        "enUS": "Charge-up Skill\n\nadds elemental effects and 100%% weapon damage to finishing moves",
         "zhTW": "集氣技能\n\n使終結技釋放元素新星",
         "deDE": "Aufladefertigkeit\n\nVerstärkt Finishing-Moves mit Elementarnovas.",
         "esES": "Habilidad de cargas:\n\nañade novas elementales a los remates",
@@ -33492,7 +33492,7 @@
     {
         "id": 22276,
         "Key": "Skillld281",
-        "enUS": "Charge-up Skill\n\nadds elemental novas to finishing moves\nmust use a dragon finishing move or\nnormal attack to release charges",
+        "enUS": "Charge-up Skill\n\nconsecutive hits add elemental effects\nto finishing moves\nall charge releases add 100%% weapon damage\nburning ground does not add weapon damage",
         "zhTW": "集氣技能\n\n使終結技釋放元素新星\n必須使用龍系終結技或普通攻擊來釋放聚集的力量",
         "deDE": "Aufladefertigkeit\n\nFügt Finishing-Moves Elementarnovas hinzu.\nAufladungen werden mit Drachen-Finishing-Moves\noder normalen Angriffen freigesetzt.",
         "esES": "Habilidad de cargas\n\nAñade novas elementales a los remates.\nDebes utilizar un remate de dragón\no un ataque normal para liberar cargas.",
@@ -34036,7 +34036,7 @@
     {
         "id": 22308,
         "Key": "Eskillphoenix1",
-        "enUS": "Charge 1 - Meteor Damage: %d-%d",
+        "enUS": "Charge 1 - Meteor: %d-%d + 100%% weapon damage",
         "zhTW": "一次集氣 - 隕石傷害：%d - %d 點",
         "deDE": "Ladung 1 - Meteor-Schaden: %d-%d",
         "esES": "Carga 1: daño de meteorito: %d-%d p.",
@@ -34053,7 +34053,7 @@
     {
         "id": 22309,
         "Key": "Eskillphoenix2",
-        "enUS": "Charge 2 - Chain Lightning Damage: %d-%d",
+        "enUS": "Charge 2 - Chain Lightning: %d-%d + 100%% weapon damage",
         "zhTW": "兩次集氣 - 連鎖閃電傷害：%d - %d 點",
         "deDE": "Ladung 2 - Kettenblitzschaden: %d-%d",
         "esES": "Carga 2: daño de cadena de rayos: %d-%d p.",
@@ -34070,7 +34070,7 @@
     {
         "id": 22310,
         "Key": "Eskillphoenix3",
-        "enUS": "Charge 3 - Chaos Ice Bolt Damage: %d-%d",
+        "enUS": "Charge 3 - Chaos Ice Bolts: %d-%d + 100%% weapon damage",
         "zhTW": "三次集氣 - 混沌冰彈傷害：%d - %d 點",
         "deDE": "Ladung 3 - Chaoseisblitz-Schaden: %d-%d",
         "esES": "Carga 3: daño de descarga de hielo de caos: %d-%d p.",
