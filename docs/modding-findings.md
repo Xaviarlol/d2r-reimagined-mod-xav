@@ -28,6 +28,9 @@ Updated: 2026-05-16.
 - In `misc.txt`, D2R advanced stash stacking for loose special items uses `AdvancedStashStackable=1`. This is separate from the older explicit stack item rows that use `stackable=1`, such as `1oc` / `1oa`.
 - This mod's player-facing Topaz and Emerald item codes are `gmt` and `gme`.
 - Vanilla perfect gem codes such as `gpy` and `gpg` may still exist in `misc.txt`, but they are not the Topaz/Emerald items used by the mod's active cube recipes.
+- Orb of Conversion / Assemblage rank II and III item codes use the 3-character-safe codes `oc2`, `oc3`, `oa2`, and `oa3`. The original rank I codes remain `ooc` and `ooa`, with only their visible names changed to include `I`.
+- Current ranked orb implementation tiers armor and weapon recipes with `bas` / `exc` / `eli`. Jewelry conversion/assemblage recipes remain on the old rank-I behavior until we verify that cube output `lvl` gates the unique/set jewelry selection pool before the item is chosen.
+- Generic Jewelry Orbs treasure-class weighting keeps rank I as the common baseline and adds rank II/III as rarer outcomes: Infusion `12`, Assemblage I/II/III `6/2/1`, Conversion I/II/III `6/2/1`.
 
 ## Belt Potion Rows
 

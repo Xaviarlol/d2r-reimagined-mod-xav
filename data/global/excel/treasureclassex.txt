@@ -7,17 +7,23 @@ Gold 2x			1					0	Void	3	gld,mul=2048	1																										0
 Gold 2.5x			1					0	Void	3	gld,mul=2560	1																										0
 Infusion Orb			1					0	ooi	1																									1			0
 Assemblage Orb			1					0	ooa	1																									1			0
+Assemblage Orb II			1					0	oa2	1																									1			0
+Assemblage Orb III			1					0	oa3	1																									1			0
 Conversion Orb			1					0	ooc	1																									1			0
+Conversion Orb II			1					0	oc2	1																									1			0
+Conversion Orb III			1					0	oc3	1																									1			0
 Socket Orb			1					0	oos	1																									1			0
 Corruption Orb			1					0	ka3	1																									1			0
 Shadow Orb			1					0	ooe	1																									1			0
 Renewal Orb			1					0	oor	1																									1			0
+Jewelry Orbs			1					0	Infusion Orb	12	Assemblage Orb	6	Assemblage Orb II	2	Assemblage Orb III	1	Conversion Orb	6	Conversion Orb II	2	Conversion Orb III	1													1			0
+Assemblage Orb Quest			1					0	ooa	3	oa2	2	oa3	1																					1			0
+Conversion Orb Quest			1					0	ooc	3	oc2	2	oc3	1																					1			0
 Gem Cluster			1					0	1gc	1																									1			0
 Pandemonium Key A			1					0	pk1	1																									1			0
 Pandemonium Key B			1					0	pk2	1																									1			0
 Pandemonium Key C			1					0	pk3	1																									1			0
 Pandemonium Keys			1					0	pk1	1	pk2	1	pk3	1																					1			0
-Jewelry Orbs			1					0	Infusion Orb	3	Assemblage Orb	1	Conversion Orb	1																					1			0
 Sunder Charms			1					2400	PreCrafted Cold Rupture	1	PreCrafted Flame Rift	1	PreCrafted Crack of the Heavens	1	PreCrafted Rotting Fissure	1	PreCrafted Bone Break	1	PreCrafted Black Cleft	1															1			0
 Norm TZ Generic			1					114	Corruption Orb	1																									1			0
 NMH Boss			1					114	Socket Orb	1																									1			0
@@ -1256,9 +1262,9 @@ Mephisto (H) Desecrated D	22	96	-3	983	983	983	1024	0	Hell TZ Boss	1	Sunder Char
 Mephistoq Item			7					5	Act 4 Good	3	Act 4 Equip A	52																										0
 Mephistoq Item (N)			7					5	Act 4 (N) Good	3	Act 4 (N) Equip A	52																										0
 Mephistoq Item (H)			7					5	Act 4 (H) Good	3	Act 4 (H) Equip A	52																										0
-Mephistoq			-2	993	993	1024	1024	0	Assemblage Orb	1	Mephistoq Item	1																										0
-Mephistoq (N)			-2	993	993	1024	1024	0	Assemblage Orb	1	Mephistoq Item (N)	1																										0
-Mephistoq (H)			-2	993	993	1024	1024	0	Assemblage Orb	1	Mephistoq Item (H)	1																										0
+Mephistoq			-2	993	993	1024	1024	0	Assemblage Orb Quest	1	Mephistoq Item	1																										0
+Mephistoq (N)			-2	993	993	1024	1024	0	Assemblage Orb Quest	1	Mephistoq Item (N)	1																										0
+Mephistoq (H)			-2	993	993	1024	1024	0	Assemblage Orb Quest	1	Mephistoq Item (H)	1																										0
 Izual Item			5					5	Act 4 Good	3	Act 4 Equip B	25	Potion 2	15	Gold 1.5x	14																						0
 Izual Item Desecrated A	32	29	5					5	Act 4 Good	3	Act 4 Equip B	25	Potion 2	15	Gold 1.5x	14																						0
 Izual Item Desecrated B	32	38	5					5	Act 5 Good	3	Act 5 Equip C	25	Potion 2	15	Gold 1.5x	14																						0
@@ -1338,9 +1344,9 @@ Diablo (H) Desecrated B	23	96	-3	983	983	983	1024	0	Hell TZ Boss	1	Sunder Charms
 Diabloq Item			7					5	Act 5 Good	4	Act 5 Equip A	30																										0
 Diabloq Item (N)			7					5	Act 5 (N) Good	4	Act 5 (N) Equip A	30																										0
 Diabloq Item (H)			7					5	Act 5 (H) Good	4	Act 5 (H) Equip A	30																										0
-Diabloq			-2	993	993	1024	1024	0	Conversion Orb	1	Diabloq Item	1																										0
-Diabloq (N)			-2	993	993	1024	1024	0	Conversion Orb	1	Diabloq Item (N)	1																										0
-Diabloq (H)			-2	993	993	1024	1024	0	Conversion Orb	1	Diabloq Item (H)	1																										0
+Diabloq			-2	993	993	1024	1024	0	Conversion Orb Quest	1	Diabloq Item	1																										0
+Diabloq (N)			-2	993	993	1024	1024	0	Conversion Orb Quest	1	Diabloq Item (N)	1																										0
+Diabloq (H)			-2	993	993	1024	1024	0	Conversion Orb Quest	1	Diabloq Item (H)	1																										0
 Frozenstein Item			5					10	Act 5 Good	3	Act 5 Equip A	25	Potion 2	15	Gold 1.5x	14																						0
 Frozenstein Item Desecrated A			5					10	Act 5 Good	3	Act 5 Equip A	25	Potion 2	15	Gold 1.5x	14																						0
 Frozenstein Item Desecrated B			5					10	Act 5 Good	3	Act 5 Equip C	25	Potion 2	15	Gold 1.5x	14																						0

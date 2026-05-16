@@ -1,0 +1,487 @@
+diff --git a/data/global/excel/base/cubemain.txt b/data/global/excel/base/cubemain.txt
+index 0766b2d3..8fd6b6db 100644
+--- a/data/global/excel/base/cubemain.txt
++++ b/data/global/excel/base/cubemain.txt
+@@ -221,13 +221,21 @@ CORRUPT ITEM SUCCESS - Weapon & Orb of Corruption + CorruptedDummy 21-45 = Nothi
+ CORRUPT ITEM SUCCESS - Weapon & Orb of Corruption + CorruptedDummy 11-20 = Brick Rare (10 % Chance)	1				100	15	362	11		2	weap	ka3						"usetype,rar"			100											corrupted			1	1	corruptedDummy			101	101																																																																0
+ CORRUPT ITEM SUCCESS - Weapon & Orb of Corruption + CorruptedDummy 01-10 = Brick White (10 % Chance)	1				100	15	362	1		2	weap	ka3						"usetype,nor"			100											corrupted			1	1	corruptedDummy			101	101																																																																0
+ CONVERSION AMULET - 1 Orb of Conversion & 1 Rare Amulet = Unique Amulet	1				100					2	"amu,rar"	ooc						"amu,uni"	99																																																																																						0
+-CONVERSION ARMOR - 1 Orb of Conversion & 1 Rare Armor/Shield  = Unique Armor	1				100					2	"armo,rar"	ooc						"usetype,uni"	99																																																																																						0
+ CONVERSION RING - 1 Orb of Conversion & 1 Rare Ring = Unique Ring	1				100					2	"rin,rar"	ooc						"rin,uni"	99																																																																																						0
+-CONVERSION WEAPON - 1 Orb of Conversion & 1 Rare Weapon = Unique Weapon	1				100					2	"weap,rar"	ooc						"usetype,uni"	99																																																																																						0
++CONVERSION ARMOR I - 1 Orb of Conversion I & 1 Normal Rare Armor/Shield = Normal Unique Armor	1				100					2	"armo,bas,rar"	ooc						"usetype,uni"	99																																																																																						0
++CONVERSION ARMOR II - 1 Orb of Conversion II & 1 Exceptional Rare Armor/Shield = Exceptional Unique Armor	1				100					2	"armo,exc,rar"	oc2						"usetype,uni"	99																																																																																						0
++CONVERSION ARMOR III - 1 Orb of Conversion III & 1 Elite Rare Armor/Shield = Elite Unique Armor	1				100					2	"armo,eli,rar"	oc3						"usetype,uni"	99																																																																																						0
++CONVERSION WEAPON I - 1 Orb of Conversion I & 1 Normal Rare Weapon = Normal Unique Weapon	1				100					2	"weap,bas,rar"	ooc						"usetype,uni"	99																																																																																						0
++CONVERSION WEAPON II - 1 Orb of Conversion II & 1 Exceptional Rare Weapon = Exceptional Unique Weapon	1				100					2	"weap,exc,rar"	oc2						"usetype,uni"	99																																																																																						0
++CONVERSION WEAPON III - 1 Orb of Conversion III & 1 Elite Rare Weapon = Elite Unique Weapon	1				100					2	"weap,eli,rar"	oc3						"usetype,uni"	99																																																																																						0
+ ASSEMBLAGE AMULET - 1 Orb of Assemblage & 1 Rare Amulet = Set Amulet	1				100					2	"amu,rar"	ooa						"amu,set"	99																																																																																						0
+-ASSEMBLAGE ARMOR - 1 Orb of Assemblage & 1 Rare Armor/Shield = Set Armor	1				100					2	"armo,rar"	ooa						"usetype,set"	99																																																																																						0
+ ASSEMBLAGE RING - 1 Orb of Assemblage & 1 Rare Ring = Set Ring	1				100					2	"rin,rar"	ooa						"rin,set"	99																																																																																						0
+-ASSEMBLAGE WEAPON - 1 Orb of Assemblage & 1 Rare Weapon = Set Weapon	1				100					2	"weap,rar"	ooa						"usetype,set"	99																																																																																						0
++ASSEMBLAGE ARMOR I - 1 Orb of Assemblage I & 1 Normal Rare Armor/Shield = Normal Set Armor	1				100					2	"armo,bas,rar"	ooa						"usetype,set"	99																																																																																						0
++ASSEMBLAGE ARMOR II - 1 Orb of Assemblage II & 1 Exceptional Rare Armor/Shield = Exceptional Set Armor	1				100					2	"armo,exc,rar"	oa2						"usetype,set"	99																																																																																						0
++ASSEMBLAGE ARMOR III - 1 Orb of Assemblage III & 1 Elite Rare Armor/Shield = Elite Set Armor	1				100					2	"armo,eli,rar"	oa3						"usetype,set"	99																																																																																						0
++ASSEMBLAGE WEAPON I - 1 Orb of Assemblage I & 1 Normal Rare Weapon = Normal Set Weapon	1				100					2	"weap,bas,rar"	ooa						"usetype,set"	99																																																																																						0
++ASSEMBLAGE WEAPON II - 1 Orb of Assemblage II & 1 Exceptional Rare Weapon = Exceptional Set Weapon	1				100					2	"weap,exc,rar"	oa2						"usetype,set"	99																																																																																						0
++ASSEMBLAGE WEAPON III - 1 Orb of Assemblage III & 1 Elite Rare Weapon = Elite Set Weapon	1				100					2	"weap,eli,rar"	oa3						"usetype,set"	99																																																																																						0
+ SALVAGE SET ARMOR/SHIELD NORMAL - Normal Set Armor/Shield = 1 Orb(s) of Infusion	1				100					1	"armo,bas,set"							ooi																																																																																							0
+ SALVAGE SET WEAPON NORMAL - Normal Set Weapon = 1 Orb(s) of Infusion	1				100					1	"weap,bas,set"							ooi																																																																																							0
+ SALVAGE UNIQUE ARMOR/SHIELD NORMAL - Normal Unique Armor/Shield = 1 Orb(s) of Infusion	1				100					1	"armo,bas,uni"							ooi																																																																																							0
+@@ -242,6 +250,12 @@ SALVAGE UNIQUE ARMOR/SHIELD ELITE - Elite Unique Armor/Shield = 3 Orb(s) of Infu
+ SALVAGE UNIQUE WEAPON ELITE - Elite Unique Weapon = 3 Orb(s) of Infusion	1				100					1	"weap,eli,uni"							ooi																													ooi																													ooi																													0
+ ORB CONVERSION - 11 Orbs of Infusion + Topaz = Orb of Conversion	1				100					12	"ooi,qty=11"	gmt						ooc																																																																																							0
+ ORB ASSEMBLAGE - 11 Orbs of Infusion + Emerald = Orb of Assemblage	1				100					12	"ooi,qty=11"	gme						ooa																																																																																							0
++ORB CONVERSION II - 3 Orbs of Conversion I = Orb of Conversion II	1				100					3	"ooc,qty=3"							oc2																																																																																							0
++ORB CONVERSION III - 9 Orbs of Conversion I = Orb of Conversion III	1				100					9	"ooc,qty=9"							oc3																																																																																							0
++ORB CONVERSION III - 3 Orbs of Conversion II = Orb of Conversion III	1				100					3	"oc2,qty=3"							oc3																																																																																							0
++ORB ASSEMBLAGE II - 3 Orbs of Assemblage I = Orb of Assemblage II	1				100					3	"ooa,qty=3"							oa2																																																																																							0
++ORB ASSEMBLAGE III - 9 Orbs of Assemblage I = Orb of Assemblage III	1				100					9	"ooa,qty=9"							oa3																																																																																							0
++ORB ASSEMBLAGE III - 3 Orbs of Assemblage II = Orb of Assemblage III	1				100					3	"oa2,qty=3"							oa3																																																																																							0
+ SOCKET ARMOR/SHIELD - 1 Orb of Socketing & Armor/Shield = Random # of Sockets	1				100					2	armo	oos						useitem			100	sock			1	4																																																																															0
+ SOCKET WEAPON - 1 Orb of Socketing & 1 Weapon = Random # of Sockets	1				100					2	weap	oos						useitem			100	sock			1	6																																																																															0
+ SOCKET RETRIEVE - Jewel Pliers & Socketed Item = Unsocket Item	1				100					2	"any,nru,sock"	jwp						"useitem,rem"																																																																																							0
+diff --git a/data/global/excel/base/misc.txt b/data/global/excel/base/misc.txt
+index 2e402013..94a1d9df 100644
+--- a/data/global/excel/base/misc.txt
++++ b/data/global/excel/base/misc.txt
+@@ -240,9 +240,13 @@ Orb of Corruption	1	100	0	0	0			1	1		0	1	1		ka3	spe	ka3	ka3	ka3	ka3	16	1	1	0	0	0
+ Orb of Corruption Stack	0	100	0	0	0			1	1		0	1	1		1ka	spe	1ka	1ka	1ka	1ka	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+ Orb of Socketing	1	100	0	0	0			1	1		0	1	1		oos	spe	oos	oos	oos	oos	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oosDescription	oosDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
+ Orb of Socketing Stack	0	100	0	0	0			1	1		0	1	1		1os	spe	1os	1os	1os	1os	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+-Orb of Conversion	1	100	0	0	0			1	1		0	1	1		ooc	spe	ooc	ooc	ooc	ooc	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oocDescription	oocDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Conversion I	1	100	0	0	0			1	1		0	1	1		ooc	spe	ooc	ooc	ooc	ooc	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oocDescription	oocDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
+ Orb of Conversion Stack	0	100	0	0	0			1	1		0	1	1		1oc	spe	1oc	1oc	1oc	1oc	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+-Orb of Assemblage	1	100	0	0	0			1	1		0	1	1		ooa	spe	ooa	ooa	ooa	ooa	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	ooaDescription	ooaDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Assemblage I	1	100	0	0	0			1	1		0	1	1		ooa	spe	ooa	ooa	ooa	ooa	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	ooaDescription	ooaDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Conversion II	1	100	0	0	0			1	1		0	1	1		oc2	spe	oc2	oc2	oc2	oc2	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oc2Description	oc2Description				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Conversion III	1	100	0	0	0			1	1		0	1	1		oc3	spe	oc3	oc3	oc3	oc3	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oc3Description	oc3Description				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Assemblage II	1	100	0	0	0			1	1		0	1	1		oa2	spe	oa2	oa2	oa2	oa2	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oa2Description	oa2Description				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Assemblage III	1	100	0	0	0			1	1		0	1	1		oa3	spe	oa3	oa3	oa3	oa3	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oa3Description	oa3Description				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
+ Orb of Assemblage Stack	0	100	0	0	0			1	1		0	1	1		1oa	spe	1oa	1oa	1oa	1oa	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+ Orb of Infusion	1	100	0	0	0			1	1		0	1	1		ooi	spe	ooi	ooi	ooi	ooi	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	ooiDescription	ooiDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
+ Orb of Infusion Stack	0	100	0	0	0			1	1		0	1	1		1oi	spe	1oi	1oi	1oi	1oi	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+diff --git a/data/global/excel/base/treasureclassex.txt b/data/global/excel/base/treasureclassex.txt
+index dbda3ce7..8df0c46a 100644
+--- a/data/global/excel/base/treasureclassex.txt
++++ b/data/global/excel/base/treasureclassex.txt
+@@ -5,33 +5,34 @@ Gold 1x			1					0	Void	3	gld,mul=1024	1																										0
+ Gold 1.5x			1					0	Void	3	gld,mul=1536	1																										0
+ Gold 2x			1					0	Void	3	gld,mul=2048	1																										0
+ Gold 2.5x			1					0	Void	3	gld,mul=2560	1																										0
+-Infusion Orb (Normal)			1					0	ooi	1																									1			0
+-Assemblage Orb (Normal)			1					0	ooa	1																									1			0
+-Conversion Orb (Normal)			1					0	ooc	1																									1			0
+-Corruption Orb (Normal)			1					0	ka3	1																									1			0
+-Infusion Orb			1					0	1oi	1																									1			0
+-Assemblage Orb			1					0	1oa	1																									1			0
+-Conversion Orb			1					0	1oc	1																									1			0
+-Socket Orb			1					0	1os	1																									1			0
+-Corruption Orb			1					0	1ka	1																									1			0
+-Shadow Orb			1					0	1oe	1																									1			0
+-Renewal Orb			1					0	1or	1																									1			0
++Infusion Orb			1					0	ooi	1																									1			0
++Assemblage Orb			1					0	ooa	1																									1			0
++Assemblage Orb II			1					0	oa2	1																									1			0
++Assemblage Orb III			1					0	oa3	1																									1			0
++Conversion Orb			1					0	ooc	1																									1			0
++Conversion Orb II			1					0	oc2	1																									1			0
++Conversion Orb III			1					0	oc3	1																									1			0
++Socket Orb			1					0	oos	1																									1			0
++Corruption Orb			1					0	ka3	1																									1			0
++Shadow Orb			1					0	ooe	1																									1			0
++Renewal Orb			1					0	oor	1																									1			0
++Jewelry Orbs			1					0	Infusion Orb	12	Assemblage Orb	6	Assemblage Orb II	2	Assemblage Orb III	1	Conversion Orb	6	Conversion Orb II	2	Conversion Orb III	1													1			0
++Assemblage Orb Quest			1					0	ooa	3	oa2	2	oa3	1																					1			0
++Conversion Orb Quest			1					0	ooc	3	oc2	2	oc3	1																					1			0
+ Gem Cluster			1					0	1gc	1																									1			0
+ Pandemonium Key A			1					0	pk1	1																									1			0
+ Pandemonium Key B			1					0	pk2	1																									1			0
+ Pandemonium Key C			1					0	pk3	1																									1			0
+ Pandemonium Keys			1					0	pk1	1	pk2	1	pk3	1																					1			0
+-Jewelry Orbs Single			1					0	Infusion Orb (Normal)	3	Assemblage Orb (Normal)	1	Conversion Orb (Normal)	1																					1			0
+-Jewelry Orbs Stack			1					0	Infusion Orb	3	Assemblage Orb	1	Conversion Orb	1																					1			0
+ Sunder Charms			1					2400	PreCrafted Cold Rupture	1	PreCrafted Flame Rift	1	PreCrafted Crack of the Heavens	1	PreCrafted Rotting Fissure	1	PreCrafted Bone Break	1	PreCrafted Black Cleft	1															1			0
+ Norm TZ Generic			1					114	Corruption Orb	1																									1			0
+ NMH Boss			1					114	Socket Orb	1																									1			0
+ NM TZ Generic			1					114	Socket Orb	1	Corruption Orb	1																							1			0
+ Hell TZ Generic			1					740	Gem Cluster	7	Socket Orb	6	Corruption Orb	6	Pandemonium Keys	4	Renewal Orb	2	Shadow Orb	2															1			0
+ Hell TZ Boss			1					750	Gem Cluster	7	Socket Orb	7	Corruption Orb	7	Shadow Orb	2																			1			0
+-Jewelry A			1					25	rin	175	amu	75	jew	50	cm3	50	cm2	50	cm1	50	Jewelry Orbs Single	25																0
+-Jewelry B			1					25	rin	175	amu	75	jew	50	cm3	50	cm2	50	cm1	50	Jewelry Orbs Stack	25																0
+-Jewelry C			1					25	rin	150	amu	74	jew	74	cm3	49	cm2	49	cm1	49	Jewelry Orbs Stack	30																0
++Jewelry A			1					25	rin	175	amu	75	jew	50	cm3	50	cm2	50	cm1	50	Jewelry Orbs	25																0
++Jewelry B			1					25	rin	175	amu	75	jew	50	cm3	50	cm2	50	cm1	50	Jewelry Orbs	25																0
++Jewelry C			1					25	rin	150	amu	74	jew	74	cm3	49	cm2	49	cm1	49	Jewelry Orbs	30																0
+ Gem			1					0	gmm	1	gmt	1	gms	1	gme	1	gmd	1	gmr	1	gmk	1	gmo	1														0
+ Gem Stack			0					0	1am	1	1tp	1	1sa	1	1em	1	1di	1	1rb	1	1sk	1	1so	1														0
+ Misc			1					0	tsc	1	isc	1	Void	2																								0
+@@ -1171,9 +1172,9 @@ Duriel (H) - Desecrated D	34	96	-3	983	983	983	1024	0	Hell TZ Boss	1	Sunder Char
+ Durielq - Item			7					5	Act 3 Good	4	Act 3 Equip A	30																										0
+ Durielq (N) - Item			7					5	Act 3 (N) Good	4	Act 3 (N) Equip A	30																										0
+ Durielq (H) - Item			7					5	Act 3 (H) Good	4	Act 3 (H) Equip A	30																										0
+-Durielq			-2	993	993	1024	1024	0	Infusion Orb (Normal)	1	Durielq - Item	1																										0
+-Durielq (N)			-2	993	993	1024	1024	0	Infusion Orb (Normal)	1	Durielq (N) - Item	1																										0
+-Durielq (H)			-2	993	993	1024	1024	0	Infusion Orb (Normal)	1	Durielq (H) - Item	1																										0
++Durielq			-2	993	993	1024	1024	0	Infusion Orb	1	Durielq - Item	1																										0
++Durielq (N)			-2	993	993	1024	1024	0	Infusion Orb	1	Durielq (N) - Item	1																										0
++Durielq (H)			-2	993	993	1024	1024	0	Infusion Orb	1	Durielq (H) - Item	1																										0
+ Battlemaiden Item			5					10	Act 3 Good	3	Act 3 Equip A	20	Potion 1	15	Gold 1.5x	14																						0
+ Battlemaiden Item Desecrated A			5					10	Act 3 Good	3	Act 3 Equip A	20	Potion 1	15	Gold 1.5x	14																						0
+ Battlemaiden Item Desecrated B			5					10	Act 3 Good	3	Act 3 Equip C	20	Potion 1	15	Gold 1.5x	14																						0
+@@ -1261,9 +1262,9 @@ Mephisto (H) Desecrated D	22	96	-3	983	983	983	1024	0	Hell TZ Boss	1	Sunder Char
+ Mephistoq Item			7					5	Act 4 Good	3	Act 4 Equip A	52																										0
+ Mephistoq Item (N)			7					5	Act 4 (N) Good	3	Act 4 (N) Equip A	52																										0
+ Mephistoq Item (H)			7					5	Act 4 (H) Good	3	Act 4 (H) Equip A	52																										0
+-Mephistoq			-2	993	993	1024	1024	0	Assemblage Orb (Normal)	1	Mephistoq Item	1																										0
+-Mephistoq (N)			-2	993	993	1024	1024	0	Assemblage Orb (Normal)	1	Mephistoq Item (N)	1																										0
+-Mephistoq (H)			-2	993	993	1024	1024	0	Assemblage Orb (Normal)	1	Mephistoq Item (H)	1																										0
++Mephistoq			-2	993	993	1024	1024	0	Assemblage Orb Quest	1	Mephistoq Item	1																										0
++Mephistoq (N)			-2	993	993	1024	1024	0	Assemblage Orb Quest	1	Mephistoq Item (N)	1																										0
++Mephistoq (H)			-2	993	993	1024	1024	0	Assemblage Orb Quest	1	Mephistoq Item (H)	1																										0
+ Izual Item			5					5	Act 4 Good	3	Act 4 Equip B	25	Potion 2	15	Gold 1.5x	14																						0
+ Izual Item Desecrated A	32	29	5					5	Act 4 Good	3	Act 4 Equip B	25	Potion 2	15	Gold 1.5x	14																						0
+ Izual Item Desecrated B	32	38	5					5	Act 5 Good	3	Act 5 Equip C	25	Potion 2	15	Gold 1.5x	14																						0
+@@ -1343,9 +1344,9 @@ Diablo (H) Desecrated B	23	96	-3	983	983	983	1024	0	Hell TZ Boss	1	Sunder Charms
+ Diabloq Item			7					5	Act 5 Good	4	Act 5 Equip A	30																										0
+ Diabloq Item (N)			7					5	Act 5 (N) Good	4	Act 5 (N) Equip A	30																										0
+ Diabloq Item (H)			7					5	Act 5 (H) Good	4	Act 5 (H) Equip A	30																										0
+-Diabloq			-2	993	993	1024	1024	0	Conversion Orb (Normal)	1	Diabloq Item	1																										0
+-Diabloq (N)			-2	993	993	1024	1024	0	Conversion Orb (Normal)	1	Diabloq Item (N)	1																										0
+-Diabloq (H)			-2	993	993	1024	1024	0	Conversion Orb (Normal)	1	Diabloq Item (H)	1																										0
++Diabloq			-2	993	993	1024	1024	0	Conversion Orb Quest	1	Diabloq Item	1																										0
++Diabloq (N)			-2	993	993	1024	1024	0	Conversion Orb Quest	1	Diabloq Item (N)	1																										0
++Diabloq (H)			-2	993	993	1024	1024	0	Conversion Orb Quest	1	Diabloq Item (H)	1																										0
+ Frozenstein Item			5					10	Act 5 Good	3	Act 5 Equip A	25	Potion 2	15	Gold 1.5x	14																						0
+ Frozenstein Item Desecrated A			5					10	Act 5 Good	3	Act 5 Equip A	25	Potion 2	15	Gold 1.5x	14																						0
+ Frozenstein Item Desecrated B			5					10	Act 5 Good	3	Act 5 Equip C	25	Potion 2	15	Gold 1.5x	14																						0
+@@ -1403,9 +1404,9 @@ Baal (H) Desecrated	29	99	-3	983	983	983	1024	0	Hell TZ Boss	1	Sunder Charms	1	B
+ Baalq Item			7					5	Act 1 (N) Good	4	Act 1 (N) Equip A	30																										0
+ Baalq Item (N)			7					5	Act 1 (H) Good	4	Act 1 (H) Equip A	30																										0
+ Baalq Item (H)			7					5	Act 5 (H) Good	4	Act 5 (H) Equip B	30																										0
+-Baalq			-2	993	993	1024	1024	0	Corruption Orb (Normal)	1	Baalq Item	1																										0
+-Baalq (N)			-2	993	993	1024	1024	0	Corruption Orb (Normal)	1	Baalq Item (N)	1																										0
+-Baalq (H)			-2	993	993	1024	1024	0	Corruption Orb (Normal)	1	Baalq Item (H)	1																										0
++Baalq			-2	993	993	1024	1024	0	Corruption Orb	1	Baalq Item	1																										0
++Baalq (N)			-2	993	993	1024	1024	0	Corruption Orb	1	Baalq Item (N)	1																										0
++Baalq (H)			-2	993	993	1024	1024	0	Corruption Orb	1	Baalq Item (H)	1																										0
+ Cow King Item			5					0	Act 1 Uitem C	1	Act 1 Melee B	2																										0
+ Cow King Item Desecrated A			5					0	Act 4 Uitem B	3	Act 4 Melee B	6																										0
+ Cow King Item Desecrated B			5					0	Act 1 (N) Uitem A	3	Act 1 (N) Melee A	6																										0
+diff --git a/data/global/excel/cubemain.txt b/data/global/excel/cubemain.txt
+index 118b596e..68879aec 100644
+--- a/data/global/excel/cubemain.txt
++++ b/data/global/excel/cubemain.txt
+@@ -221,13 +221,21 @@ CORRUPT ITEM SUCCESS - Weapon & Orb of Corruption + CorruptedDummy 21-45 = Nothi
+ CORRUPT ITEM SUCCESS - Weapon & Orb of Corruption + CorruptedDummy 11-20 = Brick Rare (10 % Chance)	1				100	15	362	11		2	weap	ka3						"usetype,rar"			100											corrupted			1	1	corruptedDummy			101	101																																																																0
+ CORRUPT ITEM SUCCESS - Weapon & Orb of Corruption + CorruptedDummy 01-10 = Brick White (10 % Chance)	1				100	15	362	1		2	weap	ka3						"usetype,nor"			100											corrupted			1	1	corruptedDummy			101	101																																																																0
+ CONVERSION AMULET - 1 Orb of Conversion & 1 Rare Amulet = Unique Amulet	1				100					2	"amu,rar"	ooc						"amu,uni"	99																																																																																						0
+-CONVERSION ARMOR - 1 Orb of Conversion & 1 Rare Armor/Shield  = Unique Armor	1				100					2	"armo,rar"	ooc						"usetype,uni"	99																																																																																						0
+ CONVERSION RING - 1 Orb of Conversion & 1 Rare Ring = Unique Ring	1				100					2	"rin,rar"	ooc						"rin,uni"	99																																																																																						0
+-CONVERSION WEAPON - 1 Orb of Conversion & 1 Rare Weapon = Unique Weapon	1				100					2	"weap,rar"	ooc						"usetype,uni"	99																																																																																						0
++CONVERSION ARMOR I - 1 Orb of Conversion I & 1 Normal Rare Armor/Shield = Normal Unique Armor	1				100					2	"armo,bas,rar"	ooc						"usetype,uni"	99																																																																																						0
++CONVERSION ARMOR II - 1 Orb of Conversion II & 1 Exceptional Rare Armor/Shield = Exceptional Unique Armor	1				100					2	"armo,exc,rar"	oc2						"usetype,uni"	99																																																																																						0
++CONVERSION ARMOR III - 1 Orb of Conversion III & 1 Elite Rare Armor/Shield = Elite Unique Armor	1				100					2	"armo,eli,rar"	oc3						"usetype,uni"	99																																																																																						0
++CONVERSION WEAPON I - 1 Orb of Conversion I & 1 Normal Rare Weapon = Normal Unique Weapon	1				100					2	"weap,bas,rar"	ooc						"usetype,uni"	99																																																																																						0
++CONVERSION WEAPON II - 1 Orb of Conversion II & 1 Exceptional Rare Weapon = Exceptional Unique Weapon	1				100					2	"weap,exc,rar"	oc2						"usetype,uni"	99																																																																																						0
++CONVERSION WEAPON III - 1 Orb of Conversion III & 1 Elite Rare Weapon = Elite Unique Weapon	1				100					2	"weap,eli,rar"	oc3						"usetype,uni"	99																																																																																						0
+ ASSEMBLAGE AMULET - 1 Orb of Assemblage & 1 Rare Amulet = Set Amulet	1				100					2	"amu,rar"	ooa						"amu,set"	99																																																																																						0
+-ASSEMBLAGE ARMOR - 1 Orb of Assemblage & 1 Rare Armor/Shield = Set Armor	1				100					2	"armo,rar"	ooa						"usetype,set"	99																																																																																						0
+ ASSEMBLAGE RING - 1 Orb of Assemblage & 1 Rare Ring = Set Ring	1				100					2	"rin,rar"	ooa						"rin,set"	99																																																																																						0
+-ASSEMBLAGE WEAPON - 1 Orb of Assemblage & 1 Rare Weapon = Set Weapon	1				100					2	"weap,rar"	ooa						"usetype,set"	99																																																																																						0
++ASSEMBLAGE ARMOR I - 1 Orb of Assemblage I & 1 Normal Rare Armor/Shield = Normal Set Armor	1				100					2	"armo,bas,rar"	ooa						"usetype,set"	99																																																																																						0
++ASSEMBLAGE ARMOR II - 1 Orb of Assemblage II & 1 Exceptional Rare Armor/Shield = Exceptional Set Armor	1				100					2	"armo,exc,rar"	oa2						"usetype,set"	99																																																																																						0
++ASSEMBLAGE ARMOR III - 1 Orb of Assemblage III & 1 Elite Rare Armor/Shield = Elite Set Armor	1				100					2	"armo,eli,rar"	oa3						"usetype,set"	99																																																																																						0
++ASSEMBLAGE WEAPON I - 1 Orb of Assemblage I & 1 Normal Rare Weapon = Normal Set Weapon	1				100					2	"weap,bas,rar"	ooa						"usetype,set"	99																																																																																						0
++ASSEMBLAGE WEAPON II - 1 Orb of Assemblage II & 1 Exceptional Rare Weapon = Exceptional Set Weapon	1				100					2	"weap,exc,rar"	oa2						"usetype,set"	99																																																																																						0
++ASSEMBLAGE WEAPON III - 1 Orb of Assemblage III & 1 Elite Rare Weapon = Elite Set Weapon	1				100					2	"weap,eli,rar"	oa3						"usetype,set"	99																																																																																						0
+ SALVAGE SET ARMOR/SHIELD NORMAL - Normal Set Armor/Shield = 1 Orb(s) of Infusion	1				100					1	"armo,bas,set"							ooi																																																																																							0
+ SALVAGE SET WEAPON NORMAL - Normal Set Weapon = 1 Orb(s) of Infusion	1				100					1	"weap,bas,set"							ooi																																																																																							0
+ SALVAGE UNIQUE ARMOR/SHIELD NORMAL - Normal Unique Armor/Shield = 1 Orb(s) of Infusion	1				100					1	"armo,bas,uni"							ooi																																																																																							0
+@@ -242,6 +250,12 @@ SALVAGE UNIQUE ARMOR/SHIELD ELITE - Elite Unique Armor/Shield = 3 Orb(s) of Infu
+ SALVAGE UNIQUE WEAPON ELITE - Elite Unique Weapon = 3 Orb(s) of Infusion	1				100					1	"weap,eli,uni"							ooi																													ooi																													ooi																													0
+ ORB CONVERSION - 11 Orbs of Infusion + Topaz = Orb of Conversion	1				100					12	"ooi,qty=11"	gmt						ooc																																																																																							0
+ ORB ASSEMBLAGE - 11 Orbs of Infusion + Emerald = Orb of Assemblage	1				100					12	"ooi,qty=11"	gme						ooa																																																																																							0
++ORB CONVERSION II - 3 Orbs of Conversion I = Orb of Conversion II	1				100					3	"ooc,qty=3"							oc2																																																																																							0
++ORB CONVERSION III - 9 Orbs of Conversion I = Orb of Conversion III	1				100					9	"ooc,qty=9"							oc3																																																																																							0
++ORB CONVERSION III - 3 Orbs of Conversion II = Orb of Conversion III	1				100					3	"oc2,qty=3"							oc3																																																																																							0
++ORB ASSEMBLAGE II - 3 Orbs of Assemblage I = Orb of Assemblage II	1				100					3	"ooa,qty=3"							oa2																																																																																							0
++ORB ASSEMBLAGE III - 9 Orbs of Assemblage I = Orb of Assemblage III	1				100					9	"ooa,qty=9"							oa3																																																																																							0
++ORB ASSEMBLAGE III - 3 Orbs of Assemblage II = Orb of Assemblage III	1				100					3	"oa2,qty=3"							oa3																																																																																							0
+ SOCKET ARMOR/SHIELD - 1 Orb of Socketing & Armor/Shield = Random # of Sockets	1				100					2	armo	oos						useitem			100	sock			1	4																																																																															0
+ SOCKET WEAPON - 1 Orb of Socketing & 1 Weapon = Random # of Sockets	1				100					2	weap	oos						useitem			100	sock			1	6																																																																															0
+ SOCKET RETRIEVE - Jewel Pliers & Socketed Item = Unsocket Item	1				100					2	"any,nru,sock"	jwp						"useitem,rem"																																																																																							0
+diff --git a/data/global/excel/misc.txt b/data/global/excel/misc.txt
+index 9a85d1d3..79080e17 100644
+--- a/data/global/excel/misc.txt
++++ b/data/global/excel/misc.txt
+@@ -240,9 +240,13 @@ Orb of Corruption	1	100	0	0	0			1	1		0	1	1		ka3	spe	ka3	ka3	ka3	ka3	16	1	1	0	0	0
+ Orb of Corruption Stack	0	100	0	0	0			1	1		0	1	1		1ka	spe	1ka	1ka	1ka	1ka	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+ Orb of Socketing	1	100	0	0	0			1	1		0	1	1		oos	spe	oos	oos	oos	oos	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oosDescription	oosDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
+ Orb of Socketing Stack	0	100	0	0	0			1	1		0	1	1		1os	spe	1os	1os	1os	1os	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+-Orb of Conversion	1	100	0	0	0			1	1		0	1	1		ooc	spe	ooc	ooc	ooc	ooc	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oocDescription	oocDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Conversion I	1	100	0	0	0			1	1		0	1	1		ooc	spe	ooc	ooc	ooc	ooc	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oocDescription	oocDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
+ Orb of Conversion Stack	0	100	0	0	0			1	1		0	1	1		1oc	spe	1oc	1oc	1oc	1oc	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+-Orb of Assemblage	1	100	0	0	0			1	1		0	1	1		ooa	spe	ooa	ooa	ooa	ooa	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	ooaDescription	ooaDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Assemblage I	1	100	0	0	0			1	1		0	1	1		ooa	spe	ooa	ooa	ooa	ooa	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	ooaDescription	ooaDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Conversion II	1	100	0	0	0			1	1		0	1	1		oc2	spe	oc2	oc2	oc2	oc2	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oc2Description	oc2Description				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Conversion III	1	100	0	0	0			1	1		0	1	1		oc3	spe	oc3	oc3	oc3	oc3	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oc3Description	oc3Description				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Assemblage II	1	100	0	0	0			1	1		0	1	1		oa2	spe	oa2	oa2	oa2	oa2	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oa2Description	oa2Description				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
++Orb of Assemblage III	1	100	0	0	0			1	1		0	1	1		oa3	spe	oa3	oa3	oa3	oa3	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	oa3Description	oa3Description				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
+ Orb of Assemblage Stack	0	100	0	0	0			1	1		0	1	1		1oa	spe	1oa	1oa	1oa	1oa	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+ Orb of Infusion	1	100	0	0	0			1	1		0	1	1		ooi	spe	ooi	ooi	ooi	ooi	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	elix		item_rare	12	item_rare	0	0	5	0	0	0	0	0	0	0			0	-1	-1											2	ooiDescription	ooiDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx							porb		1	
+ Orb of Infusion Stack	0	100	0	0	0			1	1		0	1	1		1oi	spe	1oi	1oi	1oi	1oi	16	1	1	0	0	0	flpsple	invsple		0	xxx			0	orbx		item_rare	12	item_rare	0	0	5	0	0	0	1	1	100	1			0	-1	-1											2	orbStackDescription	orbStackDescription				0	0	0	non	0					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255					255	0	0	0	xxx	xxx										
+diff --git a/data/global/excel/treasureclassex.txt b/data/global/excel/treasureclassex.txt
+index b5c0264e..6d432c29 100644
+--- a/data/global/excel/treasureclassex.txt
++++ b/data/global/excel/treasureclassex.txt
+@@ -7,17 +7,23 @@ Gold 2x			1					0	Void	3	gld,mul=2048	1																										0
+ Gold 2.5x			1					0	Void	3	gld,mul=2560	1																										0
+ Infusion Orb			1					0	ooi	1																									1			0
+ Assemblage Orb			1					0	ooa	1																									1			0
++Assemblage Orb II			1					0	oa2	1																									1			0
++Assemblage Orb III			1					0	oa3	1																									1			0
+ Conversion Orb			1					0	ooc	1																									1			0
++Conversion Orb II			1					0	oc2	1																									1			0
++Conversion Orb III			1					0	oc3	1																									1			0
+ Socket Orb			1					0	oos	1																									1			0
+ Corruption Orb			1					0	ka3	1																									1			0
+ Shadow Orb			1					0	ooe	1																									1			0
+ Renewal Orb			1					0	oor	1																									1			0
++Jewelry Orbs			1					0	Infusion Orb	12	Assemblage Orb	6	Assemblage Orb II	2	Assemblage Orb III	1	Conversion Orb	6	Conversion Orb II	2	Conversion Orb III	1													1			0
++Assemblage Orb Quest			1					0	ooa	3	oa2	2	oa3	1																					1			0
++Conversion Orb Quest			1					0	ooc	3	oc2	2	oc3	1																					1			0
+ Gem Cluster			1					0	1gc	1																									1			0
+ Pandemonium Key A			1					0	pk1	1																									1			0
+ Pandemonium Key B			1					0	pk2	1																									1			0
+ Pandemonium Key C			1					0	pk3	1																									1			0
+ Pandemonium Keys			1					0	pk1	1	pk2	1	pk3	1																					1			0
+-Jewelry Orbs			1					0	Infusion Orb	3	Assemblage Orb	1	Conversion Orb	1																					1			0
+ Sunder Charms			1					2400	PreCrafted Cold Rupture	1	PreCrafted Flame Rift	1	PreCrafted Crack of the Heavens	1	PreCrafted Rotting Fissure	1	PreCrafted Bone Break	1	PreCrafted Black Cleft	1															1			0
+ Norm TZ Generic			1					114	Corruption Orb	1																									1			0
+ NMH Boss			1					114	Socket Orb	1																									1			0
+@@ -1256,9 +1262,9 @@ Mephisto (H) Desecrated D	22	96	-3	983	983	983	1024	0	Hell TZ Boss	1	Sunder Char
+ Mephistoq Item			7					5	Act 4 Good	3	Act 4 Equip A	52																										0
+ Mephistoq Item (N)			7					5	Act 4 (N) Good	3	Act 4 (N) Equip A	52																										0
+ Mephistoq Item (H)			7					5	Act 4 (H) Good	3	Act 4 (H) Equip A	52																										0
+-Mephistoq			-2	993	993	1024	1024	0	Assemblage Orb	1	Mephistoq Item	1																										0
+-Mephistoq (N)			-2	993	993	1024	1024	0	Assemblage Orb	1	Mephistoq Item (N)	1																										0
+-Mephistoq (H)			-2	993	993	1024	1024	0	Assemblage Orb	1	Mephistoq Item (H)	1																										0
++Mephistoq			-2	993	993	1024	1024	0	Assemblage Orb Quest	1	Mephistoq Item	1																										0
++Mephistoq (N)			-2	993	993	1024	1024	0	Assemblage Orb Quest	1	Mephistoq Item (N)	1																										0
++Mephistoq (H)			-2	993	993	1024	1024	0	Assemblage Orb Quest	1	Mephistoq Item (H)	1																										0
+ Izual Item			5					5	Act 4 Good	3	Act 4 Equip B	25	Potion 2	15	Gold 1.5x	14																						0
+ Izual Item Desecrated A	32	29	5					5	Act 4 Good	3	Act 4 Equip B	25	Potion 2	15	Gold 1.5x	14																						0
+ Izual Item Desecrated B	32	38	5					5	Act 5 Good	3	Act 5 Equip C	25	Potion 2	15	Gold 1.5x	14																						0
+@@ -1338,9 +1344,9 @@ Diablo (H) Desecrated B	23	96	-3	983	983	983	1024	0	Hell TZ Boss	1	Sunder Charms
+ Diabloq Item			7					5	Act 5 Good	4	Act 5 Equip A	30																										0
+ Diabloq Item (N)			7					5	Act 5 (N) Good	4	Act 5 (N) Equip A	30																										0
+ Diabloq Item (H)			7					5	Act 5 (H) Good	4	Act 5 (H) Equip A	30																										0
+-Diabloq			-2	993	993	1024	1024	0	Conversion Orb	1	Diabloq Item	1																										0
+-Diabloq (N)			-2	993	993	1024	1024	0	Conversion Orb	1	Diabloq Item (N)	1																										0
+-Diabloq (H)			-2	993	993	1024	1024	0	Conversion Orb	1	Diabloq Item (H)	1																										0
++Diabloq			-2	993	993	1024	1024	0	Conversion Orb Quest	1	Diabloq Item	1																										0
++Diabloq (N)			-2	993	993	1024	1024	0	Conversion Orb Quest	1	Diabloq Item (N)	1																										0
++Diabloq (H)			-2	993	993	1024	1024	0	Conversion Orb Quest	1	Diabloq Item (H)	1																										0
+ Frozenstein Item			5					10	Act 5 Good	3	Act 5 Equip A	25	Potion 2	15	Gold 1.5x	14																						0
+ Frozenstein Item Desecrated A			5					10	Act 5 Good	3	Act 5 Equip A	25	Potion 2	15	Gold 1.5x	14																						0
+ Frozenstein Item Desecrated B			5					10	Act 5 Good	3	Act 5 Equip C	25	Potion 2	15	Gold 1.5x	14																						0
+diff --git a/data/local/lng/strings/item-names.json b/data/local/lng/strings/item-names.json
+index 69528ac1..1542d72e 100644
+--- a/data/local/lng/strings/item-names.json
++++ b/data/local/lng/strings/item-names.json
+@@ -51648,7 +51648,7 @@
+     {
+         "id": 51387,
+         "Key": "ooc",
+-        "enUS": "ÿc8Orb of Conversion",
++        "enUS": "?c8Orb of Conversion I",
+         "zhTW": "ÿc8轉換之球[轉暗金]",
+         "deDE": "ÿc8Umwandlungsorb",
+         "esES": "ÿc8Orbe de Conversión",
+@@ -51699,7 +51699,7 @@
+     {
+         "id": 51390,
+         "Key": "oocDescription",
+-        "enUS": "ÿc4to upgrade it to Unique\nCube with a Rare item",
++        "enUS": "?c4Normal Rare armor/weapons -> Unique\nRare jewelry -> Unique\nCube with a Rare item",
+         "zhTW": "ÿc4 裝備升級为暗金版\n與稀有裝備一同放入Cube轉化",
+         "deDE": "ÿc4um es zu einem Einzigartigen aufzuwerten\nWürfle mit einem seltenen Gegenstand",
+         "esES": "ÿc4para mejorarlo a Único\nCubos con un objeto raro",
+@@ -51733,7 +51733,7 @@
+     {
+         "id": 51392,
+         "Key": "ooa",
+-        "enUS": "ÿc8Orb of Assemblage",
++        "enUS": "?c8Orb of Assemblage I",
+         "zhTW": "ÿc8集聚之球",
+         "deDE": "ÿc8Versammlungs-Orb",
+         "esES": "ÿc8Orbe de Ensamblaje",
+@@ -51750,7 +51750,143 @@
+     {
+         "id": 51393,
+         "Key": "ooaDescription",
+-        "enUS": "ÿc4to upgrade it to Set\nCube with a Rare item",
++        "enUS": "?c4Normal Rare armor/weapons -> Set\nRare jewelry -> Set\nCube with a Rare item",
++        "zhTW": "ÿc4裝備升級为套裝版\n與稀有裝備一同放入Cube轉化",
++        "deDE": "ÿc4um es zu einem Set aufzuwerten\nWürfle mit einem seltenen Gegenstand",
++        "esES": "ÿc4para mejorarlo a Conjunto\nCúbalo con un objeto raro",
++        "frFR": "ÿc4pour l’améliorer en Ensemble\nTransmutez avec un objet rare",
++        "itIT": "ÿc4per aggiornarlo a Set\nCubalo con un oggetto raro",
++        "koKR": "ÿc4세트 장비로 변환합니다\n레어 장비와 큐빙하면",
++        "plPL": "ÿc4aby ulepszyć do zestawu\nPołącz w Kostce z rzadkim przedmiotem",
++        "esMX": "ÿc4para mejorarlo a Conjunto\nCúbalo con un objeto raro",
++        "jaJP": "ÿc4セットにアップグレードするには\nレアアイテムとキューブで合成",
++        "ptBR": "ÿc4para aprimorar para Conjunto\nTransmute com um item raro",
++        "ruRU": "ÿc4чтобы улучшить до набора\nСоедините с редким предметом в Кубе",
++        "zhCN": "ÿc4装备升级为套装版\n与稀有物品一同放入Cube转化"
++    },
++    {
++        "id": 51568,
++        "Key": "oc2",
++        "enUS": "?c8Orb of Conversion II",
++        "zhTW": "ÿc8轉換之球[轉暗金]",
++        "deDE": "ÿc8Umwandlungsorb",
++        "esES": "ÿc8Orbe de Conversión",
++        "frFR": "ÿc8Orbe de Conversion",
++        "itIT": "ÿc8Sfera di Conversione",
++        "koKR": "ÿc8전환 구슬",
++        "plPL": "ÿc8Kula Konwersji",
++        "esMX": "ÿc8Orbe de Conversión",
++        "jaJP": "ÿc8変換のオーブ",
++        "ptBR": "ÿc8Orbe de Conversão",
++        "ruRU": "ÿc8Сфера Преобразования",
++        "zhCN": "ÿc8转换之球[转暗金]"
++    },
++    {
++        "id": 51569,
++        "Key": "oc3",
++        "enUS": "?c8Orb of Conversion III",
++        "zhTW": "ÿc8轉換之球[轉暗金]",
++        "deDE": "ÿc8Umwandlungsorb",
++        "esES": "ÿc8Orbe de Conversión",
++        "frFR": "ÿc8Orbe de Conversion",
++        "itIT": "ÿc8Sfera di Conversione",
++        "koKR": "ÿc8전환 구슬",
++        "plPL": "ÿc8Kula Konwersji",
++        "esMX": "ÿc8Orbe de Conversión",
++        "jaJP": "ÿc8変換のオーブ",
++        "ptBR": "ÿc8Orbe de Conversão",
++        "ruRU": "ÿc8Сфера Преобразования",
++        "zhCN": "ÿc8转换之球[转暗金]"
++    },
++    {
++        "id": 51570,
++        "Key": "oc2Description",
++        "enUS": "?c4Converts exceptional Rare armor/weapons to Unique\nPromote lower-rank Orbs in the Cube",
++        "zhTW": "ÿc4 裝備升級为暗金版\n與稀有裝備一同放入Cube轉化",
++        "deDE": "ÿc4um es zu einem Einzigartigen aufzuwerten\nWürfle mit einem seltenen Gegenstand",
++        "esES": "ÿc4para mejorarlo a Único\nCubos con un objeto raro",
++        "frFR": "ÿc4pour l'améliorer en Unique\nUtilisez le Cube avec un objet Rare",
++        "itIT": "ÿc4per aggiornarlo a Unico\nCubo con un oggetto raro",
++        "koKR": "ÿc4유니크 장비로 변환합니다\n레어 장비와 큐빙하면",
++        "plPL": "ÿc4aby ulepszyć do Unikalnego\nKostka z rzadkim przedmiotem",
++        "esMX": "ÿc4para mejorarlo a Único\nCombina en el Cubo con un objeto raro",
++        "jaJP": "ÿc4ユニークにアップグレードするために\nレアアイテムと一緒にキューブで使用",
++        "ptBR": "ÿc4para atualizar para Único\nColoque no Cubo com um item raro",
++        "ruRU": "ÿc4для улучшения до Уникального\nСовместите с редким предметом в Кубе",
++        "zhCN": "ÿc4 装备升级为暗金版\n与稀有物品一同放入Cube转化"
++    },
++    {
++        "id": 51571,
++        "Key": "oc3Description",
++        "enUS": "?c4Converts elite Rare armor/weapons to Unique\nPromote lower-rank Orbs in the Cube",
++        "zhTW": "ÿc4 裝備升級为暗金版\n與稀有裝備一同放入Cube轉化",
++        "deDE": "ÿc4um es zu einem Einzigartigen aufzuwerten\nWürfle mit einem seltenen Gegenstand",
++        "esES": "ÿc4para mejorarlo a Único\nCubos con un objeto raro",
++        "frFR": "ÿc4pour l'améliorer en Unique\nUtilisez le Cube avec un objet Rare",
++        "itIT": "ÿc4per aggiornarlo a Unico\nCubo con un oggetto raro",
++        "koKR": "ÿc4유니크 장비로 변환합니다\n레어 장비와 큐빙하면",
++        "plPL": "ÿc4aby ulepszyć do Unikalnego\nKostka z rzadkim przedmiotem",
++        "esMX": "ÿc4para mejorarlo a Único\nCombina en el Cubo con un objeto raro",
++        "jaJP": "ÿc4ユニークにアップグレードするために\nレアアイテムと一緒にキューブで使用",
++        "ptBR": "ÿc4para atualizar para Único\nColoque no Cubo com um item raro",
++        "ruRU": "ÿc4для улучшения до Уникального\nСовместите с редким предметом в Кубе",
++        "zhCN": "ÿc4 装备升级为暗金版\n与稀有物品一同放入Cube转化"
++    },
++    {
++        "id": 51572,
++        "Key": "oa2",
++        "enUS": "?c8Orb of Assemblage II",
++        "zhTW": "ÿc8集聚之球",
++        "deDE": "ÿc8Versammlungs-Orb",
++        "esES": "ÿc8Orbe de Ensamblaje",
++        "frFR": "ÿc8Orbe d’Assemblage",
++        "itIT": "ÿc8Sfera di Assemblaggio",
++        "koKR": "ÿc8소집 구슬",
++        "plPL": "ÿc8Kula Złożenia",
++        "esMX": "ÿc8Orbe de Ensamblaje",
++        "jaJP": "ÿc8アセンブリのオーブ",
++        "ptBR": "ÿc8Orbe de Montagem",
++        "ruRU": "ÿc8Сфера Сборки",
++        "zhCN": "ÿc8集聚之球"
++    },
++    {
++        "id": 51573,
++        "Key": "oa3",
++        "enUS": "?c8Orb of Assemblage III",
++        "zhTW": "ÿc8集聚之球",
++        "deDE": "ÿc8Versammlungs-Orb",
++        "esES": "ÿc8Orbe de Ensamblaje",
++        "frFR": "ÿc8Orbe d’Assemblage",
++        "itIT": "ÿc8Sfera di Assemblaggio",
++        "koKR": "ÿc8소집 구슬",
++        "plPL": "ÿc8Kula Złożenia",
++        "esMX": "ÿc8Orbe de Ensamblaje",
++        "jaJP": "ÿc8アセンブリのオーブ",
++        "ptBR": "ÿc8Orbe de Montagem",
++        "ruRU": "ÿc8Сфера Сборки",
++        "zhCN": "ÿc8集聚之球"
++    },
++    {
++        "id": 51574,
++        "Key": "oa2Description",
++        "enUS": "?c4Converts exceptional Rare armor/weapons to Set\nPromote lower-rank Orbs in the Cube",
++        "zhTW": "ÿc4裝備升級为套裝版\n與稀有裝備一同放入Cube轉化",
++        "deDE": "ÿc4um es zu einem Set aufzuwerten\nWürfle mit einem seltenen Gegenstand",
++        "esES": "ÿc4para mejorarlo a Conjunto\nCúbalo con un objeto raro",
++        "frFR": "ÿc4pour l’améliorer en Ensemble\nTransmutez avec un objet rare",
++        "itIT": "ÿc4per aggiornarlo a Set\nCubalo con un oggetto raro",
++        "koKR": "ÿc4세트 장비로 변환합니다\n레어 장비와 큐빙하면",
++        "plPL": "ÿc4aby ulepszyć do zestawu\nPołącz w Kostce z rzadkim przedmiotem",
++        "esMX": "ÿc4para mejorarlo a Conjunto\nCúbalo con un objeto raro",
++        "jaJP": "ÿc4セットにアップグレードするには\nレアアイテムとキューブで合成",
++        "ptBR": "ÿc4para aprimorar para Conjunto\nTransmute com um item raro",
++        "ruRU": "ÿc4чтобы улучшить до набора\nСоедините с редким предметом в Кубе",
++        "zhCN": "ÿc4装备升级为套装版\n与稀有物品一同放入Cube转化"
++    },
++    {
++        "id": 51575,
++        "Key": "oa3Description",
++        "enUS": "?c4Converts elite Rare armor/weapons to Set\nPromote lower-rank Orbs in the Cube",
+         "zhTW": "ÿc4裝備升級为套裝版\n與稀有裝備一同放入Cube轉化",
+         "deDE": "ÿc4um es zu einem Set aufzuwerten\nWürfle mit einem seltenen Gegenstand",
+         "esES": "ÿc4para mejorarlo a Conjunto\nCúbalo con un objeto raro",
+@@ -54535,7 +54671,7 @@
+         "ruRU": "ÿc5Ужас преследует тех, в чьём сердце живёт алчность...\nÿc4Продать торговцу",
+         "zhCN": "ÿc5恐惧追逐着内心贪婪之人……\nÿc4出售给商人"
+     },
+-        {
++    {
+         "id": 51557,
+         "Key": "Rogue Scout Arrows",
+         "enUS": "Rogue Scout Arrows",
+diff --git a/docs/modding-findings.md b/docs/modding-findings.md
+index a441bbb7..242e1f4c 100644
+--- a/docs/modding-findings.md
++++ b/docs/modding-findings.md
+@@ -28,6 +28,9 @@ Updated: 2026-05-16.
+ - In `misc.txt`, D2R advanced stash stacking for loose special items uses `AdvancedStashStackable=1`. This is separate from the older explicit stack item rows that use `stackable=1`, such as `1oc` / `1oa`.
+ - This mod's player-facing Topaz and Emerald item codes are `gmt` and `gme`.
+ - Vanilla perfect gem codes such as `gpy` and `gpg` may still exist in `misc.txt`, but they are not the Topaz/Emerald items used by the mod's active cube recipes.
++- Orb of Conversion / Assemblage rank II and III item codes use the 3-character-safe codes `oc2`, `oc3`, `oa2`, and `oa3`. The original rank I codes remain `ooc` and `ooa`, with only their visible names changed to include `I`.
++- Current ranked orb implementation tiers armor and weapon recipes with `bas` / `exc` / `eli`. Jewelry conversion/assemblage recipes remain on the old rank-I behavior until we verify that cube output `lvl` gates the unique/set jewelry selection pool before the item is chosen.
++- Generic Jewelry Orbs treasure-class weighting keeps rank I as the common baseline and adds rank II/III as rarer outcomes: Infusion `12`, Assemblage I/II/III `6/2/1`, Conversion I/II/III `6/2/1`.
+ 
+ ## Belt Potion Rows
+ 
