@@ -1,24 +1,24 @@
 ---
 schema: ai-review-task-v1
 id: 2026-05-16-1749-orb-rank-tiering-design
-status: ready_for_claude
-phase: design_review
-round: 1
+status: blocked_needs_user
+phase: re_review
+round: 2
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-16T15:49:06Z
-updated_at: 2026-05-16T16:01:50Z
+updated_at: 2026-05-16T16:21:36Z
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
 head_ref:
 original_user_request_included: true
 live_publish_allowed: false
-last_review:
-last_verdict:
-claimed_by:
-claimed_at:
-reviewed_at:
+last_review: claude-review-r01.md
+last_verdict: needs_fixes
+claimed_by: claude
+claimed_at: 2026-05-16T16:09:03Z
+reviewed_at: 2026-05-16T16:09:03Z
 ---
 
 # Review Request
@@ -93,3 +93,7 @@ See `design.md`. No gameplay/data implementation has been made yet.
 7. Are active/base files likely to need normalization around single-orb versus stacked-orb treasure classes?
 8. Is the boss quest-drop tier-upgrade design safe enough to implement?
 9. Is Codex's assumption that `9x OOC` / `9x OOA` should produce rank III correct, or should the user-written `9x OOC = 1x OC2` be treated literally?
+
+## Codex Round 1 Response
+
+See `codex-response-r01.md`. The task is blocked on Eric confirming whether `9x OOC -> OC3` / `9x OOA -> OA3` is correct.
