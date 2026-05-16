@@ -7,7 +7,7 @@ round: 1
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-16T15:49:06Z
-updated_at: 2026-05-16T15:49:06Z
+updated_at: 2026-05-16T15:59:37Z
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
@@ -47,6 +47,12 @@ This change will need to be reviewed by claude before implementing.
 
 Review the proposed design before Codex implements ranked Orb of Conversion and Orb of Assemblage behavior.
 
+## Follow-up User Clarification
+
+```text
+regarding jewellery, can we restrict the output to plvl/ilvl? So for example rank 1 OOC can only make up to level 40, rank 2 to 70, rank 3 to 100?
+```
+
 ## Phase
 
 design_review
@@ -69,7 +75,7 @@ See `design.md`. No gameplay/data implementation has been made yet.
 2. Are `bas`, `exc`, and `eli` cube input qualifiers the correct way to restrict normal, exceptional, and elite rare bases?
 3. Is the proposed three-character code scheme safe and clear?
 4. Does the proposed drop weighting preserve rank I's current relative drop rate while making rank II and III roughly 3x/6x rarer?
-5. How should tierless jewelry recipes for rings and amulets be handled?
+5. Is the proposed jewelry output-ilvl cap approach valid for limiting unique/set ring and amulet result pools?
 6. Should rank II/III stack variants be added now, deferred, or avoided?
 7. Are active/base files likely to need normalization around single-orb versus stacked-orb treasure classes?
 8. Is the boss quest-drop tier-upgrade design safe enough to implement?

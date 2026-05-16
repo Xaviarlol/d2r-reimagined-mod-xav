@@ -126,7 +126,7 @@ ASSEMBLAGE III WEAPON "weap,eli,rar" + oa3 -> usetype,set
 
 The existing all-tier `armo,rar` and `weap,rar` recipes should be replaced or disabled so rank I cannot affect exceptional/elite items.
 
-## Jewelry Open Question
+## Jewelry Plan
 
 Current recipes also support rare amulets and rings:
 
@@ -137,17 +137,49 @@ amu,rar + ooa -> amu,set
 rin,rar + ooa -> rin,set
 ```
 
-Rings and amulets do not have normal/exceptional/elite base tiers in the same sense as armor/weapons. Proposed conservative handling:
+Rings and amulets do not have normal/exceptional/elite base tiers in the same sense as armor/weapons. Eric proposed using output item-level caps instead:
 
 ```text
-Leave jewelry as rank I only:
-amu,rar + ooc -> amu,uni
-rin,rar + ooc -> rin,uni
-amu,rar + ooa -> amu,set
-rin,rar + ooa -> rin,set
+Rank I   -> up to level 40 jewelry outcomes
+Rank II  -> up to level 70 jewelry outcomes
+Rank III -> full/high-level jewelry outcomes
 ```
 
-Do not add rank II/III jewelry recipes. If Claude sees this as violating "each orb will only work on their respective item base quality," block for Eric rather than guessing.
+Proposed cube recipes:
+
+```text
+CONVERSION I AMULET   amu,rar + ooc -> amu,uni  lvl=40
+CONVERSION II AMULET  amu,rar + oc2 -> amu,uni  lvl=70
+CONVERSION III AMULET amu,rar + oc3 -> amu,uni  lvl=99
+
+CONVERSION I RING   rin,rar + ooc -> rin,uni  lvl=40
+CONVERSION II RING  rin,rar + oc2 -> rin,uni  lvl=70
+CONVERSION III RING rin,rar + oc3 -> rin,uni  lvl=99
+
+ASSEMBLAGE I AMULET   amu,rar + ooa -> amu,set  lvl=40
+ASSEMBLAGE II AMULET  amu,rar + oa2 -> amu,set  lvl=70
+ASSEMBLAGE III AMULET amu,rar + oa3 -> amu,set  lvl=99
+
+ASSEMBLAGE I RING   rin,rar + ooa -> rin,set  lvl=40
+ASSEMBLAGE II RING  rin,rar + oa2 -> rin,set  lvl=70
+ASSEMBLAGE III RING rin,rar + oa3 -> rin,set  lvl=99
+```
+
+Use fixed `lvl` rather than `plvl` or `ilvl` unless Claude advises otherwise. Current conversion recipes use fixed `lvl=99`, and existing cube recipe `lvl` values in this repo top out at `99`, so rank III should use `99` as the practical "100/full pool" value.
+
+Local jewelry-level counts with current data:
+
+```text
+Unique jewelry lvl <= 40: 19
+Unique jewelry lvl <= 70: 36
+Unique jewelry lvl <= 99: 49
+
+Set jewelry lvl <= 40: 24
+Set jewelry lvl <= 70: 36
+Set jewelry lvl <= 99: 39
+```
+
+Important review question: confirm that cube output `lvl` controls the generated output item level before unique/set selection, so `amu,uni lvl=40` and `rin,set lvl=40` really exclude unique/set jewelry rows whose `lvl` is above 40. If it only changes the resulting item level after selection, this plan would not work.
 
 ## Drop Weight Plan
 
