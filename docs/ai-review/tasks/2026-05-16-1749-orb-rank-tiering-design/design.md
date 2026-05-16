@@ -57,7 +57,12 @@ oa2  Orb of Assemblage II
 oa3  Orb of Assemblage III
 ```
 
-Rank I keeps the existing item codes exactly, per Eric's request. The visible name for rank I should probably gain the roman numeral so the player can distinguish it from rank II/III, but this is a player-facing compatibility question.
+Rank I keeps the existing item codes exactly, per Eric's request. Per Claude round-2 LOW-201, the visible name should gain the roman numeral so the player can distinguish it from rank II/III:
+
+```text
+ooc -> Orb of Conversion I
+ooa -> Orb of Assemblage I
+```
 
 ## Item Definition Plan
 
@@ -71,6 +76,8 @@ Orb of Assemblage III  code=oa3  namestr=oa3  normcode=oa3  ubercode=oa3  ultrac
 ```
 
 Keep inventory/flippy art, size, rarity, type, and item-category behavior the same as rank I unless Claude identifies a reason to differentiate.
+
+Set `AdvancedStashStackable=1` on all new loose rank II/III orb rows. Existing loose rank I orbs (`ooc`, `ooa`, `ooi`, `oos`, `ka3`, `oor`) already use this field for the D2R advanced stash stack area, while the older explicit stack rows (`1oc`, `1oa`, etc.) use normal `stackable=1`. Rank II/III should participate in the stash stack area without requiring additional old-style stack item rows.
 
 Add strings in `data/local/lng/strings/item-names.json`:
 
@@ -300,6 +307,10 @@ Do not add rank II/III stack variants in the first implementation unless Claude 
 
 That is a much larger recipe-table change than the gameplay request strictly requires. Ranks II/III are expected to be rarer, so single-item inventory handling may be acceptable initially.
 
+D2R advanced stash stacking is separate from the old explicit stack-item recipe system. Even if old-style rank II/III stack variants are deferred, the loose rank II/III rows must still set `AdvancedStashStackable=1` so `oc2`, `oc3`, `oa2`, and `oa3` have stackable slots in the advanced stash.
+
+Promotion recipes consume loose `ooc`/`ooa`, not the old explicit `1oc`/`1oa` stack items. Players holding `1oc`/`1oa` can use existing unstack recipes first; the rank promotion recipes do not need direct `1oc`/`1oa` support for this design pass.
+
 ## Expected Files To Change After Approval
 
 ```text
@@ -317,23 +328,26 @@ docs/modding-findings.md
 
 1. Parse active/base TSV files and confirm all edited rows have the expected column counts.
 2. Confirm active/base `misc.txt` and `cubemain.txt` orb rows match.
-3. Confirm old all-tier `armo,rar`/`weap,rar` recipes no longer let rank I convert exceptional or elite items.
-4. Confirm active/base `treasureclassex.txt` use the same orb TC structure after normalization.
-5. Confirm the existing `11x ooi + gmt/gme` recipes still produce `ooc` and `ooa`.
-6. Confirm rank promotion recipes:
+3. Confirm `oc2`, `oc3`, `oa2`, and `oa3` have `AdvancedStashStackable=1`.
+4. Confirm rank I visible names include `I` while item codes remain `ooc` and `ooa`.
+5. Confirm old all-tier `armo,rar`/`weap,rar` recipes no longer let rank I convert exceptional or elite items.
+6. Confirm active/base `treasureclassex.txt` use the same orb TC structure after normalization.
+7. Confirm the existing `11x ooi + gmt/gme` recipes still produce `ooc` and `ooa`.
+8. Confirm rank promotion recipes:
    - `3x ooc -> oc2`
    - `9x ooc -> oc3`
    - `3x oc2 -> oc3`
    - `3x ooa -> oa2`
    - `9x ooa -> oa3`
    - `3x oa2 -> oa3`
-7. Verify jewelry `lvl` gating before enabling final jewelry rank recipes.
-8. In game, test:
+9. Verify jewelry `lvl` gating before enabling final jewelry rank recipes.
+10. In game, test:
    - Normal rare weapon/armor + rank I works.
    - Exceptional rare weapon/armor + rank I fails.
    - Exceptional rare weapon/armor + rank II works.
    - Elite rare weapon/armor + rank II fails.
    - Elite rare weapon/armor + rank III works.
    - Equivalent Assemblage tests for set output.
-9. Test Mephisto and Diablo quest-drop behavior if quest selector TCs are implemented.
-10. Run local install only after Claude approval and implementation.
+11. Test rank II/III orb stash stacking in the advanced stash.
+12. Test Mephisto and Diablo quest-drop behavior if quest selector TCs are implemented.
+13. Run local install only after Claude approval and implementation.

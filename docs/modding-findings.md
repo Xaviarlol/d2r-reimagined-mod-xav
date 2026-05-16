@@ -25,6 +25,7 @@ Updated: 2026-05-16.
 ## Cube Recipe Item Codes
 
 - In `cubemain.txt`, `qty=N` on a loose item code such as `ooi,qty=11` is valid for matching multiple loose cube inputs of that item.
+- In `misc.txt`, D2R advanced stash stacking for loose special items uses `AdvancedStashStackable=1`. This is separate from the older explicit stack item rows that use `stackable=1`, such as `1oc` / `1oa`.
 - This mod's player-facing Topaz and Emerald item codes are `gmt` and `gme`.
 - Vanilla perfect gem codes such as `gpy` and `gpg` may still exist in `misc.txt`, but they are not the Topaz/Emerald items used by the mod's active cube recipes.
 

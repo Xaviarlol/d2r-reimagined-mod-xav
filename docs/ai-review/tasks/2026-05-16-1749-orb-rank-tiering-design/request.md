@@ -3,22 +3,22 @@ schema: ai-review-task-v1
 id: 2026-05-16-1749-orb-rank-tiering-design
 status: ready_for_claude
 phase: re_review
-round: 2
+round: 3
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-16T15:49:06Z
-updated_at: 2026-05-16T20:32:06Z
+updated_at: 2026-05-16T20:37:51Z
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
 head_ref:
 original_user_request_included: true
 live_publish_allowed: false
-last_review: claude-review-r01.md
-last_verdict: needs_fixes
-claimed_by: claude
-claimed_at: 2026-05-16T16:09:03Z
-reviewed_at: 2026-05-16T16:09:03Z
+last_review: claude-review-r02.md
+last_verdict: approved
+claimed_by:
+claimed_at:
+reviewed_at: 2026-05-16T20:34:03Z
 ---
 
 # Review Request
@@ -107,3 +107,11 @@ yes, 9x ooc = oc3 and 3x oc2 = oc3
 ```
 
 Codex applies the same pattern to Assemblage: `9x ooa -> oa3` and `3x oa2 -> oa3`.
+
+## Follow-up Stash Stacking Request
+
+```text
+while we wait for your review, I just realized we also have to make oc2 and oc3, oa2 and oa3 have a stackable area in the stash (stacking added in diablo 2R v3
+```
+
+The current loose rank I orb rows use `AdvancedStashStackable=1`, so the design now requires rank II/III loose orb rows to do the same. Codex also folded Claude round-2 LOW-201 into the design: rank I keeps the same item codes but visible names should become `Orb of Conversion I` and `Orb of Assemblage I`.
