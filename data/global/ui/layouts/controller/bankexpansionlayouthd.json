@@ -431,77 +431,77 @@
                 {
                     "type": "AdvancedStashSlotWidget", "name": "ka3",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 201, "y": 282 },
+                        "rect": { "width": 98, "height": 98, "x": 409, "y": 282 },
 						"itemCode": "ka3"
                     }
                 },
                 {
                     "type": "AdvancedStashSlotWidget", "name": "ooe",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 305, "y": 282 },
+                        "rect": { "width": 98, "height": 98, "x": 513, "y": 282 },
 						"itemCode": "ooe"
                     }
                 },
                 {
                     "type": "AdvancedStashSlotWidget", "name": "oor",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 409, "y": 282 },
+                        "rect": { "width": 98, "height": 98, "x": 409, "y": 386 },
 						"itemCode": "oor"
                     }
                 },
                 {
                     "type": "AdvancedStashSlotWidget", "name": "oos",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 201, "y": 386 },
+                        "rect": { "width": 98, "height": 98, "x": 513, "y": 386 },
 						"itemCode": "oos"
                     }
                 },
                 {
                     "type": "AdvancedStashSlotWidget", "name": "ooi",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 305, "y": 386 },
+                        "rect": { "width": 98, "height": 98, "x": 1137, "y": 282 },
 						"itemCode": "ooi"
                     }
                 },
                     {
                     "type": "AdvancedStashSlotWidget", "name": "ooa",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 409, "y": 386 },
+                        "rect": { "width": 98, "height": 98, "x": 97, "y": 282 },
 						"itemCode": "ooa"
                     }
                 },
                     {
                     "type": "AdvancedStashSlotWidget", "name": "ooc",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 513, "y": 386 },
+                        "rect": { "width": 98, "height": 98, "x": 97, "y": 386 },
 						"itemCode": "ooc"
                     }
                 },
                     {
                     "type": "AdvancedStashSlotWidget", "name": "oc2",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 97, "y": 282 },
+                        "rect": { "width": 98, "height": 98, "x": 201, "y": 386 },
 						"itemCode": "oc2"
                     }
                 },
                     {
                     "type": "AdvancedStashSlotWidget", "name": "oc3",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 513, "y": 282 },
+                        "rect": { "width": 98, "height": 98, "x": 305, "y": 386 },
 						"itemCode": "oc3"
                     }
                 },
                     {
                     "type": "AdvancedStashSlotWidget", "name": "oa2",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 1137, "y": 282 },
+                        "rect": { "width": 98, "height": 98, "x": 201, "y": 282 },
 						"itemCode": "oa2"
                     }
                 },
                     {
                     "type": "AdvancedStashSlotWidget", "name": "oa3",
                     "fields": {
-                        "rect": { "width": 98, "height": 98, "x": 1241, "y": 282 },
+                        "rect": { "width": 98, "height": 98, "x": 305, "y": 282 },
 						"itemCode": "oa3"
                     }
                 },

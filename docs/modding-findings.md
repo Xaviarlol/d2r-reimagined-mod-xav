@@ -198,6 +198,38 @@ Interpretation:
 - Avoid putting `SrcDamage` directly on `fistsoffirefirewall`; it is a lingering collision fire field and has the same class of repeated-hit risk as the old Cobra cloud experiment.
 - Dragon Claw can feel strong with Fists of Fire because multiple charge-release payloads can happen across the two claw attacks. Poison is trickier because poison applications compete/refresh rather than simply stacking like separate fire hits.
 
+## Gems Stash Orb Slots
+
+Ranked orbs are grouped as a 2x3 block on the Gems tab in both keyboard/mouse and controller layouts:
+
+| Row | Slots |
+|---|---|
+| Top | `ooa`, `oa2`, `oa3` |
+| Bottom | `ooc`, `oc2`, `oc3` |
+
+Keep those ranks adjacent when adding future orb UI slots; the normal stash grid starts below this area, so prefer reusing open space in the gem utility rows before moving the grid.
+
+## Cube Gamble Recipes
+
+The restored gamble recipes use the same two-step hidden-roll pattern as corruption, but they must not share the corruption dummy stat.
+
+- `item_gambleDummy` is appended to `itemstatcost.txt` and mapped through `gambleDummy` in `properties.txt`.
+- The cube `op/param` checks use the numeric `item_gambleDummy` stat ID, while the cube modifier uses the `gambleDummy` property code.
+- The dummy recipe only runs when the hidden gamble roll is absent/zero, returns the original rare item plus catalyst outputs, and writes a 1-100 roll onto the item.
+- The result recipes then resolve that same item with descending `op=15` thresholds, so row order matters.
+- Basic rare item + magic jewel recipes are 5% unique, 5% set, 90% rare reroll.
+- Improved weapon/armor recipes with Pul/Lem + magic jewel are 15% unique, 15% set, 70% rare reroll.
+- The inherited design is a two-click cube flow: the first transmute stamps the hidden roll, and the second transmute consumes the catalyst and resolves the result.
+
+Current hidden IDs:
+
+| Table | Code | ID |
+|---|---|---:|
+| `itemstatcost.txt` | `item_gambleDummy` | 437 |
+| `properties.txt` | `gambleDummy` | 431 |
+
+If these tables are regenerated from upstream, keep the gamble dummy appended rather than inserting it near `item_corruptedDummy`; inserting would shift later stat IDs and risk breaking existing numeric `param` checks.
+
 ## References Worth Keeping Handy
 
 - D2RDoc: `https://eezstreet.github.io/d2rdoc/index.html`
