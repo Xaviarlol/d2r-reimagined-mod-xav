@@ -1,13 +1,13 @@
 ---
 schema: ai-review-task-v1
 id: 2026-05-15-0116-cobra-tooltip-order-weapon-wording
-status: ready_for_claude
+status: consensus_reached
 phase: code_review
 round: 1
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-15T01:16:00+02:00
-updated_at: 2026-05-15T01:16:00+02:00
+updated_at: 2026-05-16T16:45:16+02:00
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
@@ -15,11 +15,17 @@ head_ref:
 original_user_request_included: true
 live_publish_allowed: true
 last_review:
-last_verdict:
+last_verdict: approved
 claimed_by:
 claimed_at:
 reviewed_at:
+approval_source: user_override
+approved_at: 2026-05-16T16:45:16+02:00
+review_suspended_by: eric
+review_suspended_at: 2026-05-16T16:45:16+02:00
+review_suspend_reason: External AI review loop suspended by user request; current queue marked approved.
 ---
+
 
 # Review Request
 
@@ -69,3 +75,7 @@ See `design.md` and `diff.patch`.
 2. Are the Cobra charge formulas preserved while only moving their display slots?
 3. Is the `100%% weapon damage` wording correct and properly escaped for JSON tooltip rendering?
 4. Do active/base `skilldesc.txt` remain synchronized and TSV-safe?
+
+## User Approval / Review Suspension
+
+On 2026-05-16T16:45:16+02:00, Eric instructed Codex to suspend the external Claude review loop for now and mark the current review queue approved. This task is closed as `consensus_reached` by user override. Any future risky gameplay/data work can open a new task if the review process resumes.

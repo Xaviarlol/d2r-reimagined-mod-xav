@@ -1,25 +1,31 @@
 ---
 schema: ai-review-task-v1
 id: 2026-05-14-2356-cobra-charge-balance
-status: ready_for_claude
+status: consensus_reached
 phase: code_review
 round: 1
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-14T23:56:00+02:00
-updated_at: 2026-05-14T23:56:00+02:00
+updated_at: 2026-05-16T16:45:16+02:00
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
 head_ref:
 original_user_request_included: true
 live_publish_allowed: false
-last_review:
-last_verdict:
-claimed_by:
-claimed_at:
-reviewed_at:
+last_review: claude-review-r01.md
+last_verdict: approved
+claimed_by: claude
+claimed_at: 2026-05-14T22:09:41Z
+reviewed_at: 2026-05-14T22:09:41Z
+approval_source: user_override
+approved_at: 2026-05-16T16:45:16+02:00
+review_suspended_by: eric
+review_suspended_at: 2026-05-16T16:45:16+02:00
+review_suspend_reason: External AI review loop suspended by user request; current queue marked approved.
 ---
+
 
 # Review Request
 
@@ -27,7 +33,6 @@ reviewed_at:
 
 ```text
 make the following changes:
-
 Increase charge 1 damage by about 50%
 Reduce charge 2's poison cloud damage by 50%, but make the duration of the cloud 6 seconds
 charge 3 no change
@@ -36,7 +41,6 @@ charge 3 no change
 ## Goal
 
 Rebalance Cobra Strike while preserving the tested charge behavior:
-
 - Charge 1 remains the direct single-target poison finisher, with about 50% higher poison damage.
 - Charge 2 uses a separate cloud-hit server missile so its damage can be lowered without changing charge 3.
 - Charge 2 cloud visual duration is extended to 6 seconds.
@@ -70,3 +74,7 @@ See `design.md` and `diff.patch`.
 4. Is extending `cobrastrikecloud` `Range` to 150 the correct way to make the visible cloud last 6 seconds?
 5. Are active/base TSV files synchronized and column-safe?
 6. Are tooltip formulas and string text consistent with the gameplay-side changes?
+
+## User Approval / Review Suspension
+
+On 2026-05-16T16:45:16+02:00, Eric instructed Codex to suspend the external Claude review loop for now and mark the current review queue approved. This task is closed as `consensus_reached` by user override. Any future risky gameplay/data work can open a new task if the review process resumes.

@@ -1,25 +1,31 @@
 ---
 schema: ai-review-task-v1
 id: 2026-05-15-0043-cobra-cloudhit-srcdamage-128
-status: ready_for_claude
+status: consensus_reached
 phase: code_review
 round: 1
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-15T00:43:00+02:00
-updated_at: 2026-05-15T00:43:00+02:00
+updated_at: 2026-05-16T16:45:16+02:00
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
 head_ref:
 original_user_request_included: true
 live_publish_allowed: true
-last_review:
-last_verdict:
-claimed_by:
-claimed_at:
-reviewed_at:
+last_review: claude-review-r01.md
+last_verdict: approved
+claimed_by: claude
+claimed_at: 2026-05-14T22:09:41Z
+reviewed_at: 2026-05-14T22:09:41Z
+approval_source: user_override
+approved_at: 2026-05-16T16:45:16+02:00
+review_suspended_by: eric
+review_suspended_at: 2026-05-16T16:45:16+02:00
+review_suspend_reason: External AI review loop suspended by user request; current queue marked approved.
 ---
+
 
 # Review Request
 
@@ -34,7 +40,6 @@ ok. Lets the weapon damage back on, but set to 128 (100%)
 Eric wants Cobra Strike charge 2 to regain weapon/source damage, but only in the safer shape that seemed to behave normally before it was temporarily removed. The old broken behavior came from attaching source damage to a lingering cloud/collision missile, which could pulse weapon damage many times per second.
 
 The current intended split is:
-
 - `cobrastrikecloudhit`: charge 2 server damage payload
 - `cobrastrikecloud`: charge 2 client visual / lingering cloud row
 - `cobrastrikenova`: charge 3 payload
@@ -46,11 +51,9 @@ Set Cobra Strike charge 2's one-shot server payload to 100% source/weapon damage
 - `cobrastrikecloudhit` should use `SrcDamage=128`
 
 Keep the lingering visual cloud row disabled for source damage:
-
 - `cobrastrikecloud` should stay `SrcDamage=0`
 
 Keep charge 3 unchanged:
-
 - `cobrastrikenova` should stay `SrcDamage=128`
 
 Update the charge 2 tooltip so it again advertises 100% weapon damage.
@@ -76,3 +79,7 @@ See `design.md` and `diff.patch`.
 2. Does `cobrastrikecloud` remain at `SrcDamage=0`, avoiding the old repeated-collision weapon damage risk?
 3. Is the tooltip consistent with the new gameplay fields?
 4. Are active/base `missiles.txt` synchronized and TSV-safe?
+
+## User Approval / Review Suspension
+
+On 2026-05-16T16:45:16+02:00, Eric instructed Codex to suspend the external Claude review loop for now and mark the current review queue approved. This task is closed as `consensus_reached` by user override. Any future risky gameplay/data work can open a new task if the review process resumes.

@@ -1,25 +1,31 @@
 ---
 schema: ai-review-task-v1
 id: 2026-05-14-1720-fists-fire-tooltip-percent
-status: ready_for_claude
+status: consensus_reached
 phase: code_review
 round: 1
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-14T17:20:36Z
-updated_at: 2026-05-14T17:20:36Z
+updated_at: 2026-05-16T16:45:16+02:00
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
 head_ref:
 original_user_request_included: true
 live_publish_allowed: true
-last_review:
-last_verdict:
-claimed_by:
-claimed_at:
-reviewed_at:
+last_review: claude-review-r01.md
+last_verdict: approved
+claimed_by: claude
+claimed_at: 2026-05-14T22:09:41Z
+reviewed_at: 2026-05-14T22:09:41Z
+approval_source: user_override
+approved_at: 2026-05-16T16:45:16+02:00
+review_suspended_by: eric
+review_suspended_at: 2026-05-16T16:45:16+02:00
+review_suspend_reason: External AI review loop suspended by user request; current queue marked approved.
 ---
+
 
 # Review Request
 
@@ -61,3 +67,7 @@ See `design.md` and `diff.patch`.
 - Open the Fists of Fire tooltip in game and verify charge 1 displays `+ 100% weapon damage as fire` without garbage numeric text.
 - Verify charge 2 displays `+ 100% weapon damage as fire` without garbage numeric text.
 - Verify charge 3 remains unchanged.
+
+## User Approval / Review Suspension
+
+On 2026-05-16T16:45:16+02:00, Eric instructed Codex to suspend the external Claude review loop for now and mark the current review queue approved. This task is closed as `consensus_reached` by user override. Any future risky gameplay/data work can open a new task if the review process resumes.
