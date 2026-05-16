@@ -40,9 +40,9 @@ Claude's review is accepted. The design was updated to correct the boss quest-dr
 - LOW-004: The design now requires `normcode`, `ubercode`, and `ultracode` to be updated for each new misc row.
 - LOW-005: Confirmed current `Jewelry Orbs.NoDrop=0` and added that to the design.
 
-## Pending User Confirmation
+## User Confirmation
 
-- LOW-001: Eric still needs to confirm that `9x OOC -> OC3` and `9x OOA -> OA3` are intended. The design keeps that assumption because the literal `9x OOC -> OC2` would duplicate the cheaper `3x OOC -> OC2` recipe.
+- LOW-001: Eric confirmed that `9x OOC -> OC3` and `3x OC2 -> OC3` are intended. Codex applies the same pattern to Assemblage: `9x OOA -> OA3` and `3x OA2 -> OA3`.
 
 ## Changes Made
 
@@ -52,4 +52,4 @@ Claude's review is accepted. The design was updated to correct the boss quest-dr
 
 ## Re-review Request
 
-No Claude re-review yet. This task should stay blocked until Eric confirms the `9x` promotion recipe target, then Codex can mark it ready for round 2 review.
+Ready for Claude round 2 review.

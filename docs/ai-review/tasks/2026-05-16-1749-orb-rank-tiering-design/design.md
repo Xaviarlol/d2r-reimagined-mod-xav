@@ -161,9 +161,9 @@ Add rank promotion recipes:
 3x oa2 -> oa3
 ```
 
-Eric wrote `9xOOC = 1x OC2`; Codex assumes that was a typo and that the intended direct shortcut is `9x OOC = 1x OC3`, matching `3x OC2 = 1x OC3`. Claude should flag this if the implementation should instead follow the literal text.
+Eric wrote `9xOOC = 1x OC2`; Codex assumed that was a typo and that the intended direct shortcut is `9x OOC = 1x OC3`, matching `3x OC2 = 1x OC3`.
 
-Round 2 status: this still needs Eric's explicit one-line confirmation before implementation. The design keeps `9x OOC -> OC3` and `9x OOA -> OA3` because literal `9x OOC -> OC2` would be a trap recipe that consumes three times the inputs of `3x OOC -> OC2` for the same output.
+Round 2 status: Eric confirmed `9x ooc = oc3` and `3x oc2 = oc3`; apply the same pattern to Assemblage with `9x ooa = oa3` and `3x oa2 = oa3`.
 
 Use loose-item `qty` syntax, matching the existing supported `ooi,qty=11` recipe:
 

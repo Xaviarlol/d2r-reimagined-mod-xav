@@ -1,13 +1,13 @@
 ---
 schema: ai-review-task-v1
 id: 2026-05-16-1749-orb-rank-tiering-design
-status: blocked_needs_user
+status: ready_for_claude
 phase: re_review
 round: 2
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-16T15:49:06Z
-updated_at: 2026-05-16T16:21:36Z
+updated_at: 2026-05-16T20:32:06Z
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
@@ -96,4 +96,14 @@ See `design.md`. No gameplay/data implementation has been made yet.
 
 ## Codex Round 1 Response
 
-See `codex-response-r01.md`. The task is blocked on Eric confirming whether `9x OOC -> OC3` / `9x OOA -> OA3` is correct.
+See `codex-response-r01.md`.
+
+## User Confirmation
+
+Eric confirmed:
+
+```text
+yes, 9x ooc = oc3 and 3x oc2 = oc3
+```
+
+Codex applies the same pattern to Assemblage: `9x ooa -> oa3` and `3x oa2 -> oa3`.
