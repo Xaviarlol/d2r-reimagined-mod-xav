@@ -26,6 +26,9 @@ Updated: 2026-05-16.
 
 - In `cubemain.txt`, `qty=N` on a loose item code such as `ooi,qty=11` is valid for matching multiple loose cube inputs of that item.
 - In `misc.txt`, D2R advanced stash stacking for loose special items uses `AdvancedStashStackable=1`. This is separate from the older explicit stack item rows that use `stackable=1`, such as `1oc` / `1oa`.
+- Advanced stash support also needs explicit `AdvancedStashSlotWidget` entries in both HD stash layouts: `data/global/ui/layouts/bankexpansionlayouthd.json` and `data/global/ui/layouts/controller/bankexpansionlayouthd.json`. New loose stackable item codes will not get a visible stash slot from `AdvancedStashStackable=1` alone.
+- New visible inventory item codes need HD asset bindings in `data/hd/items/items.json`; otherwise the item can exist but show the missing-icon placeholder.
+- D2R string color control prefixes must be written with the actual `0xff` character, such as `0xff + "c8"` for orange power-orb names. If tooling mangles that byte to `?c8`, the tooltip will show the color code literally and the item will not render orange.
 - This mod's player-facing Topaz and Emerald item codes are `gmt` and `gme`.
 - Vanilla perfect gem codes such as `gpy` and `gpg` may still exist in `misc.txt`, but they are not the Topaz/Emerald items used by the mod's active cube recipes.
 - Orb of Conversion / Assemblage rank II and III item codes use the 3-character-safe codes `oc2`, `oc3`, `oa2`, and `oa3`. The original rank I codes remain `ooc` and `ooa`, with only their visible names changed to include `I`.

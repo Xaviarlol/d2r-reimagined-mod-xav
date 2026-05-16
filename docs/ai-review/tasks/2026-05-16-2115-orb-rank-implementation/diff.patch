@@ -286,8 +286,110 @@ index b5c0264e..6d432c29 100644
  Frozenstein Item			5					10	Act 5 Good	3	Act 5 Equip A	25	Potion 2	15	Gold 1.5x	14																						0
  Frozenstein Item Desecrated A			5					10	Act 5 Good	3	Act 5 Equip A	25	Potion 2	15	Gold 1.5x	14																						0
  Frozenstein Item Desecrated B			5					10	Act 5 Good	3	Act 5 Equip C	25	Potion 2	15	Gold 1.5x	14																						0
+diff --git a/data/global/ui/layouts/bankexpansionlayouthd.json b/data/global/ui/layouts/bankexpansionlayouthd.json
+index 13fd0eca..3f249374 100644
+--- a/data/global/ui/layouts/bankexpansionlayouthd.json
++++ b/data/global/ui/layouts/bankexpansionlayouthd.json
+@@ -483,6 +483,34 @@
+                         "rect": { "width": 98, "height": 98, "x": 511, "y": 562 },
+ 						"itemCode": "ooc"
+                     }
++                },
++                    {
++                    "type": "AdvancedStashSlotWidget", "name": "oc2",
++                    "fields": {
++                        "rect": { "width": 98, "height": 98, "x": 199, "y": 666 },
++						"itemCode": "oc2"
++                    }
++                },
++                    {
++                    "type": "AdvancedStashSlotWidget", "name": "oc3",
++                    "fields": {
++                        "rect": { "width": 98, "height": 98, "x": 303, "y": 666 },
++						"itemCode": "oc3"
++                    }
++                },
++                    {
++                    "type": "AdvancedStashSlotWidget", "name": "oa2",
++                    "fields": {
++                        "rect": { "width": 98, "height": 98, "x": 407, "y": 666 },
++						"itemCode": "oa2"
++                    }
++                },
++                    {
++                    "type": "AdvancedStashSlotWidget", "name": "oa3",
++                    "fields": {
++                        "rect": { "width": 98, "height": 98, "x": 511, "y": 666 },
++						"itemCode": "oa3"
++                    }
+                 },
+                 {
+                     "type": "AdvancedStashSlotWidget", "name": "gmd",
+diff --git a/data/global/ui/layouts/controller/bankexpansionlayouthd.json b/data/global/ui/layouts/controller/bankexpansionlayouthd.json
+index 491db8d2..e825fa0b 100644
+--- a/data/global/ui/layouts/controller/bankexpansionlayouthd.json
++++ b/data/global/ui/layouts/controller/bankexpansionlayouthd.json
+@@ -476,6 +476,34 @@
+                         "rect": { "width": 98, "height": 98, "x": 513, "y": 386 },
+ 						"itemCode": "ooc"
+                     }
++                },
++                    {
++                    "type": "AdvancedStashSlotWidget", "name": "oc2",
++                    "fields": {
++                        "rect": { "width": 98, "height": 98, "x": 201, "y": 490 },
++						"itemCode": "oc2"
++                    }
++                },
++                    {
++                    "type": "AdvancedStashSlotWidget", "name": "oc3",
++                    "fields": {
++                        "rect": { "width": 98, "height": 98, "x": 305, "y": 490 },
++						"itemCode": "oc3"
++                    }
++                },
++                    {
++                    "type": "AdvancedStashSlotWidget", "name": "oa2",
++                    "fields": {
++                        "rect": { "width": 98, "height": 98, "x": 409, "y": 490 },
++						"itemCode": "oa2"
++                    }
++                },
++                    {
++                    "type": "AdvancedStashSlotWidget", "name": "oa3",
++                    "fields": {
++                        "rect": { "width": 98, "height": 98, "x": 513, "y": 490 },
++						"itemCode": "oa3"
++                    }
+                 },
+                 {
+                     "type": "AdvancedStashSlotWidget", "name": "gmd",
+diff --git a/data/hd/items/items.json b/data/hd/items/items.json
+index 882650df..36500981 100644
+--- a/data/hd/items/items.json
++++ b/data/hd/items/items.json
+@@ -767,8 +767,12 @@
+   { "oos": { "asset": "powerorbs/orbofsocketing" } },
+   { "1os": { "asset": "powerorbs/orbofsocketing_stacked" } },
+   { "ooc": { "asset": "powerorbs/orbofconversion" } },
++  { "oc2": { "asset": "powerorbs/orbofconversion" } },
++  { "oc3": { "asset": "powerorbs/orbofconversion" } },
+   { "1oc": { "asset": "powerorbs/orbofconversion_stacked" } },
+   { "ooa": { "asset": "powerorbs/orbofassemblage" } },
++  { "oa2": { "asset": "powerorbs/orbofassemblage" } },
++  { "oa3": { "asset": "powerorbs/orbofassemblage" } },
+   { "1oa": { "asset": "powerorbs/orbofassemblage_stacked" } },
+   { "ooi": { "asset": "powerorbs/orbofinfusion" } },
+   { "1oi": { "asset": "powerorbs/orbofinfusion_stacked" } },
+@@ -800,4 +804,4 @@
+   { "cs1": { "asset": "charm/charm_sunder" } },
+   { "oor": { "asset": "powerorbs/orbofrenewal" } },
+   { "1or": { "asset": "powerorbs/orbofrenewal_stacked" } }
+-]
+\ No newline at end of file
++]
 diff --git a/data/local/lng/strings/item-names.json b/data/local/lng/strings/item-names.json
-index 69528ac1..1542d72e 100644
+index 69528ac1..38328673 100644
 --- a/data/local/lng/strings/item-names.json
 +++ b/data/local/lng/strings/item-names.json
 @@ -51648,7 +51648,7 @@
@@ -295,7 +397,7 @@ index 69528ac1..1542d72e 100644
          "id": 51387,
          "Key": "ooc",
 -        "enUS": "ÿc8Orb of Conversion",
-+        "enUS": "?c8Orb of Conversion I",
++        "enUS": "ÿc8Orb of Conversion I",
          "zhTW": "ÿc8轉換之球[轉暗金]",
          "deDE": "ÿc8Umwandlungsorb",
          "esES": "ÿc8Orbe de Conversión",
@@ -304,7 +406,7 @@ index 69528ac1..1542d72e 100644
          "id": 51390,
          "Key": "oocDescription",
 -        "enUS": "ÿc4to upgrade it to Unique\nCube with a Rare item",
-+        "enUS": "?c4Normal Rare armor/weapons -> Unique\nRare jewelry -> Unique\nCube with a Rare item",
++        "enUS": "ÿc4Converts normal rare armor/weapons to unique\nConverts rare jewelry to unique",
          "zhTW": "ÿc4 裝備升級为暗金版\n與稀有裝備一同放入Cube轉化",
          "deDE": "ÿc4um es zu einem Einzigartigen aufzuwerten\nWürfle mit einem seltenen Gegenstand",
          "esES": "ÿc4para mejorarlo a Único\nCubos con un objeto raro",
@@ -313,7 +415,7 @@ index 69528ac1..1542d72e 100644
          "id": 51392,
          "Key": "ooa",
 -        "enUS": "ÿc8Orb of Assemblage",
-+        "enUS": "?c8Orb of Assemblage I",
++        "enUS": "ÿc8Orb of Assemblage I",
          "zhTW": "ÿc8集聚之球",
          "deDE": "ÿc8Versammlungs-Orb",
          "esES": "ÿc8Orbe de Ensamblaje",
@@ -322,7 +424,7 @@ index 69528ac1..1542d72e 100644
          "id": 51393,
          "Key": "ooaDescription",
 -        "enUS": "ÿc4to upgrade it to Set\nCube with a Rare item",
-+        "enUS": "?c4Normal Rare armor/weapons -> Set\nRare jewelry -> Set\nCube with a Rare item",
++        "enUS": "ÿc4Converts normal rare armor/weapons to set\nConverts rare jewelry to set",
 +        "zhTW": "ÿc4裝備升級为套裝版\n與稀有裝備一同放入Cube轉化",
 +        "deDE": "ÿc4um es zu einem Set aufzuwerten\nWürfle mit einem seltenen Gegenstand",
 +        "esES": "ÿc4para mejorarlo a Conjunto\nCúbalo con un objeto raro",
@@ -339,7 +441,7 @@ index 69528ac1..1542d72e 100644
 +    {
 +        "id": 51568,
 +        "Key": "oc2",
-+        "enUS": "?c8Orb of Conversion II",
++        "enUS": "ÿc8Orb of Conversion II",
 +        "zhTW": "ÿc8轉換之球[轉暗金]",
 +        "deDE": "ÿc8Umwandlungsorb",
 +        "esES": "ÿc8Orbe de Conversión",
@@ -356,7 +458,7 @@ index 69528ac1..1542d72e 100644
 +    {
 +        "id": 51569,
 +        "Key": "oc3",
-+        "enUS": "?c8Orb of Conversion III",
++        "enUS": "ÿc8Orb of Conversion III",
 +        "zhTW": "ÿc8轉換之球[轉暗金]",
 +        "deDE": "ÿc8Umwandlungsorb",
 +        "esES": "ÿc8Orbe de Conversión",
@@ -373,7 +475,7 @@ index 69528ac1..1542d72e 100644
 +    {
 +        "id": 51570,
 +        "Key": "oc2Description",
-+        "enUS": "?c4Converts exceptional Rare armor/weapons to Unique\nPromote lower-rank Orbs in the Cube",
++        "enUS": "ÿc4Converts exceptional rare armor/weapons to unique\nPromote lower-rank orbs in the Cube",
 +        "zhTW": "ÿc4 裝備升級为暗金版\n與稀有裝備一同放入Cube轉化",
 +        "deDE": "ÿc4um es zu einem Einzigartigen aufzuwerten\nWürfle mit einem seltenen Gegenstand",
 +        "esES": "ÿc4para mejorarlo a Único\nCubos con un objeto raro",
@@ -390,7 +492,7 @@ index 69528ac1..1542d72e 100644
 +    {
 +        "id": 51571,
 +        "Key": "oc3Description",
-+        "enUS": "?c4Converts elite Rare armor/weapons to Unique\nPromote lower-rank Orbs in the Cube",
++        "enUS": "ÿc4Converts elite rare armor/weapons to unique\nPromote lower-rank orbs in the Cube",
 +        "zhTW": "ÿc4 裝備升級为暗金版\n與稀有裝備一同放入Cube轉化",
 +        "deDE": "ÿc4um es zu einem Einzigartigen aufzuwerten\nWürfle mit einem seltenen Gegenstand",
 +        "esES": "ÿc4para mejorarlo a Único\nCubos con un objeto raro",
@@ -407,7 +509,7 @@ index 69528ac1..1542d72e 100644
 +    {
 +        "id": 51572,
 +        "Key": "oa2",
-+        "enUS": "?c8Orb of Assemblage II",
++        "enUS": "ÿc8Orb of Assemblage II",
 +        "zhTW": "ÿc8集聚之球",
 +        "deDE": "ÿc8Versammlungs-Orb",
 +        "esES": "ÿc8Orbe de Ensamblaje",
@@ -424,7 +526,7 @@ index 69528ac1..1542d72e 100644
 +    {
 +        "id": 51573,
 +        "Key": "oa3",
-+        "enUS": "?c8Orb of Assemblage III",
++        "enUS": "ÿc8Orb of Assemblage III",
 +        "zhTW": "ÿc8集聚之球",
 +        "deDE": "ÿc8Versammlungs-Orb",
 +        "esES": "ÿc8Orbe de Ensamblaje",
@@ -441,7 +543,7 @@ index 69528ac1..1542d72e 100644
 +    {
 +        "id": 51574,
 +        "Key": "oa2Description",
-+        "enUS": "?c4Converts exceptional Rare armor/weapons to Set\nPromote lower-rank Orbs in the Cube",
++        "enUS": "ÿc4Converts exceptional rare armor/weapons to set\nPromote lower-rank orbs in the Cube",
 +        "zhTW": "ÿc4裝備升級为套裝版\n與稀有裝備一同放入Cube轉化",
 +        "deDE": "ÿc4um es zu einem Set aufzuwerten\nWürfle mit einem seltenen Gegenstand",
 +        "esES": "ÿc4para mejorarlo a Conjunto\nCúbalo con un objeto raro",
@@ -458,7 +560,7 @@ index 69528ac1..1542d72e 100644
 +    {
 +        "id": 51575,
 +        "Key": "oa3Description",
-+        "enUS": "?c4Converts elite Rare armor/weapons to Set\nPromote lower-rank Orbs in the Cube",
++        "enUS": "ÿc4Converts elite rare armor/weapons to set\nPromote lower-rank orbs in the Cube",
          "zhTW": "ÿc4裝備升級为套裝版\n與稀有裝備一同放入Cube轉化",
          "deDE": "ÿc4um es zu einem Set aufzuwerten\nWürfle mit einem seltenen Gegenstand",
          "esES": "ÿc4para mejorarlo a Conjunto\nCúbalo con un objeto raro",
@@ -472,11 +574,16 @@ index 69528ac1..1542d72e 100644
          "Key": "Rogue Scout Arrows",
          "enUS": "Rogue Scout Arrows",
 diff --git a/docs/modding-findings.md b/docs/modding-findings.md
-index a441bbb7..242e1f4c 100644
+index a441bbb7..405595a8 100644
 --- a/docs/modding-findings.md
 +++ b/docs/modding-findings.md
-@@ -28,6 +28,9 @@ Updated: 2026-05-16.
+@@ -26,8 +26,14 @@ Updated: 2026-05-16.
+ 
+ - In `cubemain.txt`, `qty=N` on a loose item code such as `ooi,qty=11` is valid for matching multiple loose cube inputs of that item.
  - In `misc.txt`, D2R advanced stash stacking for loose special items uses `AdvancedStashStackable=1`. This is separate from the older explicit stack item rows that use `stackable=1`, such as `1oc` / `1oa`.
++- Advanced stash support also needs explicit `AdvancedStashSlotWidget` entries in both HD stash layouts: `data/global/ui/layouts/bankexpansionlayouthd.json` and `data/global/ui/layouts/controller/bankexpansionlayouthd.json`. New loose stackable item codes will not get a visible stash slot from `AdvancedStashStackable=1` alone.
++- New visible inventory item codes need HD asset bindings in `data/hd/items/items.json`; otherwise the item can exist but show the missing-icon placeholder.
++- D2R string color control prefixes must be written with the actual `0xff` character, such as `0xff + "c8"` for orange power-orb names. If tooling mangles that byte to `?c8`, the tooltip will show the color code literally and the item will not render orange.
  - This mod's player-facing Topaz and Emerald item codes are `gmt` and `gme`.
  - Vanilla perfect gem codes such as `gpy` and `gpg` may still exist in `misc.txt`, but they are not the Topaz/Emerald items used by the mod's active cube recipes.
 +- Orb of Conversion / Assemblage rank II and III item codes use the 3-character-safe codes `oc2`, `oc3`, `oa2`, and `oa3`. The original rank I codes remain `ooc` and `ooa`, with only their visible names changed to include `I`.

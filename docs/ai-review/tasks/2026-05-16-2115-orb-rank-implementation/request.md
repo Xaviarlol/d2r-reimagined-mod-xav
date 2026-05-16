@@ -7,13 +7,13 @@ round: 1
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-16T21:15:00Z
-updated_at: 2026-05-16T21:15:00Z
+updated_at: 2026-05-16T21:37:36Z
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
 head_ref:
 original_user_request_included: true
-live_publish_allowed: false
+live_publish_allowed: true
 last_review:
 last_verdict:
 claimed_by:
@@ -85,6 +85,9 @@ code_review
   - `3x oa2 -> oa3`
 - Adds rank II/III treasure classes, generic Jewelry Orbs weights, and boss quest selectors.
 - Normalizes active/base orb treasure-class structure to loose orb codes rather than base-only normal/stack split rows.
+- Adds HD item asset bindings for `oc2`, `oc3`, `oa2`, and `oa3`, reusing existing Conversion/Assemblage orb assets.
+- Adds HD stash stack slot widgets for the new rank II/III orb codes in both keyboard/mouse and controller stash layouts.
+- Fixes English string color-control prefixes to use the actual `0xff` character so the orange item names and gray descriptions render correctly.
 - Updates `docs/modding-findings.md`.
 
 ## Design Or Diff
@@ -102,9 +105,9 @@ Jewelry rank tiering is intentionally not implemented in this patch. The old `am
 2. Are `misc.txt`, `cubemain.txt`, and `treasureclassex.txt` active/base changes synchronized where needed?
 3. Are TSV structures safe and free of malformed rows?
 4. Are the `bas` / `exc` / `eli` recipe qualifiers and outputs correct for armor/weapons?
-5. Are `AdvancedStashStackable=1` and string keys correct for `oc2`, `oc3`, `oa2`, and `oa3`?
+5. Are `AdvancedStashStackable=1`, HD stash slot widgets, HD item asset mappings, and string keys correct for `oc2`, `oc3`, `oa2`, and `oa3`?
 6. Are the generic and boss quest treasure-class weights correct?
-7. Is it safe to commit/push, while still not live-publishing until review and user testing?
+7. Are the follow-up live smoke-test fixes complete and safe to keep published?
 
 ## Local Validation Already Run
 
@@ -116,3 +119,6 @@ Jewelry rank tiering is intentionally not implemented in this patch. The old `am
 - Verified no legacy active/base treasure-class rows remain for `Jewelry Orbs Single`, `Jewelry Orbs Stack`, or `* Orb (Normal)`.
 - Verified one copy of each managed orb treasure class in active and base `treasureclassex.txt`.
 - Parsed `item-names.json` and verified one copy of each new rank/name/description key with no duplicate string ids.
+- Parsed `item-names.json`, `items.json`, and both HD stash layout JSON files.
+- Verified `ooc`/`ooa`/rank II/III English orb names and descriptions begin with the actual `0xff` color-control character.
+- Verified HD item asset mappings and HD stash slot widgets exist for `oc2`, `oc3`, `oa2`, and `oa3`.

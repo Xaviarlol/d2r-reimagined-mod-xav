@@ -477,6 +477,34 @@
 						"itemCode": "ooc"
                     }
                 },
+                    {
+                    "type": "AdvancedStashSlotWidget", "name": "oc2",
+                    "fields": {
+                        "rect": { "width": 98, "height": 98, "x": 201, "y": 490 },
+						"itemCode": "oc2"
+                    }
+                },
+                    {
+                    "type": "AdvancedStashSlotWidget", "name": "oc3",
+                    "fields": {
+                        "rect": { "width": 98, "height": 98, "x": 305, "y": 490 },
+						"itemCode": "oc3"
+                    }
+                },
+                    {
+                    "type": "AdvancedStashSlotWidget", "name": "oa2",
+                    "fields": {
+                        "rect": { "width": 98, "height": 98, "x": 409, "y": 490 },
+						"itemCode": "oa2"
+                    }
+                },
+                    {
+                    "type": "AdvancedStashSlotWidget", "name": "oa3",
+                    "fields": {
+                        "rect": { "width": 98, "height": 98, "x": 513, "y": 490 },
+						"itemCode": "oa3"
+                    }
+                },
                 {
                     "type": "AdvancedStashSlotWidget", "name": "gmd",
                     "fields": {
