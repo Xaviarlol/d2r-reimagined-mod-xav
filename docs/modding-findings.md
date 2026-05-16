@@ -2,7 +2,7 @@
 
 Living notes for discoveries made while testing XavReimagined. Treat this as practical project knowledge, not a full D2R data-file reference.
 
-Updated: 2026-05-14.
+Updated: 2026-05-16.
 
 ## Workflow Notes
 
@@ -27,6 +27,13 @@ Updated: 2026-05-14.
 - In `cubemain.txt`, `qty=N` on a loose item code such as `ooi,qty=11` is valid for matching multiple loose cube inputs of that item.
 - This mod's player-facing Topaz and Emerald item codes are `gmt` and `gme`.
 - Vanilla perfect gem codes such as `gpy` and `gpg` may still exist in `misc.txt`, but they are not the Topaz/Emerald items used by the mod's active cube recipes.
+
+## Belt Potion Rows
+
+- Belt potion row capacity is controlled by the `belt` column in `armor.txt`, not by the equipment-slot placement rows in `inventory.txt`.
+- The low normal belt bases now use `belt=3`, matching the Plated Belt's known four-row tier: `Sash`, `Light Belt`, `Belt`, and `Heavy Belt`.
+- `Plated Belt` already used `belt=3`; exceptional and elite belts stay at `belt=6`.
+- Unique and set belts inherit this behavior from their base item code, so no unique/set item rows were needed for the all-belts-four-rows pass.
 
 ## Poison Damage Math
 
