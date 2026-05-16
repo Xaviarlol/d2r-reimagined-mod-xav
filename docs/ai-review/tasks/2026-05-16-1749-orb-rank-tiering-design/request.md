@@ -7,7 +7,7 @@ round: 1
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-16T15:49:06Z
-updated_at: 2026-05-16T15:59:37Z
+updated_at: 2026-05-16T16:01:50Z
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
@@ -53,6 +53,19 @@ Review the proposed design before Codex implements ranked Orb of Conversion and 
 regarding jewellery, can we restrict the output to plvl/ilvl? So for example rank 1 OOC can only make up to level 40, rank 2 to 70, rank 3 to 100?
 ```
 
+## Follow-up Recipe Request
+
+```text
+also, please add to the design new recipe changes to support this change:
+11x OOI + topaz = unchanged (OOC rank 1)
+11x OOI + emerald = unchanged (OOA rank 1)
+new recipe 3x OOC = 1x OC2
+9xOOC = 1x OC2
+3xOC2 = 1x OC3
+Same pattern for assemblage version (OA2 and 3)
+Update the reviewe package
+```
+
 ## Phase
 
 design_review
@@ -79,3 +92,4 @@ See `design.md`. No gameplay/data implementation has been made yet.
 6. Should rank II/III stack variants be added now, deferred, or avoided?
 7. Are active/base files likely to need normalization around single-orb versus stacked-orb treasure classes?
 8. Is the boss quest-drop tier-upgrade design safe enough to implement?
+9. Is Codex's assumption that `9x OOC` / `9x OOA` should produce rank III correct, or should the user-written `9x OOC = 1x OC2` be treated literally?

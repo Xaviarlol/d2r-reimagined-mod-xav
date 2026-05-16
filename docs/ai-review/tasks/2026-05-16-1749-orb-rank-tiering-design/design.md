@@ -126,6 +126,43 @@ ASSEMBLAGE III WEAPON "weap,eli,rar" + oa3 -> usetype,set
 
 The existing all-tier `armo,rar` and `weap,rar` recipes should be replaced or disabled so rank I cannot affect exceptional/elite items.
 
+## Orb Promotion Recipe Plan
+
+Keep the current Infusion-to-rank-I recipes unchanged:
+
+```text
+11x ooi + gmt -> ooc
+11x ooi + gme -> ooa
+```
+
+Add rank promotion recipes:
+
+```text
+3x ooc -> oc2
+9x ooc -> oc3
+3x oc2 -> oc3
+
+3x ooa -> oa2
+9x ooa -> oa3
+3x oa2 -> oa3
+```
+
+Eric wrote `9xOOC = 1x OC2`; Codex assumes that was a typo and that the intended direct shortcut is `9x OOC = 1x OC3`, matching `3x OC2 = 1x OC3`. Claude should flag this if the implementation should instead follow the literal text.
+
+Use loose-item `qty` syntax, matching the existing supported `ooi,qty=11` recipe:
+
+```text
+input 1="ooc,qty=3" -> output=oc2, numinputs=3
+input 1="ooc,qty=9" -> output=oc3, numinputs=9
+input 1="oc2,qty=3" -> output=oc3, numinputs=3
+
+input 1="ooa,qty=3" -> output=oa2, numinputs=3
+input 1="ooa,qty=9" -> output=oa3, numinputs=9
+input 1="oa2,qty=3" -> output=oa3, numinputs=3
+```
+
+Do not change the existing `11x ooi + topaz/emerald` rank-I recipes except for display descriptions if needed.
+
 ## Jewelry Plan
 
 Current recipes also support rare amulets and rings:
@@ -261,12 +298,20 @@ docs/modding-findings.md
 1. Parse active/base TSV files and confirm all edited rows have the expected column counts.
 2. Confirm active/base `misc.txt` and `cubemain.txt` orb rows match.
 3. Confirm old all-tier `armo,rar`/`weap,rar` recipes no longer let rank I convert exceptional or elite items.
-4. In game, test:
+4. Confirm the existing `11x ooi + gmt/gme` recipes still produce `ooc` and `ooa`.
+5. Confirm rank promotion recipes:
+   - `3x ooc -> oc2`
+   - `9x ooc -> oc3`
+   - `3x oc2 -> oc3`
+   - `3x ooa -> oa2`
+   - `9x ooa -> oa3`
+   - `3x oa2 -> oa3`
+6. In game, test:
    - Normal rare weapon/armor + rank I works.
    - Exceptional rare weapon/armor + rank I fails.
    - Exceptional rare weapon/armor + rank II works.
    - Elite rare weapon/armor + rank II fails.
    - Elite rare weapon/armor + rank III works.
    - Equivalent Assemblage tests for set output.
-5. Test Mephisto and Diablo quest-drop behavior if quest selector TCs are implemented.
-6. Run local install only after Claude approval and implementation.
+7. Test Mephisto and Diablo quest-drop behavior if quest selector TCs are implemented.
+8. Run local install only after Claude approval and implementation.
