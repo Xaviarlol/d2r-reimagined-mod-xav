@@ -7,7 +7,7 @@ round: 1
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-16T21:15:00Z
-updated_at: 2026-05-16T21:37:36Z
+updated_at: 2026-05-16T21:54:34Z
 repo: C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: HEAD
@@ -86,7 +86,7 @@ code_review
 - Adds rank II/III treasure classes, generic Jewelry Orbs weights, and boss quest selectors.
 - Normalizes active/base orb treasure-class structure to loose orb codes rather than base-only normal/stack split rows.
 - Adds HD item asset bindings for `oc2`, `oc3`, `oa2`, and `oa3`, reusing existing Conversion/Assemblage orb assets.
-- Adds HD stash stack slot widgets for the new rank II/III orb codes in both keyboard/mouse and controller stash layouts.
+- Adds HD stash stack slot widgets for the new rank II/III orb codes in both keyboard/mouse and controller stash layouts, packed into existing top-row free space so they do not overlap the normal stash grid underneath.
 - Fixes English string color-control prefixes to use the actual `0xff` character so the orange item names and gray descriptions render correctly.
 - Updates `docs/modding-findings.md`.
 
@@ -122,3 +122,4 @@ Jewelry rank tiering is intentionally not implemented in this patch. The old `am
 - Parsed `item-names.json`, `items.json`, and both HD stash layout JSON files.
 - Verified `ooc`/`ooa`/rank II/III English orb names and descriptions begin with the actual `0xff` color-control character.
 - Verified HD item asset mappings and HD stash slot widgets exist for `oc2`, `oc3`, `oa2`, and `oa3`.
+- Verified the new rank II/III stash slot rectangles sit above the normal stash grid in both keyboard/mouse and controller layouts.
