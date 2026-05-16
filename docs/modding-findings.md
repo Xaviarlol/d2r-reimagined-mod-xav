@@ -2,7 +2,7 @@
 
 Living notes for discoveries made while testing XavReimagined. Treat this as practical project knowledge, not a full D2R data-file reference.
 
-Updated: 2026-05-16.
+Updated: 2026-05-17.
 
 ## Workflow Notes
 
@@ -35,6 +35,7 @@ Updated: 2026-05-16.
 - Orb of Conversion / Assemblage rank II and III item codes use the 3-character-safe codes `oc2`, `oc3`, `oa2`, and `oa3`. The original rank I codes remain `ooc` and `ooa`, with only their visible names changed to include `I`.
 - Current ranked orb implementation tiers armor and weapon recipes with `bas` / `exc` / `eli`. Jewelry conversion/assemblage recipes remain on the old rank-I behavior until we verify that cube output `lvl` gates the unique/set jewelry selection pool before the item is chosen.
 - Generic Jewelry Orbs treasure-class weighting keeps rank I as the common baseline and adds rank II/III as rarer outcomes: Infusion `12`, Assemblage I/II/III `6/2/1`, Conversion I/II/III `6/2/1`.
+- Ranked orb downgrade recipes return three loose lower-rank outputs using `output`, `output b`, and `output c`, rather than relying on `code,qty=3` for a single output. Current downgrades are `oc3 -> 3x oc2`, `oc2 -> 3x ooc`, `oa3 -> 3x oa2`, and `oa2 -> 3x ooa`.
 
 ## Belt Potion Rows
 

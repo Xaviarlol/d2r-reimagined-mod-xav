@@ -256,6 +256,10 @@ ORB CONVERSION III - 3 Orbs of Conversion II = Orb of Conversion III	1				100			
 ORB ASSEMBLAGE II - 3 Orbs of Assemblage I = Orb of Assemblage II	1				100					3	"ooa,qty=3"							oa2																																																																																							0
 ORB ASSEMBLAGE III - 9 Orbs of Assemblage I = Orb of Assemblage III	1				100					9	"ooa,qty=9"							oa3																																																																																							0
 ORB ASSEMBLAGE III - 3 Orbs of Assemblage II = Orb of Assemblage III	1				100					3	"oa2,qty=3"							oa3																																																																																							0
+ORB CONVERSION DOWNGRADE III - 1 Orb of Conversion III = 3 Orbs of Conversion II	1				100					1	oc3							oc2																													oc2																													oc2																													0
+ORB CONVERSION DOWNGRADE II - 1 Orb of Conversion II = 3 Orbs of Conversion I	1				100					1	oc2							ooc																													ooc																													ooc																													0
+ORB ASSEMBLAGE DOWNGRADE III - 1 Orb of Assemblage III = 3 Orbs of Assemblage II	1				100					1	oa3							oa2																													oa2																													oa2																													0
+ORB ASSEMBLAGE DOWNGRADE II - 1 Orb of Assemblage II = 3 Orbs of Assemblage I	1				100					1	oa2							ooa																													ooa																													ooa																													0
 SOCKET ARMOR/SHIELD - 1 Orb of Socketing & Armor/Shield = Random # of Sockets	1				100					2	armo	oos						useitem			100	sock			1	4																																																																															0
 SOCKET WEAPON - 1 Orb of Socketing & 1 Weapon = Random # of Sockets	1				100					2	weap	oos						useitem			100	sock			1	6																																																																															0
 SOCKET RETRIEVE - Jewel Pliers & Socketed Item = Unsocket Item	1				100					2	"any,nru,sock"	jwp						"useitem,rem"																																																																																							0
