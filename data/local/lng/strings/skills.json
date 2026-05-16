@@ -32744,7 +32744,7 @@
     {
         "id": 22232,
         "Key": "Skillld270",
-        "enUS": "Charge-up Skill\n\nconsecutive hits add lightning damage\nto finishing moves\ncan only be used with claw class weapons\nmust use a dragon finishing move or\nnormal attack to release charges",
+        "enUS": "Charge-up Skill\n\nconsecutive hits add lightning damage\nto finishing moves\nall charges add 100%% weapon damage\ncan only be used with claw class weapons\nmust use a dragon finishing move or\nnormal attack to release charges",
         "zhTW": "集氣技能\n\n連擊可以使終結技附加電擊傷害\n裝備爪類武器才可使用\n必須使用龍系終結技或普通攻擊來釋放聚集的力量",
         "deDE": "Aufladefertigkeit\n\nAufeinanderfolgende Treffer fügen\nFinishing-Moves Blitzschaden hinzu.\nKann nur mit Klauenwaffen verwendet werden.\nAufladungen werden mit Drachen-Finishing-Moves\noder normalen Angriffen freigesetzt.",
         "esES": "Habilidad de cargas\n\nLos golpes consecutivos añaden daño de rayos\na los remates. Solo se puede utilizar\ncon armas de tipo garra. Debes utilizar\nun remate de dragón o un ataque normal\npara liberar cargas.",
@@ -34112,7 +34112,7 @@
     {
         "id": 22311,
         "Key": "Eskillthunder1",
-        "enUS": "Charge 1 - Lightning Damage: %d-%d",
+        "enUS": "Charge 1 - Lightning Damage: %d-%d + 100%% weapon damage",
         "zhTW": "一次集氣 - 電擊傷害：%d - %d 點",
         "deDE": "Ladung 1 - Blitzschaden: %d-%d",
         "esES": "Carga 1: daño de rayos: %d-%d p.",
@@ -34129,7 +34129,7 @@
     {
         "id": 22312,
         "Key": "Eskillthunder2",
-        "enUS": "Charge 2 - Nova Damage: %d-%d",
+        "enUS": "Charge 2 - Nova Damage: %d-%d + 100%% weapon damage",
         "zhTW": "兩次集氣 - 閃電新星傷害：%d - %d 點",
         "deDE": "Ladung 2 - Nova-Schaden: %d-%d",
         "esES": "Carga 2: daño de nova: %d-%d p.",
@@ -34146,7 +34146,7 @@
     {
         "id": 22313,
         "Key": "Eskillthunder3",
-        "enUS": "Charge 3 - Charged Bolt Damage: %d-%d",
+        "enUS": "Charge 3 - Charged Bolt Damage: %d-%d + 100%% weapon damage",
         "zhTW": "三次集氣 - 電能彈傷害：%d - %d 點",
         "deDE": "Ladung 3 - Comboblitz-Schaden: %d-%d",
         "esES": "Carga 3: daño de descarga de energía: %d-%d p.",
