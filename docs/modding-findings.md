@@ -44,6 +44,13 @@ Updated: 2026-05-17.
 - Higher ratio values make that quality harder to roll. Sets now mirror uniques in every `itemratio.txt` row by matching `Set` / `SetDivisor` / `SetMin` to `Unique` / `UniqueDivisor` / `UniqueMin`.
 - Before this change, uniques were 2x to 3.2x rarer than sets by raw ratio column, with the main expansion non-class rows at 2.5x.
 - To make sets globally rarer than uniques later, raise the relevant `Set` values above the matching `Unique` values, and consider raising `SetMin` above `UniqueMin` so high-level or high-MF cases do not cap sets as generously.
+- `itemratio.txt` can target normal vs exceptional/elite through `Uber=0` and `Uber=1`, but it does not expose a separate elite-only row. For the rare rework, elite-primary behavior should come from affix level/weighting, with `Uber=1` rarity changes affecting exceptional and elite together.
+
+## Rare Affix Rework
+
+- The rare item rework design is in `docs/rare-item-rework-design-2026-05-18.md`.
+- Rare affix count appears engine-side rather than TXT-side; treat rares as capped at 6 affix records, up to 3 prefixes and 3 suffixes.
+- Greater Affixes should be implemented as rare-only rows in `magicprefix.txt` / `magicsuffix.txt` using `spawnable=0`, `rare=1`, low `frequency`, and the same `group` as the normal affix family they upgrade.
 
 ## Set Item Buff Pass
 
