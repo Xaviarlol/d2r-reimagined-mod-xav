@@ -37,6 +37,13 @@ Updated: 2026-05-17.
 - Generic Jewelry Orbs treasure-class weighting keeps rank I as the common baseline and adds rank II/III as rarer outcomes: Infusion `12`, Assemblage I/II/III `6/2/1`, Conversion I/II/III `6/2/1`.
 - Ranked orb downgrade recipes return three loose lower-rank outputs using `output`, `output b`, and `output c`, rather than relying on `code,qty=3` for a single output. Current downgrades are `oc3 -> 3x oc2`, `oc2 -> 3x ooc`, `oa3 -> 3x oa2`, and `oa2 -> 3x ooa`.
 
+## Item Quality Ratios
+
+- Global item quality roll tuning lives in `itemratio.txt`, now tracked in both `data/global/excel/` and `data/global/excel/base/`.
+- Unique and set quality rolls are independently tunable through `Unique` / `UniqueDivisor` / `UniqueMin` and `Set` / `SetDivisor` / `SetMin`.
+- Higher ratio values make that quality harder to roll. The current extracted file has sets easier than uniques in every row, for example expansion non-class items use `Unique=400` and `Set=160`.
+- To make sets globally rarer than uniques, raise the relevant `Set` values above the matching `Unique` values, and consider raising `SetMin` above `UniqueMin` so high-level or high-MF cases do not cap sets as generously.
+
 ## Belt Potion Rows
 
 - Belt potion row capacity is controlled by the `belt` column in `armor.txt`, not by the equipment-slot placement rows in `inventory.txt`.
