@@ -56,6 +56,7 @@ Updated: 2026-05-17.
 
 - The low-affix set item proposal was implemented in both active and base `setitems.txt` on 2026-05-17 for 93 approved items. The 13 user-excluded items were left untouched for later whole-set review.
 - `Mystic Blades` had its malformed item-property slots repaired so `block1 30` and `dmg-mag 25-50` occupy valid property slots before the approved item buffs.
+- A follow-up range pass on 2026-05-18 converted newly added fixed numeric buff values into roll ranges. Added skill bonuses now roll, mostly `1-2`; binary effects such as `freeze` and `half-freeze` stayed fixed.
 
 ## Belt Potion Rows
 

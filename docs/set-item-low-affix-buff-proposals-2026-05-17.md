@@ -6,6 +6,8 @@ Scope: every spawnable, enabled row in `data/global/excel/setitems.txt` with 3 o
 
 Implementation status: approved buffs were applied to `data/global/excel/setitems.txt` and `data/global/excel/base/setitems.txt` on 2026-05-17, excluding the 13 items listed below. `Mystic Blades` also had its malformed `block1` / `dmg-mag` property slots repaired before the approved buffs were added.
 
+Range pass: on 2026-05-18, the newly added numeric buff values were widened into roll ranges. The original fixed value generally became the upper bound, added skill bonuses now roll instead of staying fixed, and binary effects such as `freeze` / `half-freeze` remained fixed.
+
 Excluded from implementation:
 
 - Spin's Enigma
