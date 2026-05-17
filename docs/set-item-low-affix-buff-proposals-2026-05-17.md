@@ -4,7 +4,23 @@ Generated 2026-05-17.
 
 Scope: every spawnable, enabled row in `data/global/excel/setitems.txt` with 3 or fewer visible item-level affixes. Hidden plumbing such as `oskill_hide` is excluded from the count. Set completion and partial-set bonus columns (`aprop*`) are not counted, because this pass is about the item standing on its own before set bonuses.
 
-This is a proposal document only. No `setitems.txt` values were changed.
+Implementation status: approved buffs were applied to `data/global/excel/setitems.txt` and `data/global/excel/base/setitems.txt` on 2026-05-17, excluding the 13 items listed below. `Mystic Blades` also had its malformed `block1` / `dmg-mag` property slots repaired before the approved buffs were added.
+
+Excluded from implementation:
+
+- Spin's Enigma
+- Spin's Paradox
+- Spin's Mystery
+- Spin's Conundrum
+- Spin's Perplexing Puzzle
+- Incarnadine Elven Plate
+- Lilarcors Crown
+- Teleomortis' Gloves
+- Citadel Belt
+- Cryptic Claws
+- Way of the Shadow
+- Return to Hydrakal
+- Onyx's Celestial Rage
 
 Design target:
 

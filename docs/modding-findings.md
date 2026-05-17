@@ -45,6 +45,11 @@ Updated: 2026-05-17.
 - Before this change, uniques were 2x to 3.2x rarer than sets by raw ratio column, with the main expansion non-class rows at 2.5x.
 - To make sets globally rarer than uniques later, raise the relevant `Set` values above the matching `Unique` values, and consider raising `SetMin` above `UniqueMin` so high-level or high-MF cases do not cap sets as generously.
 
+## Set Item Buff Pass
+
+- The low-affix set item proposal was implemented in both active and base `setitems.txt` on 2026-05-17 for 93 approved items. The 13 user-excluded items were left untouched for later whole-set review.
+- `Mystic Blades` had its malformed item-property slots repaired so `block1 30` and `dmg-mag 25-50` occupy valid property slots before the approved item buffs.
+
 ## Belt Potion Rows
 
 - Belt potion row capacity is controlled by the `belt` column in `armor.txt`, not by the equipment-slot placement rows in `inventory.txt`.
