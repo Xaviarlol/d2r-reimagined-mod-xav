@@ -41,8 +41,9 @@ Updated: 2026-05-17.
 
 - Global item quality roll tuning lives in `itemratio.txt`, now tracked in both `data/global/excel/` and `data/global/excel/base/`.
 - Unique and set quality rolls are independently tunable through `Unique` / `UniqueDivisor` / `UniqueMin` and `Set` / `SetDivisor` / `SetMin`.
-- Higher ratio values make that quality harder to roll. The current extracted file has sets easier than uniques in every row, for example expansion non-class items use `Unique=400` and `Set=160`.
-- To make sets globally rarer than uniques, raise the relevant `Set` values above the matching `Unique` values, and consider raising `SetMin` above `UniqueMin` so high-level or high-MF cases do not cap sets as generously.
+- Higher ratio values make that quality harder to roll. Sets now mirror uniques in every `itemratio.txt` row by matching `Set` / `SetDivisor` / `SetMin` to `Unique` / `UniqueDivisor` / `UniqueMin`.
+- Before this change, uniques were 2x to 3.2x rarer than sets by raw ratio column, with the main expansion non-class rows at 2.5x.
+- To make sets globally rarer than uniques later, raise the relevant `Set` values above the matching `Unique` values, and consider raising `SetMin` above `UniqueMin` so high-level or high-MF cases do not cap sets as generously.
 
 ## Belt Potion Rows
 
