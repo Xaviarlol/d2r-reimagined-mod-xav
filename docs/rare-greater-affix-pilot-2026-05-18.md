@@ -4,7 +4,58 @@ Created: 2026-05-18.
 
 Status: design only, not implemented.
 
-This replaces the earlier "add a handful of Greater rows" pilot. Eric clarified that the real rare rework is broader: top affixes, not only Greater Affixes, should be able to appear earlier, but lower-level rares should see them much less often.
+This replaces the earlier "add a handful of Greater rows" pilot. Eric clarified that the rare affix work should be split into two phases:
+
+1. Stretch the level requirements for the top normal affixes in each rare affix family so those best normal affixes can appear earlier, but at lower frequency.
+2. Add Greater Affixes to each target affix family as a separate chase layer.
+
+Phase 1 should not try to rebalance every low and mid affix. The first pass only touches the top affixes for each family. Those best normal affixes get two technical bands: early and late. Greater Affixes get three technical bands: early, mid, and late.
+
+## Two-Phase Plan
+
+### Phase 1: Earlier Top Normal Affixes
+
+For each important rare affix family, scan for the top normal affix row and split only that top row into early and late technical rows.
+
+Policy:
+
+- Do not bother with lower affixes in the family for the first pass.
+- Preserve the top affix's stat payload.
+- Preserve the top affix's `group` so it remains mutually exclusive with lower affixes in the same family.
+- Preserve the late row's original or chosen top-end frequency unless a family-specific normalization is needed.
+- Add an early row with a lower `level`, a `maxlevel` that ends before the late band, and about half the late frequency.
+- Early top affix = 2x rarer than late top affix.
+
+Example shape:
+
+| Player-Facing Affix | Technical Band | level | maxlevel | frequency | Mods |
+|---|---|---:|---:|---:|---|
+| Cruel | Early | 50 | 73 | 57 | `dmg% 267-300` |
+| Cruel | Late | 74 | blank | 114 | `dmg% 267-300` |
+
+This keeps the current late-game top affix identity mostly intact while letting lower-level rares sometimes roll into an exciting top result.
+
+### Phase 2: Greater Affixes
+
+After Phase 1 has the best normal affixes appearing earlier, add Greater Affixes as their own rare-only chase layer.
+
+Greater Affixes use three technical bands:
+
+| Technical Band | level | maxlevel | frequency |
+|---|---:|---:|---:|
+| Early | 50 | 65 | 1 |
+| Mid | 66 | 80 | 2 |
+| Late | 81 | 100 or blank | 3 |
+
+Example:
+
+| Row Name | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| Greater Cruel | 50 | 65 | 1 | `dmg% 350-400` |
+| Greater Cruel | 66 | 80 | 2 | `dmg% 350-400` |
+| Greater Cruel | 81 | 100 or blank | 3 | `dmg% 350-400` |
+
+All three technical rows use the same `group` as normal Cruel so only one enhanced-damage family prefix can appear on a rare item.
 
 ## Corrected Model
 
@@ -43,7 +94,7 @@ For `Greater Cruel`, Eric's target is:
 - Late Greater Cruel should be about 10x rarer than normal Cruel.
 - Early Greater Cruel should be about 30x rarer than normal Cruel.
 
-With Greater Cruel frequencies `1 / 2 / 3`, this implies normal late Cruel should be around `30` frequency:
+With Greater Cruel frequencies `1 / 2 / 3`, this implies a normalized normal late Cruel would be around `30` frequency:
 
 | Comparison | Greater Freq | Normal Cruel Freq | Relative Rarity |
 |---|---:|---:|---:|
@@ -51,13 +102,13 @@ With Greater Cruel frequencies `1 / 2 / 3`, this implies normal late Cruel shoul
 | Mid Greater vs normal Cruel | 2 | 30 | 15x rarer |
 | Late Greater vs normal Cruel | 3 | 30 | 10x rarer |
 
-This means the current file cannot just add `Greater Cruel` at `1 / 2 / 3` and call it done:
+This means Phase 2 cannot just add `Greater Cruel` at `1 / 2 / 3` and call it done without deciding whether the normal family frequency should be normalized:
 
 - Current normal `Cruel` is `frequency=114`.
 - If normal Cruel stays at `114`, late Greater Cruel at `3` is about `38x` rarer than Cruel, not `10x`.
 - Early Greater Cruel at `1` would be about `114x` rarer than Cruel.
 
-So the rework needs frequency normalization, not only new Greater rows.
+So Phase 2 needs a family-by-family frequency decision, not only new Greater rows.
 
 ## Are We Wrong To Reweight Existing Frequencies?
 
@@ -77,22 +128,19 @@ Important nuance: not every current row moves in the same direction.
 
 ### 1. Explicit banded rows
 
-Create early/mid/late technical rows for each important affix family.
+Create explicit technical rows for each important affix family.
 
-Example for normal Cruel and Greater Cruel:
+Phase 1 uses early/late for the normal top affix. Phase 2 uses early/mid/late for Greater:
 
 | Player-Facing Affix | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| Cruel | 50 | 65 | 10 | `dmg% 267-300` |
-| Cruel | 66 | 80 | 20 | `dmg% 267-300` |
-| Cruel | 81 | blank | 30 | `dmg% 267-300` |
+| Cruel | 50 | 73 | 57 | `dmg% 267-300` |
+| Cruel | 74 | blank | 114 | `dmg% 267-300` |
 | Greater Cruel | 50 | 65 | 1 | `dmg% 350-400` |
 | Greater Cruel | 66 | 80 | 2 | `dmg% 350-400` |
 | Greater Cruel | 81 | blank | 3 | `dmg% 350-400` |
 
-This makes Cruel itself rarer on lower-level rares while preserving a clean 10:1 normal-to-Greater ratio inside each band.
-
-Compared to the late normal Cruel baseline frequency of `30`, early Greater Cruel is still `30x` rarer, mid Greater Cruel is `15x` rarer, and late Greater Cruel is `10x` rarer.
+This makes Cruel itself rarer on lower-level rares without touching lower enhanced-damage affixes in Phase 1.
 
 This is the most explicit and easiest-to-audit approach.
 
@@ -112,7 +160,7 @@ Recommended direction: use explicit banded rows for high-value affix families, t
 
 ## Before And After Examples
 
-These are design examples, not yet implemented values.
+These are design examples, not yet implemented values. Phase 1 values should be generated from the actual top-row frequency in each family unless we intentionally normalize that family.
 
 ### Weapon Damage: Cruel / Greater Cruel
 
@@ -127,9 +175,8 @@ Proposed:
 
 | Affix | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| Cruel | 50 | 65 | 10 | `dmg% 267-300` |
-| Cruel | 66 | 80 | 20 | `dmg% 267-300` |
-| Cruel | 81 | blank | 30 | `dmg% 267-300` |
+| Cruel | 50 | 73 | 57 | `dmg% 267-300` |
+| Cruel | 74 | blank | 114 | `dmg% 267-300` |
 | Greater Cruel | 50 | 65 | 1 | `dmg% 350-400` |
 | Greater Cruel | 66 | 80 | 2 | `dmg% 350-400` |
 | Greater Cruel | 81 | blank | 3 | `dmg% 350-400` |
@@ -137,8 +184,9 @@ Proposed:
 Meaning:
 
 - Before, Cruel only appears at affix level 74+.
-- After, Cruel can appear at affix level 50+, but is 3x more common late than early.
-- Greater Cruel can also appear at 50+, but is much rarer.
+- After Phase 1, Cruel can appear at affix level 50+, but early Cruel is 2x rarer than late Cruel.
+- After Phase 2, Greater Cruel can also appear at 50+, but is much rarer.
+- If we want late Greater Cruel to be exactly about 10x rarer than late Cruel, Phase 2 should normalize the normal Cruel late frequency closer to `30`; if we keep current late Cruel at `114`, Greater Cruel becomes much rarer than that target.
 
 ### Armor Defense: Godly / Greater Godly
 
@@ -153,9 +201,8 @@ Proposed:
 
 | Affix | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| Godly | 55 | 65 | 10 | `ac% 201-225` |
-| Godly | 66 | 80 | 20 | `ac% 201-225` |
-| Godly | 81 | blank | 30 | `ac% 201-225` |
+| Godly | 55 | 85 | 55 | `ac% 201-225` |
+| Godly | 86 | blank | 110 | `ac% 201-225` |
 | Greater Godly | 55 | 65 | 1 | `ac% 275-325` |
 | Greater Godly | 66 | 80 | 2 | `ac% 275-325` |
 | Greater Godly | 81 | blank | 3 | `ac% 275-325` |
@@ -163,8 +210,9 @@ Proposed:
 Meaning:
 
 - Before, top Godly armor defense waits until very high affix levels.
-- After, exceptional and early elite armor can rarely spike into high defense.
+- After Phase 1, exceptional and early elite armor can rarely spike into high defense.
 - Greater Godly remains a true chase roll.
+- If Phase 2 normalizes the normal-to-Greater ratio, Godly's late frequency may need to be lowered from `110`; otherwise Greater Godly will be rarer than the nominal 10x target.
 
 ### Jewelry Stats: Zodiac / Greater Zodiac
 
@@ -179,9 +227,8 @@ Proposed:
 
 | Affix | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| of the Zodiac | 60 | 70 | 10 | `all-stats 21-30` |
-| of the Zodiac | 71 | 85 | 20 | `all-stats 21-30` |
-| of the Zodiac | 86 | blank | 30 | `all-stats 21-30` |
+| of the Zodiac | 60 | 85 | 6 | `all-stats 21-30` |
+| of the Zodiac | 86 | blank | 12 | `all-stats 21-30` |
 | Greater Zodiac | 60 | 70 | 1 | `all-stats 35-45` |
 | Greater Zodiac | 71 | 85 | 2 | `all-stats 35-45` |
 | Greater Zodiac | 86 | blank | 3 | `all-stats 35-45` |
@@ -189,8 +236,9 @@ Proposed:
 Meaning:
 
 - This is an example where the existing normal top affix frequency is only `12`.
-- If late Greater is `3` and we want it about `10x` rarer than normal Zodiac, late normal Zodiac needs to rise toward `30`.
-- This confirms that some existing low-frequency ordinary rows must be increased.
+- Phase 1 would create an early top Zodiac row at `6` frequency.
+- If late Greater is `3` and we want it about `10x` rarer than normal Zodiac, Phase 2 would need late normal Zodiac closer to `30`.
+- This confirms that some existing low-frequency ordinary rows may need to be increased during the Greater phase.
 
 ### Current Frequency=1 Rows
 
@@ -211,16 +259,17 @@ Do not implement the old 14-row pilot as-is.
 New sequence:
 
 1. Audit rare-eligible prefix/suffix rows by family, item type, group, level, maxlevel, and frequency.
-2. Pick a small set of high-value affix families for the first banded test:
+2. Pick a small set of high-value affix families for the first Phase 1 banded test:
    - Weapon enhanced damage.
    - Armor/shield enhanced defense.
    - Jewelry all stats.
    - Jewelry all resist.
-3. For each family, design normal high-tier band rows and matching Greater band rows.
-4. Reweight ordinary `frequency=1` rows that overlap the same item pools.
-5. Keep junk/filler rows high enough to dilute early access.
-6. Validate probability examples by calculating total eligible weight at sample item levels.
-7. Only then edit `magicprefix.txt` / `magicsuffix.txt`.
+3. For each family, split only the best normal affix into early and late rows.
+4. Use early frequency = about half of late frequency.
+5. Validate probability examples by calculating total eligible weight at sample item levels.
+6. After Phase 1 testing, add matching Greater early/mid/late rows.
+7. During Phase 2, revisit normal-family frequencies where needed so Greater rarity targets make sense.
+8. Only then edit `magicprefix.txt` / `magicsuffix.txt`.
 
 ## Validation Targets For First Implementation
 

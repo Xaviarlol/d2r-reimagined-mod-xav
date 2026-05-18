@@ -101,6 +101,31 @@ Current rare-eligible affix counts:
 
 This means the existing mod already uses rare-only affixes. Greater Affixes should follow that pattern.
 
+## Two-Phase Affix Rework
+
+Eric split the affix work into two phases:
+
+1. Phase 1 stretches the level requirements of the best normal affixes in each rare affix family so they can appear earlier, but at lower frequency.
+2. Phase 2 adds Greater Affixes to each target family.
+
+This matters because the first implementation should not try to rebalance every affix tier at once. Lower and mid affixes can stay mostly as they are. The controlled first pass scans the top affixes for each target family and creates an early/late split only for those top rows.
+
+Phase 1 normal top-affix policy:
+
+- Best normal affixes get two technical rows: early and late.
+- Early row uses the same stats and group as the top affix.
+- Early row starts at the new lower affix level and has `maxlevel` ending before the late row.
+- Late row preserves the top-end affix identity.
+- Early row frequency is about half the late row frequency, making the early version 2x rarer.
+- Lower affixes in the family are not touched in the first pass.
+
+Phase 2 Greater Affix policy:
+
+- Greater Affixes get three technical rows: early, mid, and late.
+- Greater rows use the same player-facing category, same stat payload, and same mutual-exclusion `group`.
+- Greater default frequencies are `1 / 2 / 3`.
+- Family frequency normalization is handled during Phase 2 if the normal-to-Greater rarity ratio needs adjustment.
+
 ## Greater Affixes And Frequency Rework
 
 Greater Affixes should be rare-only affix rows:
@@ -125,15 +150,16 @@ Corrected implementation model:
 - That one category may be represented by multiple technical rows with the same effect and same group.
 - Example Greater banding: level `50-65` frequency `1`, level `66-80` frequency `2`, level `81+` frequency `3`.
 - If late Greater is intended to be about 10x rarer than the normal version, the normal version's late frequency should be about 10x the late Greater frequency.
-- Therefore, with late Greater frequency `3`, the matching normal affix should be around `30` frequency for that comparison.
+- Therefore, with late Greater frequency `3`, a normalized matching normal affix would be around `30` frequency for that comparison.
 
 Not every existing `frequency=1` row should be treated as a chase affix. Some old proc/charge/utility rows may simply be low-priority legacy rows. The pilot should audit each target family rather than assuming the current frequency layout already expresses item power cleanly.
 
-This is now a broader affix-frequency rework, not only a Greater Affix insertion pass:
+This is now a phased affix-frequency rework, not only a Greater Affix insertion pass:
 
-- Current high-frequency top rows, such as `Cruel` at `frequency=114`, may need normalization if Greater rows use `1 / 2 / 3` and the target late ratio is 10x.
-- Current ordinary `frequency=1` rows likely need to be raised if they are not meant to be chase-tier.
-- Junk/filler rows should remain high or be increased where needed to dilute powerful lower-level access.
+- Phase 1 should mostly preserve current late top-row frequencies and add early rows at half frequency.
+- Phase 2 may normalize current high-frequency top rows, such as `Cruel` at `frequency=114`, if Greater rows use `1 / 2 / 3` and the target late ratio is 10x.
+- Current ordinary `frequency=1` rows likely need to be audited during Phase 2 if they overlap with Greater rows and are not meant to be chase-tier.
+- Junk/filler rows should remain high or be increased where needed to dilute powerful lower-level access, but broad junk-pool reshaping is not the first Phase 1 task.
 
 ## Early Access Top Affixes
 
@@ -152,12 +178,11 @@ Example policy:
 
 | Variant Type | level | maxlevel | Frequency | Purpose |
 |---|---:|---:|---:|---|
-| Early normal top affix | 50-65 | 65 | 10 | Strong affix can appear early, but is uncommon |
-| Mid normal top affix | 66-80 | 80 | 20 | Strong affix becomes more likely |
-| Late normal top affix | 81+ | blank | 30 | Strong affix reaches intended top-end rate |
+| Early normal top affix | lowered family target | before original top level | late freq / 2 | Strong affix can appear early, but is 2x rarer |
+| Late normal top affix | original or chosen top level | blank | late freq | Strong affix reaches intended top-end rate |
 | Early Greater affix | 50-65 | 65 | 1 | Very rare early spike |
 | Mid Greater affix | 66-80 | 80 | 2 | Still rare, but less punishing |
-| Late Greater affix | 81+ | blank | 3 | About 10x rarer than late normal if normal is 30 |
+| Late Greater affix | 81+ | blank | 3 | About 10x rarer than late normal if normal is normalized to 30 |
 
 This lets an exciting affix drop earlier without letting a low-level character immediately equip a wildly overpowered item.
 
@@ -168,17 +193,21 @@ There are two complementary ways to make early high-tier affixes rare:
 
 ## Pilot Scope
 
-Do not implement the old simple Greater-only pilot. The first implementation should be a controlled banding and frequency test:
+Do not implement the old simple Greater-only pilot. The first implementation should be a controlled Phase 1 banding test:
 
 - Weapon enhanced damage: `Cruel` and `Greater Cruel`.
 - Armor/shield enhanced defense: `Godly` and `Greater Godly`.
 - Jewelry all stats: `of the Zodiac` and `Greater Zodiac`.
 - Jewelry all resist: `Chromatic` / ring equivalent and Greater variants.
 
-For each family, design both:
+For Phase 1, design:
 
-- Normal high-tier early/mid/late technical rows.
+- Normal high-tier early/late technical rows only.
+
+For Phase 2, design:
+
 - Greater early/mid/late technical rows.
+- Any needed normal-frequency normalization so Greater odds are not accidentally too common or too rare.
 
 Avoid sockets in the first Greater Affix pilot. Socket affixes have very high build value and can overwhelm item identity quickly.
 
@@ -187,15 +216,19 @@ The detailed proposal and before/after examples are documented separately in `do
 ## Implementation Steps
 
 1. Update both `itemratio.txt` copies with the chosen `Uber=1` rare rarity multiplier.
-2. Add new rare-only Greater Affix rows to both `magicprefix.txt` copies.
-3. Add new rare-only Greater Affix rows to both `magicsuffix.txt` copies.
-4. Keep active and base copies identical.
-5. Validate TSV column counts.
-6. Validate every new affix uses an existing property code.
-7. Validate every Greater Affix has `spawnable=0`, `rare=1`, non-empty `group`, and non-zero `frequency`.
-8. Validate no Greater Affix uses a group that allows unintended stacking with its normal family.
-9. Install to live with `scripts/install-local.ps1`.
-10. Test in game with high-level rare drops and cube rare-reroll recipes.
+2. Phase 1: identify the top normal affix row for each target family.
+3. Phase 1: add an early top-row copy and preserve/confirm the late top row.
+4. Phase 1: set early frequency to about half the late row's frequency.
+5. Phase 1: validate sample eligible-weight probabilities at lower and higher affix levels.
+6. Phase 2: add new rare-only Greater Affix rows to both `magicprefix.txt` copies.
+7. Phase 2: add new rare-only Greater Affix rows to both `magicsuffix.txt` copies.
+8. Keep active and base copies identical.
+9. Validate TSV column counts.
+10. Validate every new affix uses an existing property code.
+11. Validate every Greater Affix has `spawnable=0`, `rare=1`, non-empty `group`, and non-zero `frequency`.
+12. Validate no Greater Affix uses a group that allows unintended stacking with its normal family.
+13. Install to live with `scripts/install-local.ps1`.
+14. Test in game with high-level rare drops and cube rare-reroll recipes.
 
 ## Testing Notes
 

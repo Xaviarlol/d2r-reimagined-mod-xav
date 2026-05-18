@@ -261,6 +261,25 @@ Current hidden IDs:
 
 If these tables are regenerated from upstream, keep the gamble dummy appended rather than inserting it near `item_corruptedDummy`; inserting would shift later stat IDs and risk breaking existing numeric `param` checks.
 
+## Rare Affix Rework Notes
+
+The rare affix rework is now split into two phases.
+
+Phase 1 is the normal top-affix stretch:
+
+- Scan each target rare affix family for the best normal affix row.
+- Do not rebalance the lower affixes in the family during the first pass.
+- Copy or split the best row into early and late technical rows.
+- Early row has the same stats and group, a lower `level`, a `maxlevel` before the late row, and about half the late row frequency.
+- This makes the best normal affix possible earlier, but 2x rarer than it is at the late band.
+
+Phase 2 is the Greater Affix layer:
+
+- Add one player-facing Greater category per family, implemented as three technical rows.
+- Default Greater bands are early/mid/late with frequencies `1 / 2 / 3`.
+- Greater rows stay rare-only, use the same family `group`, and should not stack with the normal family row.
+- During Phase 2, normalize family frequencies only where needed so Greater odds make sense relative to the normal top affix.
+
 ## References Worth Keeping Handy
 
 - D2RDoc: `https://eezstreet.github.io/d2rdoc/index.html`
