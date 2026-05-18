@@ -22,22 +22,28 @@ docs/rare-item-rework-design-2026-05-18.md
 Level compression:
 
 ```text
-compressed_level = max(1, round(original_level * 0.70))
+compressed_level = max(1, round_half_up(original_level * 0.70))
 ```
 
 Max-level compression:
 
 ```text
-compressed_maxlevel = max(compressed_level, round(original_maxlevel * 0.70))
+compressed_maxlevel = max(compressed_level, round_half_up(original_maxlevel * 0.70))
 ```
 
 Equip requirement compression:
 
 ```text
-compressed_levelreq = max(1, round(original_levelreq * 0.85))
+compressed_levelreq = max(1, round_half_up(original_levelreq * 0.85))
 ```
 
 Blank or zero `levelreq` remains blank or zero.
+
+Rounding convention:
+
+```text
+round_half_up(x) = floor(x + 0.5)
+```
 
 ## Current Large Charm Skill Rows
 
@@ -71,11 +77,11 @@ The proposal intentionally normalizes all normal `+1 skill tree` large charm row
 Level and requirement math:
 
 ```text
-round(50 * 0.70) = 35
-round(42 * 0.85) = 36
-round(81 * 0.70) = 57
-round(75 * 0.85) = 64
+round_half_up(50 * 0.70) = 35
+round_half_up(42 * 0.85) = 36
 ```
+
+The new Greater `+2 skill tree` rows are authored directly at `level=57` and `levelreq=64`; those are chosen final design values, not compressed values from an existing row.
 
 Proposed total normal large charm `+1 skill tree` frequency:
 
@@ -118,9 +124,19 @@ Representative conversions:
 | 2 | 10 |
 | 3 | 15 |
 | 4 | 20 |
+| 5 | 25 |
 | 6 | 30 |
+| 8 | 40 |
+| 10 | 50 |
 | 12 | 60 |
+| 20 | 100 |
 | 24 | 120 |
+
+Scope correction from Claude round 1:
+
+- Apply the `*5` scaling only to charm-exclusive rows where the charm pool is being normalized or given new Greater rows.
+- Exempt all group `307` pierce rows. Some group `307` rows are shared with non-charm gear (`ring,mcha` and `amul,glov,boot,belt,helm,lcha`), so scaling them in place would also multiply pierce odds on rings, amulets, gloves, boots, belts, and helms.
+- If charm pierce odds need proportional preservation later, first split group `307` into charm-only and non-charm-only rows; do not scale the shared rows in place.
 
 ## Warlock Exception
 
@@ -134,7 +150,7 @@ Pure proportional scaling would make them:
 
 The proposal instead sets them to `10`, matching the original class skill-tree rows.
 
-Claude should review whether this is acceptable. It changes the current Warlock-vs-original-class ratio, but makes all normal large charm skill trees consistent with Eric's direct statement that `+skills rarity = 10`.
+Decision: keep the normalized `10` value. It changes the current Warlock-vs-original-class ratio, but it matches Eric's direct statement that `+skills rarity = 10` and makes all normal large charm skill trees consistent.
 
 ## Level 90 Large Charm Prefix Pool Audit
 
@@ -184,19 +200,25 @@ current skill-tree frequency = 0
 scaled total = 440
 ```
 
-The current proposal scales suffix charm rows by the same `*5` multiplier to keep prefix and suffix charm affix pools internally consistent.
+Prefix and suffix pools are independent. Suffix scaling is only needed if Greater charm suffix rows such as `Greater Inertia` or `Greater Balance` are implemented; otherwise scaling suffixes is a mathematical no-op inside the suffix pool and can be skipped.
 
 ## Level 92 Pierce Rows Caveat
 
 At item level 92, small/medium/large charm rare-only pierce rows in group `307` become eligible.
 
-Question for Claude:
+Decision: exempt group `307` from the charm `*5` scaling rule.
 
-- Should these group `307` rare-only pierce charm rows also use `*5` under the general charm scaling rule?
-- Or should they be excluded because they are special-purpose rare-only chase rows and not part of the old general charm-affix balance?
+Reason: group `307` is implemented with mixed item-type rows. The problematic shared rows include:
+
+```text
+ring,mcha
+amul,glov,boot,belt,helm,lcha
+```
+
+Scaling those rows in place would unintentionally raise pierce odds on rings, amulets, gloves, boots, belts, and helms. Charm pierce can be revisited later by splitting the shared rows into charm-only and non-charm-only copies.
 
 ## Requested Claude Verdict
 
 Please review the math and design implications before implementation.
 
-The highest-risk issue is whether scaling every existing charm frequency by `5` really preserves the intended affix odds once D2R separately selects prefix/suffix counts and groups. If the simplified pool-weight math is incomplete, please explain the missing mechanic and recommend a safer formula.
+Please re-review the corrected scope, especially the group `307` exemption, the Warlock normalization decision, and the pinned rounding convention.

@@ -58,8 +58,9 @@ Full D2RDoc reading notes from the 2026-05-18 sitemap crawl: `docs/d2rdoc-readin
 - D2RDoc confirms `frequency` is a weight. Higher values are more common among eligible affixes; Greater Affixes should be rare by low relative weight and by dilution against ordinary/filler affixes with higher frequencies.
 - `level` controls minimum affix item level, `maxlevel` can create spawn bands, and `levelreq` controls equip requirement. This supports early-access rare-only Greater rows that can drop before they can be equipped.
 - First rare rarity pass applied on 2026-05-18: both `itemratio.txt` copies now make only `Uber=1` rare rows 2.5x rarer. `Uber=0` normal-base rare rows are unchanged. Elite-specific power should come later through affix design because `itemratio.txt` cannot split exceptional from elite.
-- Phase 1 lowers effective affix availability for affixes using the proportional formula `compressed_level = max(1, round(original_level * 0.70))`; rows with `maxlevel` should compress that gate too.
-- Phase 1 also lowers affix equip requirements by 15% with `compressed_levelreq = max(1, round(original_levelreq * 0.85))`, leaving blank/zero requirements blank/zero.
+- Phase 1 lowers effective affix availability for affixes using the proportional formula `compressed_level = max(1, round_half_up(original_level * 0.70))`; rows with `maxlevel` should compress that gate too.
+- Use round-half-up for rare affix compression: `round_half_up(x) = floor(x + 0.5)`.
+- Phase 1 also lowers affix equip requirements by 15% with `compressed_levelreq = max(1, round_half_up(original_levelreq * 0.85))`, leaving blank/zero requirements blank/zero.
 - Phase 1 only gives the best normal affix in each family a true early/late frequency split. The early top row starts at the compressed level, ends at `original_top_level - 1`, and uses half the late frequency.
 - Preserve family ordering after compression. A weaker row such as lower Cruel must not end up requiring a higher level than the stronger Cruel row.
 - Directly editing shared `spawnable=1, rare=1` affix rows also changes magic items. This is acceptable for the Phase 1 affix compression.
@@ -271,9 +272,9 @@ The rare affix rework is now split into two phases.
 
 Phase 1 is proportional rare affix level compression:
 
-- Lower the effective availability gate for affixes by about 30%, using `round(original_level * 0.70)`.
+- Lower the effective availability gate for affixes by about 30%, using `round_half_up(original_level * 0.70)`.
 - Compress `maxlevel` too when it exists.
-- Lower affix `levelreq` by 15%, using `round(original_levelreq * 0.85)`.
+- Lower affix `levelreq` by 15%, using `round_half_up(original_levelreq * 0.85)`.
 - Keep the whole family ladder proportional so lower tiers do not end up gated above stronger tiers.
 - Only the best normal affix in each target family gets a true early/late split.
 - The top early row uses the compressed level, `maxlevel = original_top_level - 1`, and about half the late frequency.
@@ -286,6 +287,8 @@ Phase 2 is the Greater Affix layer:
 - Greater rows stay rare-only, use the same family `group`, and should not stack with the normal family row.
 - During Phase 2, normalize family frequencies only where needed so Greater odds make sense relative to the normal top affix.
 - Greater rows with a spare mod slot should include `greater-affix-marker`. The marker is backed by `item_greaterAffixMarker` / `GreaterAffixMarker` and prints `** Greater Affix` in orange/gold using D2R color control codes.
+- Charm frequency normalization must not scale group `307` pierce rows in place. Group `307` has charm rows shared with non-charm gear (`ring,mcha` and `amul,glov,boot,belt,helm,lcha`), so a blanket `*5` would also make pierce affixes 5x more common on rings, amulets, gloves, boots, belts, and helms. Exempt `307` unless the rows are first split into charm-only and non-charm-only copies.
+- Large charm `+1 skill tree` rows should be normalized to `frequency=10` for all classes, including Warlock. This intentionally changes Warlock rows from their old `frequency=1` relationship so all normal skill-tree charms share one rarity.
 
 ## References Worth Keeping Handy
 

@@ -97,19 +97,25 @@ Phase 1 lowers the effective level gate of all rare-eligible affixes, not just t
 Use a consistent compression formula:
 
 ```text
-compressed_level = max(1, round(original_level * 0.70))
+compressed_level = max(1, round_half_up(original_level * 0.70))
+```
+
+Use round-half-up for all compression math:
+
+```text
+round_half_up(x) = floor(x + 0.5)
 ```
 
 If a row has `maxlevel`, compress it too:
 
 ```text
-compressed_maxlevel = max(compressed_level, round(original_maxlevel * 0.70))
+compressed_maxlevel = max(compressed_level, round_half_up(original_maxlevel * 0.70))
 ```
 
 Lower affix equip requirements by 15% at the same time:
 
 ```text
-compressed_levelreq = max(1, round(original_levelreq * 0.85))
+compressed_levelreq = max(1, round_half_up(original_levelreq * 0.85))
 ```
 
 If the original `levelreq` is blank or `0`, leave it blank or `0`.
@@ -123,6 +129,7 @@ Important proportionality rules:
 - Apply the 15% `levelreq` reduction broadly so earlier affix access does not feel artificially locked behind the old requirements.
 - Keep `levelreq` proportional too. Stronger affixes should generally still require the same or higher character level than weaker affixes in the same family.
 - Directly edit shared affix rows unless there is a specific reason to create rare-only rows. Magic items can participate in the same earlier-affix progression.
+- Do not directly scale rows that are shared across unrelated item families when the change is meant to affect only one family. The important known exception is charm frequency scaling for group `307`.
 
 ### Phase 1 Top-Affix Split
 
@@ -133,7 +140,7 @@ Top-affix split rule:
 ```text
 top_early_level = compressed_level(original_top_level)
 top_early_maxlevel = original_top_level - 1
-top_early_frequency = max(1, round(original_top_frequency / 2))
+top_early_frequency = max(1, round_half_up(original_top_frequency / 2))
 top_late_level = original_top_level
 top_late_maxlevel = blank or original
 top_late_frequency = original_top_frequency
@@ -236,7 +243,7 @@ Current large charm skill rows:
 |---|---:|---:|---:|---:|---:|---:|
 | Original class `+1 skill tree` rows | 50 | 42 | 2 | 35 | 36 | 10 |
 | Warlock `+1 skill tree` rows | 50 | 42 | 1 | 35 | 36 | 10 |
-| New Greater `+2 skill tree` rows | design level 81 | design req 75 | new | 57 | 64 | 1 |
+| New Greater `+2 skill tree` rows | new row | new row | new | 57 | 64 | 1 |
 
 Base scaling rule for existing charm rows:
 
@@ -244,7 +251,16 @@ Base scaling rule for existing charm rows:
 scaled_charm_frequency = current_frequency * 5
 ```
 
-The only planned exception is Warlock `+1 skill tree` large charm rows: they currently have `frequency=1`, but should be raised to `10` so all normal `+1 skill tree` charm rows share one consistent rarity.
+Scope rules:
+
+- Apply this only to charm-exclusive rows, and only where the charm pool is being given new Greater rows or needs the `+1` skill-tree normalization.
+- Prefix scaling is required for large charm skill-tree prefixes because normal `+1 skill tree` rows move to `frequency=10` and new Greater `+2 skill tree` rows enter at `frequency=1`.
+- Suffix scaling is only required if Greater charm suffix rows such as `Greater Inertia` or `Greater Balance` are implemented. If no Greater charm suffix rows are added, suffix scaling is a mathematical no-op inside the suffix pool and can be skipped.
+- Exempt all group `307` pierce rows from this scaling. Group `307` is implemented with mixed item-type rows such as `ring,mcha` and `amul,glov,boot,belt,helm,lcha`; scaling those rows in place would also multiply pierce odds on rings, amulets, gloves, boots, belts, and helms. If charm pierce ever needs proportional scaling, first split those rows into charm-only and non-charm-only copies.
+
+The planned Warlock exception is deliberate: Warlock `+1 skill tree` large charm rows currently have `frequency=1`, but should be raised to `10` so all normal `+1 skill tree` charm rows share one consistent rarity. This intentionally changes the old Warlock-vs-original-class ratio rather than preserving it.
+
+New Greater `+2 skill tree` large charm rows should be authored directly as `level=57`, `levelreq=64`, `frequency=1`, `spawnable=0`, `rare=1`, and `group=125`. The shared `group=125` prevents a charm from rolling both the normal `+1` and Greater `+2` skill-tree prefix in separate prefix slots.
 
 Example: level 90 large charm prefix pool before Greater rows:
 
@@ -260,7 +276,7 @@ After normalization and adding one Greater row per skill tree:
 
 This preserves the old large-charm affix feel while making Greater skill charms exactly 10x rarer than normal skill charms inside the skill-tree charm slice.
 
-Representative charm frequency conversions:
+Representative charm frequency conversions for non-`307`, charm-exclusive rows:
 
 | Current Freq | Scaled Existing Freq |
 |---:|---:|
@@ -268,8 +284,12 @@ Representative charm frequency conversions:
 | 2 | 10 |
 | 3 | 15 |
 | 4 | 20 |
+| 5 | 25 |
 | 6 | 30 |
+| 8 | 40 |
+| 10 | 50 |
 | 12 | 60 |
+| 20 | 100 |
 | 24 | 120 |
 
 ## Phase 1 Examples
