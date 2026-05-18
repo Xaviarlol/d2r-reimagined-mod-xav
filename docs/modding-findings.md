@@ -4,6 +4,8 @@ Living notes for discoveries made while testing XavReimagined. Treat this as pra
 
 Updated: 2026-05-17.
 
+Latest handoff for continuing in another Codex session: `docs/session-handoff-2026-05-18.md`.
+
 ## Workflow Notes
 
 - The active gameplay tables live under `data/global/excel/`.
