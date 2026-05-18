@@ -2,13 +2,27 @@
 
 Created: 2026-05-18.
 
+Status: canonical design document. This file replaces the separate Greater Affix pilot document; the rare item work is one two-phase rework.
+
 Goal: make rare items appear less often, but make the rares that do drop more exciting. The design should primarily reward elite base rares, affect exceptional base rares to a lesser degree, and leave normal base rares mostly unchanged.
 
-Reference context: the D2R Data Guide is useful for the overall loose-file modding workflow and reinforces the current `-mod XavReimagined -txt` style workflow: https://eezstreet.github.io/d2rdoc/guides/getting-started.html
+Reference context:
 
-Full local reading notes from the D2RDoc sitemap crawl: `docs/d2rdoc-reading-notes-2026-05-18.md`.
+- D2R Data Guide: https://eezstreet.github.io/d2rdoc/guides/getting-started.html
+- Full local D2RDoc crawl notes: `docs/d2rdoc-reading-notes-2026-05-18.md`
 
-Greater Affix and frequency rework proposal: `docs/rare-greater-affix-pilot-2026-05-18.md`.
+## Current Implementation Status
+
+- 2026-05-18: Applied the safer 2.5x rarity pass to both active and base `itemratio.txt`.
+- Changed only the three `Uber=1` rare rows.
+- Normal-base rare rows remain unchanged.
+- `RareMin` was raised from `3200` to `8000` on the changed rows so high-MF/high-level cases are capped consistently with the new rarity target.
+- Greater Affix marker plumbing exists:
+  - `item_greaterAffixMarker` in `itemstatcost.txt`
+  - `greater-affix-marker` in `properties.txt`
+  - `GreaterAffixMarker` in `item-modifiers.json`
+- Phase 1 affix level compression is not implemented yet.
+- Phase 2 Greater Affix rows are not implemented yet.
 
 ## Current Data Constraints
 
@@ -16,23 +30,13 @@ Greater Affix and frequency rework proposal: `docs/rare-greater-affix-pilot-2026
 - `itemratio.txt` has rows for `Version`, `Uber`, and `Class Specific`. It does not have a separate `Ultra` / elite row.
 - In the item base tables, `weapons.txt` and `armor.txt` distinguish base tiers with `normcode`, `ubercode`, and `ultracode`.
 - Because `itemratio.txt` only has `Uber=0` and `Uber=1`, the exposed quality-ratio table can cleanly distinguish normal bases from non-normal bases, but not exceptional from elite.
-- Current spawnable base counts:
-  - Weapons: 103 normal, 97 exceptional, 97 elite.
-  - Armor: 73 normal, 72 exceptional, 72 elite.
-- Current spawnable base level ranges:
-  - Normal weapons: level 1-34, average 15.6.
-  - Exceptional weapons: level 28-55, average 40.8.
-  - Elite weapons: level 52-86, average 71.4.
-  - Normal armor: level 1-52, average 15.8.
-  - Exceptional armor: level 24-70, average 44.6.
-  - Elite armor: level 54-85, average 72.9.
 - Rare affix count appears engine-side rather than TXT-side. Treat the rare cap as 6 affix records: up to 3 prefixes and 3 suffixes.
 - Each affix row can carry up to 3 stat mods through `mod1`, `mod2`, and `mod3`, so rare power can be increased without changing the 6-affix cap.
-- D2RDoc's item-ratio calculation confirms the quality values are divisors. Higher `Rare` / `RareMin` values make rare quality harder to roll, and `RareMin` is especially important in high-MF/high-level cases because it caps how favorable the final divisor can become.
+- `magicprefix.txt` and `magicsuffix.txt` affix rows can be shared by magic and rare items. A direct `level` edit on a `spawnable=1, rare=1` row affects magic items too. If the change must be rare-only, use rare-only copies with `spawnable=0, rare=1`.
 
-## Current Rare Quality Values
+## Rare Quality Pass
 
-Current active/base `itemratio.txt` values:
+Current active/base `itemratio.txt` values before the rarity pass:
 
 | Row | Rare | RareDivisor | RareMin |
 |---|---:|---:|---:|
@@ -43,23 +47,15 @@ Current active/base `itemratio.txt` values:
 | Expansion normal class-specific | 80 | 3 | 3200 |
 | Expansion exceptional/elite class-specific | 80 | 3 | 3200 |
 
-Higher `Rare` and `RareMin` values make rare quality harder to roll.
+Implemented safer pass:
 
-## Recommended Rarity Pass
-
-Do not change the `Uber=0` rows. This leaves normal base rare rates unchanged.
-
-Change only the `Uber=1` rows. This affects exceptional and elite together, which is the closest clean TXT-level approximation for "elite primarily, exceptional somewhat."
-
-Recommended first implementation:
-
-| Row | Current Rare | Proposed Rare | Current RareMin | Proposed RareMin | Effective Intent |
+| Row | Current Rare | Implemented Rare | Current RareMin | Implemented RareMin | Intent |
 |---|---:|---:|---:|---:|---|
 | Classic exceptional/elite non-class | 96 | 240 | 3200 | 8000 | 2.5x rarer |
 | Expansion exceptional/elite non-class | 100 | 250 | 3200 | 8000 | 2.5x rarer |
 | Expansion exceptional/elite class-specific | 80 | 200 | 3200 | 8000 | 2.5x rarer |
 
-Alternative if we want the full headline number immediately:
+Alternative if testing shows elite/exceptional rares are still too common:
 
 | Row | Current Rare | Full 3x Rare | Current RareMin | Full 3x RareMin |
 |---|---:|---:|---:|---:|
@@ -67,17 +63,7 @@ Alternative if we want the full headline number immediately:
 | Expansion exceptional/elite non-class | 100 | 300 | 3200 | 9600 |
 | Expansion exceptional/elite class-specific | 80 | 240 | 3200 | 9600 |
 
-Recommendation: start at 2.5x for the shared exceptional/elite quality roll, then make elite rares feel substantially better through affix availability. If elite rares still feel too common after testing, move to the full 3x values.
-
-Implementation status:
-
-- 2026-05-18: Applied the safer 2.5x rarity pass to both active and base `itemratio.txt`.
-- Changed only the three `Uber=1` rows.
-- Normal-base rare rows remain unchanged.
-- `RareMin` was raised from `3200` to `8000` on the changed rows so high-MF/high-level cases are capped consistently with the new rarity target.
-- Greater Affix rows are not implemented yet.
-
-## Affix Pool Strategy
+## Rare Affix Mechanics
 
 Rare affix quality is controlled by `magicprefix.txt` and `magicsuffix.txt`.
 
@@ -85,12 +71,15 @@ Important columns:
 
 - `spawnable`: whether the affix can appear in the general magic affix pool.
 - `rare`: whether the affix can appear on rares.
-- `level`: affix level gate.
-- `levelreq`: item requirement impact.
+- `level`: minimum affix level gate.
+- `maxlevel`: maximum affix level gate; useful for non-overlapping bands.
+- `levelreq`: item equip requirement impact, not roll chance.
 - `frequency`: weighted likelihood once the affix is eligible.
 - `group`: mutual-exclusion family. Affixes in the same group cannot stack together on the same item.
 - `itype*` / `etype*`: included and excluded item types.
 - `mod1*`, `mod2*`, `mod3*`: stat payload.
+
+Frequency is a weight, not an inverse-rarity value. Higher frequency means more common among eligible affixes.
 
 Current rare-eligible affix counts:
 
@@ -99,145 +88,206 @@ Current rare-eligible affix counts:
 | `magicprefix.txt` | 918 | 38 |
 | `magicsuffix.txt` | 726 | 57 |
 
-This means the existing mod already uses rare-only affixes. Greater Affixes should follow that pattern.
+## Two-Phase Rework
 
-## Two-Phase Affix Rework
+### Phase 1: Proportional Rare Affix Level Compression
 
-Eric split the affix work into two phases:
+Phase 1 lowers the effective level gate of all rare-eligible affixes, not just the best affixes. The goal is to let lower-level rare items roll a broader, more exciting affix pool while preserving the internal order of each affix family.
 
-1. Phase 1 stretches the level requirements of the best normal affixes in each rare affix family so they can appear earlier, but at lower frequency.
-2. Phase 2 adds Greater Affixes to each target family.
+Use a consistent compression formula:
 
-This matters because the first implementation should not try to rebalance every affix tier at once. Lower and mid affixes can stay mostly as they are. The controlled first pass scans the top affixes for each target family and creates an early/late split only for those top rows.
+```text
+compressed_level = max(1, round(original_level * 0.70))
+```
 
-Phase 1 normal top-affix policy:
+If a row has `maxlevel`, compress it too:
 
-- Best normal affixes get two technical rows: early and late.
-- Early row uses the same stats and group as the top affix.
-- Early row starts at the new lower affix level and has `maxlevel` ending before the late row.
-- Late row preserves the top-end affix identity.
-- Early row frequency is about half the late row frequency, making the early version 2x rarer.
-- Lower affixes in the family are not touched in the first pass.
+```text
+compressed_maxlevel = max(compressed_level, round(original_maxlevel * 0.70))
+```
 
-Phase 2 Greater Affix policy:
+Important proportionality rules:
 
-- Greater Affixes get three technical rows: early, mid, and late.
-- Greater rows use the same player-facing category, same stat payload, and same mutual-exclusion `group`.
-- Greater default frequencies are `1 / 2 / 3`.
-- Family frequency normalization is handled during Phase 2 if the normal-to-Greater rarity ratio needs adjustment.
-- Greater rows should spend one free mod slot on `greater-affix-marker` when they have two or fewer real stat mods, so the item tooltip visibly shows `** Greater Affix` in orange/gold text.
+- Apply the same formula to the whole rare-eligible affix ladder.
+- Do not lower only the best affix while leaving the second-best affix above it.
+- Within each family, stronger affixes must remain at the same or higher level than weaker affixes.
+- If compression collapses two adjacent tiers to the same level and that creates confusion, nudge the stronger tier up by 1 level.
+- Keep `levelreq` unchanged unless we explicitly decide to reduce equip requirements. Dropping earlier does not need to mean equipping earlier.
 
-## Greater Affixes And Frequency Rework
+Rare-only implementation choice:
 
-Greater Affixes should be rare-only affix rows:
+- Directly editing existing `spawnable=1, rare=1` rows is simple, but also changes magic item affix availability.
+- If the rework must affect rares only, add rare-only early availability rows with `spawnable=0, rare=1`, lowered `level`, and `maxlevel` ending before the original row. That avoids changing blue magic items.
 
-- `spawnable=0`
-- `rare=1`
-- low relative `frequency`
-- same `group` as the normal affix family they upgrade
-- `level` usually 75, 82, or 90 depending on power
-- `levelreq` should be high enough to avoid low-level twinking abuse
-- same `itype*` / `etype*` as the source affix unless intentionally narrowed
+### Phase 1 Top-Affix Split
 
-Using the same `group` is important. A Greater enhanced-damage prefix should replace a normal enhanced-damage prefix in that roll family, not stack with it.
+Only the top normal affix in each target family gets an early/late frequency split.
 
-Greater Affixes will not automatically show a special "Greater Affix" label in game. Rare item names do not visibly expose magic affix row names the way blue magic items do. The player-facing signal is the stronger stat line itself unless we later add a separate UI/string convention.
+Top-affix split rule:
 
-Implementation note: the UI/string convention now exists. `item_greaterAffixMarker` in `itemstatcost.txt`, `greater-affix-marker` in `properties.txt`, and `GreaterAffixMarker` in `item-modifiers.json` provide a harmless visible marker line:
+```text
+top_early_level = compressed_level(original_top_level)
+top_early_maxlevel = original_top_level - 1
+top_early_frequency = max(1, round(original_top_frequency / 2))
+top_late_level = original_top_level
+top_late_maxlevel = blank or original
+top_late_frequency = original_top_frequency
+```
+
+This means:
+
+- Lower and mid affixes move down proportionally.
+- The best affix can appear earlier, but is 2x rarer before the old gate.
+- High-level rares do not get an extra chance to roll the best affix because the early row expires before the late row starts.
+
+Example: current weapon enhanced-damage rows include `Cruel 234-266%` at level 69 and `Cruel 267-300%` at level 74. After compression, the lower Cruel row moves to level 48, while the top Cruel early row starts at level 52. The lower affix remains lower level than the stronger affix.
+
+### Phase 2: Greater Affixes
+
+Phase 2 adds Greater Affixes to each target affix family as a separate chase layer.
+
+Greater Affix policy:
+
+- One player-facing Greater category per family, such as `Greater Cruel`.
+- Implemented as multiple technical rows with the same name idea, same stat payload, and same `group`.
+- Rare-only: `spawnable=0`, `rare=1`.
+- Same `group` as the normal family so Greater replaces normal, not stacks with normal.
+- Default frequencies: early/mid/late = `1 / 2 / 3`.
+- Default Greater bands are design targets, not hard rules; adjust by family if the compressed ladder suggests better gates.
+- Add `greater-affix-marker` when the row has a spare mod slot.
+
+Default Greater band shape:
+
+| Technical Band | level | maxlevel | frequency |
+|---|---:|---:|---:|
+| Early | 50 | 65 | 1 |
+| Mid | 66 | 80 | 2 |
+| Late | 81 | blank | 3 |
+
+Greater marker:
+
+```text
+modXcode = greater-affix-marker
+modXmin = 1
+modXmax = 1
+```
+
+This prints an orange/gold tooltip line using D2R color controls:
 
 ```text
 ** Greater Affix
 ```
 
-The string uses D2R color control `ÿc8` / `ÿc3`, so it should display in orange/gold and then reset the text color. Future Greater Affix rows can add `greater-affix-marker` as one of their three mod slots, usually with min/max `1`.
+Because each affix row only has `mod1`, `mod2`, and `mod3`, the marker is safest for Greater rows with no more than two real stat mods. Rows that already need all three real mod slots need either a combined property or no marker.
 
-Frequency is a weight, not an inverse-rarity value. Higher `frequency` means the affix appears more often once eligible. Greater Affixes should feel rare because their own weights are low and the ordinary/filler affix pool has enough weight to dilute them.
+## Phase 1 Examples
 
-Corrected implementation model:
+These examples show the intended proportional level compression plus top-row split. They are design examples, not implemented data.
 
-- There should be one player-facing Greater Affix per category, such as `Greater Cruel`.
-- That one category may be represented by multiple technical rows with the same effect and same group.
-- Example Greater banding: level `50-65` frequency `1`, level `66-80` frequency `2`, level `81+` frequency `3`.
-- If late Greater is intended to be about 10x rarer than the normal version, the normal version's late frequency should be about 10x the late Greater frequency.
-- Therefore, with late Greater frequency `3`, a normalized matching normal affix would be around `30` frequency for that comparison.
+### Weapon Enhanced Damage
 
-Not every existing `frequency=1` row should be treated as a chase affix. Some old proc/charge/utility rows may simply be low-priority legacy rows. The pilot should audit each target family rather than assuming the current frequency layout already expresses item power cleanly.
+| Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
+|---|---|---:|---:|---|
+| Cruel lower top row | `dmg% 234-266` | 69 | 114 | level `48`, freq `114` |
+| Cruel true top row, early | `dmg% 267-300` | 74 | 114 | level `52`, maxlevel `73`, freq `57` |
+| Cruel true top row, late | `dmg% 267-300` | 74 | 114 | level `74`, freq `114` |
 
-This is now a phased affix-frequency rework, not only a Greater Affix insertion pass:
+### Armor / Shield Enhanced Defense
 
-- Phase 1 should mostly preserve current late top-row frequencies and add early rows at half frequency.
-- Phase 2 may normalize current high-frequency top rows, such as `Cruel` at `frequency=114`, if Greater rows use `1 / 2 / 3` and the target late ratio is 10x.
-- Current ordinary `frequency=1` rows likely need to be audited during Phase 2 if they overlap with Greater rows and are not meant to be chase-tier.
-- Junk/filler rows should remain high or be increased where needed to dilute powerful lower-level access, but broad junk-pool reshaping is not the first Phase 1 task.
+| Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
+|---|---|---:|---:|---|
+| Godly lower top row | `ac% 167-200` | 79 | 110 | level `55`, freq `110` |
+| Godly true top row, early | `ac% 201-225` | 86 | 110 | level `60`, maxlevel `85`, freq `55` |
+| Godly true top row, late | `ac% 201-225` | 86 | 110 | level `86`, freq `110` |
 
-## Early Access Top Affixes
+### Jewelry / Caster All Attributes
 
-To make top affixes possible on lower-level items, add banded technical rows for important normal and Greater affix families:
+| Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
+|---|---|---:|---:|---|
+| of the Sky | `all-stats 5-10` | 20 | 12 | level `14`, freq `12` |
+| of the Stars | `all-stats 11-15` | 44 | 12 | level `31`, freq `12` |
+| of the Heavens | `all-stats 16-20` | 69 | 12 | level `48`, freq `12` |
+| of the Zodiac, early | `all-stats 21-30` | 86 | 12 | level `60`, maxlevel `85`, freq `6` |
+| of the Zodiac, late | `all-stats 21-30` | 86 | 12 | level `86`, freq `12` |
 
-- Copy selected high-tier affix rows.
-- Lower `level` enough that exceptional or early elite bases can roll them.
-- Use lower frequency in early bands and higher frequency in later bands.
-- Keep `levelreq` close to the original top affix, or only modestly reduce it.
-- Keep the same `group`.
-- Use `maxlevel` where useful to create clean early/main/apex bands.
+### Shield All Resist
 
-This makes the affix possible without making it common.
+| Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
+|---|---|---:|---:|---|
+| Rainbow | `res-all 8-11` | 18 | 10 | level `13`, freq `10` |
+| Scintillating | `res-all 12-15` | 28 | 10 | level `20`, freq `10` |
+| Prismatic | `res-all 16-20` | 39 | 8 | level `27`, freq `8` |
+| Chromatic, early | `res-all 21-30` | 50 | 8 | level `35`, maxlevel `49`, freq `4` |
+| Chromatic, late | `res-all 21-30` | 50 | 8 | level `50`, freq `8` |
 
-Example policy:
+### Ring All Resist
 
-| Variant Type | level | maxlevel | Frequency | Purpose |
+| Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
+|---|---|---:|---:|---|
+| Shimmering | `res-all 5-8` | 45 | 6 | level `32`, freq `6` |
+| Rainbow | `res-all 9-12` | 56 | 4 | level `39`, freq `4` |
+| Scintillating, early | `res-all 13-17` | 67 | 4 | level `47`, maxlevel `66`, freq `2` |
+| Scintillating, late | `res-all 13-17` | 67 | 4 | level `67`, freq `4` |
+
+## Phase 2 Examples
+
+### Greater Cruel
+
+| Affix | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| Early normal top affix | lowered family target | before original top level | late freq / 2 | Strong affix can appear early, but is 2x rarer |
-| Late normal top affix | original or chosen top level | blank | late freq | Strong affix reaches intended top-end rate |
-| Early Greater affix | 50-65 | 65 | 1 | Very rare early spike |
-| Mid Greater affix | 66-80 | 80 | 2 | Still rare, but less punishing |
-| Late Greater affix | 81+ | blank | 3 | About 10x rarer than late normal if normal is normalized to 30 |
+| Greater Cruel | 50 | 65 | 1 | `dmg% 350-400`, `greater-affix-marker` |
+| Greater Cruel | 66 | 80 | 2 | `dmg% 350-400`, `greater-affix-marker` |
+| Greater Cruel | 81 | blank | 3 | `dmg% 350-400`, `greater-affix-marker` |
 
-This lets an exciting affix drop earlier without letting a low-level character immediately equip a wildly overpowered item.
+Target ratio:
 
-There are two complementary ways to make early high-tier affixes rare:
+- Late Greater should be roughly 10x rarer than the normal late top affix if the normal family is normalized to about `30`.
+- If the normal late row stays very high, such as current Cruel at `114`, then Greater becomes much rarer than 10x. That may be acceptable, but it should be intentional.
 
-1. Explicit banded rows as above. This is easier to reason about and should be used for premium families.
-2. Pool shaping: make the lower-level eligible affix pool larger with more ordinary/junk weight, then reduce that junk on higher-level rares with `maxlevel`. This helps tune total odds but is harder to reason about because every item type has a different eligible pool.
+### Greater Zodiac
 
-## Pilot Scope
+| Affix | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| Greater Zodiac | 60 | 70 | 1 | `all-stats 35-45`, `greater-affix-marker` |
+| Greater Zodiac | 71 | 85 | 2 | `all-stats 35-45`, `greater-affix-marker` |
+| Greater Zodiac | 86 | blank | 3 | `all-stats 35-45`, `greater-affix-marker` |
 
-Do not implement the old simple Greater-only pilot. The first implementation should be a controlled Phase 1 banding test:
+This family shows why Phase 2 may need frequency normalization. Normal Zodiac is only `frequency=12`, so a late Greater row at `3` is only 4x rarer unless normal Zodiac is raised or Greater Zodiac is lowered.
 
-- Weapon enhanced damage: `Cruel` and `Greater Cruel`.
-- Armor/shield enhanced defense: `Godly` and `Greater Godly`.
-- Jewelry all stats: `of the Zodiac` and `Greater Zodiac`.
-- Jewelry all resist: `Chromatic` / ring equivalent and Greater variants.
+## Implementation Strategy
 
-For Phase 1, design:
+1. Generate an affix-family audit from `magicprefix.txt` and `magicsuffix.txt`.
+2. For every rare-eligible affix row, calculate compressed `level` and compressed `maxlevel` using the 70% formula.
+3. Validate that each family remains monotonic: weaker affixes should not require a higher level than stronger affixes.
+4. Apply Phase 1 level compression in the chosen implementation mode:
+   - direct edit if magic-item availability can also move earlier, or
+   - rare-only early copies if the change must be rare-only.
+5. Add the top-affix early/late split for each target family.
+6. Validate TSV column counts and active/base parity.
+7. Generate sample eligible-weight reports for representative item levels and item types.
+8. Publish and test Phase 1.
+9. After Phase 1 testing, implement Phase 2 Greater rows with marker lines.
+10. Re-run sample probability reports and tune family frequencies if Greater odds are too common or too rare.
 
-- Normal high-tier early/late technical rows only.
+## Validation Targets
 
-For Phase 2, design:
+For sample item levels 35, 50, 65, 80, and 90, calculate:
 
-- Greater early/mid/late technical rows.
-- Any needed normal-frequency normalization so Greater odds are not accidentally too common or too rare.
+- Total eligible prefix/suffix weight for representative item types.
+- Weight of each target family.
+- Weight of the current top affix in that family.
+- Whether compressed levels preserved family ordering.
+- Whether the top-affix early row expires before the late row starts.
+- Whether high-level rares gained any unintended duplicate chance.
 
-Avoid sockets in the first Greater Affix pilot. Socket affixes have very high build value and can overwhelm item identity quickly.
+Representative item types:
 
-The detailed proposal and before/after examples are documented separately in `docs/rare-greater-affix-pilot-2026-05-18.md`.
-
-## Implementation Steps
-
-1. Update both `itemratio.txt` copies with the chosen `Uber=1` rare rarity multiplier.
-2. Phase 1: identify the top normal affix row for each target family.
-3. Phase 1: add an early top-row copy and preserve/confirm the late top row.
-4. Phase 1: set early frequency to about half the late row's frequency.
-5. Phase 1: validate sample eligible-weight probabilities at lower and higher affix levels.
-6. Phase 2: add new rare-only Greater Affix rows to both `magicprefix.txt` copies.
-7. Phase 2: add new rare-only Greater Affix rows to both `magicsuffix.txt` copies.
-8. Keep active and base copies identical.
-9. Validate TSV column counts.
-10. Validate every new affix uses an existing property code.
-11. Validate every Greater Affix has `spawnable=0`, `rare=1`, non-empty `group`, and non-zero `frequency`.
-12. Validate no Greater Affix uses a group that allows unintended stacking with its normal family.
-13. Install to live with `scripts/install-local.ps1`.
-14. Test in game with high-level rare drops and cube rare-reroll recipes.
+- Rare weapon.
+- Rare body armor.
+- Rare shield.
+- Rare ring.
+- Rare amulet.
+- Rare jewel.
 
 ## Testing Notes
 
@@ -246,15 +296,8 @@ The in-game test should focus on:
 - Normal bases still producing ordinary rares at roughly previous rates.
 - Exceptional rares dropping less often but not vanishing.
 - Elite rares feeling meaningfully rarer.
-- Elite rare affixes noticeably improving.
-- Greater Affixes appearing rarely enough that they feel special.
+- Earlier rares showing broader affix variety.
+- Stronger affixes appearing earlier without becoming common.
+- Top affix chance at high levels not increasing accidentally.
+- Greater Affixes appearing rarely enough that they feel special once Phase 2 is implemented.
 - No low-level item becoming absurd because an early-access top affix has too low a `levelreq`.
-
-## Open Design Choice
-
-Choose the first rarity multiplier before implementation:
-
-- Safer start: 2.5x rarer for `Uber=1` rows.
-- Stronger start: 3x rarer for `Uber=1` rows.
-
-Because `itemratio.txt` cannot split exceptional from elite, the safer start is recommended unless testing shows elite rares are still too common.

@@ -14,8 +14,8 @@ Full D2RDoc reading notes from the 2026-05-18 sitemap crawl: `docs/d2rdoc-readin
 - The mirror/reference tables live under `data/global/excel/base/`.
 - When changing a table that has a `base/` counterpart, update both unless there is a deliberate reason not to. We already hit this with `setitems.txt`: gameplay was correct in the active file, but `base/setitems.txt` drifted and could have confused future scripts.
 - Publish to the live game with `scripts/install-local.ps1`.
-- Current live target is `C:\Program Files (x86)\Diablo II Resurrected\mods\XavReimagined\XavReimagined.mpq`.
-- Current launch args are `-mod XavReimagined -txt -enablerespec`.
+- Current live target is `E:\Diablo II Resurrected\mods\XavReimagined\XavReimagined.mpq`.
+- Current launch args are `-mod XavReimagined -txt`.
 - After gameplay/data changes are validated, commit and push them to `origin/xav-custom`; keep the relevant docs/review notes in the same commit.
 
 ## Tooltips Vs Mechanics
@@ -52,14 +52,17 @@ Full D2RDoc reading notes from the 2026-05-18 sitemap crawl: `docs/d2rdoc-readin
 
 ## Rare Affix Rework
 
-- The rare item rework design is in `docs/rare-item-rework-design-2026-05-18.md`.
+- The canonical rare item rework design is in `docs/rare-item-rework-design-2026-05-18.md`. The separate Greater Affix pilot doc was merged into it.
 - Rare affix count appears engine-side rather than TXT-side; treat rares as capped at 6 affix records, up to 3 prefixes and 3 suffixes.
 - Greater Affixes should be implemented as rare-only rows in `magicprefix.txt` / `magicsuffix.txt` using `spawnable=0`, `rare=1`, low `frequency`, and the same `group` as the normal affix family they upgrade.
 - D2RDoc confirms `frequency` is a weight. Higher values are more common among eligible affixes; Greater Affixes should be rare by low relative weight and by dilution against ordinary/filler affixes with higher frequencies.
 - `level` controls minimum affix item level, `maxlevel` can create spawn bands, and `levelreq` controls equip requirement. This supports early-access rare-only Greater rows that can drop before they can be equipped.
 - First rare rarity pass applied on 2026-05-18: both `itemratio.txt` copies now make only `Uber=1` rare rows 2.5x rarer. `Uber=0` normal-base rare rows are unchanged. Elite-specific power should come later through affix design because `itemratio.txt` cannot split exceptional from elite.
-- Greater Affix implementation should use one player-facing Greater category with multiple technical level bands. Example: three `Greater Cruel` rows at levels `50-65`, `66-80`, and `81+`, all with the same `dmg%` payload but frequencies `1/2/3`.
-- The rare affix work is broader than adding Greater rows. Existing ordinary `frequency=1` rows can be as common as early Greater rows if they overlap, so they need audit. Very high-frequency top rows may also need normalization if Greater rows use `1/2/3` and a target late ratio such as 10x.
+- Phase 1 lowers effective rare availability for all rare-eligible affixes using the proportional formula `compressed_level = max(1, round(original_level * 0.70))`; rows with `maxlevel` should compress that gate too.
+- Phase 1 only gives the best normal affix in each family a true early/late frequency split. The early top row starts at the compressed level, ends at `original_top_level - 1`, and uses half the late frequency.
+- Preserve family ordering after compression. A weaker row such as lower Cruel must not end up requiring a higher level than the stronger Cruel row.
+- Directly editing shared `spawnable=1, rare=1` affix rows also changes magic items. If the rework must stay rare-only, use rare-only early availability rows with `spawnable=0, rare=1`.
+- Phase 2 adds Greater Affixes with multiple technical level bands. Example: three `Greater Cruel` rows at levels `50-65`, `66-80`, and `81+`, all with the same `dmg%` payload but frequencies `1/2/3`.
 
 ## Set Item Buff Pass
 
@@ -265,13 +268,14 @@ If these tables are regenerated from upstream, keep the gamble dummy appended ra
 
 The rare affix rework is now split into two phases.
 
-Phase 1 is the normal top-affix stretch:
+Phase 1 is proportional rare affix level compression:
 
-- Scan each target rare affix family for the best normal affix row.
-- Do not rebalance the lower affixes in the family during the first pass.
-- Copy or split the best row into early and late technical rows.
-- Early row has the same stats and group, a lower `level`, a `maxlevel` before the late row, and about half the late row frequency.
-- This makes the best normal affix possible earlier, but 2x rarer than it is at the late band.
+- Lower the effective rare availability gate for all rare-eligible affixes by about 30%, using `round(original_level * 0.70)`.
+- Compress `maxlevel` too when it exists.
+- Keep the whole family ladder proportional so lower tiers do not end up gated above stronger tiers.
+- Only the best normal affix in each target family gets a true early/late split.
+- The top early row uses the compressed level, `maxlevel = original_top_level - 1`, and about half the late frequency.
+- The top late row keeps the original level and original frequency, so high-level rares do not get an extra top-affix chance.
 
 Phase 2 is the Greater Affix layer:
 

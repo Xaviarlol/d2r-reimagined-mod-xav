@@ -6,11 +6,11 @@ This handoff captures the current repo state and the design decisions from the l
 
 ## Repo State
 
-- Workspace: `C:\Users\ericb\Dropbox\AI projects\d2r\d2r-reimagined-fresh`
+- Workspace: `C:\Dropbox\AI projects\d2r\d2r-reimagined-fresh`
 - Branch: `xav-custom`
 - Remote: `origin` / `https://github.com/Xaviarlol/d2r-reimagined-mod-xav.git`
 - Current pushed HEAD before this handoff doc: `6a592bdf Add ranges to low-affix set buffs`
-- Live mod install target used this session: `C:\Program Files (x86)\Diablo II Resurrected\mods\XavReimagined\XavReimagined.mpq`
+- Live mod install target used this session: `E:\Diablo II Resurrected\mods\XavReimagined\XavReimagined.mpq`
 - Launch args from install script: `-mod XavReimagined -txt`
 
 Before this handoff doc was created, `git status --short --branch` was clean:
@@ -210,7 +210,9 @@ User goals:
 - Exceptional base rares should be affected to a lesser extent.
 - Normal base rares should mostly stay as-is.
 - Rares should roll better affixes on average.
-- Top affixes should be able to appear earlier, but be much less likely on lower-level drops.
+- All rare-eligible affixes should have their effective level gates lowered proportionally by about 30%, while preserving family order.
+- Only the top normal affix in each family should get a true early/late frequency split.
+- Top affixes should be able to appear earlier, but be less likely before their old gate.
 - Introduce "Greater Affixes": rare affixes much stronger than standard affixes.
 
 Important constraints found:
@@ -269,15 +271,16 @@ Current frequency audit:
 
 Updated Greater Affix design direction:
 
-- Greater Affixes should generally be `frequency=1`.
+- Greater Affixes should generally use early/mid/late frequencies `1/2/3`.
 - Ordinary desirable affixes should often be `frequency=4-12`.
 - Common/filler affixes should often be `frequency=12-48+`.
 - Some existing `frequency=1` proc/charged affixes may need review; not every `frequency=1` affix should be treated as chase-tier.
 - Greater Affixes should use the same `group` as the normal affix family they upgrade, so normal and Greater versions do not stack.
+- Greater Affixes with a spare mod slot should include `greater-affix-marker` so the tooltip shows `** Greater Affix`.
 
-## Early Top Affix Access
+## Phase 1 Affix Level Compression
 
-The user does not want the best affixes strictly gated by very high affix level.
+The user does not want rare affixes strictly gated by very high affix level, but also does not want the affix ladder distorted.
 
 Important conclusion:
 
@@ -285,25 +288,22 @@ Important conclusion:
 - `maxlevel` can cap an affix's spawn band.
 - `levelreq` controls when the player can equip/use the item.
 - `levelreq` can be higher than the affix/drop/item level.
+- Directly editing a shared `spawnable=1, rare=1` row also affects magic items. Use rare-only early rows if the change must stay rare-only.
 
-Therefore, the mod can allow an affix to drop earlier while still making the item unusable until a higher character level.
+Current Phase 1 direction:
 
-Recommended pattern:
+- Lower the effective rare availability gate for all rare-eligible affixes by about 30%.
+- Formula: `compressed_level = max(1, round(original_level * 0.70))`.
+- Compress `maxlevel` too when it exists.
+- Preserve family ordering after compression. A lower Cruel row should not end up above the stronger Cruel row.
+- Only the best normal affix in each family gets an early/late split.
 
-| Row type | level | maxlevel | levelreq | frequency | Effect |
-|---|---:|---:|---:|---:|---|
-| Early-access Greater | 45-60 | 74/84 optional | 80+ | 1 | Can drop early, very rare, not usable immediately |
-| Main Greater | 75-85 | blank | 80+ | 2-4 | More likely on elite/high-level drops |
-| Apex Greater | 90+ | blank | 88+ | 1 | True chase affix |
+Top affix split:
 
-Preferred implementation style:
+- early row: compressed level, `maxlevel = original_top_level - 1`, half frequency
+- late row: original level, original frequency
 
-- Use banded rows with `maxlevel` for clean probability tiers.
-- Example:
-  - `Greater Cruel Early`: `level=55`, `maxlevel=74`, `levelreq=82`, `frequency=1`
-  - `Greater Cruel Main`: `level=75`, `maxlevel=` blank, `levelreq=82`, `frequency=4`
-
-This lets lower-level drops hit the affix rarely, while higher-level drops get a larger weight.
+This lets lower-level drops hit the top affix rarely, while high-level rares do not get an extra duplicate chance.
 
 ## Useful External Reference
 
@@ -320,30 +320,32 @@ For `itemratio.txt`, the d2rdoc source was useful for confirming the `Uber` fiel
 ## Suggested Next Steps For The Next Session
 
 1. If continuing the rare overhaul, do not start with bulk edits.
-2. Update `docs/rare-item-rework-design-2026-05-18.md` to incorporate the user's corrected frequency philosophy and early-access affix banding.
-3. Decide whether to implement the rarity pass at 2.5x or 3x for `Uber=1` rows.
-4. Design a small Greater Affix pilot rather than touching hundreds of affixes:
-   - weapon prefixes/suffixes
-   - armor/shield prefixes/suffixes
-   - jewelry affixes
-   - class-item affixes
-5. For each Greater Affix family:
+2. Treat `docs/rare-item-rework-design-2026-05-18.md` as the canonical rare rework design doc.
+3. The 2.5x `Uber=1` rare rarity pass is already implemented; test before moving to 3x.
+4. Generate a rare affix family audit before editing `magicprefix.txt` or `magicsuffix.txt`.
+5. For Phase 1:
+   - calculate compressed level and maxlevel values using the 70% formula
+   - validate that each affix family remains ordered correctly
+   - decide direct shared-row edits vs rare-only early rows
+   - add the top-affix early/late split for each target family
+6. For Phase 2 Greater Affix families:
    - identify the existing normal affix `group`
-   - set ordinary affix frequencies high enough
-   - add early/main/apex Greater rows with appropriate `level`, `maxlevel`, `levelreq`, and `frequency`
-6. Validate with TSV-aware scripts:
+   - add early/mid/late Greater rows with frequencies `1/2/3`
+   - include `greater-affix-marker` when a row has a spare mod slot
+   - normalize family frequencies only if Greater odds are too common or too rare
+7. Validate with TSV-aware scripts:
    - active/base files identical where expected
    - column counts unchanged
    - property codes exist in `properties.txt`
    - Greater rows have `spawnable=0`, `rare=1`, non-empty `group`, non-zero `frequency`
-7. Install to live with:
+8. Install to live with:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\install-local.ps1 -D2RPath "C:\Program Files (x86)\Diablo II Resurrected" -ModName "XavReimagined"
+powershell -ExecutionPolicy Bypass -File .\scripts\install-local.ps1 -D2RPath "E:\Diablo II Resurrected" -ModName "XavReimagined"
 ```
 
-8. Hash-check live files against repo files after install.
-9. Commit and push every completed implementation checkpoint to `origin/xav-custom`.
+9. Hash-check live files against repo files after install.
+10. Commit and push every completed implementation checkpoint to `origin/xav-custom`.
 
 ## Working Practices To Preserve
 
