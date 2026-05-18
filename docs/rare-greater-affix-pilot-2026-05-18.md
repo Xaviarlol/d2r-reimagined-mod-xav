@@ -57,6 +57,14 @@ Example:
 
 All three technical rows use the same `group` as normal Cruel so only one enhanced-damage family prefix can appear on a rare item.
 
+Greater Affix rows should also include the marker property `greater-affix-marker` when the row has a spare mod slot. This prints an orange/gold tooltip line:
+
+```text
+** Greater Affix
+```
+
+Because each affix row only has `mod1`, `mod2`, and `mod3`, this is safest for Greater rows with no more than two real stat mods. Rows that already need all three real mod slots need either a family-specific combined property or no marker.
+
 ## Corrected Model
 
 There should be one player-facing Greater Affix per category, such as `Greater Cruel`.
@@ -73,9 +81,9 @@ Example:
 
 | Row Name | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| Greater Cruel | 50 | 65 | 1 | `dmg% 350-400` |
-| Greater Cruel | 66 | 80 | 2 | `dmg% 350-400` |
-| Greater Cruel | 81 | 100 or blank | 3 | `dmg% 350-400` |
+| Greater Cruel | 50 | 65 | 1 | `dmg% 350-400`, `greater-affix-marker` |
+| Greater Cruel | 66 | 80 | 2 | `dmg% 350-400`, `greater-affix-marker` |
+| Greater Cruel | 81 | 100 or blank | 3 | `dmg% 350-400`, `greater-affix-marker` |
 
 All three technical rows use the same `group` as normal Cruel so only one enhanced-damage family prefix can appear on a rare item.
 

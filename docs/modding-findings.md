@@ -279,6 +279,7 @@ Phase 2 is the Greater Affix layer:
 - Default Greater bands are early/mid/late with frequencies `1 / 2 / 3`.
 - Greater rows stay rare-only, use the same family `group`, and should not stack with the normal family row.
 - During Phase 2, normalize family frequencies only where needed so Greater odds make sense relative to the normal top affix.
+- Greater rows with a spare mod slot should include `greater-affix-marker`. The marker is backed by `item_greaterAffixMarker` / `GreaterAffixMarker` and prints `** Greater Affix` in orange/gold using D2R color control codes.
 
 ## References Worth Keeping Handy
 

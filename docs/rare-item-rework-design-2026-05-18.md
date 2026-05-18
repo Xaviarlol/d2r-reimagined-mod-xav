@@ -125,6 +125,7 @@ Phase 2 Greater Affix policy:
 - Greater rows use the same player-facing category, same stat payload, and same mutual-exclusion `group`.
 - Greater default frequencies are `1 / 2 / 3`.
 - Family frequency normalization is handled during Phase 2 if the normal-to-Greater rarity ratio needs adjustment.
+- Greater rows should spend one free mod slot on `greater-affix-marker` when they have two or fewer real stat mods, so the item tooltip visibly shows `** Greater Affix` in orange/gold text.
 
 ## Greater Affixes And Frequency Rework
 
@@ -141,6 +142,14 @@ Greater Affixes should be rare-only affix rows:
 Using the same `group` is important. A Greater enhanced-damage prefix should replace a normal enhanced-damage prefix in that roll family, not stack with it.
 
 Greater Affixes will not automatically show a special "Greater Affix" label in game. Rare item names do not visibly expose magic affix row names the way blue magic items do. The player-facing signal is the stronger stat line itself unless we later add a separate UI/string convention.
+
+Implementation note: the UI/string convention now exists. `item_greaterAffixMarker` in `itemstatcost.txt`, `greater-affix-marker` in `properties.txt`, and `GreaterAffixMarker` in `item-modifiers.json` provide a harmless visible marker line:
+
+```text
+** Greater Affix
+```
+
+The string uses D2R color control `ÿc8` / `ÿc3`, so it should display in orange/gold and then reset the text color. Future Greater Affix rows can add `greater-affix-marker` as one of their three mod slots, usually with min/max `1`.
 
 Frequency is a weight, not an inverse-rarity value. Higher `frequency` means the affix appears more often once eligible. Greater Affixes should feel rare because their own weights are low and the ordinary/filler affix pool has enough weight to dilute them.
 

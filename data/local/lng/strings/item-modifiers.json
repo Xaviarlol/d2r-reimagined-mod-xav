@@ -7495,5 +7495,22 @@
         "ptBR": "ÿc4%+d ao máximo de Magos Esqueletoÿc3",
         "ruRU": "ÿc4%+d к максимальному числу Скелетов-маговÿc3",
         "zhCN": "ÿc4最大骷髅法师数量 %+dÿc3"
+    },
+    {
+        "id": 48070,
+        "Key": "GreaterAffixMarker",
+        "enUS": "ÿc8** Greater Affixÿc3",
+        "zhTW": "ÿc8** Greater Affixÿc3",
+        "deDE": "ÿc8** Greater Affixÿc3",
+        "esES": "ÿc8** Greater Affixÿc3",
+        "frFR": "ÿc8** Greater Affixÿc3",
+        "itIT": "ÿc8** Greater Affixÿc3",
+        "koKR": "ÿc8** Greater Affixÿc3",
+        "plPL": "ÿc8** Greater Affixÿc3",
+        "esMX": "ÿc8** Greater Affixÿc3",
+        "jaJP": "ÿc8** Greater Affixÿc3",
+        "ptBR": "ÿc8** Greater Affixÿc3",
+        "ruRU": "ÿc8** Greater Affixÿc3",
+        "zhCN": "ÿc8** Greater Affixÿc3"
     }
 ]
