@@ -1,191 +1,243 @@
-# Greater Affix Pilot Proposal
+# Greater Affix And Rare Frequency Rework
 
 Created: 2026-05-18.
 
-This is the proposed first Greater Affix pass for the rare item rework. It is intentionally small and based on actual existing affix groups in `magicprefix.txt` / `magicsuffix.txt`.
-
 Status: design only, not implemented.
 
-## Goals
+This replaces the earlier "add a handful of Greater rows" pilot. Eric clarified that the real rare rework is broader: top affixes, not only Greater Affixes, should be able to appear earlier, but lower-level rares should see them much less often.
 
-- Make elite rares feel more exciting after rare quality was made rarer.
-- Add a small number of rare-only chase affixes rather than rewriting hundreds of rows.
-- Keep Greater Affixes mutually exclusive with their normal affix families by reusing `group`.
-- Use `level`, `maxlevel`, and `levelreq` to allow rare early spikes without low-level abuse.
-- Keep socket affixes out of the first pilot.
+## Corrected Model
 
-## Ground Rules
+There should be one player-facing Greater Affix per category, such as `Greater Cruel`.
 
-Every Greater row should use:
+To make that one Greater category rarer or more common by item level, implement multiple technical rows with the same player-facing idea and same stat payload:
+
+| Technical Band | level | maxlevel | frequency |
+|---|---:|---:|---:|
+| Early | 50 | 65 | 1 |
+| Mid | 66 | 80 | 2 |
+| Late | 81 | 100 or blank | 3 |
+
+Example:
+
+| Row Name | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| Greater Cruel | 50 | 65 | 1 | `dmg% 350-400` |
+| Greater Cruel | 66 | 80 | 2 | `dmg% 350-400` |
+| Greater Cruel | 81 | 100 or blank | 3 | `dmg% 350-400` |
+
+All three technical rows use the same `group` as normal Cruel so only one enhanced-damage family prefix can appear on a rare item.
+
+## Frequency Ratio Rule
+
+Frequency is a weight. If two affixes are eligible for the same item, relative rarity is approximately:
 
 ```text
-spawnable = 0
-rare = 1
-frequency = low relative weight
-group = same group as normal family
+affix A relative odds = frequency A / frequency B
 ```
 
-Suggested banding:
+The exact final chance also depends on the total eligible prefix/suffix pool for that item type and item level, but direct frequency ratios are still the right first-order balancing tool.
 
-| Band | level | maxlevel | levelreq | frequency |
-|---|---:|---:|---:|---:|
-| Early | 58-65 | 74 or 84 | 75-82 | 1 |
-| Main | 75-84 | blank | 82-88 | 2-4 |
-| Apex | 90+ | blank | 88-92 | 1 |
+For `Greater Cruel`, Eric's target is:
 
-## Existing Affix Families Worth Targeting
+- Late Greater Cruel should be about 10x rarer than normal Cruel.
+- Early Greater Cruel should be about 30x rarer than normal Cruel.
 
-### Weapon Damage Prefixes
+With Greater Cruel frequencies `1 / 2 / 3`, this implies normal late Cruel should be around `30` frequency:
 
-Existing family:
+| Comparison | Greater Freq | Normal Cruel Freq | Relative Rarity |
+|---|---:|---:|---:|
+| Early Greater vs normal Cruel | 1 | 30 | 30x rarer |
+| Mid Greater vs normal Cruel | 2 | 30 | 15x rarer |
+| Late Greater vs normal Cruel | 3 | 30 | 10x rarer |
 
-- Group `111`.
-- Normal high end includes `Cruel` at `267-300% Enhanced Damage`, `frequency=114`.
-- Reimagined high end includes `Grandmaster's` at `301-350% Enhanced Damage` plus attack rating or secondary effects, usually `frequency=2-4`.
-- Item scope is usually `itype1=weap`, with `etype1=orb`, `etype2=wand`.
+This means the current file cannot just add `Greater Cruel` at `1 / 2 / 3` and call it done:
 
-Pilot rows:
+- Current normal `Cruel` is `frequency=114`.
+- If normal Cruel stays at `114`, late Greater Cruel at `3` is about `38x` rarer than Cruel, not `10x`.
+- Early Greater Cruel at `1` would be about `114x` rarer than Cruel.
 
-| Row | Band | Mods | Intended Feel |
-|---|---|---|---|
-| Greater Cruel | Early | `dmg% 301-350` | Exceptional/early elite can rarely hit current top-tier damage |
-| Greater Grandmaster's | Main | `dmg% 351-425`, `att 301-350` | True elite rare weapon spike |
-| Apex Grandmaster's | Apex | `dmg% 426-500`, `att 351-450` | Extremely rare chase weapon prefix |
+So the rework needs frequency normalization, not only new Greater rows.
 
-### Weapon Attack Speed Suffixes
+## Are We Wrong To Reweight Existing Frequencies?
 
-Existing family:
+No. The user's concern is correct.
 
-- Group `7`.
-- Weapon rows currently top out around `30% IAS` on melee weapons.
-- Gloves and jewels also use group `7`, so item scoping should be precise.
+Any ordinary affix with `frequency=1` and overlapping eligibility would be as common as an early Greater row. That is not what we want unless that ordinary row is also intended to be chase-tier. Many existing `frequency=1` rows are not necessarily designed as true Greater-grade chase affixes, so they need audit and likely reweighting.
 
-Pilot rows:
+Likewise, ordinary junk/filler affixes may need higher frequency so they continue to dilute powerful rows, especially at lower item levels.
 
-| Row | Band | Item Scope | Mods | Intended Feel |
-|---|---|---|---|---|
-| Greater Alacrity | Main | `weap`, exclude `wand`, `orb` | `swing2 35-40` | Rare weapons can beat ordinary IAS |
-| Apex Quickness | Apex | `weap`, exclude `wand`, `orb` | `swing2 45-50` | True chase IAS suffix |
+Important nuance: not every current row moves in the same direction.
 
-### Armor And Shield Defense Prefixes
+- Very high-frequency rows like current `Cruel` at `114` may need to come down if Greater rows are fixed at `1 / 2 / 3` and the target ratio is only 10x at the late band.
+- Current `frequency=1` ordinary rows probably need to go up, often to at least `3`, unless they are intentionally chase-tier.
+- Junk/filler rows generally need to stay high or become higher, especially in early bands.
 
-Existing family:
+## Two Ways To Make Early Top Affixes Rare
 
-- Group `101`.
-- Current normal high-frequency top includes `Godly` armor/shield defense at `201-225% Enhanced Defense`, `frequency=110`.
-- Existing rare-friendly defense/reduction hybrid line tops at `Invulnerable1`: `ac% 81-100`, `red-dmg% 21-25`, `frequency=4`.
+### 1. Explicit banded rows
 
-Pilot rows:
+Create early/mid/late technical rows for each important affix family.
 
-| Row | Band | Item Scope | Mods | Intended Feel |
-|---|---|---|---|---|
-| Greater Godly | Main | `armo`, `shld` | `ac% 226-275` | Cleaner high-defense chase |
-| Apex Invulnerable | Apex | `tors`, `shld` | `ac% 151-200`, `red-dmg% 26-35` | Defensive rare armor/shield spike |
+Example for normal Cruel and Greater Cruel:
 
-### Shield Blocking Suffixes
+| Player-Facing Affix | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| Cruel | 50 | 65 | 10 | `dmg% 267-300` |
+| Cruel | 66 | 80 | 20 | `dmg% 267-300` |
+| Cruel | 81 | blank | 30 | `dmg% 267-300` |
+| Greater Cruel | 50 | 65 | 1 | `dmg% 350-400` |
+| Greater Cruel | 66 | 80 | 2 | `dmg% 350-400` |
+| Greater Cruel | 81 | blank | 3 | `dmg% 350-400` |
 
-Existing family:
+This makes Cruel itself rarer on lower-level rares while preserving a clean 10:1 normal-to-Greater ratio inside each band.
 
-- Group `8`.
-- `of Deflecting` gives `block 20-30` and `block2 30`.
+Compared to the late normal Cruel baseline frequency of `30`, early Greater Cruel is still `30x` rarer, mid Greater Cruel is `15x` rarer, and late Greater Cruel is `10x` rarer.
 
-Pilot rows:
+This is the most explicit and easiest-to-audit approach.
 
-| Row | Band | Item Scope | Mods | Intended Feel |
-|---|---|---|---|---|
-| Greater Deflecting | Main | `shld` | `block 31-40`, `block2 35-40` | Strong defensive shield suffix |
+### 2. Pool shaping through broader low-level eligibility
 
-### Jewelry Resist Prefixes
+Make the lower-level affix pool larger by allowing many ordinary and junk affixes to remain eligible at lower levels, then retire or reduce some of that junk at higher levels with `maxlevel`.
 
-Existing family:
+This can make early top affixes rarer because the denominator is larger:
 
-- Group `116`.
-- `Chromatic` gives `res-all 21-30` on shields and amulets/circlets.
-- Rings have lower all-resist values, topping around `13-17`.
+```text
+Greater chance ~= Greater frequency / total eligible frequency
+```
 
-Pilot rows:
+This approach is useful as a supporting lever, but it is harder to reason about because total eligible weight changes by item type, prefix/suffix side, and item level.
 
-| Row | Band | Item Scope | Mods | Intended Feel |
-|---|---|---|---|---|
-| Greater Chromatic | Main | `amul`, `circ` | `res-all 31-40` | Strong but narrow jewelry resist spike |
-| Apex Chromatic | Apex | `amul`, `circ` | `res-all 41-50` | Very rare defensive jewelry chase |
-| Greater Rainbow | Main | `ring` | `res-all 18-25` | Ring-specific all-resist spike |
+Recommended direction: use explicit banded rows for high-value affix families, then use pool shaping only to tune the overall feel after the main families are in place.
 
-### Jewelry Stat Suffixes
+## Before And After Examples
 
-Existing family:
+These are design examples, not yet implemented values.
 
-- Group `42`.
-- `of the Zodiac` gives `all-stats 21-30` on amulet/ring/circlet/orb/staff/wand.
+### Weapon Damage: Cruel / Greater Cruel
 
-Pilot rows:
+Current:
 
-| Row | Band | Item Scope | Mods | Intended Feel |
-|---|---|---|---|---|
-| Greater Zodiac | Main | `amul`, `ring`, `circ` | `all-stats 31-40` | Clear high-roll rare jewelry payoff |
-| Apex Zodiac | Apex | `amul`, `ring`, `circ` | `all-stats 41-50` | Very rare stat-stack chase |
+| Affix | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| Cruel | 74 | blank | 114 | `dmg% 267-300` |
+| Greater Cruel | none | none | none | Does not exist |
 
-### Jewelry Dual Leech Suffixes
+Proposed:
 
-Existing family:
+| Affix | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| Cruel | 50 | 65 | 10 | `dmg% 267-300` |
+| Cruel | 66 | 80 | 20 | `dmg% 267-300` |
+| Cruel | 81 | blank | 30 | `dmg% 267-300` |
+| Greater Cruel | 50 | 65 | 1 | `dmg% 350-400` |
+| Greater Cruel | 66 | 80 | 2 | `dmg% 350-400` |
+| Greater Cruel | 81 | blank | 3 | `dmg% 350-400` |
 
-- Group `60`.
-- `of the Lich` reaches `manasteal 8-9`, `lifesteal 10-12` on ring/amulet.
+Meaning:
 
-Pilot rows:
+- Before, Cruel only appears at affix level 74+.
+- After, Cruel can appear at affix level 50+, but is 3x more common late than early.
+- Greater Cruel can also appear at 50+, but is much rarer.
 
-| Row | Band | Item Scope | Mods | Intended Feel |
-|---|---|---|---|---|
-| Greater Lich | Main | `ring`, `amul` | `manasteal 10-12`, `lifesteal 12-15` | Rare sustain jewelry |
-| Apex Lich | Apex | `ring`, `amul` | `manasteal 13-15`, `lifesteal 16-20` | Very rare leech chase |
+### Armor Defense: Godly / Greater Godly
 
-### Class Item Skill Prefixes
+Current:
 
-Existing family:
+| Affix | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| Godly | 86 | blank | 110 | `ac% 201-225` |
+| Greater Godly | none | none | none | Does not exist |
 
-- Group `125`.
-- Skill tabs can already roll `+3`.
-- Class skills can roll `+2` on several item types.
-- This family is very powerful and should be handled conservatively.
+Proposed:
 
-Pilot option:
+| Affix | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| Godly | 55 | 65 | 10 | `ac% 201-225` |
+| Godly | 66 | 80 | 20 | `ac% 201-225` |
+| Godly | 81 | blank | 30 | `ac% 201-225` |
+| Greater Godly | 55 | 65 | 1 | `ac% 275-325` |
+| Greater Godly | 66 | 80 | 2 | `ac% 275-325` |
+| Greater Godly | 81 | blank | 3 | `ac% 275-325` |
 
-| Row | Band | Item Scope | Mods | Intended Feel |
-|---|---|---|---|---|
-| Greater Class Mastery | Main | class-specific item types only | class skill `+3` | Makes elite class-specific rares exciting |
+Meaning:
 
-Recommended first implementation should either skip this until after the generic pilot, or add only class-item-specific rows. Do not add broad `+3 all skills` in the first pilot.
+- Before, top Godly armor defense waits until very high affix levels.
+- After, exceptional and early elite armor can rarely spike into high defense.
+- Greater Godly remains a true chase roll.
 
-## First Implementation Recommendation
+### Jewelry Stats: Zodiac / Greater Zodiac
 
-Start with these 14 rows:
+Current:
 
-- 3 weapon damage prefixes.
-- 2 weapon IAS suffixes.
-- 2 armor/shield defense prefixes.
-- 1 shield blocking suffix.
-- 3 jewelry resist prefixes.
-- 2 jewelry stat suffixes.
-- 1 jewelry dual-leech suffix: `Greater Lich` only.
+| Affix | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| of the Zodiac | 86 | blank | 12 | `all-stats 21-30` |
+| Greater Zodiac | none | none | none | Does not exist |
 
-Hold back for later:
+Proposed:
 
-- `Apex Lich`, because very high dual leech on jewelry may be too build-defining.
-- Class-item skill Greater rows, because skill rows need a class-by-class item-type pass.
-- Any socket affixes.
+| Affix | level | maxlevel | frequency | Mods |
+|---|---:|---:|---:|---|
+| of the Zodiac | 60 | 70 | 10 | `all-stats 21-30` |
+| of the Zodiac | 71 | 85 | 20 | `all-stats 21-30` |
+| of the Zodiac | 86 | blank | 30 | `all-stats 21-30` |
+| Greater Zodiac | 60 | 70 | 1 | `all-stats 35-45` |
+| Greater Zodiac | 71 | 85 | 2 | `all-stats 35-45` |
+| Greater Zodiac | 86 | blank | 3 | `all-stats 35-45` |
 
-## Validation Checklist
+Meaning:
 
-Before implementation:
+- This is an example where the existing normal top affix frequency is only `12`.
+- If late Greater is `3` and we want it about `10x` rarer than normal Zodiac, late normal Zodiac needs to rise toward `30`.
+- This confirms that some existing low-frequency ordinary rows must be increased.
 
-- Confirm each target property code exists in `properties.txt`.
-- Confirm target `group` values match the intended normal family.
-- Confirm item type codes exist in `itemtypes.txt`.
+### Current Frequency=1 Rows
 
-After implementation:
+Example current rows include some `+3 skilltab` prefixes such as `Malevolent` and `Torrid` at `frequency=1`.
 
-- Active/base `magicprefix.txt` and `magicsuffix.txt` remain synchronized.
-- Column counts remain unchanged.
-- Every Greater row has `spawnable=0`, `rare=1`, `frequency>0`, and non-empty `group`.
-- No Greater row uses an item type that makes it appear on unintended bases.
-- Install to live and use rare reroll/gamble recipes to inspect generated rares.
+If these remain ordinary non-Greater affixes and overlap with Greater rows, they should probably not stay at `frequency=1`; otherwise they are weighted like early Greater Affixes.
+
+Proposed rule:
+
+- Audit every ordinary `frequency=1` rare-eligible row.
+- If it is not intended to be chase-tier, raise it to at least `3`.
+- If it is an obsolete or undesirable row, decide whether it should become filler with higher frequency, be banded, or be disabled for rares.
+
+## Revised Implementation Strategy
+
+Do not implement the old 14-row pilot as-is.
+
+New sequence:
+
+1. Audit rare-eligible prefix/suffix rows by family, item type, group, level, maxlevel, and frequency.
+2. Pick a small set of high-value affix families for the first banded test:
+   - Weapon enhanced damage.
+   - Armor/shield enhanced defense.
+   - Jewelry all stats.
+   - Jewelry all resist.
+3. For each family, design normal high-tier band rows and matching Greater band rows.
+4. Reweight ordinary `frequency=1` rows that overlap the same item pools.
+5. Keep junk/filler rows high enough to dilute early access.
+6. Validate probability examples by calculating total eligible weight at sample item levels.
+7. Only then edit `magicprefix.txt` / `magicsuffix.txt`.
+
+## Validation Targets For First Implementation
+
+For sample item levels 55, 70, and 85, calculate:
+
+- Total eligible prefix/suffix weight for representative item types.
+- Normal top affix weight.
+- Greater affix weight.
+- Greater affix chance relative to the normal family row.
+- Greater affix chance relative to the total eligible pool.
+
+Representative item types:
+
+- Rare weapon.
+- Rare body armor.
+- Rare shield.
+- Rare ring.
+- Rare amulet.
+
+The first implementation should include a generated probability report before live publish.

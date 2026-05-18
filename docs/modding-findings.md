@@ -58,6 +58,8 @@ Full D2RDoc reading notes from the 2026-05-18 sitemap crawl: `docs/d2rdoc-readin
 - D2RDoc confirms `frequency` is a weight. Higher values are more common among eligible affixes; Greater Affixes should be rare by low relative weight and by dilution against ordinary/filler affixes with higher frequencies.
 - `level` controls minimum affix item level, `maxlevel` can create spawn bands, and `levelreq` controls equip requirement. This supports early-access rare-only Greater rows that can drop before they can be equipped.
 - First rare rarity pass applied on 2026-05-18: both `itemratio.txt` copies now make only `Uber=1` rare rows 2.5x rarer. `Uber=0` normal-base rare rows are unchanged. Elite-specific power should come later through affix design because `itemratio.txt` cannot split exceptional from elite.
+- Greater Affix implementation should use one player-facing Greater category with multiple technical level bands. Example: three `Greater Cruel` rows at levels `50-65`, `66-80`, and `81+`, all with the same `dmg%` payload but frequencies `1/2/3`.
+- The rare affix work is broader than adding Greater rows. Existing ordinary `frequency=1` rows can be as common as early Greater rows if they overlap, so they need audit. Very high-frequency top rows may also need normalization if Greater rows use `1/2/3` and a target late ratio such as 10x.
 
 ## Set Item Buff Pass
 

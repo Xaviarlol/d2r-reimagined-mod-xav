@@ -8,7 +8,7 @@ Reference context: the D2R Data Guide is useful for the overall loose-file moddi
 
 Full local reading notes from the D2RDoc sitemap crawl: `docs/d2rdoc-reading-notes-2026-05-18.md`.
 
-Greater Affix pilot proposal: `docs/rare-greater-affix-pilot-2026-05-18.md`.
+Greater Affix and frequency rework proposal: `docs/rare-greater-affix-pilot-2026-05-18.md`.
 
 ## Current Data Constraints
 
@@ -101,13 +101,13 @@ Current rare-eligible affix counts:
 
 This means the existing mod already uses rare-only affixes. Greater Affixes should follow that pattern.
 
-## Greater Affixes
+## Greater Affixes And Frequency Rework
 
 Greater Affixes should be rare-only affix rows:
 
 - `spawnable=0`
 - `rare=1`
-- low relative `frequency`, usually `1` for early/apex variants and higher only for intentionally more common main-tier variants
+- low relative `frequency`
 - same `group` as the normal affix family they upgrade
 - `level` usually 75, 82, or 90 depending on power
 - `levelreq` should be high enough to avoid low-level twinking abuse
@@ -119,25 +119,29 @@ Greater Affixes will not automatically show a special "Greater Affix" label in g
 
 Frequency is a weight, not an inverse-rarity value. Higher `frequency` means the affix appears more often once eligible. Greater Affixes should feel rare because their own weights are low and the ordinary/filler affix pool has enough weight to dilute them.
 
-Recommended frequency philosophy:
+Corrected implementation model:
 
-| Affix Type | Typical Frequency | Purpose |
-|---|---:|---|
-| Greater early-access spike | 1 | Can appear early, but should be startlingly rare |
-| Greater main-tier chase | 2-4 | More available on appropriate elite/high-level drops |
-| Greater apex | 1 | True top-end chase row |
-| Ordinary desirable affix | 4-12 | Good but not special |
-| Common/filler affix | 12-48+ | Keeps rare rolls varied and dilutes Greater rows |
+- There should be one player-facing Greater Affix per category, such as `Greater Cruel`.
+- That one category may be represented by multiple technical rows with the same effect and same group.
+- Example Greater banding: level `50-65` frequency `1`, level `66-80` frequency `2`, level `81+` frequency `3`.
+- If late Greater is intended to be about 10x rarer than the normal version, the normal version's late frequency should be about 10x the late Greater frequency.
+- Therefore, with late Greater frequency `3`, the matching normal affix should be around `30` frequency for that comparison.
 
 Not every existing `frequency=1` row should be treated as a chase affix. Some old proc/charge/utility rows may simply be low-priority legacy rows. The pilot should audit each target family rather than assuming the current frequency layout already expresses item power cleanly.
 
+This is now a broader affix-frequency rework, not only a Greater Affix insertion pass:
+
+- Current high-frequency top rows, such as `Cruel` at `frequency=114`, may need normalization if Greater rows use `1 / 2 / 3` and the target late ratio is 10x.
+- Current ordinary `frequency=1` rows likely need to be raised if they are not meant to be chase-tier.
+- Junk/filler rows should remain high or be increased where needed to dilute powerful lower-level access.
+
 ## Early Access Top Affixes
 
-To make top affixes possible on lower-level items, add rare-only early-access variants:
+To make top affixes possible on lower-level items, add banded technical rows for important normal and Greater affix families:
 
 - Copy selected high-tier affix rows.
 - Lower `level` enough that exceptional or early elite bases can roll them.
-- Keep early-access `frequency=1`.
+- Use lower frequency in early bands and higher frequency in later bands.
 - Keep `levelreq` close to the original top affix, or only modestly reduce it.
 - Keep the same `group`.
 - Use `maxlevel` where useful to create clean early/main/apex bands.
@@ -146,35 +150,39 @@ This makes the affix possible without making it common.
 
 Example policy:
 
-| Variant Type | level | maxlevel | levelreq | Frequency | Purpose |
-|---|---:|---:|---:|---:|---|
-| Early access top affix | 55-65 | 74 or 84 | 75-85 | 1 | Exceptional and early elite can very rarely spike |
-| Elite Greater Affix | 75-84 | blank | 80-88 | 2-4 | Most elite bases can access it |
-| Apex Greater Affix | 90+ | blank | 88+ | 1 | Very high item-level chase affixes |
+| Variant Type | level | maxlevel | Frequency | Purpose |
+|---|---:|---:|---:|---|
+| Early normal top affix | 50-65 | 65 | 10 | Strong affix can appear early, but is uncommon |
+| Mid normal top affix | 66-80 | 80 | 20 | Strong affix becomes more likely |
+| Late normal top affix | 81+ | blank | 30 | Strong affix reaches intended top-end rate |
+| Early Greater affix | 50-65 | 65 | 1 | Very rare early spike |
+| Mid Greater affix | 66-80 | 80 | 2 | Still rare, but less punishing |
+| Late Greater affix | 81+ | blank | 3 | About 10x rarer than late normal if normal is 30 |
 
 This lets an exciting affix drop earlier without letting a low-level character immediately equip a wildly overpowered item.
 
+There are two complementary ways to make early high-tier affixes rare:
+
+1. Explicit banded rows as above. This is easier to reason about and should be used for premium families.
+2. Pool shaping: make the lower-level eligible affix pool larger with more ordinary/junk weight, then reduce that junk on higher-level rares with `maxlevel`. This helps tune total odds but is harder to reason about because every item type has a different eligible pool.
+
 ## Pilot Scope
 
-Do not rewrite hundreds of affixes in the first pass. Start with a controlled pilot:
+Do not implement the old simple Greater-only pilot. The first implementation should be a controlled banding and frequency test:
 
-- 8 weapon prefix upgrades.
-- 6 weapon suffix upgrades.
-- 8 armor/shield prefix upgrades.
-- 6 armor/shield suffix upgrades.
-- 8 jewelry upgrades.
-- 6 class-item upgrades.
+- Weapon enhanced damage: `Cruel` and `Greater Cruel`.
+- Armor/shield enhanced defense: `Godly` and `Greater Godly`.
+- Jewelry all stats: `of the Zodiac` and `Greater Zodiac`.
+- Jewelry all resist: `Chromatic` / ring equivalent and Greater variants.
 
-Suggested categories:
+For each family, design both:
 
-- Weapons: enhanced damage, attack rating, IAS, deadly strike, elemental damage, magic damage, leech.
-- Armor/shields: defense, block, faster hit recovery, resistances, damage reduction, life.
-- Jewelry: skills, faster cast, leech, resistances, magic find, all stats.
-- Class items: class skills, skill tabs, pierce/extra elemental packages, class-themed sustain.
+- Normal high-tier early/mid/late technical rows.
+- Greater early/mid/late technical rows.
 
 Avoid sockets in the first Greater Affix pilot. Socket affixes have very high build value and can overwhelm item identity quickly.
 
-The first concrete pilot proposal is documented separately in `docs/rare-greater-affix-pilot-2026-05-18.md`. It recommends starting with 14 rows across weapon damage, weapon IAS, armor/shield defense, shield block, jewelry resists, jewelry stats, and one dual-leech jewelry suffix, while holding class-skill and socket Greater rows for later.
+The detailed proposal and before/after examples are documented separately in `docs/rare-greater-affix-pilot-2026-05-18.md`.
 
 ## Implementation Steps
 
