@@ -6,6 +6,8 @@ Updated: 2026-05-17.
 
 Latest handoff for continuing in another Codex session: `docs/session-handoff-2026-05-18.md`.
 
+Full D2RDoc reading notes from the 2026-05-18 sitemap crawl: `docs/d2rdoc-reading-notes-2026-05-18.md`.
+
 ## Workflow Notes
 
 - The active gameplay tables live under `data/global/excel/`.
@@ -53,6 +55,9 @@ Latest handoff for continuing in another Codex session: `docs/session-handoff-20
 - The rare item rework design is in `docs/rare-item-rework-design-2026-05-18.md`.
 - Rare affix count appears engine-side rather than TXT-side; treat rares as capped at 6 affix records, up to 3 prefixes and 3 suffixes.
 - Greater Affixes should be implemented as rare-only rows in `magicprefix.txt` / `magicsuffix.txt` using `spawnable=0`, `rare=1`, low `frequency`, and the same `group` as the normal affix family they upgrade.
+- D2RDoc confirms `frequency` is a weight. Higher values are more common among eligible affixes; Greater Affixes should be rare by low relative weight and by dilution against ordinary/filler affixes with higher frequencies.
+- `level` controls minimum affix item level, `maxlevel` can create spawn bands, and `levelreq` controls equip requirement. This supports early-access rare-only Greater rows that can drop before they can be equipped.
+- First rare rarity pass applied on 2026-05-18: both `itemratio.txt` copies now make only `Uber=1` rare rows 2.5x rarer. `Uber=0` normal-base rare rows are unchanged. Elite-specific power should come later through affix design because `itemratio.txt` cannot split exceptional from elite.
 
 ## Set Item Buff Pass
 

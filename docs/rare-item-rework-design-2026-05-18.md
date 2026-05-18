@@ -6,6 +6,8 @@ Goal: make rare items appear less often, but make the rares that do drop more ex
 
 Reference context: the D2R Data Guide is useful for the overall loose-file modding workflow and reinforces the current `-mod XavReimagined -txt` style workflow: https://eezstreet.github.io/d2rdoc/guides/getting-started.html
 
+Full local reading notes from the D2RDoc sitemap crawl: `docs/d2rdoc-reading-notes-2026-05-18.md`.
+
 ## Current Data Constraints
 
 - Global rare quality odds are controlled by `data/global/excel/itemratio.txt` and its base copy.
@@ -24,6 +26,7 @@ Reference context: the D2R Data Guide is useful for the overall loose-file moddi
   - Elite armor: level 54-85, average 72.9.
 - Rare affix count appears engine-side rather than TXT-side. Treat the rare cap as 6 affix records: up to 3 prefixes and 3 suffixes.
 - Each affix row can carry up to 3 stat mods through `mod1`, `mod2`, and `mod3`, so rare power can be increased without changing the 6-affix cap.
+- D2RDoc's item-ratio calculation confirms the quality values are divisors. Higher `Rare` / `RareMin` values make rare quality harder to roll, and `RareMin` is especially important in high-MF/high-level cases because it caps how favorable the final divisor can become.
 
 ## Current Rare Quality Values
 
@@ -64,6 +67,14 @@ Alternative if we want the full headline number immediately:
 
 Recommendation: start at 2.5x for the shared exceptional/elite quality roll, then make elite rares feel substantially better through affix availability. If elite rares still feel too common after testing, move to the full 3x values.
 
+Implementation status:
+
+- 2026-05-18: Applied the safer 2.5x rarity pass to both active and base `itemratio.txt`.
+- Changed only the three `Uber=1` rows.
+- Normal-base rare rows remain unchanged.
+- `RareMin` was raised from `3200` to `8000` on the changed rows so high-MF/high-level cases are capped consistently with the new rarity target.
+- Greater Affix rows are not implemented yet.
+
 ## Affix Pool Strategy
 
 Rare affix quality is controlled by `magicprefix.txt` and `magicsuffix.txt`.
@@ -94,7 +105,7 @@ Greater Affixes should be rare-only affix rows:
 
 - `spawnable=0`
 - `rare=1`
-- `frequency=1` for the strongest versions, occasionally `2` or `3` for softer versions
+- low relative `frequency`, usually `1` for early/apex variants and higher only for intentionally more common main-tier variants
 - same `group` as the normal affix family they upgrade
 - `level` usually 75, 82, or 90 depending on power
 - `levelreq` should be high enough to avoid low-level twinking abuse
@@ -104,25 +115,42 @@ Using the same `group` is important. A Greater enhanced-damage prefix should rep
 
 Greater Affixes will not automatically show a special "Greater Affix" label in game. Rare item names do not visibly expose magic affix row names the way blue magic items do. The player-facing signal is the stronger stat line itself unless we later add a separate UI/string convention.
 
+Frequency is a weight, not an inverse-rarity value. Higher `frequency` means the affix appears more often once eligible. Greater Affixes should feel rare because their own weights are low and the ordinary/filler affix pool has enough weight to dilute them.
+
+Recommended frequency philosophy:
+
+| Affix Type | Typical Frequency | Purpose |
+|---|---:|---|
+| Greater early-access spike | 1 | Can appear early, but should be startlingly rare |
+| Greater main-tier chase | 2-4 | More available on appropriate elite/high-level drops |
+| Greater apex | 1 | True top-end chase row |
+| Ordinary desirable affix | 4-12 | Good but not special |
+| Common/filler affix | 12-48+ | Keeps rare rolls varied and dilutes Greater rows |
+
+Not every existing `frequency=1` row should be treated as a chase affix. Some old proc/charge/utility rows may simply be low-priority legacy rows. The pilot should audit each target family rather than assuming the current frequency layout already expresses item power cleanly.
+
 ## Early Access Top Affixes
 
 To make top affixes possible on lower-level items, add rare-only early-access variants:
 
 - Copy selected high-tier affix rows.
 - Lower `level` enough that exceptional or early elite bases can roll them.
-- Keep `frequency=1`.
+- Keep early-access `frequency=1`.
 - Keep `levelreq` close to the original top affix, or only modestly reduce it.
 - Keep the same `group`.
+- Use `maxlevel` where useful to create clean early/main/apex bands.
 
 This makes the affix possible without making it common.
 
 Example policy:
 
-| Variant Type | Affix Level | Frequency | Purpose |
-|---|---:|---:|---|
-| Early access top affix | 55-65 | 1 | Exceptional and early elite can very rarely spike |
-| Elite Greater Affix | 75-84 | 1-2 | Most elite bases can access it |
-| Apex Greater Affix | 90+ | 1 | Very high item-level chase affixes |
+| Variant Type | level | maxlevel | levelreq | Frequency | Purpose |
+|---|---:|---:|---:|---:|---|
+| Early access top affix | 55-65 | 74 or 84 | 75-85 | 1 | Exceptional and early elite can very rarely spike |
+| Elite Greater Affix | 75-84 | blank | 80-88 | 2-4 | Most elite bases can access it |
+| Apex Greater Affix | 90+ | blank | 88+ | 1 | Very high item-level chase affixes |
+
+This lets an exciting affix drop earlier without letting a low-level character immediately equip a wildly overpowered item.
 
 ## Pilot Scope
 
