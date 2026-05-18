@@ -210,7 +210,8 @@ User goals:
 - Exceptional base rares should be affected to a lesser extent.
 - Normal base rares should mostly stay as-is.
 - Rares should roll better affixes on average.
-- All rare-eligible affixes should have their effective level gates lowered proportionally by about 30%, while preserving family order.
+- Affixes should have their effective level gates lowered proportionally by about 30%, while preserving family order. It is fine for this to affect magic items too.
+- Affix `levelreq` should be lowered by 15%.
 - Only the top normal affix in each family should get a true early/late frequency split.
 - Top affixes should be able to appear earlier, but be less likely before their old gate.
 - Introduce "Greater Affixes": rare affixes much stronger than standard affixes.
@@ -288,13 +289,14 @@ Important conclusion:
 - `maxlevel` can cap an affix's spawn band.
 - `levelreq` controls when the player can equip/use the item.
 - `levelreq` can be higher than the affix/drop/item level.
-- Directly editing a shared `spawnable=1, rare=1` row also affects magic items. Use rare-only early rows if the change must stay rare-only.
+- Directly editing a shared `spawnable=1, rare=1` row also affects magic items. This is acceptable for the Phase 1 compression.
 
 Current Phase 1 direction:
 
-- Lower the effective rare availability gate for all rare-eligible affixes by about 30%.
+- Lower the effective availability gate for affixes by about 30%.
 - Formula: `compressed_level = max(1, round(original_level * 0.70))`.
 - Compress `maxlevel` too when it exists.
+- Lower `levelreq` by 15% with `compressed_levelreq = max(1, round(original_levelreq * 0.85))`.
 - Preserve family ordering after compression. A lower Cruel row should not end up above the stronger Cruel row.
 - Only the best normal affix in each family gets an early/late split.
 
@@ -325,8 +327,9 @@ For `itemratio.txt`, the d2rdoc source was useful for confirming the `Uber` fiel
 4. Generate a rare affix family audit before editing `magicprefix.txt` or `magicsuffix.txt`.
 5. For Phase 1:
    - calculate compressed level and maxlevel values using the 70% formula
+   - calculate compressed levelreq values using the 85% formula
    - validate that each affix family remains ordered correctly
-   - decide direct shared-row edits vs rare-only early rows
+   - use direct shared-row edits; magic item availability may move earlier too
    - add the top-affix early/late split for each target family
 6. For Phase 2 Greater Affix families:
    - identify the existing normal affix `group`

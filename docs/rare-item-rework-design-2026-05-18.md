@@ -32,7 +32,7 @@ Reference context:
 - Because `itemratio.txt` only has `Uber=0` and `Uber=1`, the exposed quality-ratio table can cleanly distinguish normal bases from non-normal bases, but not exceptional from elite.
 - Rare affix count appears engine-side rather than TXT-side. Treat the rare cap as 6 affix records: up to 3 prefixes and 3 suffixes.
 - Each affix row can carry up to 3 stat mods through `mod1`, `mod2`, and `mod3`, so rare power can be increased without changing the 6-affix cap.
-- `magicprefix.txt` and `magicsuffix.txt` affix rows can be shared by magic and rare items. A direct `level` edit on a `spawnable=1, rare=1` row affects magic items too. If the change must be rare-only, use rare-only copies with `spawnable=0, rare=1`.
+- `magicprefix.txt` and `magicsuffix.txt` affix rows can be shared by magic and rare items. It is acceptable for Phase 1 to affect magic items too, so direct edits to shared `spawnable=1, rare=1` rows are allowed.
 
 ## Rare Quality Pass
 
@@ -106,18 +106,23 @@ If a row has `maxlevel`, compress it too:
 compressed_maxlevel = max(compressed_level, round(original_maxlevel * 0.70))
 ```
 
+Lower affix equip requirements by 15% at the same time:
+
+```text
+compressed_levelreq = max(1, round(original_levelreq * 0.85))
+```
+
+If the original `levelreq` is blank or `0`, leave it blank or `0`.
+
 Important proportionality rules:
 
 - Apply the same formula to the whole rare-eligible affix ladder.
 - Do not lower only the best affix while leaving the second-best affix above it.
 - Within each family, stronger affixes must remain at the same or higher level than weaker affixes.
 - If compression collapses two adjacent tiers to the same level and that creates confusion, nudge the stronger tier up by 1 level.
-- Keep `levelreq` unchanged unless we explicitly decide to reduce equip requirements. Dropping earlier does not need to mean equipping earlier.
-
-Rare-only implementation choice:
-
-- Directly editing existing `spawnable=1, rare=1` rows is simple, but also changes magic item affix availability.
-- If the rework must affect rares only, add rare-only early availability rows with `spawnable=0, rare=1`, lowered `level`, and `maxlevel` ending before the original row. That avoids changing blue magic items.
+- Apply the 15% `levelreq` reduction broadly so earlier affix access does not feel artificially locked behind the old requirements.
+- Keep `levelreq` proportional too. Stronger affixes should generally still require the same or higher character level than weaker affixes in the same family.
+- Directly edit shared affix rows unless there is a specific reason to create rare-only rows. Magic items can participate in the same earlier-affix progression.
 
 ### Phase 1 Top-Affix Split
 
@@ -188,46 +193,46 @@ These examples show the intended proportional level compression plus top-row spl
 
 | Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
 |---|---|---:|---:|---|
-| Cruel lower top row | `dmg% 234-266` | 69 | 114 | level `48`, freq `114` |
-| Cruel true top row, early | `dmg% 267-300` | 74 | 114 | level `52`, maxlevel `73`, freq `57` |
-| Cruel true top row, late | `dmg% 267-300` | 74 | 114 | level `74`, freq `114` |
+| Cruel lower top row | `dmg% 234-266` | 69 / req 63 | 114 | level `48`, req `54`, freq `114` |
+| Cruel true top row, early | `dmg% 267-300` | 74 / req 69 | 114 | level `52`, req `59`, maxlevel `73`, freq `57` |
+| Cruel true top row, late | `dmg% 267-300` | 74 / req 69 | 114 | level `74`, req `59`, freq `114` |
 
 ### Armor / Shield Enhanced Defense
 
 | Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
 |---|---|---:|---:|---|
-| Godly lower top row | `ac% 167-200` | 79 | 110 | level `55`, freq `110` |
-| Godly true top row, early | `ac% 201-225` | 86 | 110 | level `60`, maxlevel `85`, freq `55` |
-| Godly true top row, late | `ac% 201-225` | 86 | 110 | level `86`, freq `110` |
+| Godly lower top row | `ac% 167-200` | 79 / req 74 | 110 | level `55`, req `63`, freq `110` |
+| Godly true top row, early | `ac% 201-225` | 86 / req 75 | 110 | level `60`, req `64`, maxlevel `85`, freq `55` |
+| Godly true top row, late | `ac% 201-225` | 86 / req 75 | 110 | level `86`, req `64`, freq `110` |
 
 ### Jewelry / Caster All Attributes
 
 | Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
 |---|---|---:|---:|---|
-| of the Sky | `all-stats 5-10` | 20 | 12 | level `14`, freq `12` |
-| of the Stars | `all-stats 11-15` | 44 | 12 | level `31`, freq `12` |
-| of the Heavens | `all-stats 16-20` | 69 | 12 | level `48`, freq `12` |
-| of the Zodiac, early | `all-stats 21-30` | 86 | 12 | level `60`, maxlevel `85`, freq `6` |
-| of the Zodiac, late | `all-stats 21-30` | 86 | 12 | level `86`, freq `12` |
+| of the Sky | `all-stats 5-10` | 20 / req 18 | 12 | level `14`, req `15`, freq `12` |
+| of the Stars | `all-stats 11-15` | 44 / req 40 | 12 | level `31`, req `34`, freq `12` |
+| of the Heavens | `all-stats 16-20` | 69 / req 64 | 12 | level `48`, req `54`, freq `12` |
+| of the Zodiac, early | `all-stats 21-30` | 86 / req 83 | 12 | level `60`, req `71`, maxlevel `85`, freq `6` |
+| of the Zodiac, late | `all-stats 21-30` | 86 / req 83 | 12 | level `86`, req `71`, freq `12` |
 
 ### Shield All Resist
 
 | Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
 |---|---|---:|---:|---|
-| Rainbow | `res-all 8-11` | 18 | 10 | level `13`, freq `10` |
-| Scintillating | `res-all 12-15` | 28 | 10 | level `20`, freq `10` |
-| Prismatic | `res-all 16-20` | 39 | 8 | level `27`, freq `8` |
-| Chromatic, early | `res-all 21-30` | 50 | 8 | level `35`, maxlevel `49`, freq `4` |
-| Chromatic, late | `res-all 21-30` | 50 | 8 | level `50`, freq `8` |
+| Rainbow | `res-all 8-11` | 18 / req 13 | 10 | level `13`, req `11`, freq `10` |
+| Scintillating | `res-all 12-15` | 28 / req 21 | 10 | level `20`, req `18`, freq `10` |
+| Prismatic | `res-all 16-20` | 39 / req 31 | 8 | level `27`, req `26`, freq `8` |
+| Chromatic, early | `res-all 21-30` | 50 / req 42 | 8 | level `35`, req `36`, maxlevel `49`, freq `4` |
+| Chromatic, late | `res-all 21-30` | 50 / req 42 | 8 | level `50`, req `36`, freq `8` |
 
 ### Ring All Resist
 
 | Affix Row | Stats | Current Level | Current Freq | Phase 1 Effective Rare Availability |
 |---|---|---:|---:|---|
-| Shimmering | `res-all 5-8` | 45 | 6 | level `32`, freq `6` |
-| Rainbow | `res-all 9-12` | 56 | 4 | level `39`, freq `4` |
-| Scintillating, early | `res-all 13-17` | 67 | 4 | level `47`, maxlevel `66`, freq `2` |
-| Scintillating, late | `res-all 13-17` | 67 | 4 | level `67`, freq `4` |
+| Shimmering | `res-all 5-8` | 45 / req 37 | 6 | level `32`, req `31`, freq `6` |
+| Rainbow | `res-all 9-12` | 56 / req 48 | 4 | level `39`, req `41`, freq `4` |
+| Scintillating, early | `res-all 13-17` | 67 / req 59 | 4 | level `47`, req `50`, maxlevel `66`, freq `2` |
+| Scintillating, late | `res-all 13-17` | 67 / req 59 | 4 | level `67`, req `50`, freq `4` |
 
 ## Phase 2 Examples
 
@@ -257,11 +262,9 @@ This family shows why Phase 2 may need frequency normalization. Normal Zodiac is
 ## Implementation Strategy
 
 1. Generate an affix-family audit from `magicprefix.txt` and `magicsuffix.txt`.
-2. For every rare-eligible affix row, calculate compressed `level` and compressed `maxlevel` using the 70% formula.
-3. Validate that each family remains monotonic: weaker affixes should not require a higher level than stronger affixes.
-4. Apply Phase 1 level compression in the chosen implementation mode:
-   - direct edit if magic-item availability can also move earlier, or
-   - rare-only early copies if the change must be rare-only.
+2. For every affix row, calculate compressed `level`, compressed `maxlevel`, and compressed `levelreq`.
+3. Validate that each family remains monotonic: weaker affixes should not require a higher affix level or equip level than stronger affixes.
+4. Apply Phase 1 compression directly to shared affix rows; it is acceptable for magic items to move earlier too.
 5. Add the top-affix early/late split for each target family.
 6. Validate TSV column counts and active/base parity.
 7. Generate sample eligible-weight reports for representative item levels and item types.
@@ -277,6 +280,7 @@ For sample item levels 35, 50, 65, 80, and 90, calculate:
 - Weight of each target family.
 - Weight of the current top affix in that family.
 - Whether compressed levels preserved family ordering.
+- Whether compressed `levelreq` values preserved family ordering.
 - Whether the top-affix early row expires before the late row starts.
 - Whether high-level rares gained any unintended duplicate chance.
 
