@@ -221,6 +221,57 @@ Likely defer or skip for the first Greater pass:
 - Class/random skill affixes. `+5` random skill rows already sit in unusual groups, and `+6` may be too swingy without a dedicated skill-affix pass.
 - Existing rare-only pierce rows in group `307`. They are already special-purpose rare rows and should not be mixed into the first broad Greater pass.
 
+### Charm Frequency Normalization Proposal
+
+Charms need a separate frequency-normalization rule because large charm `+1 skill tree` affixes currently have low raw frequencies. The target is:
+
+- Normal large charm `+1 skill tree`: `frequency = 10`.
+- Greater large charm `+2 skill tree`: `frequency = 1`.
+- All existing charm-affix proportions should otherwise stay the same.
+- All charm affix levels follow the same 30% level reduction used by the rest of Phase 1.
+
+Current large charm skill rows:
+
+| Row Type | Current Level | Current Level Req | Current Freq | Phase 1 Level | Phase 1 Level Req | Proposed Freq |
+|---|---:|---:|---:|---:|---:|---:|
+| Original class `+1 skill tree` rows | 50 | 42 | 2 | 35 | 36 | 10 |
+| Warlock `+1 skill tree` rows | 50 | 42 | 1 | 35 | 36 | 10 |
+| New Greater `+2 skill tree` rows | design level 81 | design req 75 | new | 57 | 64 | 1 |
+
+Base scaling rule for existing charm rows:
+
+```text
+scaled_charm_frequency = current_frequency * 5
+```
+
+The only planned exception is Warlock `+1 skill tree` large charm rows: they currently have `frequency=1`, but should be raised to `10` so all normal `+1 skill tree` charm rows share one consistent rarity.
+
+Example: level 90 large charm prefix pool before Greater rows:
+
+| Pool | Eligible Rows | Current Total Frequency | Current Skill Frequency | Current Skill Share |
+|---|---:|---:|---:|---:|
+| `lcha` prefixes at level 90 | 65 | 279 | 45 | 16.13% |
+
+After normalization and adding one Greater row per skill tree:
+
+| Pool | Existing Scaled Total | Normal Skill Frequency | Greater Skill Frequency | Total With Greater | Normal Skill Share | Greater Skill Share |
+|---|---:|---:|---:|---:|---:|---:|
+| `lcha` prefixes at level 90 | 1410 | 240 | 24 | 1434 | 16.74% | 1.67% |
+
+This preserves the old large-charm affix feel while making Greater skill charms exactly 10x rarer than normal skill charms inside the skill-tree charm slice.
+
+Representative charm frequency conversions:
+
+| Current Freq | Scaled Existing Freq |
+|---:|---:|
+| 1 | 5 |
+| 2 | 10 |
+| 3 | 15 |
+| 4 | 20 |
+| 6 | 30 |
+| 12 | 60 |
+| 24 | 120 |
+
 ## Phase 1 Examples
 
 These examples show the intended proportional level compression plus top-row split. They are design examples, not implemented data.
