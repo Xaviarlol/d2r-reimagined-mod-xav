@@ -8,6 +8,8 @@ Reference context: the D2R Data Guide is useful for the overall loose-file moddi
 
 Full local reading notes from the D2RDoc sitemap crawl: `docs/d2rdoc-reading-notes-2026-05-18.md`.
 
+Greater Affix pilot proposal: `docs/rare-greater-affix-pilot-2026-05-18.md`.
+
 ## Current Data Constraints
 
 - Global rare quality odds are controlled by `data/global/excel/itemratio.txt` and its base copy.
@@ -171,6 +173,8 @@ Suggested categories:
 - Class items: class skills, skill tabs, pierce/extra elemental packages, class-themed sustain.
 
 Avoid sockets in the first Greater Affix pilot. Socket affixes have very high build value and can overwhelm item identity quickly.
+
+The first concrete pilot proposal is documented separately in `docs/rare-greater-affix-pilot-2026-05-18.md`. It recommends starting with 14 rows across weapon damage, weapon IAS, armor/shield defense, shield block, jewelry resists, jewelry stats, and one dual-leech jewelry suffix, while holding class-skill and socket Greater rows for later.
 
 ## Implementation Steps
 
