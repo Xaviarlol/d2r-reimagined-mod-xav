@@ -159,6 +159,7 @@ Greater Affix policy:
 - Same `group` as the normal family so Greater replaces normal, not stacks with normal.
 - Default frequencies: early/mid/late = `1 / 2 / 3`.
 - Default Greater bands are design targets, not hard rules; adjust by family if the compressed ladder suggests better gates.
+- Greater stat ranges should be narrow chase rolls with a high floor. Avoid broad "good to great" ranges; for example, use `Greater Cruel dmg% 380-400` rather than `350-400`.
 - Add `greater-affix-marker` when the row has a spare mod slot.
 
 Default Greater band shape:
@@ -184,6 +185,41 @@ This prints an orange/gold tooltip line using D2R color controls:
 ```
 
 Because each affix row only has `mod1`, `mod2`, and `mod3`, the marker is safest for Greater rows with no more than two real stat mods. Rows that already need all three real mod slots need either a combined property or no marker.
+
+### Candidate Greater Affix Families
+
+These are candidates, not implementation promises. The proposed Greater ranges are intentionally tighter than the first draft so a Greater roll feels consistently premium.
+
+| Candidate | Current Top Row | Current Top Range | Proposed Greater Range | Item Scope | Priority / Notes |
+|---|---|---|---|---|---|
+| Greater Cruel | `Cruel` | `dmg% 267-300` | `dmg% 380-400` | Weapons | High. Primary physical rare chase prefix. |
+| Greater Godly | `Godly` | `ac% 201-225` | `ac% 300-325` | Armor, shields | High. Defensive counterpart to Greater Cruel. |
+| Greater Zodiac | `of the Zodiac` | `all-stats 21-30` | `all-stats 38-45` | Amulets, rings, circlets, caster weapons | High. Broad build-enabler suffix. |
+| Greater Chromatic | `Chromatic` | `res-all 21-30` | `res-all 36-40` | Shields, amulets, circlets | High. Defensive all-res chase. |
+| Greater Scintillating | `Scintillating` | `res-all 13-17` | `res-all 22-25` | Rings | High. Separate ring tuning because the base row is lower. |
+| Greater Evisceration | `of Evisceration` | `dmg-max 101-120` | `dmg-max 150-165` | Weapons | High. Flat damage weapon suffix. |
+| Greater Transcendence | `of Transcendence` | `dmg-min 50-60` | `dmg-min 75-85` | Weapons | Medium-high. Strong but less broadly visible than max damage. |
+| Greater Lich | `of the Lich` | `manasteal 8-9`, `lifesteal 10-12` | `manasteal 10-12`, `lifesteal 13-15` | Rings, amulets | High. Premium sustain roll. |
+| Greater Four Seasons | `of the Four Seasons` | `res-all-max 4-6` | `res-all-max 7-8` | Armor, shields, rings, amulets | High impact. Keep very rare or defer until defensive balance pass. |
+| Greater Elemental Mastery | `Pyromaniac's` / `Frost Wyrm's` / `Zeus's` / `Manticore's` damage rows | `extra-* 10-12` | `extra-* 14-16` | Wands, orbs, staves | Medium. Caster damage chase, one element per row. |
+| Greater Elemental Pierce | Elemental pierce rows | `pierce-* 10-12` | `pierce-* 14-16` | Wands, orbs, staves | Medium. Stronger than sheet damage suggests, tune carefully. |
+| Greater Quickness | `of Quickness` | `swing3 40` | `swing3 50` | Melee weapons | Medium. Breakpoint-sensitive. |
+| Greater Magus | `of the Magus` | `cast3 20` | `cast3 25` | Rods, orbs, circlets | Medium. Breakpoint-sensitive. |
+| Greater Perfection | `of Perfection` | `dex 20-30` | `dex 36-40` | Body armor, boots | Medium. Good for attack rating, block, and dex builds. |
+| Greater Titan | `of the Titan` | `str 16-20` | `str 26-30` | Rings, scepters, maces, body armor | Medium. Requirement and damage utility. |
+| Greater Deflecting | `of Deflecting` | `block 20-30`, `block2 30` | `block 35-40`, `block2 40` | Shields | Medium. Defensive build-defining suffix. |
+| Greater Fatal | `Fatal` | `deadly 16-20` | `deadly 24-30` | Gloves | Medium. Melee damage chase. |
+| Greater Crushing | `Crushing` | `crush 16-20` | `crush 24-30` | Gloves | Medium. Boss-kill power, tune carefully. |
+| Greater Prosperity | `of Prosperity` | `mag% 16-20` | `mag% 26-30` | Jewels | Low-medium. Utility chase rather than combat power. |
+| Greater Inertia | `of Inertia` | `move3 10` | `move3 13-15` | Large charms | Optional. Include only if rare charms are in scope. |
+| Greater Balance | `of Balance` | `balance3 10` | `balance3 13-15` | Large charms | Optional. Include only if rare charms are in scope. |
+
+Likely defer or skip for the first Greater pass:
+
+- Binary effects such as `nofreeze`, `ignore-ac`, and knockback. They do not gain much from a Greater range.
+- Socket affixes such as `Jeweler's`. Extra sockets can dominate item identity and should be evaluated separately.
+- Class/random skill affixes. `+5` random skill rows already sit in unusual groups, and `+6` may be too swingy without a dedicated skill-affix pass.
+- Existing rare-only pierce rows in group `307`. They are already special-purpose rare rows and should not be mixed into the first broad Greater pass.
 
 ## Phase 1 Examples
 
@@ -240,9 +276,9 @@ These examples show the intended proportional level compression plus top-row spl
 
 | Affix | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| Greater Cruel | 50 | 65 | 1 | `dmg% 350-400`, `greater-affix-marker` |
-| Greater Cruel | 66 | 80 | 2 | `dmg% 350-400`, `greater-affix-marker` |
-| Greater Cruel | 81 | blank | 3 | `dmg% 350-400`, `greater-affix-marker` |
+| Greater Cruel | 50 | 65 | 1 | `dmg% 380-400`, `greater-affix-marker` |
+| Greater Cruel | 66 | 80 | 2 | `dmg% 380-400`, `greater-affix-marker` |
+| Greater Cruel | 81 | blank | 3 | `dmg% 380-400`, `greater-affix-marker` |
 
 Target ratio:
 
@@ -253,9 +289,9 @@ Target ratio:
 
 | Affix | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| Greater Zodiac | 60 | 70 | 1 | `all-stats 35-45`, `greater-affix-marker` |
-| Greater Zodiac | 71 | 85 | 2 | `all-stats 35-45`, `greater-affix-marker` |
-| Greater Zodiac | 86 | blank | 3 | `all-stats 35-45`, `greater-affix-marker` |
+| Greater Zodiac | 60 | 70 | 1 | `all-stats 38-45`, `greater-affix-marker` |
+| Greater Zodiac | 71 | 85 | 2 | `all-stats 38-45`, `greater-affix-marker` |
+| Greater Zodiac | 86 | blank | 3 | `all-stats 38-45`, `greater-affix-marker` |
 
 This family shows why Phase 2 may need frequency normalization. Normal Zodiac is only `frequency=12`, so a late Greater row at `3` is only 4x rarer unless normal Zodiac is raised or Greater Zodiac is lowered.
 
