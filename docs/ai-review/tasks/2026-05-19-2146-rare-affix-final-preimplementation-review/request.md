@@ -1,13 +1,13 @@
 ---
 schema: ai-review-task-v1
 id: 2026-05-19-2146-rare-affix-final-preimplementation-review
-status: claude_reviewed
-phase: design_review
-round: 1
+status: ready_for_claude
+phase: re_review
+round: 2
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-19T21:46:38Z
-updated_at: 2026-05-19T22:11:49Z
+updated_at: 2026-05-19T23:22:47Z
 repo: C:\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: 43e3acef
@@ -16,9 +16,7 @@ original_user_request_included: true
 live_publish_allowed: false
 last_review: claude-review-r01.md
 last_verdict: needs_fixes
-claimed_by: claude
-claimed_at: 2026-05-19T22:02:48Z
-reviewed_at: 2026-05-19T22:11:49Z
+last_response: codex-response-r01.md
 ---
 
 # Review Request
@@ -52,6 +50,8 @@ yes, revert the maxlevel back to original in our plan.
 are there any new affixes you added with missing level entries? Except maxlevel (since all new affixes are powerful they dont have a maxlevel)
 
 ok a final review for claude and then we will implement
+
+keep 3 band greater model, each max level should finish where the next one begins. levelreq for greater affixes needs to copy the same levelreq as its apex affix, minus the 15% reduction we did to all affixes
 ```
 
 ## Goal
@@ -78,11 +78,13 @@ Greater-affix audit and math files:
 - `docs/rare-greater-affix-chance-table-2026-05-19.tsv`
 - `docs/rare-greater-affix-probability-sanity-2026-05-19.tsv`
 - `docs/rare-greater-affix-scope-validation-2026-05-19.tsv`
+- `docs/rare-greater-affix-expanded-candidates-2026-05-19.tsv`
 
 Phase 1 level/requirement comparison files:
 
 - `scripts/generate_affix_level_change_data.py`
 - `docs/affix-level-requirement-changes-2026-05-19.tsv`
+- `docs/affix-top-split-preview-2026-05-19.tsv`
 - Workbook outside repo for user viewing: `C:\Dropbox\AI projects\d2r\outputs\affix-level-requirement-changes\affix-level-requirement-changes-2026-05-19-maxlevel-preserved.xlsx`
 
 Source data files for reference only in this review:
@@ -108,38 +110,54 @@ Phase 2, Greater affixes:
 
 - Add a Greater version for each confirmed apex family.
 - Greater affixes should be approximately 10x rarer than the current apex affix for the same item scope.
+- Keep the 3-band Greater model. Bands are adjacent and non-overlapping: Early `50-65`, Mid `66-80`, Late `81+`.
 - The current audit scales existing affix frequencies by 10 and derives synthetic per-item-scope Greater weights from the apex rows, rather than assuming a single global `freq = 1` works everywhere.
+- Greater frequency preserves the Early/Mid/Late `1 / 2 / 3` ratio but derives actual weights from the source apex: Early `round(F / 3)`, Mid `round(2F / 3)`, Late `F`, each minimum `1`.
+- Greater `levelreq` copies the source apex `levelreq` after the same 15% reduction used by Phase 1.
 - Existing affix proportions should remain effectively identical after the frequency scaling, excluding the unavoidable probability mass taken by new Greater rows.
 - Whole-file frequency scaling includes `rare=0` rows too, because magic and rare rows share the same files and the user is fine with this affecting magic items.
 - Group `307` rare-only elemental pierce remains special-purpose and should not be blindly charm-scaled because it shares rows across charms and non-charm gear.
 
-Open design point for Claude:
+Resolved design point:
 
-- Earlier Greater drafts used early/mid/late technical rows with `maxlevel` bands to make a Greater affix rarer when found earlier.
-- The latest user note says new powerful affixes can have blank `maxlevel`, except that all new affixes still need real `level` entries.
-- Please confirm whether implementation should collapse Greater rows to one always-open row per item scope, or keep early/mid/late Greater bands only where level-based rarity is still required.
+- Eric explicitly chose the 3-band Greater model.
+- Each band's `maxlevel` should finish immediately before the next band begins.
+- Greater `levelreq` should copy the compressed source apex requirement, not the band level.
 
 ## Current Checks
 
 - Existing active/base `magicprefix.txt` and `magicsuffix.txt` rows currently have zero missing `level` values and zero missing `levelreq` values.
 - `docs/affix-level-requirement-changes-2026-05-19.tsv` currently has zero proposed `maxlevel` deltas for existing rows.
-- `scripts/audit_rare_affix_apexes.py` currently reports 255 synthetic Greater candidate rows and zero missing candidate `level` entries.
-- The synthetic Greater candidate templates currently do not carry explicit `levelreq` fields. Please flag whether that is a blocker and recommend the final policy.
+- `scripts/audit_rare_affix_apexes.py` now generates expanded 3-band Greater candidate rows with explicit `levelreq` values copied from the source apex after the global 15% reduction.
+- `docs/rare-greater-affix-expanded-candidates-2026-05-19.tsv` currently has 7605 expanded rows and zero missing Greater `levelreq` values.
 - `docs/rare-greater-affix-scope-validation-2026-05-19.tsv` currently has 1430 scope checks with max ratio delta 0 in the generated model.
+- `docs/affix-top-split-preview-2026-05-19.tsv` previews the top-affix split rows: convert existing apex row to early plus add late duplicate.
+
+## Round 2 Changes
+
+- Added `codex-response-r01.md`.
+- Accepted Claude's two Medium findings and both Low findings.
+- Eric explicitly confirmed the 3-band Greater model.
+- Greater bands are now documented as adjacent/non-overlapping: Early `50-65`, Mid `66-80`, Late `81+`.
+- Greater frequency uses the source apex frequency while preserving the `1 / 2 / 3` ratio: Early `round(F / 3)`, Mid `round(2F / 3)`, Late `F`, with a minimum of `1`.
+- Greater `levelreq` now copies the source apex `levelreq` after the 15% reduction. It does not copy the Greater band's `level`.
+- The audit now writes `docs/rare-greater-affix-expanded-candidates-2026-05-19.tsv`.
+- The phase 1 generator now writes `docs/affix-top-split-preview-2026-05-19.tsv`.
+- `docs/rare-item-rework-design-2026-05-18.md`, `docs/modding-findings.md`, and `docs/session-handoff-2026-05-18.md` were updated to preserve this policy.
 
 ## Review Questions
 
 1. Does the final two-phase plan preserve rare affix proportions correctly for existing affixes?
 2. Is preserving existing `maxlevel` correct for Phase 1, with `maxlevel` only used on intentionally-created early duplicate top-affix rows?
-3. Should new Greater rows have no `maxlevel`, or is early/mid/late Greater banding still needed to satisfy the user's earlier "rarer at lower levels" goal?
-4. What exact `levelreq` policy should Greater rows use? Is the current synthetic Greater template missing `levelreq` a blocker before implementation?
+3. Does the updated 3-band Greater policy satisfy the user's decision that each band should end where the next begins?
+4. Does the updated Greater `levelreq` policy correctly copy the source apex `levelreq` after the 15% reduction?
 5. Are the chance, probability sanity, and scope-validation TSVs sufficient evidence that Greater affixes are 10x rarer than their current apex rows for each item scope?
 6. Does the current apex coverage miss any important top affix families, especially cross-scope rows, charms, class skills, damage reduction %, ethereal/self-repair, or weapon-only hybrid families?
 7. Are there any implementation blockers before Codex edits `magicprefix.txt`, `magicsuffix.txt`, and the base copies?
 
 ## Requested Output
 
-Please write `claude-review-r01.md` in this same task folder.
+Please write `claude-review-r02.md` in this same task folder.
 
 Use the usual review structure:
 

@@ -24,6 +24,7 @@ Reference context:
 - Phase 1 affix level compression is not implemented yet.
 - Phase 2 Greater Affix rows are not implemented yet.
 - 2026-05-19: Added a full generated apex audit and draft Greater Affix chance report: `docs/rare-greater-affix-apex-audit-2026-05-19.md`.
+- 2026-05-20: Locked the Phase 2 Greater policy after review: keep the 3-band model, make bands non-overlapping and adjacent, and set Greater `levelreq` from the source apex row after the same 15% reduction used by Phase 1.
 
 ## Current Data Constraints
 
@@ -167,19 +168,23 @@ Greater Affix policy:
 - Implemented as multiple technical rows with the same name idea, same stat payload, and same `group`.
 - Rare-only: `spawnable=0`, `rare=1`.
 - Same `group` as the normal family so Greater replaces normal, not stacks with normal.
-- Default frequencies: early/mid/late = `1 / 2 / 3`.
-- Default Greater bands are design targets, not hard rules; adjust by family if the compressed ladder suggests better gates.
+- Use three technical bands so Greater affixes are rare-but-possible before the late/endgame gate.
+- Bands must be non-overlapping and adjacent: the Early `maxlevel` ends one affix level before Mid starts, Mid ends one affix level before Late starts, and Late has blank `maxlevel`.
+- Band frequency ratio target is Early/Mid/Late = `1 / 2 / 3`, but the actual weights are derived from the source apex frequency so the Late band remains exactly `10x` rarer than the apex after existing affixes are scaled by `10`.
+- For a source apex with current frequency `F`: Early `max(1, round_half_up(F / 3))`, Mid `max(1, round_half_up(2F / 3))`, Late `F`.
+- Greater `levelreq` copies the source apex `levelreq` after the global 15% reduction: `max(1, round_half_up(apex_levelreq * 0.85))`. This is independent of the Greater band's `level`.
+- Default Greater band levels are design targets; adjust by family if the compressed ladder suggests better gates, but keep adjacent maxlevel boundaries.
 - Greater stat ranges should be narrow chase rolls with a high floor.
 - Benchmark every Greater family against the strongest existing row in that `group`, not merely the familiar vanilla-style top row. If a modded apex row exists, such as `Grandmaster's` in weapon damage group `111` or `Invulnerable1` in defense group `101`, the Greater row must clearly beat that apex.
 - Add `greater-affix-marker` when the row has a spare mod slot.
 
 Default Greater band shape:
 
-| Technical Band | level | maxlevel | frequency |
-|---|---:|---:|---:|
-| Early | 50 | 65 | 1 |
-| Mid | 66 | 80 | 2 |
-| Late | 81 | blank | 3 |
+| Technical Band | level | maxlevel | frequency | levelreq |
+|---|---:|---:|---:|---:|
+| Early | 50 | 65 | `max(1, round_half_up(F / 3))` | compressed source apex req |
+| Mid | 66 | 80 | `max(1, round_half_up(2F / 3))` | compressed source apex req |
+| Late | 81 | blank | `F` | compressed source apex req |
 
 Greater marker:
 
@@ -358,40 +363,39 @@ Greater Affix frequency math is now defined against the current modded apex rows
 
 - Existing affix frequencies should be scaled across the whole affix file, including `rare=0` magic-only rows. Scaling only `rare=1` rows would preserve rare odds but distort magic-item affix odds.
 - For each Greater family, the total Greater frequency eligible for a given item type should equal the current apex frequency for that same item type before the `x10` scale. After all existing rows are scaled by `10`, the Greater family is therefore exactly `10x` rarer than its apex for that item type.
+- For the 3-band model, that 10x rule is checked at the Late band. Early and Mid intentionally use lower weights from the same `1 / 2 / 3` ratio so lower-level Greater rolls are rarer.
+- Greater `levelreq` is copied from the source apex row after the 15% reduction, not from the band's `level`. A Greater row sourced from an apex with `levelreq=83` therefore uses `levelreq=71`.
 - Broad families must be split by scope and element as needed. One technical row cannot always be exactly `10x` on every item type; leech rows are the clearest example because rings, amulets, circlets, gloves, and weapons have different apex weights.
 - The generated audit now writes `docs/rare-greater-affix-scope-validation-2026-05-19.tsv`; implementation is not ready unless every candidate/item-type row in that file shows `greater_vs_apex_after = 10`.
+- The expanded synthetic candidate table is written to `docs/rare-greater-affix-expanded-candidates-2026-05-19.tsv` and must show no missing Greater `levelreq` values.
 - The `Greater if 3 same-side slots` column is an approximation for comparison, not a literal D2 drop-engine probability.
 
 ### Greater Grandmaster's
 
 The real apex weapon-damage row is `Grandmaster's`, so the Greater affix should inherit that identity and keep the ED-plus-rider structure instead of being a plain enhanced-damage-only row.
 
-| Affix | level | maxlevel | frequency | Mods |
-|---|---:|---:|---:|---|
-| Greater Grandmaster's | 50 | 65 | 1 | `att 301-350`, `dmg% 451-500`, `greater-affix-marker` |
-| Greater Grandmaster's | 66 | 80 | 1 | `att 301-350`, `dmg% 451-500`, `greater-affix-marker` |
-| Greater Grandmaster's | 66 | 80 | 1 | `deadly 31-40`, `dmg% 451-500`, `greater-affix-marker` |
-| Greater Grandmaster's | 81 | blank | 1 | `att 301-350`, `dmg% 451-500`, `greater-affix-marker` |
-| Greater Grandmaster's | 81 | blank | 1 | `deadly 31-40`, `dmg% 451-500`, `greater-affix-marker` |
-| Greater Grandmaster's | 81 | blank | 1 | `crush 31-40`, `dmg% 451-500`, `greater-affix-marker` |
-| Greater Grandmaster's | 81 | blank | 1 | `openwounds 100`, `dmg% 451-500`, `greater-affix-marker` |
+| Affix | level | maxlevel | frequency | levelreq | Mods |
+|---|---:|---:|---:|---:|---|
+| Greater Grandmaster's, Early | 50 | 65 | source apex `F / 3` | compressed source apex req | `att/deadly/crush/openwounds rider`, `dmg% 451-500`, `greater-affix-marker` |
+| Greater Grandmaster's, Mid | 66 | 80 | source apex `2F / 3` | compressed source apex req | `att/deadly/crush/openwounds rider`, `dmg% 451-500`, `greater-affix-marker` |
+| Greater Grandmaster's, Late | 81 | blank | source apex `F` | compressed source apex req | `att/deadly/crush/openwounds rider`, `dmg% 451-500`, `greater-affix-marker` |
 
 Target ratio:
 
 - This family is intentionally benchmarked against `Grandmaster's`, not ordinary `Cruel`.
 - The staged variant unlock keeps lower-level Greater rolls narrower while letting late rare weapons chase all four Grandmaster-style riders.
-- Late total Greater Grandmaster's family frequency is `4`, so the category remains rarer than existing Grandmaster's total frequency `10` while each specific variant stays extremely rare.
-- If the normal late row stays very high, such as current Cruel at `114`, then Greater remains much rarer than ordinary Cruel. That may be acceptable, but it should be intentional.
+- Late Greater Grandmaster's total eligible frequency is derived from the source apex rows for the item scope. At late levels it should equal the current apex frequency before the global `x10` scale, making the Greater family exactly `10x` rarer than the source apex after scaling.
+- If the ordinary Cruel row stays very high, such as current Cruel at `114`, then Greater Grandmaster's remains much rarer than ordinary Cruel. That is acceptable because Grandmaster's, not Cruel, is the true modded apex benchmark.
 
 ### Greater Zodiac
 
-| Affix | level | maxlevel | frequency | Mods |
-|---|---:|---:|---:|---|
-| Greater Zodiac | 60 | 70 | 1 | `all-stats 38-45`, `greater-affix-marker` |
-| Greater Zodiac | 71 | 85 | 2 | `all-stats 38-45`, `greater-affix-marker` |
-| Greater Zodiac | 86 | blank | 3 | `all-stats 38-45`, `greater-affix-marker` |
+| Affix | level | maxlevel | frequency | levelreq | Mods |
+|---|---:|---:|---:|---:|---|
+| Greater Zodiac, Early | 60 | 70 | 4 | 71 | `all-stats 38-45`, `greater-affix-marker` |
+| Greater Zodiac, Mid | 71 | 85 | 8 | 71 | `all-stats 38-45`, `greater-affix-marker` |
+| Greater Zodiac, Late | 86 | blank | 12 | 71 | `all-stats 38-45`, `greater-affix-marker` |
 
-This family shows why Phase 2 may need frequency normalization. Normal Zodiac is only `frequency=12`, so a late Greater row at `3` is only 4x rarer unless normal Zodiac is raised or Greater Zodiac is lowered.
+This family shows the normalized frequency rule: the source apex `of the Zodiac` has `frequency=12`, so the Greater bands use `4 / 8 / 12` and the late band remains `10x` rarer after existing affixes are scaled to `120`.
 
 ## Implementation Strategy
 

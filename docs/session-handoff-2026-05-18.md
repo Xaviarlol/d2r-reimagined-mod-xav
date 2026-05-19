@@ -272,7 +272,9 @@ Current frequency audit:
 
 Updated Greater Affix design direction:
 
-- Greater Affixes should generally use early/mid/late frequencies `1/2/3`.
+- Greater Affixes should use adjacent early/mid/late bands. Early is `50-65`, Mid is `66-80`, and Late is `81+`; each `maxlevel` ends immediately before the next band begins.
+- Greater Affix frequencies should preserve the `1/2/3` Early/Mid/Late ratio, but the actual values are derived from the source apex frequency: Early `round(apex_freq / 3)`, Mid `round(2 * apex_freq / 3)`, Late `apex_freq`, minimum `1`.
+- Greater Affix `levelreq` should copy the source apex row's `levelreq` after the same 15% reduction used by Phase 1.
 - Ordinary desirable affixes should often be `frequency=4-12`.
 - Common/filler affixes should often be `frequency=12-48+`.
 - Some existing `frequency=1` proc/charged affixes may need review; not every `frequency=1` affix should be treated as chase-tier.
@@ -334,7 +336,8 @@ For `itemratio.txt`, the d2rdoc source was useful for confirming the `Uber` fiel
    - add the top-affix early/late split for each target family
 6. For Phase 2 Greater Affix families:
    - identify the existing normal affix `group`
-   - add early/mid/late Greater rows with frequencies `1/2/3`
+   - add adjacent early/mid/late Greater bands using source-apex-derived `1/2/3` frequency ratios
+   - set Greater `levelreq` to the compressed source apex `levelreq`
    - include `greater-affix-marker` when a row has a spare mod slot
    - normalize family frequencies only if Greater odds are too common or too rare
 7. Validate with TSV-aware scripts:
@@ -342,6 +345,7 @@ For `itemratio.txt`, the d2rdoc source was useful for confirming the `Uber` fiel
    - column counts unchanged
    - property codes exist in `properties.txt`
    - Greater rows have `spawnable=0`, `rare=1`, non-empty `group`, non-zero `frequency`
+   - Greater rows have non-empty `levelreq` copied from the compressed source apex requirement
 8. Install to live with:
 
 ```powershell

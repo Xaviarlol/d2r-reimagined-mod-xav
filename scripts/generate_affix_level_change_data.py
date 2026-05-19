@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EXCEL = ROOT / "data" / "global" / "excel"
 OUT = ROOT / "docs" / "affix-level-requirement-changes-2026-05-19.tsv"
+TOP_SPLIT_OUT = ROOT / "docs" / "affix-top-split-preview-2026-05-19.tsv"
 
 
 def round_half_up(value: float) -> int:
@@ -151,7 +152,95 @@ def main() -> None:
         writer = csv.DictWriter(f, fieldnames=headers, delimiter="\t", extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
+    write_top_split_preview()
     print(OUT)
+
+
+def write_top_split_preview() -> None:
+    import audit_rare_affix_apexes as audit
+
+    affixes = audit.load_affixes()
+    seen: set[tuple[str, str]] = set()
+    preview_rows: list[dict[str, str]] = []
+    for candidate in audit.CANDIDATES:
+        for item_type in sorted(audit.ITEMTYPES):
+            scoped_candidate = dict(candidate)
+            scoped_candidate["sample"] = item_type
+            for row in audit.apex_rows_for(affixes, scoped_candidate):
+                key = (candidate["side"], row["line"])
+                if key in seen:
+                    continue
+                seen.add(key)
+                original_level = row.get("level", "")
+                original_levelreq = row.get("levelreq", "")
+                original_frequency = row.get("frequency", "")
+                early_frequency = ""
+                original_freq_int = parse_int(original_frequency)
+                if original_freq_int is not None:
+                    early_frequency = str(max(1, round_half_up(original_freq_int / 2)))
+                early_level = compressed_level(original_level, True)
+                early_maxlevel = ""
+                original_level_int = parse_int(original_level)
+                if original_level_int is not None:
+                    early_maxlevel = str(max(1, original_level_int - 1))
+                compressed_req = compressed_levelreq(original_levelreq, True)
+                base = {
+                    "side": candidate["side"],
+                    "source_file": "magicprefix.txt" if candidate["side"] == "prefix" else "magicsuffix.txt",
+                    "source_line": row["line"],
+                    "candidate_id": candidate["id"],
+                    "candidate": candidate["name"],
+                    "name": row.get("name", ""),
+                    "group": row.get("group", ""),
+                    "mods": mods(row),
+                    "itypes": codes(row, "itype", 7),
+                    "etypes": codes(row, "etype", 5),
+                    "level_before": original_level,
+                    "levelreq_before": original_levelreq,
+                    "maxlevel_before": row.get("maxlevel", ""),
+                    "frequency_before": original_frequency,
+                }
+                preview_rows.append({
+                    **base,
+                    "operation": "convert_existing_to_early",
+                    "level_after": early_level,
+                    "levelreq_after": compressed_req,
+                    "maxlevel_after": early_maxlevel,
+                    "frequency_after": early_frequency,
+                })
+                preview_rows.append({
+                    **base,
+                    "operation": "add_late_duplicate",
+                    "level_after": original_level,
+                    "levelreq_after": compressed_req,
+                    "maxlevel_after": row.get("maxlevel", ""),
+                    "frequency_after": original_frequency,
+                })
+    headers = [
+        "side",
+        "source_file",
+        "source_line",
+        "candidate_id",
+        "candidate",
+        "operation",
+        "name",
+        "group",
+        "level_before",
+        "level_after",
+        "levelreq_before",
+        "levelreq_after",
+        "maxlevel_before",
+        "maxlevel_after",
+        "frequency_before",
+        "frequency_after",
+        "mods",
+        "itypes",
+        "etypes",
+    ]
+    with TOP_SPLIT_OUT.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=headers, delimiter="\t", extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(preview_rows)
 
 
 if __name__ == "__main__":

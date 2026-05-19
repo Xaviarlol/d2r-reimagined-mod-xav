@@ -1,0 +1,607 @@
+side	source_file	source_line	candidate_id	candidate	operation	name	group	level_before	level_after	levelreq_before	levelreq_after	maxlevel_before	maxlevel_after	frequency_before	frequency_after	mods	itypes	etypes
+prefix	magicprefix.txt	75	greater-grandmasters	Greater Grandmaster's	convert_existing_to_early	Grandmaster's	111	84	59	88	75		83	4	2	att 276-300; dmg% 301-350	weap	orb, wand
+prefix	magicprefix.txt	75	greater-grandmasters	Greater Grandmaster's	add_late_duplicate	Grandmaster's	111	84	84	88	75			4	4	att 276-300; dmg% 301-350	weap	orb, wand
+prefix	magicprefix.txt	76	greater-grandmasters	Greater Grandmaster's	convert_existing_to_early	Grandmaster's	111	86	60	88	75		85	2	1	deadly 15-30; dmg% 301-350	weap	orb, wand
+prefix	magicprefix.txt	76	greater-grandmasters	Greater Grandmaster's	add_late_duplicate	Grandmaster's	111	86	86	88	75			2	2	deadly 15-30; dmg% 301-350	weap	orb, wand
+prefix	magicprefix.txt	77	greater-grandmasters	Greater Grandmaster's	convert_existing_to_early	Grandmaster's	111	86	60	88	75		85	2	1	crush 15-30; dmg% 301-350	weap	orb, wand
+prefix	magicprefix.txt	77	greater-grandmasters	Greater Grandmaster's	add_late_duplicate	Grandmaster's	111	86	86	88	75			2	2	crush 15-30; dmg% 301-350	weap	orb, wand
+prefix	magicprefix.txt	78	greater-grandmasters	Greater Grandmaster's	convert_existing_to_early	Grandmaster's	111	86	60	88	75		85	2	1	openwounds 94-100; dmg% 301-350	weap	orb, wand
+prefix	magicprefix.txt	78	greater-grandmasters	Greater Grandmaster's	add_late_duplicate	Grandmaster's	111	86	86	88	75			2	2	openwounds 94-100; dmg% 301-350	weap	orb, wand
+prefix	magicprefix.txt	98	greater-grandmasters	Greater Grandmaster's	convert_existing_to_early	Wraithly1	111	86	60	80	68		85	4	2	dmg% 176-200; ethereal 1-1; rep-dur(10) -	weap	orb, wand
+prefix	magicprefix.txt	98	greater-grandmasters	Greater Grandmaster's	add_late_duplicate	Wraithly1	111	86	86	80	68			4	4	dmg% 176-200; ethereal 1-1; rep-dur(10) -	weap	orb, wand
+prefix	magicprefix.txt	176	greater-godly	Greater Godly	convert_existing_to_early	Godly	101	86	60	75	64		85	110	55	ac% 201-225	armo, shld	
+prefix	magicprefix.txt	176	greater-godly	Greater Godly	add_late_duplicate	Godly	101	86	86	75	64			110	110	ac% 201-225	armo, shld	
+prefix	magicprefix.txt	182	greater-godly	Greater Godly	convert_existing_to_early	Wraithly1	101	86	60	75	64		85	4	2	ac% 81-100; ethereal 1-1; rep-dur(10) -	armo	
+prefix	magicprefix.txt	182	greater-godly	Greater Godly	add_late_duplicate	Wraithly1	101	86	86	75	64			4	4	ac% 81-100; ethereal 1-1; rep-dur(10) -	armo	
+prefix	magicprefix.txt	189	greater-godly	Greater Godly	convert_existing_to_early	Invulnerable1	101	86	60	83	71		85	4	2	ac% 81-100; red-dmg% 21-25	tors, shld	
+prefix	magicprefix.txt	189	greater-godly	Greater Godly	add_late_duplicate	Invulnerable1	101	86	86	83	71			4	4	ac% 81-100; red-dmg% 21-25	tors, shld	
+prefix	magicprefix.txt	433	greater-antimagic-prefix	Greater Antimagic	convert_existing_to_early	Antimagic	102	86	60	80	68		85	8	4	res-mag 16-20	shld, tors, orb, wand, staf	
+prefix	magicprefix.txt	433	greater-antimagic-prefix	Greater Antimagic	add_late_duplicate	Antimagic	102	86	86	80	68			8	8	res-mag 16-20	shld, tors, orb, wand, staf	
+prefix	magicprefix.txt	143	greater-bloody	Greater Bloody	convert_existing_to_early	Bloody	103	86	60	88	75		85	8	4	dmg-min 6-8; dmg-max 13-15	jewl	
+prefix	magicprefix.txt	143	greater-bloody	Greater Bloody	add_late_duplicate	Bloody	103	86	86	88	75			8	8	dmg-min 6-8; dmg-max 13-15	jewl	
+prefix	magicprefix.txt	938	greater-bloody	Greater Bloody	convert_existing_to_early	Bloody	103	86	60	88	75		85	3	2	dmg-min 6-8; dmg-max 13-15	lcha	
+prefix	magicprefix.txt	938	greater-bloody	Greater Bloody	add_late_duplicate	Bloody	103	86	86	88	75			3	3	dmg-min 6-8; dmg-max 13-15	lcha	
+prefix	magicprefix.txt	140	greater-serrated	Greater Serrated	convert_existing_to_early	Vermillion	104	58	41	50	43		57	8	4	dmg-max 11-15	jewl	
+prefix	magicprefix.txt	140	greater-serrated	Greater Serrated	add_late_duplicate	Vermillion	104	58	58	50	43			8	8	dmg-max 11-15	jewl	
+prefix	magicprefix.txt	911	greater-serrated	Greater Serrated	convert_existing_to_early	Serrated	104	81	57	81	69		80	3	2	dmg% 20-25	lcha	
+prefix	magicprefix.txt	911	greater-serrated	Greater Serrated	add_late_duplicate	Serrated	104	81	81	81	69			3	3	dmg% 20-25	lcha	
+prefix	magicprefix.txt	153	greater-gritty	Greater Gritty	convert_existing_to_early	Gritty	105	75	53	65	55		74	14	7	dmg/lvl(16) -	weap	orb, wand, orb
+prefix	magicprefix.txt	153	greater-gritty	Greater Gritty	add_late_duplicate	Gritty	105	75	75	65	55			14	14	dmg/lvl(16) -	weap	orb, wand, orb
+prefix	magicprefix.txt	17	greater-gritty	Greater Gritty	convert_existing_to_early	Vicious	105	70	49	64	54		69	24	12	dmg% 26-40	circ	
+prefix	magicprefix.txt	17	greater-gritty	Greater Gritty	add_late_duplicate	Vicious	105	70	70	64	54			24	24	dmg% 26-40	circ	
+prefix	magicprefix.txt	21	greater-gritty	Greater Gritty	convert_existing_to_early	Ruby	105	66	46	58	49		65	10	5	dmg% 31-40	jewl	
+prefix	magicprefix.txt	21	greater-gritty	Greater Gritty	add_late_duplicate	Ruby	105	66	66	58	49			10	10	dmg% 31-40	jewl	
+prefix	magicprefix.txt	412	greater-vulpine	Greater Vulpine	convert_existing_to_early	Vulpine	107	9	6	6	5		8	6	3	dmg-to-mana 7-12	shld, amul, orb, staf	
+prefix	magicprefix.txt	412	greater-vulpine	Greater Vulpine	add_late_duplicate	Vulpine	107	9	9	6	5			6	6	dmg-to-mana 7-12	shld, amul, orb, staf	
+prefix	magicprefix.txt	413	greater-vulpine	Greater Vulpine	convert_existing_to_early	Dun	107	7	5	5	4		6	6	3	dmg-to-mana 7-12	jewl	
+prefix	magicprefix.txt	413	greater-vulpine	Greater Vulpine	add_late_duplicate	Dun	107	7	7	5	4			6	6	dmg-to-mana 7-12	jewl	
+prefix	magicprefix.txt	120	greater-platinum	Greater Platinum	convert_existing_to_early	Weird	110	44	31	40	34		43	8	4	att 301-450	weap	orb, wand
+prefix	magicprefix.txt	120	greater-platinum	Greater Platinum	add_late_duplicate	Weird	110	44	44	40	34			8	8	att 301-450	weap	orb, wand
+prefix	magicprefix.txt	116	greater-platinum	Greater Platinum	convert_existing_to_early	Gold	110	19	13	16	14		18	12	6	att 81-100	weap, ring, circ, glov, amul	orb, wand
+prefix	magicprefix.txt	116	greater-platinum	Greater Platinum	add_late_duplicate	Gold	110	19	19	16	14			12	12	att 81-100	weap, ring, circ, glov, amul	orb, wand
+prefix	magicprefix.txt	117	greater-platinum	Greater Platinum	convert_existing_to_early	Platinum	110	25	18	22	19		24	12	6	att 101-125	weap, ring, circ	orb, wand
+prefix	magicprefix.txt	117	greater-platinum	Greater Platinum	add_late_duplicate	Platinum	110	25	25	22	19			12	12	att 101-125	weap, ring, circ	orb, wand
+prefix	magicprefix.txt	124	greater-platinum	Greater Platinum	convert_existing_to_early	Argent	110	44	31	36	31		43	8	4	att 61-100	jewl	
+prefix	magicprefix.txt	124	greater-platinum	Greater Platinum	add_late_duplicate	Argent	110	44	44	36	31			8	8	att 61-100	jewl	
+prefix	magicprefix.txt	920	greater-platinum	Greater Platinum	convert_existing_to_early	Steel	110	81	57	81	69		80	6	3	att 118-132	lcha	
+prefix	magicprefix.txt	920	greater-platinum	Greater Platinum	add_late_duplicate	Steel	110	81	81	81	69			6	6	att 118-132	lcha	
+prefix	magicprefix.txt	418	greater-lucky	Greater Lucky	convert_existing_to_early	Fortuitous	114	12	8	8	7		11	8	4	mag% 11-15	ring, amul, circ	
+prefix	magicprefix.txt	418	greater-lucky	Greater Lucky	add_late_duplicate	Fortuitous	114	12	12	8	7			8	8	mag% 11-15	ring, amul, circ	
+prefix	magicprefix.txt	419	greater-lucky	Greater Lucky	convert_existing_to_early	Emerald	114	16	11	12	10		15	8	4	mag% 3-7	jewl	
+prefix	magicprefix.txt	419	greater-lucky	Greater Lucky	add_late_duplicate	Emerald	114	16	16	12	10			8	8	mag% 3-7	jewl	
+prefix	magicprefix.txt	1025	greater-lucky	Greater Lucky	convert_existing_to_early	Lucky	114	55	39	50	43		54	6	3	mag% 20-25; gold% 40-50	lcha	
+prefix	magicprefix.txt	1025	greater-lucky	Greater Lucky	add_late_duplicate	Lucky	114	55	55	50	43			6	6	mag% 20-25; gold% 40-50	lcha	
+prefix	magicprefix.txt	398	greater-serpents	Greater Serpent's	convert_existing_to_early	Serpent's	115	37	26	27	23		36	4	2	mana 11-20	tors, boot, glov, weap, orb	rod
+prefix	magicprefix.txt	398	greater-serpents	Greater Serpent's	add_late_duplicate	Serpent's	115	37	37	27	23			4	4	mana 11-20	tors, boot, glov, weap, orb	rod
+prefix	magicprefix.txt	404	greater-serpents	Greater Serpent's	convert_existing_to_early	Bahamut's	115	45	31	37	31		44	4	2	mana 91-120	rod, ring, amul, orb, circ	
+prefix	magicprefix.txt	404	greater-serpents	Greater Serpent's	add_late_duplicate	Bahamut's	115	45	45	37	31			4	4	mana 91-120	rod, ring, amul, orb, circ	
+prefix	magicprefix.txt	397	greater-serpents	Greater Serpent's	convert_existing_to_early	Serpent's	115	14	10	10	9		13	6	3	mana 11-20	shld, rod, belt, ring, amul, circ	
+prefix	magicprefix.txt	397	greater-serpents	Greater Serpent's	add_late_duplicate	Serpent's	115	14	14	10	9			6	6	mana 11-20	shld, rod, belt, ring, amul, circ	
+prefix	magicprefix.txt	401	greater-serpents	Greater Serpent's	convert_existing_to_early	Dragon's	115	52	36	39	33		51	4	2	mana 31-40	tors, boot, glov	
+prefix	magicprefix.txt	401	greater-serpents	Greater Serpent's	add_late_duplicate	Dragon's	115	52	52	39	33			4	4	mana 31-40	tors, boot, glov	
+prefix	magicprefix.txt	407	greater-serpents	Greater Serpent's	convert_existing_to_early	Turquoise	115	29	20	21	18		28	4	2	mana 16-20	jewl	
+prefix	magicprefix.txt	407	greater-serpents	Greater Serpent's	add_late_duplicate	Turquoise	115	29	29	21	18			4	4	mana 16-20	jewl	
+prefix	magicprefix.txt	408	greater-serpents	Greater Serpent's	convert_existing_to_early	Mnemonic	115	25	18	18	15		24	2	1	mana/lvl(6) -	helm	
+prefix	magicprefix.txt	408	greater-serpents	Greater Serpent's	add_late_duplicate	Mnemonic	115	25	25	18	15			2	2	mana/lvl(6) -	helm	
+prefix	magicprefix.txt	1022	greater-serpents	Greater Serpent's	convert_existing_to_early	Serpent's	115	85	59	85	72		84	3	2	mana 53-59	lcha	
+prefix	magicprefix.txt	1022	greater-serpents	Greater Serpent's	add_late_duplicate	Serpent's	115	85	85	85	72			3	3	mana 53-59	lcha	
+prefix	magicprefix.txt	389	greater-shimmering	Greater Shimmering	convert_existing_to_early	Chromatic	116	55	39	41	35		54	6	3	res-all 21-30	amul, circ	
+prefix	magicprefix.txt	389	greater-shimmering	Greater Shimmering	add_late_duplicate	Chromatic	116	55	55	41	35			6	6	res-all 21-30	amul, circ	
+prefix	magicprefix.txt	384	greater-shimmering	Greater Shimmering	convert_existing_to_early	Chromatic	116	50	35	42	36		49	8	4	res-all 21-30	shld	
+prefix	magicprefix.txt	384	greater-shimmering	Greater Shimmering	add_late_duplicate	Chromatic	116	50	50	42	36			8	8	res-all 21-30	shld	
+prefix	magicprefix.txt	394	greater-shimmering	Greater Shimmering	convert_existing_to_early	Scintillating	116	34	24	26	22		33	2	1	res-all 11-15	jewl	
+prefix	magicprefix.txt	394	greater-shimmering	Greater Shimmering	add_late_duplicate	Scintillating	116	34	34	26	22			2	2	res-all 11-15	jewl	
+prefix	magicprefix.txt	1026	greater-shimmering	Greater Shimmering	convert_existing_to_early	Shimmering	116	81	57	81	69		80	3	2	res-all 10-12	lcha	
+prefix	magicprefix.txt	1026	greater-shimmering	Greater Shimmering	add_late_duplicate	Shimmering	116	81	81	81	69			3	3	res-all 10-12	lcha	
+prefix	magicprefix.txt	392	greater-shimmering	Greater Shimmering	convert_existing_to_early	Scintillating	116	67	47	59	50		66	4	2	res-all 13-17	ring	
+prefix	magicprefix.txt	392	greater-shimmering	Greater Shimmering	add_late_duplicate	Scintillating	116	67	67	59	50			4	4	res-all 13-17	ring	
+prefix	magicprefix.txt	353	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Cobalt	117	55	39	41	35		54	4	2	res-cold 21-30	weap	orb
+prefix	magicprefix.txt	353	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Cobalt	117	55	55	41	35			4	4	res-cold 21-30	weap	orb
+prefix	magicprefix.txt	360	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Garnet	118	55	39	41	35		54	2	1	res-fire 21-30	weap	orb
+prefix	magicprefix.txt	360	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Garnet	118	55	55	41	35			2	2	res-fire 21-30	weap	orb
+prefix	magicprefix.txt	368	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Coral	119	55	39	41	35		54	2	1	res-ltng 21-30	weap	orb
+prefix	magicprefix.txt	368	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Coral	119	55	55	41	35			2	2	res-ltng 21-30	weap	orb
+prefix	magicprefix.txt	376	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Jade	120	55	39	41	35		54	2	1	res-pois 21-30	weap	orb
+prefix	magicprefix.txt	376	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Jade	120	55	55	41	35			2	2	res-pois 21-30	weap	orb
+prefix	magicprefix.txt	354	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Sapphire	117	25	18	18	15		24	6	3	res-cold 31-40	rod, boot, amul, orb, circ	
+prefix	magicprefix.txt	354	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Sapphire	117	25	25	18	15			6	6	res-cold 31-40	rod, boot, amul, orb, circ	
+prefix	magicprefix.txt	361	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Ruby	118	25	18	18	15		24	6	3	res-fire 31-40	rod, boot, amul, orb, circ	
+prefix	magicprefix.txt	361	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Ruby	118	25	25	18	15			6	6	res-fire 31-40	rod, boot, amul, orb, circ	
+prefix	magicprefix.txt	369	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Amber	119	25	18	18	15		24	6	3	res-ltng 31-40	rod, boot, amul, orb, circ	
+prefix	magicprefix.txt	369	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Amber	119	25	25	18	15			6	6	res-ltng 31-40	rod, boot, amul, orb, circ	
+prefix	magicprefix.txt	377	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Emerald	120	25	18	18	15		24	6	3	res-pois 31-40	rod, boot, amul, orb, circ	
+prefix	magicprefix.txt	377	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Emerald	120	25	25	18	15			6	6	res-pois 31-40	rod, boot, amul, orb, circ	
+prefix	magicprefix.txt	352	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Cobalt	117	18	13	13	11		17	6	3	res-cold 21-30	armo, ring, amul, orb, circ	
+prefix	magicprefix.txt	352	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Cobalt	117	18	18	13	11			6	6	res-cold 21-30	armo, ring, amul, orb, circ	
+prefix	magicprefix.txt	359	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Garnet	118	18	13	13	11		17	6	3	res-fire 21-30	armo, ring, amul, orb, circ	
+prefix	magicprefix.txt	359	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Garnet	118	18	18	13	11			6	6	res-fire 21-30	armo, ring, amul, orb, circ	
+prefix	magicprefix.txt	367	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Coral	119	18	13	13	11		17	6	3	res-ltng 21-30	armo, ring, amul, orb, circ	
+prefix	magicprefix.txt	367	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Coral	119	18	18	13	11			6	6	res-ltng 21-30	armo, ring, amul, orb, circ	
+prefix	magicprefix.txt	375	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Jade	120	18	13	13	11		17	6	3	res-pois 21-30	armo, ring, amul, orb, circ	
+prefix	magicprefix.txt	375	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Jade	120	18	18	13	11			6	6	res-pois 21-30	armo, ring, amul, orb, circ	
+prefix	magicprefix.txt	356	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Sapphire	117	19	13	14	12		18	8	4	res-cold 16-30	jewl	
+prefix	magicprefix.txt	356	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Sapphire	117	19	19	14	12			8	8	res-cold 16-30	jewl	
+prefix	magicprefix.txt	371	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Ambergris	117	19	13	14	12		18	8	4	res-ltng 16-30	jewl	
+prefix	magicprefix.txt	371	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Ambergris	117	19	19	14	12			8	8	res-ltng 16-30	jewl	
+prefix	magicprefix.txt	379	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Jade	117	19	13	14	12		18	8	4	res-pois 16-30	jewl	
+prefix	magicprefix.txt	379	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Jade	117	19	19	14	12			8	8	res-pois 16-30	jewl	
+prefix	magicprefix.txt	998	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Sapphire	117	60	42	55	47		59	6	3	res-cold 26-30	lcha	
+prefix	magicprefix.txt	998	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Sapphire	117	60	60	55	47			6	6	res-cold 26-30	lcha	
+prefix	magicprefix.txt	1002	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Ruby	118	60	42	55	47		59	6	3	res-fire 26-30	lcha	
+prefix	magicprefix.txt	1002	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Ruby	118	60	60	55	47			6	6	res-fire 26-30	lcha	
+prefix	magicprefix.txt	1006	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Amber	119	60	42	55	47		59	6	3	res-ltng 26-30	lcha	
+prefix	magicprefix.txt	1006	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Amber	119	60	60	55	47			6	6	res-ltng 26-30	lcha	
+prefix	magicprefix.txt	1010	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	convert_existing_to_early	Emerald	120	60	42	55	47		59	6	3	res-pois 26-30	lcha	
+prefix	magicprefix.txt	1010	greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	add_late_duplicate	Emerald	120	60	60	55	47			6	6	res-pois 26-30	lcha	
+prefix	magicprefix.txt	410	greater-aureolin	Greater Aureolin	convert_existing_to_early	Victorious	121	17	12	12	10		16	8	4	mana-kill 2-5	weap	
+prefix	magicprefix.txt	410	greater-aureolin	Greater Aureolin	add_late_duplicate	Victorious	121	17	17	12	10			8	8	mana-kill 2-5	weap	
+prefix	magicprefix.txt	411	greater-aureolin	Greater Aureolin	convert_existing_to_early	Aureolin	121	22	15	16	14		21	8	4	mana-kill 1-3	jewl	
+prefix	magicprefix.txt	411	greater-aureolin	Greater Aureolin	add_late_duplicate	Aureolin	121	22	22	16	14			8	8	mana-kill 1-3	jewl	
+prefix	magicprefix.txt	104	greater-celestial	Greater Celestial	convert_existing_to_early	Celestial	123	55	39	41	35		54	2	1	att-demon 301-400; dmg-demon 201-300	weap	wand, orb
+prefix	magicprefix.txt	104	greater-celestial	Greater Celestial	add_late_duplicate	Celestial	123	55	55	41	35			2	2	att-demon 301-400; dmg-demon 201-300	weap	wand, orb
+prefix	magicprefix.txt	105	greater-celestial	Greater Celestial	convert_existing_to_early	Diamond	123	26	18	19	16		25	2	1	att-demon 25-50; dmg-demon 25-40	jewl	
+prefix	magicprefix.txt	105	greater-celestial	Greater Celestial	add_late_duplicate	Diamond	123	26	26	19	16			2	2	att-demon 25-50; dmg-demon 25-40	jewl	
+prefix	magicprefix.txt	192	greater-omniscient	Greater Omniscient	convert_existing_to_early	Omniscient	125	86	60	80	68		85	2	1	allskills 2-2	tors, amul	
+prefix	magicprefix.txt	192	greater-omniscient	Greater Omniscient	add_late_duplicate	Omniscient	125	86	86	80	68			2	2	allskills 2-2	tors, amul	
+prefix	magicprefix.txt	190	greater-omniscient	Greater Omniscient	convert_existing_to_early	Sage's	125	59	41	50	43		58	2	1	allskills 1-1	amul, tors, shld	
+prefix	magicprefix.txt	190	greater-omniscient	Greater Omniscient	add_late_duplicate	Sage's	125	59	59	50	43			2	2	allskills 1-1	amul, tors, shld	
+prefix	magicprefix.txt	191	greater-omniscient	Greater Omniscient	convert_existing_to_early	Sage's	125	85	59	80	68		84	2	1	allskills 1-1	ring	
+prefix	magicprefix.txt	191	greater-omniscient	Greater Omniscient	add_late_duplicate	Sage's	125	85	85	80	68			2	2	allskills 1-1	ring	
+prefix	magicprefix.txt	198	greater-class-skill	Greater class skill	convert_existing_to_early	Valkyrie's	125	50	35	42	36		49	4	2	ama 2-2	miss, spea	
+prefix	magicprefix.txt	198	greater-class-skill	Greater class skill	add_late_duplicate	Valkyrie's	125	50	50	42	36			4	4	ama 2-2	miss, spea	
+prefix	magicprefix.txt	196	greater-class-skill	Greater class skill	convert_existing_to_early	Valkyrie's	125	86	60	67	57		85	4	2	ama 2-2	amul, circ	
+prefix	magicprefix.txt	196	greater-class-skill	Greater class skill	add_late_duplicate	Valkyrie's	125	86	86	67	57			4	4	ama 2-2	amul, circ	
+prefix	magicprefix.txt	202	greater-class-skill	Greater class skill	convert_existing_to_early	Priest's	125	86	60	67	57		85	4	2	pal 2-2	amul, circ	
+prefix	magicprefix.txt	202	greater-class-skill	Greater class skill	add_late_duplicate	Priest's	125	86	86	67	57			4	4	pal 2-2	amul, circ	
+prefix	magicprefix.txt	210	greater-class-skill	Greater class skill	convert_existing_to_early	Necromancer's	125	86	60	67	57		85	4	2	nec 2-2	amul, circ	
+prefix	magicprefix.txt	210	greater-class-skill	Greater class skill	add_late_duplicate	Necromancer's	125	86	86	67	57			4	4	nec 2-2	amul, circ	
+prefix	magicprefix.txt	216	greater-class-skill	Greater class skill	convert_existing_to_early	Arch-Angel's	125	86	60	67	57		85	4	2	sor 2-2	amul, circ	
+prefix	magicprefix.txt	216	greater-class-skill	Greater class skill	add_late_duplicate	Arch-Angel's	125	86	86	67	57			4	4	sor 2-2	amul, circ	
+prefix	magicprefix.txt	222	greater-class-skill	Greater class skill	convert_existing_to_early	Berserker's	125	86	60	67	57		85	4	2	bar 2-2	amul, circ	
+prefix	magicprefix.txt	222	greater-class-skill	Greater class skill	add_late_duplicate	Berserker's	125	86	86	67	57			4	4	bar 2-2	amul, circ	
+prefix	magicprefix.txt	230	greater-class-skill	Greater class skill	convert_existing_to_early	Hierophant's	125	86	60	67	57		85	4	2	dru 2-2	amul, circ	
+prefix	magicprefix.txt	230	greater-class-skill	Greater class skill	add_late_duplicate	Hierophant's	125	86	86	67	57			4	4	dru 2-2	amul, circ	
+prefix	magicprefix.txt	236	greater-class-skill	Greater class skill	convert_existing_to_early	Witch-hunter's	125	86	60	67	57		85	4	2	ass 2-2	amul, circ	
+prefix	magicprefix.txt	236	greater-class-skill	Greater class skill	add_late_duplicate	Witch-hunter's	125	86	86	67	57			4	4	ass 2-2	amul, circ	
+prefix	magicprefix.txt	1070	greater-class-skill	Greater class skill	convert_existing_to_early	Arch-Devil's	125	90	63	67	57		89	2	1	war 2-2	amul, circ	
+prefix	magicprefix.txt	1070	greater-class-skill	Greater class skill	add_late_duplicate	Arch-Devil's	125	90	90	67	57			2	2	war 2-2	amul, circ	
+prefix	magicprefix.txt	204	greater-class-skill	Greater class skill	convert_existing_to_early	Priest's	125	50	35	42	36		49	4	2	pal 2-2	scep, ashd	
+prefix	magicprefix.txt	204	greater-class-skill	Greater class skill	add_late_duplicate	Priest's	125	50	50	42	36			4	4	pal 2-2	scep, ashd	
+prefix	magicprefix.txt	206	greater-class-skill	Greater class skill	convert_existing_to_early	Priest's	125	65	46	58	49		64	4	2	pal 2-2	swor, mace, hamm, shld	
+prefix	magicprefix.txt	206	greater-class-skill	Greater class skill	add_late_duplicate	Priest's	125	65	65	58	49			4	4	pal 2-2	swor, mace, hamm, shld	
+prefix	magicprefix.txt	224	greater-class-skill	Greater class skill	convert_existing_to_early	Berserker's	125	50	35	42	36		49	2	1	bar 2-2	tkni, axe, spea, club, swor, hamm, mace	jave
+prefix	magicprefix.txt	224	greater-class-skill	Greater class skill	add_late_duplicate	Berserker's	125	50	50	42	36			2	2	bar 2-2	tkni, axe, spea, club, swor, hamm, mace	jave
+prefix	magicprefix.txt	195	greater-class-skill	Greater class skill	convert_existing_to_early	Valkyrie's	125	86	60	75	64		85	2	1	ama 2-2	tors	
+prefix	magicprefix.txt	195	greater-class-skill	Greater class skill	add_late_duplicate	Valkyrie's	125	86	86	75	64			2	2	ama 2-2	tors	
+prefix	magicprefix.txt	201	greater-class-skill	Greater class skill	convert_existing_to_early	Priest's	125	86	60	75	64		85	2	1	pal 2-2	tors	
+prefix	magicprefix.txt	201	greater-class-skill	Greater class skill	add_late_duplicate	Priest's	125	86	86	75	64			2	2	pal 2-2	tors	
+prefix	magicprefix.txt	209	greater-class-skill	Greater class skill	convert_existing_to_early	Necromancer's	125	86	60	75	64		85	2	1	nec 2-2	tors	
+prefix	magicprefix.txt	209	greater-class-skill	Greater class skill	add_late_duplicate	Necromancer's	125	86	86	75	64			2	2	nec 2-2	tors	
+prefix	magicprefix.txt	215	greater-class-skill	Greater class skill	convert_existing_to_early	Arch-Angel's	125	86	60	75	64		85	2	1	sor 2-2	tors	
+prefix	magicprefix.txt	215	greater-class-skill	Greater class skill	add_late_duplicate	Arch-Angel's	125	86	86	75	64			2	2	sor 2-2	tors	
+prefix	magicprefix.txt	221	greater-class-skill	Greater class skill	convert_existing_to_early	Berserker's	125	86	60	75	64		85	2	1	bar 2-2	tors	
+prefix	magicprefix.txt	221	greater-class-skill	Greater class skill	add_late_duplicate	Berserker's	125	86	86	75	64			2	2	bar 2-2	tors	
+prefix	magicprefix.txt	229	greater-class-skill	Greater class skill	convert_existing_to_early	Hierophant's	125	86	60	75	64		85	2	1	dru 2-2	tors	
+prefix	magicprefix.txt	229	greater-class-skill	Greater class skill	add_late_duplicate	Hierophant's	125	86	86	75	64			2	2	dru 2-2	tors	
+prefix	magicprefix.txt	235	greater-class-skill	Greater class skill	convert_existing_to_early	Witch-hunter's	125	86	60	75	64		85	2	1	ass 2-2	tors	
+prefix	magicprefix.txt	235	greater-class-skill	Greater class skill	add_late_duplicate	Witch-hunter's	125	86	86	75	64			2	2	ass 2-2	tors	
+prefix	magicprefix.txt	232	greater-class-skill	Greater class skill	convert_existing_to_early	Hierophant's	125	50	35	42	36		49	4	2	dru 2-2	club, pelt	
+prefix	magicprefix.txt	232	greater-class-skill	Greater class skill	add_late_duplicate	Hierophant's	125	50	50	42	36			4	4	dru 2-2	club, pelt	
+prefix	magicprefix.txt	1072	greater-class-skill	Greater class skill	convert_existing_to_early	Arch-Devil's	125	50	35	42	36		49	2	1	war 2-2	knif, grim	
+prefix	magicprefix.txt	1072	greater-class-skill	Greater class skill	add_late_duplicate	Arch-Devil's	125	50	50	42	36			2	2	war 2-2	knif, grim	
+prefix	magicprefix.txt	238	greater-class-skill	Greater class skill	convert_existing_to_early	Witch-hunter's	125	50	35	42	36		49	4	2	ass 2-2	h2h	
+prefix	magicprefix.txt	238	greater-class-skill	Greater class skill	add_late_duplicate	Witch-hunter's	125	50	50	42	36			4	4	ass 2-2	h2h	
+prefix	magicprefix.txt	212	greater-class-skill	Greater class skill	convert_existing_to_early	Necromancer's	125	50	35	42	36		49	4	2	nec 2-2	wand, knif, head	
+prefix	magicprefix.txt	212	greater-class-skill	Greater class skill	add_late_duplicate	Necromancer's	125	50	50	42	36			4	4	nec 2-2	wand, knif, head	
+prefix	magicprefix.txt	218	greater-class-skill	Greater class skill	convert_existing_to_early	Arch-Angel's	125	50	35	42	36		49	4	2	sor 2-2	staf, orb	
+prefix	magicprefix.txt	218	greater-class-skill	Greater class skill	add_late_duplicate	Arch-Angel's	125	50	50	42	36			4	4	sor 2-2	staf, orb	
+prefix	magicprefix.txt	226	greater-class-skill	Greater class skill	convert_existing_to_early	Berserker's	125	50	35	42	36		49	4	2	bar 2-2	phlm	
+prefix	magicprefix.txt	226	greater-class-skill	Greater class skill	add_late_duplicate	Berserker's	125	50	50	42	36			4	4	bar 2-2	phlm	
+prefix	magicprefix.txt	241	greater-skilltab	Greater Skilltab	convert_existing_to_early	Archer's	125	60	42	45	38		59	2	1	skilltab(0) 3-3	miss, glov	
+prefix	magicprefix.txt	241	greater-skilltab	Greater Skilltab	add_late_duplicate	Archer's	125	60	60	45	38			2	2	skilltab(0) 3-3	miss, glov	
+prefix	magicprefix.txt	277	greater-skilltab	Greater Skilltab	convert_existing_to_early	Master's	125	60	42	45	38		59	2	1	skilltab(12) 3-3	phlm, weap, helm	miss, rod
+prefix	magicprefix.txt	277	greater-skilltab	Greater Skilltab	add_late_duplicate	Master's	125	60	60	45	38			2	2	skilltab(12) 3-3	phlm, weap, helm	miss, rod
+prefix	magicprefix.txt	280	greater-skilltab	Greater Skilltab	convert_existing_to_early	Furious	125	60	42	45	38		59	2	1	skilltab(13) 3-3	phlm, weap, amul	miss, rod
+prefix	magicprefix.txt	280	greater-skilltab	Greater Skilltab	add_late_duplicate	Furious	125	60	60	45	38			2	2	skilltab(13) 3-3	phlm, weap, amul	miss, rod
+prefix	magicprefix.txt	283	greater-skilltab	Greater Skilltab	convert_existing_to_early	Echoing	125	60	42	45	38		59	2	1	skilltab(14) 3-3	phlm, weap, amul	miss, rod
+prefix	magicprefix.txt	283	greater-skilltab	Greater Skilltab	add_late_duplicate	Echoing	125	60	60	45	38			2	2	skilltab(14) 3-3	phlm, weap, amul	miss, rod
+prefix	magicprefix.txt	244	greater-skilltab	Greater Skilltab	convert_existing_to_early	Athlete's	125	60	42	45	38		59	2	1	skilltab(1) 3-3	glov, amul, circ	
+prefix	magicprefix.txt	244	greater-skilltab	Greater Skilltab	add_late_duplicate	Athlete's	125	60	60	45	38			2	2	skilltab(1) 3-3	glov, amul, circ	
+prefix	magicprefix.txt	250	greater-skilltab	Greater Skilltab	convert_existing_to_early	Volcanic	125	60	42	45	38		59	2	1	skilltab(3) 3-3	staf, orb, amul, circ	
+prefix	magicprefix.txt	250	greater-skilltab	Greater Skilltab	add_late_duplicate	Volcanic	125	60	60	45	38			2	2	skilltab(3) 3-3	staf, orb, amul, circ	
+prefix	magicprefix.txt	253	greater-skilltab	Greater Skilltab	convert_existing_to_early	Powered	125	60	42	45	38		59	2	1	skilltab(4) 3-3	staf, orb, amul, circ	
+prefix	magicprefix.txt	253	greater-skilltab	Greater Skilltab	add_late_duplicate	Powered	125	60	60	45	38			2	2	skilltab(4) 3-3	staf, orb, amul, circ	
+prefix	magicprefix.txt	256	greater-skilltab	Greater Skilltab	convert_existing_to_early	Glacial	125	60	42	45	38		59	2	1	skilltab(5) 3-3	staf, orb, amul, circ	
+prefix	magicprefix.txt	256	greater-skilltab	Greater Skilltab	add_late_duplicate	Glacial	125	60	60	45	38			2	2	skilltab(5) 3-3	staf, orb, amul, circ	
+prefix	magicprefix.txt	259	greater-skilltab	Greater Skilltab	convert_existing_to_early	Accursed	125	60	42	45	38		59	2	1	skilltab(6) 3-3	wand, head, amul, circ	
+prefix	magicprefix.txt	259	greater-skilltab	Greater Skilltab	add_late_duplicate	Accursed	125	60	60	45	38			2	2	skilltab(6) 3-3	wand, head, amul, circ	
+prefix	magicprefix.txt	262	greater-skilltab	Greater Skilltab	convert_existing_to_early	Venomous	125	60	42	45	38		59	2	1	skilltab(7) 3-3	wand, head, amul, knif, circ	tkni
+prefix	magicprefix.txt	262	greater-skilltab	Greater Skilltab	add_late_duplicate	Venomous	125	60	60	45	38			2	2	skilltab(7) 3-3	wand, head, amul, knif, circ	tkni
+prefix	magicprefix.txt	265	greater-skilltab	Greater Skilltab	convert_existing_to_early	Golemlord's	125	60	42	45	38		59	2	1	skilltab(8) 3-3	wand, head, amul, circ	
+prefix	magicprefix.txt	265	greater-skilltab	Greater Skilltab	add_late_duplicate	Golemlord's	125	60	60	45	38			2	2	skilltab(8) 3-3	wand, head, amul, circ	
+prefix	magicprefix.txt	268	greater-skilltab	Greater Skilltab	convert_existing_to_early	Rose Branded	125	60	42	45	38		59	2	1	skilltab(9) 3-3	scep, swor, mace, shld, ashd, amul, circ	
+prefix	magicprefix.txt	268	greater-skilltab	Greater Skilltab	add_late_duplicate	Rose Branded	125	60	60	45	38			2	2	skilltab(9) 3-3	scep, swor, mace, shld, ashd, amul, circ	
+prefix	magicprefix.txt	271	greater-skilltab	Greater Skilltab	convert_existing_to_early	Marshal's	125	60	42	45	38		59	2	1	skilltab(10) 3-3	scep, swor, mace, shld, ashd, amul, circ	
+prefix	magicprefix.txt	271	greater-skilltab	Greater Skilltab	add_late_duplicate	Marshal's	125	60	60	45	38			2	2	skilltab(10) 3-3	scep, swor, mace, shld, ashd, amul, circ	
+prefix	magicprefix.txt	274	greater-skilltab	Greater Skilltab	convert_existing_to_early	Guardian's	125	60	42	45	38		59	2	1	skilltab(11) 3-3	shld, ashd, amul, circ	
+prefix	magicprefix.txt	274	greater-skilltab	Greater Skilltab	add_late_duplicate	Guardian's	125	60	60	45	38			2	2	skilltab(11) 3-3	shld, ashd, amul, circ	
+prefix	magicprefix.txt	286	greater-skilltab	Greater Skilltab	convert_existing_to_early	Keeper's	125	60	42	45	38		59	2	1	skilltab(15) 3-3	club, pelt, amul, circ	
+prefix	magicprefix.txt	286	greater-skilltab	Greater Skilltab	add_late_duplicate	Keeper's	125	60	60	45	38			2	2	skilltab(15) 3-3	club, pelt, amul, circ	
+prefix	magicprefix.txt	289	greater-skilltab	Greater Skilltab	convert_existing_to_early	Communal	125	60	42	45	38		59	2	1	skilltab(16) 3-3	club, pelt, amul, circ	
+prefix	magicprefix.txt	289	greater-skilltab	Greater Skilltab	add_late_duplicate	Communal	125	60	60	45	38			2	2	skilltab(16) 3-3	club, pelt, amul, circ	
+prefix	magicprefix.txt	292	greater-skilltab	Greater Skilltab	convert_existing_to_early	Gaea's	125	60	42	45	38		59	2	1	skilltab(17) 3-3	club, pelt, amul, circ	
+prefix	magicprefix.txt	292	greater-skilltab	Greater Skilltab	add_late_duplicate	Gaea's	125	60	60	45	38			2	2	skilltab(17) 3-3	club, pelt, amul, circ	
+prefix	magicprefix.txt	295	greater-skilltab	Greater Skilltab	convert_existing_to_early	Cunning	125	60	42	45	38		59	2	1	skilltab(18) 3-3	h2h, amul, circ	
+prefix	magicprefix.txt	295	greater-skilltab	Greater Skilltab	add_late_duplicate	Cunning	125	60	60	45	38			2	2	skilltab(18) 3-3	h2h, amul, circ	
+prefix	magicprefix.txt	298	greater-skilltab	Greater Skilltab	convert_existing_to_early	Shadow	125	60	42	45	38		59	2	1	skilltab(19) 3-3	h2h, amul, helm, circ	
+prefix	magicprefix.txt	298	greater-skilltab	Greater Skilltab	add_late_duplicate	Shadow	125	60	60	45	38			2	2	skilltab(19) 3-3	h2h, amul, helm, circ	
+prefix	magicprefix.txt	301	greater-skilltab	Greater Skilltab	convert_existing_to_early	Kenshi's	125	60	42	45	38		59	2	1	skilltab(20) 3-3	h2h, amul, glov, circ	
+prefix	magicprefix.txt	301	greater-skilltab	Greater Skilltab	add_late_duplicate	Kenshi's	125	60	60	45	38			2	2	skilltab(20) 3-3	h2h, amul, glov, circ	
+prefix	magicprefix.txt	1062	greater-skilltab	Greater Skilltab	convert_existing_to_early	Torrid	125	60	42	45	38		59	1	1	skilltab(23) 3-3	knif, grim, amul, circ	
+prefix	magicprefix.txt	1062	greater-skilltab	Greater Skilltab	add_late_duplicate	Torrid	125	60	60	45	38			1	1	skilltab(23) 3-3	knif, grim, amul, circ	
+prefix	magicprefix.txt	1065	greater-skilltab	Greater Skilltab	convert_existing_to_early	Forbidden	125	60	42	45	38		59	1	1	skilltab(22) 3-3	knif, grim, amul, swor, circ	tkni
+prefix	magicprefix.txt	1065	greater-skilltab	Greater Skilltab	add_late_duplicate	Forbidden	125	60	60	45	38			1	1	skilltab(22) 3-3	knif, grim, amul, swor, circ	tkni
+prefix	magicprefix.txt	1068	greater-skilltab	Greater Skilltab	convert_existing_to_early	Malevolent	125	60	42	45	38		59	1	1	skilltab(21) 3-3	knif, grim, amul, circ	
+prefix	magicprefix.txt	1068	greater-skilltab	Greater Skilltab	add_late_duplicate	Malevolent	125	60	60	45	38			1	1	skilltab(21) 3-3	knif, grim, amul, circ	
+prefix	magicprefix.txt	247	greater-skilltab	Greater Skilltab	convert_existing_to_early	Lancer's	125	60	42	45	38		59	2	1	skilltab(2) 3-3	spea, glov	
+prefix	magicprefix.txt	247	greater-skilltab	Greater Skilltab	add_late_duplicate	Lancer's	125	60	60	45	38			2	2	skilltab(2) 3-3	spea, glov	
+prefix	magicprefix.txt	333	greater-avatar	Greater Avatar	convert_existing_to_early	Hibernal	137	70	49	60	51		69	2	1	cold-len 100-100; cold-min 24-45; cold-max 91-140	weap	
+prefix	magicprefix.txt	333	greater-avatar	Greater Avatar	add_late_duplicate	Hibernal	137	70	70	60	51			2	2	cold-len 100-100; cold-min 24-45; cold-max 91-140	weap	
+prefix	magicprefix.txt	332	greater-avatar	Greater Avatar	convert_existing_to_early	Boreal	137	50	35	40	34		49	2	1	cold-len 75-75; cold-min 16-23; cold-max 46-90	weap, circ	
+prefix	magicprefix.txt	332	greater-avatar	Greater Avatar	add_late_duplicate	Boreal	137	50	50	40	34			2	2	cold-len 75-75; cold-min 16-23; cold-max 46-90	weap, circ	
+prefix	magicprefix.txt	991	greater-avatar	Greater Avatar	convert_existing_to_early	Avatar	137	85	59	85	72		84	1	1	dmg-elem 20-30	lcha	
+prefix	magicprefix.txt	991	greater-avatar	Greater Avatar	add_late_duplicate	Avatar	137	85	85	85	72			1	1	dmg-elem 20-30	lcha	
+prefix	magicprefix.txt	338	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	convert_existing_to_early	Scorching	138	77	54	67	57		76	2	1	fire-min 121-170; fire-max 181-240	weap	
+prefix	magicprefix.txt	338	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	add_late_duplicate	Scorching	138	77	77	67	57			2	2	fire-min 121-170; fire-max 181-240	weap	
+prefix	magicprefix.txt	343	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	convert_existing_to_early	Shocking	139	76	53	66	56		75	2	1	ltng-min 1-1; ltng-max 361-480	weap	
+prefix	magicprefix.txt	343	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	add_late_duplicate	Shocking	139	76	76	66	56			2	2	ltng-min 1-1; ltng-max 361-480	weap	
+prefix	magicprefix.txt	348	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	convert_existing_to_early	Pestilent	140	50	35	37	31		49	2	1	dmg-pois(150) 470-470	weap	
+prefix	magicprefix.txt	348	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	add_late_duplicate	Pestilent	140	50	50	37	31			2	2	dmg-pois(150) 470-470	weap	
+prefix	magicprefix.txt	336	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	convert_existing_to_early	Smoking	138	47	33	37	31		46	2	1	fire-min 51-80; fire-max 91-130	weap, circ	
+prefix	magicprefix.txt	336	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	add_late_duplicate	Smoking	138	47	47	37	31			2	2	fire-min 51-80; fire-max 91-130	weap, circ	
+prefix	magicprefix.txt	341	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	convert_existing_to_early	Buzzing	139	46	32	36	31		45	2	1	ltng-min 1-1; ltng-max 181-260	weap, circ	
+prefix	magicprefix.txt	341	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	add_late_duplicate	Buzzing	139	46	46	36	31			2	2	ltng-min 1-1; ltng-max 181-260	weap, circ	
+prefix	magicprefix.txt	346	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	convert_existing_to_early	Corosive	140	20	14	15	13		19	2	1	dmg-pois(100) 205-205	weap, circ	
+prefix	magicprefix.txt	346	greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	add_late_duplicate	Corosive	140	20	20	15	13			2	2	dmg-pois(100) 205-205	weap, circ	
+prefix	magicprefix.txt	110	greater-divine	Greater Divine	convert_existing_to_early	Divine	142	45	31	37	31		44	2	1	att-undead 326-450; dmg-undead 276-350	weap	wand, orb
+prefix	magicprefix.txt	110	greater-divine	Greater Divine	add_late_duplicate	Divine	142	45	45	37	31			2	2	att-undead 326-450; dmg-undead 276-350	weap	wand, orb
+prefix	magicprefix.txt	111	greater-divine	Greater Divine	convert_existing_to_early	Pearl	142	18	13	13	11		17	2	1	att-undead 25-50; dmg-undead 25-50	jewl	
+prefix	magicprefix.txt	111	greater-divine	Greater Divine	add_late_duplicate	Pearl	142	18	18	13	11			2	2	att-undead 25-50; dmg-undead 25-50	jewl	
+prefix	magicprefix.txt	994	greater-hulking	Greater Hulking	convert_existing_to_early	Hulking	143	85	59	85	72		84	6	3	dmg-norm 40-60	lcha	
+prefix	magicprefix.txt	994	greater-hulking	Greater Hulking	add_late_duplicate	Hulking	143	85	85	85	72			6	6	dmg-norm 40-60	lcha	
+prefix	magicprefix.txt	134	greater-veracious	Greater Veracious	convert_existing_to_early	Veracious1	200	85	59	75	64		84	2	1	att% 25-35	weap, glov	
+prefix	magicprefix.txt	134	greater-veracious	Greater Veracious	add_late_duplicate	Veracious1	200	85	85	75	64			2	2	att% 25-35	weap, glov	
+prefix	magicprefix.txt	305	greater-gnostic	Greater Gnostic	convert_existing_to_early	Gnostics	201	85	59	75	64		84	2	1	skill-rand(5) 6-35	amul, circ, belt, ring	
+prefix	magicprefix.txt	305	greater-gnostic	Greater Gnostic	add_late_duplicate	Gnostics	201	85	85	75	64			2	2	skill-rand(5) 6-35	amul, circ, belt, ring	
+prefix	magicprefix.txt	309	greater-gnostic	Greater Gnostic	convert_existing_to_early	Gnostics	201	85	59	75	64		84	2	1	skill-rand(5) 96-125	amul, circ, belt, ring	
+prefix	magicprefix.txt	309	greater-gnostic	Greater Gnostic	add_late_duplicate	Gnostics	201	85	85	75	64			2	2	skill-rand(5) 96-125	amul, circ, belt, ring	
+prefix	magicprefix.txt	313	greater-gnostic	Greater Gnostic	convert_existing_to_early	Gnostics	201	85	59	75	64		84	2	1	skill-rand(5) 66-95	amul, circ, belt, ring	
+prefix	magicprefix.txt	313	greater-gnostic	Greater Gnostic	add_late_duplicate	Gnostics	201	85	85	75	64			2	2	skill-rand(5) 66-95	amul, circ, belt, ring	
+prefix	magicprefix.txt	317	greater-gnostic	Greater Gnostic	convert_existing_to_early	Gnostics	201	85	59	80	68		84	2	1	skill-rand(5) 36-65	amul, circ, belt, ring	
+prefix	magicprefix.txt	317	greater-gnostic	Greater Gnostic	add_late_duplicate	Gnostics	201	85	85	80	68			2	2	skill-rand(5) 36-65	amul, circ, belt, ring	
+prefix	magicprefix.txt	321	greater-gnostic	Greater Gnostic	convert_existing_to_early	Gnostics	201	85	59	75	64		84	2	1	skill-rand(5) 126-155	amul, circ, belt, ring	
+prefix	magicprefix.txt	321	greater-gnostic	Greater Gnostic	add_late_duplicate	Gnostics	201	85	85	75	64			2	2	skill-rand(5) 126-155	amul, circ, belt, ring	
+prefix	magicprefix.txt	325	greater-gnostic	Greater Gnostic	convert_existing_to_early	Gnostics	201	85	59	75	64		84	2	1	skill-rand(5) 221-250	ring, amul, circ, belt	
+prefix	magicprefix.txt	325	greater-gnostic	Greater Gnostic	add_late_duplicate	Gnostics	201	85	85	75	64			2	2	skill-rand(5) 221-250	ring, amul, circ, belt	
+prefix	magicprefix.txt	329	greater-gnostic	Greater Gnostic	convert_existing_to_early	Gnostics	201	85	59	75	64		84	2	1	skill-rand(5) 251-280	ring, amul, circ, belt	
+prefix	magicprefix.txt	329	greater-gnostic	Greater Gnostic	add_late_duplicate	Gnostics	201	85	85	75	64			2	2	skill-rand(5) 251-280	ring, amul, circ, belt	
+prefix	magicprefix.txt	1088	greater-gnostic	Greater Gnostic	convert_existing_to_early	Devil's	201	85	59	75	64		84	2	1	skill-rand(5) 373-402	amul, circ, belt, ring	
+prefix	magicprefix.txt	1088	greater-gnostic	Greater Gnostic	add_late_duplicate	Devil's	201	85	85	75	64			2	2	skill-rand(5) 373-402	amul, circ, belt, ring	
+prefix	magicprefix.txt	442	greater-crushing-fatal	Greater Crushing/Fatal	convert_existing_to_early	Crushing1	202	70	49	63	54		69	4	2	crush 16-20	glov	
+prefix	magicprefix.txt	442	greater-crushing-fatal	Greater Crushing/Fatal	add_late_duplicate	Crushing1	202	70	70	63	54			4	4	crush 16-20	glov	
+prefix	magicprefix.txt	445	greater-crushing-fatal	Greater Crushing/Fatal	convert_existing_to_early	Fatal	202	70	49	63	54		69	4	2	deadly 16-20	glov	
+prefix	magicprefix.txt	445	greater-crushing-fatal	Greater Crushing/Fatal	add_late_duplicate	Fatal	202	70	70	63	54			4	4	deadly 16-20	glov	
+prefix	magicprefix.txt	449	greater-elemental-prefix	Greater Elemental	convert_existing_to_early	Elemental1	203	80	56	77	65		79	2	1	dmg-elem(125) 64-200	weap	
+prefix	magicprefix.txt	449	greater-elemental-prefix	Greater Elemental	add_late_duplicate	Elemental1	203	80	80	77	65			2	2	dmg-elem(125) 64-200	weap	
+prefix	magicprefix.txt	452	greater-sage-xp	Greater Sage	convert_existing_to_early	Sage's	204	51	36	46	39		50	6	3	addxp 3-3	weap, armo, shld, amul, ring	
+prefix	magicprefix.txt	452	greater-sage-xp	Greater Sage	add_late_duplicate	Sage's	204	51	51	46	39			6	6	addxp 3-3	weap, armo, shld, amul, ring	
+prefix	magicprefix.txt	454	greater-sage-xp	Greater Sage	convert_existing_to_early	Master Sage's	204	87	61	81	69		86	2	1	addxp 5-5	amul	
+prefix	magicprefix.txt	454	greater-sage-xp	Greater Sage	add_late_duplicate	Master Sage's	204	87	87	81	69			2	2	addxp 5-5	amul	
+prefix	magicprefix.txt	453	greater-sage-xp	Greater Sage	convert_existing_to_early	Sage's	204	74	52	68	58		73	4	2	addxp 4-4	ring, amul, circ	
+prefix	magicprefix.txt	453	greater-sage-xp	Greater Sage	add_late_duplicate	Sage's	204	74	74	68	58			4	4	addxp 4-4	ring, amul, circ	
+prefix	magicprefix.txt	460	greater-savage	Greater Savage	convert_existing_to_early	Savage	205	64	45	52	44		63	4	2	kick 9-10	boot	
+prefix	magicprefix.txt	460	greater-savage	Greater Savage	add_late_duplicate	Savage	205	64	64	52	44			4	4	kick 9-10	boot	
+prefix	magicprefix.txt	468	greater-adamantine-wrought	Greater Adamantine-Wrought	convert_existing_to_early	Adamantine-Wrought	206	87	61	65	55		86	4	2	dmg% 81-100; dur 60-75	weap	orb, wand
+prefix	magicprefix.txt	468	greater-adamantine-wrought	Greater Adamantine-Wrought	add_late_duplicate	Adamantine-Wrought	206	87	87	65	55			4	4	dmg% 81-100; dur 60-75	weap	orb, wand
+prefix	magicprefix.txt	476	greater-adamantine-wrought	Greater Adamantine-Wrought	convert_existing_to_early	Adamantine-Wrought	206	87	61	65	55		86	4	2	ac% 51-75; dur 60-75	armo, shld	
+prefix	magicprefix.txt	476	greater-adamantine-wrought	Greater Adamantine-Wrought	add_late_duplicate	Adamantine-Wrought	206	87	87	65	55			4	4	ac% 51-75; dur 60-75	armo, shld	
+prefix	magicprefix.txt	491	greater-aureole	Greater Aureole	convert_existing_to_early	Aureole	207	62	43	48	41		61	2	1	aura(125) 1-3	tors	
+prefix	magicprefix.txt	491	greater-aureole	Greater Aureole	add_late_duplicate	Aureole	207	62	62	48	41			2	2	aura(125) 1-3	tors	
+prefix	magicprefix.txt	505	greater-elemental-mastery	Greater Elemental Mastery	convert_existing_to_early	Pyromaniac's2	209	55	39	55	47		54	2	1	extra-fire 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	505	greater-elemental-mastery	Greater Elemental Mastery	add_late_duplicate	Pyromaniac's2	209	55	55	55	47			2	2	extra-fire 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	508	greater-elemental-mastery	Greater Elemental Mastery	convert_existing_to_early	Frost Wyrm's2	209	55	39	55	47		54	2	1	extra-cold 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	508	greater-elemental-mastery	Greater Elemental Mastery	add_late_duplicate	Frost Wyrm's2	209	55	55	55	47			2	2	extra-cold 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	511	greater-elemental-mastery	Greater Elemental Mastery	convert_existing_to_early	Zeus's2	209	55	39	55	47		54	2	1	extra-ltng 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	511	greater-elemental-mastery	Greater Elemental Mastery	add_late_duplicate	Zeus's2	209	55	55	55	47			2	2	extra-ltng 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	514	greater-elemental-mastery	Greater Elemental Mastery	convert_existing_to_early	Manticore's2	209	55	39	55	47		54	2	1	extra-pois 6-9	wand, staf, helm	
+prefix	magicprefix.txt	514	greater-elemental-mastery	Greater Elemental Mastery	add_late_duplicate	Manticore's2	209	55	55	55	47			2	2	extra-pois 6-9	wand, staf, helm	
+prefix	magicprefix.txt	506	greater-elemental-mastery	Greater Elemental Mastery	convert_existing_to_early	Pyromaniac's2	209	77	54	77	65		76	2	1	extra-fire 10-12	wand, orb, staf	
+prefix	magicprefix.txt	506	greater-elemental-mastery	Greater Elemental Mastery	add_late_duplicate	Pyromaniac's2	209	77	77	77	65			2	2	extra-fire 10-12	wand, orb, staf	
+prefix	magicprefix.txt	509	greater-elemental-mastery	Greater Elemental Mastery	convert_existing_to_early	Frost Wyrm's2	209	77	54	77	65		76	2	1	extra-cold 10-12	wand, orb, staf	
+prefix	magicprefix.txt	509	greater-elemental-mastery	Greater Elemental Mastery	add_late_duplicate	Frost Wyrm's2	209	77	77	77	65			2	2	extra-cold 10-12	wand, orb, staf	
+prefix	magicprefix.txt	512	greater-elemental-mastery	Greater Elemental Mastery	convert_existing_to_early	Zeus's2	209	77	54	77	65		76	2	1	extra-ltng 10-12	wand, orb, staf	
+prefix	magicprefix.txt	512	greater-elemental-mastery	Greater Elemental Mastery	add_late_duplicate	Zeus's2	209	77	77	77	65			2	2	extra-ltng 10-12	wand, orb, staf	
+prefix	magicprefix.txt	515	greater-elemental-mastery	Greater Elemental Mastery	convert_existing_to_early	Manticore's2	209	77	54	77	65		76	2	1	extra-pois 10-12	wand, staf	
+prefix	magicprefix.txt	515	greater-elemental-mastery	Greater Elemental Mastery	add_late_duplicate	Manticore's2	209	77	77	77	65			2	2	extra-pois 10-12	wand, staf	
+prefix	magicprefix.txt	493	greater-elemental-pierce	Greater Elemental Pierce	convert_existing_to_early	Pyromaniac's2	209	55	39	55	47		54	2	1	pierce-fire 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	493	greater-elemental-pierce	Greater Elemental Pierce	add_late_duplicate	Pyromaniac's2	209	55	55	55	47			2	2	pierce-fire 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	496	greater-elemental-pierce	Greater Elemental Pierce	convert_existing_to_early	Frost Wyrm's2	209	55	39	55	47		54	2	1	pierce-cold 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	496	greater-elemental-pierce	Greater Elemental Pierce	add_late_duplicate	Frost Wyrm's2	209	55	55	55	47			2	2	pierce-cold 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	499	greater-elemental-pierce	Greater Elemental Pierce	convert_existing_to_early	Zeus's2	209	55	39	55	47		54	2	1	pierce-ltng 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	499	greater-elemental-pierce	Greater Elemental Pierce	add_late_duplicate	Zeus's2	209	55	55	55	47			2	2	pierce-ltng 6-9	wand, orb, staf, helm	
+prefix	magicprefix.txt	502	greater-elemental-pierce	Greater Elemental Pierce	convert_existing_to_early	Manticore's2	209	55	39	55	47		54	2	1	pierce-pois 6-9	wand, staf, helm	
+prefix	magicprefix.txt	502	greater-elemental-pierce	Greater Elemental Pierce	add_late_duplicate	Manticore's2	209	55	55	55	47			2	2	pierce-pois 6-9	wand, staf, helm	
+prefix	magicprefix.txt	494	greater-elemental-pierce	Greater Elemental Pierce	convert_existing_to_early	Pyromaniac's2	209	77	54	77	65		76	2	1	pierce-fire 10-12	wand, orb, staf	
+prefix	magicprefix.txt	494	greater-elemental-pierce	Greater Elemental Pierce	add_late_duplicate	Pyromaniac's2	209	77	77	77	65			2	2	pierce-fire 10-12	wand, orb, staf	
+prefix	magicprefix.txt	497	greater-elemental-pierce	Greater Elemental Pierce	convert_existing_to_early	Frost Wyrm's2	209	77	54	77	65		76	2	1	pierce-cold 10-12	wand, orb, staf	
+prefix	magicprefix.txt	497	greater-elemental-pierce	Greater Elemental Pierce	add_late_duplicate	Frost Wyrm's2	209	77	77	77	65			2	2	pierce-cold 10-12	wand, orb, staf	
+prefix	magicprefix.txt	500	greater-elemental-pierce	Greater Elemental Pierce	convert_existing_to_early	Zeus's2	209	77	54	77	65		76	2	1	pierce-ltng 10-12	wand, orb, staf	
+prefix	magicprefix.txt	500	greater-elemental-pierce	Greater Elemental Pierce	add_late_duplicate	Zeus's2	209	77	77	77	65			2	2	pierce-ltng 10-12	wand, orb, staf	
+prefix	magicprefix.txt	503	greater-elemental-pierce	Greater Elemental Pierce	convert_existing_to_early	Manticore's2	209	77	54	77	65		76	2	1	pierce-pois 10-12	wand, staf	
+prefix	magicprefix.txt	503	greater-elemental-pierce	Greater Elemental Pierce	add_late_duplicate	Manticore's2	209	77	77	77	65			2	2	pierce-pois 10-12	wand, staf	
+prefix	magicprefix.txt	1091	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Sturdy	220	80	56	50	43		79	3	2	hp 30-40	misl	
+prefix	magicprefix.txt	1091	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Sturdy	220	80	80	50	43			3	3	hp 30-40	misl	
+prefix	magicprefix.txt	1094	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Lizard's	220	80	56	50	43		79	3	2	mana 30-40	misl	
+prefix	magicprefix.txt	1094	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Lizard's	220	80	80	50	43			3	3	mana 30-40	misl	
+prefix	magicprefix.txt	1097	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Sharp	221	80	56	50	43		79	3	2	att 50-100	misl	
+prefix	magicprefix.txt	1097	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Sharp	221	80	80	50	43			3	3	att 50-100	misl	
+prefix	magicprefix.txt	1100	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Jagged	222	80	56	60	51		79	3	2	dmg% 30-50	misl	
+prefix	magicprefix.txt	1100	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Jagged	222	80	80	60	51			3	3	dmg% 30-50	misl	
+prefix	magicprefix.txt	1103	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Jagged	222	80	56	60	51		79	3	2	dmg-min 10-20; dmg-max 20-30	misl	
+prefix	magicprefix.txt	1103	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Jagged	222	80	80	60	51			3	3	dmg-min 10-20; dmg-max 20-30	misl	
+prefix	magicprefix.txt	1106	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Flaming	223	80	56	60	51		79	3	2	fire-min 10-20; fire-max 20-30	misl	
+prefix	magicprefix.txt	1106	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Flaming	223	80	80	60	51			3	3	fire-min 10-20; fire-max 20-30	misl	
+prefix	magicprefix.txt	1109	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Shivering	224	80	56	60	51		79	3	2	cold-min 10-20; cold-max 20-30	misl	
+prefix	magicprefix.txt	1109	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Shivering	224	80	80	60	51			3	3	cold-min 10-20; cold-max 20-30	misl	
+prefix	magicprefix.txt	1112	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Static	225	80	56	60	51		79	3	2	ltng-min 5-10; ltng-max 30-50	misl	
+prefix	magicprefix.txt	1112	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Static	225	80	80	60	51			3	3	ltng-min 5-10; ltng-max 30-50	misl	
+prefix	magicprefix.txt	1115	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Corosive	226	80	56	60	51		79	3	2	dmg-pois(100) 300-600	misl	
+prefix	magicprefix.txt	1115	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Corosive	226	80	80	60	51			3	3	dmg-pois(100) 300-600	misl	
+prefix	magicprefix.txt	1118	greater-missile-prefix	Greater missile prefixes	convert_existing_to_early	Apprentice	227	80	56	60	51		79	3	2	dmg-mag 10-20	misl	
+prefix	magicprefix.txt	1118	greater-missile-prefix	Greater missile prefixes	add_late_duplicate	Apprentice	227	80	80	60	51			3	3	dmg-mag 10-20	misl	
+suffix	magicsuffix.txt	130	greater-anima	Greater Anima	convert_existing_to_early	of Life Everlasting	1	45	31	37	31		44	48	24	red-dmg 10-25	amul, circ	
+suffix	magicsuffix.txt	130	greater-anima	Greater Anima	add_late_duplicate	of Life Everlasting	1	45	45	37	31			48	48	red-dmg 10-25	amul, circ	
+suffix	magicsuffix.txt	134	greater-anima	Greater Anima	convert_existing_to_early	of Anima	1	51	36	43	37		50	48	24	red-dmg 8-15	tors, shld, circ	
+suffix	magicsuffix.txt	134	greater-anima	Greater Anima	add_late_duplicate	of Anima	1	51	51	43	37			48	48	red-dmg 8-15	tors, shld, circ	
+suffix	magicsuffix.txt	129	greater-anima	Greater Anima	convert_existing_to_early	of Life	1	35	25	26	22		34	48	24	red-dmg 6-10	amul, circ, ring	
+suffix	magicsuffix.txt	129	greater-anima	Greater Anima	add_late_duplicate	of Life	1	35	35	26	22			48	48	red-dmg 6-10	amul, circ, ring	
+suffix	magicsuffix.txt	144	greater-negation	Greater Negation	convert_existing_to_early	of Guarding	2	66	46	53	45		65	48	24	res-mag 10-13	amul, orb, circ, tors, shld	
+suffix	magicsuffix.txt	144	greater-negation	Greater Negation	add_late_duplicate	of Guarding	2	66	66	53	45			48	48	res-mag 10-13	amul, orb, circ, tors, shld	
+suffix	magicsuffix.txt	145	greater-negation	Greater Negation	convert_existing_to_early	of Negation	2	84	59	72	61		83	48	24	res-mag 14-20	shld, orb, circ, tors	
+suffix	magicsuffix.txt	145	greater-negation	Greater Negation	add_late_duplicate	of Negation	2	84	84	72	61			48	48	res-mag 14-20	shld, orb, circ, tors	
+suffix	magicsuffix.txt	138	greater-negation	Greater Negation	convert_existing_to_early	of Negation	2	42	29	35	30		41	48	24	red-mag 7-8	amul, orb, circ, ring	
+suffix	magicsuffix.txt	138	greater-negation	Greater Negation	add_late_duplicate	of Negation	2	42	42	35	30			48	48	red-mag 7-8	amul, orb, circ, ring	
+suffix	magicsuffix.txt	143	greater-negation	Greater Negation	convert_existing_to_early	of the Sentinel	2	42	29	31	26		41	48	24	res-mag 6-9	ring, amul, orb, circ, tors, shld	
+suffix	magicsuffix.txt	143	greater-negation	Greater Negation	add_late_duplicate	of the Sentinel	2	42	42	31	26			48	48	res-mag 6-9	ring, amul, orb, circ, tors, shld	
+suffix	magicsuffix.txt	158	greater-coalescence	Greater Coalescence	convert_existing_to_early	of Fire Coalescence1	3	87	61	80	68		86	12	6	abs-fire% 16-25	weap, amul, ring, shld	
+suffix	magicsuffix.txt	158	greater-coalescence	Greater Coalescence	add_late_duplicate	of Fire Coalescence1	3	87	87	80	68			12	12	abs-fire% 16-25	weap, amul, ring, shld	
+suffix	magicsuffix.txt	171	greater-coalescence	Greater Coalescence	convert_existing_to_early	of Lightning Coalescence1	3	87	61	80	68		86	12	6	abs-ltng% 16-25	weap, amul, ring, shld	
+suffix	magicsuffix.txt	171	greater-coalescence	Greater Coalescence	add_late_duplicate	of Lightning Coalescence1	3	87	87	80	68			12	12	abs-ltng% 16-25	weap, amul, ring, shld	
+suffix	magicsuffix.txt	184	greater-coalescence	Greater Coalescence	convert_existing_to_early	of Chilling Coalescence1	3	87	61	80	68		86	12	6	abs-cold% 16-25	weap, amul, ring, shld	
+suffix	magicsuffix.txt	184	greater-coalescence	Greater Coalescence	add_late_duplicate	of Chilling Coalescence1	3	87	87	80	68			12	12	abs-cold% 16-25	weap, amul, ring, shld	
+suffix	magicsuffix.txt	340	greater-thorns	Greater Thorns	convert_existing_to_early	of Thorns	6	67	47	62	53		66	48	24	thorns/lvl(12) -	tors, shld	
+suffix	magicsuffix.txt	340	greater-thorns	Greater Thorns	add_late_duplicate	of Thorns	6	67	67	62	53			48	48	thorns/lvl(12) -	tors, shld	
+suffix	magicsuffix.txt	344	greater-thorns	Greater Thorns	convert_existing_to_early	of Swords	6	65	46	55	47		64	24	12	thorns 41-50	tors, shld, circ, belt	
+suffix	magicsuffix.txt	344	greater-thorns	Greater Thorns	add_late_duplicate	of Swords	6	65	65	55	47			24	24	thorns 41-50	tors, shld, circ, belt	
+suffix	magicsuffix.txt	345	greater-thorns	Greater Thorns	convert_existing_to_early	of Malice	6	60	42	48	41		59	48	24	thorns 8-15	jewl	
+suffix	magicsuffix.txt	345	greater-thorns	Greater Thorns	add_late_duplicate	of Malice	6	60	60	48	41			48	48	thorns 8-15	jewl	
+suffix	magicsuffix.txt	328	greater-quickness	Greater Quickness	convert_existing_to_early	of Alacrity	7	25	18	17	14		24	72	36	swing2 20-20	weap	wand, orb
+suffix	magicsuffix.txt	328	greater-quickness	Greater Quickness	add_late_duplicate	of Alacrity	7	25	25	17	14			72	72	swing2 20-20	weap	wand, orb
+suffix	magicsuffix.txt	330	greater-quickness	Greater Quickness	convert_existing_to_early	of Quickness	7	46	32	38	32		45	60	30	swing3 40-40	mele	wand, staf, orb
+suffix	magicsuffix.txt	330	greater-quickness	Greater Quickness	add_late_duplicate	of Quickness	7	46	46	38	32			60	60	swing3 40-40	mele	wand, staf, orb
+suffix	magicsuffix.txt	334	greater-quickness	Greater Quickness	convert_existing_to_early	of Fervor	7	39	27	31	26		38	48	24	swing1 15-15	jewl	
+suffix	magicsuffix.txt	334	greater-quickness	Greater Quickness	add_late_duplicate	of Fervor	7	39	39	31	26			48	48	swing1 15-15	jewl	
+suffix	magicsuffix.txt	331	greater-quickness	Greater Quickness	convert_existing_to_early	of Alacrity	7	43	30	35	30		42	48	24	swing2 20-20	glov	
+suffix	magicsuffix.txt	331	greater-quickness	Greater Quickness	add_late_duplicate	of Alacrity	7	43	43	35	30			48	48	swing2 20-20	glov	
+suffix	magicsuffix.txt	374	greater-deflecting	Greater Deflecting	convert_existing_to_early	of Deflecting	8	11	8	8	7		10	76	38	block 20-30; block2 30-30	shld	
+suffix	magicsuffix.txt	374	greater-deflecting	Greater Deflecting	add_late_duplicate	of Deflecting	8	11	11	8	7			76	76	block 20-30; block2 30-30	shld	
+suffix	magicsuffix.txt	375	greater-magus	Greater Magus	convert_existing_to_early	of the Apprentice	9	5	4	3	3		4	72	36	cast1 10-10	rod, ring, amul, orb, circ	
+suffix	magicsuffix.txt	375	greater-magus	Greater Magus	add_late_duplicate	of the Apprentice	9	5	5	3	3			72	72	cast1 10-10	rod, ring, amul, orb, circ	
+suffix	magicsuffix.txt	376	greater-magus	Greater Magus	convert_existing_to_early	of the Magus	9	29	20	21	18		28	60	30	cast3 20-20	rod, orb, circ	scep
+suffix	magicsuffix.txt	376	greater-magus	Greater Magus	add_late_duplicate	of the Magus	9	29	29	21	18			60	60	cast3 20-20	rod, orb, circ	scep
+suffix	magicsuffix.txt	53	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Winter	10	80	56	75	64		79	12	6	cold-min 35-45; cold-max 100-150; cold-len 150-150	weap	wand, orb
+suffix	magicsuffix.txt	53	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Winter	10	80	80	75	64			12	12	cold-min 35-45; cold-max 100-150; cold-len 150-150	weap	wand, orb
+suffix	magicsuffix.txt	66	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Incineration	12	80	56	75	64		79	12	6	fire-min 75-100; fire-max 200-250	weap	wand, orb
+suffix	magicsuffix.txt	66	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Incineration	12	80	80	75	64			12	12	fire-min 75-100; fire-max 200-250	weap	wand, orb
+suffix	magicsuffix.txt	79	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Storms	13	75	53	68	58		74	12	6	ltng-min 1-20; ltng-max 300-350	weap	wand, orb
+suffix	magicsuffix.txt	79	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Storms	13	75	75	68	58			12	12	ltng-min 1-20; ltng-max 300-350	weap	wand, orb
+suffix	magicsuffix.txt	90	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Anthrax	16	33	23	25	21		32	24	12	dmg-pois(150) 171-171	weap, circ	rod, orb
+suffix	magicsuffix.txt	90	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Anthrax	16	33	33	25	21			24	24	dmg-pois(150) 171-171	weap, circ	rod, orb
+suffix	magicsuffix.txt	57	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of the Glacier	10	85	59	81	69		84	24	12	cold-min 4-5; cold-max 16-25; cold-len 150-150	belt, amul	
+suffix	magicsuffix.txt	57	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of the Glacier	10	85	85	81	69			24	24	cold-min 4-5; cold-max 16-25; cold-len 150-150	belt, amul	
+suffix	magicsuffix.txt	70	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Burning	12	80	56	74	63		79	24	12	fire-min 11-25; fire-max 31-50	glov, ring, amul	
+suffix	magicsuffix.txt	70	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Burning	12	80	80	74	63			24	24	fire-min 11-25; fire-max 31-50	glov, ring, amul	
+suffix	magicsuffix.txt	83	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Storms	13	86	60	80	68		85	24	12	ltng-min 1-1; ltng-max 76-100	boot, ring, amul	
+suffix	magicsuffix.txt	83	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Storms	13	86	86	80	68			24	24	ltng-min 1-1; ltng-max 76-100	boot, ring, amul	
+suffix	magicsuffix.txt	93	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Blight	16	85	59	72	61		84	12	6	dmg-pois(75) 377-377	ring, amul	
+suffix	magicsuffix.txt	93	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Blight	16	85	85	72	61			12	12	dmg-pois(75) 377-377	ring, amul	
+suffix	magicsuffix.txt	60	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of the Glacier	10	58	41	50	43		57	24	12	cold-min 4-5; cold-max 11-15; cold-len 100-100	jewl	
+suffix	magicsuffix.txt	60	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of the Glacier	10	58	58	50	43			24	24	cold-min 4-5; cold-max 11-15; cold-len 100-100	jewl	
+suffix	magicsuffix.txt	73	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Burning	12	57	40	49	42		56	24	12	fire-min 11-25; fire-max 31-50	jewl	
+suffix	magicsuffix.txt	73	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Burning	12	57	57	49	42			24	24	fire-min 11-25; fire-max 31-50	jewl	
+suffix	magicsuffix.txt	86	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Thunder	13	57	40	49	42		56	24	12	ltng-min 1-1; ltng-max 61-100	jewl	
+suffix	magicsuffix.txt	86	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Thunder	13	57	57	49	42			24	24	ltng-min 1-1; ltng-max 61-100	jewl	
+suffix	magicsuffix.txt	96	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Anthrax	16	77	54	66	56		76	24	12	dmg-pois(50) 309-309	jewl	
+suffix	magicsuffix.txt	96	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Anthrax	16	77	77	66	56			24	24	dmg-pois(50) 309-309	jewl	
+suffix	magicsuffix.txt	705	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Winter	10	81	57	81	69		80	6	3	cold-min 12-14; cold-max 20-25	lcha	
+suffix	magicsuffix.txt	705	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Winter	10	81	81	81	69			6	6	cold-min 12-14; cold-max 20-25	lcha	
+suffix	magicsuffix.txt	709	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Incineration	10	81	57	81	69		80	6	3	fire-min 10-15; fire-max 20-25	lcha	
+suffix	magicsuffix.txt	709	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Incineration	10	81	81	81	69			6	6	fire-min 10-15; fire-max 20-25	lcha	
+suffix	magicsuffix.txt	713	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Storms	10	81	57	81	69		80	6	3	ltng-min 10-15; ltng-max 20-25	lcha	
+suffix	magicsuffix.txt	713	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Storms	10	81	81	81	69			6	6	ltng-min 10-15; ltng-max 20-25	lcha	
+suffix	magicsuffix.txt	717	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	convert_existing_to_early	of Anthrax	10	81	57	81	69		80	6	3	dmg-pois(125) 120-140	lcha	
+suffix	magicsuffix.txt	717	greater-jewelry-elemental-suffix	Greater jewelry elemental damage	add_late_duplicate	of Anthrax	10	81	81	81	69			6	6	dmg-pois(125) 120-140	lcha	
+suffix	magicsuffix.txt	20	greater-evisceration	Greater Evisceration	convert_existing_to_early	of Evisceration	14	85	59	79	67		84	88	44	dmg-max 101-120	weap	wand, staf, orb
+suffix	magicsuffix.txt	20	greater-evisceration	Greater Evisceration	add_late_duplicate	of Evisceration	14	85	85	79	67			88	88	dmg-max 101-120	weap	wand, staf, orb
+suffix	magicsuffix.txt	8	greater-evisceration	Greater Evisceration	convert_existing_to_early	of Quality	14	77	54	61	52		76	96	48	dmg-max 8-10	amul, ring	
+suffix	magicsuffix.txt	8	greater-evisceration	Greater Evisceration	add_late_duplicate	of Quality	14	77	77	61	52			96	96	dmg-max 8-10	amul, ring	
+suffix	magicsuffix.txt	23	greater-evisceration	Greater Evisceration	convert_existing_to_early	of Maiming	14	80	56	68	58		79	36	18	dmg-max 9-12	shld	
+suffix	magicsuffix.txt	23	greater-evisceration	Greater Evisceration	add_late_duplicate	of Maiming	14	80	80	68	58			36	36	dmg-max 9-12	shld	
+suffix	magicsuffix.txt	30	greater-evisceration	Greater Evisceration	convert_existing_to_early	of Maiming	14	79	55	74	63		78	48	24	dmg-max 13-15	circ	
+suffix	magicsuffix.txt	30	greater-evisceration	Greater Evisceration	add_late_duplicate	of Maiming	14	79	79	74	63			48	48	dmg-max 13-15	circ	
+suffix	magicsuffix.txt	34	greater-evisceration	Greater Evisceration	convert_existing_to_early	of Carnage	14	67	47	55	47		66	48	24	dmg-max 16-20	jewl	
+suffix	magicsuffix.txt	34	greater-evisceration	Greater Evisceration	add_late_duplicate	of Carnage	14	67	67	55	47			48	48	dmg-max 16-20	jewl	
+suffix	magicsuffix.txt	17	greater-evisceration	Greater Evisceration	convert_existing_to_early	of Evisceration	14	45	31	37	31		44	144	72	dmg-max 41-63	weap	wand, orb
+suffix	magicsuffix.txt	17	greater-evisceration	Greater Evisceration	add_late_duplicate	of Evisceration	14	45	45	37	31			144	144	dmg-max 41-63	weap	wand, orb
+suffix	magicsuffix.txt	41	greater-transcendence	Greater Transcendence	convert_existing_to_early	of Transcendence	15	85	59	83	71		84	24	12	dmg-min 50-60	weap	orb, wand
+suffix	magicsuffix.txt	41	greater-transcendence	Greater Transcendence	add_late_duplicate	of Transcendence	15	85	85	83	71			24	24	dmg-min 50-60	weap	orb, wand
+suffix	magicsuffix.txt	45	greater-transcendence	Greater Transcendence	convert_existing_to_early	of Performance	15	81	57	73	62		80	32	16	dmg-min 10-13	ring, amul, circ	
+suffix	magicsuffix.txt	45	greater-transcendence	Greater Transcendence	add_late_duplicate	of Performance	15	81	81	73	62			32	32	dmg-min 10-13	ring, amul, circ	
+suffix	magicsuffix.txt	47	greater-transcendence	Greater Transcendence	convert_existing_to_early	of Bliss	15	43	30	37	31		42	32	16	dmg-min 5-10	jewl	
+suffix	magicsuffix.txt	47	greater-transcendence	Greater Transcendence	add_late_duplicate	of Bliss	15	43	43	37	31			32	32	dmg-min 5-10	jewl	
+suffix	magicsuffix.txt	207	greater-perfection	Greater Perfection	convert_existing_to_early	of Nirvana	17	72	50	64	54		71	36	18	dex 21-30	amul, miss, circ	
+suffix	magicsuffix.txt	207	greater-perfection	Greater Perfection	add_late_duplicate	of Nirvana	17	72	72	64	54			36	36	dex 21-30	amul, miss, circ	
+suffix	magicsuffix.txt	222	greater-perfection	Greater Perfection	convert_existing_to_early	of Perfection	17	80	56	75	64		79	36	18	dex 20-30	tors, boot	glov
+suffix	magicsuffix.txt	222	greater-perfection	Greater Perfection	add_late_duplicate	of Perfection	17	80	80	75	64			36	36	dex 20-30	tors, boot	glov
+suffix	magicsuffix.txt	219	greater-perfection	Greater Perfection	convert_existing_to_early	of Daring	17	36	25	28	24		35	48	24	dex 7-9	jewl	
+suffix	magicsuffix.txt	219	greater-perfection	Greater Perfection	add_late_duplicate	of Daring	17	36	36	28	24			48	48	dex 7-9	jewl	
+suffix	magicsuffix.txt	212	greater-perfection	Greater Perfection	convert_existing_to_early	of Perfection	17	75	53	67	57		74	36	18	dex 16-20	ring, glov	
+suffix	magicsuffix.txt	212	greater-perfection	Greater Perfection	add_late_duplicate	of Perfection	17	75	75	67	57			36	36	dex 16-20	ring, glov	
+suffix	magicsuffix.txt	323	greater-balance	Greater Balance	convert_existing_to_early	of Balance	18	5	4	3	3		4	48	24	balance1 10-10	armo	glov
+suffix	magicsuffix.txt	323	greater-balance	Greater Balance	add_late_duplicate	of Balance	18	5	5	3	3			48	48	balance1 10-10	armo	glov
+suffix	magicsuffix.txt	324	greater-balance	Greater Balance	convert_existing_to_early	of Equilibrium	18	9	6	6	5		8	48	24	balance2 20-20	tors, belt, shld	
+suffix	magicsuffix.txt	324	greater-balance	Greater Balance	add_late_duplicate	of Equilibrium	18	9	9	6	5			48	48	balance2 20-20	tors, belt, shld	
+suffix	magicsuffix.txt	325	greater-balance	Greater Balance	convert_existing_to_early	of Stability	18	18	13	13	11		17	48	24	balance3 25-25	tors, belt	
+suffix	magicsuffix.txt	325	greater-balance	Greater Balance	add_late_duplicate	of Stability	18	18	18	13	11			48	48	balance3 25-25	tors, belt	
+suffix	magicsuffix.txt	326	greater-balance	Greater Balance	convert_existing_to_early	of Truth	18	44	31	36	31		43	48	24	balance1 7-7	jewl	
+suffix	magicsuffix.txt	326	greater-balance	Greater Balance	add_late_duplicate	of Truth	18	44	44	36	31			48	48	balance1 7-7	jewl	
+suffix	magicsuffix.txt	743	greater-balance	Greater Balance	convert_existing_to_early	of Balance	18	81	57	81	69		80	6	3	balance3 10-10	lcha	
+suffix	magicsuffix.txt	743	greater-balance	Greater Balance	add_late_duplicate	of Balance	18	81	81	81	69			6	6	balance3 10-10	lcha	
+suffix	magicsuffix.txt	308	greater-regeneration	Greater Regeneration	convert_existing_to_early	of Regeneration	19	70	49	52	44		69	48	24	regen 3-5	tors, weap, boot	scep
+suffix	magicsuffix.txt	308	greater-regeneration	Greater Regeneration	add_late_duplicate	of Regeneration	19	70	70	52	44			48	48	regen 3-5	tors, weap, boot	scep
+suffix	magicsuffix.txt	311	greater-regeneration	Greater Regeneration	convert_existing_to_early	of Revivification	19	38	27	30	26		37	48	24	regen 11-15	scep, amul, circ	
+suffix	magicsuffix.txt	311	greater-regeneration	Greater Regeneration	add_late_duplicate	of Revivification	19	38	38	30	26			48	48	regen 11-15	scep, amul, circ	
+suffix	magicsuffix.txt	307	greater-regeneration	Greater Regeneration	convert_existing_to_early	of Regeneration	19	40	28	30	26		39	48	24	regen 3-5	shld, glov	
+suffix	magicsuffix.txt	307	greater-regeneration	Greater Regeneration	add_late_duplicate	of Regeneration	19	40	40	30	26			48	48	regen 3-5	shld, glov	
+suffix	magicsuffix.txt	310	greater-regeneration	Greater Regeneration	convert_existing_to_early	of Regrowth	19	55	39	41	35		54	48	24	regen 6-9	belt, ring	
+suffix	magicsuffix.txt	310	greater-regeneration	Greater Regeneration	add_late_duplicate	of Regrowth	19	55	55	41	35			48	48	regen 6-9	belt, ring	
+suffix	magicsuffix.txt	312	greater-regeneration	Greater Regeneration	convert_existing_to_early	of Honor	19	47	33	35	30		46	48	24	regen 1-4	jewl	
+suffix	magicsuffix.txt	312	greater-regeneration	Greater Regeneration	add_late_duplicate	of Honor	19	47	47	35	30			48	48	regen 1-4	jewl	
+suffix	magicsuffix.txt	359	greater-wealth	Greater Wealth	convert_existing_to_early	of Wealth	21	17	12	12	10		16	48	24	gold% 41-80	boot, glov, belt, amul, circ	
+suffix	magicsuffix.txt	359	greater-wealth	Greater Wealth	add_late_duplicate	of Wealth	21	17	17	12	10			48	48	gold% 41-80	boot, glov, belt, amul, circ	
+suffix	magicsuffix.txt	360	greater-wealth	Greater Wealth	convert_existing_to_early	of Avarice	21	1	1	1	1		1	48	24	gold% 10-30	jewl	
+suffix	magicsuffix.txt	360	greater-wealth	Greater Wealth	add_late_duplicate	of Avarice	21	1	1	1	1			48	48	gold% 10-30	jewl	
+suffix	magicsuffix.txt	358	greater-wealth	Greater Wealth	convert_existing_to_early	of Greed	21	1	1	1	1		1	48	24	gold% 25-40	ring, amul, circ	
+suffix	magicsuffix.txt	358	greater-wealth	Greater Wealth	add_late_duplicate	of Greed	21	1	1	1	1			48	48	gold% 25-40	ring, amul, circ	
+suffix	magicsuffix.txt	354	greater-prosperity	Greater Prosperity	convert_existing_to_early	of Luck	22	53	37	48	41		52	48	24	mag% 36-50	amul, circ	
+suffix	magicsuffix.txt	354	greater-prosperity	Greater Prosperity	add_late_duplicate	of Luck	22	53	53	48	41			48	48	mag% 36-50	amul, circ	
+suffix	magicsuffix.txt	353	greater-prosperity	Greater Prosperity	convert_existing_to_early	of Luck	22	36	25	31	26		35	48	24	mag% 26-35	boot, amul, circ	
+suffix	magicsuffix.txt	353	greater-prosperity	Greater Prosperity	add_late_duplicate	of Luck	22	36	36	31	26			48	48	mag% 26-35	boot, amul, circ	
+suffix	magicsuffix.txt	357	greater-prosperity	Greater Prosperity	convert_existing_to_early	of Prosperity	22	80	56	75	64		79	12	6	mag% 16-20	jewl	
+suffix	magicsuffix.txt	357	greater-prosperity	Greater Prosperity	add_late_duplicate	of Prosperity	22	80	80	75	64			12	12	mag% 16-20	jewl	
+suffix	magicsuffix.txt	352	greater-prosperity	Greater Prosperity	convert_existing_to_early	of Fortune	22	26	18	19	16		25	48	24	mag% 21-25	boot, glov, amul, circ, ring	
+suffix	magicsuffix.txt	352	greater-prosperity	Greater Prosperity	add_late_duplicate	of Fortune	22	26	26	19	16			48	48	mag% 21-25	boot, glov, amul, circ, ring	
+suffix	magicsuffix.txt	248	greater-enlightenment	Greater Enlightenment	convert_existing_to_early	of Enlightenment	23	41	29	33	28		40	36	18	enr 21-30	amul, orb, circ, wand, staf	
+suffix	magicsuffix.txt	248	greater-enlightenment	Greater Enlightenment	add_late_duplicate	of Enlightenment	23	41	41	33	28			36	36	enr 21-30	amul, orb, circ, wand, staf	
+suffix	magicsuffix.txt	260	greater-enlightenment	Greater Enlightenment	convert_existing_to_early	of Knowledge	23	41	29	33	28		40	36	18	enr 7-9	jewl	
+suffix	magicsuffix.txt	260	greater-enlightenment	Greater Enlightenment	add_late_duplicate	of Knowledge	23	41	41	33	28			36	36	enr 7-9	jewl	
+suffix	magicsuffix.txt	257	greater-enlightenment	Greater Enlightenment	convert_existing_to_early	of Sorcery	23	26	18	21	18		25	36	18	enr 11-15	helm, scep	
+suffix	magicsuffix.txt	257	greater-enlightenment	Greater Enlightenment	add_late_duplicate	of Sorcery	23	26	26	21	18			36	36	enr 11-15	helm, scep	
+suffix	magicsuffix.txt	253	greater-enlightenment	Greater Enlightenment	convert_existing_to_early	of Wizardry	23	41	29	33	28		40	36	18	enr 16-20	ring	
+suffix	magicsuffix.txt	253	greater-enlightenment	Greater Enlightenment	add_late_duplicate	of Wizardry	23	41	41	33	28			36	36	enr 16-20	ring	
+suffix	magicsuffix.txt	288	greater-vita	Greater Vita	convert_existing_to_early	of the Whale	26	50	35	37	31		49	36	18	hp 81-100	tors, belt, amul, phlm, circ	
+suffix	magicsuffix.txt	288	greater-vita	Greater Vita	add_late_duplicate	of the Whale	26	50	50	37	31			36	36	hp 81-100	tors, belt, amul, phlm, circ	
+suffix	magicsuffix.txt	294	greater-vita	Greater Vita	convert_existing_to_early	of the Colosuss	26	75	53	67	57		74	36	18	hp 41-60	shld, pelt	
+suffix	magicsuffix.txt	294	greater-vita	Greater Vita	add_late_duplicate	of the Colosuss	26	75	75	67	57			36	36	hp 41-60	shld, pelt	
+suffix	magicsuffix.txt	299	greater-vita	Greater Vita	convert_existing_to_early	of the Mammoth	26	68	48	60	51		67	36	18	hp 31-40	club, hamm, mace, ring, helm	
+suffix	magicsuffix.txt	299	greater-vita	Greater Vita	add_late_duplicate	of the Mammoth	26	68	68	60	51			36	36	hp 31-40	club, hamm, mace, ring, helm	
+suffix	magicsuffix.txt	301	greater-vita	Greater Vita	convert_existing_to_early	of Hope	26	45	31	37	31		44	48	24	hp 9-20	jewl	
+suffix	magicsuffix.txt	301	greater-vita	Greater Vita	add_late_duplicate	of Hope	26	45	45	37	31			48	48	hp 9-20	jewl	
+suffix	magicsuffix.txt	730	greater-vita	Greater Vita	convert_existing_to_early	of Vita	26	88	62	88	75		87	6	3	hp 60-70	lcha	
+suffix	magicsuffix.txt	730	greater-vita	Greater Vita	add_late_duplicate	of Vita	26	88	88	88	75			6	6	hp 60-70	lcha	
+suffix	magicsuffix.txt	104	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Locust	27	20	14	15	13		19	84	42	lifesteal 6-7	weap	orb
+suffix	magicsuffix.txt	104	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Locust	27	20	20	15	13			84	84	lifesteal 6-7	weap	orb
+suffix	magicsuffix.txt	114	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Wraith	28	21	15	16	14		20	84	42	manasteal 6-7	weap	
+suffix	magicsuffix.txt	114	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Wraith	28	21	21	16	14			84	84	manasteal 6-7	weap	
+suffix	magicsuffix.txt	105	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Lamprey	27	55	39	43	37		54	84	42	lifesteal 8-9	mele	orb
+suffix	magicsuffix.txt	105	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Lamprey	27	55	55	43	37			84	84	lifesteal 8-9	mele	orb
+suffix	magicsuffix.txt	115	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Vampire	28	56	39	48	41		55	84	42	manasteal 8-9	mele	
+suffix	magicsuffix.txt	115	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Vampire	28	56	56	48	41			84	84	manasteal 8-9	mele	
+suffix	magicsuffix.txt	112	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Lamprey	27	85	59	73	62		84	24	12	lifesteal 6-6	amul	
+suffix	magicsuffix.txt	112	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Lamprey	27	85	85	73	62			24	24	lifesteal 6-6	amul	
+suffix	magicsuffix.txt	118	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Vampire	28	78	55	66	56		77	48	24	manasteal 7-8	amul, circ	
+suffix	magicsuffix.txt	118	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Vampire	28	78	78	66	56			48	48	manasteal 7-8	amul, circ	
+suffix	magicsuffix.txt	108	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Lamprey	27	77	54	65	55		76	48	24	lifesteal 7-8	ring, circ	
+suffix	magicsuffix.txt	108	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Lamprey	27	77	77	65	55			48	48	lifesteal 7-8	ring, circ	
+suffix	magicsuffix.txt	109	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Leech	27	34	24	26	22		33	48	24	lifesteal 3-3	glov	
+suffix	magicsuffix.txt	109	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Leech	27	34	34	26	22			48	48	lifesteal 3-3	glov	
+suffix	magicsuffix.txt	119	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Bat	28	35	25	27	23		34	48	24	manasteal 3-3	glov	
+suffix	magicsuffix.txt	119	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Bat	28	35	35	27	23			48	48	manasteal 3-3	glov	
+suffix	magicsuffix.txt	122	greater-leech	Greater Lamprey/Vampire	convert_existing_to_early	of the Vampire	28	86	60	74	63		85	24	12	manasteal 6-8	ring	
+suffix	magicsuffix.txt	122	greater-leech	Greater Lamprey/Vampire	add_late_duplicate	of the Vampire	28	86	86	74	63			24	24	manasteal 6-8	ring	
+suffix	magicsuffix.txt	237	greater-titan	Greater Titan	convert_existing_to_early	of the Giant	31	59	41	51	43		58	36	18	str 10-15	mele, glov	blun
+suffix	magicsuffix.txt	237	greater-titan	Greater Titan	add_late_duplicate	of the Giant	31	59	59	51	43			36	36	str 10-15	mele, glov	blun
+suffix	magicsuffix.txt	228	greater-titan	Greater Titan	convert_existing_to_early	of Atlus	31	71	50	63	54		70	36	18	str 21-30	amul, belt, club, hamm, circ	
+suffix	magicsuffix.txt	228	greater-titan	Greater Titan	add_late_duplicate	of Atlus	31	71	71	63	54			36	36	str 21-30	amul, belt, club, hamm, circ	
+suffix	magicsuffix.txt	236	greater-titan	Greater Titan	convert_existing_to_early	of the Ox	31	45	31	37	31		44	36	18	str 6-9	mele, glov, shld	blun
+suffix	magicsuffix.txt	236	greater-titan	Greater Titan	add_late_duplicate	of the Ox	31	45	45	37	31			36	36	str 6-9	mele, glov, shld	blun
+suffix	magicsuffix.txt	240	greater-titan	Greater Titan	convert_existing_to_early	of Virility	31	50	35	42	36		49	48	24	str 7-9	jewl	
+suffix	magicsuffix.txt	240	greater-titan	Greater Titan	add_late_duplicate	of Virility	31	50	50	42	36			48	48	str 7-9	jewl	
+suffix	magicsuffix.txt	233	greater-titan	Greater Titan	convert_existing_to_early	of the Titan	31	74	52	66	56		73	36	18	str 16-20	ring, scep, mace, tors	
+suffix	magicsuffix.txt	233	greater-titan	Greater Titan	add_late_duplicate	of the Titan	31	74	74	66	56			36	36	str 16-20	ring, scep, mace, tors	
+suffix	magicsuffix.txt	741	greater-titan	Greater Titan	convert_existing_to_early	of Energy	31	61	43	61	52		60	4	2	enr 5-8	lcha	
+suffix	magicsuffix.txt	741	greater-titan	Greater Titan	add_late_duplicate	of Energy	31	61	61	61	52			4	4	enr 5-8	lcha	
+suffix	magicsuffix.txt	321	greater-inertia	Greater Inertia	convert_existing_to_early	of Traveling	35	65	46	57	48		64	48	24	move3 30-30; stamdrain 80-90	boot	
+suffix	magicsuffix.txt	321	greater-inertia	Greater Inertia	add_late_duplicate	of Traveling	35	65	65	57	48			48	48	move3 30-30; stamdrain 80-90	boot	
+suffix	magicsuffix.txt	320	greater-inertia	Greater Inertia	convert_existing_to_early	of Speed	35	37	26	29	25		36	48	24	move3 30-30	boot, circ	
+suffix	magicsuffix.txt	320	greater-inertia	Greater Inertia	add_late_duplicate	of Speed	35	37	37	29	25			48	48	move3 30-30	boot, circ	
+suffix	magicsuffix.txt	742	greater-inertia	Greater Inertia	convert_existing_to_early	of Inertia	35	81	57	81	69		80	6	3	move3 10-10	lcha	
+suffix	magicsuffix.txt	742	greater-inertia	Greater Inertia	add_late_duplicate	of Inertia	35	81	81	81	69			6	6	move3 10-10	lcha	
+suffix	magicsuffix.txt	302	greater-elephant	Greater Elephant	convert_existing_to_early	of the Elephant	41	66	46	58	49		65	24	12	hp/lvl(4) -; mana/lvl(2) -	ring, amul	
+suffix	magicsuffix.txt	302	greater-elephant	Greater Elephant	add_late_duplicate	of the Elephant	41	66	66	58	49			24	24	hp/lvl(4) -; mana/lvl(2) -	ring, amul	
+suffix	magicsuffix.txt	303	greater-elephant	Greater Elephant	convert_existing_to_early	of the Elephant	41	37	26	7	6		36	24	12	hp/lvl(4) -; mana/lvl(2) -	circ, pelt	
+suffix	magicsuffix.txt	303	greater-elephant	Greater Elephant	add_late_duplicate	of the Elephant	41	37	37	7	6			24	24	hp/lvl(4) -; mana/lvl(2) -	circ, pelt	
+suffix	magicsuffix.txt	304	greater-elephant	Greater Elephant	convert_existing_to_early	of the Kraken	41	20	14	1	1		19	12	6	hp/lvl(6) -	tors, amul, pelt, phlm	
+suffix	magicsuffix.txt	304	greater-elephant	Greater Elephant	add_late_duplicate	of the Kraken	41	20	20	1	1			12	12	hp/lvl(6) -	tors, amul, pelt, phlm	
+suffix	magicsuffix.txt	267	greater-zodiac	Greater Zodiac	convert_existing_to_early	of Agility2	42	75	53	75	64		74	12	6	dex% 21-30	weap, boot	
+suffix	magicsuffix.txt	267	greater-zodiac	Greater Zodiac	add_late_duplicate	of Agility2	42	75	75	75	64			12	12	dex% 21-30	weap, boot	
+suffix	magicsuffix.txt	270	greater-zodiac	Greater Zodiac	convert_existing_to_early	of Power2	42	75	53	75	64		74	12	6	str% 21-30	weap, glov	
+suffix	magicsuffix.txt	270	greater-zodiac	Greater Zodiac	add_late_duplicate	of Power2	42	75	75	75	64			12	12	str% 21-30	weap, glov	
+suffix	magicsuffix.txt	273	greater-zodiac	Greater Zodiac	convert_existing_to_early	of Endurance2	42	75	53	75	64		74	12	6	vit% 21-30	weap, glov	
+suffix	magicsuffix.txt	273	greater-zodiac	Greater Zodiac	add_late_duplicate	of Endurance2	42	75	75	75	64			12	12	vit% 21-30	weap, glov	
+suffix	magicsuffix.txt	276	greater-zodiac	Greater Zodiac	convert_existing_to_early	of Spirit2	42	75	53	75	64		74	12	6	enr% 21-30	weap, glov	
+suffix	magicsuffix.txt	276	greater-zodiac	Greater Zodiac	add_late_duplicate	of Spirit2	42	75	75	75	64			12	12	enr% 21-30	weap, glov	
+suffix	magicsuffix.txt	280	greater-zodiac	Greater Zodiac	convert_existing_to_early	of the Zodiac	42	86	60	83	71		85	12	6	all-stats 21-30	amul, ring, circ, orb, staf, wand	
+suffix	magicsuffix.txt	280	greater-zodiac	Greater Zodiac	add_late_duplicate	of the Zodiac	42	86	86	83	71			12	12	all-stats 21-30	amul, ring, circ, orb, staf, wand	
+suffix	magicsuffix.txt	263	greater-zodiac	Greater Zodiac	convert_existing_to_early	of Power	42	1	1	1	1		1	12	6	str/lvl(3) -	belt, amul	
+suffix	magicsuffix.txt	263	greater-zodiac	Greater Zodiac	add_late_duplicate	of Power	42	1	1	1	1			12	12	str/lvl(3) -	belt, amul	
+suffix	magicsuffix.txt	262	greater-zodiac	Greater Zodiac	convert_existing_to_early	of Grace	42	1	1	1	1		1	12	6	dex/lvl(3) -	helm, amul	
+suffix	magicsuffix.txt	262	greater-zodiac	Greater Zodiac	add_late_duplicate	of Grace	42	1	1	1	1			12	12	dex/lvl(3) -	helm, amul	
+suffix	magicsuffix.txt	186	greater-elements	Greater Elements	convert_existing_to_early	of the Yeti	43	20	14	1	1		19	12	6	res-cold/lvl(6) -	armo, ring, amul	
+suffix	magicsuffix.txt	186	greater-elements	Greater Elements	add_late_duplicate	of the Yeti	43	20	20	1	1			12	12	res-cold/lvl(6) -	armo, ring, amul	
+suffix	magicsuffix.txt	188	greater-elements	Greater Elements	convert_existing_to_early	of the Phoenix	43	20	14	1	1		19	12	6	res-fire/lvl(6) -	armo, ring, amul	
+suffix	magicsuffix.txt	188	greater-elements	Greater Elements	add_late_duplicate	of the Phoenix	43	20	20	1	1			12	12	res-fire/lvl(6) -	armo, ring, amul	
+suffix	magicsuffix.txt	190	greater-elements	Greater Elements	convert_existing_to_early	of the Efreeti	43	20	14	1	1		19	12	6	res-ltng/lvl(6) -	armo, ring, amul	
+suffix	magicsuffix.txt	190	greater-elements	Greater Elements	add_late_duplicate	of the Efreeti	43	20	20	1	1			12	12	res-ltng/lvl(6) -	armo, ring, amul	
+suffix	magicsuffix.txt	192	greater-elements	Greater Elements	convert_existing_to_early	of the Cobra	43	20	14	1	1		19	12	6	res-pois/lvl(6) -	armo, ring, amul	
+suffix	magicsuffix.txt	192	greater-elements	Greater Elements	add_late_duplicate	of the Cobra	43	20	20	1	1			12	12	res-pois/lvl(6) -	armo, ring, amul	
+suffix	magicsuffix.txt	195	greater-elements	Greater Elements	convert_existing_to_early	of the Elements	43	77	54	71	60		76	24	12	res-cold/lvl(5) -; res-fire/lvl(5) -; res-ltng/lvl(5) -	circ, shld	
+suffix	magicsuffix.txt	195	greater-elements	Greater Elements	add_late_duplicate	of the Elements	43	77	77	71	60			24	24	res-cold/lvl(5) -; res-fire/lvl(5) -; res-ltng/lvl(5) -	circ, shld	
+suffix	magicsuffix.txt	125	greater-lich	Greater Lich	convert_existing_to_early	of the Lich	60	87	61	84	71		86	12	6	manasteal 8-9; lifesteal 10-12	ring, amul	
+suffix	magicsuffix.txt	125	greater-lich	Greater Lich	add_late_duplicate	of the Lich	60	87	87	84	71			12	12	manasteal 8-9; lifesteal 10-12	ring, amul	
+suffix	magicsuffix.txt	4	greater-guarding	Greater Guarding	convert_existing_to_early	of Guarding	61	51	36	46	39		50	60	30	ac 26-50	ring, amul	
+suffix	magicsuffix.txt	4	greater-guarding	Greater Guarding	add_late_duplicate	of Guarding	61	51	51	46	39			60	60	ac 26-50	ring, amul	
+suffix	magicsuffix.txt	386	greater-paralysis	Greater Paralysis	convert_existing_to_early	Paralysis1	64	62	43	56	48		61	24	12	slow 21-25	weap	
+suffix	magicsuffix.txt	386	greater-paralysis	Greater Paralysis	add_late_duplicate	Paralysis1	64	62	62	56	48			24	24	slow 21-25	weap	
+suffix	magicsuffix.txt	385	greater-paralysis	Greater Paralysis	convert_existing_to_early	Daze1	64	46	32	41	35		45	24	12	slow 16-20	weap, glov	
+suffix	magicsuffix.txt	385	greater-paralysis	Greater Paralysis	add_late_duplicate	Daze1	64	46	46	41	35			24	24	slow 16-20	weap, glov	
+suffix	magicsuffix.txt	389	greater-blindness	Greater Blindness	convert_existing_to_early	of Blindness1	65	61	43	57	48		60	12	6	stupidity 3-3	weap	
+suffix	magicsuffix.txt	389	greater-blindness	Greater Blindness	add_late_duplicate	of Blindness1	65	61	61	57	48			12	12	stupidity 3-3	weap	
+suffix	magicsuffix.txt	390	greater-reanimation	Greater Reanimation	convert_existing_to_early	of Reanimation1	66	51	36	47	40		50	12	6	reanimate(5) 3-5	weap, glov, amul	
+suffix	magicsuffix.txt	390	greater-reanimation	Greater Reanimation	add_late_duplicate	of Reanimation1	66	51	51	47	40			12	12	reanimate(5) 3-5	weap, glov, amul	
+suffix	magicsuffix.txt	317	greater-four-seasons	Greater Four Seasons	convert_existing_to_early	of the Soul2	67	75	53	75	64		74	24	12	heal-kill 16-25	weap, belt, ring, amul, circ	
+suffix	magicsuffix.txt	317	greater-four-seasons	Greater Four Seasons	add_late_duplicate	of the Soul2	67	75	75	75	64			24	24	heal-kill 16-25	weap, belt, ring, amul, circ	
+suffix	magicsuffix.txt	201	greater-four-seasons	Greater Four Seasons	convert_existing_to_early	of the Four Seasons2	67	87	61	75	64		86	12	6	res-all-max 4-6	armo, shld, ring, amul	
+suffix	magicsuffix.txt	201	greater-four-seasons	Greater Four Seasons	add_late_duplicate	of the Four Seasons2	67	87	87	75	64			12	12	res-all-max 4-6	armo, shld, ring, amul	
+suffix	magicsuffix.txt	625	greater-draining	Greater Draining	convert_existing_to_early	of Siphoning	80	20	14	20	17		19	2	1	healperhit 10-12	mele, amaz	
+suffix	magicsuffix.txt	625	greater-draining	Greater Draining	add_late_duplicate	of Siphoning	80	20	20	20	17			2	2	healperhit 10-12	mele, amaz	
+suffix	magicsuffix.txt	785	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of the Swift	200	80	56	50	43		79	3	2	swing1 20-30	misl	
+suffix	magicsuffix.txt	785	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of the Swift	200	80	80	50	43			3	3	swing1 20-30	misl	
+suffix	magicsuffix.txt	788	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Slaying	201	80	56	50	43		79	3	2	deadly 15-20	misl	
+suffix	magicsuffix.txt	788	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Slaying	201	80	80	50	43			3	3	deadly 15-20	misl	
+suffix	magicsuffix.txt	791	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Maiming	201	80	56	50	43		79	3	2	openwounds 15-20	misl	
+suffix	magicsuffix.txt	791	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Maiming	201	80	80	50	43			3	3	openwounds 15-20	misl	
+suffix	magicsuffix.txt	794	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Piercing	201	80	56	50	43		79	3	2	pierce 20-30	misl	
+suffix	magicsuffix.txt	794	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Piercing	201	80	80	50	43			3	3	pierce 20-30	misl	
+suffix	magicsuffix.txt	797	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of the Vampire	202	80	56	40	34		79	3	2	lifesteal 5-10	misl	
+suffix	magicsuffix.txt	797	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of the Vampire	202	80	80	40	34			3	3	lifesteal 5-10	misl	
+suffix	magicsuffix.txt	800	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of the Bat	203	80	56	40	34		79	3	2	manasteal 5-10	misl	
+suffix	magicsuffix.txt	800	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of the Bat	203	80	80	40	34			3	3	manasteal 5-10	misl	
+suffix	magicsuffix.txt	803	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Resistance	204	80	56	40	34		79	3	2	res-fire 20-30	misl	
+suffix	magicsuffix.txt	803	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Resistance	204	80	80	40	34			3	3	res-fire 20-30	misl	
+suffix	magicsuffix.txt	806	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Resistance	204	80	56	40	34		79	3	2	res-cold 20-30	misl	
+suffix	magicsuffix.txt	806	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Resistance	204	80	80	40	34			3	3	res-cold 20-30	misl	
+suffix	magicsuffix.txt	809	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Resistance	204	80	56	40	34		79	3	2	res-ltng 20-30	misl	
+suffix	magicsuffix.txt	809	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Resistance	204	80	80	40	34			3	3	res-ltng 20-30	misl	
+suffix	magicsuffix.txt	812	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Resistance	204	80	56	40	34		79	3	2	res-pois 20-30	misl	
+suffix	magicsuffix.txt	812	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Resistance	204	80	80	40	34			3	3	res-pois 20-30	misl	
+suffix	magicsuffix.txt	815	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Resistance	204	80	56	40	34		79	3	2	res-all 8-12	misl	
+suffix	magicsuffix.txt	815	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Resistance	204	80	80	40	34			3	3	res-all 8-12	misl	
+suffix	magicsuffix.txt	818	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Fortune	205	50	35	50	43		49	3	2	mag% 25-40; gold% 50-80	misl	
+suffix	magicsuffix.txt	818	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Fortune	205	50	50	50	43			3	3	mag% 25-40; gold% 50-80	misl	
+suffix	magicsuffix.txt	822	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Transcendence	206	85	59	80	68		84	1	1	hit-skill(Lower Resist) 10-10; pierce-elem 10-15	misl	
+suffix	magicsuffix.txt	822	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Transcendence	206	85	85	80	68			1	1	hit-skill(Lower Resist) 10-10; pierce-elem 10-15	misl	
+suffix	magicsuffix.txt	823	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Transcendence	206	85	59	80	68		84	1	1	hit-skill(Amplify Damage) 10-10; pierce-dmg 10-15	misl	
+suffix	magicsuffix.txt	823	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Transcendence	206	85	85	80	68			1	1	hit-skill(Amplify Damage) 10-10; pierce-dmg 10-15	misl	
+suffix	magicsuffix.txt	824	greater-missile-suffix	Greater missile suffixes	convert_existing_to_early	of Transcendence	206	85	59	80	68		84	1	1	hit-skill(Weaken) 10-10; pierce-mag 10-15	misl	
+suffix	magicsuffix.txt	824	greater-missile-suffix	Greater missile suffixes	add_late_duplicate	of Transcendence	206	85	85	80	68			1	1	hit-skill(Weaken) 10-10; pierce-mag 10-15	misl	

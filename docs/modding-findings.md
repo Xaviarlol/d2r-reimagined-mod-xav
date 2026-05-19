@@ -66,7 +66,9 @@ Full D2RDoc reading notes from the 2026-05-18 sitemap crawl: `docs/d2rdoc-readin
 - Phase 1 only gives the best normal affix in each family a true early/late frequency split. The early top row starts at the compressed level, ends at `original_top_level - 1`, and uses half the late frequency.
 - Preserve family ordering after compression. A weaker row such as lower Cruel must not end up requiring a higher level than the stronger Cruel row.
 - Directly editing shared `spawnable=1, rare=1` affix rows also changes magic items. This is acceptable for the Phase 1 affix compression.
-- Phase 2 adds Greater Affixes with multiple technical level bands. Example: `Greater Grandmaster's` starts at level `50`, gains broader rider variants across `50-65`, `66-80`, and `81+`, and stays rare by low per-row frequency.
+- Phase 2 adds Greater Affixes with three adjacent technical level bands. Early is `50-65`, Mid is `66-80`, and Late is `81+`; each band's `maxlevel` ends immediately before the next band starts, and the Late band has blank `maxlevel`.
+- Greater band weights use a `1 / 2 / 3` ratio derived from the source apex frequency: Early `round(apex_freq / 3)`, Mid `round(2 * apex_freq / 3)`, Late `apex_freq`, each minimum `1`. After existing affixes are scaled by `10`, the Late Greater band is exactly `10x` rarer than its source apex.
+- Greater `levelreq` copies the source apex row's `levelreq` after the same 15% reduction used by Phase 1, rather than copying the Greater band's `level`.
 
 ## Set Item Buff Pass
 
@@ -284,8 +286,9 @@ Phase 1 is proportional rare affix level compression:
 
 Phase 2 is the Greater Affix layer:
 
-- Add one player-facing Greater category per family, implemented as three technical rows.
-- Default Greater bands are early/mid/late with frequencies `1 / 2 / 3`.
+- Add one player-facing Greater category per family, implemented as three adjacent technical bands: Early `50-65`, Mid `66-80`, Late `81+`.
+- Greater band frequency ratio is Early/Mid/Late = `1 / 2 / 3`, derived from the source apex frequency so the Late band equals the apex frequency before the global `x10` scale.
+- Greater `levelreq` uses the source apex `levelreq` after the 15% reduction.
 - Greater rows stay rare-only, use the same family `group`, and should not stack with the normal family row.
 - During Phase 2, scale every existing affix row frequency by the same factor, including `rare=0` magic-only rows. Scaling only rare rows would preserve rare odds but distort magic-item affix odds.
 - Greater frequency should be calculated per item-type scope: the total Greater frequency eligible for an item type should equal the current apex frequency before the global scale, making Greater exactly `10x` rarer than that apex after the existing rows are scaled by `10`.

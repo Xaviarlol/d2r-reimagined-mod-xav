@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import math
 from collections import defaultdict
 from functools import lru_cache
 from pathlib import Path
@@ -14,9 +15,15 @@ OUT = ROOT / "docs" / "rare-greater-affix-apex-audit-2026-05-19.md"
 CHANCE_TSV = ROOT / "docs" / "rare-greater-affix-chance-table-2026-05-19.tsv"
 SANITY_TSV = ROOT / "docs" / "rare-greater-affix-probability-sanity-2026-05-19.tsv"
 SCOPE_TSV = ROOT / "docs" / "rare-greater-affix-scope-validation-2026-05-19.tsv"
+EXPANDED_TSV = ROOT / "docs" / "rare-greater-affix-expanded-candidates-2026-05-19.tsv"
 ALVL = 90
 SLOTS = 3
 FREQ_SCALE = 10
+GREATER_BANDS = (
+    ("early", 50, 65, 1 / 3),
+    ("mid", 66, 80, 2 / 3),
+    ("late", 81, None, 1.0),
+)
 
 
 def read_tsv(path: Path) -> list[dict[str, str]]:
@@ -86,6 +93,24 @@ def eligible(row: dict[str, str], item_type: str, alvl: int = ALVL) -> bool:
 
 def freq(row: dict[str, str]) -> int:
     return int(row.get("frequency") or 0)
+
+
+def round_half_up(value: float) -> int:
+    return math.floor(value + 0.5)
+
+
+def compressed_levelreq(value: str) -> str:
+    value = (value or "").strip()
+    if value == "":
+        return ""
+    original = int(value)
+    if original == 0:
+        return "0"
+    return str(max(1, round_half_up(original * 0.85)))
+
+
+def greater_band_frequency(apex_frequency: int, multiplier: float) -> int:
+    return max(1, round_half_up(apex_frequency * multiplier))
 
 
 def proposed_freq(row: dict[str, str]) -> int:
@@ -899,23 +924,32 @@ def synthetic_greater_rows_for_item(affixes: dict[str, list[dict[str, str]]], si
         scoped_candidate = dict(candidate)
         scoped_candidate["sample"] = item_type
         for idx, apex in enumerate(apex_rows_for(affixes, scoped_candidate), start=1):
-            row = {
-                "candidate_id": candidate["id"],
-                "name": candidate["name"],
-                "side": side,
-                "group": apex.get("group", ""),
-                "level": "50",
-                "maxlevel": "",
-                "frequency": apex.get("frequency", "0"),
-                "rare": "1",
-                "synthetic_greater": "1",
-                "source_apex_line": apex.get("line", ""),
-                "source_item_type": item_type,
-                "itype1": item_type,
-            }
-            row["line"] = f"synthetic-{candidate['id']}-{item_type}-{idx}"
-            if int(row["frequency"] or 0) > 0:
-                synthetic.append(row)
+            apex_frequency = freq(apex)
+            for band, level, maxlevel, multiplier in GREATER_BANDS:
+                row = {
+                    "candidate_id": candidate["id"],
+                    "name": candidate["name"],
+                    "side": side,
+                    "group": apex.get("group", ""),
+                    "band": band,
+                    "level": str(level),
+                    "maxlevel": "" if maxlevel is None else str(maxlevel),
+                    "levelreq": compressed_levelreq(apex.get("levelreq", "")),
+                    "frequency": str(greater_band_frequency(apex_frequency, multiplier)),
+                    "rare": "1",
+                    "synthetic_greater": "1",
+                    "source_apex_line": apex.get("line", ""),
+                    "source_apex_name": apex.get("name", ""),
+                    "source_apex_level": apex.get("level", ""),
+                    "source_apex_maxlevel": apex.get("maxlevel", ""),
+                    "source_apex_levelreq": apex.get("levelreq", ""),
+                    "source_apex_frequency": apex.get("frequency", ""),
+                    "source_item_type": item_type,
+                    "itype1": item_type,
+                }
+                row["line"] = f"synthetic-{candidate['id']}-{item_type}-{idx}-{band}"
+                if int(row["frequency"] or 0) > 0:
+                    synthetic.append(row)
     return synthetic
 
 
@@ -971,6 +1005,18 @@ def chance_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, str]
         slot = cand_weight / after_total if after_total else 0.0
         apex_slot_before = apex_weight_before / before_total if before_total else 0.0
         apex_slot_after = apex_weight_after / after_total if after_total else 0.0
+        greater_levelreqs = sorted(
+            {
+                r.get("levelreq", "")
+                for r in after_pool
+                if r.get("candidate_id") == c["id"] and r.get("synthetic_greater") == "1"
+            },
+            key=lambda x: int(x) if x.isdigit() else -1,
+        )
+        source_levelreqs = sorted(
+            {r.get("levelreq", "") for r in apex_rows},
+            key=lambda x: int(x) if x.isdigit() else -1,
+        )
         item = exact_groupblocked_chance(
             group_weights(after_pool, lambda row, cid=c["id"]: row.get("candidate_id") == cid, proposed_freq),
             SLOTS,
@@ -1006,6 +1052,8 @@ def chance_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, str]
             "ordinary_absolute_drift": ordinary_drift,
             "old_relative_check_delta": old_relative_check_delta,
             "apex_rows_counted": "; ".join(sorted({row["name"] for row in apex_rows})),
+            "source_apex_levelreqs": ", ".join(source_levelreqs),
+            "greater_levelreqs": ", ".join(greater_levelreqs),
         })
     return rows
 
@@ -1064,6 +1112,11 @@ def scope_validation_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict
             apex_weight_before = sum(freq(row) for row in apex_rows)
             apex_weight_after = apex_weight_before * FREQ_SCALE
             ratio = apex_weight_after / candidate_weight if candidate_weight else 0.0
+            eligible_greater_rows = [
+                row
+                for row in synthetic
+                if row.get("candidate_id") == candidate["id"] and eligible(row, item_type)
+            ]
             rows.append({
                 "candidate_id": candidate["id"],
                 "candidate": candidate["name"],
@@ -1077,7 +1130,47 @@ def scope_validation_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict
                 "ratio_delta_from_10x": ratio - FREQ_SCALE,
                 "apex_rows_counted": "; ".join(sorted({row["name"] for row in apex_rows})),
                 "apex_lines": "; ".join(sorted(row["line"] for row in apex_rows)),
+                "source_apex_levelreqs": ", ".join(sorted({row.get("levelreq", "") for row in apex_rows}, key=lambda x: int(x) if x.isdigit() else -1)),
+                "greater_late_levelreqs": ", ".join(sorted({row.get("levelreq", "") for row in eligible_greater_rows}, key=lambda x: int(x) if x.isdigit() else -1)),
             })
+    return rows
+
+
+def expanded_candidate_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, str]]:
+    rows: list[dict[str, str]] = []
+    seen: set[tuple[str, str, str, str, str, str]] = set()
+    for candidate in CANDIDATES:
+        for item_type in sorted(ITEMTYPES):
+            for row in synthetic_greater_rows_for_item(affixes, candidate["side"], item_type):
+                key = (
+                    row["candidate_id"],
+                    row["source_item_type"],
+                    row["source_apex_line"],
+                    row["band"],
+                    row["level"],
+                    row["frequency"],
+                )
+                if key in seen:
+                    continue
+                seen.add(key)
+                rows.append({
+                    "candidate_id": row["candidate_id"],
+                    "candidate": row["name"],
+                    "side": row["side"],
+                    "item_type": row["source_item_type"],
+                    "group": row["group"],
+                    "band": row["band"],
+                    "level": row["level"],
+                    "maxlevel": row["maxlevel"],
+                    "levelreq": row["levelreq"],
+                    "frequency": row["frequency"],
+                    "source_apex_line": row["source_apex_line"],
+                    "source_apex_name": row["source_apex_name"],
+                    "source_apex_level": row["source_apex_level"],
+                    "source_apex_maxlevel": row["source_apex_maxlevel"],
+                    "source_apex_levelreq": row["source_apex_levelreq"],
+                    "source_apex_frequency": row["source_apex_frequency"],
+                })
     return rows
 
 
@@ -1139,6 +1232,7 @@ def main() -> None:
     chances = chance_rows(affixes)
     sanity = probability_sanity_rows(affixes)
     scope_checks = scope_validation_rows(affixes)
+    expanded = expanded_candidate_rows(affixes)
     audit = group_audit(affixes)
     chance_headers = [
         "Greater candidate",
@@ -1157,6 +1251,8 @@ def main() -> None:
         "Apex if 3 same-side slots after",
         "Greater vs apex after",
         "Ordinary affix absolute drift",
+        "Source apex levelreqs",
+        "Greater levelreqs",
         "Apex rows counted",
         "Apex baseline",
         "Draft greater payload",
@@ -1179,6 +1275,8 @@ def main() -> None:
             "Apex if 3 same-side slots after": pct(c["apex_item_chance"]),
             "Greater vs apex after": c["greater_vs_apex"],
             "Ordinary affix absolute drift": pct(c["ordinary_absolute_drift"]),
+            "Source apex levelreqs": c["source_apex_levelreqs"],
+            "Greater levelreqs": c["greater_levelreqs"],
             "Apex rows counted": c["apex_rows_counted"],
             "Apex baseline": c["apex"],
             "Draft greater payload": c["greater"],
@@ -1219,11 +1317,33 @@ def main() -> None:
         "ratio_delta_from_10x",
         "apex_rows_counted",
         "apex_lines",
+        "source_apex_levelreqs",
+        "greater_late_levelreqs",
     ]
     write_tsv(SCOPE_TSV, scope_checks, scope_headers)
+    expanded_headers = [
+        "candidate_id",
+        "candidate",
+        "side",
+        "item_type",
+        "group",
+        "band",
+        "level",
+        "maxlevel",
+        "levelreq",
+        "frequency",
+        "source_apex_line",
+        "source_apex_name",
+        "source_apex_level",
+        "source_apex_maxlevel",
+        "source_apex_levelreq",
+        "source_apex_frequency",
+    ]
+    write_tsv(EXPANDED_TSV, expanded, expanded_headers)
     max_existing_only_delta = max((abs(float(row["existing_only_relative_delta"])) for row in sanity), default=0.0)
     max_with_greater_delta = max((abs(float(row["with_greater_relative_delta"])) for row in sanity), default=0.0)
     max_scope_ratio_delta = max((abs(float(row["ratio_delta_from_10x"])) for row in scope_checks), default=0.0)
+    missing_expanded_levelreq = sum(1 for row in expanded if not row["levelreq"])
     lines = [
         "# Rare Greater Affix Apex Audit",
         "",
@@ -1237,6 +1357,9 @@ def main() -> None:
         f"- Chance model uses affix level `{ALVL}` and the current live affix pools.",
         f"- The proposed implementation model scales every existing affix frequency by `{FREQ_SCALE}`, including `rare=0` magic-only rows. Scaling the whole affix file preserves both rare and magic affix proportions.",
         "- The chance model sets each Greater candidate's eligible frequency equal to the current apex frequency it upgrades for the item type being measured. That makes Greater exactly 10x rarer than the same apex row(s) in the final scaled table.",
+        "- Greater candidates use three non-overlapping bands: early `50-65`, mid `66-80`, and late `81+`. At affix level 90 only the late band is eligible, so the 10x scope validation checks the endgame/chase band directly.",
+        "- Greater band frequencies follow a `1:2:3` target ratio derived from the source apex frequency: early `round(apex/3)`, mid `round(2*apex/3)`, late `apex`, with a minimum frequency of 1.",
+        "- Greater `levelreq` is copied from the source apex row after the global 15% equip-requirement reduction.",
         "- The script adds drafted Greater rows synthetically for probability modeling; no game TXT files are changed by this report.",
         "- Synthetic Greater rows are per-item-type targets. The implementation pass must split actual TXT rows by item scope/element as needed to realize these weights.",
         "- `Greater per slot after` is the candidate's proposed Greater frequency divided by the final eligible same-side pool for the sample item.",
@@ -1251,6 +1374,7 @@ def main() -> None:
         f"- Existing-only relative probability delta after scaling old affixes by `{FREQ_SCALE}`: max `{max_existing_only_delta:.6%}`. This should be exactly zero apart from floating-point noise.",
         f"- Absolute ordinary-affix chance drift after adding Greater rows: max `{max_with_greater_delta:.3%}` across sampled item pools. This is the unavoidable probability mass taken by the new Greater rows.",
         f"- Per-item-type Greater-vs-apex ratio validation: max deviation from `10.0x` is `{max_scope_ratio_delta:.6f}` across `{len(scope_checks)}` candidate/item-type checks.",
+        f"- Expanded synthetic Greater rows with band, level, maxlevel, frequency, and levelreq are written to `{EXPANDED_TSV.relative_to(ROOT)}`. Missing Greater levelreq values in that table: `{missing_expanded_levelreq}`.",
         f"- Full row-level sanity data is written to `{SANITY_TSV.relative_to(ROOT)}`.",
         f"- Full per-item-type scope validation data is written to `{SCOPE_TSV.relative_to(ROOT)}`.",
         "",
