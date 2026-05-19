@@ -1,0 +1,1431 @@
+candidate_id	candidate	side	item_type	groups	greater_weight	apex_weight_before	apex_weight_after	greater_vs_apex_after	ratio_delta_from_10x	apex_rows_counted	apex_lines
+greater-grandmasters	Greater Grandmaster's	prefix	abow	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	afwe	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	ajav	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	aspe	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	axe	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	blde	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	blun	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	bow	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	club	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	comb	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	h2h	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	h2h2	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	hamm	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	jave	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	knif	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	mace	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	mele	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	miss	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	pole	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	rod	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	scep	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	slam	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	spea	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	sppl	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	staf	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	swor	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	taxe	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	thro	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	tkni	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	tpot	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	weap	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-grandmasters	Greater Grandmaster's	prefix	xbow	111	14	14	140	10.0	0.0	Grandmaster's; Wraithly1	75; 76; 77; 78; 98
+greater-godly	Greater Godly	prefix	armo	101	114	114	1140	10.0	0.0	Godly; Wraithly1	176; 182
+greater-godly	Greater Godly	prefix	ashd	101	118	118	1180	10.0	0.0	Godly; Invulnerable1; Wraithly1	176; 182; 189
+greater-godly	Greater Godly	prefix	belt	101	114	114	1140	10.0	0.0	Godly; Wraithly1	176; 182
+greater-godly	Greater Godly	prefix	boot	101	114	114	1140	10.0	0.0	Godly; Wraithly1	176; 182
+greater-godly	Greater Godly	prefix	circ	101	114	114	1140	10.0	0.0	Godly; Wraithly1	176; 182
+greater-godly	Greater Godly	prefix	cloa	101	118	118	1180	10.0	0.0	Godly; Invulnerable1; Wraithly1	176; 182; 189
+greater-godly	Greater Godly	prefix	glov	101	114	114	1140	10.0	0.0	Godly; Wraithly1	176; 182
+greater-godly	Greater Godly	prefix	grim	101	118	118	1180	10.0	0.0	Godly; Invulnerable1; Wraithly1	176; 182; 189
+greater-godly	Greater Godly	prefix	head	101	118	118	1180	10.0	0.0	Godly; Invulnerable1; Wraithly1	176; 182; 189
+greater-godly	Greater Godly	prefix	helm	101	114	114	1140	10.0	0.0	Godly; Wraithly1	176; 182
+greater-godly	Greater Godly	prefix	pelt	101	114	114	1140	10.0	0.0	Godly; Wraithly1	176; 182
+greater-godly	Greater Godly	prefix	phlm	101	114	114	1140	10.0	0.0	Godly; Wraithly1	176; 182
+greater-godly	Greater Godly	prefix	shie	101	118	118	1180	10.0	0.0	Godly; Invulnerable1; Wraithly1	176; 182; 189
+greater-godly	Greater Godly	prefix	shld	101	118	118	1180	10.0	0.0	Godly; Invulnerable1; Wraithly1	176; 182; 189
+greater-godly	Greater Godly	prefix	tors	101	118	118	1180	10.0	0.0	Godly; Invulnerable1; Wraithly1	176; 182; 189
+greater-antimagic-prefix	Greater Antimagic	prefix	ashd	102	8	8	80	10.0	0.0	Antimagic	433
+greater-antimagic-prefix	Greater Antimagic	prefix	cloa	102	8	8	80	10.0	0.0	Antimagic	433
+greater-antimagic-prefix	Greater Antimagic	prefix	grim	102	8	8	80	10.0	0.0	Antimagic	433
+greater-antimagic-prefix	Greater Antimagic	prefix	head	102	8	8	80	10.0	0.0	Antimagic	433
+greater-antimagic-prefix	Greater Antimagic	prefix	orb	102	8	8	80	10.0	0.0	Antimagic	433
+greater-antimagic-prefix	Greater Antimagic	prefix	shie	102	8	8	80	10.0	0.0	Antimagic	433
+greater-antimagic-prefix	Greater Antimagic	prefix	shld	102	8	8	80	10.0	0.0	Antimagic	433
+greater-antimagic-prefix	Greater Antimagic	prefix	staf	102	8	8	80	10.0	0.0	Antimagic	433
+greater-antimagic-prefix	Greater Antimagic	prefix	tors	102	8	8	80	10.0	0.0	Antimagic	433
+greater-antimagic-prefix	Greater Antimagic	prefix	wand	102	8	8	80	10.0	0.0	Antimagic	433
+greater-bloody	Greater Bloody	prefix	cjwl	103	8	8	80	10.0	0.0	Bloody	143
+greater-bloody	Greater Bloody	prefix	jewl	103	8	8	80	10.0	0.0	Bloody	143
+greater-bloody	Greater Bloody	prefix	lcha	103	3	3	30	10.0	0.0	Bloody	938
+greater-serrated	Greater Serrated	prefix	cjwl	104	8	8	80	10.0	0.0	Vermillion	140
+greater-serrated	Greater Serrated	prefix	jewl	104	8	8	80	10.0	0.0	Vermillion	140
+greater-serrated	Greater Serrated	prefix	lcha	104	3	3	30	10.0	0.0	Serrated	911
+greater-gritty	Greater Gritty	prefix	abow	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	afwe	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	ajav	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	aspe	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	axe	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	blde	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	blun	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	bow	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	circ	105	24	24	240	10.0	0.0	Vicious	17
+greater-gritty	Greater Gritty	prefix	cjwl	105	10	10	100	10.0	0.0	Ruby	21
+greater-gritty	Greater Gritty	prefix	club	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	comb	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	h2h	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	h2h2	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	hamm	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	jave	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	jewl	105	10	10	100	10.0	0.0	Ruby	21
+greater-gritty	Greater Gritty	prefix	knif	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	mace	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	mele	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	miss	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	pole	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	rod	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	scep	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	slam	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	spea	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	sppl	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	staf	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	swor	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	taxe	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	thro	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	tkni	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	tpot	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	weap	105	14	14	140	10.0	0.0	Gritty	153
+greater-gritty	Greater Gritty	prefix	xbow	105	14	14	140	10.0	0.0	Gritty	153
+greater-vulpine	Greater Vulpine	prefix	amul	107	6	6	60	10.0	0.0	Vulpine	412
+greater-vulpine	Greater Vulpine	prefix	ashd	107	6	6	60	10.0	0.0	Vulpine	412
+greater-vulpine	Greater Vulpine	prefix	cjwl	107	6	6	60	10.0	0.0	Dun	413
+greater-vulpine	Greater Vulpine	prefix	grim	107	6	6	60	10.0	0.0	Vulpine	412
+greater-vulpine	Greater Vulpine	prefix	head	107	6	6	60	10.0	0.0	Vulpine	412
+greater-vulpine	Greater Vulpine	prefix	jewl	107	6	6	60	10.0	0.0	Dun	413
+greater-vulpine	Greater Vulpine	prefix	orb	107	6	6	60	10.0	0.0	Vulpine	412
+greater-vulpine	Greater Vulpine	prefix	shie	107	6	6	60	10.0	0.0	Vulpine	412
+greater-vulpine	Greater Vulpine	prefix	shld	107	6	6	60	10.0	0.0	Vulpine	412
+greater-vulpine	Greater Vulpine	prefix	staf	107	6	6	60	10.0	0.0	Vulpine	412
+greater-platinum	Greater Platinum	prefix	abow	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	afwe	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	ajav	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	amul	110	12	12	120	10.0	0.0	Gold	116
+greater-platinum	Greater Platinum	prefix	aspe	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	axe	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	blde	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	blun	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	bow	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	circ	110	12	12	120	10.0	0.0	Platinum	117
+greater-platinum	Greater Platinum	prefix	cjwl	110	8	8	80	10.0	0.0	Argent	124
+greater-platinum	Greater Platinum	prefix	club	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	comb	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	glov	110	12	12	120	10.0	0.0	Gold	116
+greater-platinum	Greater Platinum	prefix	h2h	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	h2h2	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	hamm	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	jave	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	jewl	110	8	8	80	10.0	0.0	Argent	124
+greater-platinum	Greater Platinum	prefix	knif	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	lcha	110	6	6	60	10.0	0.0	Steel	920
+greater-platinum	Greater Platinum	prefix	mace	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	mele	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	miss	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	pole	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	ring	110	12	12	120	10.0	0.0	Platinum	117
+greater-platinum	Greater Platinum	prefix	rod	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	scep	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	slam	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	spea	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	sppl	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	staf	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	swor	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	taxe	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	thro	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	tkni	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	tpot	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	weap	110	8	8	80	10.0	0.0	Weird	120
+greater-platinum	Greater Platinum	prefix	xbow	110	8	8	80	10.0	0.0	Weird	120
+greater-lucky	Greater Lucky	prefix	amul	114	8	8	80	10.0	0.0	Fortuitous	418
+greater-lucky	Greater Lucky	prefix	circ	114	8	8	80	10.0	0.0	Fortuitous	418
+greater-lucky	Greater Lucky	prefix	cjwl	114	8	8	80	10.0	0.0	Emerald	419
+greater-lucky	Greater Lucky	prefix	jewl	114	8	8	80	10.0	0.0	Emerald	419
+greater-lucky	Greater Lucky	prefix	lcha	114	6	6	60	10.0	0.0	Lucky	1025
+greater-lucky	Greater Lucky	prefix	ring	114	8	8	80	10.0	0.0	Fortuitous	418
+greater-serpents	Greater Serpent's	prefix	abow	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	afwe	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	ajav	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	amul	115	4	4	40	10.0	0.0	Bahamut's	404
+greater-serpents	Greater Serpent's	prefix	ashd	115	6	6	60	10.0	0.0	Serpent's	397
+greater-serpents	Greater Serpent's	prefix	aspe	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	axe	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	belt	115	6	6	60	10.0	0.0	Serpent's	397
+greater-serpents	Greater Serpent's	prefix	blde	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	blun	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	boot	115	4	4	40	10.0	0.0	Dragon's	401
+greater-serpents	Greater Serpent's	prefix	bow	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	circ	115	4	4	40	10.0	0.0	Bahamut's	404
+greater-serpents	Greater Serpent's	prefix	cjwl	115	4	4	40	10.0	0.0	Turquoise	407
+greater-serpents	Greater Serpent's	prefix	cloa	115	4	4	40	10.0	0.0	Dragon's	401
+greater-serpents	Greater Serpent's	prefix	club	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	comb	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	glov	115	4	4	40	10.0	0.0	Dragon's	401
+greater-serpents	Greater Serpent's	prefix	grim	115	6	6	60	10.0	0.0	Serpent's	397
+greater-serpents	Greater Serpent's	prefix	h2h	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	h2h2	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	hamm	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	head	115	6	6	60	10.0	0.0	Serpent's	397
+greater-serpents	Greater Serpent's	prefix	helm	115	2	2	20	10.0	0.0	Mnemonic	408
+greater-serpents	Greater Serpent's	prefix	jave	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	jewl	115	4	4	40	10.0	0.0	Turquoise	407
+greater-serpents	Greater Serpent's	prefix	knif	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	lcha	115	3	3	30	10.0	0.0	Serpent's	1022
+greater-serpents	Greater Serpent's	prefix	mace	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	mele	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	miss	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	orb	115	4	4	40	10.0	0.0	Bahamut's	404
+greater-serpents	Greater Serpent's	prefix	pelt	115	2	2	20	10.0	0.0	Mnemonic	408
+greater-serpents	Greater Serpent's	prefix	phlm	115	2	2	20	10.0	0.0	Mnemonic	408
+greater-serpents	Greater Serpent's	prefix	pole	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	ring	115	4	4	40	10.0	0.0	Bahamut's	404
+greater-serpents	Greater Serpent's	prefix	rod	115	4	4	40	10.0	0.0	Bahamut's	404
+greater-serpents	Greater Serpent's	prefix	scep	115	4	4	40	10.0	0.0	Bahamut's	404
+greater-serpents	Greater Serpent's	prefix	shie	115	6	6	60	10.0	0.0	Serpent's	397
+greater-serpents	Greater Serpent's	prefix	shld	115	6	6	60	10.0	0.0	Serpent's	397
+greater-serpents	Greater Serpent's	prefix	slam	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	spea	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	sppl	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	staf	115	4	4	40	10.0	0.0	Bahamut's	404
+greater-serpents	Greater Serpent's	prefix	swor	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	taxe	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	thro	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	tkni	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	tors	115	4	4	40	10.0	0.0	Dragon's	401
+greater-serpents	Greater Serpent's	prefix	tpot	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	wand	115	4	4	40	10.0	0.0	Bahamut's	404
+greater-serpents	Greater Serpent's	prefix	weap	115	4	4	40	10.0	0.0	Serpent's	398
+greater-serpents	Greater Serpent's	prefix	xbow	115	4	4	40	10.0	0.0	Serpent's	398
+greater-shimmering	Greater Shimmering	prefix	amul	116	6	6	60	10.0	0.0	Chromatic	389
+greater-shimmering	Greater Shimmering	prefix	ashd	116	8	8	80	10.0	0.0	Chromatic	384
+greater-shimmering	Greater Shimmering	prefix	circ	116	6	6	60	10.0	0.0	Chromatic	389
+greater-shimmering	Greater Shimmering	prefix	cjwl	116	2	2	20	10.0	0.0	Scintillating	394
+greater-shimmering	Greater Shimmering	prefix	grim	116	8	8	80	10.0	0.0	Chromatic	384
+greater-shimmering	Greater Shimmering	prefix	head	116	8	8	80	10.0	0.0	Chromatic	384
+greater-shimmering	Greater Shimmering	prefix	jewl	116	2	2	20	10.0	0.0	Scintillating	394
+greater-shimmering	Greater Shimmering	prefix	lcha	116	3	3	30	10.0	0.0	Shimmering	1026
+greater-shimmering	Greater Shimmering	prefix	ring	116	4	4	40	10.0	0.0	Scintillating	392
+greater-shimmering	Greater Shimmering	prefix	shie	116	8	8	80	10.0	0.0	Chromatic	384
+greater-shimmering	Greater Shimmering	prefix	shld	116	8	8	80	10.0	0.0	Chromatic	384
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	abow	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	afwe	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	ajav	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	amul	117, 118, 119, 120	24	24	240	10.0	0.0	Amber; Emerald; Ruby; Sapphire	354; 361; 369; 377
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	armo	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	ashd	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	aspe	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	axe	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	belt	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	blde	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	blun	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	boot	117, 118, 119, 120	24	24	240	10.0	0.0	Amber; Emerald; Ruby; Sapphire	354; 361; 369; 377
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	bow	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	circ	117, 118, 119, 120	24	24	240	10.0	0.0	Amber; Emerald; Ruby; Sapphire	354; 361; 369; 377
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	cjwl	117, 118, 119, 120	24	24	240	10.0	0.0	Ambergris; Jade; Sapphire	356; 371; 379
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	cloa	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	club	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	comb	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	glov	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	grim	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	h2h	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	h2h2	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	hamm	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	head	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	helm	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	jave	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	jewl	117, 118, 119, 120	24	24	240	10.0	0.0	Ambergris; Jade; Sapphire	356; 371; 379
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	knif	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	lcha	117, 118, 119, 120	24	24	240	10.0	0.0	Amber; Emerald; Ruby; Sapphire	1002; 1006; 1010; 998
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	mace	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	mele	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	miss	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	orb	117, 118, 119, 120	24	24	240	10.0	0.0	Amber; Emerald; Ruby; Sapphire	354; 361; 369; 377
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	pelt	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	phlm	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	pole	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	ring	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	rod	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	scep	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	shie	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	shld	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	slam	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	spea	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	sppl	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	staf	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	swor	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	taxe	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	thro	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	tkni	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	tors	117, 118, 119, 120	24	24	240	10.0	0.0	Cobalt; Coral; Garnet; Jade	352; 359; 367; 375
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	tpot	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	wand	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	weap	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-single-resist-charm	Greater Ruby/Sapphire/Amber/Emerald	prefix	xbow	117, 118, 119, 120	10	10	100	10.0	0.0	Cobalt; Coral; Garnet; Jade	353; 360; 368; 376
+greater-aureolin	Greater Aureolin	prefix	abow	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	afwe	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	ajav	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	aspe	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	axe	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	blde	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	blun	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	bow	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	cjwl	121	8	8	80	10.0	0.0	Aureolin	411
+greater-aureolin	Greater Aureolin	prefix	club	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	comb	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	h2h	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	h2h2	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	hamm	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	jave	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	jewl	121	8	8	80	10.0	0.0	Aureolin	411
+greater-aureolin	Greater Aureolin	prefix	knif	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	mace	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	mele	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	miss	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	orb	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	pole	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	rod	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	scep	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	slam	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	spea	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	sppl	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	staf	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	swor	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	taxe	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	thro	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	tkni	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	tpot	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	wand	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	weap	121	8	8	80	10.0	0.0	Victorious	410
+greater-aureolin	Greater Aureolin	prefix	xbow	121	8	8	80	10.0	0.0	Victorious	410
+greater-celestial	Greater Celestial	prefix	abow	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	afwe	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	ajav	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	aspe	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	axe	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	blde	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	blun	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	bow	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	cjwl	123	2	2	20	10.0	0.0	Diamond	105
+greater-celestial	Greater Celestial	prefix	club	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	comb	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	h2h	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	h2h2	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	hamm	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	jave	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	jewl	123	2	2	20	10.0	0.0	Diamond	105
+greater-celestial	Greater Celestial	prefix	knif	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	mace	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	mele	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	miss	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	pole	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	rod	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	scep	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	slam	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	spea	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	sppl	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	staf	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	swor	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	taxe	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	thro	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	tkni	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	tpot	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	weap	123	2	2	20	10.0	0.0	Celestial	104
+greater-celestial	Greater Celestial	prefix	xbow	123	2	2	20	10.0	0.0	Celestial	104
+greater-omniscient	Greater Omniscient	prefix	amul	125	2	2	20	10.0	0.0	Omniscient	192
+greater-omniscient	Greater Omniscient	prefix	ashd	125	2	2	20	10.0	0.0	Sage's	190
+greater-omniscient	Greater Omniscient	prefix	cloa	125	2	2	20	10.0	0.0	Omniscient	192
+greater-omniscient	Greater Omniscient	prefix	grim	125	2	2	20	10.0	0.0	Sage's	190
+greater-omniscient	Greater Omniscient	prefix	head	125	2	2	20	10.0	0.0	Sage's	190
+greater-omniscient	Greater Omniscient	prefix	ring	125	2	2	20	10.0	0.0	Sage's	191
+greater-omniscient	Greater Omniscient	prefix	shie	125	2	2	20	10.0	0.0	Sage's	190
+greater-omniscient	Greater Omniscient	prefix	shld	125	2	2	20	10.0	0.0	Sage's	190
+greater-omniscient	Greater Omniscient	prefix	tors	125	2	2	20	10.0	0.0	Omniscient	192
+greater-class-skill	Greater class skill	prefix	abow	125	4	4	40	10.0	0.0	Valkyrie's	198
+greater-class-skill	Greater class skill	prefix	amul	125	30	30	300	10.0	0.0	Arch-Angel's; Arch-Devil's; Berserker's; Hierophant's; Necromancer's; Priest's; Valkyrie's; Witch-hunter's	1070; 196; 202; 210; 216; 222; 230; 236
+greater-class-skill	Greater class skill	prefix	ashd	125	8	8	80	10.0	0.0	Priest's	204; 206
+greater-class-skill	Greater class skill	prefix	aspe	125	6	6	60	10.0	0.0	Berserker's; Valkyrie's	198; 224
+greater-class-skill	Greater class skill	prefix	axe	125	2	2	20	10.0	0.0	Berserker's	224
+greater-class-skill	Greater class skill	prefix	bow	125	4	4	40	10.0	0.0	Valkyrie's	198
+greater-class-skill	Greater class skill	prefix	circ	125	30	30	300	10.0	0.0	Arch-Angel's; Arch-Devil's; Berserker's; Hierophant's; Necromancer's; Priest's; Valkyrie's; Witch-hunter's	1070; 196; 202; 210; 216; 222; 230; 236
+greater-class-skill	Greater class skill	prefix	cloa	125	14	14	140	10.0	0.0	Arch-Angel's; Berserker's; Hierophant's; Necromancer's; Priest's; Valkyrie's; Witch-hunter's	195; 201; 209; 215; 221; 229; 235
+greater-class-skill	Greater class skill	prefix	club	125	6	6	60	10.0	0.0	Berserker's; Hierophant's	224; 232
+greater-class-skill	Greater class skill	prefix	grim	125	6	6	60	10.0	0.0	Arch-Devil's; Priest's	1072; 206
+greater-class-skill	Greater class skill	prefix	h2h	125	4	4	40	10.0	0.0	Witch-hunter's	238
+greater-class-skill	Greater class skill	prefix	h2h2	125	4	4	40	10.0	0.0	Witch-hunter's	238
+greater-class-skill	Greater class skill	prefix	hamm	125	6	6	60	10.0	0.0	Berserker's; Priest's	206; 224
+greater-class-skill	Greater class skill	prefix	head	125	8	8	80	10.0	0.0	Necromancer's; Priest's	206; 212
+greater-class-skill	Greater class skill	prefix	knif	125	6	6	60	10.0	0.0	Arch-Devil's; Necromancer's	1072; 212
+greater-class-skill	Greater class skill	prefix	mace	125	6	6	60	10.0	0.0	Berserker's; Priest's	206; 224
+greater-class-skill	Greater class skill	prefix	miss	125	4	4	40	10.0	0.0	Valkyrie's	198
+greater-class-skill	Greater class skill	prefix	orb	125	4	4	40	10.0	0.0	Arch-Angel's	218
+greater-class-skill	Greater class skill	prefix	pelt	125	4	4	40	10.0	0.0	Hierophant's	232
+greater-class-skill	Greater class skill	prefix	phlm	125	4	4	40	10.0	0.0	Berserker's	226
+greater-class-skill	Greater class skill	prefix	scep	125	4	4	40	10.0	0.0	Priest's	204
+greater-class-skill	Greater class skill	prefix	shie	125	4	4	40	10.0	0.0	Priest's	206
+greater-class-skill	Greater class skill	prefix	shld	125	4	4	40	10.0	0.0	Priest's	206
+greater-class-skill	Greater class skill	prefix	spea	125	6	6	60	10.0	0.0	Berserker's; Valkyrie's	198; 224
+greater-class-skill	Greater class skill	prefix	staf	125	4	4	40	10.0	0.0	Arch-Angel's	218
+greater-class-skill	Greater class skill	prefix	swor	125	6	6	60	10.0	0.0	Berserker's; Priest's	206; 224
+greater-class-skill	Greater class skill	prefix	taxe	125	2	2	20	10.0	0.0	Berserker's	224
+greater-class-skill	Greater class skill	prefix	tkni	125	8	8	80	10.0	0.0	Arch-Devil's; Berserker's; Necromancer's	1072; 212; 224
+greater-class-skill	Greater class skill	prefix	tors	125	14	14	140	10.0	0.0	Arch-Angel's; Berserker's; Hierophant's; Necromancer's; Priest's; Valkyrie's; Witch-hunter's	195; 201; 209; 215; 221; 229; 235
+greater-class-skill	Greater class skill	prefix	wand	125	4	4	40	10.0	0.0	Necromancer's	212
+greater-class-skill	Greater class skill	prefix	xbow	125	4	4	40	10.0	0.0	Valkyrie's	198
+greater-skilltab	Greater Skilltab	prefix	abow	125	2	2	20	10.0	0.0	Archer's	241
+greater-skilltab	Greater Skilltab	prefix	afwe	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	ajav	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	amul	125	39	39	390	10.0	0.0	Accursed; Athlete's; Communal; Cunning; Echoing; Forbidden; Furious; Gaea's; Glacial; Golemlord's; Guardian's; Keeper's; Kenshi's; Malevolent; Marshal's; Powered; Rose Branded; Shadow; Torrid; Venomous; Volcanic	1062; 1065; 1068; 244; 250; 253; 256; 259; 262; 265; 268; 271; 274; 280; 283; 286; 289; 292; 295; 298; 301
+greater-skilltab	Greater Skilltab	prefix	ashd	125	6	6	60	10.0	0.0	Guardian's; Marshal's; Rose Branded	268; 271; 274
+greater-skilltab	Greater Skilltab	prefix	aspe	125	8	8	80	10.0	0.0	Echoing; Furious; Lancer's; Master's	247; 277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	axe	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	blde	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	blun	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	bow	125	2	2	20	10.0	0.0	Archer's	241
+greater-skilltab	Greater Skilltab	prefix	circ	125	37	37	370	10.0	0.0	Accursed; Athlete's; Communal; Cunning; Forbidden; Gaea's; Glacial; Golemlord's; Guardian's; Keeper's; Kenshi's; Malevolent; Marshal's; Master's; Powered; Rose Branded; Shadow; Torrid; Venomous; Volcanic	1062; 1065; 1068; 244; 250; 253; 256; 259; 262; 265; 268; 271; 274; 277; 286; 289; 292; 295; 298; 301
+greater-skilltab	Greater Skilltab	prefix	club	125	12	12	120	10.0	0.0	Communal; Echoing; Furious; Gaea's; Keeper's; Master's	277; 280; 283; 286; 289; 292
+greater-skilltab	Greater Skilltab	prefix	comb	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	glov	125	8	8	80	10.0	0.0	Archer's; Athlete's; Kenshi's; Lancer's	241; 244; 247; 301
+greater-skilltab	Greater Skilltab	prefix	grim	125	9	9	90	10.0	0.0	Forbidden; Guardian's; Malevolent; Marshal's; Rose Branded; Torrid	1062; 1065; 1068; 268; 271; 274
+greater-skilltab	Greater Skilltab	prefix	h2h	125	12	12	120	10.0	0.0	Cunning; Echoing; Furious; Kenshi's; Master's; Shadow	277; 280; 283; 295; 298; 301
+greater-skilltab	Greater Skilltab	prefix	h2h2	125	12	12	120	10.0	0.0	Cunning; Echoing; Furious; Kenshi's; Master's; Shadow	277; 280; 283; 295; 298; 301
+greater-skilltab	Greater Skilltab	prefix	hamm	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	head	125	12	12	120	10.0	0.0	Accursed; Golemlord's; Guardian's; Marshal's; Rose Branded; Venomous	259; 262; 265; 268; 271; 274
+greater-skilltab	Greater Skilltab	prefix	helm	125	4	4	40	10.0	0.0	Master's; Shadow	277; 298
+greater-skilltab	Greater Skilltab	prefix	jave	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	knif	125	11	11	110	10.0	0.0	Echoing; Forbidden; Furious; Malevolent; Master's; Torrid; Venomous	1062; 1065; 1068; 262; 277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	mace	125	10	10	100	10.0	0.0	Echoing; Furious; Marshal's; Master's; Rose Branded	268; 271; 277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	mele	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	miss	125	2	2	20	10.0	0.0	Archer's	241
+greater-skilltab	Greater Skilltab	prefix	orb	125	12	12	120	10.0	0.0	Echoing; Furious; Glacial; Master's; Powered; Volcanic	250; 253; 256; 277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	pelt	125	10	10	100	10.0	0.0	Communal; Gaea's; Keeper's; Master's; Shadow	277; 286; 289; 292; 298
+greater-skilltab	Greater Skilltab	prefix	phlm	125	8	8	80	10.0	0.0	Echoing; Furious; Master's; Shadow	277; 280; 283; 298
+greater-skilltab	Greater Skilltab	prefix	pole	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	scep	125	4	4	40	10.0	0.0	Marshal's; Rose Branded	268; 271
+greater-skilltab	Greater Skilltab	prefix	shie	125	6	6	60	10.0	0.0	Guardian's; Marshal's; Rose Branded	268; 271; 274
+greater-skilltab	Greater Skilltab	prefix	shld	125	6	6	60	10.0	0.0	Guardian's; Marshal's; Rose Branded	268; 271; 274
+greater-skilltab	Greater Skilltab	prefix	slam	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	spea	125	8	8	80	10.0	0.0	Echoing; Furious; Lancer's; Master's	247; 277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	sppl	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	staf	125	6	6	60	10.0	0.0	Glacial; Powered; Volcanic	250; 253; 256
+greater-skilltab	Greater Skilltab	prefix	swor	125	11	11	110	10.0	0.0	Echoing; Forbidden; Furious; Marshal's; Master's; Rose Branded	1065; 268; 271; 277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	taxe	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	thro	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	tkni	125	8	8	80	10.0	0.0	Echoing; Furious; Malevolent; Master's; Torrid	1062; 1068; 277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	tpot	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	wand	125	6	6	60	10.0	0.0	Accursed; Golemlord's; Venomous	259; 262; 265
+greater-skilltab	Greater Skilltab	prefix	weap	125	6	6	60	10.0	0.0	Echoing; Furious; Master's	277; 280; 283
+greater-skilltab	Greater Skilltab	prefix	xbow	125	2	2	20	10.0	0.0	Archer's	241
+greater-avatar	Greater Avatar	prefix	abow	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	afwe	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	ajav	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	aspe	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	axe	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	blde	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	blun	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	bow	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	circ	137	2	2	20	10.0	0.0	Boreal	332
+greater-avatar	Greater Avatar	prefix	club	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	comb	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	h2h	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	h2h2	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	hamm	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	jave	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	knif	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	lcha	137	1	1	10	10.0	0.0	Avatar	991
+greater-avatar	Greater Avatar	prefix	mace	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	mele	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	miss	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	orb	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	pole	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	rod	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	scep	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	slam	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	spea	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	sppl	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	staf	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	swor	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	taxe	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	thro	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	tkni	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	tpot	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	wand	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	weap	137	2	2	20	10.0	0.0	Hibernal	333
+greater-avatar	Greater Avatar	prefix	xbow	137	2	2	20	10.0	0.0	Hibernal	333
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	abow	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	afwe	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	ajav	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	aspe	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	axe	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	blde	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	blun	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	bow	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	circ	138, 139, 140	6	6	60	10.0	0.0	Buzzing; Corosive; Smoking	336; 341; 346
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	club	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	comb	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	h2h	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	h2h2	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	hamm	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	jave	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	knif	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	mace	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	mele	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	miss	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	orb	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	pole	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	rod	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	scep	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	slam	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	spea	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	sppl	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	staf	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	swor	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	taxe	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	thro	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	tkni	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	tpot	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	wand	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	weap	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-weapon-elemental-prefix	Greater Scorching/Shocking/Pestilent	prefix	xbow	138, 139, 140	6	6	60	10.0	0.0	Pestilent; Scorching; Shocking	338; 343; 348
+greater-divine	Greater Divine	prefix	abow	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	afwe	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	ajav	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	aspe	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	axe	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	blde	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	blun	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	bow	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	cjwl	142	2	2	20	10.0	0.0	Pearl	111
+greater-divine	Greater Divine	prefix	club	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	comb	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	h2h	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	h2h2	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	hamm	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	jave	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	jewl	142	2	2	20	10.0	0.0	Pearl	111
+greater-divine	Greater Divine	prefix	knif	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	mace	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	mele	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	miss	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	pole	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	rod	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	scep	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	slam	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	spea	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	sppl	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	staf	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	swor	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	taxe	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	thro	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	tkni	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	tpot	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	weap	142	2	2	20	10.0	0.0	Divine	110
+greater-divine	Greater Divine	prefix	xbow	142	2	2	20	10.0	0.0	Divine	110
+greater-hulking	Greater Hulking	prefix	lcha	143	6	6	60	10.0	0.0	Hulking	994
+greater-veracious	Greater Veracious	prefix	abow	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	afwe	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	ajav	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	aspe	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	axe	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	blde	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	blun	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	bow	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	club	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	comb	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	glov	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	h2h	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	h2h2	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	hamm	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	jave	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	knif	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	mace	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	mele	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	miss	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	orb	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	pole	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	rod	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	scep	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	slam	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	spea	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	sppl	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	staf	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	swor	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	taxe	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	thro	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	tkni	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	tpot	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	wand	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	weap	200	2	2	20	10.0	0.0	Veracious1	134
+greater-veracious	Greater Veracious	prefix	xbow	200	2	2	20	10.0	0.0	Veracious1	134
+greater-gnostic	Greater Gnostic	prefix	amul	201	16	16	160	10.0	0.0	Devil's; Gnostics	1088; 305; 309; 313; 317; 321; 325; 329
+greater-gnostic	Greater Gnostic	prefix	belt	201	16	16	160	10.0	0.0	Devil's; Gnostics	1088; 305; 309; 313; 317; 321; 325; 329
+greater-gnostic	Greater Gnostic	prefix	circ	201	16	16	160	10.0	0.0	Devil's; Gnostics	1088; 305; 309; 313; 317; 321; 325; 329
+greater-gnostic	Greater Gnostic	prefix	ring	201	16	16	160	10.0	0.0	Devil's; Gnostics	1088; 305; 309; 313; 317; 321; 325; 329
+greater-crushing-fatal	Greater Crushing/Fatal	prefix	glov	202	8	8	80	10.0	0.0	Crushing1; Fatal	442; 445
+greater-elemental-prefix	Greater Elemental	prefix	abow	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	afwe	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	ajav	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	aspe	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	axe	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	blde	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	blun	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	bow	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	club	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	comb	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	h2h	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	h2h2	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	hamm	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	jave	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	knif	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	mace	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	mele	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	miss	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	orb	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	pole	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	rod	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	scep	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	slam	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	spea	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	sppl	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	staf	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	swor	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	taxe	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	thro	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	tkni	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	tpot	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	wand	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	weap	203	2	2	20	10.0	0.0	Elemental1	449
+greater-elemental-prefix	Greater Elemental	prefix	xbow	203	2	2	20	10.0	0.0	Elemental1	449
+greater-sage-xp	Greater Sage	prefix	abow	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	afwe	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	ajav	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	amul	204	2	2	20	10.0	0.0	Master Sage's	454
+greater-sage-xp	Greater Sage	prefix	armo	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	ashd	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	aspe	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	axe	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	belt	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	blde	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	blun	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	boot	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	bow	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	circ	204	4	4	40	10.0	0.0	Sage's	453
+greater-sage-xp	Greater Sage	prefix	cloa	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	club	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	comb	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	glov	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	grim	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	h2h	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	h2h2	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	hamm	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	head	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	helm	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	jave	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	knif	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	mace	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	mele	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	miss	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	orb	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	pelt	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	phlm	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	pole	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	ring	204	4	4	40	10.0	0.0	Sage's	453
+greater-sage-xp	Greater Sage	prefix	rod	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	scep	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	shie	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	shld	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	slam	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	spea	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	sppl	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	staf	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	swor	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	taxe	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	thro	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	tkni	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	tors	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	tpot	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	wand	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	weap	204	6	6	60	10.0	0.0	Sage's	452
+greater-sage-xp	Greater Sage	prefix	xbow	204	6	6	60	10.0	0.0	Sage's	452
+greater-savage	Greater Savage	prefix	boot	205	4	4	40	10.0	0.0	Savage	460
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	abow	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	afwe	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	ajav	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	armo	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	ashd	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	aspe	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	axe	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	belt	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	blde	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	blun	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	boot	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	bow	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	circ	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	cloa	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	club	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	comb	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	glov	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	grim	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	h2h	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	h2h2	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	hamm	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	head	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	helm	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	jave	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	knif	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	mace	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	mele	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	miss	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	pelt	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	phlm	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	pole	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	rod	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	scep	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	shie	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	shld	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	slam	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	spea	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	sppl	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	staf	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	swor	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	taxe	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	thro	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	tkni	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	tors	206	4	4	40	10.0	0.0	Adamantine-Wrought	476
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	tpot	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	weap	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-adamantine-wrought	Greater Adamantine-Wrought	prefix	xbow	206	4	4	40	10.0	0.0	Adamantine-Wrought	468
+greater-aureole	Greater Aureole	prefix	cloa	207	2	2	20	10.0	0.0	Aureole	491
+greater-aureole	Greater Aureole	prefix	tors	207	2	2	20	10.0	0.0	Aureole	491
+greater-elemental-mastery	Greater Elemental Mastery	prefix	circ	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	505; 508; 511; 514
+greater-elemental-mastery	Greater Elemental Mastery	prefix	helm	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	505; 508; 511; 514
+greater-elemental-mastery	Greater Elemental Mastery	prefix	orb	209	6	6	60	10.0	0.0	Frost Wyrm's2; Pyromaniac's2; Zeus's2	506; 509; 512
+greater-elemental-mastery	Greater Elemental Mastery	prefix	pelt	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	505; 508; 511; 514
+greater-elemental-mastery	Greater Elemental Mastery	prefix	phlm	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	505; 508; 511; 514
+greater-elemental-mastery	Greater Elemental Mastery	prefix	staf	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	506; 509; 512; 515
+greater-elemental-mastery	Greater Elemental Mastery	prefix	wand	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	506; 509; 512; 515
+greater-elemental-pierce	Greater Elemental Pierce	prefix	circ	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	493; 496; 499; 502
+greater-elemental-pierce	Greater Elemental Pierce	prefix	helm	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	493; 496; 499; 502
+greater-elemental-pierce	Greater Elemental Pierce	prefix	orb	209	6	6	60	10.0	0.0	Frost Wyrm's2; Pyromaniac's2; Zeus's2	494; 497; 500
+greater-elemental-pierce	Greater Elemental Pierce	prefix	pelt	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	493; 496; 499; 502
+greater-elemental-pierce	Greater Elemental Pierce	prefix	phlm	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	493; 496; 499; 502
+greater-elemental-pierce	Greater Elemental Pierce	prefix	staf	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	494; 497; 500; 503
+greater-elemental-pierce	Greater Elemental Pierce	prefix	wand	209	8	8	80	10.0	0.0	Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2	494; 497; 500; 503
+greater-missile-prefix	Greater missile prefixes	prefix	bowq	220, 221, 222, 223, 224, 225, 226, 227	30	30	300	10.0	0.0	Apprentice; Corosive; Flaming; Jagged; Lizard's; Sharp; Shivering; Static; Sturdy	1091; 1094; 1097; 1100; 1103; 1106; 1109; 1112; 1115; 1118
+greater-missile-prefix	Greater missile prefixes	prefix	mboq	220, 221, 222, 223, 224, 225, 226, 227	30	30	300	10.0	0.0	Apprentice; Corosive; Flaming; Jagged; Lizard's; Sharp; Shivering; Static; Sturdy	1091; 1094; 1097; 1100; 1103; 1106; 1109; 1112; 1115; 1118
+greater-missile-prefix	Greater missile prefixes	prefix	misl	220, 221, 222, 223, 224, 225, 226, 227	30	30	300	10.0	0.0	Apprentice; Corosive; Flaming; Jagged; Lizard's; Sharp; Shivering; Static; Sturdy	1091; 1094; 1097; 1100; 1103; 1106; 1109; 1112; 1115; 1118
+greater-missile-prefix	Greater missile prefixes	prefix	mxbq	220, 221, 222, 223, 224, 225, 226, 227	30	30	300	10.0	0.0	Apprentice; Corosive; Flaming; Jagged; Lizard's; Sharp; Shivering; Static; Sturdy	1091; 1094; 1097; 1100; 1103; 1106; 1109; 1112; 1115; 1118
+greater-missile-prefix	Greater missile prefixes	prefix	xboq	220, 221, 222, 223, 224, 225, 226, 227	30	30	300	10.0	0.0	Apprentice; Corosive; Flaming; Jagged; Lizard's; Sharp; Shivering; Static; Sturdy	1091; 1094; 1097; 1100; 1103; 1106; 1109; 1112; 1115; 1118
+greater-anima	Greater Anima	suffix	amul	1	48	48	480	10.0	0.0	of Life Everlasting	130
+greater-anima	Greater Anima	suffix	ashd	1	48	48	480	10.0	0.0	of Anima	134
+greater-anima	Greater Anima	suffix	circ	1	48	48	480	10.0	0.0	of Anima	134
+greater-anima	Greater Anima	suffix	cloa	1	48	48	480	10.0	0.0	of Anima	134
+greater-anima	Greater Anima	suffix	grim	1	48	48	480	10.0	0.0	of Anima	134
+greater-anima	Greater Anima	suffix	head	1	48	48	480	10.0	0.0	of Anima	134
+greater-anima	Greater Anima	suffix	ring	1	48	48	480	10.0	0.0	of Life	129
+greater-anima	Greater Anima	suffix	shie	1	48	48	480	10.0	0.0	of Anima	134
+greater-anima	Greater Anima	suffix	shld	1	48	48	480	10.0	0.0	of Anima	134
+greater-anima	Greater Anima	suffix	tors	1	48	48	480	10.0	0.0	of Anima	134
+greater-negation	Greater Negation	suffix	amul	2	48	48	480	10.0	0.0	of Guarding	144
+greater-negation	Greater Negation	suffix	ashd	2	48	48	480	10.0	0.0	of Negation	145
+greater-negation	Greater Negation	suffix	circ	2	48	48	480	10.0	0.0	of Negation	145
+greater-negation	Greater Negation	suffix	cloa	2	48	48	480	10.0	0.0	of Negation	145
+greater-negation	Greater Negation	suffix	grim	2	48	48	480	10.0	0.0	of Negation	145
+greater-negation	Greater Negation	suffix	head	2	48	48	480	10.0	0.0	of Negation	145
+greater-negation	Greater Negation	suffix	orb	2	48	48	480	10.0	0.0	of Negation	145
+greater-negation	Greater Negation	suffix	ring	2	96	96	960	10.0	0.0	of Negation; of the Sentinel	138; 143
+greater-negation	Greater Negation	suffix	shie	2	48	48	480	10.0	0.0	of Negation	145
+greater-negation	Greater Negation	suffix	shld	2	48	48	480	10.0	0.0	of Negation	145
+greater-negation	Greater Negation	suffix	tors	2	48	48	480	10.0	0.0	of Negation	145
+greater-coalescence	Greater Coalescence	suffix	abow	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	afwe	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	ajav	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	amul	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	ashd	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	aspe	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	axe	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	blde	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	blun	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	bow	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	club	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	comb	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	grim	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	h2h	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	h2h2	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	hamm	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	head	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	jave	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	knif	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	mace	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	mele	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	miss	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	orb	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	pole	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	ring	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	rod	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	scep	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	shie	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	shld	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	slam	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	spea	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	sppl	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	staf	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	swor	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	taxe	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	thro	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	tkni	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	tpot	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	wand	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	weap	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-coalescence	Greater Coalescence	suffix	xbow	3	36	36	360	10.0	0.0	of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1	158; 171; 184
+greater-thorns	Greater Thorns	suffix	ashd	6	48	48	480	10.0	0.0	of Thorns	340
+greater-thorns	Greater Thorns	suffix	belt	6	24	24	240	10.0	0.0	of Swords	344
+greater-thorns	Greater Thorns	suffix	circ	6	24	24	240	10.0	0.0	of Swords	344
+greater-thorns	Greater Thorns	suffix	cjwl	6	48	48	480	10.0	0.0	of Malice	345
+greater-thorns	Greater Thorns	suffix	cloa	6	48	48	480	10.0	0.0	of Thorns	340
+greater-thorns	Greater Thorns	suffix	grim	6	48	48	480	10.0	0.0	of Thorns	340
+greater-thorns	Greater Thorns	suffix	head	6	48	48	480	10.0	0.0	of Thorns	340
+greater-thorns	Greater Thorns	suffix	jewl	6	48	48	480	10.0	0.0	of Malice	345
+greater-thorns	Greater Thorns	suffix	shie	6	48	48	480	10.0	0.0	of Thorns	340
+greater-thorns	Greater Thorns	suffix	shld	6	48	48	480	10.0	0.0	of Thorns	340
+greater-thorns	Greater Thorns	suffix	tors	6	48	48	480	10.0	0.0	of Thorns	340
+greater-quickness	Greater Quickness	suffix	abow	7	72	72	720	10.0	0.0	of Alacrity	328
+greater-quickness	Greater Quickness	suffix	afwe	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	ajav	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	aspe	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	axe	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	blde	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	blun	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	bow	7	72	72	720	10.0	0.0	of Alacrity	328
+greater-quickness	Greater Quickness	suffix	cjwl	7	48	48	480	10.0	0.0	of Fervor	334
+greater-quickness	Greater Quickness	suffix	club	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	comb	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	glov	7	48	48	480	10.0	0.0	of Alacrity	331
+greater-quickness	Greater Quickness	suffix	h2h	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	h2h2	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	hamm	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	jave	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	jewl	7	48	48	480	10.0	0.0	of Fervor	334
+greater-quickness	Greater Quickness	suffix	knif	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	mace	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	mele	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	miss	7	72	72	720	10.0	0.0	of Alacrity	328
+greater-quickness	Greater Quickness	suffix	pole	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	rod	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	scep	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	slam	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	spea	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	sppl	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	staf	7	72	72	720	10.0	0.0	of Alacrity	328
+greater-quickness	Greater Quickness	suffix	swor	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	taxe	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	thro	7	72	72	720	10.0	0.0	of Alacrity	328
+greater-quickness	Greater Quickness	suffix	tkni	7	60	60	600	10.0	0.0	of Quickness	330
+greater-quickness	Greater Quickness	suffix	tpot	7	72	72	720	10.0	0.0	of Alacrity	328
+greater-quickness	Greater Quickness	suffix	weap	7	72	72	720	10.0	0.0	of Alacrity	328
+greater-quickness	Greater Quickness	suffix	xbow	7	72	72	720	10.0	0.0	of Alacrity	328
+greater-deflecting	Greater Deflecting	suffix	ashd	8	76	76	760	10.0	0.0	of Deflecting	374
+greater-deflecting	Greater Deflecting	suffix	grim	8	76	76	760	10.0	0.0	of Deflecting	374
+greater-deflecting	Greater Deflecting	suffix	head	8	76	76	760	10.0	0.0	of Deflecting	374
+greater-deflecting	Greater Deflecting	suffix	shie	8	76	76	760	10.0	0.0	of Deflecting	374
+greater-deflecting	Greater Deflecting	suffix	shld	8	76	76	760	10.0	0.0	of Deflecting	374
+greater-magus	Greater Magus	suffix	amul	9	72	72	720	10.0	0.0	of the Apprentice	375
+greater-magus	Greater Magus	suffix	circ	9	60	60	600	10.0	0.0	of the Magus	376
+greater-magus	Greater Magus	suffix	orb	9	60	60	600	10.0	0.0	of the Magus	376
+greater-magus	Greater Magus	suffix	ring	9	72	72	720	10.0	0.0	of the Apprentice	375
+greater-magus	Greater Magus	suffix	rod	9	60	60	600	10.0	0.0	of the Magus	376
+greater-magus	Greater Magus	suffix	scep	9	72	72	720	10.0	0.0	of the Apprentice	375
+greater-magus	Greater Magus	suffix	staf	9	60	60	600	10.0	0.0	of the Magus	376
+greater-magus	Greater Magus	suffix	wand	9	60	60	600	10.0	0.0	of the Magus	376
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	abow	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	afwe	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	ajav	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	amul	10, 12, 13, 16	84	84	840	10.0	0.0	of Blight; of Burning; of Storms; of the Glacier	57; 70; 83; 93
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	aspe	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	axe	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	belt	10, 12, 13, 16	24	24	240	10.0	0.0	of the Glacier	57
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	blde	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	blun	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	boot	10, 12, 13, 16	24	24	240	10.0	0.0	of Storms	83
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	bow	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	circ	10, 12, 13, 16	24	24	240	10.0	0.0	of Anthrax	90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	cjwl	10, 12, 13, 16	96	96	960	10.0	0.0	of Anthrax; of Burning; of Thunder; of the Glacier	60; 73; 86; 96
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	club	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	comb	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	glov	10, 12, 13, 16	24	24	240	10.0	0.0	of Burning	70
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	h2h	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	h2h2	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	hamm	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	jave	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	jewl	10, 12, 13, 16	96	96	960	10.0	0.0	of Anthrax; of Burning; of Thunder; of the Glacier	60; 73; 86; 96
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	knif	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	lcha	10, 12, 13, 16	24	24	240	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	705; 709; 713; 717
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	mace	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	mele	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	miss	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	pole	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	ring	10, 12, 13, 16	60	60	600	10.0	0.0	of Blight; of Burning; of Storms	70; 83; 93
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	rod	10, 12, 13, 16	36	36	360	10.0	0.0	of Incineration; of Storms; of Winter	53; 66; 79
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	scep	10, 12, 13, 16	36	36	360	10.0	0.0	of Incineration; of Storms; of Winter	53; 66; 79
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	slam	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	spea	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	sppl	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	staf	10, 12, 13, 16	36	36	360	10.0	0.0	of Incineration; of Storms; of Winter	53; 66; 79
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	swor	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	taxe	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	thro	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	tkni	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	tpot	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	weap	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-jewelry-elemental-suffix	Greater jewelry elemental damage	suffix	xbow	10, 12, 13, 16	60	60	600	10.0	0.0	of Anthrax; of Incineration; of Storms; of Winter	53; 66; 79; 90
+greater-evisceration	Greater Evisceration	suffix	abow	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	afwe	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	ajav	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	amul	14	96	96	960	10.0	0.0	of Quality	8
+greater-evisceration	Greater Evisceration	suffix	ashd	14	36	36	360	10.0	0.0	of Maiming	23
+greater-evisceration	Greater Evisceration	suffix	aspe	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	axe	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	blde	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	blun	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	bow	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	circ	14	48	48	480	10.0	0.0	of Maiming	30
+greater-evisceration	Greater Evisceration	suffix	cjwl	14	48	48	480	10.0	0.0	of Carnage	34
+greater-evisceration	Greater Evisceration	suffix	club	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	comb	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	grim	14	36	36	360	10.0	0.0	of Maiming	23
+greater-evisceration	Greater Evisceration	suffix	h2h	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	h2h2	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	hamm	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	head	14	36	36	360	10.0	0.0	of Maiming	23
+greater-evisceration	Greater Evisceration	suffix	jave	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	jewl	14	48	48	480	10.0	0.0	of Carnage	34
+greater-evisceration	Greater Evisceration	suffix	knif	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	mace	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	mele	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	miss	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	pole	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	ring	14	96	96	960	10.0	0.0	of Quality	8
+greater-evisceration	Greater Evisceration	suffix	rod	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	scep	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	shie	14	36	36	360	10.0	0.0	of Maiming	23
+greater-evisceration	Greater Evisceration	suffix	shld	14	36	36	360	10.0	0.0	of Maiming	23
+greater-evisceration	Greater Evisceration	suffix	slam	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	spea	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	sppl	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	staf	14	144	144	1440	10.0	0.0	of Evisceration	17
+greater-evisceration	Greater Evisceration	suffix	swor	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	taxe	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	thro	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	tkni	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	tpot	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	weap	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-evisceration	Greater Evisceration	suffix	xbow	14	88	88	880	10.0	0.0	of Evisceration	20
+greater-transcendence	Greater Transcendence	suffix	abow	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	afwe	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	ajav	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	amul	15	32	32	320	10.0	0.0	of Performance	45
+greater-transcendence	Greater Transcendence	suffix	aspe	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	axe	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	blde	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	blun	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	bow	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	circ	15	32	32	320	10.0	0.0	of Performance	45
+greater-transcendence	Greater Transcendence	suffix	cjwl	15	32	32	320	10.0	0.0	of Bliss	47
+greater-transcendence	Greater Transcendence	suffix	club	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	comb	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	h2h	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	h2h2	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	hamm	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	jave	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	jewl	15	32	32	320	10.0	0.0	of Bliss	47
+greater-transcendence	Greater Transcendence	suffix	knif	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	mace	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	mele	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	miss	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	pole	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	ring	15	32	32	320	10.0	0.0	of Performance	45
+greater-transcendence	Greater Transcendence	suffix	rod	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	scep	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	slam	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	spea	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	sppl	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	staf	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	swor	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	taxe	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	thro	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	tkni	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	tpot	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	weap	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-transcendence	Greater Transcendence	suffix	xbow	15	24	24	240	10.0	0.0	of Transcendence	41
+greater-perfection	Greater Perfection	suffix	abow	17	36	36	360	10.0	0.0	of Nirvana	207
+greater-perfection	Greater Perfection	suffix	amul	17	36	36	360	10.0	0.0	of Nirvana	207
+greater-perfection	Greater Perfection	suffix	boot	17	36	36	360	10.0	0.0	of Perfection	222
+greater-perfection	Greater Perfection	suffix	bow	17	36	36	360	10.0	0.0	of Nirvana	207
+greater-perfection	Greater Perfection	suffix	circ	17	36	36	360	10.0	0.0	of Nirvana	207
+greater-perfection	Greater Perfection	suffix	cjwl	17	48	48	480	10.0	0.0	of Daring	219
+greater-perfection	Greater Perfection	suffix	cloa	17	36	36	360	10.0	0.0	of Perfection	222
+greater-perfection	Greater Perfection	suffix	glov	17	36	36	360	10.0	0.0	of Perfection	212
+greater-perfection	Greater Perfection	suffix	jewl	17	48	48	480	10.0	0.0	of Daring	219
+greater-perfection	Greater Perfection	suffix	miss	17	36	36	360	10.0	0.0	of Nirvana	207
+greater-perfection	Greater Perfection	suffix	ring	17	36	36	360	10.0	0.0	of Perfection	212
+greater-perfection	Greater Perfection	suffix	tors	17	36	36	360	10.0	0.0	of Perfection	222
+greater-perfection	Greater Perfection	suffix	xbow	17	36	36	360	10.0	0.0	of Nirvana	207
+greater-balance	Greater Balance	suffix	armo	18	48	48	480	10.0	0.0	of Balance	323
+greater-balance	Greater Balance	suffix	ashd	18	48	48	480	10.0	0.0	of Equilibrium	324
+greater-balance	Greater Balance	suffix	belt	18	48	48	480	10.0	0.0	of Stability	325
+greater-balance	Greater Balance	suffix	boot	18	48	48	480	10.0	0.0	of Balance	323
+greater-balance	Greater Balance	suffix	circ	18	48	48	480	10.0	0.0	of Balance	323
+greater-balance	Greater Balance	suffix	cjwl	18	48	48	480	10.0	0.0	of Truth	326
+greater-balance	Greater Balance	suffix	cloa	18	48	48	480	10.0	0.0	of Stability	325
+greater-balance	Greater Balance	suffix	grim	18	48	48	480	10.0	0.0	of Equilibrium	324
+greater-balance	Greater Balance	suffix	head	18	48	48	480	10.0	0.0	of Equilibrium	324
+greater-balance	Greater Balance	suffix	helm	18	48	48	480	10.0	0.0	of Balance	323
+greater-balance	Greater Balance	suffix	jewl	18	48	48	480	10.0	0.0	of Truth	326
+greater-balance	Greater Balance	suffix	lcha	18	6	6	60	10.0	0.0	of Balance	743
+greater-balance	Greater Balance	suffix	pelt	18	48	48	480	10.0	0.0	of Balance	323
+greater-balance	Greater Balance	suffix	phlm	18	48	48	480	10.0	0.0	of Balance	323
+greater-balance	Greater Balance	suffix	shie	18	48	48	480	10.0	0.0	of Equilibrium	324
+greater-balance	Greater Balance	suffix	shld	18	48	48	480	10.0	0.0	of Equilibrium	324
+greater-balance	Greater Balance	suffix	tors	18	48	48	480	10.0	0.0	of Stability	325
+greater-regeneration	Greater Regeneration	suffix	abow	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	afwe	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	ajav	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	amul	19	48	48	480	10.0	0.0	of Revivification	311
+greater-regeneration	Greater Regeneration	suffix	ashd	19	48	48	480	10.0	0.0	of Regeneration	307
+greater-regeneration	Greater Regeneration	suffix	aspe	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	axe	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	belt	19	48	48	480	10.0	0.0	of Regrowth	310
+greater-regeneration	Greater Regeneration	suffix	blde	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	blun	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	boot	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	bow	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	circ	19	48	48	480	10.0	0.0	of Revivification	311
+greater-regeneration	Greater Regeneration	suffix	cjwl	19	48	48	480	10.0	0.0	of Honor	312
+greater-regeneration	Greater Regeneration	suffix	cloa	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	club	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	comb	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	glov	19	48	48	480	10.0	0.0	of Regeneration	307
+greater-regeneration	Greater Regeneration	suffix	grim	19	48	48	480	10.0	0.0	of Regeneration	307
+greater-regeneration	Greater Regeneration	suffix	h2h	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	h2h2	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	hamm	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	head	19	48	48	480	10.0	0.0	of Regeneration	307
+greater-regeneration	Greater Regeneration	suffix	jave	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	jewl	19	48	48	480	10.0	0.0	of Honor	312
+greater-regeneration	Greater Regeneration	suffix	knif	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	mace	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	mele	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	miss	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	orb	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	pole	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	ring	19	48	48	480	10.0	0.0	of Regrowth	310
+greater-regeneration	Greater Regeneration	suffix	rod	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	scep	19	48	48	480	10.0	0.0	of Revivification	311
+greater-regeneration	Greater Regeneration	suffix	shie	19	48	48	480	10.0	0.0	of Regeneration	307
+greater-regeneration	Greater Regeneration	suffix	shld	19	48	48	480	10.0	0.0	of Regeneration	307
+greater-regeneration	Greater Regeneration	suffix	slam	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	spea	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	sppl	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	staf	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	swor	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	taxe	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	thro	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	tkni	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	tors	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	tpot	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	wand	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	weap	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-regeneration	Greater Regeneration	suffix	xbow	19	48	48	480	10.0	0.0	of Regeneration	308
+greater-wealth	Greater Wealth	suffix	amul	21	48	48	480	10.0	0.0	of Wealth	359
+greater-wealth	Greater Wealth	suffix	belt	21	48	48	480	10.0	0.0	of Wealth	359
+greater-wealth	Greater Wealth	suffix	boot	21	48	48	480	10.0	0.0	of Wealth	359
+greater-wealth	Greater Wealth	suffix	circ	21	48	48	480	10.0	0.0	of Wealth	359
+greater-wealth	Greater Wealth	suffix	cjwl	21	48	48	480	10.0	0.0	of Avarice	360
+greater-wealth	Greater Wealth	suffix	glov	21	48	48	480	10.0	0.0	of Wealth	359
+greater-wealth	Greater Wealth	suffix	jewl	21	48	48	480	10.0	0.0	of Avarice	360
+greater-wealth	Greater Wealth	suffix	ring	21	48	48	480	10.0	0.0	of Greed	358
+greater-prosperity	Greater Prosperity	suffix	amul	22	48	48	480	10.0	0.0	of Luck	354
+greater-prosperity	Greater Prosperity	suffix	boot	22	48	48	480	10.0	0.0	of Luck	353
+greater-prosperity	Greater Prosperity	suffix	circ	22	48	48	480	10.0	0.0	of Luck	354
+greater-prosperity	Greater Prosperity	suffix	cjwl	22	12	12	120	10.0	0.0	of Prosperity	357
+greater-prosperity	Greater Prosperity	suffix	glov	22	48	48	480	10.0	0.0	of Fortune	352
+greater-prosperity	Greater Prosperity	suffix	jewl	22	12	12	120	10.0	0.0	of Prosperity	357
+greater-prosperity	Greater Prosperity	suffix	ring	22	48	48	480	10.0	0.0	of Fortune	352
+greater-enlightenment	Greater Enlightenment	suffix	amul	23	36	36	360	10.0	0.0	of Enlightenment	248
+greater-enlightenment	Greater Enlightenment	suffix	circ	23	36	36	360	10.0	0.0	of Enlightenment	248
+greater-enlightenment	Greater Enlightenment	suffix	cjwl	23	36	36	360	10.0	0.0	of Knowledge	260
+greater-enlightenment	Greater Enlightenment	suffix	helm	23	36	36	360	10.0	0.0	of Sorcery	257
+greater-enlightenment	Greater Enlightenment	suffix	jewl	23	36	36	360	10.0	0.0	of Knowledge	260
+greater-enlightenment	Greater Enlightenment	suffix	orb	23	36	36	360	10.0	0.0	of Enlightenment	248
+greater-enlightenment	Greater Enlightenment	suffix	pelt	23	36	36	360	10.0	0.0	of Sorcery	257
+greater-enlightenment	Greater Enlightenment	suffix	phlm	23	36	36	360	10.0	0.0	of Sorcery	257
+greater-enlightenment	Greater Enlightenment	suffix	ring	23	36	36	360	10.0	0.0	of Wizardry	253
+greater-enlightenment	Greater Enlightenment	suffix	scep	23	36	36	360	10.0	0.0	of Sorcery	257
+greater-enlightenment	Greater Enlightenment	suffix	staf	23	36	36	360	10.0	0.0	of Enlightenment	248
+greater-enlightenment	Greater Enlightenment	suffix	wand	23	36	36	360	10.0	0.0	of Enlightenment	248
+greater-vita	Greater Vita	suffix	amul	26	36	36	360	10.0	0.0	of the Whale	288
+greater-vita	Greater Vita	suffix	ashd	26	36	36	360	10.0	0.0	of the Colosuss	294
+greater-vita	Greater Vita	suffix	belt	26	36	36	360	10.0	0.0	of the Whale	288
+greater-vita	Greater Vita	suffix	circ	26	36	36	360	10.0	0.0	of the Mammoth	299
+greater-vita	Greater Vita	suffix	cjwl	26	48	48	480	10.0	0.0	of Hope	301
+greater-vita	Greater Vita	suffix	cloa	26	36	36	360	10.0	0.0	of the Whale	288
+greater-vita	Greater Vita	suffix	club	26	36	36	360	10.0	0.0	of the Mammoth	299
+greater-vita	Greater Vita	suffix	grim	26	36	36	360	10.0	0.0	of the Colosuss	294
+greater-vita	Greater Vita	suffix	hamm	26	36	36	360	10.0	0.0	of the Mammoth	299
+greater-vita	Greater Vita	suffix	head	26	36	36	360	10.0	0.0	of the Colosuss	294
+greater-vita	Greater Vita	suffix	helm	26	36	36	360	10.0	0.0	of the Mammoth	299
+greater-vita	Greater Vita	suffix	jewl	26	48	48	480	10.0	0.0	of Hope	301
+greater-vita	Greater Vita	suffix	lcha	26	6	6	60	10.0	0.0	of Vita	730
+greater-vita	Greater Vita	suffix	mace	26	36	36	360	10.0	0.0	of the Mammoth	299
+greater-vita	Greater Vita	suffix	pelt	26	36	36	360	10.0	0.0	of the Colosuss	294
+greater-vita	Greater Vita	suffix	phlm	26	36	36	360	10.0	0.0	of the Mammoth	299
+greater-vita	Greater Vita	suffix	ring	26	36	36	360	10.0	0.0	of the Mammoth	299
+greater-vita	Greater Vita	suffix	shie	26	36	36	360	10.0	0.0	of the Colosuss	294
+greater-vita	Greater Vita	suffix	shld	26	36	36	360	10.0	0.0	of the Colosuss	294
+greater-vita	Greater Vita	suffix	tors	26	36	36	360	10.0	0.0	of the Whale	288
+greater-leech	Greater Lamprey/Vampire	suffix	abow	27, 28	168	168	1680	10.0	0.0	of the Locust; of the Wraith	104; 114
+greater-leech	Greater Lamprey/Vampire	suffix	afwe	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	ajav	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	amul	27, 28	72	72	720	10.0	0.0	of the Lamprey; of the Vampire	112; 118
+greater-leech	Greater Lamprey/Vampire	suffix	aspe	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	axe	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	blde	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	blun	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	bow	27, 28	168	168	1680	10.0	0.0	of the Locust; of the Wraith	104; 114
+greater-leech	Greater Lamprey/Vampire	suffix	circ	27, 28	96	96	960	10.0	0.0	of the Lamprey; of the Vampire	108; 118
+greater-leech	Greater Lamprey/Vampire	suffix	club	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	comb	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	glov	27, 28	96	96	960	10.0	0.0	of the Bat; of the Leech	109; 119
+greater-leech	Greater Lamprey/Vampire	suffix	h2h	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	h2h2	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	hamm	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	jave	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	knif	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	mace	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	mele	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	miss	27, 28	168	168	1680	10.0	0.0	of the Locust; of the Wraith	104; 114
+greater-leech	Greater Lamprey/Vampire	suffix	orb	27, 28	84	84	840	10.0	0.0	of the Wraith	114
+greater-leech	Greater Lamprey/Vampire	suffix	pole	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	ring	27, 28	72	72	720	10.0	0.0	of the Lamprey; of the Vampire	108; 122
+greater-leech	Greater Lamprey/Vampire	suffix	rod	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	scep	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	slam	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	spea	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	sppl	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	staf	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	swor	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	taxe	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	thro	27, 28	168	168	1680	10.0	0.0	of the Locust; of the Wraith	104; 114
+greater-leech	Greater Lamprey/Vampire	suffix	tkni	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	tpot	27, 28	168	168	1680	10.0	0.0	of the Locust; of the Wraith	104; 114
+greater-leech	Greater Lamprey/Vampire	suffix	wand	27, 28	168	168	1680	10.0	0.0	of the Lamprey; of the Vampire	105; 115
+greater-leech	Greater Lamprey/Vampire	suffix	weap	27, 28	168	168	1680	10.0	0.0	of the Locust; of the Wraith	104; 114
+greater-leech	Greater Lamprey/Vampire	suffix	xbow	27, 28	168	168	1680	10.0	0.0	of the Locust; of the Wraith	104; 114
+greater-titan	Greater Titan	suffix	afwe	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	ajav	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	amul	31	36	36	360	10.0	0.0	of Atlus	228
+greater-titan	Greater Titan	suffix	ashd	31	36	36	360	10.0	0.0	of the Ox	236
+greater-titan	Greater Titan	suffix	aspe	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	axe	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	belt	31	36	36	360	10.0	0.0	of Atlus	228
+greater-titan	Greater Titan	suffix	blde	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	circ	31	36	36	360	10.0	0.0	of Atlus	228
+greater-titan	Greater Titan	suffix	cjwl	31	48	48	480	10.0	0.0	of Virility	240
+greater-titan	Greater Titan	suffix	cloa	31	36	36	360	10.0	0.0	of the Titan	233
+greater-titan	Greater Titan	suffix	club	31	36	36	360	10.0	0.0	of Atlus	228
+greater-titan	Greater Titan	suffix	comb	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	glov	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	grim	31	36	36	360	10.0	0.0	of the Ox	236
+greater-titan	Greater Titan	suffix	h2h	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	h2h2	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	hamm	31	36	36	360	10.0	0.0	of Atlus	228
+greater-titan	Greater Titan	suffix	head	31	36	36	360	10.0	0.0	of the Ox	236
+greater-titan	Greater Titan	suffix	jave	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	jewl	31	48	48	480	10.0	0.0	of Virility	240
+greater-titan	Greater Titan	suffix	knif	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	lcha	31	4	4	40	10.0	0.0	of Energy	741
+greater-titan	Greater Titan	suffix	mace	31	36	36	360	10.0	0.0	of the Titan	233
+greater-titan	Greater Titan	suffix	mele	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	pole	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	ring	31	36	36	360	10.0	0.0	of the Titan	233
+greater-titan	Greater Titan	suffix	scep	31	36	36	360	10.0	0.0	of the Titan	233
+greater-titan	Greater Titan	suffix	shie	31	36	36	360	10.0	0.0	of the Ox	236
+greater-titan	Greater Titan	suffix	shld	31	36	36	360	10.0	0.0	of the Ox	236
+greater-titan	Greater Titan	suffix	slam	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	spea	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	sppl	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	swor	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	taxe	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	tkni	31	36	36	360	10.0	0.0	of the Giant	237
+greater-titan	Greater Titan	suffix	tors	31	36	36	360	10.0	0.0	of the Titan	233
+greater-inertia	Greater Inertia	suffix	boot	35	48	48	480	10.0	0.0	of Traveling	321
+greater-inertia	Greater Inertia	suffix	circ	35	48	48	480	10.0	0.0	of Speed	320
+greater-inertia	Greater Inertia	suffix	lcha	35	6	6	60	10.0	0.0	of Inertia	742
+greater-elephant	Greater Elephant	suffix	amul	41	24	24	240	10.0	0.0	of the Elephant	302
+greater-elephant	Greater Elephant	suffix	circ	41	24	24	240	10.0	0.0	of the Elephant	303
+greater-elephant	Greater Elephant	suffix	cloa	41	12	12	120	10.0	0.0	of the Kraken	304
+greater-elephant	Greater Elephant	suffix	pelt	41	24	24	240	10.0	0.0	of the Elephant	303
+greater-elephant	Greater Elephant	suffix	phlm	41	12	12	120	10.0	0.0	of the Kraken	304
+greater-elephant	Greater Elephant	suffix	ring	41	24	24	240	10.0	0.0	of the Elephant	302
+greater-elephant	Greater Elephant	suffix	tors	41	12	12	120	10.0	0.0	of the Kraken	304
+greater-zodiac	Greater Zodiac	suffix	abow	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	afwe	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	ajav	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	amul	42	12	12	120	10.0	0.0	of the Zodiac	280
+greater-zodiac	Greater Zodiac	suffix	aspe	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	axe	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	belt	42	12	12	120	10.0	0.0	of Power	263
+greater-zodiac	Greater Zodiac	suffix	blde	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	blun	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	boot	42	12	12	120	10.0	0.0	of Agility2	267
+greater-zodiac	Greater Zodiac	suffix	bow	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	circ	42	12	12	120	10.0	0.0	of the Zodiac	280
+greater-zodiac	Greater Zodiac	suffix	club	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	comb	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	glov	42	36	36	360	10.0	0.0	of Endurance2; of Power2; of Spirit2	270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	h2h	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	h2h2	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	hamm	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	helm	42	12	12	120	10.0	0.0	of Grace	262
+greater-zodiac	Greater Zodiac	suffix	jave	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	knif	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	mace	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	mele	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	miss	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	orb	42	12	12	120	10.0	0.0	of the Zodiac	280
+greater-zodiac	Greater Zodiac	suffix	pelt	42	12	12	120	10.0	0.0	of Grace	262
+greater-zodiac	Greater Zodiac	suffix	phlm	42	12	12	120	10.0	0.0	of Grace	262
+greater-zodiac	Greater Zodiac	suffix	pole	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	ring	42	12	12	120	10.0	0.0	of the Zodiac	280
+greater-zodiac	Greater Zodiac	suffix	rod	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	scep	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	slam	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	spea	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	sppl	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	staf	42	12	12	120	10.0	0.0	of the Zodiac	280
+greater-zodiac	Greater Zodiac	suffix	swor	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	taxe	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	thro	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	tkni	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	tpot	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	wand	42	12	12	120	10.0	0.0	of the Zodiac	280
+greater-zodiac	Greater Zodiac	suffix	weap	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-zodiac	Greater Zodiac	suffix	xbow	42	48	48	480	10.0	0.0	of Agility2; of Endurance2; of Power2; of Spirit2	267; 270; 273; 276
+greater-elements	Greater Elements	suffix	amul	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	armo	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	ashd	43	24	24	240	10.0	0.0	of the Elements	195
+greater-elements	Greater Elements	suffix	belt	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	boot	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	circ	43	24	24	240	10.0	0.0	of the Elements	195
+greater-elements	Greater Elements	suffix	cloa	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	glov	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	grim	43	24	24	240	10.0	0.0	of the Elements	195
+greater-elements	Greater Elements	suffix	head	43	24	24	240	10.0	0.0	of the Elements	195
+greater-elements	Greater Elements	suffix	helm	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	pelt	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	phlm	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	ring	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-elements	Greater Elements	suffix	shie	43	24	24	240	10.0	0.0	of the Elements	195
+greater-elements	Greater Elements	suffix	shld	43	24	24	240	10.0	0.0	of the Elements	195
+greater-elements	Greater Elements	suffix	tors	43	48	48	480	10.0	0.0	of the Cobra; of the Efreeti; of the Phoenix; of the Yeti	186; 188; 190; 192
+greater-lich	Greater Lich	suffix	amul	60	12	12	120	10.0	0.0	of the Lich	125
+greater-lich	Greater Lich	suffix	ring	60	12	12	120	10.0	0.0	of the Lich	125
+greater-guarding	Greater Guarding	suffix	amul	61	60	60	600	10.0	0.0	of Guarding	4
+greater-guarding	Greater Guarding	suffix	ring	61	60	60	600	10.0	0.0	of Guarding	4
+greater-paralysis	Greater Paralysis	suffix	abow	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	afwe	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	ajav	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	aspe	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	axe	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	blde	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	blun	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	bow	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	club	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	comb	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	glov	64	24	24	240	10.0	0.0	Daze1	385
+greater-paralysis	Greater Paralysis	suffix	h2h	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	h2h2	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	hamm	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	jave	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	knif	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	mace	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	mele	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	miss	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	orb	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	pole	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	rod	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	scep	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	slam	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	spea	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	sppl	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	staf	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	swor	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	taxe	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	thro	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	tkni	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	tpot	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	wand	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	weap	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-paralysis	Greater Paralysis	suffix	xbow	64	24	24	240	10.0	0.0	Paralysis1	386
+greater-blindness	Greater Blindness	suffix	abow	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	afwe	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	ajav	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	aspe	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	axe	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	blde	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	blun	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	bow	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	club	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	comb	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	h2h	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	h2h2	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	hamm	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	jave	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	knif	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	mace	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	mele	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	miss	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	orb	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	pole	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	rod	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	scep	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	slam	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	spea	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	sppl	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	staf	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	swor	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	taxe	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	thro	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	tkni	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	tpot	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	wand	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	weap	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-blindness	Greater Blindness	suffix	xbow	65	12	12	120	10.0	0.0	of Blindness1	389
+greater-reanimation	Greater Reanimation	suffix	abow	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	afwe	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	ajav	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	amul	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	aspe	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	axe	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	blde	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	blun	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	bow	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	club	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	comb	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	glov	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	h2h	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	h2h2	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	hamm	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	jave	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	knif	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	mace	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	mele	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	miss	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	orb	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	pole	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	rod	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	scep	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	slam	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	spea	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	sppl	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	staf	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	swor	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	taxe	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	thro	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	tkni	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	tpot	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	wand	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	weap	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-reanimation	Greater Reanimation	suffix	xbow	66	12	12	120	10.0	0.0	of Reanimation1	390
+greater-four-seasons	Greater Four Seasons	suffix	abow	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	afwe	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	ajav	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	amul	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	armo	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	ashd	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	aspe	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	axe	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	belt	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	blde	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	blun	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	boot	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	bow	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	circ	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	cloa	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	club	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	comb	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	glov	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	grim	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	h2h	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	h2h2	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	hamm	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	head	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	helm	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	jave	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	knif	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	mace	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	mele	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	miss	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	orb	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	pelt	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	phlm	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	pole	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	ring	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	rod	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	scep	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	shie	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	shld	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	slam	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	spea	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	sppl	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	staf	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	swor	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	taxe	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	thro	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	tkni	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	tors	67	12	12	120	10.0	0.0	of the Four Seasons2	201
+greater-four-seasons	Greater Four Seasons	suffix	tpot	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	wand	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	weap	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-four-seasons	Greater Four Seasons	suffix	xbow	67	24	24	240	10.0	0.0	of the Soul2	317
+greater-draining	Greater Draining	suffix	abow	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	afwe	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	ajav	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	amaz	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	aspe	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	axe	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	blde	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	blun	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	club	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	comb	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	h2h	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	h2h2	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	hamm	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	jave	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	knif	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	mace	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	mele	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	pole	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	rod	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	scep	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	slam	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	spea	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	sppl	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	staf	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	swor	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	taxe	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	tkni	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-draining	Greater Draining	suffix	wand	80	2	2	20	10.0	0.0	of Siphoning	625
+greater-missile-suffix	Greater missile suffixes	suffix	bowq	200, 201, 202, 203, 204, 205, 206	39	39	390	10.0	0.0	of Fortune; of Maiming; of Piercing; of Resistance; of Slaying; of Transcendence; of the Bat; of the Swift; of the Vampire	785; 788; 791; 794; 797; 800; 803; 806; 809; 812; 815; 818; 822; 823; 824
+greater-missile-suffix	Greater missile suffixes	suffix	mboq	200, 201, 202, 203, 204, 205, 206	39	39	390	10.0	0.0	of Fortune; of Maiming; of Piercing; of Resistance; of Slaying; of Transcendence; of the Bat; of the Swift; of the Vampire	785; 788; 791; 794; 797; 800; 803; 806; 809; 812; 815; 818; 822; 823; 824
+greater-missile-suffix	Greater missile suffixes	suffix	misl	200, 201, 202, 203, 204, 205, 206	39	39	390	10.0	0.0	of Fortune; of Maiming; of Piercing; of Resistance; of Slaying; of Transcendence; of the Bat; of the Swift; of the Vampire	785; 788; 791; 794; 797; 800; 803; 806; 809; 812; 815; 818; 822; 823; 824
+greater-missile-suffix	Greater missile suffixes	suffix	mxbq	200, 201, 202, 203, 204, 205, 206	39	39	390	10.0	0.0	of Fortune; of Maiming; of Piercing; of Resistance; of Slaying; of Transcendence; of the Bat; of the Swift; of the Vampire	785; 788; 791; 794; 797; 800; 803; 806; 809; 812; 815; 818; 822; 823; 824
+greater-missile-suffix	Greater missile suffixes	suffix	xboq	200, 201, 202, 203, 204, 205, 206	39	39	390	10.0	0.0	of Fortune; of Maiming; of Piercing; of Resistance; of Slaying; of Transcendence; of the Bat; of the Swift; of the Vampire	785; 788; 791; 794; 797; 800; 803; 806; 809; 812; 815; 818; 822; 823; 824

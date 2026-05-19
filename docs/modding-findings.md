@@ -286,7 +286,10 @@ Phase 2 is the Greater Affix layer:
 - Add one player-facing Greater category per family, implemented as three technical rows.
 - Default Greater bands are early/mid/late with frequencies `1 / 2 / 3`.
 - Greater rows stay rare-only, use the same family `group`, and should not stack with the normal family row.
-- During Phase 2, normalize family frequencies only where needed so Greater odds make sense relative to the normal top affix.
+- During Phase 2, scale every existing affix row frequency by the same factor, including `rare=0` magic-only rows. Scaling only rare rows would preserve rare odds but distort magic-item affix odds.
+- Greater frequency should be calculated per item-type scope: the total Greater frequency eligible for an item type should equal the current apex frequency before the global scale, making Greater exactly `10x` rarer than that apex after the existing rows are scaled by `10`.
+- Broad families must be split by scope/element as needed. One technical row cannot always be exactly `10x` on every item type; leech is the canonical warning case because weapon, ring, amulet, circlet, and glove scopes have different apex weights.
+- The generated audit writes `docs/rare-greater-affix-scope-validation-2026-05-19.tsv`; every candidate/item-type row should show a `10x` Greater-vs-apex ratio before implementation.
 - Greater rows with a spare mod slot should include `greater-affix-marker`. The marker is backed by `item_greaterAffixMarker` / `GreaterAffixMarker` and prints `** Greater Affix` in orange/gold using D2R color control codes.
 - Greater rows must be benchmarked against the strongest existing modded apex row in their group, not just the vanilla-style family name. For weapon ED group `111`, `Grandmaster's` and `Wraithly1` are the real apex rows, so the Greater weapon-damage category is `Greater Grandmaster's`, not a plain enhanced-damage-only upgrade. Current design uses `dmg% 451-500` plus one Grandmaster-style rider such as AR, Deadly Strike, Crushing Blow, or Open Wounds.
 - Missed apex families now tracked in the canonical design include `Invulnerable1` / armor `Wraithly1` for defensive group `101`, magic resistance (`Antimagic` / `of Negation`), Fire/Lightning/Cold Coalescence absorb suffixes, and the +skills families (`Omniscient`, `Sage's`, top `skilltab`, and top `skill-rand` rows).

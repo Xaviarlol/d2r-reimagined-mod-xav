@@ -350,6 +350,16 @@ These examples show the intended proportional level compression plus top-row spl
 
 ## Phase 2 Examples
 
+### Greater Frequency And Scope Rule
+
+Greater Affix frequency math is now defined against the current modded apex rows for each item-type scope, not only a single sample item.
+
+- Existing affix frequencies should be scaled across the whole affix file, including `rare=0` magic-only rows. Scaling only `rare=1` rows would preserve rare odds but distort magic-item affix odds.
+- For each Greater family, the total Greater frequency eligible for a given item type should equal the current apex frequency for that same item type before the `x10` scale. After all existing rows are scaled by `10`, the Greater family is therefore exactly `10x` rarer than its apex for that item type.
+- Broad families must be split by scope and element as needed. One technical row cannot always be exactly `10x` on every item type; leech rows are the clearest example because rings, amulets, circlets, gloves, and weapons have different apex weights.
+- The generated audit now writes `docs/rare-greater-affix-scope-validation-2026-05-19.tsv`; implementation is not ready unless every candidate/item-type row in that file shows `greater_vs_apex_after = 10`.
+- The `Greater if 3 same-side slots` column is an approximation for comparison, not a literal D2 drop-engine probability.
+
 ### Greater Grandmaster's
 
 The real apex weapon-damage row is `Grandmaster's`, so the Greater affix should inherit that identity and keep the ED-plus-rider structure instead of being a plain enhanced-damage-only row.
@@ -390,9 +400,10 @@ This family shows why Phase 2 may need frequency normalization. Normal Zodiac is
 5. Add the top-affix early/late split for each target family.
 6. Validate TSV column counts and active/base parity.
 7. Generate sample eligible-weight reports for representative item levels and item types.
-8. Publish and test Phase 1.
-9. After Phase 1 testing, implement Phase 2 Greater rows with marker lines.
-10. Re-run sample probability reports and tune family frequencies if Greater odds are too common or too rare.
+8. Generate per-item-type Greater scope validation and confirm every candidate is exactly `10x` rarer than its apex within its implemented scope.
+9. Publish and test Phase 1.
+10. After Phase 1 testing, implement Phase 2 Greater rows with marker lines.
+11. Re-run sample probability reports and tune family frequencies if Greater odds are too common or too rare.
 
 ## Validation Targets
 

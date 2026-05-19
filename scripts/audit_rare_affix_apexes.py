@@ -13,6 +13,7 @@ EXCEL = ROOT / "data" / "global" / "excel"
 OUT = ROOT / "docs" / "rare-greater-affix-apex-audit-2026-05-19.md"
 CHANCE_TSV = ROOT / "docs" / "rare-greater-affix-chance-table-2026-05-19.tsv"
 SANITY_TSV = ROOT / "docs" / "rare-greater-affix-probability-sanity-2026-05-19.tsv"
+SCOPE_TSV = ROOT / "docs" / "rare-greater-affix-scope-validation-2026-05-19.tsv"
 ALVL = 90
 SLOTS = 3
 FREQ_SCALE = 10
@@ -881,32 +882,39 @@ def apex_rows_for(affixes: dict[str, list[dict[str, str]]], candidate: dict[str,
     return rows
 
 
-def synthetic_greater_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, str]]:
-    synthetic = []
+def synthetic_greater_rows_for_item(affixes: dict[str, list[dict[str, str]]], side: str, item_type: str) -> list[dict[str, str]]:
+    """Build per-item Greater target rows for probability modeling.
+
+    This deliberately mirrors the item-type scope of the current apex rows at
+    the sampled item type. The later TXT implementation still has to split real
+    rows by scope, but this keeps the design math honest: every modeled Greater
+    candidate has the same eligible weight as the apex rows it upgrades for the
+    item type being measured.
+    """
+
+    synthetic: list[dict[str, str]] = []
     for candidate in CANDIDATES:
-        apex_by_group: dict[str, int] = defaultdict(int)
-        for row in apex_rows_for(affixes, candidate):
-            apex_by_group[row.get("group") or "blank"] += freq(row)
-        for group, target_weight in apex_by_group.items():
-            if target_weight <= 0:
-                continue
-            eligible_templates = [
-                row
-                for row in candidate["rows"]
-                if (row.get("group") or "blank") == group and eligible(row, candidate["sample"])
-            ]
-            if not eligible_templates:
-                eligible_templates = [row for row in candidate["rows"] if (row.get("group") or "blank") == group]
-            if not eligible_templates:
-                continue
-            base = target_weight // len(eligible_templates)
-            remainder = target_weight % len(eligible_templates)
-            for idx, template in enumerate(eligible_templates):
-                row = dict(template)
-                row["frequency"] = str(base + (1 if idx < remainder else 0))
-                if int(row["frequency"]) <= 0:
-                    continue
-                row["synthetic_greater"] = "1"
+        if candidate["side"] != side:
+            continue
+        scoped_candidate = dict(candidate)
+        scoped_candidate["sample"] = item_type
+        for idx, apex in enumerate(apex_rows_for(affixes, scoped_candidate), start=1):
+            row = {
+                "candidate_id": candidate["id"],
+                "name": candidate["name"],
+                "side": side,
+                "group": apex.get("group", ""),
+                "level": "50",
+                "maxlevel": "",
+                "frequency": apex.get("frequency", "0"),
+                "rare": "1",
+                "synthetic_greater": "1",
+                "source_apex_line": apex.get("line", ""),
+                "source_item_type": item_type,
+                "itype1": item_type,
+            }
+            row["line"] = f"synthetic-{candidate['id']}-{item_type}-{idx}"
+            if int(row["frequency"] or 0) > 0:
                 synthetic.append(row)
     return synthetic
 
@@ -946,9 +954,9 @@ def exact_groupblocked_chance(weights: dict[str, tuple[int, int]], slots: int = 
 
 
 def chance_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, str]]:
-    synthetic = synthetic_greater_rows(affixes)
     rows = []
     for c in CANDIDATES:
+        synthetic = synthetic_greater_rows_for_item(affixes, c["side"], c["sample"])
         before_pool = current_pool_for(affixes, c["side"], c["sample"])
         after_pool = pool_for(affixes, c["side"], c["sample"], synthetic)
         before_total = sum(freq(r) for r in before_pool)
@@ -1003,10 +1011,10 @@ def chance_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, str]
 
 
 def probability_sanity_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, object]]:
-    synthetic = synthetic_greater_rows(affixes)
     scenarios = sorted({(candidate["side"], candidate["sample"]) for candidate in CANDIDATES})
     rows: list[dict[str, object]] = []
     for side, sample in scenarios:
+        synthetic = synthetic_greater_rows_for_item(affixes, side, sample)
         before_pool = current_pool_for(affixes, side, sample)
         after_pool = pool_for(affixes, side, sample, synthetic)
         before_total = sum(freq(row) for row in before_pool)
@@ -1037,6 +1045,38 @@ def probability_sanity_rows(affixes: dict[str, list[dict[str, str]]]) -> list[di
                 "after_per_slot_with_greater": after_with_greater,
                 "existing_only_relative_delta": after_existing_only / before - 1 if before else 0,
                 "with_greater_relative_delta": after_with_greater / before - 1 if before else 0,
+            })
+    return rows
+
+
+def scope_validation_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, object]]:
+    rows: list[dict[str, object]] = []
+    for candidate in CANDIDATES:
+        for item_type in sorted(ITEMTYPES):
+            scoped_candidate = dict(candidate)
+            scoped_candidate["sample"] = item_type
+            apex_rows = apex_rows_for(affixes, scoped_candidate)
+            if not apex_rows:
+                continue
+            synthetic = synthetic_greater_rows_for_item(affixes, candidate["side"], item_type)
+            after_pool = pool_for(affixes, candidate["side"], item_type, synthetic)
+            candidate_weight = sum(proposed_freq(row) for row in after_pool if row.get("candidate_id") == candidate["id"])
+            apex_weight_before = sum(freq(row) for row in apex_rows)
+            apex_weight_after = apex_weight_before * FREQ_SCALE
+            ratio = apex_weight_after / candidate_weight if candidate_weight else 0.0
+            rows.append({
+                "candidate_id": candidate["id"],
+                "candidate": candidate["name"],
+                "side": candidate["side"],
+                "item_type": item_type,
+                "groups": ", ".join(sorted(candidate_groups(candidate), key=lambda x: int(x) if x.isdigit() else 9999)),
+                "greater_weight": candidate_weight,
+                "apex_weight_before": apex_weight_before,
+                "apex_weight_after": apex_weight_after,
+                "greater_vs_apex_after": ratio,
+                "ratio_delta_from_10x": ratio - FREQ_SCALE,
+                "apex_rows_counted": "; ".join(sorted({row["name"] for row in apex_rows})),
+                "apex_lines": "; ".join(sorted(row["line"] for row in apex_rows)),
             })
     return rows
 
@@ -1098,6 +1138,7 @@ def main() -> None:
     affixes = load_affixes()
     chances = chance_rows(affixes)
     sanity = probability_sanity_rows(affixes)
+    scope_checks = scope_validation_rows(affixes)
     audit = group_audit(affixes)
     chance_headers = [
         "Greater candidate",
@@ -1165,8 +1206,24 @@ def main() -> None:
         "with_greater_relative_delta",
     ]
     write_tsv(SANITY_TSV, sanity, sanity_headers)
+    scope_headers = [
+        "candidate_id",
+        "candidate",
+        "side",
+        "item_type",
+        "groups",
+        "greater_weight",
+        "apex_weight_before",
+        "apex_weight_after",
+        "greater_vs_apex_after",
+        "ratio_delta_from_10x",
+        "apex_rows_counted",
+        "apex_lines",
+    ]
+    write_tsv(SCOPE_TSV, scope_checks, scope_headers)
     max_existing_only_delta = max((abs(float(row["existing_only_relative_delta"])) for row in sanity), default=0.0)
     max_with_greater_delta = max((abs(float(row["with_greater_relative_delta"])) for row in sanity), default=0.0)
+    max_scope_ratio_delta = max((abs(float(row["ratio_delta_from_10x"])) for row in scope_checks), default=0.0)
     lines = [
         "# Rare Greater Affix Apex Audit",
         "",
@@ -1178,10 +1235,12 @@ def main() -> None:
         "",
         f"- Source tables: `data/global/excel/magicprefix.txt`, `data/global/excel/magicsuffix.txt`, and `data/global/excel/itemtypes.txt`.",
         f"- Chance model uses affix level `{ALVL}` and the current live affix pools.",
-        f"- The proposed frequency model scales existing affix frequencies by `{FREQ_SCALE}` and sets each Greater candidate's total eligible frequency equal to the current apex frequency it upgrades. That makes Greater exactly 10x rarer than the same apex row(s) in the final scaled table.",
-        "- The script adds drafted Greater rows synthetically; no game TXT files are changed by this report.",
+        f"- The proposed implementation model scales every existing affix frequency by `{FREQ_SCALE}`, including `rare=0` magic-only rows. Scaling the whole affix file preserves both rare and magic affix proportions.",
+        "- The chance model sets each Greater candidate's eligible frequency equal to the current apex frequency it upgrades for the item type being measured. That makes Greater exactly 10x rarer than the same apex row(s) in the final scaled table.",
+        "- The script adds drafted Greater rows synthetically for probability modeling; no game TXT files are changed by this report.",
+        "- Synthetic Greater rows are per-item-type targets. The implementation pass must split actual TXT rows by item scope/element as needed to realize these weights.",
         "- `Greater per slot after` is the candidate's proposed Greater frequency divided by the final eligible same-side pool for the sample item.",
-        f"- `If 3 same-side slots` is an exact group-blocked probability for a rare item that receives `{SLOTS}` prefix slots or `{SLOTS}` suffix slots. Real rares may receive fewer same-side slots, so actual per-item odds are lower when the item rolls fewer affixes.",
+        f"- `If 3 same-side slots` is an approximate group-blocked illustration for a rare item that receives `{SLOTS}` prefix slots or `{SLOTS}` suffix slots. Real D2 rare generation uses weighted picks with group-collision rejection and may receive fewer same-side slots, so actual per-item odds differ.",
         "- The apex columns count the current best matching non-Greater row or rows for that candidate, before and after the uniform frequency scale.",
         "- Item-type eligibility uses `itype*` / `etype*` plus `itemtypes.txt` inheritance.",
         "- Multi-element or multi-scope candidates are aggregated in the chance table. Per-element odds are lower when a row represents several separate element variants.",
@@ -1191,7 +1250,9 @@ def main() -> None:
         "",
         f"- Existing-only relative probability delta after scaling old affixes by `{FREQ_SCALE}`: max `{max_existing_only_delta:.6%}`. This should be exactly zero apart from floating-point noise.",
         f"- Absolute ordinary-affix chance drift after adding Greater rows: max `{max_with_greater_delta:.3%}` across sampled item pools. This is the unavoidable probability mass taken by the new Greater rows.",
+        f"- Per-item-type Greater-vs-apex ratio validation: max deviation from `10.0x` is `{max_scope_ratio_delta:.6f}` across `{len(scope_checks)}` candidate/item-type checks.",
         f"- Full row-level sanity data is written to `{SANITY_TSV.relative_to(ROOT)}`.",
+        f"- Full per-item-type scope validation data is written to `{SCOPE_TSV.relative_to(ROOT)}`.",
         "",
         "## Draft Greater Affix Chance Table",
         "",

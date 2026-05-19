@@ -2,20 +2,20 @@
 schema: ai-review-task-v1
 id: 2026-05-19-1339-rare-greater-affix-full-audit
 status: ready_for_claude
-phase: design_review
-round: 1
+phase: re_review
+round: 2
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-19T13:39:54Z
-updated_at: 2026-05-19T15:04:23Z
+updated_at: 2026-05-19T15:50:44Z
 repo: C:\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
-base_ref: 7064bdae
+base_ref: 49de242a
 head_ref: xav-custom
 original_user_request_included: true
 live_publish_allowed: false
-last_review:
-last_verdict:
+last_review: claude-review-r01.md
+last_verdict: needs_fixes
 ---
 
 # Review Request
@@ -37,10 +37,12 @@ Review the full rare-affix apex audit and draft Greater Affix chance model befor
 - Generated audit and chance table: `docs/rare-greater-affix-apex-audit-2026-05-19.md`
 - Generated chance TSV: `docs/rare-greater-affix-chance-table-2026-05-19.tsv`
 - Generated row-level sanity TSV: `docs/rare-greater-affix-probability-sanity-2026-05-19.tsv`
+- Generated per-item-type scope validation TSV: `docs/rare-greater-affix-scope-validation-2026-05-19.tsv`
 - Generator script: `scripts/audit_rare_affix_apexes.py`
 - Canonical design link update: `docs/rare-item-rework-design-2026-05-18.md`
 - Findings link update: `docs/modding-findings.md`
 - No game-data TXT implementation yet.
+- Round 1 response: `codex-response-r01.md`
 
 ## Review Questions
 
