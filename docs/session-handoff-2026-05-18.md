@@ -295,7 +295,7 @@ Current Phase 1 direction:
 
 - Lower the effective availability gate for affixes by about 30%.
 - Formula: `compressed_level = max(1, round(original_level * 0.70))`.
-- Compress `maxlevel` too when it exists.
+- Leave existing `maxlevel` unchanged. Compressing `maxlevel` would make weaker affixes expire earlier and make high-level rares better overall.
 - Lower `levelreq` by 15% with `compressed_levelreq = max(1, round(original_levelreq * 0.85))`.
 - Preserve family ordering after compression. A lower Cruel row should not end up above the stronger Cruel row.
 - Only the best normal affix in each family gets an early/late split.
@@ -326,7 +326,8 @@ For `itemratio.txt`, the d2rdoc source was useful for confirming the `Uber` fiel
 3. The 2.5x `Uber=1` rare rarity pass is already implemented; test before moving to 3x.
 4. Generate a rare affix family audit before editing `magicprefix.txt` or `magicsuffix.txt`.
 5. For Phase 1:
-   - calculate compressed level and maxlevel values using the 70% formula
+   - calculate compressed level values using the 70% formula
+   - leave existing maxlevel values unchanged
    - calculate compressed levelreq values using the 85% formula
    - validate that each affix family remains ordered correctly
    - use direct shared-row edits; magic item availability may move earlier too

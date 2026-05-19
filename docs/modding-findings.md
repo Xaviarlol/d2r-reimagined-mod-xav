@@ -59,7 +59,8 @@ Full D2RDoc reading notes from the 2026-05-18 sitemap crawl: `docs/d2rdoc-readin
 - D2RDoc confirms `frequency` is a weight. Higher values are more common among eligible affixes; Greater Affixes should be rare by low relative weight and by dilution against ordinary/filler affixes with higher frequencies.
 - `level` controls minimum affix item level, `maxlevel` can create spawn bands, and `levelreq` controls equip requirement. This supports early-access rare-only Greater rows that can drop before they can be equipped.
 - First rare rarity pass applied on 2026-05-18: both `itemratio.txt` copies now make only `Uber=1` rare rows 2.5x rarer. `Uber=0` normal-base rare rows are unchanged. Elite-specific power should come later through affix design because `itemratio.txt` cannot split exceptional from elite.
-- Phase 1 lowers effective affix availability for affixes using the proportional formula `compressed_level = max(1, round_half_up(original_level * 0.70))`; rows with `maxlevel` should compress that gate too.
+- Phase 1 lowers effective affix availability for affixes using the proportional formula `compressed_level = max(1, round_half_up(original_level * 0.70))`.
+- Existing affix rows should keep their original `maxlevel`. Compressing `maxlevel` would make weaker affixes expire earlier and indirectly improve high-level rares beyond the intended design.
 - Use round-half-up for rare affix compression: `round_half_up(x) = floor(x + 0.5)`.
 - Phase 1 also lowers affix equip requirements by 15% with `compressed_levelreq = max(1, round_half_up(original_levelreq * 0.85))`, leaving blank/zero requirements blank/zero.
 - Phase 1 only gives the best normal affix in each family a true early/late frequency split. The early top row starts at the compressed level, ends at `original_top_level - 1`, and uses half the late frequency.
@@ -274,7 +275,7 @@ The rare affix rework is now split into two phases.
 Phase 1 is proportional rare affix level compression:
 
 - Lower the effective availability gate for affixes by about 30%, using `round_half_up(original_level * 0.70)`.
-- Compress `maxlevel` too when it exists.
+- Leave existing `maxlevel` unchanged so high-level rares keep the same weaker-affix dilution.
 - Lower affix `levelreq` by 15%, using `round_half_up(original_levelreq * 0.85)`.
 - Keep the whole family ladder proportional so lower tiers do not end up gated above stronger tiers.
 - Only the best normal affix in each target family gets a true early/late split.

@@ -35,14 +35,11 @@ def compressed_level(value: str, in_scope: bool) -> str:
     return str(max(1, round_half_up(original * 0.70)))
 
 
-def compressed_maxlevel(value: str, new_level: str, in_scope: bool) -> str:
+def preserved_maxlevel(value: str) -> str:
     original = parse_int(value)
     if original is None:
         return value
-    if not in_scope:
-        return str(original)
-    new_level_int = parse_int(new_level) or 1
-    return str(max(new_level_int, round_half_up(original * 0.70)))
+    return str(original)
 
 
 def compressed_levelreq(value: str, in_scope: bool) -> str:
@@ -92,7 +89,7 @@ def process_table(filename: str, side: str) -> list[dict[str, str]]:
         for line, row in enumerate(reader, start=2):
             in_scope = row.get("rare", "") == "1"
             new_level = compressed_level(row.get("level", ""), in_scope)
-            new_maxlevel = compressed_maxlevel(row.get("maxlevel", ""), new_level, in_scope)
+            new_maxlevel = preserved_maxlevel(row.get("maxlevel", ""))
             new_levelreq = compressed_levelreq(row.get("levelreq", ""), in_scope)
             rows.append(
                 {

@@ -73,7 +73,7 @@ Important columns:
 - `spawnable`: whether the affix can appear in the general magic affix pool.
 - `rare`: whether the affix can appear on rares.
 - `level`: minimum affix level gate.
-- `maxlevel`: maximum affix level gate; useful for non-overlapping bands.
+- `maxlevel`: maximum affix level gate; useful for non-overlapping bands. Existing rows keep their original `maxlevel` in Phase 1 so weaker affixes do not expire earlier.
 - `levelreq`: item equip requirement impact, not roll chance.
 - `frequency`: weighted likelihood once the affix is eligible.
 - `group`: mutual-exclusion family. Affixes in the same group cannot stack together on the same item.
@@ -107,11 +107,13 @@ Use round-half-up for all compression math:
 round_half_up(x) = floor(x + 0.5)
 ```
 
-If a row has `maxlevel`, compress it too:
+Existing rows keep their original `maxlevel`:
 
 ```text
-compressed_maxlevel = max(compressed_level, round_half_up(original_maxlevel * 0.70))
+phase1_maxlevel = original_maxlevel
 ```
+
+If the original `maxlevel` is blank, leave it blank. This avoids making high-level rares cleaner by prematurely removing weaker affixes from the eligible pool.
 
 Lower affix equip requirements by 15% at the same time:
 
@@ -394,7 +396,7 @@ This family shows why Phase 2 may need frequency normalization. Normal Zodiac is
 ## Implementation Strategy
 
 1. Review the generated affix-family audit from `magicprefix.txt` and `magicsuffix.txt`: `docs/rare-greater-affix-apex-audit-2026-05-19.md`.
-2. For every affix row, calculate compressed `level`, compressed `maxlevel`, and compressed `levelreq`.
+2. For every affix row, calculate compressed `level` and compressed `levelreq`; leave existing `maxlevel` unchanged.
 3. Validate that each family remains monotonic: weaker affixes should not require a higher affix level or equip level than stronger affixes.
 4. Apply Phase 1 compression directly to shared affix rows; it is acceptable for magic items to move earlier too.
 5. Add the top-affix early/late split for each target family.
@@ -414,6 +416,7 @@ For sample item levels 35, 50, 65, 80, and 90, calculate:
 - Weight of the current top affix in that family.
 - Whether compressed levels preserved family ordering.
 - Whether compressed `levelreq` values preserved family ordering.
+- Whether unchanged existing `maxlevel` values keep weaker affixes in the high-level pool as intended.
 - Whether the top-affix early row expires before the late row starts.
 - Whether high-level rares gained any unintended duplicate chance.
 
