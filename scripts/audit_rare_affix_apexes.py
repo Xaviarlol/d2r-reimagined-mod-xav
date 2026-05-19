@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import csv
-import math
 from collections import defaultdict
 from functools import lru_cache
 from pathlib import Path
@@ -12,8 +11,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EXCEL = ROOT / "data" / "global" / "excel"
 OUT = ROOT / "docs" / "rare-greater-affix-apex-audit-2026-05-19.md"
+CHANCE_TSV = ROOT / "docs" / "rare-greater-affix-chance-table-2026-05-19.tsv"
+SANITY_TSV = ROOT / "docs" / "rare-greater-affix-probability-sanity-2026-05-19.tsv"
 ALVL = 90
 SLOTS = 3
+FREQ_SCALE = 10
 
 
 def read_tsv(path: Path) -> list[dict[str, str]]:
@@ -83,6 +85,12 @@ def eligible(row: dict[str, str], item_type: str, alvl: int = ALVL) -> bool:
 
 def freq(row: dict[str, str]) -> int:
     return int(row.get("frequency") or 0)
+
+
+def proposed_freq(row: dict[str, str]) -> int:
+    if row.get("synthetic_greater") == "1":
+        return int(row.get("frequency") or 0)
+    return int(row.get("frequency") or 0) * FREQ_SCALE
 
 
 def as_row(
@@ -418,18 +426,18 @@ CANDIDATES = [
         "id": "greater-missile-prefix",
         "name": "Greater missile prefixes",
         "side": "prefix",
-        "sample": "miss",
+        "sample": "misl",
         "apex": "missile-only prefix groups 220-227",
         "greater": "stronger quiver/missile weapon stat family rows",
         "rows": (
-            band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 220, 2, ["miss"])
-            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 221, 2, ["miss"])
-            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 222, 2, ["miss"])
-            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 223, 2, ["miss"])
-            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 224, 2, ["miss"])
-            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 225, 2, ["miss"])
-            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 226, 2, ["miss"])
-            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 227, 2, ["miss"])
+            band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 220, 2, ["misl"])
+            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 221, 2, ["misl"])
+            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 222, 2, ["misl"])
+            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 223, 2, ["misl"])
+            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 224, 2, ["misl"])
+            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 225, 2, ["misl"])
+            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 226, 2, ["misl"])
+            + band_rows("greater-missile-prefix", "Greater missile prefix", "prefix", 227, 2, ["misl"])
         ),
     },
     {
@@ -714,17 +722,17 @@ CANDIDATES = [
         "id": "greater-missile-suffix",
         "name": "Greater missile suffixes",
         "side": "suffix",
-        "sample": "miss",
+        "sample": "misl",
         "apex": "missile-only suffix groups 200-206",
         "greater": "stronger quiver/missile weapon suffix rows",
         "rows": (
-            band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 200, 2, ["miss"])
-            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 201, 2, ["miss"])
-            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 202, 2, ["miss"])
-            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 203, 2, ["miss"])
-            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 204, 2, ["miss"])
-            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 205, 2, ["miss"])
-            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 206, 1, ["miss"])
+            band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 200, 2, ["misl"])
+            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 201, 2, ["misl"])
+            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 202, 2, ["misl"])
+            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 203, 2, ["misl"])
+            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 204, 2, ["misl"])
+            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 205, 2, ["misl"])
+            + band_rows("greater-missile-suffix", "Greater missile suffix", "suffix", 206, 1, ["misl"])
         ),
     },
 ]
@@ -757,6 +765,21 @@ GROUP_ACTIONS = {
 }
 
 
+APEX_RULES = {
+    "greater-grandmasters": {"names": {"Grandmaster's", "Wraithly1"}},
+    "greater-godly": {"names": {"Godly", "Wraithly1", "Invulnerable1"}, "max_level": True},
+    "greater-antimagic-prefix": {"names": {"Antimagic"}, "mod_codes_any": {"res-mag"}},
+    "greater-omniscient": {"mod_codes_any": {"allskills"}, "max_mod_value_code": "allskills"},
+    "greater-class-skill": {"mod_codes_any": {"ama", "pal", "nec", "sor", "bar", "dru", "ass", "war"}, "mod_value": 2},
+    "greater-skilltab": {"mod_codes_any": {"skilltab"}, "mod_value": 3},
+    "greater-gnostic": {"mod_codes_any": {"skill-rand"}, "mod_param": "5"},
+    "greater-elemental-mastery": {"mod_code_prefixes": {"extra-"}, "max_level": True},
+    "greater-elemental-pierce": {"mod_code_prefixes": {"pierce-"}, "max_level": True},
+    "greater-coalescence": {"mod_codes_any": {"abs-fire%", "abs-ltng%", "abs-cold%"}, "max_level": True},
+    "greater-draining": {"names": {"of Siphoning"}},
+}
+
+
 def load_affixes() -> dict[str, list[dict[str, str]]]:
     out = {}
     for side, fname in (("prefix", "magicprefix.txt"), ("suffix", "magicsuffix.txt")):
@@ -775,13 +798,126 @@ def pool_for(affixes: dict[str, list[dict[str, str]]], side: str, item_type: str
     return rows
 
 
-def group_weights(pool: list[dict[str, str]], target_id: str) -> dict[str, tuple[int, int]]:
+def current_pool_for(affixes: dict[str, list[dict[str, str]]], side: str, item_type: str) -> list[dict[str, str]]:
+    return [r for r in affixes[side] if eligible(r, item_type)]
+
+
+def candidate_groups(candidate: dict[str, object]) -> set[str]:
+    return {r["group"] for r in candidate["rows"]}
+
+
+def mod_entries(row: dict[str, str]) -> list[tuple[str, str, str, str]]:
+    return [
+        (row.get(f"mod{n}code", ""), row.get(f"mod{n}param", ""), row.get(f"mod{n}min", ""), row.get(f"mod{n}max", ""))
+        for n in range(1, 4)
+        if row.get(f"mod{n}code", "")
+    ]
+
+
+def row_matches_apex_rule(row: dict[str, str], rule: dict[str, object]) -> bool:
+    entries = mod_entries(row)
+    codes = {code for code, _, _, _ in entries}
+    if "names" in rule and row.get("name") not in rule["names"]:
+        return False
+    if "mod_codes_any" in rule and codes.isdisjoint(rule["mod_codes_any"]):
+        return False
+    if "mod_code_prefixes" in rule:
+        prefixes = tuple(rule["mod_code_prefixes"])
+        if not any(code.startswith(prefixes) for code in codes):
+            return False
+    if "mod_param" in rule and not any(param == rule["mod_param"] for _, param, _, _ in entries):
+        return False
+    if "mod_value" in rule:
+        target = str(rule["mod_value"])
+        if not any(mn == target and mx == target for _, _, mn, mx in entries):
+            return False
+    return True
+
+
+def max_level_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    grouped = defaultdict(list)
+    for row in rows:
+        grouped[row.get("group") or "blank"].append(row)
+    out = []
+    for group_rows in grouped.values():
+        max_level = max(int(row.get("level") or 0) for row in group_rows)
+        out.extend(row for row in group_rows if int(row.get("level") or 0) == max_level)
+    return out
+
+
+def max_mod_value_rows(rows: list[dict[str, str]], code: str) -> list[dict[str, str]]:
+    scored = []
+    for row in rows:
+        values = []
+        for mod_code, _, mn, mx in mod_entries(row):
+            if mod_code == code:
+                for raw in (mn, mx):
+                    if raw.lstrip("-").isdigit():
+                        values.append(int(raw))
+        if values:
+            scored.append((max(values), row))
+    if not scored:
+        return rows
+    max_value = max(score for score, _ in scored)
+    return [row for score, row in scored if score == max_value]
+
+
+def apex_rows_for(affixes: dict[str, list[dict[str, str]]], candidate: dict[str, object]) -> list[dict[str, str]]:
+    groups = candidate_groups(candidate)
+    rows = [
+        row
+        for row in affixes[candidate["side"]]
+        if eligible(row, candidate["sample"]) and (row.get("group") or "blank") in groups
+    ]
+    rule = APEX_RULES.get(candidate["id"])
+    if rule:
+        rows = [row for row in rows if row_matches_apex_rule(row, rule)]
+        if rule.get("max_level"):
+            rows = max_level_rows(rows)
+        if "max_mod_value_code" in rule:
+            rows = max_mod_value_rows(rows, rule["max_mod_value_code"])
+    else:
+        rows = max_level_rows(rows)
+    return rows
+
+
+def synthetic_greater_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, str]]:
+    synthetic = []
+    for candidate in CANDIDATES:
+        apex_by_group: dict[str, int] = defaultdict(int)
+        for row in apex_rows_for(affixes, candidate):
+            apex_by_group[row.get("group") or "blank"] += freq(row)
+        for group, target_weight in apex_by_group.items():
+            if target_weight <= 0:
+                continue
+            eligible_templates = [
+                row
+                for row in candidate["rows"]
+                if (row.get("group") or "blank") == group and eligible(row, candidate["sample"])
+            ]
+            if not eligible_templates:
+                eligible_templates = [row for row in candidate["rows"] if (row.get("group") or "blank") == group]
+            if not eligible_templates:
+                continue
+            base = target_weight // len(eligible_templates)
+            remainder = target_weight % len(eligible_templates)
+            for idx, template in enumerate(eligible_templates):
+                row = dict(template)
+                row["frequency"] = str(base + (1 if idx < remainder else 0))
+                if int(row["frequency"]) <= 0:
+                    continue
+                row["synthetic_greater"] = "1"
+                synthetic.append(row)
+    return synthetic
+
+
+def group_weights(pool: list[dict[str, str]], is_target, weight_fn=freq) -> dict[str, tuple[int, int]]:
     weights: dict[str, list[int]] = defaultdict(lambda: [0, 0])
     for row in pool:
         g = row.get("group") or "blank"
-        f = freq(row)
+        f = weight_fn(row)
         weights[g][0] += f
-        if row.get("candidate_id") == target_id:
+        if is_target(row):
             weights[g][1] += f
     return {g: (vals[0], vals[1]) for g, vals in weights.items()}
 
@@ -810,21 +946,98 @@ def exact_groupblocked_chance(weights: dict[str, tuple[int, int]], slots: int = 
 
 
 def chance_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, str]]:
-    synthetic = [r for c in CANDIDATES for r in c["rows"]]
+    synthetic = synthetic_greater_rows(affixes)
     rows = []
     for c in CANDIDATES:
-        pool = pool_for(affixes, c["side"], c["sample"], synthetic)
-        total = sum(freq(r) for r in pool)
-        cand_weight = sum(freq(r) for r in pool if r.get("candidate_id") == c["id"])
-        slot = cand_weight / total if total else 0.0
-        item = exact_groupblocked_chance(group_weights(pool, c["id"]), SLOTS)
+        before_pool = current_pool_for(affixes, c["side"], c["sample"])
+        after_pool = pool_for(affixes, c["side"], c["sample"], synthetic)
+        before_total = sum(freq(r) for r in before_pool)
+        after_regular_total = sum(proposed_freq(r) for r in after_pool if r.get("synthetic_greater") != "1")
+        after_greater_total = sum(proposed_freq(r) for r in after_pool if r.get("synthetic_greater") == "1")
+        after_total = after_regular_total + after_greater_total
+        cand_weight = sum(proposed_freq(r) for r in after_pool if r.get("candidate_id") == c["id"])
+        apex_rows = apex_rows_for(affixes, c)
+        apex_lines = {row["line"] for row in apex_rows}
+        apex_weight_before = sum(freq(r) for r in before_pool if r.get("line") in apex_lines)
+        apex_weight_after = apex_weight_before * FREQ_SCALE
+        slot = cand_weight / after_total if after_total else 0.0
+        apex_slot_before = apex_weight_before / before_total if before_total else 0.0
+        apex_slot_after = apex_weight_after / after_total if after_total else 0.0
+        item = exact_groupblocked_chance(
+            group_weights(after_pool, lambda row, cid=c["id"]: row.get("candidate_id") == cid, proposed_freq),
+            SLOTS,
+        )
+        apex_item = exact_groupblocked_chance(
+            group_weights(after_pool, lambda row, lines=apex_lines: row.get("line") in lines, proposed_freq),
+            SLOTS,
+        )
+        if apex_weight_after and cand_weight:
+            ratio = apex_weight_after / cand_weight
+            ratio_text = f"{ratio:.1f}x rarer"
+        elif cand_weight and not apex_weight_after:
+            ratio_text = "no apex baseline"
+        else:
+            ratio_text = "n/a"
+        ordinary_drift = (after_regular_total / after_total - 1.0) if after_total else 0.0
+        old_relative_check_delta = 0.0 if before_total and after_regular_total else 0.0
         rows.append({
             **c,
-            "pool_weight": total,
+            "before_pool_weight": before_total,
+            "after_pool_weight": after_total,
+            "after_regular_weight": after_regular_total,
+            "after_greater_weight": after_greater_total,
             "candidate_weight": cand_weight,
+            "apex_weight_before": apex_weight_before,
+            "apex_weight_after": apex_weight_after,
             "slot_chance": slot,
             "item_chance": item,
+            "apex_slot_chance_before": apex_slot_before,
+            "apex_slot_chance_after": apex_slot_after,
+            "apex_item_chance": apex_item,
+            "greater_vs_apex": ratio_text,
+            "ordinary_absolute_drift": ordinary_drift,
+            "old_relative_check_delta": old_relative_check_delta,
+            "apex_rows_counted": "; ".join(sorted({row["name"] for row in apex_rows})),
         })
+    return rows
+
+
+def probability_sanity_rows(affixes: dict[str, list[dict[str, str]]]) -> list[dict[str, object]]:
+    synthetic = synthetic_greater_rows(affixes)
+    scenarios = sorted({(candidate["side"], candidate["sample"]) for candidate in CANDIDATES})
+    rows: list[dict[str, object]] = []
+    for side, sample in scenarios:
+        before_pool = current_pool_for(affixes, side, sample)
+        after_pool = pool_for(affixes, side, sample, synthetic)
+        before_total = sum(freq(row) for row in before_pool)
+        after_regular_total = sum(proposed_freq(row) for row in after_pool if row.get("synthetic_greater") != "1")
+        after_greater_total = sum(proposed_freq(row) for row in after_pool if row.get("synthetic_greater") == "1")
+        after_total = after_regular_total + after_greater_total
+        if not before_total or not after_total or not after_regular_total:
+            continue
+        for row in before_pool:
+            before = freq(row) / before_total
+            after_existing_only = proposed_freq(row) / after_regular_total
+            after_with_greater = proposed_freq(row) / after_total
+            rows.append({
+                "side": side,
+                "sample_item": sample,
+                "line": row.get("line", ""),
+                "group": row.get("group", ""),
+                "name": row.get("name", ""),
+                "mods": ", ".join(row_mods(row)),
+                "current_freq": freq(row),
+                "proposed_freq": proposed_freq(row),
+                "current_pool_weight": before_total,
+                "after_regular_weight": after_regular_total,
+                "after_greater_weight": after_greater_total,
+                "after_total_weight": after_total,
+                "before_per_slot": before,
+                "after_per_slot_existing_only": after_existing_only,
+                "after_per_slot_with_greater": after_with_greater,
+                "existing_only_relative_delta": after_existing_only / before - 1 if before else 0,
+                "with_greater_relative_delta": after_with_greater / before - 1 if before else 0,
+            })
     return rows
 
 
@@ -874,10 +1087,86 @@ def md_table(headers: list[str], rows: list[list[str]]) -> str:
     return "\n".join(out)
 
 
+def write_tsv(path: Path, rows: list[dict[str, object]], headers: list[str]) -> None:
+    with path.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=headers, delimiter="\t", extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
+
+
 def main() -> None:
     affixes = load_affixes()
     chances = chance_rows(affixes)
+    sanity = probability_sanity_rows(affixes)
     audit = group_audit(affixes)
+    chance_headers = [
+        "Greater candidate",
+        "Side",
+        "Group",
+        "Sample item",
+        "Greater weight",
+        "Apex weight before",
+        "Apex weight after",
+        "Current pool weight",
+        "After pool weight",
+        "Greater per slot after",
+        "Apex per slot before",
+        "Apex per slot after",
+        "Greater if 3 same-side slots",
+        "Apex if 3 same-side slots after",
+        "Greater vs apex after",
+        "Ordinary affix absolute drift",
+        "Apex rows counted",
+        "Apex baseline",
+        "Draft greater payload",
+    ]
+    chance_table_rows = [
+        {
+            "Greater candidate": c["name"],
+            "Side": c["side"],
+            "Group": ", ".join(sorted({r["group"] for r in c["rows"]}, key=lambda x: int(x) if x.isdigit() else 9999)),
+            "Sample item": c["sample"],
+            "Greater weight": c["candidate_weight"],
+            "Apex weight before": c["apex_weight_before"],
+            "Apex weight after": c["apex_weight_after"],
+            "Current pool weight": c["before_pool_weight"],
+            "After pool weight": c["after_pool_weight"],
+            "Greater per slot after": pct(c["slot_chance"]),
+            "Apex per slot before": pct(c["apex_slot_chance_before"]),
+            "Apex per slot after": pct(c["apex_slot_chance_after"]),
+            "Greater if 3 same-side slots": pct(c["item_chance"]),
+            "Apex if 3 same-side slots after": pct(c["apex_item_chance"]),
+            "Greater vs apex after": c["greater_vs_apex"],
+            "Ordinary affix absolute drift": pct(c["ordinary_absolute_drift"]),
+            "Apex rows counted": c["apex_rows_counted"],
+            "Apex baseline": c["apex"],
+            "Draft greater payload": c["greater"],
+        }
+        for c in sorted(chances, key=lambda c: (c["side"], c["sample"], c["name"]))
+    ]
+    write_tsv(CHANCE_TSV, chance_table_rows, chance_headers)
+    sanity_headers = [
+        "side",
+        "sample_item",
+        "line",
+        "group",
+        "name",
+        "mods",
+        "current_freq",
+        "proposed_freq",
+        "current_pool_weight",
+        "after_regular_weight",
+        "after_greater_weight",
+        "after_total_weight",
+        "before_per_slot",
+        "after_per_slot_existing_only",
+        "after_per_slot_with_greater",
+        "existing_only_relative_delta",
+        "with_greater_relative_delta",
+    ]
+    write_tsv(SANITY_TSV, sanity, sanity_headers)
+    max_existing_only_delta = max((abs(float(row["existing_only_relative_delta"])) for row in sanity), default=0.0)
+    max_with_greater_delta = max((abs(float(row["with_greater_relative_delta"])) for row in sanity), default=0.0)
     lines = [
         "# Rare Greater Affix Apex Audit",
         "",
@@ -889,31 +1178,28 @@ def main() -> None:
         "",
         f"- Source tables: `data/global/excel/magicprefix.txt`, `data/global/excel/magicsuffix.txt`, and `data/global/excel/itemtypes.txt`.",
         f"- Chance model uses affix level `{ALVL}` and the current live affix pools.",
+        f"- The proposed frequency model scales existing affix frequencies by `{FREQ_SCALE}` and sets each Greater candidate's total eligible frequency equal to the current apex frequency it upgrades. That makes Greater exactly 10x rarer than the same apex row(s) in the final scaled table.",
         "- The script adds drafted Greater rows synthetically; no game TXT files are changed by this report.",
-        "- `Per affix slot` is candidate frequency divided by all eligible same-side affix frequency for the sample item after adding all drafted Greater rows.",
+        "- `Greater per slot after` is the candidate's proposed Greater frequency divided by the final eligible same-side pool for the sample item.",
         f"- `If 3 same-side slots` is an exact group-blocked probability for a rare item that receives `{SLOTS}` prefix slots or `{SLOTS}` suffix slots. Real rares may receive fewer same-side slots, so actual per-item odds are lower when the item rolls fewer affixes.",
+        "- The apex columns count the current best matching non-Greater row or rows for that candidate, before and after the uniform frequency scale.",
         "- Item-type eligibility uses `itype*` / `etype*` plus `itemtypes.txt` inheritance.",
         "- Multi-element or multi-scope candidates are aggregated in the chance table. Per-element odds are lower when a row represents several separate element variants.",
         "- Rows marked defer/optional are still captured in the audit so we do not forget them, but they are not first-pass Greater candidates.",
         "",
+        "## Probability Sanity Check",
+        "",
+        f"- Existing-only relative probability delta after scaling old affixes by `{FREQ_SCALE}`: max `{max_existing_only_delta:.6%}`. This should be exactly zero apart from floating-point noise.",
+        f"- Absolute ordinary-affix chance drift after adding Greater rows: max `{max_with_greater_delta:.3%}` across sampled item pools. This is the unavoidable probability mass taken by the new Greater rows.",
+        f"- Full row-level sanity data is written to `{SANITY_TSV.relative_to(ROOT)}`.",
+        "",
         "## Draft Greater Affix Chance Table",
         "",
         md_table(
-            ["Greater candidate", "Side", "Group", "Sample item", "Candidate weight", "Pool weight", "Per affix slot", "If 3 same-side slots", "Apex baseline", "Draft greater payload"],
+            chance_headers,
             [
-                [
-                    c["name"],
-                    c["side"],
-                    ", ".join(sorted({r["group"] for r in c["rows"]}, key=lambda x: int(x) if x.isdigit() else 9999)),
-                    c["sample"],
-                    str(c["candidate_weight"]),
-                    str(c["pool_weight"]),
-                    pct(c["slot_chance"]),
-                    pct(c["item_chance"]),
-                    c["apex"],
-                    c["greater"],
-                ]
-                for c in sorted(chances, key=lambda c: (c["side"], c["sample"], c["group"] if "group" in c else c["name"]))
+                [str(row[header]) for header in chance_headers]
+                for row in chance_table_rows
             ],
         ),
         "",

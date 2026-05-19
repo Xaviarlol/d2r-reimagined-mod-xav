@@ -8,80 +8,88 @@ Purpose: scan the live rare-eligible affix tables, identify every affix group th
 
 - Source tables: `data/global/excel/magicprefix.txt`, `data/global/excel/magicsuffix.txt`, and `data/global/excel/itemtypes.txt`.
 - Chance model uses affix level `90` and the current live affix pools.
+- The proposed frequency model scales existing affix frequencies by `10` and sets each Greater candidate's total eligible frequency equal to the current apex frequency it upgrades. That makes Greater exactly 10x rarer than the same apex row(s) in the final scaled table.
 - The script adds drafted Greater rows synthetically; no game TXT files are changed by this report.
-- `Per affix slot` is candidate frequency divided by all eligible same-side affix frequency for the sample item after adding all drafted Greater rows.
+- `Greater per slot after` is the candidate's proposed Greater frequency divided by the final eligible same-side pool for the sample item.
 - `If 3 same-side slots` is an exact group-blocked probability for a rare item that receives `3` prefix slots or `3` suffix slots. Real rares may receive fewer same-side slots, so actual per-item odds are lower when the item rolls fewer affixes.
+- The apex columns count the current best matching non-Greater row or rows for that candidate, before and after the uniform frequency scale.
 - Item-type eligibility uses `itype*` / `etype*` plus `itemtypes.txt` inheritance.
 - Multi-element or multi-scope candidates are aggregated in the chance table. Per-element odds are lower when a row represents several separate element variants.
 - Rows marked defer/optional are still captured in the audit so we do not forget them, but they are not first-pass Greater candidates.
 
+## Probability Sanity Check
+
+- Existing-only relative probability delta after scaling old affixes by `10`: max `0.000000%`. This should be exactly zero apart from floating-point noise.
+- Absolute ordinary-affix chance drift after adding Greater rows: max `3.226%` across sampled item pools. This is the unavoidable probability mass taken by the new Greater rows.
+- Full row-level sanity data is written to `docs\rare-greater-affix-probability-sanity-2026-05-19.tsv`.
+
 ## Draft Greater Affix Chance Table
 
-| Greater candidate | Side | Group | Sample item | Candidate weight | Pool weight | Per affix slot | If 3 same-side slots | Apex baseline | Draft greater payload |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Greater Gnostic | prefix | 201 | amul | 1 | 483 | 0.207% | 0.719% | +5 random class skill rows in group 201 | skill-rand +6, one class band per row |
-| Greater Omniscient | prefix | 125 | amul | 1 | 483 | 0.207% | 0.398% | Omniscient/Sage's allskills in group 125 | allskills +3 torso/amulet, +2 ring |
-| Greater Sage | prefix | 204 | amul | 3 | 483 | 0.621% | 2.401% | Master Sage's addxp in group 204 | addxp 6 |
-| Greater Skilltab | prefix | 125 | amul | 3 | 483 | 0.621% | 1.194% | +3 skilltab rows in group 125 | skilltab +4, one row per skill tree |
-| Greater class skill | prefix | 125 | amul | 1 | 483 | 0.207% | 0.398% | +2 class skill rows, including Warlock, in group 125 | +3 class skills on torso/amulet/circlet scopes |
-| Greater Adamantine-Wrought | prefix | 206 | axe | 3 | 1275 | 0.235% | 1.578% | Adamantine-Wrought ED/defense plus durability in group 206 | weapon dmg% 110-130 or armor ac% 85-100 plus dur 80-100 |
-| Greater Celestial | prefix | 123 | axe | 3 | 1275 | 0.235% | 1.652% | Celestial demon AR/damage in group 123 | att-demon 451-550 plus dmg-demon 351-425 |
-| Greater Divine | prefix | 142 | axe | 3 | 1275 | 0.235% | 1.647% | Divine undead AR/damage in group 142 | att-undead 500-650 plus dmg-undead 400-500 |
-| Greater Elemental | prefix | 203 | axe | 3 | 1275 | 0.235% | 1.647% | Elemental1 mixed elemental weapon row in group 203 | dmg-elem above current range |
-| Greater Grandmaster's | prefix | 111 | axe | 4 | 1275 | 0.314% | 0.438% | Grandmaster's variants and Wraithly1 in group 111 | dmg% 451-500 plus AR / Deadly / Crushing / Open Wounds rider |
-| Greater Gritty | prefix | 105 | axe | 3 | 1275 | 0.235% | 1.583% | Gritty damage-per-level in group 105 | stronger dmg/lvl weapon scaling |
-| Greater Platinum | prefix | 110 | axe | 3 | 1275 | 0.235% | 1.533% | highest attack-rating rows in group 110 | att 351-450, item-scope split if needed |
-| Greater Scorching/Shocking/Pestilent | prefix | 138, 139, 140 | axe | 9 | 1275 | 0.706% | 4.888% | weapon elemental damage prefixes in groups 138-140 | one element per row, about 25-35% above current apex |
-| Greater Savage | prefix | 205 | boot | 3 | 789 | 0.380% | 3.570% | Savage kick damage in group 205 | kick 11-13 |
-| Greater Crushing/Fatal | prefix | 202 | glov | 3 | 859 | 0.349% | 2.646% | Crushing and Fatal glove rows in group 202 | crush/deadly 24-30, separate rows in same group |
-| Greater Veracious | prefix | 200 | glov | 3 | 859 | 0.349% | 2.685% | Veracious attack% in group 200 | att% 40-50 |
-| Greater Aureolin | prefix | 121 | jewl | 3 | 166 | 1.807% | 5.784% | Aureolin mana after kill in group 121 | mana-kill 4-5 |
-| Greater Bloody | prefix | 103 | jewl | 3 | 166 | 1.807% | 5.080% | Bloody min+max damage rows in group 103 | dmg-min 9-12 plus dmg-max 18-24 |
-| Greater Avatar | prefix | 137 | lcha | 3 | 315 | 0.952% | 2.760% | Avatar elemental large charm row in group 137 | dmg-elem 35-45 |
-| Greater Hulking | prefix | 143 | lcha | 3 | 315 | 0.952% | 2.996% | Hulking normal damage large charm in group 143 | dmg-norm 70-85 |
-| Greater Lucky | prefix | 114 | lcha | 3 | 315 | 0.952% | 3.059% | Lucky mag% plus gold% in group 114 | mag% 30-35 plus gold% 60-70 |
-| Greater Ruby/Sapphire/Amber/Emerald | prefix | 117, 118, 119, 120 | lcha | 12 | 315 | 3.810% | 11.364% | single-element large charm resist rows in groups 117-120 | single resist 34-40, one element per row |
-| Greater Serpent's | prefix | 115 | lcha | 3 | 315 | 0.952% | 2.963% | Serpent's mana in group 115 | mana 70-85 |
-| Greater Serrated | prefix | 104 | lcha | 3 | 315 | 0.952% | 3.028% | Serrated large charm enhanced damage in group 104 | dmg% 30-35 on large charms |
-| Greater Shimmering | prefix | 116 | lcha | 3 | 315 | 0.952% | 2.996% | Shimmering all resistance in group 116 | res-all 15-18 |
-| Greater missile prefixes | prefix | 220, 221, 222, 223, 224, 225, 226, 227 | miss | 16 | 1269 | 1.261% | 8.833% | missile-only prefix groups 220-227 | stronger quiver/missile weapon stat family rows |
-| Greater Antimagic | prefix | 102 | shld | 3 | 870 | 0.345% | 2.660% | Antimagic res-mag 16-20 in group 102 | res-mag 24-30 |
-| Greater Vulpine | prefix | 107 | shld | 3 | 870 | 0.345% | 2.867% | Vulpine damage-to-mana in group 107 | dmg-to-mana 16-20 |
-| Greater Aureole | prefix | 207 | tors | 1 | 872 | 0.115% | 0.906% | Aureole aura rows in group 207 | higher aura level; needs per-aura balance |
-| Greater Godly | prefix | 101 | tors | 3 | 872 | 0.344% | 0.453% | Godly, Invulnerable1, armor Wraithly1 in group 101 | ac% 250-300 plus red-dmg% 26-30 |
-| Greater Elemental Mastery | prefix | 209 | wand | 2 | 395 | 0.506% | 1.416% | extra-fire/cold/lightning/poison caster rows in group 209 | extra-* 14-16 |
-| Greater Elemental Pierce | prefix | 209 | wand | 2 | 395 | 0.506% | 1.416% | pierce-fire/cold/lightning/poison caster rows in group 209 | pierce-* 14-16 |
-| Greater Enlightenment | suffix | 23 | amul | 3 | 3316 | 0.090% | 0.275% | Energy rows in group 23 | enr 36-40, scope split if needed |
-| Greater Zodiac | suffix | 42 | amul | 3 | 3316 | 0.090% | 0.278% | Zodiac all-stats in group 42 | all-stats 38-45 |
-| Greater jewelry elemental damage | suffix | 10, 12, 13, 16 | amul | 8 | 3316 | 0.241% | 0.739% | Glacier/Burning/Storms/Blight jewelry elemental rows in groups 10,12,13,16 | about 25-35% above current apex, one element per row |
-| Greater Blindness | suffix | 65 | axe | 2 | 2739 | 0.073% | 0.251% | Blindness hit blinds target in group 65 | stupidity 4 |
-| Greater Draining | suffix | 80 | axe | 3 | 2739 | 0.110% | 0.379% | Siphoning heal per hit in group 80 | healperhit 14-16 |
-| Greater Evisceration | suffix | 14 | axe | 3 | 2739 | 0.110% | 0.251% | Evisceration max damage in group 14 | dmg-max 150-165 |
-| Greater Paralysis | suffix | 64 | axe | 2 | 2739 | 0.073% | 0.245% | Paralysis slow target in group 64 | slow 28-33 |
-| Greater Quickness | suffix | 7 | axe | 3 | 2739 | 0.110% | 0.339% | Quickness IAS in group 7 | swing3 50 |
-| Greater Transcendence | suffix | 15 | axe | 3 | 2739 | 0.110% | 0.373% | Transcendence min damage in group 15 | dmg-min 75-85 |
-| Greater Wealth | suffix | 21 | belt | 3 | 1062 | 0.282% | 0.930% | Wealth gold find in group 21 | gold% 100-120 |
-| Greater Perfection | suffix | 17 | boot | 3 | 1041 | 0.288% | 0.900% | Perfection dexterity in group 17 | dex 36-40 |
-| Greater Regeneration | suffix | 19 | boot | 3 | 1041 | 0.288% | 0.925% | Regeneration life regen in group 19 | regen 6-8 |
-| Greater Reanimation | suffix | 66 | glov | 2 | 1117 | 0.179% | 0.573% | Reanimation in group 66 | higher reanimate chance/level |
-| Greater Prosperity | suffix | 22 | jewl | 3 | 1310 | 0.229% | 0.724% | Prosperity magic find in group 22 | mag% 26-30 |
-| Greater Balance | suffix | 18 | lcha | 3 | 97 | 3.093% | 12.431% | Balance FHR on large charms in group 18 | balance3 13-15 |
-| Greater Inertia | suffix | 35 | lcha | 3 | 97 | 3.093% | 12.431% | Inertia FRW large charm in group 35 | move3 13-15 |
-| Greater Vita | suffix | 26 | lcha | 3 | 97 | 3.093% | 12.431% | Vita life on large charms in group 26 | hp 80-95 |
-| Greater missile suffixes | suffix | 200, 201, 202, 203, 204, 205, 206 | miss | 13 | 2431 | 0.535% | 1.890% | missile-only suffix groups 200-206 | stronger quiver/missile weapon suffix rows |
-| Greater Magus | suffix | 9 | orb | 3 | 1552 | 0.193% | 0.588% | Magus FCR in group 9 | cast3 25 |
-| Greater Coalescence | suffix | 3 | ring | 3 | 2706 | 0.111% | 0.318% | elemental absorb percent rows in group 3 | abs-fire/ltng/cold% 28-35, one element per row |
-| Greater Elephant | suffix | 41 | ring | 3 | 2706 | 0.111% | 0.350% | Elephant hp/lvl and mana/lvl in group 41 | stronger hp/lvl plus mana/lvl |
-| Greater Guarding | suffix | 61 | ring | 3 | 2706 | 0.111% | 0.328% | Guarding flat defense on jewelry in group 61 | ac 60-90 |
-| Greater Lamprey/Vampire | suffix | 27, 28 | ring | 3 | 2706 | 0.111% | 0.343% | single leech rows in groups 27 and 28 | lifesteal/manasteal above current top, scope split |
-| Greater Lich | suffix | 60 | ring | 3 | 2706 | 0.111% | 0.348% | Lich dual leech in group 60 | manasteal 10-12 plus lifesteal 13-15 |
-| Greater Titan | suffix | 31 | ring | 3 | 2706 | 0.111% | 0.338% | strength/dex/vit/enr rows in group 31 | primary stat 26-30 or equivalent scope split |
-| Greater Deflecting | suffix | 8 | shld | 3 | 1798 | 0.167% | 0.494% | Deflecting block rows in group 8 | block 35-40 plus block2 40 |
-| Greater Elements | suffix | 43 | shld | 3 | 1798 | 0.167% | 0.508% | Elements res/lvl row in group 43 | stronger multi-res per level |
-| Greater Four Seasons | suffix | 67 | shld | 1 | 1798 | 0.056% | 0.168% | Four Seasons max all resist in group 67 | res-all-max 7-8 |
-| Greater Negation | suffix | 2 | shld | 3 | 1798 | 0.167% | 0.466% | Negation res-mag 14-20 in group 2 | res-mag 24-30 |
-| Greater Anima | suffix | 1 | tors | 3 | 1518 | 0.198% | 0.612% | Anima flat damage reduction in group 1 | red-dmg 18-24 |
-| Greater Thorns | suffix | 6 | tors | 3 | 1518 | 0.198% | 0.558% | Thorns flat/level retaliation in group 6 | stronger thorns/lvl |
+| Greater candidate | Side | Group | Sample item | Greater weight | Apex weight before | Apex weight after | Current pool weight | After pool weight | Greater per slot after | Apex per slot before | Apex per slot after | Greater if 3 same-side slots | Apex if 3 same-side slots after | Greater vs apex after | Ordinary affix absolute drift | Apex rows counted | Apex baseline | Draft greater payload |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Greater Gnostic | prefix | 201 | amul | 16 | 16 | 160 | 468 | 4783 | 0.335% | 3.419% | 3.345% | 1.169% | 11.694% | 10.0x rarer | -2.153% | Devil's; Gnostics | +5 random class skill rows in group 201 | skill-rand +6, one class band per row |
+| Greater Omniscient | prefix | 125 | amul | 2 | 2 | 20 | 468 | 4783 | 0.042% | 0.427% | 0.418% | 0.080% | 0.795% | 10.0x rarer | -2.153% | Omniscient | Omniscient/Sage's allskills in group 125 | allskills +3 torso/amulet, +2 ring |
+| Greater Sage | prefix | 204 | amul | 2 | 2 | 20 | 468 | 4783 | 0.042% | 0.427% | 0.418% | 0.165% | 1.651% | 10.0x rarer | -2.153% | Master Sage's | Master Sage's addxp in group 204 | addxp 6 |
+| Greater Skilltab | prefix | 125 | amul | 39 | 39 | 390 | 468 | 4783 | 0.815% | 8.333% | 8.154% | 1.551% | 15.509% | 10.0x rarer | -2.153% | Accursed; Athlete's; Communal; Cunning; Echoing; Forbidden; Furious; Gaea's; Glacial; Golemlord's; Guardian's; Keeper's; Kenshi's; Malevolent; Marshal's; Powered; Rose Branded; Shadow; Torrid; Venomous; Volcanic | +3 skilltab rows in group 125 | skilltab +4, one row per skill tree |
+| Greater class skill | prefix | 125 | amul | 30 | 30 | 300 | 468 | 4783 | 0.627% | 6.410% | 6.272% | 1.193% | 11.930% | 10.0x rarer | -2.153% | Arch-Angel's; Arch-Devil's; Berserker's; Hierophant's; Necromancer's; Priest's; Valkyrie's; Witch-hunter's | +2 class skill rows, including Warlock, in group 125 | +3 class skills on torso/amulet/circlet scopes |
+| Greater Adamantine-Wrought | prefix | 206 | axe | 4 | 4 | 40 | 1238 | 12436 | 0.032% | 0.323% | 0.322% | 0.228% | 2.280% | 10.0x rarer | -0.450% | Adamantine-Wrought | Adamantine-Wrought ED/defense plus durability in group 206 | weapon dmg% 110-130 or armor ac% 85-100 plus dur 80-100 |
+| Greater Celestial | prefix | 123 | axe | 2 | 2 | 20 | 1238 | 12436 | 0.016% | 0.162% | 0.161% | 0.120% | 1.197% | 10.0x rarer | -0.450% | Celestial | Celestial demon AR/damage in group 123 | att-demon 451-550 plus dmg-demon 351-425 |
+| Greater Divine | prefix | 142 | axe | 2 | 2 | 20 | 1238 | 12436 | 0.016% | 0.162% | 0.161% | 0.119% | 1.194% | 10.0x rarer | -0.450% | Divine | Divine undead AR/damage in group 142 | att-undead 500-650 plus dmg-undead 400-500 |
+| Greater Elemental | prefix | 203 | axe | 2 | 2 | 20 | 1238 | 12436 | 0.016% | 0.162% | 0.161% | 0.119% | 1.194% | 10.0x rarer | -0.450% | Elemental1 | Elemental1 mixed elemental weapon row in group 203 | dmg-elem above current range |
+| Greater Grandmaster's | prefix | 111 | axe | 14 | 14 | 140 | 1238 | 12436 | 0.113% | 1.131% | 1.126% | 0.154% | 1.542% | 10.0x rarer | -0.450% | Grandmaster's; Wraithly1 | Grandmaster's variants and Wraithly1 in group 111 | dmg% 451-500 plus AR / Deadly / Crushing / Open Wounds rider |
+| Greater Gritty | prefix | 105 | axe | 14 | 14 | 140 | 1238 | 12436 | 0.113% | 1.131% | 1.126% | 0.799% | 7.993% | 10.0x rarer | -0.450% | Gritty | Gritty damage-per-level in group 105 | stronger dmg/lvl weapon scaling |
+| Greater Platinum | prefix | 110 | axe | 8 | 8 | 80 | 1238 | 12436 | 0.064% | 0.646% | 0.643% | 0.442% | 4.416% | 10.0x rarer | -0.450% | Weird | highest attack-rating rows in group 110 | att 351-450, item-scope split if needed |
+| Greater Scorching/Shocking/Pestilent | prefix | 138, 139, 140 | axe | 6 | 6 | 60 | 1238 | 12436 | 0.048% | 0.485% | 0.482% | 0.357% | 3.550% | 10.0x rarer | -0.450% | Pestilent; Scorching; Shocking | weapon elemental damage prefixes in groups 138-140 | one element per row, about 25-35% above current apex |
+| Greater Savage | prefix | 205 | boot | 4 | 4 | 40 | 777 | 7898 | 0.051% | 0.515% | 0.506% | 0.502% | 5.017% | 10.0x rarer | -1.621% | Savage | Savage kick damage in group 205 | kick 11-13 |
+| Greater Crushing/Fatal | prefix | 202 | glov | 8 | 8 | 80 | 844 | 8574 | 0.093% | 0.948% | 0.933% | 0.742% | 7.421% | 10.0x rarer | -1.563% | Crushing1; Fatal | Crushing and Fatal glove rows in group 202 | crush/deadly 24-30, separate rows in same group |
+| Greater Veracious | prefix | 200 | glov | 2 | 2 | 20 | 844 | 8574 | 0.023% | 0.237% | 0.233% | 0.189% | 1.885% | 10.0x rarer | -1.563% | Veracious1 | Veracious attack% in group 200 | att% 40-50 |
+| Greater Aureolin | prefix | 121 | jewl | 8 | 8 | 80 | 160 | 1616 | 0.495% | 5.000% | 4.950% | 1.607% | 16.074% | 10.0x rarer | -0.990% | Aureolin | Aureolin mana after kill in group 121 | mana-kill 4-5 |
+| Greater Bloody | prefix | 103 | jewl | 8 | 8 | 80 | 160 | 1616 | 0.495% | 5.000% | 4.950% | 1.411% | 14.113% | 10.0x rarer | -0.990% | Bloody | Bloody min+max damage rows in group 103 | dmg-min 9-12 plus dmg-max 18-24 |
+| Greater Avatar | prefix | 137 | lcha | 1 | 1 | 10 | 279 | 2852 | 0.035% | 0.358% | 0.351% | 0.102% | 1.020% | 10.0x rarer | -2.174% | Avatar | Avatar elemental large charm row in group 137 | dmg-elem 35-45 |
+| Greater Hulking | prefix | 143 | lcha | 6 | 6 | 60 | 279 | 2852 | 0.210% | 2.151% | 2.104% | 0.668% | 6.681% | 10.0x rarer | -2.174% | Hulking | Hulking normal damage large charm in group 143 | dmg-norm 70-85 |
+| Greater Lucky | prefix | 114 | lcha | 6 | 6 | 60 | 279 | 2852 | 0.210% | 2.151% | 2.104% | 0.684% | 6.836% | 10.0x rarer | -2.174% | Lucky | Lucky mag% plus gold% in group 114 | mag% 30-35 plus gold% 60-70 |
+| Greater Ruby/Sapphire/Amber/Emerald | prefix | 117, 118, 119, 120 | lcha | 24 | 24 | 240 | 279 | 2852 | 0.842% | 8.602% | 8.415% | 2.591% | 24.344% | 10.0x rarer | -2.174% | Amber; Emerald; Ruby; Sapphire | single-element large charm resist rows in groups 117-120 | single resist 34-40, one element per row |
+| Greater Serpent's | prefix | 115 | lcha | 3 | 3 | 30 | 279 | 2852 | 0.105% | 1.075% | 1.052% | 0.331% | 3.305% | 10.0x rarer | -2.174% | Serpent's | Serpent's mana in group 115 | mana 70-85 |
+| Greater Serrated | prefix | 104 | lcha | 3 | 3 | 30 | 279 | 2852 | 0.105% | 1.075% | 1.052% | 0.338% | 3.384% | 10.0x rarer | -2.174% | Serrated | Serrated large charm enhanced damage in group 104 | dmg% 30-35 on large charms |
+| Greater Shimmering | prefix | 116 | lcha | 3 | 3 | 30 | 279 | 2852 | 0.105% | 1.075% | 1.052% | 0.334% | 3.345% | 10.0x rarer | -2.174% | Shimmering | Shimmering all resistance in group 116 | res-all 15-18 |
+| Greater missile prefixes | prefix | 220, 221, 222, 223, 224, 225, 226, 227 | misl | 30 | 30 | 300 | 90 | 930 | 3.226% | 33.333% | 32.258% | 9.369% | 68.913% | 10.0x rarer | -3.226% | Apprentice; Corosive; Flaming; Jagged; Lizard's; Sharp; Shivering; Static; Sturdy | missile-only prefix groups 220-227 | stronger quiver/missile weapon stat family rows |
+| Greater Antimagic | prefix | 102 | shld | 8 | 8 | 80 | 855 | 8688 | 0.092% | 0.936% | 0.921% | 0.744% | 7.441% | 10.0x rarer | -1.588% | Antimagic | Antimagic res-mag 16-20 in group 102 | res-mag 24-30 |
+| Greater Vulpine | prefix | 107 | shld | 6 | 6 | 60 | 855 | 8688 | 0.069% | 0.702% | 0.691% | 0.603% | 6.030% | 10.0x rarer | -1.588% | Vulpine | Vulpine damage-to-mana in group 107 | dmg-to-mana 16-20 |
+| Greater Aureole | prefix | 207 | tors | 2 | 2 | 20 | 857 | 8736 | 0.023% | 0.233% | 0.229% | 0.187% | 1.872% | 10.0x rarer | -1.900% | Aureole | Aureole aura rows in group 207 | higher aura level; needs per-aura balance |
+| Greater Godly | prefix | 101 | tors | 118 | 118 | 1180 | 857 | 8736 | 1.351% | 13.769% | 13.507% | 1.759% | 17.589% | 10.0x rarer | -1.900% | Godly; Invulnerable1; Wraithly1 | Godly, Invulnerable1, armor Wraithly1 in group 101 | ac% 250-300 plus red-dmg% 26-30 |
+| Greater Elemental Mastery | prefix | 209 | wand | 8 | 8 | 80 | 367 | 3714 | 0.215% | 2.180% | 2.154% | 0.604% | 6.035% | 10.0x rarer | -1.185% | Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2 | extra-fire/cold/lightning/poison caster rows in group 209 | extra-* 14-16 |
+| Greater Elemental Pierce | prefix | 209 | wand | 8 | 8 | 80 | 367 | 3714 | 0.215% | 2.180% | 2.154% | 0.604% | 6.035% | 10.0x rarer | -1.185% | Frost Wyrm's2; Manticore's2; Pyromaniac's2; Zeus's2 | pierce-fire/cold/lightning/poison caster rows in group 209 | pierce-* 14-16 |
+| Greater Enlightenment | suffix | 23 | amul | 36 | 36 | 360 | 3281 | 33162 | 0.109% | 1.097% | 1.086% | 0.330% | 3.304% | 10.0x rarer | -1.061% | of Enlightenment | Energy rows in group 23 | enr 36-40, scope split if needed |
+| Greater Zodiac | suffix | 42 | amul | 12 | 12 | 120 | 3281 | 33162 | 0.036% | 0.366% | 0.362% | 0.111% | 1.111% | 10.0x rarer | -1.061% | of the Zodiac | Zodiac all-stats in group 42 | all-stats 38-45 |
+| Greater jewelry elemental damage | suffix | 10, 12, 13, 16 | amul | 84 | 84 | 840 | 3281 | 33162 | 0.253% | 2.560% | 2.533% | 0.775% | 7.613% | 10.0x rarer | -1.061% | of Blight; of Burning; of Storms; of the Glacier | Glacier/Burning/Storms/Blight jewelry elemental rows in groups 10,12,13,16 | about 25-35% above current apex, one element per row |
+| Greater Blindness | suffix | 65 | axe | 12 | 12 | 120 | 2715 | 27456 | 0.044% | 0.442% | 0.437% | 0.151% | 1.507% | 10.0x rarer | -1.115% | of Blindness1 | Blindness hit blinds target in group 65 | stupidity 4 |
+| Greater Draining | suffix | 80 | axe | 2 | 2 | 20 | 2715 | 27456 | 0.007% | 0.074% | 0.073% | 0.025% | 0.253% | 10.0x rarer | -1.115% | of Siphoning | Siphoning heal per hit in group 80 | healperhit 14-16 |
+| Greater Evisceration | suffix | 14 | axe | 88 | 88 | 880 | 2715 | 27456 | 0.321% | 3.241% | 3.205% | 0.733% | 7.334% | 10.0x rarer | -1.115% | of Evisceration | Evisceration max damage in group 14 | dmg-max 150-165 |
+| Greater Paralysis | suffix | 64 | axe | 24 | 24 | 240 | 2715 | 27456 | 0.087% | 0.884% | 0.874% | 0.294% | 2.942% | 10.0x rarer | -1.115% | Paralysis1 | Paralysis slow target in group 64 | slow 28-33 |
+| Greater Quickness | suffix | 7 | axe | 60 | 60 | 600 | 2715 | 27456 | 0.219% | 2.210% | 2.185% | 0.677% | 6.770% | 10.0x rarer | -1.115% | of Quickness | Quickness IAS in group 7 | swing3 50 |
+| Greater Transcendence | suffix | 15 | axe | 24 | 24 | 240 | 2715 | 27456 | 0.087% | 0.884% | 0.874% | 0.298% | 2.985% | 10.0x rarer | -1.115% | of Transcendence | Transcendence min damage in group 15 | dmg-min 75-85 |
+| Greater Wealth | suffix | 21 | belt | 48 | 48 | 480 | 1056 | 10644 | 0.451% | 4.545% | 4.510% | 1.482% | 14.817% | 10.0x rarer | -0.789% | of Wealth | Wealth gold find in group 21 | gold% 100-120 |
+| Greater Perfection | suffix | 17 | boot | 36 | 36 | 360 | 1029 | 10458 | 0.344% | 3.499% | 3.442% | 1.074% | 10.743% | 10.0x rarer | -1.606% | of Perfection | Perfection dexterity in group 17 | dex 36-40 |
+| Greater Regeneration | suffix | 19 | boot | 48 | 48 | 480 | 1029 | 10458 | 0.459% | 4.665% | 4.590% | 1.470% | 14.695% | 10.0x rarer | -1.606% | of Regeneration | Regeneration life regen in group 19 | regen 6-8 |
+| Greater Reanimation | suffix | 66 | glov | 12 | 12 | 120 | 1109 | 11186 | 0.107% | 1.082% | 1.073% | 0.343% | 3.433% | 10.0x rarer | -0.858% | of Reanimation1 | Reanimation in group 66 | higher reanimate chance/level |
+| Greater Prosperity | suffix | 22 | jewl | 12 | 12 | 120 | 1304 | 13088 | 0.092% | 0.920% | 0.917% | 0.290% | 2.902% | 10.0x rarer | -0.367% | of Prosperity | Prosperity magic find in group 22 | mag% 26-30 |
+| Greater Balance | suffix | 18 | lcha | 6 | 6 | 60 | 88 | 898 | 0.668% | 6.818% | 6.682% | 2.891% | 28.913% | 10.0x rarer | -2.004% | of Balance | Balance FHR on large charms in group 18 | balance3 13-15 |
+| Greater Inertia | suffix | 35 | lcha | 6 | 6 | 60 | 88 | 898 | 0.668% | 6.818% | 6.682% | 2.891% | 28.913% | 10.0x rarer | -2.004% | of Inertia | Inertia FRW large charm in group 35 | move3 13-15 |
+| Greater Vita | suffix | 26 | lcha | 6 | 6 | 60 | 88 | 898 | 0.668% | 6.818% | 6.682% | 2.891% | 28.913% | 10.0x rarer | -2.004% | of Vita | Vita life on large charms in group 26 | hp 80-95 |
+| Greater missile suffixes | suffix | 200, 201, 202, 203, 204, 205, 206 | misl | 39 | 39 | 390 | 120 | 1239 | 3.148% | 32.500% | 31.477% | 9.098% | 67.590% | 10.0x rarer | -3.148% | of Fortune; of Maiming; of Piercing; of Resistance; of Slaying; of Transcendence; of the Bat; of the Swift; of the Vampire | missile-only suffix groups 200-206 | stronger quiver/missile weapon suffix rows |
+| Greater Magus | suffix | 9 | orb | 60 | 60 | 600 | 1528 | 15568 | 0.385% | 3.927% | 3.854% | 1.171% | 11.706% | 10.0x rarer | -1.850% | of the Magus | Magus FCR in group 9 | cast3 25 |
+| Greater Coalescence | suffix | 3 | ring | 36 | 36 | 360 | 2675 | 27062 | 0.133% | 1.346% | 1.330% | 0.381% | 3.811% | 10.0x rarer | -1.153% | of Chilling Coalescence1; of Fire Coalescence1; of Lightning Coalescence1 | elemental absorb percent rows in group 3 | abs-fire/ltng/cold% 28-35, one element per row |
+| Greater Elephant | suffix | 41 | ring | 24 | 24 | 240 | 2675 | 27062 | 0.089% | 0.897% | 0.887% | 0.280% | 2.797% | 10.0x rarer | -1.153% | of the Elephant | Elephant hp/lvl and mana/lvl in group 41 | stronger hp/lvl plus mana/lvl |
+| Greater Guarding | suffix | 61 | ring | 60 | 60 | 600 | 2675 | 27062 | 0.222% | 2.243% | 2.217% | 0.655% | 6.553% | 10.0x rarer | -1.153% | of Guarding | Guarding flat defense on jewelry in group 61 | ac 60-90 |
+| Greater Lamprey/Vampire | suffix | 27, 28 | ring | 24 | 72 | 720 | 2675 | 27062 | 0.089% | 2.692% | 2.661% | 0.275% | 7.984% | 30.0x rarer | -1.153% | of the Lamprey; of the Vampire | single leech rows in groups 27 and 28 | lifesteal/manasteal above current top, scope split |
+| Greater Lich | suffix | 60 | ring | 12 | 12 | 120 | 2675 | 27062 | 0.044% | 0.449% | 0.443% | 0.139% | 1.393% | 10.0x rarer | -1.153% | of the Lich | Lich dual leech in group 60 | manasteal 10-12 plus lifesteal 13-15 |
+| Greater Titan | suffix | 31 | ring | 36 | 36 | 360 | 2675 | 27062 | 0.133% | 1.346% | 1.330% | 0.406% | 4.058% | 10.0x rarer | -1.153% | of the Titan | strength/dex/vit/enr rows in group 31 | primary stat 26-30 or equivalent scope split |
+| Greater Deflecting | suffix | 8 | shld | 76 | 76 | 760 | 1779 | 18082 | 0.420% | 4.272% | 4.203% | 1.242% | 12.416% | 10.0x rarer | -1.615% | of Deflecting | Deflecting block rows in group 8 | block 35-40 plus block2 40 |
+| Greater Elements | suffix | 43 | shld | 24 | 24 | 240 | 1779 | 18082 | 0.133% | 1.349% | 1.327% | 0.404% | 4.042% | 10.0x rarer | -1.615% | of the Elements | Elements res/lvl row in group 43 | stronger multi-res per level |
+| Greater Four Seasons | suffix | 67 | shld | 12 | 12 | 120 | 1779 | 18082 | 0.066% | 0.675% | 0.664% | 0.201% | 2.007% | 10.0x rarer | -1.615% | of the Four Seasons2 | Four Seasons max all resist in group 67 | res-all-max 7-8 |
+| Greater Negation | suffix | 2 | shld | 48 | 48 | 480 | 1779 | 18082 | 0.265% | 2.698% | 2.655% | 0.741% | 7.412% | 10.0x rarer | -1.615% | of Negation | Negation res-mag 14-20 in group 2 | res-mag 24-30 |
+| Greater Anima | suffix | 1 | tors | 48 | 48 | 480 | 1499 | 15266 | 0.314% | 3.202% | 3.144% | 0.972% | 9.725% | 10.0x rarer | -1.808% | of Anima | Anima flat damage reduction in group 1 | red-dmg 18-24 |
+| Greater Thorns | suffix | 6 | tors | 48 | 48 | 480 | 1499 | 15266 | 0.314% | 3.202% | 3.144% | 0.888% | 8.876% | 10.0x rarer | -1.808% | of Thorns | Thorns flat/level retaliation in group 6 | stronger thorns/lvl |
 
 ## Complete Rare-Affix Group Coverage Audit
 
