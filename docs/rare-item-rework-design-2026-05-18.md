@@ -23,6 +23,7 @@ Reference context:
   - `GreaterAffixMarker` in `item-modifiers.json`
 - Phase 1 affix level compression is not implemented yet.
 - Phase 2 Greater Affix rows are not implemented yet.
+- 2026-05-19: Added a full generated apex audit and draft Greater Affix chance report: `docs/rare-greater-affix-apex-audit-2026-05-19.md`.
 
 ## Current Data Constraints
 
@@ -382,7 +383,7 @@ This family shows why Phase 2 may need frequency normalization. Normal Zodiac is
 
 ## Implementation Strategy
 
-1. Generate an affix-family audit from `magicprefix.txt` and `magicsuffix.txt`.
+1. Review the generated affix-family audit from `magicprefix.txt` and `magicsuffix.txt`: `docs/rare-greater-affix-apex-audit-2026-05-19.md`.
 2. For every affix row, calculate compressed `level`, compressed `maxlevel`, and compressed `levelreq`.
 3. Validate that each family remains monotonic: weaker affixes should not require a higher affix level or equip level than stronger affixes.
 4. Apply Phase 1 compression directly to shared affix rows; it is acceptable for magic items to move earlier too.

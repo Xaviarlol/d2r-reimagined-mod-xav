@@ -53,6 +53,7 @@ Full D2RDoc reading notes from the 2026-05-18 sitemap crawl: `docs/d2rdoc-readin
 ## Rare Affix Rework
 
 - The canonical rare item rework design is in `docs/rare-item-rework-design-2026-05-18.md`. The separate Greater Affix pilot doc was merged into it.
+- The generated all-group apex audit and draft Greater Affix chance report is `docs/rare-greater-affix-apex-audit-2026-05-19.md`. Regenerate it with `python scripts/audit_rare_affix_apexes.py` after changing the candidate list or affix tables.
 - Rare affix count appears engine-side rather than TXT-side; treat rares as capped at 6 affix records, up to 3 prefixes and 3 suffixes.
 - Greater Affixes should be implemented as rare-only rows in `magicprefix.txt` / `magicsuffix.txt` using `spawnable=0`, `rare=1`, low `frequency`, and the same `group` as the normal affix family they upgrade.
 - D2RDoc confirms `frequency` is a weight. Higher values are more common among eligible affixes; Greater Affixes should be rare by low relative weight and by dilution against ordinary/filler affixes with higher frequencies.
