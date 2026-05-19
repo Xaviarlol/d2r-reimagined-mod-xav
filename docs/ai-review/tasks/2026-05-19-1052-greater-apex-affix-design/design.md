@@ -2,14 +2,14 @@
 
 ## Context
 
-The earlier Greater Affix table benchmarked `Greater Cruel` against ordinary `Cruel` (`dmg% 267-300`). That was incomplete because the current mod already has stronger apex rows in the same group:
+The earlier Greater Affix table benchmarked the weapon-damage Greater row against ordinary `Cruel` (`dmg% 267-300`). That was incomplete because the current mod already has stronger apex rows in the same group:
 
 - `Grandmaster's`: `dmg% 301-350` plus AR, Deadly Strike, Crushing Blow, or Open Wounds.
 - Weapon `Wraithly1`: `dmg% 176-200`, ethereal, self-repair.
 
 The design now says every Greater candidate must be benchmarked against the strongest existing row in its actual affix `group`, not only against the named vanilla-style family row.
 
-## Revised Greater Cruel
+## Revised Greater Grandmaster's
 
 Current apex rows in group `111`:
 
@@ -22,20 +22,26 @@ Current apex rows in group `111`:
 | `Grandmaster's` Open Wounds variant | `openwounds 94-100`, `dmg% 301-350` | 2 |
 | Weapon `Wraithly1` | `dmg% 176-200`, `ethereal`, `rep-dur 10` | 4 |
 
-Revised Greater Cruel:
+Revised Greater Grandmaster's:
 
 | Technical Band | level | maxlevel | frequency | Payload |
 |---|---:|---:|---:|---|
-| Early | 50 | 65 | 1 | `dmg% 500`, `greater-affix-marker` |
-| Mid | 66 | 80 | 2 | `dmg% 500`, `greater-affix-marker` |
-| Late | 81 | blank | 3 | `dmg% 500`, `greater-affix-marker` |
+| Early AR | 50 | 65 | 1 | `att 301-350`, `dmg% 451-500`, `greater-affix-marker` |
+| Mid AR | 66 | 80 | 1 | `att 301-350`, `dmg% 451-500`, `greater-affix-marker` |
+| Mid Deadly | 66 | 80 | 1 | `deadly 31-40`, `dmg% 451-500`, `greater-affix-marker` |
+| Late AR | 81 | blank | 1 | `att 301-350`, `dmg% 451-500`, `greater-affix-marker` |
+| Late Deadly | 81 | blank | 1 | `deadly 31-40`, `dmg% 451-500`, `greater-affix-marker` |
+| Late Crushing | 81 | blank | 1 | `crush 31-40`, `dmg% 451-500`, `greater-affix-marker` |
+| Late Open Wounds | 81 | blank | 1 | `openwounds 100`, `dmg% 451-500`, `greater-affix-marker` |
 
 Rationale:
 
-- Fixed 500% weapon ED is intentionally above `Grandmaster's`.
-- 500% ED also beats the rough ethereal damage baseline of Wraithly (`1.5 * 300% effective weapon multiplier = 450% equivalent baseline before other mods`).
-- It uses one real stat plus the marker, so it fits safely within the three affix mod slots.
-- Late band odds remain around 1 in 330 high-affix-level rare eligible weapons under the current pool simulation.
+- The player-facing category is `Greater Grandmaster's`, matching the existing apex family identity.
+- The Greater version is not plain ED-only. It keeps the Grandmaster-style "ED plus premium rider" shape.
+- Each row uses two real stats plus the marker, so it fits within the three affix mod slots.
+- `dmg% 451-500` is above `Grandmaster's` and above the rough ethereal damage baseline of Wraithly (`1.5 * 300% effective weapon multiplier = 450% equivalent baseline before other mods`).
+- Late total Greater Grandmaster's family frequency is `4`, still below existing Grandmaster's total frequency `10`; each specific rider variant remains very rare.
+- Open Wounds is fixed at the current apparent cap/top-end value of `100`, with the extra power coming from the much higher ED.
 
 ## Newly Added Apex Families
 

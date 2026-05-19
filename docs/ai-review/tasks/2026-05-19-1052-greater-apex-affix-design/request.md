@@ -7,7 +7,7 @@ round: 1
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-19T10:52:11Z
-updated_at: 2026-05-19T10:52:11Z
+updated_at: 2026-05-19T12:18:11Z
 repo: C:\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: b750dd00
@@ -24,6 +24,8 @@ last_verdict:
 
 ```text
 ok so youll need to update the greater affixes to be better than grandmasters and any other apex affixes you missed before
+
+greater cruel should be called greater grandmasters, and doesnt it add only benefits, not just the ED%??
 ```
 
 ## Goal
@@ -39,7 +41,7 @@ Review the revised Greater Affix candidate design. The important correction is t
 
 ## Review Questions
 
-1. Does the new Greater Cruel target, fixed `dmg% 500`, correctly benchmark against `Grandmaster's` and weapon `Wraithly1` in group `111`?
+1. Does the new `Greater Grandmaster's` target, `dmg% 451-500` plus one Grandmaster-style rider, correctly benchmark against `Grandmaster's` and weapon `Wraithly1` in group `111`?
 2. Are the newly added apex baselines complete enough for the next implementation pass: `Grandmaster's`, weapon/armor `Wraithly1`, `Invulnerable1`, magic resistance rows, elemental absorb Coalescence rows, and +skills rows?
 3. Does `Greater Godly` with `ac% 250-300` plus `red-dmg% 26-30` correctly beat both `Godly` and `Invulnerable1` without being obviously absurd?
 4. Are the +skills Greater candidates safe as design candidates, or should any be deferred from Phase 2?

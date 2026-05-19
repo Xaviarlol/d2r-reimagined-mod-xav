@@ -64,7 +64,7 @@ Full D2RDoc reading notes from the 2026-05-18 sitemap crawl: `docs/d2rdoc-readin
 - Phase 1 only gives the best normal affix in each family a true early/late frequency split. The early top row starts at the compressed level, ends at `original_top_level - 1`, and uses half the late frequency.
 - Preserve family ordering after compression. A weaker row such as lower Cruel must not end up requiring a higher level than the stronger Cruel row.
 - Directly editing shared `spawnable=1, rare=1` affix rows also changes magic items. This is acceptable for the Phase 1 affix compression.
-- Phase 2 adds Greater Affixes with multiple technical level bands. Example: three `Greater Cruel` rows at levels `50-65`, `66-80`, and `81+`, all with the same `dmg%` payload but frequencies `1/2/3`.
+- Phase 2 adds Greater Affixes with multiple technical level bands. Example: `Greater Grandmaster's` starts at level `50`, gains broader rider variants across `50-65`, `66-80`, and `81+`, and stays rare by low per-row frequency.
 
 ## Set Item Buff Pass
 
@@ -287,7 +287,7 @@ Phase 2 is the Greater Affix layer:
 - Greater rows stay rare-only, use the same family `group`, and should not stack with the normal family row.
 - During Phase 2, normalize family frequencies only where needed so Greater odds make sense relative to the normal top affix.
 - Greater rows with a spare mod slot should include `greater-affix-marker`. The marker is backed by `item_greaterAffixMarker` / `GreaterAffixMarker` and prints `** Greater Affix` in orange/gold using D2R color control codes.
-- Greater rows must be benchmarked against the strongest existing modded apex row in their group, not just the vanilla-style family name. For weapon ED group `111`, `Grandmaster's` and `Wraithly1` are the real apex rows, so Greater Cruel is now designed as fixed `dmg% 500` rather than `380-400`.
+- Greater rows must be benchmarked against the strongest existing modded apex row in their group, not just the vanilla-style family name. For weapon ED group `111`, `Grandmaster's` and `Wraithly1` are the real apex rows, so the Greater weapon-damage category is `Greater Grandmaster's`, not a plain enhanced-damage-only upgrade. Current design uses `dmg% 451-500` plus one Grandmaster-style rider such as AR, Deadly Strike, Crushing Blow, or Open Wounds.
 - Missed apex families now tracked in the canonical design include `Invulnerable1` / armor `Wraithly1` for defensive group `101`, magic resistance (`Antimagic` / `of Negation`), Fire/Lightning/Cold Coalescence absorb suffixes, and the +skills families (`Omniscient`, `Sage's`, top `skilltab`, and top `skill-rand` rows).
 - Charm frequency normalization must not scale group `307` pierce rows in place. Group `307` has charm rows shared with non-charm gear (`ring,mcha` and `amul,glov,boot,belt,helm,lcha`), so a blanket `*5` would also make pierce affixes 5x more common on rings, amulets, gloves, boots, belts, and helms. Exempt `307` unless the rows are first split into charm-only and non-charm-only copies.
 - Large charm `+1 skill tree` rows should be normalized to `frequency=10` for all classes, including Warlock. This intentionally changes Warlock rows from their old `frequency=1` relationship so all normal skill-tree charms share one rarity.

@@ -160,7 +160,7 @@ Phase 2 adds Greater Affixes to each target affix family as a separate chase lay
 
 Greater Affix policy:
 
-- One player-facing Greater category per family, such as `Greater Cruel`.
+- One player-facing Greater category per family, such as `Greater Grandmaster's`.
 - Implemented as multiple technical rows with the same name idea, same stat payload, and same `group`.
 - Rare-only: `spawnable=0`, `rare=1`.
 - Same `group` as the normal family so Greater replaces normal, not stacks with normal.
@@ -200,7 +200,7 @@ These are candidates, not implementation promises. The proposed Greater ranges a
 
 | Candidate | Current Apex Row | Current Apex Range | Proposed Greater Range | Item Scope | Priority / Notes |
 |---|---|---|---|---|---|
-| Greater Cruel | `Grandmaster's` / `Wraithly1` | `dmg% 301-350` plus AR/Deadly/Crushing/Open Wounds; Wraithly has ethereal+self-repair with `dmg% 176-200` | `dmg% 500` | Weapons, excluding orbs/wands | High. Primary physical rare chase prefix. Fixed 500% is intentional so it beats Grandmaster's expected damage and Wraithly's ethereal damage baseline. |
+| Greater Grandmaster's | `Grandmaster's` / `Wraithly1` | `dmg% 301-350` plus AR/Deadly/Crushing/Open Wounds; Wraithly has ethereal+self-repair with `dmg% 176-200` | `dmg% 451-500` plus a stronger AR/Deadly/Crushing/Open Wounds rider | Weapons, excluding orbs/wands | High. Primary physical rare chase prefix. This is a true Greater version of Grandmaster's, not a plain ED-only row. |
 | Greater Godly | `Godly` / `Invulnerable1` / armor `Wraithly1` | `ac% 201-225`; `Invulnerable1` has `ac% 81-100` plus `red-dmg% 21-25`; Wraithly has ethereal+self-repair with `ac% 81-100` | `ac% 250-300`, `red-dmg% 26-30` | Armor, shields | High. Must beat both raw defense and DR% apex rows in group `101`. Uses two real mods plus marker. |
 | Greater Zodiac | `of the Zodiac` | `all-stats 21-30` | `all-stats 38-45` | Amulets, rings, circlets, caster weapons | High. Broad build-enabler suffix. |
 | Greater Chromatic | `Chromatic` | `res-all 21-30` | `res-all 36-40` | Shields, amulets, circlets | High. Defensive all-res chase. |
@@ -349,19 +349,26 @@ These examples show the intended proportional level compression plus top-row spl
 
 ## Phase 2 Examples
 
-### Greater Cruel
+### Greater Grandmaster's
+
+The real apex weapon-damage row is `Grandmaster's`, so the Greater affix should inherit that identity and keep the ED-plus-rider structure instead of being a plain enhanced-damage-only row.
 
 | Affix | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| Greater Cruel | 50 | 65 | 1 | `dmg% 500`, `greater-affix-marker` |
-| Greater Cruel | 66 | 80 | 2 | `dmg% 500`, `greater-affix-marker` |
-| Greater Cruel | 81 | blank | 3 | `dmg% 500`, `greater-affix-marker` |
+| Greater Grandmaster's | 50 | 65 | 1 | `att 301-350`, `dmg% 451-500`, `greater-affix-marker` |
+| Greater Grandmaster's | 66 | 80 | 1 | `att 301-350`, `dmg% 451-500`, `greater-affix-marker` |
+| Greater Grandmaster's | 66 | 80 | 1 | `deadly 31-40`, `dmg% 451-500`, `greater-affix-marker` |
+| Greater Grandmaster's | 81 | blank | 1 | `att 301-350`, `dmg% 451-500`, `greater-affix-marker` |
+| Greater Grandmaster's | 81 | blank | 1 | `deadly 31-40`, `dmg% 451-500`, `greater-affix-marker` |
+| Greater Grandmaster's | 81 | blank | 1 | `crush 31-40`, `dmg% 451-500`, `greater-affix-marker` |
+| Greater Grandmaster's | 81 | blank | 1 | `openwounds 100`, `dmg% 451-500`, `greater-affix-marker` |
 
 Target ratio:
 
-- This row is intentionally benchmarked against `Grandmaster's`, not ordinary `Cruel`.
-- With late `frequency=3`, Greater Cruel is about 1 in 330 high-affix-level rare eligible weapons under the current pool model.
-- If the normal late row stays very high, such as current Cruel at `114`, then Greater remains much rarer than 10x compared with ordinary Cruel. That may be acceptable, but it should be intentional.
+- This family is intentionally benchmarked against `Grandmaster's`, not ordinary `Cruel`.
+- The staged variant unlock keeps lower-level Greater rolls narrower while letting late rare weapons chase all four Grandmaster-style riders.
+- Late total Greater Grandmaster's family frequency is `4`, so the category remains rarer than existing Grandmaster's total frequency `10` while each specific variant stays extremely rare.
+- If the normal late row stays very high, such as current Cruel at `114`, then Greater remains much rarer than ordinary Cruel. That may be acceptable, but it should be intentional.
 
 ### Greater Zodiac
 
