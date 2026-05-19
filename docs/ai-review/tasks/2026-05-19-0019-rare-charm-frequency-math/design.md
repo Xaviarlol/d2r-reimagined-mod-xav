@@ -135,6 +135,7 @@ Representative conversions:
 Scope correction from Claude round 1:
 
 - Apply the `*5` scaling only to charm-exclusive rows where the charm pool is being normalized or given new Greater rows.
+- For the large charm prefix pass, multiply every charm-exclusive prefix row by 5, not only the skill-tree rows. Then set all 24 normal skill-tree rows to exactly `frequency=10`, add the 24 Greater skill-tree rows at `frequency=1`, and keep group `307` exempt.
 - Exempt all group `307` pierce rows. Some group `307` rows are shared with non-charm gear (`ring,mcha` and `amul,glov,boot,belt,helm,lcha`), so scaling them in place would also multiply pierce odds on rings, amulets, gloves, boots, belts, and helms.
 - If charm pierce odds need proportional preservation later, first split group `307` into charm-only and non-charm-only rows; do not scale the shared rows in place.
 
@@ -176,7 +177,7 @@ greater skill-tree share = 24 / 1434 = 1.6736401674%
 
 The normal skill share changes slightly because Warlock rows are normalized from effective `5` to `10` and because new Greater rows are added to the pool.
 
-If Warlock rows were strictly scaled to `5` instead of normalized to `10`, the math would be:
+Rejected alternative: if Warlock rows were strictly scaled to `5` instead of normalized to `10`, the math would be:
 
 ```text
 existing scaled total = 1395
@@ -187,7 +188,7 @@ normal skill-tree share = 225 / 1419 = 15.8562367865%
 greater skill-tree share = 24 / 1419 = 1.6913319239%
 ```
 
-Claude should confirm which version better matches Eric's intent.
+This alternative is not the selected design. The selected design normalizes Warlock rows to `10`.
 
 ## Level 90 Large Charm Suffix Pool Audit
 

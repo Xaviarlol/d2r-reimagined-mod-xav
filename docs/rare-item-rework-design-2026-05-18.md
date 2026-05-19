@@ -166,7 +166,8 @@ Greater Affix policy:
 - Same `group` as the normal family so Greater replaces normal, not stacks with normal.
 - Default frequencies: early/mid/late = `1 / 2 / 3`.
 - Default Greater bands are design targets, not hard rules; adjust by family if the compressed ladder suggests better gates.
-- Greater stat ranges should be narrow chase rolls with a high floor. Avoid broad "good to great" ranges; for example, use `Greater Cruel dmg% 380-400` rather than `350-400`.
+- Greater stat ranges should be narrow chase rolls with a high floor.
+- Benchmark every Greater family against the strongest existing row in that `group`, not merely the familiar vanilla-style top row. If a modded apex row exists, such as `Grandmaster's` in weapon damage group `111` or `Invulnerable1` in defense group `101`, the Greater row must clearly beat that apex.
 - Add `greater-affix-marker` when the row has a spare mod slot.
 
 Default Greater band shape:
@@ -195,23 +196,28 @@ Because each affix row only has `mod1`, `mod2`, and `mod3`, the marker is safest
 
 ### Candidate Greater Affix Families
 
-These are candidates, not implementation promises. The proposed Greater ranges are intentionally tighter than the first draft so a Greater roll feels consistently premium.
+These are candidates, not implementation promises. The proposed Greater ranges are intentionally tighter than the first draft so a Greater roll feels consistently premium. The "Current Apex Row" column is the row a Greater candidate must beat.
 
-| Candidate | Current Top Row | Current Top Range | Proposed Greater Range | Item Scope | Priority / Notes |
+| Candidate | Current Apex Row | Current Apex Range | Proposed Greater Range | Item Scope | Priority / Notes |
 |---|---|---|---|---|---|
-| Greater Cruel | `Cruel` | `dmg% 267-300` | `dmg% 380-400` | Weapons | High. Primary physical rare chase prefix. |
-| Greater Godly | `Godly` | `ac% 201-225` | `ac% 300-325` | Armor, shields | High. Defensive counterpart to Greater Cruel. |
+| Greater Cruel | `Grandmaster's` / `Wraithly1` | `dmg% 301-350` plus AR/Deadly/Crushing/Open Wounds; Wraithly has ethereal+self-repair with `dmg% 176-200` | `dmg% 500` | Weapons, excluding orbs/wands | High. Primary physical rare chase prefix. Fixed 500% is intentional so it beats Grandmaster's expected damage and Wraithly's ethereal damage baseline. |
+| Greater Godly | `Godly` / `Invulnerable1` / armor `Wraithly1` | `ac% 201-225`; `Invulnerable1` has `ac% 81-100` plus `red-dmg% 21-25`; Wraithly has ethereal+self-repair with `ac% 81-100` | `ac% 250-300`, `red-dmg% 26-30` | Armor, shields | High. Must beat both raw defense and DR% apex rows in group `101`. Uses two real mods plus marker. |
 | Greater Zodiac | `of the Zodiac` | `all-stats 21-30` | `all-stats 38-45` | Amulets, rings, circlets, caster weapons | High. Broad build-enabler suffix. |
 | Greater Chromatic | `Chromatic` | `res-all 21-30` | `res-all 36-40` | Shields, amulets, circlets | High. Defensive all-res chase. |
 | Greater Scintillating | `Scintillating` | `res-all 13-17` | `res-all 22-25` | Rings | High. Separate ring tuning because the base row is lower. |
+| Greater Antimagic | `Antimagic` / `of Negation` | `res-mag 16-20` prefix; `res-mag 14-20` suffix | `res-mag 24-30` | Shields, torso, circlets, rods/orbs where eligible | Medium-high. Missed apex family for magic resistance; prefix and suffix rows need separate group-safe implementation. |
 | Greater Evisceration | `of Evisceration` | `dmg-max 101-120` | `dmg-max 150-165` | Weapons | High. Flat damage weapon suffix. |
 | Greater Transcendence | `of Transcendence` | `dmg-min 50-60` | `dmg-min 75-85` | Weapons | Medium-high. Strong but less broadly visible than max damage. |
 | Greater Lich | `of the Lich` | `manasteal 8-9`, `lifesteal 10-12` | `manasteal 10-12`, `lifesteal 13-15` | Rings, amulets | High. Premium sustain roll. |
 | Greater Four Seasons | `of the Four Seasons` | `res-all-max 4-6` | `res-all-max 7-8` | Armor, shields, rings, amulets | High impact. Keep very rare or defer until defensive balance pass. |
+| Greater Coalescence | Fire/Lightning/Cold Coalescence | `abs-fire%` / `abs-ltng%` / `abs-cold% 16-25` | matching absorb `28-35` | Weapons, amulets, rings, shields | Medium-high. Missed apex absorb family; one element per row, same group `3`. |
 | Greater Elemental Mastery | `Pyromaniac's` / `Frost Wyrm's` / `Zeus's` / `Manticore's` damage rows | `extra-* 10-12` | `extra-* 14-16` | Wands, orbs, staves | Medium. Caster damage chase, one element per row. |
 | Greater Elemental Pierce | Elemental pierce rows | `pierce-* 10-12` | `pierce-* 14-16` | Wands, orbs, staves | Medium. Stronger than sheet damage suggests, tune carefully. |
 | Greater Quickness | `of Quickness` | `swing3 40` | `swing3 50` | Melee weapons | Medium. Breakpoint-sensitive. |
 | Greater Magus | `of the Magus` | `cast3 20` | `cast3 25` | Rods, orbs, circlets | Medium. Breakpoint-sensitive. |
+| Greater Omniscient | `Omniscient` / `Sage's` | `allskills 2` on torso/amulet; `allskills 1` on ring | `allskills 3` for torso/amulet, `allskills 2` for ring | Torso, amulets, rings | High impact. Needs separate scope rows so rings do not jump to torso/amulet power. |
+| Greater Skilltab | top `+3 skilltab` rows | `skilltab +3` | `skilltab +4` | Class-appropriate skilltab item scopes | High impact. Must share group `125` with normal skilltab rows. |
+| Greater Gnostic | top `skill-rand` rows | random class skill `+5` | random class skill `+6` | Rings, amulets, circlets, belts | Very high variance. Include in skill-affix pass, not broad numeric pass. |
 | Greater Perfection | `of Perfection` | `dex 20-30` | `dex 36-40` | Body armor, boots | Medium. Good for attack rating, block, and dex builds. |
 | Greater Titan | `of the Titan` | `str 16-20` | `str 26-30` | Rings, scepters, maces, body armor | Medium. Requirement and damage utility. |
 | Greater Deflecting | `of Deflecting` | `block 20-30`, `block2 30` | `block 35-40`, `block2 40` | Shields | Medium. Defensive build-defining suffix. |
@@ -225,7 +231,7 @@ Likely defer or skip for the first Greater pass:
 
 - Binary effects such as `nofreeze`, `ignore-ac`, and knockback. They do not gain much from a Greater range.
 - Socket affixes such as `Jeweler's`. Extra sockets can dominate item identity and should be evaluated separately.
-- Class/random skill affixes. `+5` random skill rows already sit in unusual groups, and `+6` may be too swingy without a dedicated skill-affix pass.
+- Skill affixes should be implemented in a dedicated skill-affix pass, even though they are now included as candidates above. `+6` random skill rows may be too swingy without separate probability review.
 - Existing rare-only pierce rows in group `307`. They are already special-purpose rare rows and should not be mixed into the first broad Greater pass.
 
 ### Charm Frequency Normalization Proposal
@@ -347,14 +353,15 @@ These examples show the intended proportional level compression plus top-row spl
 
 | Affix | level | maxlevel | frequency | Mods |
 |---|---:|---:|---:|---|
-| Greater Cruel | 50 | 65 | 1 | `dmg% 380-400`, `greater-affix-marker` |
-| Greater Cruel | 66 | 80 | 2 | `dmg% 380-400`, `greater-affix-marker` |
-| Greater Cruel | 81 | blank | 3 | `dmg% 380-400`, `greater-affix-marker` |
+| Greater Cruel | 50 | 65 | 1 | `dmg% 500`, `greater-affix-marker` |
+| Greater Cruel | 66 | 80 | 2 | `dmg% 500`, `greater-affix-marker` |
+| Greater Cruel | 81 | blank | 3 | `dmg% 500`, `greater-affix-marker` |
 
 Target ratio:
 
-- Late Greater should be roughly 10x rarer than the normal late top affix if the normal family is normalized to about `30`.
-- If the normal late row stays very high, such as current Cruel at `114`, then Greater becomes much rarer than 10x. That may be acceptable, but it should be intentional.
+- This row is intentionally benchmarked against `Grandmaster's`, not ordinary `Cruel`.
+- With late `frequency=3`, Greater Cruel is about 1 in 330 high-affix-level rare eligible weapons under the current pool model.
+- If the normal late row stays very high, such as current Cruel at `114`, then Greater remains much rarer than 10x compared with ordinary Cruel. That may be acceptable, but it should be intentional.
 
 ### Greater Zodiac
 

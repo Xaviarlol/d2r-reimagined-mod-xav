@@ -287,6 +287,8 @@ Phase 2 is the Greater Affix layer:
 - Greater rows stay rare-only, use the same family `group`, and should not stack with the normal family row.
 - During Phase 2, normalize family frequencies only where needed so Greater odds make sense relative to the normal top affix.
 - Greater rows with a spare mod slot should include `greater-affix-marker`. The marker is backed by `item_greaterAffixMarker` / `GreaterAffixMarker` and prints `** Greater Affix` in orange/gold using D2R color control codes.
+- Greater rows must be benchmarked against the strongest existing modded apex row in their group, not just the vanilla-style family name. For weapon ED group `111`, `Grandmaster's` and `Wraithly1` are the real apex rows, so Greater Cruel is now designed as fixed `dmg% 500` rather than `380-400`.
+- Missed apex families now tracked in the canonical design include `Invulnerable1` / armor `Wraithly1` for defensive group `101`, magic resistance (`Antimagic` / `of Negation`), Fire/Lightning/Cold Coalescence absorb suffixes, and the +skills families (`Omniscient`, `Sage's`, top `skilltab`, and top `skill-rand` rows).
 - Charm frequency normalization must not scale group `307` pierce rows in place. Group `307` has charm rows shared with non-charm gear (`ring,mcha` and `amul,glov,boot,belt,helm,lcha`), so a blanket `*5` would also make pierce affixes 5x more common on rings, amulets, gloves, boots, belts, and helms. Exempt `307` unless the rows are first split into charm-only and non-charm-only copies.
 - Large charm `+1 skill tree` rows should be normalized to `frequency=10` for all classes, including Warlock. This intentionally changes Warlock rows from their old `frequency=1` relationship so all normal skill-tree charms share one rarity.
 
