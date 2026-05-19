@@ -1,13 +1,13 @@
 ---
 schema: ai-review-task-v1
 id: 2026-05-19-1339-rare-greater-affix-full-audit
-status: ready_for_claude
+status: cancelled
 phase: re_review
 round: 2
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-19T13:39:54Z
-updated_at: 2026-05-19T15:50:44Z
+updated_at: 2026-05-19T21:46:38Z
 repo: C:\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: 49de242a
@@ -19,6 +19,10 @@ last_verdict: needs_fixes
 ---
 
 # Review Request
+
+## Superseded
+
+This narrower review request is superseded by `docs/ai-review/tasks/2026-05-19-2146-rare-affix-final-preimplementation-review/request.md`, which consolidates the rare-affix math, maxlevel policy, and pre-implementation checks into one final Claude pass.
 
 ## Original User Request
 
