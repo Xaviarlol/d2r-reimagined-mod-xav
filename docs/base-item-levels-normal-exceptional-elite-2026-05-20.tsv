@@ -1,0 +1,171 @@
+category	type	type2	normal_code	normal_name	normal_level	normal_levelreq	exceptional_code	exceptional_name	exceptional_level	exceptional_levelreq	elite_code	elite_name	elite_level	elite_levelreq
+weapon	axe	1wep	hax	Hand Axe	3	0	9ha	Hatchet	31	19	7ha	Tomahawk	54	40
+weapon	axe	1wep	axe	Axe	7	0	9ax	Cleaver	34	22	7ax	Small Crescent	61	45
+weapon	axe	1wep	2ax	Double Axe	13	0	92a	Twin Axe	39	25	72a	Ettin Axe	70	52
+weapon	axe	1wep	mpi	Military Pick	19	0	9mp	Crowbill	43	25	7mp	War Spike	79	59
+weapon	axe	1wep	wax	War Axe	25	0	9wa	Naga	48	25	7wa	Berserker Axe	85	64
+weapon	axe	slam	lax	Large Axe	6	0	9la	Military Axe	34	22	7la	Feral Axe	57	42
+weapon	axe	slam	bax	Broad Axe	12	0	9ba	Bearded Axe	38	25	7ba	Silver-edged Axe	65	48
+weapon	axe	slam	btx	Battle Axe	17	0	9bt	Tabar	42	25	7bt	Decapitator	73	54
+weapon	axe	slam	gax	Great Axe	23	0	9ga	Gothic Axe	46	25	7ga	Champion Axe	82	61
+weapon	axe	slam	gix	Giant Axe	27	0	9gi	Ancient Axe	51	25	7gi	Glorious Axe	85	66
+weapon	wand	1wep	wnd	Wand	2	0	9wn	Burnt Wand	31	19	7wn	Polished Wand	55	41
+weapon	wand	1wep	ywn	Yew Wand	12	0	9yw	Petrified Wand	38	25	7yw	Ghost Wand	65	48
+weapon	wand	1wep	bwn	Bone Wand	18	0	9bw	Tomb Wand	43	25	7bw	Lich Wand	75	56
+weapon	wand	1wep	gwn	Grim Wand	26	0	9gw	Grave Wand	49	25	7gw	Unearthed Wand	86	64
+weapon	club	1wep	clb	Club	1	0	9cl	Cudgel	30	18	7cl	Truncheon	52	39
+weapon	scep	1wep	scp	Scepter	3	0	9sc	Rune Scepter	31	19	7sc	Mighty Scepter	62	46
+weapon	scep	1wep	gsc	Grand Scepter	15	0	9qs	Holy Water Sprinkler	40	25	7qs	Seraph Rod	76	57
+weapon	scep	1wep	wsp	War Scepter	21	0	9ws	Divine Scepter	45	25	7ws	Caduceus	85	66
+weapon	club	1wep	spc	Spiked Club	4	0	9sp	Barbed Club	32	20	7sp	Tyrant Club	57	42
+weapon	mace	1wep	mac	Mace	8	0	9ma	Flanged Mace	35	23	7ma	Reinforced Mace	63	47
+weapon	mace	1wep	mst	Morning Star	13	0	9mt	Jagged Star	39	25	7mt	Devil Star	70	52
+weapon	mace	1wep	fla	Flail	19	0	9fl	Knout	43	25	7fl	Scourge	76	57
+weapon	hamm	1wep	whm	War Hammer	25	0	9wh	Battle Hammer	48	25	7wh	Legendary Mallet	82	61
+weapon	hamm	slam	mau	Maul	21	0	9m9	War Club	45	25	7m7	Ogre Maul	69	51
+weapon	hamm	slam	gma	Great Maul	32	0	9gm	Martel de Fer	53	25	7gm	Thunder Maul	85	65
+weapon	swor	1wep	ssd	Short Sword	1	0	9ss	Gladius	30	18	7ss	Falcata	56	42
+weapon	swor	1wep	scm	Scimitar	5	0	9sm	Cutlass	43	25	7sm	Ataghan	61	45
+weapon	swor	1wep	sbr	Saber	8	0	9sb	Shamshir	35	23	7sb	Elegant Blade	63	47
+weapon	swor	1wep	flc	Falchion	11	0	9fc	Tulwar	37	25	7fc	Hydra Edge	69	51
+weapon	swor	1wep	crs	Crystal Sword	11	0	9cr	Dimensional Blade	37	25	7cr	Phase Blade	73	54
+weapon	swor	1wep	bsd	Broad Sword	15	0	9bs	Battle Sword	40	25	7bs	Conquest Sword	78	58
+weapon	swor	1wep	lsd	Long Sword	20	0	9ls	Rune Sword	44	25	7ls	Cryptic Sword	82	61
+weapon	swor	1wep	wsd	War Sword	27	0	9wd	Ancient Sword	49	25	7wd	Mythical Sword	85	66
+weapon	swor	slam	2hs	Two-Handed Sword	10	0	92h	Espandon	37	25	72h	Legend Sword	59	44
+weapon	swor	slam	clm	Claymore	17	0	9cm	Dacian Falx	42	25	7cm	Highland Blade	66	49
+weapon	swor	slam	gis	Giant Sword	21	0	9gs	Tusk Sword	45	25	7gs	Balrog Blade	71	53
+weapon	swor	slam	bsw	Bastard Sword	24	0	9b9	Gothic Sword	48	25	7b7	Champion Sword	77	57
+weapon	swor	slam	flb	Flamberge	27	0	9fb	Zweihander	49	25	7fb	Colossal Sword	80	60
+weapon	swor	slam	gsd	Great Sword	33	0	9gd	Executioner Sword	54	25	7gd	Colossus Blade	85	63
+weapon	knif	1wep	dgr	Dagger	3	0	9dg	Poignard	31	19	7dg	Bone Knife	58	43
+weapon	knif	1wep	dir	Dirk	9	0	9di	Rondel	36	24	7di	Mithral Point	70	52
+weapon	knif	1wep	kri	Kriss	17	0	9kr	Cinquedeas	42	25	7kr	Fanged Knife	83	62
+weapon	knif	1wep	bld	Blade	23	0	9bl	Stilleto	46	25	7bl	Legend Spike	85	66
+weapon	tkni	1wep	tkf	Throwing Knife	2	0	9tk	Battle Dart	31	19	7tk	Flying Knife	64	48
+weapon	taxe	1wep	tax	Throwing Axe	7	0	9ta	Francisca	34	22	7ta	Flying Axe	56	42
+weapon	tkni	1wep	bkf	Balanced Knife	13	0	9bk	War Dart	39	25	7bk	Winged Knife	77	57
+weapon	taxe	1wep	bal	Balanced Axe	16	0	9b8	Hurlbat	41	25	7b8	Winged Axe	80	60
+weapon	jave	1wep	jav	Javelin	1	0	9ja	War Javelin	30	18	7ja	Hyperion Javelin	54	40
+weapon	jave	1wep	pil	Pilum	10	0	9pi	Great Pilum	37	25	7pi	Stygian Pilum	62	46
+weapon	jave	1wep	ssp	Short Spear	15	0	9s9	Simbilan	40	25	7s7	Balrog Spear	71	53
+weapon	jave	1wep	glv	Glaive	23	0	9gl	Spiculum	46	25	7gl	Ghost Glaive	79	59
+weapon	jave	1wep	tsp	Throwing Spear	29	0	9ts	Harpoon	51	25	7ts	Winged Harpoon	85	65
+weapon	spea		spr	Spear	5	0	9sr	War Spear	33	21	7sr	Hyperion Spear	58	43
+weapon	spea		tri	Trident	9	0	9tr	Fuscina	36	24	7tr	Stygian Pike	66	49
+weapon	spea		brn	Brandistock	16	0	9br	War Fork	41	25	7br	Mancatcher	74	55
+weapon	spea		spt	Spetum	20	0	9st	Yari	44	25	7st	Ghost Spear	83	62
+weapon	spea		pik	Pike	24	0	9p9	Lance	47	25	7p7	War Pike	85	66
+weapon	pole	slam	bar	Bardiche	5	0	9b7	Lochaber Axe	33	21	7o7	Ogre Axe	60	45
+weapon	pole	slam	vou	Voulge	11	0	9vo	Bill	37	25	7vo	Colossus Voulge	64	48
+weapon	pole	slam	scy	Scythe	15	0	9s8	Battle Scythe	40	25	7s8	Thresher	71	53
+weapon	pole	slam	pax	Poleaxe	21	0	9pa	Partizan	35	23	7pa	Cryptic Axe	79	59
+weapon	pole	slam	hal	Halberd	29	0	9h9	Bec-de-Corbin	51	25	7h7	Great Poleaxe	84	63
+weapon	pole	slam	wsc	War Scythe	34	0	9wc	Grim Scythe	55	25	7wc	Giant Thresher	85	66
+weapon	staf	slam	sst	Short Staff	1	0	8ss	Jo Staff	30	18	6ss	Walking Stick	58	43
+weapon	staf	slam	lst	Long Staff	8	0	8ls	Quarterstaff	35	23	6ls	Stalagmite	66	49
+weapon	staf	slam	cst	Gnarled Staff	12	0	8cs	Cedar Staff	38	25	6cs	Elder Staff	74	55
+weapon	staf	slam	bst	Battle Staff	17	0	8bs	Gothic Staff	42	25	6bs	Shillelagh	83	62
+weapon	staf	slam	wst	War Staff	24	0	8ws	Rune Staff	47	25	6ws	Archon Staff	85	66
+weapon	bow		sbw	Short Bow	1	0	8sb	Edge Bow	30	18	6sb	Spider Bow	55	41
+weapon	bow		hbw	Hunter's Bow	5	0	8hb	Razor Bow	33	21	6hb	Blade Bow	60	45
+weapon	bow		lbw	Long Bow	8	0	8lb	Cedar Bow	35	23	6lb	Shadow Bow	63	47
+weapon	bow		cbw	Composite Bow	12	0	8cb	Double Bow	39	25	6cb	Great Bow	68	51
+weapon	bow		sbb	Short Battle Bow	18	0	8s8	Short Siege Bow	43	25	6s7	Diamond Bow	72	54
+weapon	bow		lbb	Long Battle Bow	23	0	8l8	Long Siege Bow	46	25	6l7	Crusader Bow	77	57
+weapon	bow		swb	Short War Bow	27	0	8sw	Rune Bow	49	25	6sw	Ward Bow	80	60
+weapon	bow		lwb	Long War Bow	31	0	8lw	Gothic Bow	52	25	6lw	Hydra Bow	85	63
+weapon	xbow		lxb	Light Crossbow	6	0	8lx	Arbalest	34	22	6lx	Pellet Bow	57	42
+weapon	xbow		mxb	Crossbow	15	0	8mx	Siege Crossbow	40	25	6mx	Gorgon Crossbow	67	50
+weapon	xbow		hxb	Heavy Crossbow	24	0	8hx	Ballista	47	25	6hx	Colossus Crossbow	75	56
+weapon	xbow		rxb	Repeating Crossbow	33	0	8rx	Chu-Ko-Nu	54	25	6rx	Demon Crossbow	84	63
+weapon	h2h	1wep	ktr	Katar	1	0	9ar	Quhab	28	21	7ar	Suwayyah	59	44
+weapon	h2h	1wep	wrb	Wrist Blade	9	0	9wb	Wrist Spike	32	24	7wb	Wrist Sword	62	46
+weapon	h2h	1wep	axf	Hatchet Hands	12	0	9xf	Fascia	36	27	7xf	War Fist	68	51
+weapon	h2h	1wep	ces	Cestus	15	0	9cs	Hand Scythe	41	30	7cs	Battle Cestus	73	54
+weapon	h2h	1wep	clw	Claws	18	0	9lw	Greater Claws	45	33	7lw	Feral Claws	78	58
+weapon	h2h	1wep	btl	Blade Talons	21	0	9tw	Greater Talons	50	37	7tw	Runic Talons	81	60
+weapon	h2h	1wep	skr	Scissors Katar	24	0	9qr	Scissors Quhab	54	40	7qr	Scissors Suwayyah	85	64
+weapon	orb	1wep	ob1	Eagle Orb	1	0	ob6	Glowing Orb	32	24	obb	Heavenly Stone	59	44
+weapon	orb	1wep	ob2	Sacred Globe	8	0	ob7	Crystalline Globe	37	27	obc	Eldritch Orb	67	50
+weapon	orb	1wep	ob3	Smoked Sphere	12	8	ob8	Cloudy Sphere	41	30	obd	Demon Heart	75	56
+weapon	orb	1wep	ob4	Clasped Orb	17	13	ob9	Sparkling Ball	46	34	obe	Vortex Orb	84	63
+weapon	orb	1wep	ob5	Jared's Stone	24	18	oba	Swirling Crystal	50	37	obf	Dimensional Shard	85	66
+weapon	abow		am1	Stag Bow	18	14	am6	Ashwood Bow	39	29	amb	Matriarchal Bow	53	39
+weapon	abow		am2	Reflex Bow	27	20	am7	Ceremonial Bow	47	35	amc	Grand Matron Bow	78	58
+weapon	aspe		am3	Maiden Spear	18	14	am8	Ceremonial Spear	43	32	amd	Matriarchal Spear	61	45
+weapon	aspe		am4	Maiden Pike	27	20	am9	Ceremonial Pike	51	38	ame	Matriarchal Pike	81	60
+weapon	ajav	1wep	am5	Maiden Javelin	23	17	ama	Ceremonial Javelin	35	26	amf	Matriarchal Javelin	65	48
+armor	helm		cap	Cap	1	0	xap	War Hat	34	22	uap	Shako	58	43
+armor	helm		skp	Skull Cap	5	0	xkp	Sallet	37	25	ukp	Hydraskull	63	47
+armor	helm		hlm	Helm	11	0	xlm	Casque	42	25	ulm	Armet	68	51
+armor	helm		fhl	Full Helm	15	0	xhl	Basinet	45	25	uhl	Giant Conch	54	40
+armor	helm		ghm	Great Helm	23	0	xhm	Winged Helm	51	25	uhm	Spired Helm	79	59
+armor	helm		crn	Crown	29	0	xrn	Grand Crown	55	25	urn	Corona	85	66
+armor	helm		msk	Mask	19	0	xsk	Death Mask	48	25	usk	Demonhead	74	55
+armor	tors		qui	Quilted Armor	1	0	xui	Ghost Armor	34	22	uui	Dusk Shroud	65	49
+armor	tors		lea	Leather Armor	3	0	xea	Serpentskin Armor	36	24	uea	Wyrmhide	67	50
+armor	tors		hla	Hard Leather Armor	5	0	xla	Demonhide Armor	37	25	ula	Scarab Husk	68	51
+armor	tors		stu	Studded Leather	8	0	xtu	Trellised Armor	40	25	utu	Wire Fleece	70	53
+armor	tors		rng	Ring Mail	11	0	xng	Linked Mail	42	25	ung	Diamond Mail	72	54
+armor	tors		scl	Scale Mail	13	0	xcl	Tigulated Mail	43	25	ucl	Loricated Mail	73	55
+armor	tors		chn	Chain Mail	15	0	xhn	Mesh Armor	45	25	uhn	Boneweave	62	47
+armor	tors		brs	Breast Plate	18	0	xrs	Cuirass	47	25	urs	Great Hauberk	75	56
+armor	tors		spl	Splint Mail	20	0	xpl	Russet Armor	49	25	upl	Balrog Skin	76	57
+armor	tors		plt	Plate Mail	24	0	xlt	Templar Coat	52	25	ult	Hellforge Plate	78	59
+armor	tors		fld	Field Plate	28	0	xld	Sharktooth Armor	55	25	uld	Kraken Shell	81	61
+armor	tors		gth	Gothic Plate	32	0	xth	Embossed Plate	58	25	uth	Lacquered Plate	82	62
+armor	tors		ful	Full Plate Mail	37	0	xul	Chaos Armor	61	25	uul	Shadow Plate	83	64
+armor	tors		aar	Ancient Armor	40	0	xar	Ornate Armor	64	25	uar	Sacred Armor	85	66
+armor	tors		ltp	Light Plate	35	0	xtp	Mage Plate	60	25	utp	Archon Plate	84	63
+armor	shie		buc	Buckler	1	0	xuc	Defender	34	22	uuc	Heater	58	43
+armor	shie		sml	Small Shield	5	0	xml	Round Shield	37	25	uml	Luna	61	45
+armor	shie		lrg	Large Shield	11	0	xrg	Scutum	42	25	urg	Hyperion	64	54
+armor	shie		kit	Kite Shield	15	0	xit	Dragon Shield	45	25	uit	Monarch	72	54
+armor	shie		tow	Tower Shield	22	0	xow	Pavise	50	25	uow	Aegis	79	59
+armor	shie		gts	Gothic Shield	30	0	xts	Ancient Shield	56	25	uts	Ward	84	63
+armor	glov		lgl	Leather Gloves	3	0	xlg	Demonhide Gloves	33	21	ulg	Bramble Mitts	57	42
+armor	glov		vgl	Heavy Gloves	7	0	xvg	Sharkskin Gloves	39	25	uvg	Vampirebone Gloves	63	47
+armor	glov		mgl	Chain Gloves	12	0	xmg	Heavy Bracers	43	25	umg	Vambraces	69	51
+armor	glov		tgl	Light Gauntlets	20	0	xtg	Battle Gauntlets	49	25	utg	Crusader Gauntlets	76	57
+armor	glov		hgl	Gauntlets	27	0	xhg	War Gauntlets	54	25	uhg	Ogre Gauntlets	85	64
+armor	boot		lbt	Boots	3	0	xlb	Demonhide Boots	36	24	ulb	Wyrmhide Boots	60	45
+armor	boot		vbt	Heavy Boots	7	0	xvb	Sharkskin Boots	39	25	uvb	Scarabshell Boots	66	49
+armor	boot		mbt	Chain Boots	12	0	xmb	Mesh Boots	43	25	umb	Boneweave Boots	72	54
+armor	boot		tbt	Light Plated Boots	20	0	xtb	Battle Boots	49	25	utb	Mirrored Boots	81	60
+armor	boot		hbt	Greaves	27	0	xhb	War Boots	54	25	uhb	Myrmidon Greaves	85	65
+armor	belt		lbl	Sash	3	0	zlb	Demonhide Sash	36	24	ulc	Spiderweb Sash	61	46
+armor	belt		vbl	Light Belt	7	0	zvb	Sharkskin Belt	39	25	uvc	Vampirefang Belt	68	51
+armor	belt		mbl	Belt	12	0	zmb	Mesh Belt	43	25	umc	Mithril Coil	75	56
+armor	belt		tbl	Heavy Belt	20	0	ztb	Battle Belt	49	25	utc	Troll Belt	82	62
+armor	belt		hbl	Plated Belt	27	0	zhb	War Belt	54	25	uhc	Colossus Girdle	85	67
+armor	helm		bhm	Bone Helm	22	0	xh9	Grim Helm	50	25	uh9	Bone Visage	84	63
+armor	shie		bsh	Bone Shield	19	0	xsh	Grim Shield	48	25	ush	Troll Nest	76	57
+armor	shie		spk	Spiked Shield	11	0	xpk	Barbed Shield	42	25	upk	Blade Barrier	68	51
+armor	pelt		dr1	Wolf Head	4	3	dr6	Alpha Helm	26	26	drb	Blood Spirit	62	46
+armor	pelt		dr2	Hawk Helm	8	6	dr7	Griffon Headress	40	30	drc	Sun Spirit	69	51
+armor	pelt		dr3	Antlers	16	12	dr8	Hunter's Guise	46	29	drd	Earth Spirit	76	57
+armor	pelt		dr4	Falcon Mask	20	15	dr9	Sacred Feathers	50	32	dre	Sky Spirit	83	62
+armor	pelt		dr5	Spirit Mask	24	18	dra	Totemic Mask	55	41	drf	Dream Spirit	85	66
+armor	phlm		ba1	Jawbone Cap	4	3	ba6	Jawbone Visor	33	25	bab	Carnage Helm	60	45
+armor	phlm		ba2	Fanged Helm	8	6	ba7	Lion Helm	38	29	bac	Fury Visor	66	49
+armor	phlm		ba3	Horned Helm	16	12	ba8	Rage Mask	44	29	bad	Destroyer Helm	73	54
+armor	phlm		ba4	Assault Helmet	20	15	ba9	Savage Helmet	49	32	bae	Conqueror Crown	80	60
+armor	phlm		ba5	Avenger Guard	24	18	baa	Slayer Guard	54	40	baf	Guardian Crown	85	65
+armor	ashd		pa1	Targe	4	3	pa6	Akaran Targe	35	26	pab	Sacred Targe	63	47
+armor	ashd		pa2	Rondache	8	6	pa7	Akaran Rondache	40	30	pac	Sacred Rondache	70	52
+armor	ashd		pa3	Heraldic Shield	16	12	pa8	Protector Shield	46	34	pad	Ancient Shield	74	55
+armor	ashd		pa4	Aerin Shield	20	15	pa9	Gilded Shield	51	38	pae	Zakarum Shield	82	61
+armor	ashd		pa5	Crown Shield	24	18	paa	Royal Shield	55	41	paf	Vortex Shield	85	66
+armor	head		ne1	Preserved Head	4	3	ne6	Mummified Trophy	33	24	neb	Minion Skull	59	44
+armor	head		ne2	Zombie Head	8	6	ne7	Fetish Trophy	39	29	neg	Hellspawn Skull	67	50
+armor	head		ne3	Unraveller Head	16	12	ne8	Sexton Trophy	45	33	ned	Overseer Skull	66	49
+armor	head		ne4	Gargoyle Head	20	15	ne9	Cantor Trophy	49	36	nee	Succubus Skull	81	60
+armor	head		ne5	Demon Head	24	18	nea	Heirophant Trophy	54	40	nef	Bloodlord Skull	85	65
+armor	circ		ci0	Circlet	24	16	ci2	Tiara	70	52	ci3	Diadem	85	64
+armor	circ		ci1	Coronet	52	39	ci2	Tiara	70	52	ci3	Diadem	85	64
+armor	grim		wa1	Old Book	3	3	wa6	Burnt Text	24	24	wab	Forgotten Volume	59	44
+armor	grim		wa2	Tome	6	6	wa7	Dark Tome	29	29	wac	Occult Tome	67	49
+armor	grim		wa3	Codex	12	12	wa8	Dark Codex	33	33	wad	Occult Codex	66	50
+armor	grim		wa4	Compendium	15	15	wa9	Possessed Compendium	36	36	wae	Blasphemous Compendium	81	60
+armor	grim		wa5	Grimoire	18	18	waa	Possessed Grimoire	40	40	waf	Blasphemous Grimoire	85	65
