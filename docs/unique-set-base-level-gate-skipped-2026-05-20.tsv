@@ -1,0 +1,221 @@
+table	line	name	set	code	item_name	current_lvl	current_lvl_req	reason
+set	3	Civerb's Icon	Civerb's Vestments	amu	Amulet	1	9	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	11	Iratha's Collar	Iratha's Finery	amu	Amulet	10	15	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	22	Vidala's Snare	Vidala's Rig	amu	Amulet	10	14	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	30	Cathan's Sigil	Cathan's Traps	amu	Amulet	1	11	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	31	Cathan's Seal	Cathan's Traps	rin	Ring	1	11	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	35	Tancred's Weird	Tancred's Battlegear	amu	Amulet	12	20	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	54	Angelic Halo	Angelic Raiment	rin	Ring	1	12	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	55	Angelic Wings	Angelic Raiment	amu	Amulet	1	12	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	60	Arcanna's Sign	Arcanna's Tricks	amu	Amulet	12	15	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	64	Expansion						not_weapon_or_armor_with_normal_exceptional_elite_base
+set	80	Tal Rasha's Adjudication	Tal Rasha's Wrappings	amu	Amulet	26	67	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	98	Telling of Beads	The Disciple	amu	Amulet	39	30	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	147	Peace Ring	Nature's Grove	rin	Ring	12	12	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	160	Sheena's Choker	Sheena's Grace	amu	Amulet	12	12	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	178	Ruby Ring	Snowmane's Jewelry	rin	Ring	22	22	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	179	Diamond Necklace	Snowmane's Jewelry	amu	Amulet	22	22	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	192	Brother Laz' Holy Symbol	Insight of Brother Laz	amu	Amulet	30	40	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	197	Vampire's Crusade	Hades' Underworld	rin	Ring	30	39	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	211	Warder's Bond	Mishy's Avatar	rin	Ring	35	38	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	222	Fall From Grace	Forsaken Divinity	rin	Ring	45	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	223	Tyrael's Grief	Forsaken Divinity	rin	Ring	45	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	224	Redemption Denied	Forsaken Divinity	amu	Amulet	45	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	264	Soulstone of Power	Chaos Energy	amu	Amulet	85	81	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	272	Chiad's Halo	Aiel Shieldmaiden	rin	Ring	60	71	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	282	Eternal Sleep	Kraj's Memorial	amu	Amulet	60	80	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	293	Char's Annulus of Obscurity	Narrow Path Between Light and Darkness	rin	Ring	40	51	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	294	Char's Blessed Reflection	Narrow Path Between Light and Darkness	rin	Ring	40	51	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	299	Kingpin's Signet	Treasure Hunter	rin	Ring	7	7	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	310	Draven Coil	Zhoulomcrist's Dread	rin	Ring	40	50	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	321	Legacy in Blood	Darque Necromancy	amu	Amulet	33	35	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	338	Ter'Angreal Ring	Dragon Reborn	rin	Ring	60	67	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	339	Ser'Angreal Necklace	Dragon Reborn	amu	Amulet	60	67	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	349	Dominion's Thesis	Gweibret's Rule	amu	Amulet	50	50	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	387	Holy Ring of Amaunator	Amaunator's Peace	rin	Ring	30	33	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	429	Seraphim	Celestial Hierarchy	rin	Ring	49	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	431	Diablo's Soulstone Ring	Lords of Hell	rin	Ring	77	77	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	432	Baal's Cryptic Amulet	Lords of Hell	amu	Amulet	74	74	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	434	Demonic Chuckle	Corruption Coils	rin	Ring	45	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	435	Evil Humor	Corruption Coils	rin	Ring	45	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+set	436	Temptation's Death	Corruption Coils	amu	Amulet	45	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	119	Nokozan Relic		amu	Amulet	1	10	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	120	The Eye of Etlich		amu	Amulet	1	15	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	121	The Mahim-Oak Curio		amu	Amulet	12	25	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	122	Nagelring		rin	Ring	12	30	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	123	Manald Heal		rin	Ring	1	15	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	124	The Stone of Jordan		rin	Ring	39	29	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	125	Amulet of the Viper		vip	Amulet	0	0	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	126	Staff of Kings		msf	Staff	0	0	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	127	Horadric Staff		hst	Staff	0	0	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	128	Hell Forge Hammer		hfh	Hammer	0	0	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	129	KhalimFlail		qf1	Flail	0	0	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	130	SuperKhalimFlail		qf2	Flail	0	0	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	131	Expansion						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	203	Armor						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	250	Elite Uniques						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	266	Constricting Ring		rin	Ring	90	95	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	270	Rings						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	271	Bul-Kathos' Wedding Band		rin	Ring	50	58	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	272	The Cat's Eye		amu	Amulet	50	50	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	273	The Rising Sun		amu	Amulet	60	65	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	274	Crescent Moon		amu	Amulet	60	68	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	275	Mara's Kaleidoscope		amu	Amulet	80	67	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	276	Atma's Scarab		amu	Amulet	60	60	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	277	Dwarf Star		rin	Ring	45	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	278	Raven Frost		rin	Ring	45	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	279	Highlord's Wrath		amu	Amulet	73	65	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	280	Saracen's Chance		amu	Amulet	45	55	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	281	Class Specific						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	298	Gore Ripper						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	303	Nature's Peace		rin	ring	70	69	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	305	Seraph's Hymn		amu	amulet	73	65	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	306	Zakarum's Salvation						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	308	Odium						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	321	Larzuk's Champion						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	322	Wisp Projector		rin	ring	84	76	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	342	Giant Maimer						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	349	Darkfear						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	355	Nethercrow						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	362	Gheed's Fortune		cm3	charm	60	55	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	365	Warriv's Warder						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	375	Merman's Sprocket						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	378	Metalgrid		amu	amulet	85	81	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	380	Siggard's Stealth						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	381	Carrion Wind		rin	ring	67	60	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	384	Annihilus		cm1	charm	110	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	395	Spring Facet		jew	jewel	85	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	396	Winter Facet		jew	jewel	85	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	397	Summer Facet		jew	jewel	85	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	398	Autumn Facet		jew	jewel	85	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	399	Thunder Facet		jew	jewel	85	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	400	Rime Facet		jew	jewel	85	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	401	Burnt Facet		jew	jewel	85	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	402	Toxic Facet		jew	jewel	85	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	403	Hellfire Torch		cm2	charm	75	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	404	Cold Rupture		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	405	Flame Rift		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	406	Crack of the Heavens		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	407	Rotting Fissure		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	408	Bone Break		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	409	Black Cleft		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	410	Warlock Class Pack						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	418	Sling		rin	Ring	50	50	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	419	Opalvein		rin	Ring	50	50	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	420	Entropy Locket		amu	Amulet	50	54	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	423	Defender's Bile		cjw	jewel	110	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	424	Guardian's Thunder		cjw	jewel	110	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	425	Protector's Frost		cjw	jewel	110	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	426	Defender's Fire		cjw	jewel	110	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	427	Protector's Stone		cjw	jewel	110	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	428	Guardian's Light		cjw	jewel	110	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	429	PreCrafted Cold Rupture		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	430	PreCrafted Flame Rift		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	431	PreCrafted Crack of the Heavens		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	432	PreCrafted Rotting Fissure		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	433	PreCrafted Bone Break		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	434	PreCrafted Black Cleft		cs1	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	435	Crafted Cold Rupture		cs2	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	436	Crafted Flame Rift		cs2	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	437	Crafted Crack of the Heavens		cs2	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	438	Crafted Rotting Fissure		cs2	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	439	Crafted Bone Break		cs2	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	440	Crafted Black Cleft		cs2	charm	69	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	441	Talonrage						not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	799	Replenishing Quiver		aqv	Arrows	1	6	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	800	Quiver of Piercing		aqv	Arrows	25	35	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	801	Quiver of Slaying		aqv	Arrows	50	65	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	824	Replenishing Bolt Case		cqv	Bolts	1	6	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	825	Bolt Case of Piercing		cqv	Bolts	25	35	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	826	Bolt Case of Slaying		cqv	Bolts	50	65	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1362	Ring of Engagement		rin	ring	1	3	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1363	Nameless Fear		rin	ring	1	11	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1364	Elven Heartband		rin	ring	1	18	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1365	Knell of Discord		rin	ring	1	24	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1366	Vampiric Regeneration		rin	ring	1	28	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1367	Golem's Might		rin	ring	12	24	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1368	Plantar Enlightenment		rin	ring	60	60	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1369	Thief of Dreams		rin	ring	50	50	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1370	Jackal's Laughter		rin	ring	70	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1371	Fellowship's Hope		rin	ring	73	73	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1372	Faerie Ring		rin	ring	82	82	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1373	Jordan's Sigil		rin	ring	85	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1374	Eye of Kahn		amu	amulet	3	3	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1375	Psyche Shroud		amu	amulet	6	6	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1376	Amulet of Warding		amu	amulet	12	12	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1377	Cryptking		amu	amulet	27	27	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1378	Sequence of Seasons		amu	amulet	30	30	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1379	Rat Lord's Curse		amu	amulet	38	38	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1380	Luck Sigil		amu	amulet	45	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1381	The Vanquisher		amu	amulet	85	81	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1382	Foul Sigil		amu	amulet	78	78	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1383	Sigil of Hope		amu	amulet	85	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1384	Autumn's Avatar		cm1	charm	12	12	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1385	Remembrance of Glory		cm1	charm	81	80	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1386	Argo's Anchor		cm1	charm	48	48	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1387	Ogre King's Bowl		cm2	charm	60	60	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1388	Peacemaker		cm1	charm	15	15	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1389	Life and Death		cm2	charm	55	55	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1390	Throne of Power		cm2	charm	81	81	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1391	Nightshade		cm3	charm	6	6	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1392	Queen's Call		cm3	charm	81	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1393	Tiger Eye		jew	jewel	58	58	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1394	Jade Facet		jew	jewel	58	58	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1395	Topaz Facet		jew	jewel	49	49	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1396	Emerald Facet		jew	jewel	38	38	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1397	Quartz Facet		jew	jewel	43	43	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1398	Sapphire Facet		jew	jewel	58	58	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1399	Spinel Facet		jew	jewel	58	58	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1400	Diamond Facet		jew	jewel	67	67	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1401	Adamantine Facet		jew	jewel	71	71	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1402	Star Facet		jew	jewel	76	76	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1403	Heaven Facet		jew	jewel	85	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1404	t1 Splash Charm		cm4	charm	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1405	t2 Splash Charm		cm4	charm	1	10	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1406	t3 Splash Charm		cm4	charm	1	20	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1407	t4 Splash Charm		cm4	charm	1	30	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1408	t5 Splash Charm		cm4	charm	1	40	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1409	t6 Splash Charm		cm4	charm	1	50	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1410	t7 Splash Charm		cm4	charm	1	60	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1411	t8 Splash Charm		cm4	charm	1	75	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1412	Collin's Destruction		cm5	charm	1	90	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1413	Keychain		kch	Keychain	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1414	Terror Key Grabber		tkg	Terror Key Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1415	Hate Key Grabber		hkg	Hate Key Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1416	Destruction Key Grabber		dkg	Destruction Key Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1417	Gem Bag		bag	Gem Bag	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1418	Amethyst Grabber		agr	Amethyst Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1419	Topaz Grabber		tgr	Topaz Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1420	Sapphire Grabber		sgr	Sapphire Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1421	Emerald Grabber		egr	Emerald Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1422	Diamond Grabber		mgr	Diamond Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1423	Ruby Grabber		rgr	Ruby Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1424	Skull Grabber		kgr	Skull Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1425	Quiver of Amplified Slaying		aqv	Arrows	70	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1426	Quiver of Resistance Slaying		aqv	Arrows	70	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1427	Bolt Case of Amplified Slaying		cqv	Bolts	70	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1428	Bolt Case of Resistance Slaying		cqv	Bolts	70	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1429	Black Soulstone		cm1	charm	85	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1430	Obsidian Beacon		cm3	charm	85	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1431	Valknut		cm2	charm	20	24	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1432	Triskelion		cm3	charm	30	32	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1433	Web of Wyrd		cm3	charm	50	56	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1434	Conclave of Elements		cm3	charm	81	80	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1435	Rune Pliers		rup	Rune Pliers	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1436	Jewel Pliers		jwp	Jewel Pliers	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1437	Quiver of Pestilence		aqv	Arrows	70	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1438	Bolt Case of Pestilence		cqv	Bolts	70	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1439	Barilzar's Mazed Band		rin	ring	1	25	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1443	Crescendo		aqv	Arrows	65	80	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1444	Chaos Onyx Grabber		ogr	Chaos Onyx Grabber	1	1	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1472	The Thief's Choker		amu	amulet	80	85	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1474	Rogue Scout Arrows		aqv	Arrows	12	15	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1475	Hunger of the Jungle		aqv	Arrows	25	30	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1476	Flames of Sanctuary		aqv	Arrows	43	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1477	Reach of Mephisto		aqv	Arrows	70	70	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1478	Siege Beast Arrows		aqv	Arrows	90	90	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1479	Sisterhood Bolts		cqv	Bolts	12	15	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1480	Kurast Bolts		cqv	Bolts	25	30	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1481	Reaper Bolts		cqv	Bolts	43	45	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1482	Bolts of Zakarum		cqv	Bolts	70	70	not_weapon_or_armor_with_normal_exceptional_elite_base
+unique	1483	Echoes of Harrogath		cqv	Bolts	90	90	not_weapon_or_armor_with_normal_exceptional_elite_base

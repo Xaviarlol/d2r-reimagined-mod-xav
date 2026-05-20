@@ -1,0 +1,1625 @@
+table	line	name	set	spawnable	disabled	item_code	item_name	category	tier	type	type2	current_lvl	proposed_lvl	delta	current_lvl_req	base_levelreq	normal_code	exceptional_code	elite_code
+set	87	Griswold's Honor	Griswold's Legacy	1		paf	Vortex Shield	armor	elite	ashd		44	85	41	68	66	pa5	paa	paf
+set	246	Retribution	Brother Laz' Calling	1		pae	Zakarum Shield	armor	elite	ashd		60	82	22	69	61	pa4	pa9	pae
+set	102	Credendum	The Disciple	1		umc	Mithril Coil	armor	elite	belt		39	75	36	65	56	mbl	zmb	umc
+set	393	Girdle of Kitthix	Tika's Request	1		uhc	Colossus Girdle	armor	elite	belt		60	85	25	75	67	hbl	zhb	uhc
+set	416	Imperial Girdle	Path of Bravery	1		uhc	Colossus Girdle	armor	elite	belt		60	85	25	75	67	hbl	zhb	uhc
+set	411	Helghast Waistband	Kai Lord's Valiance	1		utc	Troll Belt	armor	elite	belt		60	82	22	77	62	tbl	ztb	utc
+set	92	Trang-Oul's Girth	Trang-Oul's Avatar	1		utc	Troll Belt	armor	elite	belt		60	82	22	70	62	tbl	ztb	utc
+set	251	Spin's Mystery	The Mysterious Spin	1		ulc	Spiderweb Sash	armor	elite	belt		40	61	21	46	46	lbl	zlb	ulc
+set	348	Born Supremacy	Gweibret's Rule	1		umc	Mithril Coil	armor	elite	belt		60	75	15	70	56	mbl	zmb	umc
+set	263	Winter's Discord	Phrozen Heart's Mysticism	1		uvc	Vampirefang Belt	armor	elite	belt		60	68	8	75	51	vbl	zvb	uvc
+set	273	Chiad's Valor	Aiel Shieldmaiden	1		ulc	Spiderweb Sash	armor	elite	belt		60	61	1	74	46	lbl	zlb	ulc
+set	383	Citadel Belt	Warlock's Exploration	1		ulc	Spiderweb Sash	armor	elite	belt		60	61	1	66	46	lbl	zlb	ulc
+set	455	Shackles of the Veiled Belt	Deus et Diabolus	1		uvc	Vampirefang Belt	armor	elite	belt		80	68	-12	80	51	vbl	zvb	uvc
+set	141	Horazon's Legacy	Horazon's Splendor	1		utb	Mirrored Boots	armor	elite	boot		40	81	41	67	60	tbt	xtb	utb
+set	417	Imperial Greaves	Path of Bravery	1		uhb	Myrmidon Greaves	armor	elite	boot		60	85	25	77	65	hbt	xhb	uhb
+set	239	Onyx's Fallen Star	Onyx's Primal Rage	1		uhb	Myrmidon Greaves	armor	elite	boot		60	85	25	77	65	hbt	xhb	uhb
+set	427	Dominion	Celestial Hierarchy	1		utb	Mirrored Boots	armor	elite	boot		60	81	21	70	60	tbt	xtb	utb
+set	280	Evil Reputation	Nefarious Ways	1		utb	Mirrored Boots	armor	elite	boot		60	81	21	76	60	tbt	xtb	utb
+set	323	Andariel's Hooves	Marhawkman's Disguise	1		umb	Boneweave Boots	armor	elite	boot		60	72	12	72	54	mbt	xmb	umb
+set	256	Darkmage's Super Nova	Darkmage's Astral Projection	1		umb	Boneweave Boots	armor	elite	boot		60	72	12	74	54	mbt	xmb	umb
+set	368	Harvest of Cruelty	Wrath of Vengeance	1		uvb	Scarabshell Boots	armor	elite	boot		60	66	6	67	49	vbt	xvb	uvb
+set	267	Treads of Energy	Chaos Energy	1		uvb	Scarabshell Boots	armor	elite	boot		60	66	6	74	49	vbt	xvb	uvb
+set	457	Steps Etched in Ash	Deus et Diabolus	1		umb	Boneweave Boots	armor	elite	boot		70	72	2	78	54	mbt	xmb	umb
+set	93	M'avina's True Sight	M'avina's Battle Hymn	1		ci3	Diadem	armor	elite	circ		21	85	64	59	64	ci1	ci2	ci3
+set	381	Lilarcors Crown	Warlock's Exploration	1		ci3	Diadem	armor	elite	circ		60	85	25	64	64	ci1	ci2	ci3
+set	418	Imperial Gauntlets	Path of Bravery	1		uhg	Ogre Gauntlets	armor	elite	glov		60	85	25	76	64	hgl	xhg	uhg
+set	277	Myhrginoc's Deathmonger	Myhrginoc's Warbreeder	1		uhg	Ogre Gauntlets	armor	elite	glov		60	85	25	79	64	hgl	xhg	uhg
+set	99	Laying of Hands	The Disciple	1		ulg	Bramble Mitts	armor	elite	glov		39	57	18	63	42	lgl	xlg	ulg
+set	247	Glory of Salvation	Brother Laz' Calling	1		utg	Crusader Gauntlets	armor	elite	glov		60	76	16	74	57	tgl	xtg	utg
+set	437	Maadi's Silence	Maadi's Paradox	1		uvg	Vampirebone gloves	armor	elite	glov		47	63	16	47	47	vgl	xvg	uvg
+set	344	Martyr's Principle	Soldier's Cairn	1		utg	Crasader Gauntlets	armor	elite	glov		60	76	16	73	57	tgl	xtg	utg
+set	354	Revenant's Claw	Haunted Asylum	1		utg	Crusader Gauntlets	armor	elite	glov		60	76	16	72	57	tgl	xtg	utg
+set	255	Darkmage's Solar Flair	Darkmage's Astral Projection	1		umg	Vambraces	armor	elite	glov		60	69	9	70	51	mgl	xmg	umg
+set	369	Guiding Force	Wrath of Vengeance	1		umg	Vambraces	armor	elite	glov		60	69	9	71	51	mgl	xmg	umg
+set	322	Andariel's Claw	Marhawkman's Disguise	1		uvg	Vampirebone Gloves	armor	elite	glov		60	63	3	69	47	vgl	xvg	uvg
+set	261	Dawns Mist	Phrozen Heart's Mysticism	1		uvg	Vampirebone gloves	armor	elite	glov		60	63	3	74	47	vgl	xvg	uvg
+set	382	Teleomortis' Gloves	Warlock's Exploration	1		ulg	Bramble Mitts	armor	elite	glov		60	57	-3	75	42	lgl	xlg	ulg
+set	142	Horazon's Secrets	Horazon's Splendor	1		wad	Occult Codex	armor	elite	grim		40	66	26	57	50	wa3	wa8	wad
+set	380	Tome of the Abyss	Warlock's Exploration	1		wac	Occult Tome	armor	elite	grim		50	67	17	60	49	wa2	wa7	wac
+set	266	Chaotic Shield	Chaos Energy	1		nef	Bloodlord Skull	armor	elite	head		60	85	25	83	65	ne5	nea	nef
+set	441	Maadi's Soul	Maadi's Paradox	1		ned	Overseer Skull	armor	elite	head		49	66	17	49	49	ne3	ne8	ned
+set	84	Griswold's Valor	Griswold's Legacy	1		urn	Corona	armor	elite	helm		44	85	41	69	66	crn	xrn	urn
+set	138	Horazon's Countenance	Horazon's Splendor	1		usk	Demonhead	armor	elite	helm		40	74	34	62	55	msk	xsk	usk
+set	244	Teachings of Brother Laz	Brother Laz' Calling	1		urn	Corona	armor	elite	helm		60	85	25	81	66	crn	xrn	urn
+set	289	Blood Raven's Pain	Blood Raven's Despair	1		uh9	Bone Visage	armor	elite	helm		60	84	24	73	63	bhm	xh9	uh9
+set	292	Char's Grimace of Death	Narrow Path Between Light and Darkness	1		usk	Demonhead	armor	elite	helm		50	74	24	55	55	msk	xsk	usk
+set	106	Ondal's Almighty	Heaven's Brethren	1		uhm	Spired Helm	armor	elite	helm		55	79	24	69	59	ghm	xhm	uhm
+set	438	Maadi's Vision	Maadi's Paradox	1		uh9	Bone Visage	armor	elite	helm		63	84	21	63	63	bhm	xh9	uh9
+set	376	Windspar Mask	Kaldorn's Majesty	1		uhm	Spired Helm	armor	elite	helm		60	79	19	74	59	ghm	xhm	uhm
+set	281	Noxious Whispers	Nefarious Ways	1		usk	Demonhead	armor	elite	helm		60	74	14	70	55	msk	xsk	usk
+set	88	Trang-Oul's Guise	Trang-Oul's Avatar	1		uh9	Bone Visage	armor	elite	helm		70	84	14	80	63	bhm	xh9	uh9
+set	428	Cherubim	Celestial Hierarchy	1		ulm	Armet	armor	elite	helm		60	68	8	61	51	hlm	xlm	ulm
+set	276	Myhrginoc's Crimson Crusader	Myhrginoc's Warbreeder	1		ulm	Armet	armor	elite	helm		60	68	8	70	51	hlm	xlm	ulm
+set	265	Guiding Focus	Chaos Energy	1		ukp	Hydroskull	armor	elite	helm		60	63	3	69	47	skp	xkp	ukp
+set	403	Helm of Chivalry	Knight's Gallantry	1		ukp	Hydraskull	armor	elite	helm		60	63	3	60	47	skp	xkp	ukp
+set	258	Darkmage's Celestial Fury	Darkmage's Astral Projection	1		uap	Shako	armor	elite	helm		60	58	-2	80	43	cap	xap	uap
+set	300	Kingpin's Crown	Treasure Hunter	1		uap	Shako	armor	elite	helm		60	58	-2	61	43	cap	xap	uap
+set	353	Haunted Wisdom	Haunted Asylum	1		uhl	Giant Conch	armor	elite	helm		60	54	-6	65	40	fhl	xhl	uhl
+set	397	Yavin's Infernal Visage	Corthala Family Heirlooms	1		uhl	Giant Conch	armor	elite	helm		60	54	-6	81	40	fhl	xhl	uhl
+set	243	Onyx's Celestial Rage	Onyx's Primal Rage	1		baf	Guardian Crown	armor	elite	phlm		60	85	25	79	65	ba5	baa	baf
+set	454	Panda's Sled	Panda's Polar Adventure	1		uow	Aegis	armor	elite	shie		50	79	29	60	59	tow	xow	uow
+set	252	Spin's Conundrum	The Mysterious Spin	1		uow	Aegis	armor	elite	shie		50	79	29	59	59	tow	xow	uow
+set	104	Taebaek's Glory	Heaven's Brethren	1		uts	Ward	armor	elite	shie		55	84	29	81	63	gts	xts	uts
+set	283	Calming Peace	Kraj's Memorial	1		uow	Aegis	armor	elite	shie		60	79	19	83	59	tow	xow	uow
+set	332	Between Fire and Ice	Bogrot's Magic	1		urg	Hyperion	armor	elite	shie		48	64	16	48	54	lrg	xrg	urg
+set	288	Throws of Hatred	The Darkest Weaves	1		ush	Troll Nest	armor	elite	shie		60	76	16	78	57	bsh	xsh	ush
+set	270	Chiad's Wall	Aiel Shieldmaiden	1		uit	Monarch	armor	elite	shie		60	72	12	73	54	kit	xit	uit
+set	315	Elysian Fields	The Warlord of Blood	1		upk	Blade Barrier	armor	elite	shie		60	68	8	68	51	spk	xpk	upk
+set	386	Holy Buckler of Amaunator	Amaunator's Peace	1		uml	Luna	armor	elite	shie		60	61	1	65	45	sml	xml	uml
+set	318	Lich's Rites	Darque Necromancy	1		uuc	Heater	armor	elite	shie		60	58	-2	63	43	buc	xuc	uuc
+set	340	Taint of Saidin	Dragon Reborn	1		uuc	Heater	armor	elite	shie		60	58	-2	67	43	buc	xuc	uuc
+set	94	M'avina's Embrace	M'avina's Battle Hymn	1		uld	Kraken Shell	armor	elite	tors		21	81	60	70	61	fld	xld	uld
+set	82	Tal Rasha's Guardianship	Tal Rasha's Wrappings	1		uth	Lacquered Plate	armor	elite	tors		26	82	56	71	62	gth	xth	uth
+set	70	Aldur's Deception	Aldur's Watchtower	1		uul	Shadow Plate	armor	elite	tors		29	83	54	76	64	ful	xul	uul
+set	74	Immortal King's Soul Cage	Immortal King	1		uar	Sacred Armor	armor	elite	tors		37	85	48	76	66	aar	xar	uar
+set	116	Sazabi's Ghost Liberator	Sazabi's Grand Tribute	1		upl	Balrog Skin	armor	elite	tors		34	76	42	67	57	spl	xpl	upl
+set	124	Naj's Light Plate	Naj's Ancient Vestige	1		ult	Hellforge Plate	armor	elite	tors		43	78	35	71	59	plt	xlt	ult
+set	101	Dark Adherent	The Disciple	1		uui	Dusk Shroud	armor	elite	tors		39	65	26	43	49	qui	xui	uui
+set	405	Ebony Plate of Evil	Stormsigil Vestments	1		urs	Great Hauberk	armor	elite	tors		50	75	25	56	56	brs	xrs	urs
+set	245	Holy Aura	Brother Laz' Calling	1		uar	Sacred Plate	armor	elite	tors		60	85	25	83	66	aar	xar	uar
+set	316	Death and Decay	The Warlord of Blood	1		utp	Archon Plate	armor	elite	tors		60	84	24	77	63	ltp	xtp	utp
+set	309	Shadowed Plate	Zhoulomcrist's Dread	1		utp	Archon Plate	armor	elite	tors		60	84	24	65	63	ltp	xtp	utp
+set	430	Mephisto's Misty Aura	Lords of Hell	1		uul	Shadow Plate	armor	elite	tors		60	83	23	80	64	ful	xul	uul
+set	275	Myhrginoc's Black Rain	Myhrginoc's Warbreeder	1		uul	Shadow Plate	armor	elite	tors		60	83	23	77	64	ful	xul	uul
+set	424	Angels	Celestial Hierarchy	1		uth	Lacquered Plate	armor	elite	tors		60	82	22	81	62	gth	xth	uth
+set	286	Sundered Heart	The Darkest Weaves	1		uth	Lacquered Plate	armor	elite	tors		60	82	22	76	62	gth	xth	uth
+set	420	Great White Terror	Terror of the Deep	1		uld	Kraken Shell	armor	elite	tors		60	81	21	74	61	fld	xld	uld
+set	284	Silk Shroud	Kraj's Memorial	1		uld	Kraken Shell	armor	elite	tors		60	81	21	79	61	fld	xld	uld
+set	414	Imperial Plate	Path of Bravery	1		ult	Hellforge Plate	armor	elite	tors		60	78	18	73	59	plt	xlt	ult
+set	250	Spin's Paradox	The Mysterious Spin	1		ula	Scarab Husk	armor	elite	tors		50	68	18	51	51	hla	xla	ula
+set	279	wicked Impulse	Nefarious Ways	1		ult	Hellforged Plate	armor	elite	tors		60	78	18	75	59	plt	xlt	ult
+set	409	Helshazag	Kai Lord's Valiance	1		upl	Balrog Skin	armor	elite	tors		60	76	16	74	57	spl	xpl	upl
+set	242	Onyx's Meteor Shower	Onyx's Primal Rage	1		upl	Balrog Skin	armor	elite	tors		60	76	16	80	57	spl	xpl	upl
+set	268	Band of Mysticism	Chaos Energy	1		urs	Great Hauberk	armor	elite	tors		60	75	15	77	56	brs	xrs	urs
+set	439	Maadi's Spirit	Maadi's Paradox	1		uhn	Boneweave	armor	elite	tors		47	62	15	47	47	chn	xhn	uhn
+set	271	Chiad's Heartbane	Aiel Shieldmaiden	1		ucl	Loricated Mail	armor	elite	tors		60	73	13	75	55	scl	xcl	ucl
+set	67	Natalya's Shadow	Natalya's Odium	1		ucl	Loricated Mail	armor	elite	tors		60	73	13	73	55	scl	xcl	ucl
+set	395	Sir Tylan's Sylvan Mail	Corthala Family Heirlooms	1		ung	Diamond Mail	armor	elite	tors		60	72	12	73	54	rng	xng	ung
+set	260	Way of the Shadow	Phrozen Heart's Mysticism	1		ung	Diamond Mail	armor	elite	tors		60	72	12	71	54	rng	xng	ung
+set	290	Blood Raven's Curse	Blood Raven's Despair	1		utu	Wire Fleece	armor	elite	tors		60	70	10	77	53	stu	xtu	utu
+set	302	Char's Carapace	Narrow Path Between Light and Darkness	1		utu	Wire Fleece	armor	elite	tors		60	70	10	65	53	stu	xtu	utu
+set	325	Andariel's Breastbone	Marhawkman's Disguise	1		ula	Scarab Husk	armor	elite	tors		60	68	8	60	51	hla	xla	ula
+set	390	Frostwyrm Hide	Tika's Request	1		uea	Wyrmhide	armor	elite	tors		60	67	7	60	50	lea	xea	uea
+set	446	The Raven's Feathers	The Raven's Nest	1		uea	Wyrmhide	armor	elite	tors		60	67	7	60	50	lea	xea	uea
+set	384	Holy Shroud of Amaunator	Amaunator's Peace	1		uui	Dusk Shroud	armor	elite	tors		60	65	5	70	49	qui	xui	uui
+set	254	Darkmage's Falling Star	Darkmage's Astral Projection	1		uhn	Boneweave	armor	elite	tors		60	62	2	73	47	chn	xhn	uhn
+set	400	Mail of Courageousness	Knight's Gallantry	1		uhn	Boneweave	armor	elite	tors		60	62	2	77	47	chn	xhn	uhn
+set	452	Panda's Coat	Panda's Polar Adventure	1		uui	Dusk Shroud	armor	elite	tors		70	65	-5	80	49	qui	xui	uui
+set	191	Prayer of Brother Laz	Insight of Brother Laz	1		pa8	Protector Shield	armor	exceptional	ashd		30	46	16	38	34	pa3	pa8	pad
+set	448	Bulwark of the Vindicator	Tools of Vindication	1		pa9	Gilded Shield	armor	exceptional	ashd		59	51	-8	60	38	pa4	pa9	pae
+set	378	Daystar Wrap	Kaldorn's Majesty	1		zhb	war Belt	armor	exceptional	belt		30	54	24	58	25	hbl	zhb	uhc
+set	370	Embracing Hatred	Wrath of Vengeance	1		ztb	Battle Belt	armor	exceptional	belt		30	49	19	39	25	tbl	ztb	utc
+set	96	M'avina's Tenet	M'avina's Battle Hymn	1		zvb	Sharkskin Belt	armor	exceptional	belt		21	39	18	45	25	vbl	zvb	uvc
+set	75	Immortal King's Detail	Immortal King	1		zhb	War Belt	armor	exceptional	belt		37	54	17	29	25	hbl	zhb	uhc
+set	79	Tal Rasha's Fine-Spun Cloth	Tal Rasha's Wrappings	1		zmb	Mesh Belt	armor	exceptional	belt		26	43	17	53	25	mbl	zmb	umc
+set	296	Kingpin's Wrap	Treasure Hunter	1		ztb	Battle Belt	armor	exceptional	belt		35	49	14	25	25	tbl	ztb	utc
+set	373	Equilibrium	Servitude or Rebellion	1		zmb	Mesh Belt	armor	exceptional	belt		30	43	13	43	25	mbl	zmb	umc
+set	361	Death's Door	Forbidden Lore	1		zvb	Sharkskin Belt	armor	exceptional	belt		30	39	9	32	25	vbl	zvb	uvc
+set	422	Mako's Quickness	Terror of the Deep	1		zvb	Sharkskin Belt	armor	exceptional	belt		30	39	9	39	25	vbl	zvb	uvc
+set	313	Vengeance Unleashed	The Warlord of Blood	1		zhb	War Belt	armor	exceptional	belt		45	54	9	45	25	hbl	zhb	uhc
+set	108	Wilhelm's Pride	Orphan's Call	1		ztb	Battle Belt	armor	exceptional	belt		41	49	8	42	25	tbl	ztb	utc
+set	207	Drawing Out the Beast	Red Havoc's Challenge	1		zlb	Demonhide Sash	armor	exceptional	belt		30	36	6	32	24	lbl	zlb	ulc
+set	317	Dying Curses	Darque Necromancy	1		zlb	Demonhide Sash	armor	exceptional	belt		30	36	6	30	24	lbl	zlb	ulc
+set	389	Holy Sash of Amaunator	Amaunator's Peace	1		zlb	Demonhide Sash	armor	exceptional	belt		30	36	6	30	24	lbl	zlb	ulc
+set	426	Virtue	Celestial Hierarchy	1		zlb	Demonhide Sash	armor	exceptional	belt		30	36	6	36	24	lbl	zlb	ulc
+set	449	Belt of the Vindicator	Tools of Vindication	1		zmb	Mesh Belt	armor	exceptional	belt		40	43	3	40	25	mbl	zmb	umc
+set	68	Natalya's Soul	Natalya's Odium	1		xmb	Mesh Boots	armor	exceptional	boot		17	43	26	25	25	mbt	xmb	umb
+set	72	Aldur's Advance	Aldur's Watchtower	1		xtb	Battle Boots	armor	exceptional	boot		29	49	20	45	25	tbt	xtb	utb
+set	412	Hallowed Greaves	Kai Lord's Valiance	1		xtb	Battle Boots	armor	exceptional	boot		30	49	19	58	25	tbt	xtb	utb
+set	365	Hannibal's Bending Knee	Hannibal's Demise	1		xtb	Battle Boots	armor	exceptional	boot		30	49	19	45	25	tbt	xtb	utb
+set	77	Immortal King's Pillar	Immortal King	1		xhb	War Boots	armor	exceptional	boot		37	54	17	31	25	hbt	xhb	uhb
+set	297	Kingpin's Greaves	Treasure Hunter	1		xtb	Battle Boots	armor	exceptional	boot		35	49	14	42	25	tbt	xtb	utb
+set	329	Phasewalker Boots	Sines Psionics	1		xhb	War Boots	armor	exceptional	boot		40	54	14	40	25	hbt	xhb	uhb
+set	399	Lady Daan's Celeritous Jambeau	Corthala Family Heirlooms	1		xmb	Mesh Boots	armor	exceptional	boot		30	43	13	56	25	mbt	xmb	umb
+set	423	Hammerhead's Persistence	Terror of the Deep	1		xvb	Sharkskin Boots	armor	exceptional	boot		30	39	9	44	25	vbt	xvb	uvb
+set	198	The River Stix	Hades' Underworld	1		xlb	Demonhide Boots	armor	exceptional	boot		30	36	6	32	24	lbt	xlb	ulb
+set	208	Elven Grace	Mishy's Avatar	1		xvb	Sharkskin Boots	armor	exceptional	boot		35	39	4	32	25	vbt	xvb	uvb
+set	100	Rite of Passage	The Disciple	1		xlb	Demonhide Boots	armor	exceptional	boot		39	36	-3	29	24	lbt	xlb	ulb
+set	407	Dark Cataclysm	Stormsigil Vestments	1		ci2	Tiara	armor	exceptional	circ		40	70	30	52	52	ci1	ci2	ci3
+set	249	Spin's Enigma	The Mysterious Spin	1		ci2	Tiara	armor	exceptional	circ		50	70	20	52	52	ci1	ci2	ci3
+set	95	M'avina's Icy Clutch	M'avina's Battle Hymn	1		xtg	Battle Gauntlets	armor	exceptional	glov		21	49	28	32	25	tgl	xtg	utg
+set	377	Waterwyrd's Talon	Kaldorn's Majesty	1		xhg	War Gauntlets	armor	exceptional	glov		30	54	24	55	25	hgl	xhg	uhg
+set	394	Gauntlets of Quietus	Tika's Request	1		xtg	Battle Gauntlets	armor	exceptional	glov		30	49	19	48	25	tgl	xtg	utg
+set	190	Power of Brother Laz	Insight of Brother Laz	1		xtg	Battle Gauntlets	armor	exceptional	glov		30	49	19	33	25	tgl	xtg	utg
+set	76	Immortal King's Forge	Immortal King	1		xhg	War Gauntlets	armor	exceptional	glov		37	54	17	30	25	hgl	xhg	uhg
+set	408	Stormtwist Grasp	Stormsigil Vestments	1		xvg	Sharkskin Gloves	armor	exceptional	glov		25	39	14	30	25	vgl	xvg	uvg
+set	398	Prince Gwar's Bracers	Corthala Family Heirlooms	1		xmg	Heavy Bracers	armor	exceptional	glov		30	43	13	44	25	mgl	xmg	umg
+set	91	Trang-Oul's Claws	Trang-Oul's Avatar	1		xmg	Heavy Bracers	armor	exceptional	glov		32	43	11	45	25	mgl	xmg	umg
+set	305	Gloves of Knowledge	Yohann's Savant	1		xmg	Heavy Bracers	armor	exceptional	glov		35	43	8	38	25	mgl	xmg	umg
+set	212	Maiden's Kiss	Mishy's Avatar	1		xmg	Heavy Bracers	armor	exceptional	glov		35	43	8	33	25	mgl	xmg	umg
+set	109	Magnus' Skin	Orphan's Call	1		xvg	Sharkskin Gloves	armor	exceptional	glov		41	39	-2	37	25	vgl	xvg	uvg
+set	219	Night's Caress	JBouley's Scion	1		xlg	Demonhide Gloves	armor	exceptional	glov		35	33	-2	32	21	lgl	xlg	ulg
+set	140	Horazon's Hold	Horazon's Splendor	1		xlg	Demonhide Gloves	armor	exceptional	glov		40	33	-7	48	21	lgl	xlg	ulg
+set	456	Grasp of Lament	Deus et Diabolus	1		xlg	Demonhide Gloves	armor	exceptional	glov		70	33	-37	76	21	lgl	xlg	ulg
+set	90	Trang-Oul's Wing	Trang-Oul's Avatar	1		ne9	Cantor Trophy	armor	exceptional	head		32	49	17	54	36	ne4	ne9	nee
+set	196	Dracolich	Hades' Underworld	1		ne8	Sexton Trophy	armor	exceptional	head		30	45	15	36	33	ne3	ne8	ned
+set	111	Hwanin's Splendor	Hwanin's Majesty	1		xrn	Grand Crown	armor	exceptional	helm		28	55	27	45	25	crn	xrn	urn
+set	199	Lord Hades' Throne	Hades' Underworld	1		xrn	Grand Crown	armor	exceptional	helm		30	55	25	41	25	crn	xrn	urn
+set	83	Tal Rasha's Horadric Crest	Tal Rasha's Wrappings	1		xsk	Death Mask	armor	exceptional	helm		26	48	22	66	25	msk	xsk	usk
+set	238	Green Dragon Mask	Jerik's Dragon Armor	1		xhm	Winged Helm	armor	exceptional	helm		30	51	21	40	25	ghm	xhm	uhm
+set	221	Fade to Black	JBouley's Scion	1		xkp	Sallet	armor	exceptional	helm		17	37	20	25	25	skp	xkp	ukp
+set	228	Lich's Cranium	Volf's Undead Legion	1		xh9	Grim Helm	armor	exceptional	helm		30	50	20	39	25	bhm	xh9	uh9
+set	324	Andariel's Mask	Marhawkman's Disguise	1		xsk	Death Mask	armor	exceptional	helm		30	48	18	36	25	msk	xsk	usk
+set	231	Mask of Vashna	Legacy of Vashna	1		xsk	Death Mask	armor	exceptional	helm		30	48	18	37	25	msk	xsk	usk
+set	364	Hannibal's Blurred Vision	Hannibal's Demise	1		xhl	Basinet	armor	exceptional	helm		30	45	15	38	25	fhl	xhl	uhl
+set	120	Cow King's Horns	Cow King's Leathers	1		xap	War Hat	armor	exceptional	helm		20	34	14	25	22	cap	xap	uap
+set	392	Draconian Mask	Tika's Request	1		xlm	Casque	armor	exceptional	helm		30	42	12	40	25	hlm	xlm	ulm
+set	235	Salander's Visor	Salander's Tirade	1		xlm	Casque	armor	exceptional	helm		30	42	12	34	25	hlm	xlm	ulm
+set	117	Sazabi's Mental Sheath	Sazabi's Grand Tribute	1		xhl	Basinet	armor	exceptional	helm		34	45	11	43	25	fhl	xhl	uhl
+set	107	Guillaume's Face	Orphan's Call	1		xhm	Winged Helm	armor	exceptional	helm		41	51	10	34	25	ghm	xhm	uhm
+set	65	Natalya's Totem	Natalya's Odium	1		xh9	Grim Helm	armor	exceptional	helm		40	50	10	59	25	bhm	xh9	uh9
+set	307	Unholy Desires	Zhoulomcrist's Dread	1		xap	War Hat	armor	exceptional	helm		25	34	9	31	22	cap	xap	uap
+set	415	Imperial Helm	Path of Bravery	1		xkp	Sallet	armor	exceptional	helm		30	37	7	40	25	skp	xkp	ukp
+set	314	Bloody Visage Helm	The Warlord of Blood	1		xhm	Winged Helm	armor	exceptional	helm		45	51	6	47	25	ghm	xhm	uhm
+set	216	Power of Ice	Joel's Sanctuary	1		xap	War Hat	armor	exceptional	helm		32	34	2	33	22	cap	xap	uap
+set	69	Aldur's Stony Gaze	Aldur's Watchtower	1		dr8	Hunter's Guise	armor	exceptional	pelt		29	46	17	36	29	dr3	dr8	drd
+set	205	Full Moon Frenzy	Red Havoc's Challenge	1		dr6	Alpha Helm	armor	exceptional	pelt		30	26	-4	33	26	dr1	dr6	drb
+set	450	Panda's Pelt	Panda's Polar Adventure	1		dr6	Alpha Helm	armor	exceptional	pelt		30	26	-4	50	26	dr1	dr6	drb
+set	200	Secret Society	Darque's Cabal	1		ba9	Savage Helmet	armor	exceptional	phlm		35	49	14	40	32	ba4	ba9	bae
+set	406	Deflector of Light	Stormsigil Vestments	1		xts	Ancient Shield	armor	exceptional	shie		25	56	31	30	25	gts	xts	uts
+set	203	Dawn's Blessing	Darque's Cabal	1		xts	Ancient Shield	armor	exceptional	shie		35	56	21	41	25	gts	xts	uts
+set	413	Sunspear Deflector	Kai Lord's Valiance	1		xow	Pavice	armor	exceptional	shie		30	50	20	63	25	tow	xow	uow
+set	402	Wall of Bravery	Knight's Gallantry	1		xow	Pavice	armor	exceptional	shie		30	50	20	51	25	tow	xow	uow
+set	352	Phantasm of Horror	Haunted Asylum	1		xsh	Grim Shield	armor	exceptional	shie		30	48	18	47	25	bsh	xsh	ush
+set	226	Spectral Knight's Unholy Shield	Volf's Undead Legion	1		xsh	Grim Shield	armor	exceptional	shie		30	48	18	38	25	bsh	xsh	ush
+set	220	Mystic Blades	JBouley's Scion	1		xpk	Barbed Shield	armor	exceptional	shie		25	42	17	35	25	spk	xpk	upk
+set	237	Black Dragon Hide Shield	Jerik's Dragon Armor	1		xit	Dragon Shield	armor	exceptional	shie		30	45	15	37	25	kit	xit	uit
+set	347	King's Prescript	Gweibret's Rule	1		xit	Dragon Shield	armor	exceptional	shie		30	45	15	46	25	kit	xit	uit
+set	335	Neprida's Kiss	Cedric's Jinx	1		xrg	Scutum	armor	exceptional	shie		30	42	12	43	25	lrg	xrg	urg
+set	444	The Raven's Wing	The Raven's Nest	1		xpk	Barbed Shield	armor	exceptional	shie		35	42	7	45	25	spk	xpk	upk
+set	217	Power of Lightning	Joel's Sanctuary	1		xuc	Defender	armor	exceptional	shie		32	34	2	33	22	buc	xuc	uuc
+set	110	Whitstan's Guard	Orphan's Call	1		xml	Round Shield	armor	exceptional	shie		41	37	-4	29	25	sml	xml	uml
+set	374	Firecam Gilded Plate	Kaldorn's Majesty	1		xar	Ornate Plate	armor	exceptional	tors		30	64	34	63	25	aar	xar	uar
+set	371	Slave to Anarchy	Servitude or Rebellion	1		xul	Chaos Armor	armor	exceptional	tors		30	61	31	51	25	ful	xul	uul
+set	89	Trang-Oul's Scales	Trang-Oul's Avatar	1		xul	Chaos Armor	armor	exceptional	tors		32	61	29	49	25	ful	xul	uul
+set	366	Shroud of Anger	Wrath of Vengeance	1		xth	Embossed Armor	armor	exceptional	tors		30	58	28	50	25	gth	xth	uth
+set	194	Brother Laz' Faith	Insight of Brother Laz	1		xld	Sharktooth Armor	armor	exceptional	tors		30	55	25	36	25	fld	xld	uld
+set	362	Hannibal's Shattered Plate	Hannibal's Demise	1		xld	Sharktooth Armor	armor	exceptional	tors		30	55	25	48	25	fld	xld	uld
+set	201	Fallen Angels	Darque's Cabal	1		xth	Embossed Armor	armor	exceptional	tors		35	58	23	43	25	gth	xth	uth
+set	229	Skeleton Warrior's Corpse Plate	Volf's Undead Legion	1		xlt	Templar Plate	armor	exceptional	tors		30	52	22	42	25	plt	xlt	ult
+set	358	Unholy Vows	Forbidden Lore	1		xlt	Templar Coat	armor	exceptional	tors		30	52	22	46	25	plt	xlt	ult
+set	320	Dark Rituals	Darque Necromancy	1		xtp	Mage Plate	armor	exceptional	tors		40	60	20	50	25	ltp	xtp	utp
+set	85	Griswold's Heart	Griswold's Legacy	1		xar	Ornate Plate	armor	exceptional	tors		44	64	20	45	25	aar	xar	uar
+set	379	Incarnadine Elven Plate	Warlock's Exploration	1		xtp	Mage Plate	armor	exceptional	tors		40	60	20	55	25	ltp	xtp	utp
+set	355	Alyssa's Essence	Alyssa's Archery	1		xpl	Russet Armor	armor	exceptional	tors		30	49	19	47	25	spl	xpl	upl
+set	350	Astral Body	Haunted Asylum	1		xhn	Mesh Armor	armor	exceptional	tors		30	45	15	44	25	chn	xhn	uhn
+set	225	Hell's Embrace	Forsaken Divinity	1		xtp	Mage Plate	armor	exceptional	tors		45	60	15	45	25	ltp	xtp	utp
+set	112	Hwanin's Refuge	Hwanin's Majesty	1		xcl	Tigulated Mail	armor	exceptional	tors		28	43	15	30	25	scl	xcl	ucl
+set	218	Shadow Ninja	JBouley's Scion	1		xtu	Trellised Armor	armor	exceptional	tors		25	40	15	35	25	stu	xtu	utu
+set	298	Kingpin's Ire	Treasure Hunter	1		xpl	Russet Armor	armor	exceptional	tors		35	49	14	42	25	spl	xpl	upl
+set	204	Cry of the Wolf	Red Havoc's Challenge	1		xcl	Tigulated Mail	armor	exceptional	tors		30	43	13	35	25	scl	xcl	ucl
+set	345	Judicial Decree	Gweibret's Rule	1		xcl	Tigulated Mail	armor	exceptional	tors		30	43	13	40	25	scl	xcl	ucl
+set	236	Red Dragon Scale Mail	Jerik's Dragon Armor	1		xcl	Tigulated Mail	armor	exceptional	tors		30	43	13	37	25	scl	xcl	ucl
+set	342	Heroes Stand	Soldier's Cairn	1		xng	Linked Mail	armor	exceptional	tors		30	42	12	35	25	rng	xng	ung
+set	234	Salander's Mail	Salander's Tirade	1		xng	Linked Mail	armor	exceptional	tors		30	42	12	35	25	rng	xng	ung
+set	336	Warder's Vest	Dragon Reborn	1		xtu	Trellised Armor	armor	exceptional	tors		30	40	10	41	25	stu	xtu	utu
+set	209	Woodland Protector	Mishy's Avatar	1		xhn	Mesh Armor	armor	exceptional	tors		35	45	10	35	25	chn	xhn	uhn
+set	139	Horazon's Dominion	Horazon's Splendor	1		xpl	Russet Armor	armor	exceptional	tors		40	49	9	55	25	spl	xpl	upl
+set	195	Afterlife	Hades' Underworld	1		xla	Demonhide Armor	armor	exceptional	tors		30	37	7	34	25	hla	xla	ula
+set	333	Call of Gylandra	Cedric's Jinx	1		xla	Demonhide Armor	armor	exceptional	tors		30	37	7	36	25	hla	xla	ula
+set	232	Robes of Vashna	Legacy of Vashna	1		xea	Serpent Skin	armor	exceptional	tors		30	36	6	33	24	lea	xea	uea
+set	330	Winter's Embrace	Bogrot's Magic	1		xea	Serpentskin	armor	exceptional	tors		30	36	6	34	24	lea	xea	uea
+set	304	Sage's Leather	Yohann's Savant	1		xla	Demonhide Armor	armor	exceptional	tors		32	37	5	33	25	hla	xla	ula
+set	215	Power of Fire	Joel's Sanctuary	1		xui	Ghost Armor	armor	exceptional	tors		32	34	2	33	22	qui	xui	uui
+set	105	Haemosu's Adamant	Heaven's Brethren	1		xrs	Cuirass	armor	exceptional	tors		55	47	-8	44	25	brs	xrs	urs
+set	326	Momentum Theft	Sines Psionics	1		xui	Ghost Armor	armor	exceptional	tors		50	34	-16	50	22	qui	xui	uui
+set	169	Greyhawk's Deflector	Greyhawk's Mantle	1		pa3	Heraldic Shield	armor	normal	ashd		17	16	-1	15	12	pa3	pa8	pad
+set	41	Sigon's Wrap	Sigon's Complete Steel	1		hbl	Plated Belt	armor	normal	belt		1	27	26	6	0	hbl	zhb	uhc
+set	45	Infernal Sign	Infernal Tools	1		tbl	Heavy Belt	armor	normal	belt		1	20	19	5	0	tbl	ztb	utc
+set	7	Hsarus' Iron Stay	Hsarus' Defense	1		mbl	Belt	armor	normal	belt		1	12	11	3	0	mbl	zmb	umc
+set	14	Iratha's Cord	Iratha's Finery	1		tbl	Heavy Belt	armor	normal	belt		10	20	10	15	0	tbl	ztb	utc
+set	186	Luther's Cord	Forgotten Treasures	1		tbl	Heavy Belt	armor	normal	belt		10	20	10	10	0	tbl	ztb	utc
+set	404	Belt of Temerity	Knight's Gallantry	1		hbl	Plated Belt	armor	normal	belt		20	27	7	30	0	hbl	zhb	uhc
+set	58	Arctic Binding	Arctic Gear	1		vbl	Light Belt	armor	normal	belt		1	7	6	2	0	vbl	zvb	uvc
+set	174	Wolf Pelt	Silent Runnings	1		tbl	Heavy Belt	armor	normal	belt		14	20	6	14	0	tbl	ztb	utc
+set	177	Jeweled Belt	Snowmane's Jewelry	1		hbl	Plated Belt	armor	normal	belt		22	27	5	22	0	hbl	zhb	uhc
+set	50	Death's Guard	Death's Disguise	1		lbl	Sash	armor	normal	belt		1	3	2	6	0	lbl	zlb	ulc
+set	154	Grimlock's Belt	Grimlock's Grave	1		mbl	Belt	armor	normal	belt		11	12	1	9	0	mbl	zmb	umc
+set	162	Sheena's Band	Sheena's Grace	1		vbl	Light Belt	armor	normal	belt		8	7	-1	10	0	vbl	zvb	uvc
+set	113	Hwanin's Blessing	Hwanin's Majesty	1		mbl	Belt	armor	normal	belt		28	12	-16	35	0	mbl	zmb	umc
+set	453	Panda's Sash	Panda's Polar Adventure	1		lbl	Sash	armor	normal	belt		25	3	-22	35	0	lbl	zlb	ulc
+set	134	Warlord's Authority	Warlord's Glory			hbl	Plated Belt	armor	normal	belt		100	27	-73	1	0	hbl	zhb	uhc
+set	40	Sigon's Sabot	Sigon's Complete Steel	1		hbt	Greaves	armor	normal	boot		1	27	26	6	0	hbt	xhb	uhb
+set	388	Holy Boots of Amaunator	Amaunator's Peace	1		hbt	Greaves	armor	normal	boot		15	27	12	22	0	hbt	xhb	uhb
+set	5	Hsarus' Iron Heel	Hsarus' Defense	1		mbt	Chain Boots	armor	normal	boot		1	12	11	3	0	mbt	xmb	umb
+set	20	Vidala's Fetlock	Vidala's Rig	1		tbt	Light Plated Boots	armor	normal	boot		10	20	10	14	0	tbt	xtb	utb
+set	182	Summer Flame	Four Seasons	1		hbt	Greaves	armor	normal	boot		20	27	7	21	0	hbt	xhb	uhb
+set	443	The Raven's Feet	The Raven's Nest	1		mbt	Chain Boots	armor	normal	boot		5	12	7	10	0	mbt	xmb	umb
+set	188	Xavier's Greaves	Forgotten Treasures	1		tbt	Light Plate Greaves	armor	normal	boot		15	20	5	15	0	tbt	xtb	utb
+set	312	Hell's Torment Greaves	The Warlord of Blood	1		hbt	Greaves	armor	normal	boot		28	27	-1	31	0	hbt	xhb	uhb
+set	341	Aviendha's Gift	Dragon Reborn	1		vbt	Heavy Boots	armor	normal	boot		10	7	-3	21	0	vbt	xvb	uvb
+set	158	Corgina's Slippers	Corgina's Element	1		lbt	Boots	armor	normal	boot		9	3	-6	9	0	lbt	xlb	ulb
+set	34	Tancred's Hobnails	Tancred's Battlegear	1		lbt	Boots	armor	normal	boot		12	3	-9	20	0	lbt	xlb	ulb
+set	122	Cow King's Hooves	Cow King's Leathers	1		vbt	Heavy Boots	armor	normal	boot		20	7	-13	13	0	vbt	xvb	uvb
+set	127	Sander's Riprap	Sander's Folly	1		vbt	Heavy Boots	armor	normal	boot		20	7	-13	20	0	vbt	xvb	uvb
+set	133	Warlord's Crushers	Warlord's Glory			hbt	Greaves	armor	normal	boot		100	27	-73	1	0	hbt	xhb	uhb
+set	303	Wiseman's Cap	Yohann's Savant	1		ci1	Coronet	armor	normal	circ		25	52	27	39	39	ci1	ci2	ci3
+set	210	Silent Whisper	Mishy's Avatar	1		ci1	Coronet	armor	normal	circ		35	52	17	40	39	ci1	ci2	ci3
+set	176	Jeweled Circlet	Snowmane's Jewelry	1		ci0	Circlet	armor	normal	circ		22	24	2	22	16	ci0	ci2	ci3
+set	125	Naj's Circlet	Naj's Ancient Vestige	1		ci0	Circlet	armor	normal	circ		43	24	-19	28	16	ci0	ci2	ci3
+set	37	Sigon's Gage	Sigon's Complete Steel	1		hgl	Gauntlets	armor	normal	glov		1	27	26	6	0	hgl	xhg	uhg
+set	59	Arctic Mitts	Arctic Gear	1		tgl	Light Gauntlets	armor	normal	glov		1	20	19	2	0	tgl	xtg	utg
+set	10	Cleglaw's Pincers	Cleglaw's Brace	1		mgl	Chain Gloves	armor	normal	glov		1	12	11	4	0	mgl	xmg	umg
+set	12	Iratha's Cuff	Iratha's Finery	1		tgl	Light Gauntlets	armor	normal	glov		10	20	10	15	0	tgl	xtg	utg
+set	166	Shattering Fist	Talonrage's Fury	1		hgl	Gauntlets	armor	normal	glov		20	27	7	21	0	hgl	xhg	uhg
+set	49	Death's Hand	Death's Disguise	1		lgl	Leather Gloves	armor	normal	glov		1	3	2	6	0	lgl	xlg	ulg
+set	144	Jakira's Braces	Midnight Calling	1		mgl	Chain Gloves	armor	normal	glov		10	12	2	10	0	mgl	xmg	umg
+set	311	Tortured Soul Gauntlets	The Warlord of Blood	1		hgl	Gauntlets	armor	normal	glov		28	27	-1	29	0	hgl	xhg	uhg
+set	442	The Raven's Talons	The Raven's Nest	1		lgl	Leather Gloves	armor	normal	glov		5	3	-2	10	0	lgl	xlg	ulg
+set	187	Janis' Gloves	Forgotten Treasures	1		vgl	Heavy Gloves	armor	normal	glov		10	7	-3	10	0	vgl	xvg	uvg
+set	172	Ferrit's Paw	Silent Runnings	1		vgl	Heavy Gloves	armor	normal	glov		12	7	-5	14	0	vgl	xvg	uvg
+set	451	Panda's Mitts	Panda's Polar Adventure	1		lgl	Leather Gloves	armor	normal	glov		12	3	-9	12	0	lgl	xlg	ulg
+set	128	Sander's Taboo	Sander's Folly	1		vgl	Heavy Gloves	armor	normal	glov		20	7	-13	28	0	vgl	xvg	uvg
+set	130	Warlord's Conquest	Warlord's Glory			hgl	Gauntlets	armor	normal	glov		100	27	-73	1	0	hgl	xhg	uhg
+set	151	Grimlock's Skull	Grimlock's Grave	1		ne2	Zombie Head	armor	normal	head		11	8	-3	16	6	ne2	ne7	neg
+set	38	Sigon's Visor	Sigon's Complete Steel	1		ghm	Great Helm	armor	normal	helm		1	23	22	6	0	ghm	xhm	uhm
+set	13	Iratha's Coil	Iratha's Finery	1		crn	Crown	armor	normal	helm		10	29	19	15	0	crn	xrn	urn
+set	29	Cathan's Visage	Cathan's Traps	1		msk	Mask	armor	normal	helm		1	19	18	11	0	msk	xsk	usk
+set	25	Milabrega's Diadem	Milabrega's Regalia	1		crn	Crown	armor	normal	helm		12	29	17	17	0	crn	xrn	urn
+set	18	Isenhart's Horns	Isenhart's Armory	1		fhl	Full Helm	armor	normal	helm		1	15	14	8	0	fhl	xhl	uhl
+set	46	Berserker's Headgear	Berserker's Arsenal	1		hlm	Helm	armor	normal	helm		1	11	10	3	0	hlm	xlm	ulm
+set	36	Tancred's Skull	Tancred's Battlegear	1		bhm	Bone Helm	armor	normal	helm		12	22	10	20	0	bhm	xh9	uh9
+set	175	Beast Collar	Silent Runnings	1		bhm	Bone Helm	armor	normal	helm		15	22	7	15	0	bhm	xh9	uh9
+set	185	Katriana's Mask	Forgotten Treasures	1		msk	Mask	armor	normal	helm		15	19	4	15	0	msk	xsk	usk
+set	181	Spring Dawning	Four Seasons	1		ghm	Great Helm	armor	normal	helm		20	23	3	22	0	ghm	xhm	uhm
+set	170	Greyhawk's Viser	Greyhawk's Mantle	1		fhl	Full Helm	armor	normal	helm		17	15	-2	13	0	fhl	xhl	uhl
+set	145	Jakira's Hood	Midnight Calling	1		skp	Skull Cap	armor	normal	helm		10	5	-5	5	0	skp	xkp	ukp
+set	62	Arcanna's Head	Arcanna's Tricks	1		skp	Skull Cap	armor	normal	helm		12	5	-7	15	0	skp	xkp	ukp
+set	126	Sander's Paragon	Sander's Folly	1		cap	Cap	armor	normal	helm		20	1	-19	25	0	cap	xap	uap
+set	131	Warlord's Lust	Warlord's Glory			ghm	Great Helm	armor	normal	helm		100	23	-77	1	0	ghm	xhm	uhm
+set	150	Animal Kinship	Nature's Grove	1		dr3	Antlers	armor	normal	pelt		12	16	4	15	12	dr3	dr8	drd
+set	163	Berserker's Howl	Talonrage's Fury	1		ba4	Assault Helmet	armor	normal	phlm		18	20	2	18	15	ba4	ba9	bae
+set	73	Immortal King's Will	Immortal King	1		ba5	Avenger Guard	armor	normal	phlm		37	24	-13	47	18	ba5	baa	baf
+set	16	Isenhart's Parry	Isenhart's Armory	1		gts	Gothic Shield	armor	normal	shie		1	30	29	8	0	gts	xts	uts
+set	42	Sigon's Guard	Sigon's Complete Steel	1		tow	Tower Shield	armor	normal	shie		1	22	21	6	0	tow	xow	uow
+set	2	Civerb's Ward	Civerb's Vestments	1		lrg	Large Shield	armor	normal	shie		1	11	10	9	0	lrg	xrg	urg
+set	360	Wall of Modius	Forbidden Lore	1		bsh	Bone Shield	armor	normal	shie		12	19	7	16	0	bsh	xsh	ush
+set	171	Dragon's Flank	Silent Runnings	1		bsh	Bone Shield	armor	normal	shie		14	19	5	18	0	bsh	xsh	ush
+set	9	Cleglaw's Claw	Cleglaw's Brace	1		sml	Small Shield	armor	normal	shie		1	5	4	4	0	sml	xml	uml
+set	23	Milabrega's Orb	Milabrega's Regalia	1		kit	Kite Shield	armor	normal	shie		12	15	3	17	0	kit	xit	uit
+set	189	Quincy's Shield	Forgotten Treasures	1		spk	Spike Shield	armor	normal	shie		10	11	1	10	0	spk	xpk	upk
+set	157	Corgina's Ward	Corgina's Element	1		lrg	Large Shield	armor	normal	shie		12	11	-1	14	0	lrg	xrg	urg
+set	39	Sigon's Shelter	Sigon's Complete Steel	1		gth	Gothic Plate	armor	normal	tors		1	32	31	6	0	gth	xth	uth
+set	26	Milabrega's Robe	Milabrega's Regalia	1		aar	Ancient Armor	armor	normal	tors		12	40	28	17	0	aar	xar	uar
+set	33	Tancred's Spine	Tancred's Battlegear	1		ful	Full Plate Mail	armor	normal	tors		12	37	25	20	0	ful	xul	uul
+set	63	Arcanna's Flesh	Arcanna's Tricks	1		ltp	Light Plate	armor	normal	tors		12	35	23	15	0	ltp	xtp	utp
+set	180	Winter's Heart	Four Seasons	1		aar	Ancient Armor	armor	normal	tors		20	40	20	25	0	aar	xar	uar
+set	47	Berserker's Hauberk	Berserker's Arsenal	1		spl	Splint Mail	armor	normal	tors		1	20	19	3	0	spl	xpl	upl
+set	17	Isenhart's Case	Isenhart's Armory	1		brs	Breast Plate	armor	normal	tors		1	18	17	8	0	brs	xrs	urs
+set	156	Corgina's Plate	Corgina's Element	1		ltp	Light Plate	armor	normal	tors		20	35	15	21	0	ltp	xtp	utp
+set	173	Turtle's Shell	Silent Runnings	1		ful	Full Plate Mail	armor	normal	tors		22	37	15	23	0	ful	xul	uul
+set	28	Cathan's Mesh	Cathan's Traps	1		chn	Chain Mail	armor	normal	tors		1	15	14	11	0	chn	xhn	uhn
+set	53	Angelic Mantle	Angelic Raiment	1		rng	Ring Mail	armor	normal	tors		1	11	10	12	0	rng	xng	ung
+set	164	Chaos Heart	Talonrage's Fury	1		fld	Field Plate	armor	normal	tors		20	28	8	22	0	fld	xld	uld
+set	167	Greyhawk's Wing	Greyhawk's Mantle	1		plt	Plate Mail	armor	normal	tors		17	24	7	19	0	plt	xlt	ult
+set	184	Fernandez' Plate	Forgotten Treasures	1		brs	Breast Plate	armor	normal	tors		15	18	3	15	0	brs	xrs	urs
+set	136	Bane's Wraithskin	Bane's Garments	1		hla	Hard Leather Armor	armor	normal	tors		7	5	-2	8	0	hla	xla	ula
+set	146	Jakira's Leather Jerkin	Midnight Calling	1		stu	Studded Leather Armor	armor	normal	tors		10	8	-2	9	0	stu	xtu	utu
+set	161	Sheena's Elven Mail	Sheena's Grace	1		scl	Scale Mail	armor	normal	tors		16	13	-3	14	0	scl	xcl	ucl
+set	149	Calming Embrace	Nature's Grove	1		hla	Hard Leather Armor	armor	normal	tors		12	5	-7	7	0	hla	xla	ula
+set	21	Vidala's Ambush	Vidala's Rig	1		lea	Leather Armor	armor	normal	tors		10	3	-7	14	0	lea	xea	uea
+set	153	Grimlock's Shroud	Grimlock's Grave	1		qui	Quilted Armor	armor	normal	tors		11	1	-10	11	0	qui	xui	uui
+set	121	Cow King's Hide	Cow King's Leathers	1		stu	Studded Leather	armor	normal	tors		20	8	-12	18	0	stu	xtu	utu
+set	132	Warlord's Mantle	Warlord's Glory			ful	Full Plate Mail	armor	normal	tors		100	37	-63	1	0	ful	xul	uul
+set	97	M'avina's Caster	M'avina's Battle Hymn	1		amc	Grand Matron Bow	weapon	elite	abow		21	78	57	70	58	am2	am7	amc
+set	269	Chiad's Lances	Aiel Shieldmaiden	1		amf	Matriarchal Javelins	weapon	elite	ajav	1wep	60	65	5	80	48	am5	ama	amf
+set	274	Myhrginoc's Headhunter	Myhrginoc's Warbreeder	1		7ga	Champion Axe	weapon	elite	axe	slam	60	82	22	80	61	gax	9ga	7ga
+set	308	Darkest Wishes	Zhoulomcrist's Dread	1		72a	Ettin Axe	weapon	elite	axe	1wep	50	70	20	60	52	2ax	92a	72a
+set	391	Hallowed Redeemer	Tika's Request	1		7ba	Silver-Edged Axe	weapon	elite	axe	slam	60	65	5	72	48	bax	9ba	7ba
+set	291	Blood Raven's Redemption	Blood Raven's Despair	1		6lb	Shadow Bow	weapon	elite	bow		60	63	3	74	47	lbw	8lb	6lb
+set	401	Baton of Intrepidity	Knight's Gallantry	1		7cl	Truncheon	weapon	elite	club	1wep	60	52	-8	68	39	clb	9cl	7cl
+set	66	Natalya's Mark	Natalya's Odium	1		7qr	Scissors Suwayyah	weapon	elite	h2h2	1wep	60	85	25	79	64	skr	9qr	7qr
+set	259	Cryptic Claws	Phrozen Heart's Mysticism	1		7tw	Runic Talons	weapon	elite	h2h2	1wep	60	81	21	77	60	btl	9tw	7tw
+set	78	Immortal King's Stone Crusher	Immortal King	1		7m7	Ogre Maul	weapon	elite	hamm	slam	37	69	32	76	51	mau	9m9	7m7
+set	334	Return to Hydrakal	Cedric's Jinx	1		7wh	Legendary Mallet	weapon	elite	hamm	1wep	60	82	22	75	61	whm	9wh	7wh
+set	367	Holy Fury	Wrath of Vengeance	1		7s7	Balrog Spear	weapon	elite	jave	1wep	60	71	11	64	53	ssp	9s9	7s7
+set	359	Vampirebone Dagger	Forbidden Lore	1		7dg	Bone Knife	weapon	elite	knif	1wep	60	58	-2	63	43	dgr	9dg	7dg
+set	285	Temple Guardian	Kraj's Memorial	1		7fl	Scourge	weapon	elite	mace	1wep	60	76	16	77	57	fla	9fl	7fl
+set	257	Darkmage's Meteor Shower	Darkmage's Astral Projection	1		7mt	Devil Star	weapon	elite	mace	1wep	60	70	10	69	52	mst	9mt	7mt
+set	103	Dangoon's Teaching	Heaven's Brethren	1		7ma	Reinforced Mace	weapon	elite	mace	1wep	55	63	8	68	47	mac	9ma	7ma
+set	253	Spin's Perplexing Puzzle	The Mysterious Spin	1		obc	Eldritch Orb	weapon	elite	orb	1wep	40	67	27	50	50	ob2	ob7	obc
+set	421	Feeding Frenzy	Terror of the Deep	1		7wc	Great Thresher	weapon	elite	pole	slam	60	85	25	77	66	wsc	9wc	7wc
+set	278	Sin and Greed	Nefarious Ways	1		7s8	Thresher	weapon	elite	pole	slam	60	71	11	80	53	scy	9s8	7s8
+set	86	Griswold's Redemption	Griswold's Legacy	1		7ws	Caduceus	weapon	elite	scep	1wep	44	85	41	53	66	wsp	9ws	7ws
+set	248	Angel's Touch	Brother Laz' Calling	1		7qs	Seraph Rod	weapon	elite	scep	1wep	60	76	16	71	57	gsc	9qs	7qs
+set	295	Char's Hand of Blessed Light	Narrow Path Between Light and Darkness	1		7sc	Mighty Scepter	weapon	elite	scep	1wep	60	62	2	67	46	scp	9sc	7sc
+set	372	Bound by Honor	Servitude or Rebellion	1		7tr	Stygian Pike	weapon	elite	spea		60	66	6	70	49	tri	9tr	7tr
+set	123	Naj's Puzzler	Naj's Ancient Vestige	1		6cs	Elder Staff	weapon	elite	staf	slam	43	74	31	78	55	cst	8cs	6cs
+set	115	Sazabi's Cobalt Redeemer	Sazabi's Grand Tribute	1		7ls	Cryptic Sword	weapon	elite	swor	1wep	34	82	48	73	61	lsd	9ls	7ls
+set	327	Mindrazor	Sines Psionics	1		7wd	Mythical Sword	weapon	elite	swor	1wep	66	85	19	70	66	wsd	9wd	7wd
+set	240	Onyx's Solar Flair	Onyx's Primal Rage	1		7b7	Champion Sword	weapon	elite	swor	slam	60	77	17	69	57	bsw	9b9	7b7
+set	287	Soulreaver	The Darkest Weaves	1		7cr	Phase Blade	weapon	elite	swor	1wep	60	73	13	77	54	crs	9cr	7cr
+set	410	Summerswerd	Kai Lord's Valiance	1		7cr	Phase Blade	weapon	elite	swor	1wep	60	73	13	83	54	crs	9cr	7cr
+set	241	Onyx's Super Nova	Onyx's Primal Rage	1		7gs	Balrog Blade	weapon	elite	swor	slam	60	71	11	75	53	gis	9gs	7gs
+set	118	Bul-Kathos' Sacred Charge	Bul-Kathos' Children	1		7gd	Colossus Blade	weapon	elite	swor	slam	80	85	5	85	63	gsd	9gd	7gd
+set	346	Regime of Regulation	Gweibret's Rule	1		7sm	Ataghan	weapon	elite	swor	1wep	60	61	1	69	45	scm	9sm	7sm
+set	363	Hannibal's Final Flight	Hannibal's Demise	1		7bk	Winged Knife	weapon	elite	tkni	1wep	60	77	17	62	57	bkf	9bk	7bk
+set	440	Maadi's Torch	Maadi's Paradox	1		7gw	Unearthed Wand	weapon	elite	wand	1wep	64	86	22	64	64	gwn	9gw	7gw
+set	396	Prince Karnd's Abomination	Corthala Family Heirlooms	1		6rx	Demon Crossbow	weapon	elite	xbow		60	84	24	79	63	rxb	8rx	6rx
+set	213	Trent's Caster	Mishy's Avatar	1		am7	Ceremonial Bow	weapon	exceptional	abow		35	47	12	40	35	am2	am7	amc
+set	385	Holy Cleaver of Amaunator	Amaunator's Peace	1		9ax	Cleaver	weapon	exceptional	axe	1wep	30	34	4	47	22	axe	9ax	7ax
+set	356	Alyssa's Leafblighter	Alyssa's Archery	1		8l8	Long Siege Bow	weapon	exceptional	bow		30	46	16	44	25	lbb	8l8	6l7
+set	206	Torment of Innocence	Red Havoc's Challenge	1		9m9	War Club	weapon	exceptional	hamm	slam	30	45	15	39	25	mau	9m9	7m7
+set	433	Heaven's Lances	Lords of Hell	1		9ts	Harpoon	weapon	exceptional	jave	1wep	30	51	21	51	25	tsp	9ts	7ts
+set	445	The Raven's Beak	The Raven's Nest	1		9bl	Stilleto	weapon	exceptional	knif	1wep	35	46	11	45	25	bld	9bl	7bl
+set	230	Dagger of Vashna	Legacy of Vashna	1		9dg	Piognard	weapon	exceptional	knif	1wep	30	31	1	30	19	dgr	9dg	7dg
+set	71	Aldur's Rhythm	Aldur's Watchtower	1		9mt	Jagged Star	weapon	exceptional	mace	1wep	29	39	10	42	25	mst	9mt	7mt
+set	331	Baptism by Fire	Bogrot's Magic	1		9ma	Flanged Mace	weapon	exceptional	mace	1wep	30	35	5	31	23	mac	9ma	7ma
+set	81	Tal Rasha's Lidless Eye	Tal Rasha's Wrappings	1		oba	Swirling Crystal	weapon	exceptional	orb	1wep	26	50	24	65	37	ob5	oba	obf
+set	214	Eye of the Trent	Joel's Sanctuary	1		ob8	Cloudy Sphere	weapon	exceptional	orb	1wep	32	41	9	33	30	ob3	ob8	obd
+set	114	Hwanin's Justice	Hwanin's Majesty	1		9vo	Bill	weapon	exceptional	pole	slam	28	37	9	28	25	vou	9vo	7vo
+set	233	Lancer's Reach	Salander's Tirade	1		9pa	Partizan	weapon	exceptional	pole	slam	30	35	5	37	23	pax	9pa	7pa
+set	419	Imperial Scepter	Path of Bravery	1		9ws	Devine Scepter	weapon	exceptional	scep	1wep	30	45	15	50	25	wsp	9ws	7ws
+set	193	Wrath of Brother Laz	Insight of Brother Laz	1		9sc	Rune Scepter	weapon	exceptional	scep	1wep	30	31	1	29	19	scp	9sc	7sc
+set	306	Arcane Battlestaff	Yohann's Savant	1		8bs	Gothic Staff	weapon	exceptional	staf	slam	20	42	22	23	25	bst	8bs	6bs
+set	202	Savant Fury	Darque's Cabal	1		9gd	Executionor Sword	weapon	exceptional	swor	slam	35	54	19	42	25	gsd	9gd	7gd
+set	425	Principality	Celestial Hierarchy	1		9b9	Gothic Sword	weapon	exceptional	swor	slam	30	48	18	45	25	bsw	9b9	7b7
+set	351	Apparition of Malice	Haunted Asylum	1		9ls	Rune Sword	weapon	exceptional	swor	1wep	30	44	14	42	25	lsd	9ls	7ls
+set	343	Warrior's Heroism	Soldier's Cairn	1		9cm	Dacian Falx	weapon	exceptional	swor	slam	30	42	12	55	25	clm	9cm	7cm
+set	227	Death Knight's Demon Blade	Volf's Undead Legion	1		9bs	Battle Sword	weapon	exceptional	swor	1wep	30	40	10	37	25	bsd	9bs	7bs
+set	337	Heron-Branded Blade	Dragon Reborn	1		9cr	Demensional Blade	weapon	exceptional	swor	1wep	30	37	7	44	25	crs	9cr	7cr
+set	301	Kingpin's Blade	Treasure Hunter	1		9fc	Tulwar	weapon	exceptional	swor	1wep	35	37	2	35	25	flc	9fc	7fc
+set	319	Twilight of Evil	Darque Necromancy	1		9yw	Petrified Wand	weapon	exceptional	wand	1wep	30	38	8	29	25	ywn	9yw	7yw
+set	159	Sheena's Heartwood	Sheena's Grace	1		am1	Stag Bow	weapon	normal	abow		15	18	3	15	14	am1	am6	amb
+set	48	Berserker's Hatchet	Berserker's Arsenal	1		2ax	Double Axe	weapon	normal	axe	1wep	1	13	12	3	0	2ax	92a	72a
+set	32	Tancred's Crowbill	Tancred's Battlegear	1		mpi	Military Pick	weapon	normal	axe	1wep	12	19	7	20	0	mpi	9mp	7mp
+set	56	Arctic Horn	Arctic Gear	1		swb	Short War Bow	weapon	normal	bow		1	27	26	2	0	swb	8sw	6sw
+set	19	Vidala's Barb	Vidala's Rig	1		lbb	Long Battle Bow	weapon	normal	bow		10	23	13	14	0	lbb	8l8	6l7
+set	143	Jakira's Strike	Midnight Calling	1		axf	Hatchet hands	weapon	normal	h2h	1wep	10	12	2	12	0	axf	9xf	7xf
+set	447	Hand of the Vindicator	Tools of Vindication	1		whm	War Hammer	weapon	normal	hamm	1wep	12	25	13	20	0	whm	9wh	7wh
+set	148	Balance of Power	Nature's Grove	1		mau	Maul	weapon	normal	hamm	slam	12	21	9	18	0	mau	9m9	7m7
+set	135	Bane's Oathmaker	Bane's Garments	1		kri	Kriss	weapon	normal	knif	1wep	7	17	10	8	0	kri	9kr	7kr
+set	155	Corgina's Orb	Corgina's Element	1		ob2	Sacred Globe	weapon	normal	orb	1wep	15	8	-7	15	0	ob2	ob7	obc
+set	4	Civerb's Cudgel	Civerb's Vestments	1		gsc	Grand Scepter	weapon	normal	scep	1wep	1	15	14	9	0	gsc	9qs	7qs
+set	24	Milabrega's Rod	Milabrega's Regalia	1		wsp	War Scepter	weapon	normal	scep	1wep	12	21	9	17	0	wsp	9ws	7ws
+set	168	Greyhawk's Icebrand	Greyhawk's Mantle	1		scp	Scepter	weapon	normal	scep	1wep	17	3	-14	14	0	scp	9sc	7sc
+set	165	Warlord's Pike	Talonrage's Fury	1		pik	Pike	weapon	normal	spea		20	24	4	20	0	pik	9p9	7p7
+set	27	Cathan's Rule	Cathan's Traps	1		bst	Battle Staff	weapon	normal	staf	slam	1	17	16	11	0	bst	8bs	6bs
+set	61	Arcanna's Deathwand	Arcanna's Tricks	1		wst	War Staff	weapon	normal	staf	slam	12	24	12	15	0	wst	8ws	6ws
+set	51	Death's Touch	Death's Disguise	1		wsd	War Sword	weapon	normal	swor	1wep	1	27	26	6	0	wsd	9wd	7wd
+set	8	Cleglaw's Tooth	Cleglaw's Brace	1		lsd	Long Sword	weapon	normal	swor	1wep	1	20	19	4	0	lsd	9ls	7ls
+set	15	Isenhart's Lightbrand	Isenhart's Armory	1		bsd	Broad Sword	weapon	normal	swor	1wep	1	15	14	8	0	bsd	9bs	7bs
+set	52	Angelic Sickle	Angelic Raiment	1		sbr	Sabre	weapon	normal	swor	1wep	1	8	7	12	0	sbr	9sb	7sb
+set	44	Infernal Torch	Infernal Tools	1		gwn	Grim Wand	weapon	normal	wand	1wep	1	26	25	5	0	gwn	9gw	7gw
+set	152	Grimlock's Wand	Grimlock's Grave	1		bwn	Bone Wand	weapon	normal	wand	1wep	11	18	7	15	0	bwn	9bw	7bw
+set	129	Sander's Superstition	Sander's Folly	1		bwn	Bone Wand	weapon	normal	wand	1wep	20	18	-2	25	0	bwn	9bw	7bw
+unique	1256	Valorsong		1		paf	vortex shield	armor	elite	ashd		60	85	25	70	66	pa5	paa	paf
+unique	1250	Ancients' Epiphany		1		pab	sacred targe	armor	elite	ashd		43	63	20	55	47	pa1	pa6	pab
+unique	1253	Faith's Promise		1		pad	Kurast Shield	armor	elite	ashd		62	74	12	70	55	pa3	pa8	pad
+unique	1252	Dawn Blesser		1		pac	sacred rondache	armor	elite	ashd		60	70	10	68	52	pa2	pa7	pac
+unique	1255	God's Word		1		pae	zakarum shield	armor	elite	ashd		75	82	7	81	61	pa4	pa9	pae
+unique	1254	Dawnfall		1		pad	Kurast Shield	armor	elite	ashd		70	74	4	75	55	pa3	pa8	pad
+unique	1257	Fortress of Morpheus		1		paf	Vortex Shield	armor	elite	ashd		84	85	1	88	66	pa5	paa	paf
+unique	1251	Cleric's Rebuke		1		pab	Sacred Targe	armor	elite	ashd		64	63	-1	72	47	pa1	pa6	pab
+unique	350	Dragonscale		1		pae	zakarum shield	armor	elite	ashd		84	82	-2	80	61	pa4	pa9	pae
+unique	332	Alma Negra		1		pac	sacred rondache	armor	elite	ashd		85	70	-15	77	52	pa2	pa7	pac
+unique	377	Nosferatu's Coil		1		uvc	vampirefang belt	armor	elite	belt		50	68	18	51	51	vbl	zvb	uvc
+unique	379	Verdungo's Hearty Cord		1		umc	mithril coil	armor	elite	belt		60	75	15	63	56	mbl	zmb	umc
+unique	1141	Dreadfury		1		uvc	vampirefang belt	armor	elite	belt		56	68	12	64	51	vbl	zvb	uvc
+unique	421	Gheed's Wager		1		utc	troll belt	armor	elite	belt		70	82	12	71	62	tbl	ztb	utc
+unique	1143	Wisdom's Wrap		1		utc	troll belt	armor	elite	belt		72	82	10	78	62	tbl	ztb	utc
+unique	1140	Duskwreath		1		ulc	spiderweb sash	armor	elite	belt		52	61	9	60	46	lbl	zlb	ulc
+unique	1146	Ogre's Embrace		1		uhc	Colossus Girdle	armor	elite	belt		76	85	9	80	67	hbl	zhb	uhc
+unique	1441	Cincture of Falling Grace		1		uvc	vampirefang belt	armor	elite	belt		60	68	8	70	51	vbl	zvb	uvc
+unique	1144	Ecstacy of Ishtar		1		utc	Troll Belt	armor	elite	belt		86	82	-4	80	62	tbl	ztb	utc
+unique	1062	The Saboteur's Bandolier		1		umc	mithril coil	armor	elite	belt		81	75	-6	81	56	mbl	zmb	umc
+unique	1142	Kashya's Ward		1		umc	mithril coil	armor	elite	belt		85	75	-10	85	56	mbl	zmb	umc
+unique	376	Arachnid Mesh		1		ulc	spiderweb sash	armor	elite	belt		87	61	-26	80	46	lbl	zlb	ulc
+unique	416	Wraithstep		1		utb	mirrored boots	armor	elite	boot		60	81	21	67	60	tbt	xtb	utb
+unique	1098	Bonemesh		1		uhb	myrmidon greaves	armor	elite	boot		65	85	20	65	65	hbt	xhb	uhb
+unique	1119	Wild Horses		1		uhb	myrmidon greaves	armor	elite	boot		65	85	20	65	65	hbt	xhb	uhb
+unique	1117	Stairway to Heaven		1		utb	mirrored boots	armor	elite	boot		66	81	15	74	60	tbt	xtb	utb
+unique	1116	Hollowed Ground		1		umb	boneweave boots	armor	elite	boot		60	72	12	65	54	mbt	xmb	umb
+unique	312	Shadow Dancer		1		uhb	myrmidon greaves	armor	elite	boot		75	85	10	75	65	hbt	xhb	uhb
+unique	372	Sandstorm Trek		1		uvb	scarabshell boots	armor	elite	boot		60	66	6	64	49	vbt	xvb	uvb
+unique	373	Marrowwalk		1		umb	boneweave boots	armor	elite	boot		70	72	2	76	54	mbt	xmb	umb
+unique	1113	Dance of the Cobra		1		ulb	wyrmhide boots	armor	elite	boot		64	60	-4	70	45	lbt	xlb	ulb
+unique	1118	Lustwander		1		utb	mirrored boots	armor	elite	boot		85	81	-4	86	60	tbt	xtb	utb
+unique	1110	Zero Effect		1		utb	mirrored boots	armor	elite	boot		85	81	-4	81	60	tbt	xtb	utb
+unique	1115	Thoqqua's Slipper		1		uvb	scarabshell boots	armor	elite	boot		75	66	-9	75	49	vbt	xvb	uvb
+unique	1114	Stallion Hooves		1		ulb	Wyrmhide Boots	armor	elite	boot		80	60	-20	80	45	lbt	xlb	ulb
+unique	1022	Royal Diadem		1		ci3	diadem	armor	elite	circ		80	85	5	83	64	ci1	ci2	ci3
+unique	1021	Blindsight		1		ci3	diadem	armor	elite	circ		82	85	3	86	64	ci1	ci2	ci3
+unique	339	Griffon's Eye		1		ci3	diadem	armor	elite	circ		84	85	1	76	64	ci1	ci2	ci3
+unique	394	Steelrend		1		uhg	ogre gauntlets	armor	elite	glov		70	85	15	70	64	hgl	xhg	uhg
+unique	1087	Griefspawn		1		ulg	Bramble Mitts	armor	elite	glov		47	57	10	57	42	lgl	xlg	ulg
+unique	1088	Bloodyearn		1		uvg	vampirebone gloves	armor	elite	glov		60	63	3	70	47	vgl	xvg	uvg
+unique	1074	Viridian Gloves		1		uvg	vampirebone gloves	armor	elite	glov		60	63	3	70	47	vgl	xvg	uvg
+unique	1092	Black Lotus		1		uhg	ogre gauntlets	armor	elite	glov		83	85	2	87	64	hgl	xhg	uhg
+unique	1086	Mephisto's Claw		1		ulg	bramble mitts	armor	elite	glov		55	57	2	64	42	lgl	xlg	ulg
+unique	1090	Grip of the Faithful		1		utg	crusader gauntlets	armor	elite	glov		80	76	-4	84	57	tgl	xtg	utg
+unique	1484	Blinded by Faith		1		utg	crusader gauntlets	armor	elite	glov		85	76	-9	89	57	tgl	xtg	utg
+unique	1091	Hellhunger		1		utg	Crusader Gauntlets	armor	elite	glov		85	76	-9	83	57	tgl	xtg	utg
+unique	315	Soul Drainer		1		umg	vambraces	armor	elite	glov		82	69	-13	74	51	mgl	xmg	umg
+unique	1089	Lachdanan's Bracers		1		umg	vambraces	armor	elite	glov		85	69	-16	85	51	mgl	xmg	umg
+unique	367	Dracul's Grasp		1		uvg	vampirebone gloves	armor	elite	glov		84	63	-21	76	47	vgl	xvg	uvg
+unique	412	Ars Tor'Baalos		1		wae	blasphemous compendium	armor	elite	grim		70	81	11	73	60	wa4	wa9	wae
+unique	1466	Tome of the Pitborn Host		1		wac	Occult Tome	armor	elite	grim		60	67	7	69	49	wa2	wa7	wac
+unique	411	Ars Al'Diablolos		1		waf	blasphemous grimoire	armor	elite	grim		80	85	5	80	65	wa5	waa	waf
+unique	1464	The Black Oath Ledger		1		wab	Forgotten Volume	armor	elite	grim		60	59	-1	70	44	wa1	wa6	wab
+unique	413	Ars Dul'Mephistos		1		wac	occult tome	armor	elite	grim		70	67	-3	78	49	wa2	wa7	wac
+unique	1469	The Seventh Pact		1		wae	Blasphemous Compendium	armor	elite	grim		85	81	-4	90	60	wa4	wa9	wae
+unique	1467	Codex of the Crimson Pyre		1		wad	Occult Codex	armor	elite	grim		75	66	-9	83	50	wa3	wa8	wad
+unique	1468	The Rendfathers Codex		1		wad	Occult Codex	armor	elite	grim		75	66	-9	83	50	wa3	wa8	wad
+unique	1465	Scripture of the IronBound		1		wab	Forgotten Volume	armor	elite	grim		70	59	-11	78	44	wa1	wa6	wab
+unique	333	Darkforce Spawn		1		nef	bloodlord skull	armor	elite	head		60	85	25	64	65	ne5	nea	nef
+unique	1226	Dreadmother		1		neg	Hellspawn Skull	armor	elite	head		47	67	20	57	50	ne2	ne7	neg
+unique	1224	Reaper's Trophy		1		neb	Minion Skull	armor	elite	head		39	59	20	49	44	ne1	ne6	neb
+unique	1223	Venomlord's Visage		1		neb	minion skull	armor	elite	head		43	59	16	55	44	ne1	ne6	neb
+unique	1229	Mehtans Choice		1		nee	Succubus Skull	armor	elite	head		70	81	11	75	60	ne4	ne9	nee
+unique	1230	Ravings of the Mad		1		nef	bloodlord skull	armor	elite	head		82	85	3	86	65	ne5	nea	nef
+unique	344	Boneflame		1		nee	Succubus Skull	armor	elite	head		80	81	1	80	60	ne4	ne9	nee
+unique	1225	Devil's Advocate		1		neg	hellspawn skull	armor	elite	head		70	67	-3	75	50	ne2	ne7	neg
+unique	1228	Jondars Horde		1		ned	Overseer Skull	armor	elite	head		70	66	-4	75	49	ne3	ne8	ned
+unique	1227	Rathmas Desire		1		ned	overseer skull	armor	elite	head		83	66	-17	87	49	ne3	ne8	ned
+unique	382	Giant Skull		1		uh9	bone visage	armor	elite	helm		60	84	24	65	63	bhm	xh9	uh9
+unique	1005	Bane's Dark Wisdom		1		uap	shako	armor	elite	helm		43	58	15	55	43	cap	xap	uap
+unique	346	Nightwing's Veil		1		uhm	spired helm	armor	elite	helm		65	79	14	67	59	ghm	xhm	uhm
+unique	1007	Slaver's Price		1		ukp	hydraskull	armor	elite	helm		50	63	13	60	47	skp	xkp	ukp
+unique	252	Veil of Steel		1		uhm	Spired Helm	armor	elite	helm		70	79	9	73	59	ghm	xhm	uhm
+unique	300	Steel Shade		1		ulm	armet	armor	elite	helm		60	68	8	62	51	hlm	xlm	ulm
+unique	1011	Lilith's Crest		1		usk	demonhead	armor	elite	helm		70	74	4	77	55	msk	xsk	usk
+unique	347	Crown of Ages		1		urn	corona	armor	elite	helm		82	85	3	82	66	crn	xrn	urn
+unique	1010	King Conan's Rule		1		urn	corona	armor	elite	helm		84	85	1	84	66	crn	xrn	urn
+unique	1006	Overlord's Helm		1		uh9	bone visage	armor	elite	helm		85	84	-1	81	63	bhm	xh9	uh9
+unique	985	The Gambler's Fallacy		1		uh9	bone visage	armor	elite	helm		85	84	-1	90	63	bhm	xh9	uh9
+unique	251	Harlequin Crest		1		uap	Shako	armor	elite	helm		60	58	-2	62	43	cap	xap	uap
+unique	1009	Judas Kiss		1		uhl	Giant Conch	armor	elite	helm		57	54	-3	66	40	fhl	xhl	uhl
+unique	997	Ragnarok		1		uhm	Spired Helm	armor	elite	helm		85	79	-6	85	59	ghm	xhm	uhm
+unique	988	Judge's Helmet		1		ulm	armet	armor	elite	helm		75	68	-7	75	51	hlm	xlm	ulm
+unique	348	Andariel's Visage		1		usk	demonhead	armor	elite	helm		85	74	-11	83	55	msk	xsk	usk
+unique	1012	Kiss of the Vampire		1		ukp	hydraskull	armor	elite	helm		77	63	-14	81	47	skp	xkp	ukp
+unique	1008	Conch of Dismay		1		uhl	giant conch	armor	elite	helm		80	54	-26	80	40	fhl	xhl	uhl
+unique	1305	Sanctuary's Scion		1		drc	Sun Spirit	armor	elite	pelt		49	69	20	59	51	dr2	dr7	drc
+unique	330	Spirit Keeper		1		drd	earth spirit	armor	elite	pelt		60	76	16	67	57	dr3	dr8	drd
+unique	1309	Stone Feather		1		drf	Dream Spirit	armor	elite	pelt		70	85	15	70	66	dr5	dra	drf
+unique	1306	Spirit of the Land		1		drd	earth spirit	armor	elite	pelt		65	76	11	72	57	dr3	dr8	drd
+unique	1307	Hecuba's Tresses		1		dre	sky spirit	armor	elite	pelt		75	83	8	75	62	dr4	dr9	dre
+unique	313	Cerberus' Bite		1		drb	blood spirit	armor	elite	pelt		60	62	2	63	46	dr1	dr6	drb
+unique	353	Ravenlore		1		dre	sky spirit	armor	elite	pelt		82	83	1	74	62	dr4	dr9	dre
+unique	1304	Eagle Eyes		1		drc	sun spirit	armor	elite	pelt		80	69	-11	70	51	dr2	dr7	drc
+unique	1303	Call of the Wild		1		drb	blood spirit	armor	elite	pelt		85	62	-23	81	46	dr1	dr6	drb
+unique	1277	Conqueror's Feast		1		bab	carnage helm	armor	elite	phlm		50	60	10	55	45	ba1	ba6	bab
+unique	1279	Death Knight's Mask		1		bac	fury visor	armor	elite	phlm		60	66	6	70	49	ba2	ba7	bac
+unique	364	Halaberd's Reign		1		bae	conqueror crown	armor	elite	phlm		75	80	5	77	60	ba4	ba9	bae
+unique	328	Demonhorn's Edge		1		bad	destroyer helm	armor	elite	phlm		70	73	3	75	54	ba3	ba8	bad
+unique	1280	Wasteland Visage		1		bad	destroyer helm	armor	elite	phlm		70	73	3	78	54	ba3	ba8	bad
+unique	1283	Conscience of the King		1		baf	Guardian Crown	armor	elite	phlm		83	85	2	87	65	ba5	baa	baf
+unique	1281	Insight of the Ancients		1		bae	conqueror helm	armor	elite	phlm		86	80	-6	90	60	ba4	ba9	bae
+unique	358	Wolfhowl		1		bac	fury visor	armor	elite	phlm		85	66	-19	79	49	ba2	ba7	bac
+unique	359	Spirit Ward		1		uts	ward	armor	elite	shie		60	84	24	68	63	gts	xts	uts
+unique	1065	Baal's Wing		1		upk	blade barrier	armor	elite	shie		60	68	8	65	51	spk	xpk	upk
+unique	1061	Lachdanan's Guard		1		uow	aegis	armor	elite	shie		76	79	3	82	59	tow	xow	uow
+unique	1058	Shield of Myth		1		urg	hyperion	armor	elite	shie		62	64	2	70	54	lrg	xrg	urg
+unique	1057	Solar Eclipse		1		uml	luna	armor	elite	shie		59	61	2	67	45	sml	xml	uml
+unique	256	Stormshield		1		uit	Monarch	armor	elite	shie		70	72	2	73	54	kit	xit	uit
+unique	255	Blackoak Shield		1		uml	Luna	armor	elite	shie		60	61	1	61	45	sml	xml	uml
+unique	1063	Braced for Battle		1		uts	ward	armor	elite	shie		85	84	-1	86	63	gts	xts	uts
+unique	352	Medusa's Gaze		1		uow	aegis	armor	elite	shie		84	79	-5	76	59	tow	xow	uow
+unique	393	Head Hunter's Glory		1		ush	troll nest	armor	elite	shie		83	76	-7	75	57	bsh	xsh	ush
+unique	366	Spike Thorn		1		upk	blade barrier	armor	elite	shie		75	68	-7	80	51	spk	xpk	upk
+unique	1059	Safewarden		1		urg	Hyperion	armor	elite	shie		75	64	-11	75	54	lrg	xrg	urg
+unique	1055	Chill of Winter		1		uuc	heater	armor	elite	shie		75	58	-17	80	43	buc	xuc	uuc
+unique	1056	Sun Tormenter		1		uuc	Heater	armor	elite	shie		75	58	-17	80	43	buc	xuc	uuc
+unique	320	Leviathan		1		uld	kraken shell	armor	elite	tors		55	81	26	65	61	fld	xld	uld
+unique	351	Steel Carapace		1		uul	shadow plate	armor	elite	tors		60	83	23	66	64	ful	xul	uul
+unique	954	Aphrodite's Girdle		1		ula	Scarab Husk	armor	elite	tors		52	68	16	60	51	hla	xla	ula
+unique	957	Feathering Mithril		1		ung	Diamond Mail	armor	elite	tors		57	72	15	65	54	rng	xng	ung
+unique	369	Templar's Might		1		uar	sacred armor	armor	elite	tors		70	85	15	74	66	aar	xar	uar
+unique	969	Pride of the Barony		1		uth	Lacquered Plate	armor	elite	tors		68	82	14	75	62	gth	xth	uth
+unique	959	Golden Lotus		1		ucl	Loricated Mail	armor	elite	tors		60	73	13	67	55	scl	xcl	ucl
+unique	962	Celestial Unicorn		1		urs	great hauberk	armor	elite	tors		64	75	11	70	56	brs	xrs	urs
+unique	971	Heaven's Treasure		1		utp	archon plate	armor	elite	tors		75	84	9	75	63	ltp	xtp	utp
+unique	951	Ancient Dragon		1		uea	wyrmhide	armor	elite	tors		59	67	8	67	50	lea	xea	uea
+unique	952	Crescent of Secrets		1		uea	Wyrmhide	armor	elite	tors		59	67	8	60	50	lea	xea	uea
+unique	966	Lunatic Fringe		1		ult	Hellforged Plate	armor	elite	tors		70	78	8	75	59	plt	xlt	ult
+unique	950	Blanket of Stars		1		uui	dusk shroud	armor	elite	tors		58	65	7	65	49	qui	xui	uui
+unique	956	Adamantine Links		1		ung	diamond mail	armor	elite	tors		66	72	6	73	54	rng	xng	ung
+unique	953	Zaratan Hide		1		ula	scarab husk	armor	elite	tors		62	68	6	69	51	hla	xla	ula
+unique	958	Will-O'-Wisp		1		ucl	loricated mail	armor	elite	tors		68	73	5	74	55	scl	xcl	ucl
+unique	955	Wyrmbane		1		utu	wire fleece	armor	elite	tors		66	70	4	73	53	stu	xtu	utu
+unique	964	Diablo's Scale		1		upl	balrog skin	armor	elite	tors		73	76	3	78	57	spl	xpl	upl
+unique	965	Hellshifter		1		ult	hellforged plate	armor	elite	tors		76	78	2	80	59	plt	xlt	ult
+unique	960	Chains of the Abyss		1		uhn	boneweave	armor	elite	tors		61	62	1	68	47	chn	xhn	uhn
+unique	972	Legacy of the Eternals		1		utp	Archon Plate	armor	elite	tors		85	84	-1	85	63	ltp	xtp	utp
+unique	970	Shadowtrick		1		uul	shadow plate	armor	elite	tors		84	83	-1	84	64	ful	xul	uul
+unique	314	Tyrael's Might		1		uar	sacred armor	armor	elite	tors		87	85	-2	84	66	aar	xar	uar
+unique	968	Lachdanan's Heart		1		uth	lacquered plate	armor	elite	tors		85	82	-3	85	62	gth	xth	uth
+unique	963	Gray God's Mantle		1		urs	Great Hauberk	armor	elite	tors		80	75	-5	80	56	brs	xrs	urs
+unique	254	Arkaine's Valor		1		upl	Balrog Skin	armor	elite	tors		85	76	-9	85	57	spl	xpl	upl
+unique	253	The Gladiator's Bane		1		utu	Wire Fleece	armor	elite	tors		85	70	-15	85	53	stu	xtu	utu
+unique	361	Ormus' Robes		1		uui	dusk shroud	armor	elite	tors		85	65	-20	85	49	qui	xui	uui
+unique	961	Tarrasque Hide		1		uhn	Boneweave	armor	elite	tors		85	62	-23	86	47	chn	xhn	uhn
+unique	1246	Black Rain		1		pa8	Protector Shield	armor	exceptional	ashd		25	46	21	39	34	pa3	pa8	pad
+unique	1248	Wisdom of Thoth		1		paa	royal shield	armor	exceptional	ashd		36	55	19	46	41	pa5	paa	paf
+unique	1245	Defender of Innocence		1		pa8	protector shield	armor	exceptional	ashd		29	46	17	45	34	pa3	pa8	pad
+unique	1243	Knight's Holy Sigil		1		pa7	akaran rondache	armor	exceptional	ashd		25	40	15	41	30	pa2	pa7	pac
+unique	1244	Voice of the Prophet		1		pa7	Akaran Rondache	armor	exceptional	ashd		25	40	15	34	30	pa2	pa7	pac
+unique	288	Herald of Zakarum		1		pa9	Gilded Shield	armor	exceptional	ashd		40	51	11	50	38	pa4	pa9	pae
+unique	1241	Death to the Soul		1		pa6	akaran targe	armor	exceptional	ashd		25	35	10	37	26	pa1	pa6	pab
+unique	1242	Twilight Presence		1		pa6	Akaran Targe	armor	exceptional	ashd		25	35	10	30	26	pa1	pa6	pab
+unique	1247	Crusader's Will		1		pa9	Gilded Shield	armor	exceptional	ashd		45	51	6	50	38	pa4	pa9	pae
+unique	1249	Grand Inquisitor		1		paa	Royal Shield	armor	exceptional	ashd		50	55	5	65	41	pa5	paa	paf
+unique	1134	Meshif's Coil		1		zmb	mesh belt	armor	exceptional	belt		22	43	21	45	25	mbl	zmb	umc
+unique	247	Gloom's Trap		1		zmb	Mesh Belt	armor	exceptional	belt		25	43	18	36	25	mbl	zmb	umc
+unique	1135	Weakling's Whimper		1		zmb	mesh belt	armor	exceptional	belt		25	43	18	40	25	mbl	zmb	umc
+unique	1132	Megaladon Wrap		1		zvb	sharkskin belt	armor	exceptional	belt		25	39	14	41	25	vbl	zvb	uvc
+unique	246	Razortail		1		zvb	Sharkskin Belt	armor	exceptional	belt		25	39	14	32	25	vbl	zvb	uvc
+unique	1133	Wave Whipper		1		zvb	sharkskin belt	armor	exceptional	belt		25	39	14	37	25	vbl	zvb	uvc
+unique	1139	Shattered Dreams		1		zhb	war belt	armor	exceptional	belt		43	54	11	50	25	hbl	zhb	uhc
+unique	245	String of Ears		1		zlb	Demonhide Sash	armor	exceptional	belt		25	36	11	29	24	lbl	zlb	ulc
+unique	1138	The Art of War		1		zhb	war belt	armor	exceptional	belt		43	54	11	54	25	hbl	zhb	uhc
+unique	249	Thundergod's Vigor		1		zhb	War Belt	armor	exceptional	belt		43	54	11	47	25	hbl	zhb	uhc
+unique	1130	Warriv's Snakeskin		1		zlb	demonhide sash	armor	exceptional	belt		25	36	11	39	24	lbl	zlb	ulc
+unique	1131	Xenophobe		1		zlb	demonhide sash	armor	exceptional	belt		25	36	11	36	24	lbl	zlb	ulc
+unique	1136	Assassin Vine		1		ztb	battle belt	armor	exceptional	belt		43	49	6	48	25	tbl	ztb	utc
+unique	1137	Fortune's Fool		1		ztb	battle belt	armor	exceptional	belt		43	49	6	46	25	tbl	ztb	utc
+unique	248	Snowclash		1		ztb	Battle Belt	armor	exceptional	belt		43	49	6	50	25	tbl	ztb	utc
+unique	244	Gore Rider		1		xhb	War Boots	armor	exceptional	boot		30	54	24	47	25	hbt	xhb	uhb
+unique	243	War Traveler		1		xtb	Battle Boots	armor	exceptional	boot		30	49	19	42	25	tbt	xtb	utb
+unique	242	Silkweave		1		xmb	Mesh Boots	armor	exceptional	boot		25	43	18	36	25	mbt	xmb	umb
+unique	241	Waterwalk		1		xvb	Sharkskin Boots	armor	exceptional	boot		25	39	14	32	25	vbt	xvb	uvb
+unique	1106	Cain's Stride		1		xvb	sharkskin boots	armor	exceptional	boot		28	39	11	38	25	vbt	xvb	uvb
+unique	1104	Deepwander		1		xlb	demonhide boots	armor	exceptional	boot		25	36	11	35	24	lbt	xlb	ulb
+unique	1103	Hooves of Satan		1		xlb	demonhide boots	armor	exceptional	boot		25	36	11	40	24	lbt	xlb	ulb
+unique	240	Infernostride		1		xlb	Demonhide Boots	armor	exceptional	boot		25	36	11	29	24	lbt	xlb	ulb
+unique	1108	Zebrastride		1		xmb	mesh boots	armor	exceptional	boot		32	43	11	43	25	mbt	xmb	umb
+unique	1112	Doubtraiser		1		xhb	war boots	armor	exceptional	boot		45	54	9	55	25	hbt	xhb	uhb
+unique	1109	Halbu's Gift		1		xtb	battle boots	armor	exceptional	boot		40	49	9	50	25	tbt	xtb	utb
+unique	1107	Whirling Dervish		1		xmb	mesh boots	armor	exceptional	boot		38	43	5	48	25	mbt	xmb	umb
+unique	1111	River Stalker		1		xhb	war boots	armor	exceptional	boot		51	54	3	60	25	hbt	xhb	uhb
+unique	1105	Asheara's Slippers		1		xvb	sharkskin boots	armor	exceptional	boot		43	39	-4	45	25	vbt	xvb	uvb
+unique	1020	Mystic Angel		1		ci2	tiara	armor	exceptional	circ		50	70	20	60	52	ci1	ci2	ci3
+unique	1019	Gillian's Tiara		1		ci2	tiara	armor	exceptional	circ		80	70	-10	82	52	ci1	ci2	ci3
+unique	238	Lava Gout		1		xtg	Battle Guantlets	armor	exceptional	glov		30	49	19	42	25	tgl	xtg	utg
+unique	1079	Conspiracy of Thieves		1		xvg	sharkskin gloves	armor	exceptional	glov		25	39	14	39	25	vgl	xvg	uvg
+unique	239	Hellmouth		1		xhg	War Gauntlets	armor	exceptional	glov		43	54	11	47	25	hgl	xhg	uhg
+unique	1085	Threat of Retribution		1		xhg	war gauntlets	armor	exceptional	glov		43	54	11	55	25	hgl	xhg	uhg
+unique	1078	Askarian Grips		1		xvg	sharkskin gloves	armor	exceptional	glov		30	39	9	43	25	vgl	xvg	uvg
+unique	1083	Gryphon's Claw		1		xtg	battle gauntlets	armor	exceptional	glov		40	49	9	50	25	tgl	xtg	utg
+unique	1076	Devil's Invocation		1		xlg	demonhide gloves	armor	exceptional	glov		25	33	8	37	21	lgl	xlg	ulg
+unique	237	Ghoulhide		1		xmg	Heavy Bracers	armor	exceptional	glov		35	43	8	36	25	mgl	xmg	umg
+unique	1077	Marauder's Claw		1		xlg	demonhide gloves	armor	exceptional	glov		25	33	8	34	21	lgl	xlg	ulg
+unique	235	Venom Grip		1		xlg	Demonhide Gloves	armor	exceptional	glov		25	33	8	29	21	lgl	xlg	ulg
+unique	1082	Warlock's Touch		1		xtg	battle gauntlets	armor	exceptional	glov		43	49	6	54	25	tgl	xtg	utg
+unique	1084	Burning Soul		1		xhg	war gauntlets	armor	exceptional	glov		51	54	3	60	25	hgl	xhg	uhg
+unique	1080	Spikefiend Bracers		1		xmg	heavy bracers	armor	exceptional	glov		40	43	3	48	25	mgl	xmg	umg
+unique	236	Gravepalm		1		xvg	Sharkskin Gloves	armor	exceptional	glov		43	39	-4	55	25	vgl	xvg	uvg
+unique	1081	Rapturous Blessings		1		xmg	heavy bracers	armor	exceptional	glov		60	43	-17	70	25	mgl	xmg	umg
+unique	1460	The True Names of the Pit		1		wa9	Possessed Compendium	armor	exceptional	grim		40	36	-4	55	36	wa4	wa9	wae
+unique	1463	Grimoire of the Obsidian Curse		1		waa	Possessed Grimoire	armor	exceptional	grim		45	40	-5	61	40	wa5	waa	waf
+unique	1459	The Bloodletters Codex		1		wa8	Dark Codex	armor	exceptional	grim		45	33	-12	55	33	wa3	wa8	wad
+unique	1461	The Bloodsigil Testament		1		wa9	Possessed Compendium	armor	exceptional	grim		50	36	-14	60	36	wa4	wa9	wae
+unique	414	Measured Wrath		1		wa6	burnt text	armor	exceptional	grim		50	24	-26	52	24	wa1	wa6	wab
+unique	1221	Dreamweaver		1		ne9	Cantor Trophy	armor	exceptional	head		25	49	24	40	36	ne4	ne9	nee
+unique	1218	Fallen Hero's Disgrace		1		ne8	Sexton Trophy	armor	exceptional	head		25	45	20	43	33	ne3	ne8	ned
+unique	1219	Rictus of the Joker		1		ne8	Sexton Trophy	armor	exceptional	head		25	45	20	36	33	ne3	ne8	ned
+unique	1217	Carrion Comfort		1		ne7	Fetish Trophy	armor	exceptional	head		25	39	14	33	29	ne2	ne7	neg
+unique	283	Homunculus		1		nea	Heirophant Trophy	armor	exceptional	head		40	54	14	42	40	ne5	nea	nef
+unique	1216	Mystery of Life		1		ne7	fetish trophy	armor	exceptional	head		25	39	14	39	29	ne2	ne7	neg
+unique	1220	Vow of Revenge		1		ne9	cantor trophy	armor	exceptional	head		35	49	14	47	36	ne4	ne9	nee
+unique	1222	Putrid Defiler		1		nea	heirophant trophy	armor	exceptional	head		42	54	12	52	40	ne5	nea	nef
+unique	1215	Janus' Face		1		ne6	Mummified Trophy	armor	exceptional	head		25	33	8	29	24	ne1	ne6	neb
+unique	1214	King Tut		1		ne6	mummified trophy	armor	exceptional	head		25	33	8	35	24	ne1	ne6	neb
+unique	993	Helm of Ra		1		xlm	casque	armor	exceptional	helm		24	42	18	39	25	hlm	xlm	ulm
+unique	206	Stealskull		1		xlm	Casque	armor	exceptional	helm		25	42	17	35	25	hlm	xlm	ulm
+unique	995	Knight's Crest		1		xhl	basinet	armor	exceptional	helm		30	45	15	43	25	fhl	xhl	uhl
+unique	209	Crown of Thieves		1		xrn	Grand Crown	armor	exceptional	helm		43	55	12	49	25	crn	xrn	urn
+unique	991	Drunken Fury		1		xkp	sallet	armor	exceptional	helm		25	37	12	36	25	skp	xkp	ukp
+unique	992	Neonate's Sallet		1		xkp	sallet	armor	exceptional	helm		25	37	12	40	25	skp	xkp	ukp
+unique	1000	Reign of Deceit		1		xrn	grand crown	armor	exceptional	helm		43	55	12	56	25	crn	xrn	urn
+unique	205	Rockstopper		1		xkp	Sallet	armor	exceptional	helm		25	37	12	31	25	skp	xkp	ukp
+unique	994	Troubled Thoughts		1		xlm	casque	armor	exceptional	helm		30	42	12	43	25	hlm	xlm	ulm
+unique	999	Usurper's Ambition		1		xrn	grand crown	armor	exceptional	helm		43	55	12	53	25	crn	xrn	urn
+unique	1002	Arch-Nemesis		1		xsk	death mask	armor	exceptional	helm		38	48	10	48	25	msk	xsk	usk
+unique	207	Darksight Helm		1		xhl	Basinet	armor	exceptional	helm		35	45	10	38	25	fhl	xhl	uhl
+unique	996	Wraithwatch		1		xhl	basinet	armor	exceptional	helm		35	45	10	46	25	fhl	xhl	uhl
+unique	990	Hushmaker		1		xap	war hat	armor	exceptional	helm		25	34	9	33	22	cap	xap	uap
+unique	204	Peasant Crown		1		xap	War Hat	armor	exceptional	helm		25	34	9	28	22	cap	xap	uap
+unique	989	Pepin's Blessing		1		xap	war hat	armor	exceptional	helm		25	34	9	36	22	cap	xap	uap
+unique	998	Embracing Solitude		1		xhm	winged helm	armor	exceptional	helm		43	51	8	53	25	ghm	xhm	uhm
+unique	208	Valkyrie Wing		1		xhm	Winged Helm	armor	exceptional	helm		43	51	8	44	25	ghm	xhm	uhm
+unique	1003	Ghoulslayer		1		xh9	grim helm	armor	exceptional	helm		43	50	7	46	25	bhm	xh9	uh9
+unique	1004	Skull of Fistandantilus		1		xh9	grim helm	armor	exceptional	helm		43	50	7	49	25	bhm	xh9	uh9
+unique	211	Vampire Gaze		1		xh9	Grim Helm	armor	exceptional	helm		43	50	7	41	25	bhm	xh9	uh9
+unique	210	Blackhorn's Face		1		xsk	Death Mask	armor	exceptional	helm		43	48	5	41	25	msk	xsk	usk
+unique	1001	Wraithshadow		1		xsk	death mask	armor	exceptional	helm		43	48	5	44	25	msk	xsk	usk
+unique	422	Unique Warlock Helm		1		xsk	death mask	armor	exceptional	helm		50	48	-2	50	25	msk	xsk	usk
+unique	1298	Centaur's Sight		1		dr8	hunters guise	armor	exceptional	pelt		25	46	21	37	29	dr3	dr8	drd
+unique	1299	Night Prowler		1		dr8	Hunter's Guise	armor	exceptional	pelt		25	46	21	43	29	dr3	dr8	drd
+unique	1301	Falcon Sharp		1		dr9	Sacred Feathers	armor	exceptional	pelt		30	50	20	40	32	dr4	dr9	dre
+unique	1297	Creeper's Canopy		1		dr7	Griffon Headress	armor	exceptional	pelt		30	40	10	40	30	dr2	dr7	drc
+unique	1296	Gathering of Hawks		1		dr7	griffon headress	armor	exceptional	pelt		30	40	10	42	30	dr2	dr7	drc
+unique	1294	Moon Shadow		1		dr6	alpha helm	armor	exceptional	pelt		17	26	9	29	26	dr1	dr6	drb
+unique	1300	Phoenix Fall		1		dr9	sacred feathers	armor	exceptional	pelt		43	50	7	46	32	dr4	dr9	dre
+unique	290	Jalal's Mane		1		dra	Totemic Mask	armor	exceptional	pelt		50	55	5	55	41	dr5	dra	drf
+unique	1295	The King's Heart		1		dr6	Alpha Helm	armor	exceptional	pelt		25	26	1	34	26	dr1	dr6	drb
+unique	1302	Leader of the Pack		1		dra	totemic mask	armor	exceptional	pelt		60	55	-5	65	41	dr5	dra	drf
+unique	1275	Hellraiser's Casque		1		ba9	Savage Helmet	armor	exceptional	phlm		25	49	24	39	32	ba4	ba9	bae
+unique	1272	Primal Lust		1		ba8	rage mask	armor	exceptional	phlm		25	44	19	43	29	ba3	ba8	bad
+unique	1273	Slayer's Glee		1		ba8	Rage Mask	armor	exceptional	phlm		25	44	19	36	29	ba3	ba8	bad
+unique	1271	Gambler's Glory		1		ba7	Lion Helm	armor	exceptional	phlm		25	38	13	33	29	ba2	ba7	bac
+unique	1270	Malefactor's Reward		1		ba7	lion helm	armor	exceptional	phlm		25	38	13	40	29	ba2	ba7	bac
+unique	1269	Deadgaze		1		ba6	Jawbone Visor	armor	exceptional	phlm		25	33	8	30	25	ba1	ba6	bab
+unique	1268	Helms Deep		1		ba6	jawbone visor	armor	exceptional	phlm		25	33	8	35	25	ba1	ba6	bab
+unique	1274	Hannibal's Crown		1		ba9	Savage Helmet	armor	exceptional	phlm		43	49	6	46	32	ba4	ba9	bae
+unique	282	Arreat's Face		1		baa	Slayer Guard	armor	exceptional	phlm		50	54	4	60	40	ba5	baa	baf
+unique	1276	Vanguard		1		baa	slayer guard	armor	exceptional	phlm		60	54	-6	70	40	ba5	baa	baf
+unique	230	Tiamat's Rebuke		1		xit	Dragon Shield	armor	exceptional	shie		25	45	20	45	25	kit	xit	uit
+unique	1044	Spellbreaker		1		xrg	scutum	armor	exceptional	shie		25	42	17	39	25	lrg	xrg	urg
+unique	229	Stormchaser		1		xrg	Scutum	armor	exceptional	shie		25	42	17	35	25	lrg	xrg	urg
+unique	1052	Lichward		1		xsh	grim shield	armor	exceptional	shie		35	48	13	45	25	bsh	xsh	ush
+unique	233	Lidless Wall		1		xsh	Grim Shield	armor	exceptional	shie		35	48	13	41	25	bsh	xsh	ush
+unique	1054	Razorbite Deflector		1		xpk	barbed sheild	armor	exceptional	shie		29	42	13	41	25	spk	xpk	upk
+unique	1041	Doom's Mirror		1		xml	round shield	armor	exceptional	shie		25	37	12	39	25	sml	xml	uml
+unique	234	Lance Guard		1		xpk	Barbed Shield	armor	exceptional	shie		30	42	12	35	25	spk	xpk	upk
+unique	228	Moser's Blessed Circle1		1		xml	Round Shield	armor	exceptional	shie		25	37	12	31	25	sml	xml	uml
+unique	1043	Savant Sin		1		xrg	scutum	armor	exceptional	shie		30	42	12	42	25	lrg	xrg	urg
+unique	1042	Undead Buckler		1		xml	round shield	armor	exceptional	shie		25	37	12	35	25	sml	xml	uml
+unique	1049	Dreadwall		1		xts	ancient sheild	armor	exceptional	shie		45	56	11	55	25	gts	xts	uts
+unique	1051	Ghoul Spawner		1		xsh	grim shield	armor	exceptional	shie		38	48	10	48	25	bsh	xsh	ush
+unique	1040	Mongolian Trust		1		xuc	defender	armor	exceptional	shie		25	34	9	34	22	buc	xuc	uuc
+unique	227	Visceratuant		1		xuc	Defender	armor	exceptional	shie		25	34	9	28	22	buc	xuc	uuc
+unique	1039	Yemista's Defender		1		xuc	defender	armor	exceptional	shie		25	34	9	37	22	buc	xuc	uuc
+unique	1047	Adamantine Shield		1		xow	pavise	armor	exceptional	shie		43	50	7	53	25	tow	xow	uow
+unique	231	Gerke's Sanctuary1		1		xow	Pavise	armor	exceptional	shie		43	50	7	44	25	tow	xow	uow
+unique	1048	Shieldmaiden's Pavise		1		xow	pavise	armor	exceptional	shie		43	50	7	55	25	tow	xow	uow
+unique	1050	Crusader's Wall		1		xts	ancient shield	armor	exceptional	shie		50	56	6	59	25	gts	xts	uts
+unique	232	Radament's Sphere		1		xts	Ancient Shield	armor	exceptional	shie		50	56	6	50	25	gts	xts	uts
+unique	1053	Raptor Fang		1		xpk	barbed shield	armor	exceptional	shie		36	42	6	46	25	spk	xpk	upk
+unique	1045	Under Dragon's Wing		1		xit	dragon shield	armor	exceptional	shie		43	45	2	48	25	kit	xit	uit
+unique	1046	Wishgranter		1		xit	dragon shield	armor	exceptional	shie		43	45	2	44	25	kit	xit	uit
+unique	943	Nightcrawler		1		xth	embossed plate	armor	exceptional	tors		43	58	15	56	25	gth	xth	uth
+unique	225	Corpsemourn		1		xar	Ornate Armor	armor	exceptional	tors		50	64	14	55	25	aar	xar	uar
+unique	947	Iceskin		1		xar	ornate armor	armor	exceptional	tors		50	64	14	58	25	aar	xar	uar
+unique	217	Crow Caw		1		xcl	Tigulated Mail	armor	exceptional	tors		30	43	13	37	25	scl	xcl	ucl
+unique	927	Cold Comfort		1		xtu	trellised armor	armor	exceptional	tors		28	40	12	38	25	stu	xtu	utu
+unique	941	Seaflame		1		xld	sharktooth armor	armor	exceptional	tors		43	55	12	55	25	fld	xld	uld
+unique	214	Skin of the Flayed One1		1		xla	Demonhide Armor	armor	exceptional	tors		25	37	12	31	25	hla	xla	ula
+unique	216	Spirit Forge		1		xng	Linked Mail	armor	exceptional	tors		30	42	12	35	25	rng	xng	ung
+unique	925	The Defiler's Flesh		1		xla	demonhide armor	armor	exceptional	tors		25	37	12	36	25	hla	xla	ula
+unique	222	Toothrow		1		xld	Sharktooth Armor	armor	exceptional	tors		43	55	12	48	25	fld	xld	uld
+unique	224	Black Hades		1		xul	Chaos Armor	armor	exceptional	tors		50	61	11	53	25	ful	xul	uul
+unique	931	Panic of Thousands		1		xul	chaos armor	armor	exceptional	tors		50	61	11	50	25	ful	xul	uul
+unique	923	Scavanger's Carapace		1		xea	serpentskin armor	armor	exceptional	tors		25	36	11	34	24	lea	xea	uea
+unique	213	Skin of the Vipermagi		1		xea	SerpentSkin Armor	armor	exceptional	tors		25	36	11	29	24	lea	xea	uea
+unique	946	Will of the Zakarum		1		xar	ornate armor	armor	exceptional	tors		53	64	11	62	25	aar	xar	uar
+unique	922	Anaconda Skin		1		xea	serpentskin armor	armor	exceptional	tors		26	36	10	42	24	lea	xea	uea
+unique	215	Iron Pelt		1		xtu	Tresllised Armor	armor	exceptional	tors		30	40	10	33	25	stu	xtu	utu
+unique	226	Que-Hegan's Wisdom1		1		xtp	Mage Plate	armor	exceptional	tors		50	60	10	51	25	ltp	xtp	utp
+unique	949	Serendipity		1		xtp	mage plate	armor	exceptional	tors		50	60	10	59	25	ltp	xtp	utp
+unique	218	Shaftstop		1		xhn	Mesh Armor	armor	exceptional	tors		35	45	10	38	25	chn	xhn	uhn
+unique	939	Succulent Sin		1		xlt	templar coat	armor	exceptional	tors		42	52	10	52	25	plt	xlt	ult
+unique	938	Demonspike Coat		1		xlt	templar coat	armor	exceptional	tors		43	52	9	57	25	plt	xlt	ult
+unique	921	Gillian's Brazier		1		xui	ghost armor	armor	exceptional	tors		25	34	9	41	22	qui	xui	uui
+unique	221	Guardian Angel		1		xlt	Templar Coat	armor	exceptional	tors		43	52	9	45	25	plt	xlt	ult
+unique	920	Rainbow Cloak		1		xui	ghost armor	armor	exceptional	tors		25	34	9	32	22	qui	xui	uui
+unique	212	The Spirit Shroud		1		xui	Ghost Armor	armor	exceptional	tors		25	34	9	28	22	qui	xui	uui
+unique	223	Atma's Wail		1		xth	Embossed Plate	armor	exceptional	tors		50	58	8	51	25	gth	xth	uth
+unique	942	Royal Plate		1		xth	embossed plate	armor	exceptional	tors		50	58	8	60	25	gth	xth	uth
+unique	928	Heartbane		1		xng	linked mail	armor	exceptional	tors		35	42	7	41	25	rng	xng	ung
+unique	936	Brimstone Hearth		1		xpl	russet armor	armor	exceptional	tors		43	49	6	50	25	spl	xpl	upl
+unique	937	Scars of the Forefathers		1		xpl	russet armor	armor	exceptional	tors		43	49	6	55	25	spl	xpl	upl
+unique	220	Skullder's Ire		1		xpl	Russet Armor	armor	exceptional	tors		43	49	6	42	25	spl	xpl	upl
+unique	940	Bloodlust Frenzy		1		xld	sharktooth armor	armor	exceptional	tors		50	55	5	59	25	fld	xld	uld
+unique	948	Plate of Fistandantilus		1		xtp	mage plate	armor	exceptional	tors		55	60	5	63	25	ltp	xtp	utp
+unique	219	Duriel's Shell		1		xrs	Cuirass	armor	exceptional	tors		43	47	4	41	25	brs	xrs	urs
+unique	935	Skovos' Cuirass		1		xrs	cuirass	armor	exceptional	tors		43	47	4	51	25	brs	xrs	urs
+unique	934	Tesla's Cuirass		1		xrs	cuirass	armor	exceptional	tors		43	47	4	47	25	brs	xrs	urs
+unique	930	The Strongest Link		1		xcl	tigulated mail	armor	exceptional	tors		40	43	3	47	25	scl	xcl	ucl
+unique	929	Adamantine Mail		1		xng	linked mail	armor	exceptional	tors		40	42	2	45	25	rng	xng	ung
+unique	933	Disparate Paths		1		xhn	mesh armor	armor	exceptional	tors		43	45	2	55	25	chn	xhn	uhn
+unique	932	Drow Mesh		1		xhn	mesh armor	armor	exceptional	tors		43	45	2	44	25	chn	xhn	uhn
+unique	944	Shambling Mound		1		xul	chaos armor	armor	exceptional	tors		60	61	1	69	25	ful	xul	uul
+unique	924	Torn Flesh of Souls		1		xla	demonhide armor	armor	exceptional	tors		40	37	-3	43	25	hla	xla	ula
+unique	1237	Bastion of Hope		1		pa4	aerin shield	armor	normal	ashd		12	20	8	20	15	pa4	pa9	pae
+unique	1234	Grip of the Gorgon		1		pa2	Rondache	armor	normal	ashd		1	8	7	10	6	pa2	pa7	pac
+unique	1239	King's Guard		1		pa5	crown shield	armor	normal	ashd		17	24	7	25	18	pa5	paa	paf
+unique	1235	Felix's Brace		1		pa3	heraldic shield	armor	normal	ashd		12	16	4	22	12	pa3	pa8	pad
+unique	1236	Secret of Steel		1		pa3	Heraldic Shield	armor	normal	ashd		12	16	4	15	12	pa3	pa8	pad
+unique	1238	Hellchatter		1		pa4	Aerin Shield	armor	normal	ashd		17	20	3	27	15	pa4	pa9	pae
+unique	1232	Seafarer's Security		1		pa1	Targe	armor	normal	ashd		1	4	3	5	3	pa1	pa6	pab
+unique	1231	Validator		1		pa1	targe	armor	normal	ashd		1	4	3	8	3	pa1	pa6	pab
+unique	1240	Devourer of Worlds		1		pa5	Crown Shield	armor	normal	ashd		25	24	-1	32	18	pa5	paa	paf
+unique	1233	Swiftfoot Slash		1		pa2	rondache	armor	normal	ashd		12	8	-4	17	6	pa2	pa7	pac
+unique	115	Snakecord		1		vbl	Light Belt	armor	normal	belt		1	7	6	12	0	vbl	zvb	uvc
+unique	1123	Spiritseeker		1		vbl	light belt	armor	normal	belt		1	7	6	12	0	vbl	zvb	uvc
+unique	118	Bladebuckle		1		hbl	Girdle	armor	normal	belt		25	27	2	29	0	hbl	zhb	uhc
+unique	1120	Bloodrune		1		lbl	sash	armor	normal	belt		1	3	2	8	0	lbl	zlb	ulc
+unique	1121	Ivywrap		1		lbl	sash	armor	normal	belt		1	3	2	5	0	lbl	zlb	ulc
+unique	114	Lenymo		1		lbl	Sash	armor	normal	belt		1	3	2	7	0	lbl	zlb	ulc
+unique	1128	Pandemonium		1		hbl	girdle	armor	normal	belt		25	27	2	32	0	hbl	zhb	uhc
+unique	1126	Crocodile Wrap		1		tbl	heavy belt	armor	normal	belt		25	20	-5	30	0	tbl	ztb	utc
+unique	117	Goldwrap		1		tbl	Heavy Belt	armor	normal	belt		25	20	-5	27	0	tbl	ztb	utc
+unique	1127	Pirate's Faith		1		tbl	heavy belt	armor	normal	belt		25	20	-5	28	0	tbl	ztb	utc
+unique	1122	Ratman's Rope		1		vbl	light belt	armor	normal	belt		12	7	-5	15	0	vbl	zvb	uvc
+unique	1129	Leash of Cerberus		1		hbl	girdle	armor	normal	belt		50	27	-23	60	0	hbl	zhb	uhc
+unique	1096	Angel's Tread		1		vbt	heavy boots	armor	normal	boot		1	7	6	13	0	vbt	xvb	uvb
+unique	110	Gorefoot		1		vbt	Heavy Boots	armor	normal	boot		1	7	6	9	0	vbt	xvb	uvb
+unique	1099	Dawn Scion		1		tbt	light plated boots	armor	normal	boot		17	20	3	30	0	tbt	xtb	utb
+unique	112	Goblin Toe		1		tbt	Light Plate Boots	armor	normal	boot		17	20	3	22	0	tbt	xtb	utb
+unique	1100	Lilith's Heels		1		tbt	light plate boots	armor	normal	boot		17	20	3	26	0	tbt	xtb	utb
+unique	1093	Cheetah Speed		1		lbt	leather boots	armor	normal	boot		1	3	2	10	0	lbt	xlb	ulb
+unique	1101	Dark Familiar		1		hbt	plate boots	armor	normal	boot		25	27	2	34	0	hbt	xhb	uhb
+unique	109	Hotspur		1		lbt	Leather Boots	armor	normal	boot		1	3	2	5	0	lbt	xlb	ulb
+unique	1094	Marathon Slipper		1		lbt	leather boots	armor	normal	boot		1	3	2	7	0	lbt	xlb	ulb
+unique	113	Tearhaunch		1		hbt	Plate Boots	armor	normal	boot		25	27	2	29	0	hbt	xhb	uhb
+unique	1102	Grimleaper		1		hbt	plate boots	armor	normal	boot		28	27	-1	46	0	hbt	xhb	uhb
+unique	1095	Gillian's Boots		1		vbt	heavy boots	armor	normal	boot		12	7	-5	17	0	vbt	xvb	uvb
+unique	1097	Pepin's Grace		1		mbt	chain boots	armor	normal	boot		17	12	-5	23	0	mbt	xmb	umb
+unique	1016	Gainsayer		1		ci1	coronet	armor	normal	circ		25	52	27	45	39	ci1	ci2	ci3
+unique	1018	Sorcerer's Cache		1		ci1	Coronet	armor	normal	circ		25	52	27	39	39	ci1	ci2	ci3
+unique	1017	Threatspeaker		1		ci1	coronet	armor	normal	circ		25	52	27	40	39	ci1	ci2	ci3
+unique	1015	Charon's Token		1		ci0	Circlet	armor	normal	circ		12	24	12	18	16	ci0	ci2	ci3
+unique	1014	Muddled Thoughts		1		ci0	circlet	armor	normal	circ		12	24	12	25	16	ci0	ci2	ci3
+unique	1013	Fair Weather		1		ci0	circlet	armor	normal	circ		25	24	-1	30	16	ci0	ci2	ci3
+unique	105	Bloodfist		1		vgl	Heavy Gloves	armor	normal	glov		1	7	6	9	0	vgl	xvg	uvg
+unique	107	Magefist		1		tgl	Light Gauntlets	armor	normal	glov		17	20	3	23	0	tgl	xtg	utg
+unique	1073	Skein of Pain		1		tgl	light gauntlets	armor	normal	glov		17	20	3	27	0	tgl	xtg	utg
+unique	1066	Blisterpain		1		lgl	gloves	armor	normal	glov		1	3	2	11	0	lgl	xlg	ulg
+unique	1075	Firesign		1		hgl	gauntlets	armor	normal	glov		25	27	2	31	0	hgl	xhg	uhg
+unique	1067	Goblin Touch		1		lgl	gloves	armor	normal	glov		1	3	2	8	0	lgl	xlg	ulg
+unique	104	The Hand of Broc		1		lgl	Gloves	armor	normal	glov		1	3	2	5	0	lgl	xlg	ulg
+unique	1069	Fiendfeast		1		vgl	heavy gloves	armor	normal	glov		12	7	-5	14	0	vgl	xvg	uvg
+unique	1071	Green God's Bracers		1		mgl	bracers	armor	normal	glov		17	12	-5	25	0	mgl	xmg	umg
+unique	1068	Healing Touch		1		vgl	heavy gloves	armor	normal	glov		12	7	-5	18	0	vgl	xvg	uvg
+unique	1072	Prismatic Gauntlets		1		tgl	light gauntlets	armor	normal	glov		25	20	-5	30	0	tgl	xtg	utg
+unique	108	Frostburn		1		hgl	Gauntlets	armor	normal	glov		35	27	-8	45	0	hgl	xhg	uhg
+unique	1450	The Arreat Codex		1		wa3	Codex	armor	normal	grim		17	12	-5	25	12	wa3	wa8	wad
+unique	1208	Death Mauler		1		ne3	unraveller head	armor	normal	head		1	16	15	19	12	ne3	ne8	ned
+unique	1209	Scalp Hunter		1		ne3	Unraveller Head	armor	normal	head		1	16	15	15	12	ne3	ne8	ned
+unique	1211	Sinister Smile		1		ne4	Gargoyle Head	armor	normal	head		12	20	8	20	15	ne4	ne9	nee
+unique	1210	Steel Weevil		1		ne4	gargoyle head	armor	normal	head		12	20	8	24	15	ne4	ne9	nee
+unique	1213	Chiaroscuro Visage		1		ne5	Demon Head	armor	normal	head		17	24	7	26	18	ne5	nea	nef
+unique	1207	Death's Witness		1		ne2	Zombie Head	armor	normal	head		1	8	7	9	6	ne2	ne7	neg
+unique	1206	Paingiver		1		ne2	zombie head	armor	normal	head		1	8	7	12	6	ne2	ne7	neg
+unique	1204	Blanched Death		1		ne1	preserved head	armor	normal	head		1	4	3	8	3	ne1	ne6	neb
+unique	1205	Goblin Grin		1		ne1	Preserved Head	armor	normal	head		1	4	3	4	3	ne1	ne6	neb
+unique	1212	Undead Beholder		1		ne5	demon head	armor	normal	head		25	24	-1	30	18	ne5	nea	nef
+unique	78	Howltusk		1		ghm	Great Helm	armor	normal	helm		17	23	6	25	0	ghm	xhm	uhm
+unique	982	Cursed Hindsight		1		bhm	bone helm	armor	normal	helm		17	22	5	24	0	bhm	xh9	uh9
+unique	77	Wormskull		1		bhm	Bone Helm	armor	normal	helm		17	22	5	21	0	bhm	xh9	uh9
+unique	986	Crown of Thorns		1		crn	crown	armor	normal	helm		25	29	4	32	0	crn	xrn	urn
+unique	976	Devourer of Dreams		1		skp	skull cap	armor	normal	helm		1	5	4	13	0	skp	xkp	ukp
+unique	79	Undead Crown		1		crn	Crown	armor	normal	helm		25	29	4	29	0	crn	xrn	urn
+unique	76	Duskdeep		1		fhl	Full Helm	armor	normal	helm		12	15	3	17	0	fhl	xhl	uhl
+unique	980	Equinox Visor		1		fhl	full helm	armor	normal	helm		12	15	3	20	0	fhl	xhl	uhl
+unique	979	Harpy's Call		1		fhl	full helm	armor	normal	helm		12	15	3	23	0	fhl	xhl	uhl
+unique	80	The Face of Horror		1		msk	Mask	armor	normal	helm		17	19	2	20	0	msk	xsk	usk
+unique	977	Barbazu's Smile		1		hlm	helm	armor	normal	helm		12	11	-1	20	0	hlm	xlm	ulm
+unique	75	Coif of Glory		1		hlm	Helm	armor	normal	helm		12	11	-1	14	0	hlm	xlm	ulm
+unique	978	Freedom's Facade		1		hlm	helm	armor	normal	helm		12	11	-1	16	0	hlm	xlm	ulm
+unique	983	Fool's Crest		1		ghm	great helm	armor	normal	helm		25	23	-2	30	0	ghm	xhm	uhm
+unique	984	Morning's Tears		1		ghm	great helm	armor	normal	helm		25	23	-2	28	0	ghm	xhm	uhm
+unique	981	Satyr's Speech		1		bhm	bone helm	armor	normal	helm		25	22	-3	27	0	bhm	xh9	uh9
+unique	987	Blindman's Bluff		1		msk	mask	armor	normal	helm		25	19	-6	28	0	msk	xsk	usk
+unique	975	Lie Spreader		1		skp	skull cap	armor	normal	helm		12	5	-7	16	0	skp	xkp	ukp
+unique	74	Tarnhelm		1		skp	Skull Cap	armor	normal	helm		12	5	-7	15	0	skp	xkp	ukp
+unique	1291	Eye of Heaven		1		dr4	Falcon Mask	armor	normal	pelt		12	20	8	19	15	dr4	dr9	dre
+unique	1287	Copperbite		1		dr2	Hawk Helm	armor	normal	pelt		1	8	7	8	6	dr2	dr7	drc
+unique	1293	Wraith Whisper		1		dr5	Spirit Mask	armor	normal	pelt		17	24	7	25	18	dr5	dra	drf
+unique	1289	Silverskin		1		dr3	Antlers	armor	normal	pelt		12	16	4	14	12	dr3	dr8	drd
+unique	1285	Blood Brother		1		dr1	Wolf Head	armor	normal	pelt		1	4	3	4	3	dr1	dr6	drb
+unique	1284	Morning After		1		dr1	wolf head	armor	normal	pelt		1	4	3	12	3	dr1	dr6	drb
+unique	1290	Voltar's Feather		1		dr4	falcon mask	armor	normal	pelt		17	20	3	24	15	dr4	dr9	dre
+unique	1292	Lion's Pride		1		dr5	spirit mask	armor	normal	pelt		25	24	-1	30	18	dr5	dra	drf
+unique	1288	Yamanda's Token		1		dr3	antlers	armor	normal	pelt		17	16	-1	21	12	dr3	dr8	drd
+unique	1286	Swift Descent		1		dr2	hawk helm	armor	normal	pelt		12	8	-4	16	6	dr2	dr7	drc
+unique	1267	Chimera's Chaos		1		ba5	Avenger Guard	armor	normal	phlm		12	24	12	26	18	ba5	baa	baf
+unique	1260	Pitykiller		1		ba2	fanged helm	armor	normal	phlm		1	8	7	11	6	ba2	ba7	bac
+unique	1263	Dragon Mask		1		ba3	Horned Helm	armor	normal	phlm		12	16	4	17	12	ba3	ba8	bad
+unique	1265	Blood Dancer		1		ba4	Assault Helmet	armor	normal	phlm		17	20	3	22	15	ba4	ba9	bae
+unique	1259	Chaos Kin		1		ba1	Jawbone Cap	armor	normal	phlm		1	4	3	6	3	ba1	ba6	bab
+unique	1258	Madman's Bluster		1		ba1	jawbone cap	armor	normal	phlm		1	4	3	12	3	ba1	ba6	bab
+unique	1262	Kygragond		1		ba3	horned helm	armor	normal	phlm		17	16	-1	23	12	ba3	ba8	bad
+unique	1266	Warsummoner		1		ba5	avenger guard	armor	normal	phlm		25	24	-1	31	18	ba5	baa	baf
+unique	1261	Darkhunger		1		ba2	Fanged Helm	armor	normal	phlm		12	8	-4	18	6	ba2	ba7	bac
+unique	1264	Invader's Glee		1		ba4	assault helm	armor	normal	phlm		25	20	-5	27	15	ba4	ba9	bae
+unique	102	Bverrit Keep		1		tow	Tower Shield	armor	normal	shie		12	22	10	19	0	tow	xow	uow
+unique	1035	Bigby's Crushing Fist		1		tow	tower shield	armor	normal	shie		17	22	5	25	0	tow	xow	uow
+unique	1037	Pathfinder		1		gts	gothic shield	armor	normal	shie		25	30	5	31	0	gts	xts	uts
+unique	1038	Shield of Osiris		1		gts	gothic shield	armor	normal	shie		25	30	5	29	0	gts	xts	uts
+unique	103	The Ward		1		gts	Gothic Shield	armor	normal	shie		25	30	5	26	0	gts	xts	uts
+unique	1025	Golgomere's Shield		1		sml	small shield	armor	normal	shie		1	5	4	14	0	sml	xml	uml
+unique	1026	Skein of Deceit		1		sml	small shield	armor	normal	shie		1	5	4	11	0	sml	xml	uml
+unique	97	Umbral Disk		1		sml	Small Shield	armor	normal	shie		1	5	4	9	0	sml	xml	uml
+unique	1033	Crest of Avalon		1		kit	kite shield	armor	normal	shie		12	15	3	24	0	kit	xit	uit
+unique	1034	Killhunger		1		kit	kite shield	armor	normal	shie		12	15	3	21	0	kit	xit	uit
+unique	101	Steelclash		1		kit	Kite Shield	armor	normal	shie		12	15	3	17	0	kit	xit	uit
+unique	99	Wall of the Eyeless		1		bsh	Bone Shield	armor	normal	shie		17	19	2	20	0	bsh	xsh	ush
+unique	1027	Crest of the Horned Society		1		lrg	large shield	armor	normal	shie		12	11	-1	19	0	lrg	xrg	urg
+unique	1032	Debt Finisher		1		spk	spiked shield	armor	normal	shie		12	11	-1	18	0	spk	xpk	upk
+unique	1028	Lepertouch		1		lrg	large shield	armor	normal	shie		12	11	-1	16	0	lrg	xrg	urg
+unique	98	Stormguild		1		lrg	Large Shield	armor	normal	shie		12	11	-1	13	0	lrg	xrg	urg
+unique	100	Swordback Hold		1		spk	Spiked Shield	armor	normal	shie		12	11	-1	15	0	spk	xpk	upk
+unique	1030	Cacophony		1		bsh	bone shield	armor	normal	shie		25	19	-6	24	0	bsh	xsh	ush
+unique	1029	Doom Hedge		1		bsh	bone shield	armor	normal	shie		25	19	-6	25	0	bsh	xsh	ush
+unique	1031	Fanged Shield		1		spk	spiked shield	armor	normal	shie		17	11	-6	22	0	spk	xpk	upk
+unique	1036	Knight's Dawn		1		tow	tower shield	armor	normal	shie		43	22	-21	45	0	tow	xow	uow
+unique	911	Obsidian Husk		1		fld	field plate	armor	normal	tors		12	28	16	21	0	fld	xld	uld
+unique	916	Greyhawk Dragon		1		aar	ancient armor	armor	normal	tors		25	40	15	34	0	aar	xar	uar
+unique	917	Killing Blow		1		aar	ancient armor	armor	normal	tors		25	40	15	30	0	aar	xar	uar
+unique	94	Silks of the Victor		1		aar	AncientArmor	armor	normal	tors		25	40	15	28	0	aar	xar	uar
+unique	93	Goldskin		1		ful	Full Plate Mail	armor	normal	tors		25	37	12	28	0	ful	xul	uul
+unique	915	Halcyon Shroud		1		ful	full plate mail	armor	normal	tors		25	37	12	28	0	ful	xul	uul
+unique	914	Kaz's Battle Armor		1		ful	full plate mail	armor	normal	tors		25	37	12	32	0	ful	xul	uul
+unique	910	Dreamscape		1		fld	field plate	armor	normal	tors		17	28	11	25	0	fld	xld	uld
+unique	91	Rockfleece		1		fld	Field Plate	armor	normal	tors		17	28	11	22	0	fld	xld	uld
+unique	95	Heavenly Garb		1		ltp	Light Plate	armor	normal	tors		25	35	10	29	0	ltp	xtp	utp
+unique	919	Madness of Chthulu		1		ltp	light plate	armor	normal	tors		25	35	10	30	0	ltp	xtp	utp
+unique	899	Steelflesh		1		rng	ring mail	armor	normal	tors		1	11	10	14	0	rng	xng	ung
+unique	918	Weightless Grace		1		ltp	light plate	armor	normal	tors		25	35	10	36	0	ltp	xtp	utp
+unique	904	Breastplate of Gond		1		brs	breast plate	armor	normal	tors		10	18	8	25	0	brs	xrs	urs
+unique	912	A Knight's Tale		1		gth	gothic plate	armor	normal	tors		25	32	7	30	0	gth	xth	uth
+unique	897	Gemini Coat		1		stu	studded leather	armor	normal	tors		1	8	7	12	0	stu	xtu	utu
+unique	902	Ghostly Chainmail		1		chn	chain mail	armor	normal	tors		8	15	7	23	0	chn	xhn	uhn
+unique	913	Golem's Gain		1		gth	gothic plate	armor	normal	tors		25	32	7	30	0	gth	xth	uth
+unique	92	Rattlecage		1		gth	Gothic Plate	armor	normal	tors		25	32	7	29	0	gth	xth	uth
+unique	900	Red Dragon Scales		1		scl	scale mail	armor	normal	tors		6	13	7	21	0	scl	xcl	ucl
+unique	895	Stinkshroud		1		hla	hard leather	armor	normal	tors		1	5	4	10	0	hla	xla	ula
+unique	89	Iceblink		1		spl	Splint Mail	armor	normal	tors		17	20	3	22	0	spl	xpl	upl
+unique	907	Russetfire		1		spl	splint mail	armor	normal	tors		17	20	3	22	0	spl	xpl	upl
+unique	87	Sparking Mail		1		chn	Chain Mail	armor	normal	tors		12	15	3	17	0	chn	xhn	uhn
+unique	906	Starsong		1		spl	splint mail	armor	normal	tors		17	20	3	26	0	spl	xpl	upl
+unique	903	Xanadu Dreams		1		chn	chain mail	armor	normal	tors		12	15	3	18	0	chn	xhn	uhn
+unique	82	Blinkbat's Form		1		lea	Leather Armor	armor	normal	tors		1	3	2	12	0	lea	xea	uea
+unique	893	JuJu Flame		1		lea	leather armor	armor	normal	tors		1	3	2	8	0	lea	xea	uea
+unique	892	Ogden's Shroud		1		lea	leather armor	armor	normal	tors		1	3	2	13	0	lea	xea	uea
+unique	86	Hawkmail		1		scl	Scale Mail	armor	normal	tors		12	13	1	15	0	scl	xcl	ucl
+unique	901	Mandrake's Bloom		1		scl	scale mail	armor	normal	tors		12	13	1	16	0	scl	xcl	ucl
+unique	88	Venom Ward		1		brs	Breast Plate	armor	normal	tors		17	18	1	20	0	brs	xrs	urs
+unique	908	Armor of Warmth		1		plt	plate mail	armor	normal	tors		25	24	-1	28	0	plt	xlt	ult
+unique	90	Boneflesh		1		plt	Plate Mail	armor	normal	tors		25	24	-1	26	0	plt	xlt	ult
+unique	909	Celestial Revelation		1		plt	plate mail	armor	normal	tors		25	24	-1	35	0	plt	xlt	ult
+unique	898	The Shadowed One		1		rng	ring mail	armor	normal	tors		12	11	-1	19	0	rng	xng	ung
+unique	896	Scarab of Protection		1		stu	studded leather	armor	normal	tors		12	8	-4	17	0	stu	xtu	utu
+unique	84	Twitchthroe		1		stu	Studded Leather	armor	normal	tors		12	8	-4	16	0	stu	xtu	utu
+unique	85	Darkglow		1		rng	Ring Mail	armor	normal	tors		17	11	-6	25	0	rng	xng	ung
+unique	894	Gloomform		1		hla	hard leather	armor	normal	tors		12	5	-7	15	0	hla	xla	ula
+unique	905	Shattering Blow		1		brs	breast plate	armor	normal	tors		25	18	-7	40	0	brs	xrs	urs
+unique	83	The Centurion		1		hla	Hard Leather	armor	normal	tors		12	5	-7	14	0	hla	xla	ula
+unique	81	Greyform		1		qui	Quilted Armor	armor	normal	tors		10	1	-9	7	0	qui	xui	uui
+unique	1159	Wintershock		1		amc	Grand Matron Bow	weapon	elite	abow		84	78	-6	87	58	am2	am7	amc
+unique	1158	Laurana's Elven Bow		1		amb	Matriarchal Bow	weapon	elite	abow		60	53	-7	73	39	am1	am6	amb
+unique	1160	Quicksilver		1		amc	Grand Matron Bow	weapon	elite	abow		85	78	-7	81	58	am2	am7	amc
+unique	1152	Heartpiercer		1		amc	Grand Matron Bow	weapon	elite	abow		90	78	-12	90	58	am2	am7	amc
+unique	335	Blood Raven's Charge		1		amb	matriarchal bow	weapon	elite	abow		81	53	-28	75	39	am1	am6	amb
+unique	1154	Abyssal Torment		1		amb	Matriarchal Bow	weapon	elite	abow		90	53	-37	90	39	am1	am6	amb
+unique	666	Kuo-Toa's Plague		1		amf	matriarchal javelin	weapon	elite	ajav	1wep	50	65	15	65	48	am5	ama	amf
+unique	341	Thunderstroke		1		amf	matriarchal javelin	weapon	elite	ajav	1wep	50	65	15	65	48	am5	ama	amf
+unique	1166	Pegasus Wing		1		amf	matriarchal javelin	weapon	elite	ajav	1wep	85	65	-20	80	48	am5	ama	amf
+unique	1176	Manticore's Retort		1		ame	Matriarchal Pike	weapon	elite	aspe		64	81	17	70	60	am4	am9	ame
+unique	319	Stoneraven		1		amd	matriarchal spear	weapon	elite	aspe		55	61	6	64	45	am3	am8	amd
+unique	1174	Valkyrie's Calling		1		amd	matriarchal spear	weapon	elite	aspe		64	61	-3	73	45	am3	am8	amd
+unique	1175	Amanda's Point		1		ame	matriarchal pike	weapon	elite	aspe		85	81	-4	80	60	am4	am9	ame
+unique	386	Cranebeak		1		7mp	war spike	weapon	elite	axe	1wep	50	79	29	63	59	mpi	9mp	7mp
+unique	317	Death Cleaver		1		7wa	berserker axe	weapon	elite	axe	1wep	70	85	15	70	64	wax	9wa	7wa
+unique	258	Messerschmidt's Reaver		1		7ga	Champion Axe	weapon	elite	axe	slam	70	82	12	70	61	gax	9ga	7ga
+unique	492	Heroes Welcome		1		7ga	champion axe	weapon	elite	axe	slam	75	82	7	79	61	gax	9ga	7ga
+unique	467	Frost Wyrm		1		7wa	berserker axe	weapon	elite	axe	1wep	80	85	5	84	64	wax	9wa	7wa
+unique	493	Nameless Horror		1		7gi	glorious axe	weapon	elite	axe	slam	80	85	5	84	66	gix	9gi	7gi
+unique	466	Elder Tojanida		1		7mp	war spike	weapon	elite	axe	1wep	75	79	4	80	59	mpi	9mp	7mp
+unique	491	Dyer's Eve		1		7bt	decapitator	weapon	elite	axe	slam	71	73	2	73	54	btx	9bt	7bt
+unique	318	Executioner's Justice		1		7gi	glorious axe	weapon	elite	axe	slam	83	85	2	85	66	gix	9gi	7gi
+unique	464	Moon Blade		1		7ax	Small Crescent	weapon	elite	axe	1wep	60	61	1	64	45	axe	9ax	7ax
+unique	465	Beholder		1		72a	ettin axe	weapon	elite	axe	1wep	72	70	-2	75	52	2ax	92a	72a
+unique	490	Shapeshifter		1		7ba	silver-edged axe	weapon	elite	axe	slam	68	65	-3	69	48	bax	9ba	7ba
+unique	297	Razor's Edge		1		7ha	tomahawk	weapon	elite	axe	1wep	60	54	-6	67	40	hax	9ha	7ha
+unique	257	Hellslayer		1		7bt	Decapitator	weapon	elite	axe	slam	80	73	-7	80	54	btx	9bt	7bt
+unique	463	Death Slaad		1		7ax	small crescent	weapon	elite	axe	1wep	69	61	-8	71	45	axe	9ax	7ax
+unique	462	Marilith Edge		1		7ha	tomahawk	weapon	elite	axe	1wep	64	54	-10	68	40	hax	9ha	7ha
+unique	489	Werewolf Slayer		1		7la	Feral Axe	weapon	elite	axe	slam	70	57	-13	77	42	lax	9la	7la
+unique	488	Woodland Beast		1		7la	feral axe	weapon	elite	axe	slam	70	57	-13	75	42	lax	9la	7la
+unique	327	Ethereal Edge		1		7ba	silver-edged axe	weapon	elite	axe	slam	82	65	-17	81	48	bax	9ba	7ba
+unique	334	Widowmaker		1		6sw	ward bow	weapon	elite	bow		60	80	20	65	60	swb	8sw	6sw
+unique	268	Eaglehorn		1		6l7	Crusader Bow	weapon	elite	bow		60	77	17	69	57	lbb	8l8	6l7
+unique	798	Adamantine Bow		1		6lw	hydra bow	weapon	elite	bow		70	85	15	80	63	lwb	8lw	6lw
+unique	791	Death Shade		1		6lb	Shadow Bow	weapon	elite	bow		50	63	13	60	47	lbw	8lb	6lb
+unique	795	Celestial Strike		1		6s7	Diamond Bow	weapon	elite	bow		60	72	12	67	54	sbb	8s8	6s7
+unique	793	Phantom Pegasus		1		6cb	Great Bow	weapon	elite	bow		56	68	12	64	51	cbw	8cb	6cb
+unique	787	Black Widow		1		6sb	Spider Bow	weapon	elite	bow		50	55	5	60	41	sbw	8sb	6sb
+unique	269	Windforce		1		6lw	Hydra Bow	weapon	elite	bow		80	85	5	85	63	lwb	8lw	6lw
+unique	796	Elflord's Victory		1		6l7	crusader bow	weapon	elite	bow		74	77	3	79	57	lbb	8l8	6l7
+unique	794	Nine Lives Stealer		1		6s7	diamond bow	weapon	elite	bow		71	72	1	77	54	sbb	8s8	6s7
+unique	786	Arachnid's Bite		1		6sb	spider bow	weapon	elite	bow		57	55	-2	65	41	sbw	8sb	6sb
+unique	1442	Harp of the Infernos		1		6cb	great bow	weapon	elite	bow		70	68	-2	80	51	cbw	8cb	6cb
+unique	790	Golgomere		1		6lb	shadow bow	weapon	elite	bow		66	63	-3	72	47	lbw	8lb	6lb
+unique	67	Hellclap		1		6sw	ward bow	weapon	elite	bow		85	80	-5	90	60	swb	8sw	6sw
+unique	797	Patron of Perversity		1		6sw	ward bow	weapon	elite	bow		85	80	-5	85	60	swb	8sw	6sw
+unique	776	Larissa's Aim		1		6l7	crusader bow	weapon	elite	bow		85	77	-8	85	57	lbb	8l8	6l7
+unique	789	Razor Strike		1		6hb	Blade Bow	weapon	elite	bow		70	60	-10	80	45	hbw	8hb	6hb
+unique	769	Final Flight		1		6s7	diamond bow	weapon	elite	bow		85	72	-13	86	54	sbb	8s8	6s7
+unique	754	Freedom's Flight		1		6lb	Shadow Bow	weapon	elite	bow		85	63	-22	89	47	lbw	8lb	6lb
+unique	788	Foxfire Leaf		1		6hb	blade bow	weapon	elite	bow		85	60	-25	89	45	hbw	8hb	6hb
+unique	772	Sadira		1		6hb	blade bow	weapon	elite	bow		85	60	-25	90	45	hbw	8hb	6hb
+unique	757	Carrion Wing		1		6sb	Spider Bow	weapon	elite	bow		85	55	-30	85	41	sbw	8sb	6sb
+unique	387	Nord's Tenderizer		1		7cl	truncheon	weapon	elite	club	1wep	65	52	-13	68	39	clb	9cl	7cl
+unique	579	Stirgi's Club		1		7cl	truncheon	weapon	elite	club	1wep	65	52	-13	70	39	clb	9cl	7cl
+unique	299	Demon Limb		1		7sp	tyrant club	weapon	elite	club	1wep	71	57	-14	75	42	spc	9sp	7sp
+unique	580	Rotbranch		1		7sp	tyrant club	weapon	elite	club	1wep	75	57	-18	82	42	spc	9sp	7sp
+unique	1355	Silent Shank		1		7xf	War Fist	weapon	elite	h2h2	1wep	43	68	25	55	51	axf	9xf	7xf
+unique	1359	Sin Sister		1		7tw	Runic Talons	weapon	elite	h2h2	1wep	60	81	21	75	60	btl	9tw	7tw
+unique	1360	Avalanche Strike		1		7qr	scissors suwayyah	weapon	elite	h2h2	1wep	70	85	15	80	64	skr	9qr	7qr
+unique	1352	Iniquity Razor		1		7ar	Suwayyah	weapon	elite	h2h2	1wep	45	59	14	55	44	ktr	9ar	7ar
+unique	1361	Torturer's Trust		1		7qr	Scissors Suwayyah	weapon	elite	h2h2	1wep	75	85	10	83	64	skr	9qr	7qr
+unique	311	Jade Talon		1		7wb	wrist sword	weapon	elite	h2h2	1wep	60	62	2	66	46	wrb	9wb	7wb
+unique	1351	Wakazashi		1		7ar	suwayyah	weapon	elite	h2h2	1wep	57	59	2	64	44	ktr	9ar	7ar
+unique	337	Shadow Killer		1		7cs	battle cestus	weapon	elite	h2h2	1wep	75	73	-2	78	54	ces	9cs	7cs
+unique	1358	Skaadi's Claws		1		7tw	runic talons	weapon	elite	h2h2	1wep	85	81	-4	88	60	btl	9tw	7tw
+unique	371	Firelizard's Talons		1		7lw	feral claws	weapon	elite	h2h2	1wep	84	78	-6	81	58	clw	9lw	7lw
+unique	1353	Biteblade		1		7lw	feral claws	weapon	elite	h2h2	1wep	85	78	-7	81	58	clw	9lw	7lw
+unique	1354	Nightwrath		1		7xf	war fist	weapon	elite	h2h2	1wep	75	68	-7	82	51	axf	9xf	7xf
+unique	1356	Flaming Fist		1		7cs	battle cestus	weapon	elite	h2h2	1wep	83	73	-10	84	54	ces	9cs	7cs
+unique	1357	Storm Talons		1		7wb	wrist sword	weapon	elite	h2h2	1wep	85	62	-23	85	46	wrb	9wb	7wb
+unique	1317	Cold of Winter		1		7ar	Suwayyah	weapon	elite	h2h2	1wep	85	59	-26	83	44	ktr	9ar	7ar
+unique	310	Stone Crusher		1		7wh	legendary mallet	weapon	elite	hamm	1wep	70	82	12	75	61	whm	9wh	7wh
+unique	388	Earth Shifter		1		7gm	thunder maul	weapon	elite	hamm	slam	77	85	8	85	65	gma	9gm	7gm
+unique	260	Schaefer's Hammer		1		7wh	Legendary Mallet	weapon	elite	hamm	1wep	83	82	-1	85	61	whm	9wh	7wh
+unique	340	Windhammer		1		7m7	ogre maul	weapon	elite	hamm	slam	81	69	-12	83	51	mau	9m9	7m7
+unique	593	Astral Dreadnought		1		7m7	ogre maul	weapon	elite	hamm	slam	85	69	-16	87	51	mau	9m9	7m7
+unique	343	Demon's Arch		1		7s7	balrog spear	weapon	elite	jave	1wep	55	71	16	68	53	ssp	9s9	7s7
+unique	858	Arc of the Rainbow		1		7ja	Hyperion Javelin	weapon	elite	jave	1wep	43	54	11	55	40	jav	9ja	7ja
+unique	859	Woundripper		1		7pi	stygian pilum	weapon	elite	jave	1wep	52	62	10	61	46	pil	9pi	7pi
+unique	389	Wraith Flight		1		7gl	ghost glaive	weapon	elite	jave	1wep	70	79	9	76	59	glv	9gl	7gl
+unique	323	Gargoyle's Bite		1		7ts	winged harpoon	weapon	elite	jave	1wep	80	85	5	82	65	tsp	9ts	7ts
+unique	861	Clockwork Horror		1		7s7	balrog spear	weapon	elite	jave	1wep	69	71	2	77	53	ssp	9s9	7s7
+unique	860	Summerstrike		1		7pi	Stygian Pilum	weapon	elite	jave	1wep	60	62	2	70	46	pil	9pi	7pi
+unique	862	Invisible Stalker		1		7gl	ghost glaive	weapon	elite	jave	1wep	85	79	-6	85	59	glv	9gl	7gl
+unique	857	Jaguar's Claw		1		7ja	hyperion javelin	weapon	elite	jave	1wep	62	54	-8	70	40	jav	9ja	7ja
+unique	307	Fleshripper		1		7kr	fanged knife	weapon	elite	knif	1wep	65	83	18	68	62	kri	9kr	7kr
+unique	641	Elven Mystral		1		7di	mithral point	weapon	elite	knif	1wep	55	70	15	74	52	dir	9di	7di
+unique	642	Fall Of Myth Drannor		1		7di	Mithral Point	weapon	elite	knif	1wep	55	70	15	62	52	dir	9di	7di
+unique	336	Ghostflame		1		7bl	legend spike	weapon	elite	knif	1wep	70	85	15	70	66	bld	9bl	7bl
+unique	417	Bloodpact Shard		1		7di	mithril point	weapon	elite	knif	1wep	60	70	10	67	52	dir	9di	7di
+unique	173	Blackbog's Sharp		1		7kr	fanged knife	weapon	elite	knif	1wep	75	83	8	80	62	kri	9kr	7kr
+unique	643	Chaos Wail		1		7kr	fanged knife	weapon	elite	knif	1wep	75	83	8	80	62	kri	9kr	7kr
+unique	265	Wizardspike		1		7dg	Bone Knife	weapon	elite	knif	1wep	50	58	8	61	43	dgr	9dg	7dg
+unique	640	Forbidden Rites		1		7dg	bone knife	weapon	elite	knif	1wep	55	58	3	70	43	dgr	9dg	7dg
+unique	309	Horizon's Tornado		1		7fl	scourge	weapon	elite	mace	1wep	72	76	4	64	57	fla	9fl	7fl
+unique	608	Soulgatherer		1		7mt	devil star	weapon	elite	mace	1wep	72	70	-2	77	52	mst	9mt	7mt
+unique	606	Star Dust		1		7ma	reinforced mace	weapon	elite	mace	1wep	65	63	-2	75	47	mac	9ma	7ma
+unique	607	Fist of Lachdanan		1		7ma	Reinforced Mace	weapon	elite	mace	1wep	70	63	-7	80	47	mac	9ma	7ma
+unique	363	Stormlash		1		7fl	scourge	weapon	elite	mace	1wep	86	76	-10	82	57	fla	9fl	7fl
+unique	1201	Unity of Mind		1		obe	vortex orb	weapon	elite	orb	1wep	65	84	19	73	63	ob4	ob9	obe
+unique	1200	Soul Of The Tanar'Ri		1		obd	Demon Heart	weapon	elite	orb	1wep	60	75	15	68	56	ob3	ob8	obd
+unique	1202	Athena's Tirade		1		obe	Vortex Orb	weapon	elite	orb	1wep	72	84	12	78	63	ob4	ob9	obe
+unique	1199	Star of David		1		obd	demon heart	weapon	elite	orb	1wep	63	75	12	72	56	ob3	ob8	obd
+unique	1198	Utterance of Power		1		obc	eldritch orb	weapon	elite	orb	1wep	56	67	11	65	50	ob2	ob7	obc
+unique	1440	Globe of Obstruction		1		obb	heavenly stone	weapon	elite	orb	1wep	50	59	9	50	44	ob1	ob6	obb
+unique	1203	Oracle's Riddle		1		obf	dimensional shard	weapon	elite	orb	1wep	80	85	5	84	66	ob5	oba	obf
+unique	357	Death's Fathom		1		obf	dimensional shard	weapon	elite	orb	1wep	81	85	4	81	66	ob5	oba	obf
+unique	370	Eschuta's temper		1		obc	eldritch orb	weapon	elite	orb	1wep	70	67	-3	75	50	ob2	ob7	obc
+unique	1196	Star of Bethlehem		1		obb	heavenly stone	weapon	elite	orb	1wep	80	59	-21	80	44	ob1	ob6	obb
+unique	1197	Haven of Light		1		obb	heavenly stone	weapon	elite	orb	1wep	85	59	-26	81	44	ob1	ob6	obb
+unique	267	Stormspire		1		7wc	Giant Thresher	weapon	elite	pole	slam	60	85	25	75	66	wsc	9wc	7wc
+unique	702	Dreadfear		1		7h7	Great Poleaxe	weapon	elite	pole	slam	73	84	11	77	63	hal	9h9	7h7
+unique	696	Ogre Chieftain's Law		1		7o7	ogre axe	weapon	elite	pole	slam	55	60	5	70	45	bar	9b7	7o7
+unique	700	Gatecleaver		1		7pa	cryptic axe	weapon	elite	pole	slam	75	79	4	79	59	pax	9pa	7pa
+unique	698	Kydra's Judgement		1		7vo	Colossus Voulge	weapon	elite	pole	slam	60	64	4	70	48	vou	9vo	7vo
+unique	697	Titan's Reach		1		7vo	colossus voulge	weapon	elite	pole	slam	60	64	4	75	48	vou	9vo	7vo
+unique	329	The Reaper's Toll		1		7s8	thresher	weapon	elite	pole	slam	70	71	1	75	53	scy	9s8	7s8
+unique	699	Winter Solstice		1		7s8	thresher	weapon	elite	pole	slam	70	71	1	75	53	scy	9s8	7s8
+unique	701	Cloud Giant's Axe		1		7h7	great poleaxe	weapon	elite	pole	slam	85	84	-1	87	63	hal	9h9	7h7
+unique	301	Tomb Reaver		1		7pa	cryptic axe	weapon	elite	pole	slam	86	79	-7	84	59	pax	9pa	7pa
+unique	390	Bonehew		1		7o7	ogre axe	weapon	elite	pole	slam	75	60	-15	80	45	bar	9b7	7o7
+unique	383	Astreon's Iron Ward		1		7ws	caduceus	weapon	elite	scep	1wep	70	85	15	75	66	wsp	9ws	7ws
+unique	623	Wrath of the Seraphim		1		7ws	caduceus	weapon	elite	scep	1wep	80	85	5	86	66	wsp	9ws	7ws
+unique	622	Wrath Of Heaven		1		7qs	Seraph Rod	weapon	elite	scep	1wep	72	76	4	77	57	gsc	9qs	7qs
+unique	621	Celestial Judgment		1		7qs	seraph rod	weapon	elite	scep	1wep	78	76	-2	81	57	gsc	9qs	7qs
+unique	374	Heaven's Light		1		7sc	mighty scepter	weapon	elite	scep	1wep	69	62	-7	75	46	scp	9sc	7sc
+unique	392	The Redeemer		1		7sc	mighty scepter	weapon	elite	scep	1wep	85	62	-23	85	46	scp	9sc	7sc
+unique	345	Steel Pillar		1		7p7	war pike	weapon	elite	spea		60	85	25	69	66	pik	9p9	7p7
+unique	667	Breath Of Fire		1		7tr	Stygian Pike	weapon	elite	spea		50	66	16	58	49	tri	9tr	7tr
+unique	670	Spirit Light		1		7st	Ghost Spear	weapon	elite	spea		68	83	15	72	62	spt	9st	7st
+unique	665	Ice Mephit		1		7sr	hyperion spear	weapon	elite	spea		54	58	4	60	43	spr	9sr	7sr
+unique	671	Prancing Pike		1		7p7	war pike	weapon	elite	spea		86	85	-1	86	66	pik	9p9	7p7
+unique	326	Viperfork		1		7br	war fork	weapon	elite	spea		75	74	-1	81	55	brn	9br	7br
+unique	669	Spirit of Lachdanan		1		7st	ghost spear	weapon	elite	spea		85	83	-2	90	62	spt	9st	7st
+unique	668	Imperial Passion		1		7br	mancatcher	weapon	elite	spea		85	74	-11	85	55	brn	9br	7br
+unique	646	Zealot's Branch		1		7tr	Stygian Pike	weapon	elite	spea		85	66	-19	85	49	tri	9tr	7tr
+unique	385	Arioc's Needle		1		7sr	hyperion spear	weapon	elite	spea		85	58	-27	81	43	spr	9sr	7sr
+unique	728	Gorgon Strength		1		6ls	Stalagmite	weapon	elite	staf	slam	46	66	20	55	49	lst	8ls	6ls
+unique	726	Jadrik's Torment		1		6ss	Walking Stick	weapon	elite	staf	slam	40	58	18	49	43	sst	8ss	6ss
+unique	391	Ondal's Wisdom		1		6cs	elder staff	weapon	elite	staf	slam	60	74	14	66	55	cst	8cs	6cs
+unique	731	Sanctuary		1		6bs	Shillelagh	weapon	elite	staf	slam	70	83	13	76	62	bst	8bs	6bs
+unique	730	Summoner's Risk		1		6bs	Shillelagh	weapon	elite	staf	slam	73	83	10	79	62	bst	8bs	6bs
+unique	708	Everdusk		1		6ws	archon staff	weapon	elite	staf	slam	79	85	6	80	66	wst	8ws	6ws
+unique	727	Ogden's Wisdom		1		6ls	stalagmite	weapon	elite	staf	slam	63	66	3	69	49	lst	8ls	6ls
+unique	729	Light of Ra		1		6cs	elder staff	weapon	elite	staf	slam	75	74	-1	80	55	cst	8cs	6cs
+unique	325	Mang Song's Lesson		1		6ws	archon staff	weapon	elite	staf	slam	86	85	-1	82	66	wst	8ws	6ws
+unique	725	Road to Perdition		1		6ss	walking stick	weapon	elite	staf	slam	59	58	-1	67	43	sst	8ss	6ss
+unique	537	Call Of Heroes		1		7wd	Mythical Sword	weapon	elite	swor	1wep	60	85	25	70	66	wsd	9wd	7wd
+unique	368	Frostwind		1		7ls	cryptic sword	weapon	elite	swor	1wep	60	82	22	70	61	lsd	9ls	7ls
+unique	532	Kraken's Lash		1		7fc	Hydra Edge	weapon	elite	swor	1wep	50	69	19	57	51	flc	9fc	7fc
+unique	531	Megalodon's Bite		1		7fc	hydra edge	weapon	elite	swor	1wep	50	69	19	65	51	flc	9fc	7fc
+unique	292	Bloodmoon		1		7sb	elegant blade	weapon	elite	swor	1wep	45	63	18	61	47	sbr	9sb	7sb
+unique	533	Deathfriend		1		7bs	conquest sword	weapon	elite	swor	1wep	60	78	18	70	58	bsd	9bs	7bs
+unique	534	King's Bounty		1		7bs	Conquest Sword	weapon	elite	swor	1wep	60	78	18	74	58	bsd	9bs	7bs
+unique	262	Lightsabre		1		7cr	Phase Blade	weapon	elite	swor	1wep	55	73	18	58	54	crs	9cr	7cr
+unique	528	Rabbit Slayer		1		7ss	Falcata	weapon	elite	swor	1wep	40	56	16	49	42	ssd	9ss	7ss
+unique	559	Demand for Justice		1		7gd	colossus blade	weapon	elite	swor	slam	70	85	15	75	63	gsd	9gd	7gd
+unique	563	Blade Of Mythos		1		72h	Legend Sword	weapon	elite	swor	slam	45	59	14	54	44	2hs	92h	72h
+unique	503	Irksome Edge		1		7cr	phase blade	weapon	elite	swor	1wep	60	73	13	65	54	crs	9cr	7cr
+unique	263	Doombringer		1		7b7	Champion Sword	weapon	elite	swor	slam	65	77	12	69	57	bsw	9b9	7b7
+unique	529	Badger's Bite		1		7sm	ataghan	weapon	elite	swor	1wep	50	61	11	64	45	scm	9sm	7sm
+unique	293	Djinn Slayer		1		7sm	ataghan	weapon	elite	swor	1wep	50	61	11	65	45	scm	9sm	7sm
+unique	356	Flamebellow		1		7gs	balrog blade	weapon	elite	swor	slam	60	71	11	71	53	gis	9gs	7gs
+unique	566	Splitting Skulls		1		7gs	balrog blade	weapon	elite	swor	slam	60	71	11	77	53	gis	9gs	7gs
+unique	565	Vorpal Blade		1		7cm	Highland Blade	weapon	elite	swor	slam	56	66	10	60	49	clm	9cm	7cm
+unique	562	Dragon's Breach		1		72h	legend sword	weapon	elite	swor	slam	50	59	9	65	44	2hs	92h	72h
+unique	569	Holy Avenger		1		7fb	Colossus Sword	weapon	elite	swor	slam	71	80	9	75	60	flb	9fb	7fb
+unique	527	Celestial Lion		1		7ss	falcata	weapon	elite	swor	1wep	50	56	6	60	42	ssd	9ss	7ss
+unique	530	Wight's Touch		1		7sb	elegant blade	weapon	elite	swor	1wep	60	63	3	60	47	sbr	9sb	7sb
+unique	536	Fury of the Owlbear		1		7wd	mythical sword	weapon	elite	swor	1wep	83	85	2	87	66	wsd	9wd	7wd
+unique	570	Grandmaster's Glory		1		7gd	colossus blade	weapon	elite	swor	slam	83	85	2	87	63	gsd	9gd	7gd
+unique	567	Deadly Hunter		1		7b7	champion sword	weapon	elite	swor	slam	76	77	1	80	57	bsw	9b9	7b7
+unique	535	Rhinoceros Strength		1		7ls	cryptic sword	weapon	elite	swor	1wep	83	82	-1	85	61	lsd	9ls	7ls
+unique	564	Blade of Conan		1		7cm	highland blade	weapon	elite	swor	slam	70	66	-4	75	49	clm	9cm	7cm
+unique	1471	Harrogaths Last Stand		1		7fb	colossus sword	weapon	elite	swor	slam	85	80	-5	92	60	flb	9fb	7fb
+unique	1473	El Druin		1		7gs	balrog blade	weapon	elite	swor	slam	80	71	-9	85	53	gis	9gs	7gs
+unique	415	Dreadfang		1		72h	legend sword	weapon	elite	swor	slam	69	59	-10	61	44	2hs	92h	72h
+unique	304	Azurewrath		1		7cr	phase blade	weapon	elite	swor	1wep	85	73	-12	85	54	crs	9cr	7cr
+unique	554	Thunderclap		1		72h	legend sword	weapon	elite	swor	slam	85	59	-26	81	44	2hs	92h	72h
+unique	324	Lacerator		1		7b8	winged axe	weapon	elite	taxe	1wep	74	80	6	80	60	bal	9b8	7b8
+unique	875	Golden Wyndlass		1		7b8	winged axe	weapon	elite	taxe	1wep	85	80	-5	85	60	bal	9b8	7b8
+unique	874	Winged Serpent		1		7ta	flying axe	weapon	elite	taxe	1wep	72	56	-16	77	42	tax	9ta	7ta
+unique	338	Gimmershred		1		7ta	flying axe	weapon	elite	taxe	1wep	74	56	-18	80	42	tax	9ta	7ta
+unique	889	Frostbite Shard		1		7bk	winged knife	weapon	elite	tkni	1wep	75	77	2	80	57	bkf	9bk	7bk
+unique	888	Shard of the North Star		1		7tk	flying knife	weapon	elite	tkni	1wep	70	64	-6	75	48	tkf	9tk	7tk
+unique	295	Warshrike		1		7bk	winged knife	weapon	elite	tkni	1wep	83	77	-6	75	57	bkf	9bk	7bk
+unique	879	Butcher's Paring Knives		1		7bk	winged knife	weapon	elite	tkni	1wep	85	77	-8	80	57	bkf	9bk	7bk
+unique	882	Swarming Blades		1		7tk	flying knife	weapon	elite	tkni	1wep	80	64	-16	80	48	tkf	9tk	7tk
+unique	887	Fallen Glory		1		7tk	flying knife	weapon	elite	tkni	1wep	85	64	-21	80	48	tkf	9tk	7tk
+unique	302	Death's Web1		1		7gw	unearthed wand	weapon	elite	wand	1wep	60	86	26	70	64	gwn	9gw	7gw
+unique	753	Pull of Darkness		1		7gw	unearthed wand	weapon	elite	wand	1wep	70	86	16	70	64	gwn	9gw	7gw
+unique	749	Darkmantle		1		7wn	Polished Wand	weapon	elite	wand	1wep	40	55	15	50	41	wnd	9wn	7wn
+unique	751	Spectral Image		1		7yw	Ghost Wand	weapon	elite	wand	1wep	60	65	5	65	48	ywn	9yw	7yw
+unique	752	Vengeance of the Wronged		1		7bw	lich wand	weapon	elite	wand	1wep	72	75	3	79	56	bwn	9bw	7bw
+unique	750	Chorus of the Cursed		1		7yw	ghost wand	weapon	elite	wand	1wep	66	65	-1	73	48	ywn	9yw	7yw
+unique	748	Voice of Reason		1		7wn	polished wand	weapon	elite	wand	1wep	60	55	-5	68	41	wnd	9wn	7wn
+unique	354	Boneshade		1		7bw	lich wand	weapon	elite	wand	1wep	85	75	-10	83	56	bwn	9bw	7bw
+unique	819	Doubleshot Machine		1		6lx	Pellet Bow	weapon	elite	xbow		45	57	12	55	42	lxb	8lx	6lx
+unique	821	Grey Render		1		6mx	Gorgon Crossbow	weapon	elite	xbow		56	67	11	64	50	mxb	8mx	6mx
+unique	296	Gut Siphon		1		6rx	demon crossbow	weapon	elite	xbow		80	84	4	80	63	rxb	8rx	6rx
+unique	822	Bluebeard		1		6hx	colossus crossbow	weapon	elite	xbow		74	75	1	79	56	hxb	8hx	6hx
+unique	331	Hellrack		1		6hx	colossus crossbow	weapon	elite	xbow		74	75	1	76	56	hxb	8hx	6hx
+unique	823	Thor's Bolt		1		6rx	demon crossbow	weapon	elite	xbow		85	84	-1	85	63	rxb	8rx	6rx
+unique	820	Wightslayer		1		6mx	gorgon crossbow	weapon	elite	xbow		68	67	-1	74	50	mxb	8mx	6mx
+unique	818	Stoneblaster		1		6lx	pellet bow	weapon	elite	xbow		59	57	-2	67	42	lxb	8lx	6lx
+unique	1157	The Four Winds		1		am7	ceremonial bow	weapon	exceptional	abow		30	47	17	40	35	am2	am7	amc
+unique	1153	Brightmangler		1		am6	ashwood bow	weapon	exceptional	abow		25	39	14	40	29	am1	am6	amb
+unique	1155	Windrunner		1		am6	ashwood bow	weapon	exceptional	abow		25	39	14	33	29	am1	am6	amb
+unique	1156	Distant Thunder		1		am7	ceremonial bow	weapon	exceptional	abow		35	47	12	45	35	am2	am7	amc
+unique	285	Lycander's Aim		1		am7	Ceremonial Bow	weapon	exceptional	abow		40	47	7	42	35	am2	am7	amc
+unique	1164	Lady in Waiting		1		ama	ceremonial javelin	weapon	exceptional	ajav	1wep	40	35	-5	60	26	am5	ama	amf
+unique	1171	Vile Temptress		1		am8	ceremonial spear	weapon	exceptional	aspe		24	43	19	35	32	am3	am8	amd
+unique	1172	Silverdawn		1		am8	ceremonial spear	weapon	exceptional	aspe		25	43	18	33	32	am3	am8	amd
+unique	286	Lycander's Flank		1		am9	Ceremonial Pike	weapon	exceptional	aspe		35	51	16	42	38	am4	am9	ame
+unique	1173	Murder's Mistress		1		am9	ceremonial pike	weapon	exceptional	aspe		35	51	16	50	38	am4	am9	ame
+unique	141	The Minotaur1		1		9gi	Ancient Axe	weapon	exceptional	axe	slam	40	51	11	45	25	gix	9gi	7gi
+unique	137	Warlord's Trust		1		9la	Military Axe	weapon	exceptional	axe	slam	25	34	9	35	22	lax	9la	7la
+unique	136	Guardian Naga		1		9wa	Naga	weapon	exceptional	axe	1wep	40	48	8	48	25	wax	9wa	7wa
+unique	138	Spellsteel		1		9ba	Bearded Axe	weapon	exceptional	axe	slam	30	38	8	39	25	bax	9ba	7ba
+unique	140	Boneslayer Blade		1		9ga	Gothic Axe	weapon	exceptional	axe	slam	40	46	6	42	25	gax	9ga	7ga
+unique	132	Coldkill		1		9ha	Hatchet	weapon	exceptional	axe	1wep	25	31	6	36	19	hax	9ha	7ha
+unique	453	Pure Rancor		1		9ha	hatchet	weapon	exceptional	axe	1wep	25	31	6	38	19	hax	9ha	7ha
+unique	133	Butcher's Pupil		1		9ax	Cleaver	weapon	exceptional	axe	1wep	30	34	4	39	22	axe	9ax	7ax
+unique	479	Threat of Storms		1		9la	military axe	weapon	exceptional	axe	slam	30	34	4	40	22	lax	9la	7la
+unique	458	Cornugon		1		9mp	crowbill	weapon	exceptional	axe	1wep	40	43	3	53	25	mpi	9mp	7mp
+unique	135	Pompeii's Wrath		1		9mp	Crowbill	weapon	exceptional	axe	1wep	40	43	3	45	25	mpi	9mp	7mp
+unique	485	Tonstrike		1		9ga	gothic axe	weapon	exceptional	axe	slam	43	46	3	50	25	gax	9ga	7ga
+unique	482	Ravid's Bite		1		9bt	tabar	weapon	exceptional	axe	slam	40	42	2	47	25	btx	9bt	7bt
+unique	139	Stormrider		1		9bt	Tabar	weapon	exceptional	axe	slam	40	42	2	41	25	btx	9bt	7bt
+unique	452	Bloody Scalp		1		9ha	hatchet	weapon	exceptional	axe	1wep	30	31	1	44	19	hax	9ha	7ha
+unique	487	Mythslayer		1		9gi	ancient axe	weapon	exceptional	axe	slam	50	51	1	58	25	gix	9gi	7gi
+unique	486	Ogre's Breath		1		9gi	ancient axe	weapon	exceptional	axe	slam	50	51	1	52	25	gix	9gi	7gi
+unique	456	Cryohydra		1		92a	twin axe	weapon	exceptional	axe	1wep	40	39	-1	56	25	2ax	92a	72a
+unique	457	Harvest of Souls		1		92a	twin axe	weapon	exceptional	axe	1wep	40	39	-1	50	25	2ax	92a	72a
+unique	134	Islestrike		1		92a	Twin Axe	weapon	exceptional	axe	1wep	40	39	-1	43	25	2ax	92a	72a
+unique	483	Spirit Naga		1		9bt	tabar	weapon	exceptional	axe	slam	43	42	-1	54	25	btx	9bt	7bt
+unique	461	Antics of the Jester		1		9wa	naga	weapon	exceptional	axe	1wep	50	48	-2	57	25	wax	9wa	7wa
+unique	481	Grandiose Dreams		1		9ba	bearded axe	weapon	exceptional	axe	slam	40	38	-2	44	25	bax	9ba	7ba
+unique	484	Brittlequick		1		9ga	gothic axe	weapon	exceptional	axe	slam	50	46	-4	59	25	gax	9ga	7ga
+unique	480	Dwarven Honor		1		9ba	bearded axe	weapon	exceptional	axe	slam	43	38	-5	51	25	bax	9ba	7ba
+unique	455	Edge of Forever		1		9ax	cleaver	weapon	exceptional	axe	1wep	40	34	-6	49	22	axe	9ax	7ax
+unique	454	Slayer of Trents		1		9ax	cleaver	weapon	exceptional	axe	1wep	40	34	-6	45	22	axe	9ax	7ax
+unique	478	Sunblighter		1		9la	military axe	weapon	exceptional	axe	slam	40	34	-6	45	22	lax	9la	7la
+unique	460	Couatl		1		9wa	naga	weapon	exceptional	axe	1wep	55	48	-7	65	25	wax	9wa	7wa
+unique	197	Magewrath		1		8sw	Rune Bow	weapon	exceptional	bow		30	49	19	43	25	swb	8sw	6sw
+unique	195	Witchwild String		1		8s8	Short Siege Bow	weapon	exceptional	bow		25	43	18	39	25	sbb	8s8	6s7
+unique	194	Endlesshail		1		8cb	Double Bow	weapon	exceptional	bow		25	39	14	36	25	cbw	8cb	6cb
+unique	777	Ranger's Path		1		8cb	double bow	weapon	exceptional	bow		25	39	14	42	25	cbw	8cb	6cb
+unique	196	Cliffkiller		1		8l8	Long Siege Bow	weapon	exceptional	bow		35	46	11	41	25	lbb	8l8	6l7
+unique	775	Bow of the Dead		1		8lb	cedar bow	weapon	exceptional	bow		25	35	10	35	23	lbw	8lb	6lb
+unique	193	Kuko Shakaku		1		8lb	CedarBow	weapon	exceptional	bow		25	35	10	33	23	lbw	8lb	6lb
+unique	198	Goldstrike Arch		1		8lw	Gothic Bow	weapon	exceptional	bow		43	52	9	55	25	lwb	8lw	6lw
+unique	783	Remorhaz		1		8sw	rune bow	weapon	exceptional	bow		40	49	9	50	25	swb	8sw	6sw
+unique	781	Crimson Crusade		1		8l8	long siege bow	weapon	exceptional	bow		38	46	8	48	25	lbb	8l8	6l7
+unique	785	Harper's Call		1		8lw	gothic bow	weapon	exceptional	bow		44	52	8	53	25	lwb	8lw	6lw
+unique	773	Iceweaver		1		8hb	razor bow	weapon	exceptional	bow		25	33	8	37	21	hbw	8hb	6hb
+unique	779	Pride's Paradox		1		8s8	short siege bow	weapon	exceptional	bow		35	43	8	45	25	sbb	8s8	6s7
+unique	192	Riphook		1		8hb	Razor Bow	weapon	exceptional	bow		25	33	8	31	21	hbw	8hb	6hb
+unique	771	Dead World		1		8sb	edge bow	weapon	exceptional	bow		23	30	7	35	18	sbw	8sb	6sb
+unique	774	Chillwind		1		8lb	cedarbow	weapon	exceptional	bow		30	35	5	49	23	lbw	8lb	6lb
+unique	191	Skystrike		1		8sb	Edge Bow	weapon	exceptional	bow		25	30	5	28	18	sbw	8sb	6sb
+unique	770	Teldicia's Sting		1		8sb	edge bow	weapon	exceptional	bow		25	30	5	44	18	sbw	8sb	6sb
+unique	782	Dune Runner		1		8sw	rune bow	weapon	exceptional	bow		45	49	4	56	25	swb	8sw	6sw
+unique	780	Heartseeker		1		8l8	long siege bow	weapon	exceptional	bow		45	46	1	54	25	lbb	8l8	6l7
+unique	778	Hailstrike		1		8s8	short siege bow	weapon	exceptional	bow		45	43	-2	47	25	sbb	8s8	6s7
+unique	784	Ghost Mount		1		8lw	gothic bow	weapon	exceptional	bow		55	52	-3	59	25	lwb	8lw	6lw
+unique	146	Dark Clan Crusher		1		9cl	Cudgel	weapon	exceptional	club	1wep	17	30	13	29	18	clb	9cl	7cl
+unique	150	Fleshrender		1		9sp	Barbed Club	weapon	exceptional	club	1wep	25	32	7	38	20	spc	9sp	7sp
+unique	576	Gladiator's Strike		1		9cl	cudgel	weapon	exceptional	club	1wep	25	30	5	40	18	clb	9cl	7cl
+unique	578	Eater of Souls		1		9sp	barbed club	weapon	exceptional	club	1wep	36	32	-4	46	20	spc	9sp	7sp
+unique	575	Dawn of Skeon		1		9cl	cudgel	weapon	exceptional	club	1wep	35	30	-5	50	18	clb	9cl	7cl
+unique	577	Umbral's Bat		1		9sp	barbed club	weapon	exceptional	club	1wep	43	32	-11	59	20	spc	9sp	7sp
+unique	1338	Heat of Summer		1		9xf	fascia	weapon	exceptional	h2h	1wep	25	36	11	43	27	axf	9xf	7xf
+unique	1337	Razor Knuckle		1		9xf	fascia	weapon	exceptional	h2h	1wep	25	36	11	45	27	axf	9xf	7xf
+unique	1339	Scarab Cleaver		1		9xf	Fascia	weapon	exceptional	h2h	1wep	25	36	11	36	27	axf	9xf	7xf
+unique	1336	Dusk Ray		1		9wb	Wrist Spike	weapon	exceptional	h2h	1wep	25	32	7	32	24	wrb	9wb	7wb
+unique	1335	Pleasures of the Perverse		1		9wb	wrist spike	weapon	exceptional	h2h	1wep	25	32	7	41	24	wrb	9wb	7wb
+unique	1333	Corpseflayer		1		9ar	Quhab	weapon	exceptional	h2h	1wep	25	28	3	30	21	ktr	9ar	7ar
+unique	1331	Key to Hell		1		9ar	quhab	weapon	exceptional	h2h	1wep	25	28	3	40	21	ktr	9ar	7ar
+unique	1332	Storm Demon's Glare		1		9ar	quhab	weapon	exceptional	h2h	1wep	25	28	3	37	21	ktr	9ar	7ar
+unique	1334	Sabertooth		1		9wb	wrist spike	weapon	exceptional	h2h	1wep	46	32	-14	56	24	wrb	9wb	7wb
+unique	1341	Chi Strike		1		9cs	hand scythe	weapon	exceptional	h2h2	1wep	25	41	16	30	30	ces	9cs	7cs
+unique	1342	Slithertongue		1		9cs	Hand Scythe	weapon	exceptional	h2h2	1wep	25	41	16	38	30	ces	9cs	7cs
+unique	1350	Glitterkill		1		9qr	Scissors Quhab	weapon	exceptional	h2h2	1wep	39	54	15	49	40	skr	9qr	7qr
+unique	1344	Shadowy Places		1		9lw	greater claws	weapon	exceptional	h2h2	1wep	30	45	15	45	33	clw	9lw	7lw
+unique	1345	Werewolf Talons		1		9lw	Greater Claws	weapon	exceptional	h2h2	1wep	30	45	15	40	33	clw	9lw	7lw
+unique	1343	Wight Claw		1		9lw	greater claws	weapon	exceptional	h2h2	1wep	30	45	15	40	33	clw	9lw	7lw
+unique	1340	Full Suffering		1		9cs	hand scythe	weapon	exceptional	h2h2	1wep	30	41	11	50	30	ces	9cs	7cs
+unique	1347	Adamantine Razors		1		9tw	greater talons	weapon	exceptional	h2h2	1wep	40	50	10	50	37	btl	9tw	7tw
+unique	289	Bartuc's Cut-Throat		1		9tw	Runic Talons	weapon	exceptional	h2h2	1wep	40	50	10	42	37	btl	9tw	7tw
+unique	1346	Dark Nemesis		1		9tw	greater talons	weapon	exceptional	h2h2	1wep	40	50	10	50	37	btl	9tw	7tw
+unique	1349	Fearsome Rumors		1		9qr	scissors quhab	weapon	exceptional	h2h2	1wep	44	54	10	54	40	skr	9qr	7qr
+unique	1348	Path of the Nightwalker		1		9qr	scissors quhab	weapon	exceptional	h2h2	1wep	55	54	-1	70	40	skr	9qr	7qr
+unique	156	The Gavel of Pain		1		9gm	Martel de Fer	weapon	exceptional	hamm	slam	33	53	20	45	25	gma	9gm	7gm
+unique	154	Earthshaker		1		9wh	Battle Hammer	weapon	exceptional	hamm	1wep	30	48	18	43	25	whm	9wh	7wh
+unique	155	Bloodtree Stump		1		9m9	War Club	weapon	exceptional	hamm	slam	30	45	15	48	25	mau	9m9	7m7
+unique	592	Burning Desire		1		9gm	martel de fer	weapon	exceptional	hamm	slam	45	53	8	55	25	gma	9gm	7gm
+unique	584	Blasthammer		1		9wh	battle hammer	weapon	exceptional	hamm	1wep	42	48	6	50	25	whm	9wh	7wh
+unique	590	Readiness for War		1		9m9	war club	weapon	exceptional	hamm	slam	40	45	5	48	25	mau	9m9	7m7
+unique	591	Doom Avatar		1		9gm	martel de fer	weapon	exceptional	hamm	slam	55	53	-2	65	25	gma	9gm	7gm
+unique	583	Hammer of Jholm		1		9wh	battle hammer	weapon	exceptional	hamm	1wep	55	48	-7	60	25	whm	9wh	7wh
+unique	589	Hill Giant's Bludgeon		1		9m9	war club	weapon	exceptional	hamm	slam	55	45	-10	59	25	mau	9m9	7m7
+unique	853	Warbreeder		1		9gl	Spiculum	weapon	exceptional	jave	1wep	25	46	21	41	25	glv	9gl	7gl
+unique	849	Cursed One		1		9s9	simbilan	weapon	exceptional	jave	1wep	25	40	15	35	25	ssp	9s9	7s7
+unique	850	Hatemonger		1		9s9	Simbilan	weapon	exceptional	jave	1wep	25	40	15	29	25	ssp	9s9	7s7
+unique	847	Trump of Jericho		1		9pi	Great Pilum	weapon	exceptional	jave	1wep	25	37	12	35	25	pil	9pi	7pi
+unique	846	Weeping at the Gate		1		9pi	great pilum	weapon	exceptional	jave	1wep	25	37	12	35	25	pil	9pi	7pi
+unique	855	Blessings of Osiris		1		9ts	harpoon	weapon	exceptional	jave	1wep	43	51	8	54	25	tsp	9ts	7ts
+unique	856	Bowel Twister		1		9ts	Harpoon	weapon	exceptional	jave	1wep	43	51	8	45	25	tsp	9ts	7ts
+unique	852	Blessed One		1		9gl	spiculum	weapon	exceptional	jave	1wep	40	46	6	50	25	glv	9gl	7gl
+unique	844	Killing Spree		1		9ja	War Javelin	weapon	exceptional	jave	1wep	24	30	6	31	18	jav	9ja	7ja
+unique	843	Rhyme of the Bard		1		9ja	war javelin	weapon	exceptional	jave	1wep	25	30	5	37	18	jav	9ja	7ja
+unique	848	Artemis's Spiculum		1		9s9	simbilan	weapon	exceptional	jave	1wep	39	40	1	55	25	ssp	9s9	7s7
+unique	845	Gnomebane		1		9pi	great pilum	weapon	exceptional	jave	1wep	40	37	-3	47	25	pil	9pi	7pi
+unique	851	Flight of Confusion		1		9gl	spiculum	weapon	exceptional	jave	1wep	55	46	-9	65	25	glv	9gl	7gl
+unique	842	Aiel Javelins		1		9ja	war javelin	weapon	exceptional	jave	1wep	40	30	-10	54	18	jav	9ja	7ja
+unique	174	Stormspike		1		9bl	Stilleto	weapon	exceptional	knif	1wep	28	46	18	41	25	bld	9bl	7bl
+unique	639	Falcon Talon		1		9bl	Stiletto	weapon	exceptional	knif	1wep	30	46	16	30	25	bld	9bl	7bl
+unique	638	Thief's Lockpicker		1		9bl	Stiletto	weapon	exceptional	knif	1wep	30	46	16	50	25	bld	9bl	7bl
+unique	637	Basilisk's Touch		1		9kr	cinquedeas	weapon	exceptional	knif	1wep	29	42	13	46	25	kri	9kr	7kr
+unique	636	Halfling's Blade		1		9kr	cinquedeas	weapon	exceptional	knif	1wep	29	42	13	40	25	kri	9kr	7kr
+unique	172	Heart Carver		1		9di	Rondel	weapon	exceptional	knif	1wep	25	36	11	27	24	dir	9di	7di
+unique	634	Rattlesnake Bite		1		9di	rondel	weapon	exceptional	knif	1wep	25	36	11	37	24	dir	9di	7di
+unique	635	Sweet Whisper		1		9di	rondel	weapon	exceptional	knif	1wep	25	36	11	33	24	dir	9di	7di
+unique	633	Chimera's Claw		1		9dg	Poignard	weapon	exceptional	knif	1wep	25	31	6	29	19	dgr	9dg	7dg
+unique	632	Cyan Bloodbane		1		9dg	Poignard	weapon	exceptional	knif	1wep	25	31	6	31	19	dgr	9dg	7dg
+unique	171	Spineripper		1		9dg	Poignard	weapon	exceptional	knif	1wep	25	31	6	32	19	dgr	9dg	7dg
+unique	151	Sureshrill Frost		1		9ma	Flanged Mace	weapon	exceptional	mace	1wep	25	35	10	39	23	mac	9ma	7ma
+unique	602	Comet's Tail		1		9mt	jagged star	weapon	exceptional	mace	1wep	30	39	9	45	25	mst	9mt	7mt
+unique	153	Baezil's Vortex		1		9fl	Knout	weapon	exceptional	mace	1wep	35	43	8	45	25	fla	9fl	7fl
+unique	152	Moonfall		1		9mt	Jagged Star	weapon	exceptional	mace	1wep	35	39	4	42	25	mst	9mt	7mt
+unique	601	Demise of the Weak		1		9ma	flanged mace	weapon	exceptional	mace	1wep	36	35	-1	45	23	mac	9ma	7ma
+unique	604	Efreeti's Eye		1		9fl	knout	weapon	exceptional	mace	1wep	45	43	-2	57	25	fla	9fl	7fl
+unique	605	Frantic Distress		1		9fl	knout	weapon	exceptional	mace	1wep	45	43	-2	53	25	fla	9fl	7fl
+unique	600	Cat Tail		1		9ma	flanged mace	weapon	exceptional	mace	1wep	40	35	-5	55	23	mac	9ma	7ma
+unique	1195	Quandary of the Queen		1		oba	swirling crystal	weapon	exceptional	orb	1wep	25	50	25	39	37	ob5	oba	obf
+unique	1192	Dawn Shadow		1		ob8	Cloudy Sphere	weapon	exceptional	orb	1wep	25	41	16	30	30	ob3	ob8	obd
+unique	1194	Desecration Sigil		1		ob9	Sparkling Ball	weapon	exceptional	orb	1wep	30	46	16	50	34	ob4	ob9	obe
+unique	1193	Manna from Heaven		1		ob9	sparkling ball	weapon	exceptional	orb	1wep	30	46	16	50	34	ob4	ob9	obe
+unique	1191	Starbreaker		1		ob8	cloudy sphere	weapon	exceptional	orb	1wep	25	41	16	40	30	ob3	ob8	obd
+unique	1189	Drehya's Globe		1		ob7	crystalline globe	weapon	exceptional	orb	1wep	24	37	13	40	27	ob2	ob7	obc
+unique	1190	Murdering Shard		1		ob7	Crystalline Globe	weapon	exceptional	orb	1wep	25	37	12	27	27	ob2	ob7	obc
+unique	287	The Oculus		1		oba	Swirling Crystal	weapon	exceptional	orb	1wep	40	50	10	42	37	ob5	oba	obf
+unique	1188	Dreamsplitter		1		ob6	Glowing Orb	weapon	exceptional	orb	1wep	25	32	7	30	24	ob1	ob6	obb
+unique	1187	Terminus Rod		1		ob6	glowing orb	weapon	exceptional	orb	1wep	25	32	7	40	24	ob1	ob6	obb
+unique	184	Husoldal Evo		1		9h9	Bec-de-Corbin	weapon	exceptional	pole	slam	35	51	16	44	25	hal	9h9	7h7
+unique	694	Killer's Glee		1		9wc	grim scythe	weapon	exceptional	pole	slam	40	55	15	47	25	wsc	9wc	7wc
+unique	695	Dawn of the Dead		1		9wc	grim scythe	weapon	exceptional	pole	slam	46	55	9	53	25	wsc	9wc	7wc
+unique	685	Fire Mephit		1		9b7	lochaber axe	weapon	exceptional	pole	slam	25	33	8	38	21	bar	9b7	7o7
+unique	687	Sunderblight		1		9vo	bill	weapon	exceptional	pole	slam	30	37	7	42	25	vou	9vo	7vo
+unique	692	Kritchan's Ire		1		9h9	bec-de-corbin	weapon	exceptional	pole	slam	45	51	6	51	25	hal	9h9	7h7
+unique	182	Athena's Wrath		1		9s8	Battle Scythe	weapon	exceptional	pole	slam	35	40	5	42	25	scy	9s8	7s8
+unique	180	The Meat Scraper		1		9b7	Lochaber Axe	weapon	exceptional	pole	slam	30	33	3	41	21	bar	9b7	7o7
+unique	181	Blackleach Blade		1		9vo	Bill	weapon	exceptional	pole	slam	35	37	2	42	25	vou	9vo	7vo
+unique	689	Survival Instinct		1		9s8	battle scythe	weapon	exceptional	pole	slam	38	40	2	45	25	scy	9s8	7s8
+unique	693	Father of Nations		1		9h9	bec-de-corbin	weapon	exceptional	pole	slam	55	51	-4	57	25	hal	9h9	7h7
+unique	684	Count Kidran's Axe		1		9b7	lochaber axe	weapon	exceptional	pole	slam	40	33	-7	44	21	bar	9b7	7o7
+unique	691	Trial by Fire		1		9pa	partizan	weapon	exceptional	pole	slam	42	35	-7	49	23	pax	9pa	7pa
+unique	690	Moonlight Edge		1		9pa	partizan	weapon	exceptional	pole	slam	45	35	-10	53	23	pax	9pa	7pa
+unique	686	Griefspawn Touch		1		9vo	bill	weapon	exceptional	pole	slam	50	37	-13	50	25	vou	9vo	7vo
+unique	185	Grim's Burning Dead		1		9wc	Grim Scythe	weapon	exceptional	pole	slam	70	55	-15	75	25	wsc	9wc	7wc
+unique	148	The Fetid Sprinkler		1		9qs	Holy Water Sprinkler	weapon	exceptional	scep	1wep	25	40	15	38	25	gsc	9qs	7qs
+unique	616	Heavenly Wrath		1		9sc	rune scepter	weapon	exceptional	scep	1wep	25	31	6	39	19	scp	9sc	7sc
+unique	147	Zakarum's Hand		1		9sc	Rune Scepter	weapon	exceptional	scep	1wep	25	31	6	37	19	scp	9sc	7sc
+unique	620	Lord of Riddles		1		9ws	divine scepter	weapon	exceptional	scep	1wep	48	45	-3	54	25	wsp	9ws	7ws
+unique	149	Hand of Blessed Light		1		9ws	Divine Scepter	weapon	exceptional	scep	1wep	50	45	-5	55	25	wsp	9ws	7ws
+unique	617	Trianthalon's Sprinkler		1		9qs	holy water sprinkler	weapon	exceptional	scep	1wep	55	40	-15	58	25	gsc	9qs	7qs
+unique	613	Crusader's Wrath		1		9ws	divine scepter	weapon	exceptional	scep	1wep	62	45	-17	68	25	wsp	9ws	7ws
+unique	615	Runestar		1		9sc	rune scepter	weapon	exceptional	scep	1wep	50	31	-19	55	19	scp	9sc	7sc
+unique	179	Spire of Honor		1		9p9	Lance	weapon	exceptional	spea		25	47	22	39	25	pik	9p9	7p7
+unique	178	Hone Sundan		1		9st	Yari	weapon	exceptional	spea		25	44	19	37	25	spt	9st	7st
+unique	177	Soulfeast Tine		1		9br	War Fork	weapon	exceptional	spea		25	41	16	30	25	brn	9br	7br
+unique	660	Fear and Loathing		1		9br	war fork	weapon	exceptional	spea		30	41	11	44	25	brn	9br	7br
+unique	658	Frostband Tine		1		9tr	fuscina	weapon	exceptional	spea		25	36	11	39	24	tri	9tr	7tr
+unique	176	Kelpie Snare		1		9tr	Fuscina	weapon	exceptional	spea		25	36	11	33	24	tri	9tr	7tr
+unique	661	Dragon Soul		1		9st	yari	weapon	exceptional	spea		35	44	9	54	25	spt	9st	7st
+unique	662	Dreams of Empire		1		9st	yari	weapon	exceptional	spea		35	44	9	47	25	spt	9st	7st
+unique	656	Mandrake		1		9sr	war spear	weapon	exceptional	spea		25	33	8	35	21	spr	9sr	7sr
+unique	175	The Impaler		1		9sr	War Spear	weapon	exceptional	spea		25	33	8	31	21	spr	9sr	7sr
+unique	659	Dragoon's Shank		1		9br	war fork	weapon	exceptional	spea		35	41	6	49	25	brn	9br	7br
+unique	657	Flametongue		1		9tr	fuscina	weapon	exceptional	spea		30	36	6	46	24	tri	9tr	7tr
+unique	663	Imperial Dragonlance		1		9p9	lance	weapon	exceptional	spea		45	47	2	57	25	pik	9p9	7p7
+unique	664	Jouster's Boast		1		9p9	lance	weapon	exceptional	spea		45	47	2	60	25	pik	9p9	7p7
+unique	655	Old Wolf		1		9sr	war spear	weapon	exceptional	spea		40	33	-7	45	21	spr	9sr	7sr
+unique	190	Skull Collector		1		8ws	Rune Staff	weapon	exceptional	staf	slam	30	47	17	41	25	wst	8ws	6ws
+unique	189	Warpspear		1		8bs	Gothic Staff	weapon	exceptional	staf	slam	25	42	17	39	25	bst	8bs	6bs
+unique	718	Silence of the Sphinx		1		8ls	quarterstaff	weapon	exceptional	staf	slam	25	35	10	39	23	lst	8ls	6ls
+unique	720	Ruby Dawn		1		8cs	cedar staff	weapon	exceptional	staf	slam	32	38	6	42	25	cst	8cs	6cs
+unique	716	Staff of Shadows		1		8ss	jo staff	weapon	exceptional	staf	slam	24	30	6	36	18	sst	8ss	6ss
+unique	722	Grace of Isis		1		8bs	gothic staff	weapon	exceptional	staf	slam	37	42	5	47	25	bst	8bs	6bs
+unique	186	Razorswitch		1		8ss	Jo Stalf	weapon	exceptional	staf	slam	25	30	5	28	18	sst	8ss	6ss
+unique	724	Survivor's Sonata		1		8ws	rune staff	weapon	exceptional	staf	slam	42	47	5	50	25	wst	8ws	6ws
+unique	188	Chromatic Ire		1		8cs	Cedar Staff	weapon	exceptional	staf	slam	43	38	-5	45	25	cst	8cs	6cs
+unique	717	Ter'Angreal		1		8ls	quarterstaff	weapon	exceptional	staf	slam	40	35	-5	50	23	lst	8ls	6ls
+unique	723	Arcane Protection		1		8ws	rune staff	weapon	exceptional	staf	slam	55	47	-8	65	25	wst	8ws	6ws
+unique	187	Ribcracker		1		8ls	Quarterstaff	weapon	exceptional	staf	slam	43	35	-8	45	23	lst	8ls	6ls
+unique	719	Staff of Valere		1		8cs	cedar staff	weapon	exceptional	staf	slam	50	38	-12	56	25	cst	8cs	6cs
+unique	721	Knight's Prophet		1		8bs	gothic staff	weapon	exceptional	staf	slam	55	42	-13	60	25	bst	8bs	6bs
+unique	715	Arctic Frost		1		8ss	jo staff	weapon	exceptional	staf	slam	45	30	-15	55	18	sst	8ss	6ss
+unique	158	Coldsteel Eye		1		9sm	Cutlass	weapon	exceptional	swor	1wep	17	43	26	31	25	scm	9sm	7sm
+unique	514	Deathfoe		1		9sm	cutlass	weapon	exceptional	swor	1wep	17	43	26	35	25	scm	9sm	7sm
+unique	164	The Atlantean1		1		9wd	Ancient Sword	weapon	exceptional	swor	1wep	25	49	24	35	25	wsd	9wd	7wd
+unique	526	Dark Descent		1		9wd	ancient sword	weapon	exceptional	swor	1wep	30	49	19	44	25	wsd	9wd	7wd
+unique	163	Plague Bearer		1		9ls	Rune Sword	weapon	exceptional	swor	1wep	25	44	19	41	25	lsd	9ls	7ls
+unique	525	Sahuagin		1		9wd	Ancient Sword	weapon	exceptional	swor	1wep	30	49	19	49	25	wsd	9wd	7wd
+unique	168	Cloudcrack		1		9b9	Gothic Sword	weapon	exceptional	swor	slam	30	48	18	45	25	bsw	9b9	7b7
+unique	513	Darkkon		1		9sm	cutlass	weapon	exceptional	swor	1wep	25	43	18	41	25	scm	9sm	7sm
+unique	521	Grimlock		1		9bs	battle sword	weapon	exceptional	swor	1wep	25	40	15	45	25	bsd	9bs	7bs
+unique	162	Headstriker		1		9bs	Battle Sword	weapon	exceptional	swor	1wep	25	40	15	39	25	bsd	9bs	7bs
+unique	167	The Vile Husk		1		9gs	Tusk Sword	weapon	exceptional	swor	slam	30	45	15	44	25	gis	9gs	7gs
+unique	170	Swordguard		1		9gd	Executioner Sword	weapon	exceptional	swor	slam	40	54	14	48	25	gsd	9gd	7gd
+unique	561	The Quick and the Dead		1		9gd	executioner sword	weapon	exceptional	swor	slam	40	54	14	56	25	gsd	9gd	7gd
+unique	169	Todesfaelle Flamme		1		9fb	Zweihander	weapon	exceptional	swor	slam	35	49	14	46	25	flb	9fb	7fb
+unique	157	Bloodletter		1		9ss	Gladius	weapon	exceptional	swor	1wep	17	30	13	30	18	ssd	9ss	7ss
+unique	160	Blade of Ali Baba		1		9fc	Tulwar	weapon	exceptional	swor	1wep	25	37	12	30	25	flc	9fc	7fc
+unique	517	Fleshbleeder		1		9fc	tulwar	weapon	exceptional	swor	1wep	25	37	12	37	25	flc	9fc	7fc
+unique	161	Ginther's Rift		1		9cr	Dimensional Blade	weapon	exceptional	swor	1wep	25	37	12	35	25	crs	9cr	7cr
+unique	519	Pseudodragon		1		9cr	dimensional blade	weapon	exceptional	swor	1wep	25	37	12	47	25	crs	9cr	7cr
+unique	520	Serpent's Sharp		1		9cr	dimensional blade	weapon	exceptional	swor	1wep	25	37	12	42	25	crs	9cr	7cr
+unique	518	Song of the Damned		1		9fc	tulwar	weapon	exceptional	swor	1wep	25	37	12	39	25	flc	9fc	7fc
+unique	553	Sudden Epiphany		1		9cm	dacian falx	weapon	exceptional	swor	slam	30	42	12	46	25	clm	9cm	7cm
+unique	516	Death of a Thousand Cuts		1		9sb	shamshir	weapon	exceptional	swor	1wep	25	35	10	32	23	sbr	9sb	7sb
+unique	159	Hexfire		1		9sb	Shamshir	weapon	exceptional	swor	1wep	25	35	10	33	23	sbr	9sb	7sb
+unique	515	Locathah		1		9sb	shamshir	weapon	exceptional	swor	1wep	25	35	10	43	23	sbr	9sb	7sb
+unique	558	Black Razor		1		9fb	zweihander	weapon	exceptional	swor	slam	40	49	9	55	25	flb	9fb	7fb
+unique	165	Crainte Vomir		1		92h	Espadon	weapon	exceptional	swor	slam	30	37	7	42	25	2hs	92h	72h
+unique	551	Sweet Agony		1		92h	Espandon	weapon	exceptional	swor	slam	30	37	7	38	25	2hs	92h	72h
+unique	511	Bridge of Pain		1		9ss	gladius	weapon	exceptional	swor	1wep	25	30	5	37	18	ssd	9ss	7ss
+unique	512	Cursebreaker		1		9ss	gladius	weapon	exceptional	swor	1wep	25	30	5	40	18	ssd	9ss	7ss
+unique	556	Na-Krul's Power		1		9b9	gothic sword	weapon	exceptional	swor	slam	43	48	5	59	25	bsw	9b9	7b7
+unique	557	No Quarter Given		1		9b9	gothic sword	weapon	exceptional	swor	slam	43	48	5	51	25	bsw	9b9	7b7
+unique	555	The Mangler		1		9gs	tusk sword	weapon	exceptional	swor	slam	40	45	5	49	25	gis	9gs	7gs
+unique	524	Bane of All Gods		1		9ls	rune sword	weapon	exceptional	swor	1wep	40	44	4	47	25	lsd	9ls	7ls
+unique	523	Troglodyte		1		9ls	rune sword	weapon	exceptional	swor	1wep	40	44	4	52	25	lsd	9ls	7ls
+unique	166	Bing Sz Wang		1		9cm	Dacian Falx	weapon	exceptional	swor	slam	40	42	2	43	25	clm	9cm	7cm
+unique	552	Shirotachi		1		9cm	dacian falx	weapon	exceptional	swor	slam	40	42	2	52	25	clm	9cm	7cm
+unique	550	Celestial Tiger		1		92h	Espandon	weapon	exceptional	swor	slam	40	37	-3	48	25	2hs	92h	72h
+unique	560	Thundercall		1		9gd	executioner sword	weapon	exceptional	swor	slam	60	54	-6	70	25	gsd	9gd	7gd
+unique	873	Brainraver		1		9b8	Hurlbat	weapon	exceptional	taxe	1wep	25	41	16	37	25	bal	9b8	7b8
+unique	870	Despicable Behavior		1		9ta	francisca	weapon	exceptional	taxe	1wep	25	34	9	35	22	tax	9ta	7ta
+unique	872	Instigator		1		9b8	hurlbat	weapon	exceptional	taxe	1wep	40	41	1	50	25	bal	9b8	7b8
+unique	869	Banshee's Cry		1		9ta	francisca	weapon	exceptional	taxe	1wep	35	34	-1	50	22	tax	9ta	7ta
+unique	871	Axes of Jahadra		1		9b8	hurlbat	weapon	exceptional	taxe	1wep	43	41	-2	56	25	bal	9b8	7b8
+unique	291	The Scalper		1		9ta	Francisca	weapon	exceptional	taxe	1wep	40	34	-6	47	22	tax	9ta	7ta
+unique	886	Pain Harvester		1		9bk	War Dart	weapon	exceptional	tkni	1wep	24	39	15	37	25	bkf	9bk	7bk
+unique	885	Ravenstar		1		9bk	war dart	weapon	exceptional	tkni	1wep	30	39	9	39	25	bkf	9bk	7bk
+unique	294	Deathbit		1		9tk	battle dart	weapon	exceptional	tkni	1wep	25	31	6	40	19	tkf	9tk	7tk
+unique	883	Silt Runner		1		9tk	battle dart	weapon	exceptional	tkni	1wep	25	31	6	30	19	tkf	9tk	7tk
+unique	145	Blackhand Key		1		9gw	Grave Wand	weapon	exceptional	wand	1wep	26	49	23	41	25	gwn	9gw	7gw
+unique	144	Arm of King Leoric		1		9bw	Tomb Wand	weapon	exceptional	wand	1wep	25	43	18	36	25	bwn	9bw	7bw
+unique	143	Carin Shard		1		9yw	Petrified Wand	weapon	exceptional	wand	1wep	25	38	13	35	25	ywn	9yw	7yw
+unique	747	Gravedancer's Union		1		9gw	grave wand	weapon	exceptional	wand	1wep	40	49	9	49	25	gwn	9gw	7gw
+unique	745	Wand of Fireballs		1		9bw	tomb wand	weapon	exceptional	wand	1wep	35	43	8	45	25	bwn	9bw	7bw
+unique	742	Apocalypse Fire		1		9wn	burnt wand	weapon	exceptional	wand	1wep	25	31	6	39	19	wnd	9wn	7wn
+unique	142	Suicide Branch		1		9wn	Burnt Wand	weapon	exceptional	wand	1wep	25	31	6	33	19	wnd	9wn	7wn
+unique	743	Huclavee's Flinch		1		9yw	petrified wand	weapon	exceptional	wand	1wep	34	38	4	42	25	ywn	9yw	7yw
+unique	746	Nullwand		1		9gw	grave wand	weapon	exceptional	wand	1wep	45	49	4	55	25	gwn	9gw	7gw
+unique	744	Asylum's Ward		1		9bw	tomb wand	weapon	exceptional	wand	1wep	40	43	3	50	25	bwn	9bw	7bw
+unique	741	Epoch's End		1		9wn	burnt wand	weapon	exceptional	wand	1wep	30	31	1	43	19	wnd	9wn	7wn
+unique	200	Pus Spitter		1		8mx	Siege Crossbow	weapon	exceptional	xbow		25	40	15	36	25	mxb	8mx	6mx
+unique	202	Demon Machine		1		8rx	Chu-Ko-Nu	weapon	exceptional	xbow		40	54	14	49	25	rxb	8rx	6rx
+unique	201	Buriza-Do Kyanon		1		8hx	Ballista	weapon	exceptional	xbow		35	47	12	41	25	hxb	8hx	6hx
+unique	815	Senmet's Boltcaster		1		8hx	ballista	weapon	exceptional	xbow		36	47	11	47	25	hxb	8hx	6hx
+unique	811	Garlana Firebolt		1		8lx	arbalest	weapon	exceptional	xbow		24	34	10	38	22	lxb	8lx	6lx
+unique	817	Widow's Refrain		1		8rx	chu-ko-nu	weapon	exceptional	xbow		44	54	10	54	25	rxb	8rx	6rx
+unique	199	Langer Briser		1		8lx	Arbalest	weapon	exceptional	xbow		25	34	9	32	22	lxb	8lx	6lx
+unique	813	Raven Myst		1		8mx	siege crossbow	weapon	exceptional	xbow		32	40	8	43	25	mxb	8mx	6mx
+unique	814	Whyte Stag		1		8hx	ballista	weapon	exceptional	xbow		40	47	7	56	25	hxb	8hx	6hx
+unique	816	Ashira's Stunbeam		1		8rx	chu-ko-nu	weapon	exceptional	xbow		55	54	-1	61	25	rxb	8rx	6rx
+unique	810	Kyuss' Crossbow		1		8lx	arbalest	weapon	exceptional	xbow		40	34	-6	48	22	lxb	8lx	6lx
+unique	1149	Angelsong		1		am1	Stag Bow	weapon	normal	abow		1	18	17	14	14	am1	am6	amb
+unique	1148	Bleeding Branch		1		am1	stag bow	weapon	normal	abow		1	18	17	14	14	am1	am6	amb
+unique	1151	Elvenbrand		1		am2	reflex bow	weapon	normal	abow		12	27	15	24	20	am2	am7	amc
+unique	1147	Damsel of Destruction		1		am1	stag bow	weapon	normal	abow		12	18	6	20	14	am1	am6	amb
+unique	1150	Kashya's Retort		1		am2	reflex bow	weapon	normal	abow		25	27	2	30	20	am2	am7	amc
+unique	1162	Hastemaster		1		am5	maiden javelin	weapon	normal	ajav	1wep	12	23	11	18	17	am5	ama	amf
+unique	1163	Raptorshaft		1		am5	Maiden Javelin	weapon	normal	ajav	1wep	12	23	11	20	17	am5	ama	amf
+unique	1161	Shieldmaiden's Toss		1		am5	maiden javelin	weapon	normal	ajav	1wep	12	23	11	25	17	am5	ama	amf
+unique	1168	Hawkfire		1		am3	maiden spear	weapon	normal	aspe		1	18	17	14	14	am3	am8	amd
+unique	1167	Wrathshifter		1		am3	maiden spear	weapon	normal	aspe		1	18	17	15	14	am3	am8	amd
+unique	1170	Sepia Shard		1		am4	maiden pike	weapon	normal	aspe		12	27	15	20	20	am4	am9	ame
+unique	1169	Stygian Harlot		1		am4	maiden pike	weapon	normal	aspe		12	27	15	20	20	am4	am9	ame
+unique	4	Bladebone		1		2ax	Double Axe	weapon	normal	axe	1wep	1	13	12	15	0	2ax	92a	72a
+unique	447	Lungreaver		1		2ax	double axe	weapon	normal	axe	1wep	1	13	12	14	0	2ax	92a	72a
+unique	11	Humongous		1		gix	Giant Axe	weapon	normal	axe	slam	20	27	7	29	0	gix	9gi	7gi
+unique	5	Skull Splitter		1		mpi	Military Pick	weapon	normal	axe	1wep	12	19	7	21	0	mpi	9mp	7mp
+unique	10	Brainhew		1		gax	Great Axe	weapon	normal	axe	slam	17	23	6	25	0	gax	9ga	7ga
+unique	3	Deathspade		1		axe	Axe	weapon	normal	axe	1wep	1	7	6	9	0	axe	9ax	7ax
+unique	445	Goreflood		1		axe	axe	weapon	normal	axe	1wep	1	7	6	10	0	axe	9ax	7ax
+unique	7	Axe of Fechmar		1		lax	Large Axe	weapon	normal	axe	slam	1	6	5	8	0	lax	9la	7la
+unique	451	Deathflake		1		wax	war axe	weapon	normal	axe	1wep	20	25	5	30	0	wax	9wa	7wa
+unique	469	Gracehunter		1		lax	large axe	weapon	normal	axe	slam	1	6	5	8	0	lax	9la	7la
+unique	6	Rakescar		1		wax	War Axe	weapon	normal	axe	1wep	20	25	5	27	0	wax	9wa	7wa
+unique	473	Sandking		1		btx	battle axe	weapon	normal	axe	slam	12	17	5	23	0	btx	9bt	7bt
+unique	9	The Chieftain		1		btx	Battle Axe	weapon	normal	axe	slam	12	17	5	19	0	btx	9bt	7bt
+unique	475	Nova Spine		1		gax	great axe	weapon	normal	axe	slam	20	23	3	28	0	gax	9ga	7ga
+unique	477	Curseweaver		1		gix	giant axe	weapon	normal	axe	slam	25	27	2	32	0	gix	9gi	7gi
+unique	443	Gangrene Reaper		1		hax	hand axe	weapon	normal	axe	1wep	1	3	2	6	0	hax	9ha	7ha
+unique	449	Occam's Razor		1		mpi	military pick	weapon	normal	axe	1wep	17	19	2	23	0	mpi	9mp	7mp
+unique	476	Taskmaster's Curse		1		gix	giant axe	weapon	normal	axe	slam	25	27	2	37	0	gix	9gi	7gi
+unique	472	Tendriculos		1		btx	battle axe	weapon	normal	axe	slam	15	17	2	27	0	btx	9bt	7bt
+unique	2	The Gnasher		1		hax	Hand Axe	weapon	normal	axe	1wep	1	3	2	5	0	hax	9ha	7ha
+unique	446	Long Suffering		1		2ax	double axe	weapon	normal	axe	1wep	12	13	1	16	0	2ax	92a	72a
+unique	474	Winter Wolf		1		gax	great axe	weapon	normal	axe	slam	25	23	-2	33	0	gax	9ga	7ga
+unique	470	Night Hag		1		bax	broad axe	weapon	normal	axe	slam	15	12	-3	23	0	bax	9ba	7ba
+unique	444	Easebringer		1		axe	axe	weapon	normal	axe	1wep	12	7	-5	22	0	axe	9ax	7ax
+unique	448	Broken Earth		1		mpi	military pick	weapon	normal	axe	1wep	25	19	-6	30	0	mpi	9mp	7mp
+unique	468	Light Phasm		1		lax	large axe	weapon	normal	axe	slam	12	6	-6	21	0	lax	9la	7la
+unique	442	Auburn Fire		1		hax	hand axe	weapon	normal	axe	1wep	12	3	-9	15	0	hax	9ha	7ha
+unique	765	Beeswarm		1		lbb	long battle bow	weapon	normal	bow		12	23	11	26	0	lbb	8l8	6l7
+unique	767	Ranger's Sting		1		swb	short war bow	weapon	normal	bow		16	27	11	29	0	swb	8sw	6sw
+unique	68	Blastbark		1		lwb	Long War Bow	weapon	normal	bow		25	31	6	28	0	lwb	8lw	6lw
+unique	65	Stormstrike		1		sbb	Short Battle Bow	weapon	normal	bow		12	18	6	25	0	sbb	8s8	6s7
+unique	768	Telena's War Bow		1		lwb	long war bow	weapon	normal	bow		25	31	6	37	0	lwb	8lw	6lw
+unique	763	Willowsting		1		sbb	short battle bow	weapon	normal	bow		12	18	6	15	0	sbb	8s8	6s7
+unique	766	Sylvan Battle Bow		1		swb	short war bow	weapon	normal	bow		22	27	5	35	0	swb	8sw	6sw
+unique	62	Witherstring		1		hbw	Hunter's Bow	weapon	normal	bow		1	5	4	13	0	hbw	8hb	6hb
+unique	66	Wizendraw		1		lbb	Long Battle Bow	weapon	normal	bow		20	23	3	26	0	lbb	8l8	6l7
+unique	764	Kirre Strike		1		lbb	long battle bow	weapon	normal	bow		25	23	-2	32	0	lbb	8l8	6l7
+unique	758	Elven Bow of Duadon		1		lbw	long bow	weapon	normal	bow		12	8	-4	21	0	lbw	8lb	6lb
+unique	63	Raven Claw		1		lbw	Long Bow	weapon	normal	bow		12	8	-4	15	0	lbw	8lb	6lb
+unique	762	Shayira's Flight		1		sbb	short battle bow	weapon	normal	bow		22	18	-4	29	0	sbb	8s8	6s7
+unique	756	Centaur's Arc		1		hbw	hunter's bow	weapon	normal	bow		12	5	-7	22	0	hbw	8hb	6hb
+unique	760	Silver Oak Bow		1		cbw	composite bow	weapon	normal	bow		20	12	-8	28	0	cbw	8cb	6cb
+unique	574	Oakheart		1		spc	spiked club	weapon	normal	club	1wep	1	4	3	9	0	spc	9sp	7sp
+unique	20	Stoutnail		1		spc	Spiked Club	weapon	normal	club	1wep	1	4	3	5	0	spc	9sp	7sp
+unique	573	Troll's Nail		1		spc	spiked club	weapon	normal	club	1wep	12	4	-8	25	0	spc	9sp	7sp
+unique	571	Bramble Oak		1		clb	club	weapon	normal	club	1wep	12	1	-11	20	0	clb	9cl	7cl
+unique	1318	Crimson Cry		1		axf	Hatchet Hands	weapon	normal	h2h	1wep	1	12	11	10	0	axf	9xf	7xf
+unique	1316	Spirit Hawk		1		axf	hatchet hands	weapon	normal	h2h	1wep	1	12	11	15	0	axf	9xf	7xf
+unique	1326	Key to the Madhouse		1		btl	blade talons	weapon	normal	h2h	1wep	12	21	9	30	0	btl	9tw	7tw
+unique	1325	Nightmare Razors		1		btl	blade talons	weapon	normal	h2h	1wep	12	21	9	25	0	btl	9tw	7tw
+unique	1322	Frostshiver		1		clw	claws	weapon	normal	h2h	1wep	10	18	8	22	0	clw	9lw	7lw
+unique	1315	Murdering Bloom		1		wrb	Wrist Blade	weapon	normal	h2h	1wep	1	9	8	5	0	wrb	9wb	7wb
+unique	1313	Razorspine		1		wrb	wrist blade	weapon	normal	h2h	1wep	1	9	8	12	0	wrb	9wb	7wb
+unique	1314	Storms of Spring		1		wrb	wrist blade	weapon	normal	h2h	1wep	1	9	8	7	0	wrb	9wb	7wb
+unique	1323	Lynx Talon		1		clw	claws	weapon	normal	h2h	1wep	12	18	6	24	0	clw	9lw	7lw
+unique	1324	Winterquick		1		clw	Claws	weapon	normal	h2h	1wep	12	18	6	20	0	clw	9lw	7lw
+unique	1320	Androsphinx		1		ces	cestus	weapon	normal	h2h	1wep	12	15	3	15	0	ces	9cs	7cs
+unique	1321	Liege Reaver		1		ces	Cestus	weapon	normal	h2h	1wep	12	15	3	15	0	ces	9cs	7cs
+unique	1319	Samantha's Fist		1		ces	cestus	weapon	normal	h2h	1wep	12	15	3	20	0	ces	9cs	7cs
+unique	1329	Martial Law		1		skr	scissors katar	weapon	normal	h2h	1wep	25	24	-1	30	0	skr	9qr	7qr
+unique	1330	Troll's Touch		1		skr	Scissors Katar	weapon	normal	h2h	1wep	25	24	-1	25	0	skr	9qr	7qr
+unique	1327	Bladespan		1		btl	Blade Talons	weapon	normal	h2h	1wep	25	21	-4	33	0	btl	9tw	7tw
+unique	1328	Dark Demesne		1		skr	scissors katar	weapon	normal	h2h	1wep	30	24	-6	45	0	skr	9qr	7qr
+unique	24	Ironstone		1		whm	War Hammer	weapon	normal	hamm	1wep	12	25	13	27	0	whm	9wh	7wh
+unique	588	Vilifier		1		gma	great maul	weapon	normal	hamm	slam	22	32	10	33	0	gma	9gm	7gm
+unique	25	Bonesnap		1		mau	Maul	weapon	normal	hamm	slam	12	21	9	24	0	mau	9m9	7m7
+unique	26	Steeldriver		1		gma	Great Maul	weapon	normal	hamm	slam	25	32	7	29	0	gma	9gm	7gm
+unique	586	Spirit Crusher		1		mau	maul	weapon	normal	hamm	slam	17	21	4	30	0	mau	9m9	7m7
+unique	587	Konnan's Maul		1		gma	great maul	weapon	normal	hamm	slam	30	32	2	46	0	gma	9gm	7gm
+unique	585	Famorian's Club		1		mau	maul	weapon	normal	hamm	slam	25	21	-4	39	0	mau	9m9	7m7
+unique	838	Mind Creche		1		glv	Glaive	weapon	normal	jave	1wep	12	23	11	15	0	glv	9gl	7gl
+unique	832	Luck Chaser		1		pil	Pilum	weapon	normal	jave	1wep	1	10	9	11	0	pil	9pi	7pi
+unique	837	Sting of Humiliation		1		glv	glaive	weapon	normal	jave	1wep	16	23	7	21	0	glv	9gl	7gl
+unique	841	Baba Yaga's Needle		1		tsp	Throwing Spear	weapon	normal	jave	1wep	25	29	4	29	0	tsp	9ts	7ts
+unique	839	Dancing Scarecrow		1		tsp	throwing spear	weapon	normal	jave	1wep	25	29	4	37	0	tsp	9ts	7ts
+unique	840	Splinterfreeze		1		tsp	throwing spear	weapon	normal	jave	1wep	25	29	4	32	0	tsp	9ts	7ts
+unique	835	Pridebreaker		1		ssp	Short Spear	weapon	normal	jave	1wep	12	15	3	14	0	ssp	9s9	7s7
+unique	834	Teeth of Infinity		1		ssp	short spear	weapon	normal	jave	1wep	12	15	3	21	0	ssp	9s9	7s7
+unique	830	Amazon's Kiss		1		pil	pilum	weapon	normal	jave	1wep	12	10	-2	23	0	pil	9pi	7pi
+unique	836	Cadin'Sor		1		glv	glaive	weapon	normal	jave	1wep	25	23	-2	33	0	glv	9gl	7gl
+unique	831	Skyglow		1		pil	pilum	weapon	normal	jave	1wep	12	10	-2	15	0	pil	9pi	7pi
+unique	833	Chaos Flight		1		ssp	short spear	weapon	normal	jave	1wep	25	15	-10	27	0	ssp	9s9	7s7
+unique	827	Hippogriff Wing		1		jav	javelin	weapon	normal	jave	1wep	12	1	-11	21	0	jav	9ja	7ja
+unique	631	Deathprick		1		bld	blade	weapon	normal	knif	1wep	12	23	11	17	0	bld	9bl	7bl
+unique	630	Moonsea Razor		1		bld	blade	weapon	normal	knif	1wep	12	23	11	21	0	bld	9bl	7bl
+unique	44	Spectral Shard		1		bld	Blade	weapon	normal	knif	1wep	12	23	11	20	0	bld	9bl	7bl
+unique	629	Zenkiller		1		kri	kris	weapon	normal	knif	1wep	8	17	9	15	0	kri	9kr	7kr
+unique	42	The Diggler		1		dir	Dirk	weapon	normal	knif	1wep	1	9	8	11	0	dir	9di	7di
+unique	628	Dragon Talon		1		kri	kris	weapon	normal	knif	1wep	12	17	5	18	0	kri	9kr	7kr
+unique	43	The Jade Tan Do		1		kri	Kris	weapon	normal	knif	1wep	12	17	5	19	0	kri	9kr	7kr
+unique	625	Darkflayer		1		dgr	dagger	weapon	normal	knif	1wep	1	3	2	6	0	dgr	9dg	7dg
+unique	41	Gull		1		dgr	Dagger	weapon	normal	knif	1wep	1	3	2	4	0	dgr	9dg	7dg
+unique	626	Gornnagal's Dirk		1		dir	dirk	weapon	normal	knif	1wep	12	9	-3	20	0	dir	9di	7di
+unique	627	Prisoner's Anguish		1		dir	dirk	weapon	normal	knif	1wep	12	9	-3	14	0	dir	9di	7di
+unique	624	Vampire's Fang		1		dgr	dagger	weapon	normal	knif	1wep	12	3	-9	20	0	dgr	9dg	7dg
+unique	21	Crushflange		1		mac	Mace	weapon	normal	mace	1wep	1	8	7	9	0	mac	9ma	7ma
+unique	595	Lesson in Pain		1		mac	mace	weapon	normal	mace	1wep	1	8	7	13	0	mac	9ma	7ma
+unique	23	The General's Tan Do Li Ga		1		fla	Flail	weapon	normal	mace	1wep	17	19	2	21	0	fla	9fl	7fl
+unique	22	Bloodrise		1		mst	Morning Star	weapon	normal	mace	1wep	12	13	1	15	0	mst	9mt	7mt
+unique	597	Endless Sleep		1		mst	morning star	weapon	normal	mace	1wep	12	13	1	20	0	mst	9mt	7mt
+unique	594	Hycandra		1		mac	mace	weapon	normal	mace	1wep	12	8	-4	20	0	mac	9ma	7ma
+unique	598	Lashfire		1		fla	flail	weapon	normal	mace	1wep	25	19	-6	34	0	fla	9fl	7fl
+unique	599	The Quickening		1		fla	flail	weapon	normal	mace	1wep	25	19	-6	29	0	fla	9fl	7fl
+unique	596	Dawn's Mist		1		mst	morning star	weapon	normal	mace	1wep	25	13	-12	29	0	mst	9mt	7mt
+unique	1185	Unseeing Eye		1		ob5	Jared's Stone	weapon	normal	orb	1wep	12	24	12	20	18	ob5	oba	obf
+unique	1182	Soul Stinger		1		ob3	Smoked Sphere	weapon	normal	orb	1wep	1	12	11	15	8	ob3	ob8	obd
+unique	1179	Cyanstrike		1		ob2	sacred orb	weapon	normal	orb	1wep	1	8	7	10	0	ob2	ob7	obc
+unique	1180	Flicker Cinch		1		ob2	Sacred Globe	weapon	normal	orb	1wep	1	8	7	10	0	ob2	ob7	obc
+unique	1184	Thought Splinter		1		ob4	Clasped Orb	weapon	normal	orb	1wep	12	17	5	15	13	ob4	ob9	obe
+unique	1183	Zapcaster		1		ob4	clasped orb	weapon	normal	orb	1wep	12	17	5	20	13	ob4	ob9	obe
+unique	1186	Eternity Cable		1		ob5	Jared's Stone	weapon	normal	orb	1wep	25	24	-1	30	18	ob5	oba	obf
+unique	1181	Revoker		1		ob3	smoked sphere	weapon	normal	orb	1wep	17	12	-5	25	8	ob3	ob8	obd
+unique	681	Ripskin		1		hal	halberd	weapon	normal	pole	slam	12	29	17	28	0	hal	9h9	7h7
+unique	683	Slayer's Debt		1		wsc	war scythe	weapon	normal	pole	slam	23	34	11	32	0	wsc	9wc	7wc
+unique	679	Landsplitter		1		pax	poleaxe	weapon	normal	pole	slam	12	21	9	24	0	pax	9pa	7pa
+unique	682	Sommerstrike Edge		1		wsc	war scythe	weapon	normal	pole	slam	25	34	9	35	0	wsc	9wc	7wc
+unique	55	The Grim Reaper		1		wsc	War Scythe	weapon	normal	pole	slam	25	34	9	29	0	wsc	9wc	7wc
+unique	54	Woestave		1		hal	Halberd	weapon	normal	pole	slam	20	29	9	28	0	hal	9h9	7h7
+unique	675	Oreseeker		1		vou	voulge	weapon	normal	pole	slam	4	11	7	14	0	vou	9vo	7vo
+unique	50	Dimoak's Hew		1		bar	Bardiche	weapon	normal	pole	slam	1	5	4	8	0	bar	9b7	7o7
+unique	673	Knave's Ascendence		1		bar	bardiche	weapon	normal	pole	slam	1	5	4	10	0	bar	9b7	7o7
+unique	680	Snowy Sky		1		hal	halberd	weapon	normal	pole	slam	25	29	4	38	0	hal	9h9	7h7
+unique	677	Rebuker		1		scy	scythe	weapon	normal	pole	slam	12	15	3	19	0	scy	9s8	7s8
+unique	52	Soul Harvest		1		scy	Scythe	weapon	normal	pole	slam	12	15	3	19	0	scy	9s8	7s8
+unique	678	Axe of Sytherdan		1		pax	poleaxe	weapon	normal	pole	slam	20	21	1	29	0	pax	9pa	7pa
+unique	53	The Battlebranch		1		pax	Poleaxe	weapon	normal	pole	slam	20	21	1	25	0	pax	9pa	7pa
+unique	51	Steelgoad		1		vou	Voulge	weapon	normal	pole	slam	12	11	-1	14	0	vou	9vo	7vo
+unique	676	Slayer of Fields		1		scy	scythe	weapon	normal	pole	slam	20	15	-5	26	0	scy	9s8	7s8
+unique	672	Hylocan Axe		1		bar	bardiche	weapon	normal	pole	slam	12	5	-7	20	0	bar	9b7	7o7
+unique	674	Simpering Edge		1		vou	voulge	weapon	normal	pole	slam	20	11	-9	23	0	vou	9vo	7vo
+unique	614	Dawnskein		1		wsp	war scepter	weapon	normal	scep	1wep	17	21	4	29	0	wsp	9ws	7ws
+unique	19	Stormeye		1		wsp	War Scepter	weapon	normal	scep	1wep	17	21	4	30	0	wsp	9ws	7ws
+unique	612	Angel's Grace		1		gsc	grand scepter	weapon	normal	scep	1wep	12	15	3	22	0	gsc	9qs	7qs
+unique	611	Avenger's Honor		1		gsc	grand scepter	weapon	normal	scep	1wep	12	15	3	25	0	gsc	9qs	7qs
+unique	18	Rusthandle		1		gsc	Grand Scepter	weapon	normal	scep	1wep	12	15	3	18	0	gsc	9qs	7qs
+unique	610	Ambercall		1		scp	scepter	weapon	normal	scep	1wep	1	3	2	8	0	scp	9sc	7sc
+unique	17	Knell Striker		1		scp	Scepter	weapon	normal	scep	1wep	1	3	2	5	0	scp	9sc	7sc
+unique	609	Angelic Sympathy		1		scp	scepter	weapon	normal	scep	1wep	12	3	-9	19	0	scp	9sc	7sc
+unique	619	Celestial Knight		1		wsp	war scepter	weapon	normal	scep	1wep	36	21	-15	46	0	wsp	9ws	7ws
+unique	650	Fangtree		1		brn	brandistock	weapon	normal	spea		8	16	8	17	0	brn	9br	7br
+unique	48	Lance of Yaggai		1		spt	Spetum	weapon	normal	spea		12	20	8	22	0	spt	9st	7st
+unique	46	Razortine		1		tri	Trident	weapon	normal	spea		1	9	8	12	0	tri	9tr	7tr
+unique	47	Bloodthief		1		brn	Brandistock	weapon	normal	spea		12	16	4	17	0	brn	9br	7br
+unique	45	The Dragon Chang		1		spr	Spear	weapon	normal	spea		1	5	4	8	0	spr	9sr	7sr
+unique	654	Woodclaw		1		pik	pike	weapon	normal	spea		22	24	2	30	0	pik	9p9	7p7
+unique	49	The Tannr Gorerod		1		pik	Pike	weapon	normal	spea		25	24	-1	27	0	pik	9p9	7p7
+unique	648	Deceiver's Device		1		tri	trident	weapon	normal	spea		12	9	-3	15	0	tri	9tr	7tr
+unique	647	Mako's Pierce		1		tri	trident	weapon	normal	spea		12	9	-3	23	0	tri	9tr	7tr
+unique	651	Dragon Turtle		1		spt	spetum	weapon	normal	spea		25	20	-5	32	0	spt	9st	7st
+unique	652	Ruemonger		1		spt	spetum	weapon	normal	spea		25	20	-5	30	0	spt	9st	7st
+unique	653	Footman's Picket		1		pik	pike	weapon	normal	spea		30	24	-6	38	0	pik	9p9	7p7
+unique	649	Spear of Hydragoon		1		brn	brandistock	weapon	normal	spea		22	16	-6	30	0	brn	9br	7br
+unique	645	Sleepthorn		1		spr	spear	weapon	normal	spea		12	5	-7	18	0	spr	9sr	7sr
+unique	714	Riddlesolver		1		wst	war staff	weapon	normal	staf	slam	15	24	9	29	0	wst	8ws	6ws
+unique	57	Serpent Lord		1		lst	Long Staff	weapon	normal	staf	slam	1	8	7	9	0	lst	8ls	6ls
+unique	60	The Iron Jang Bong		1		wst	War Staff	weapon	normal	staf	slam	17	24	7	28	0	wst	8ws	6ws
+unique	710	Sage's Retort		1		cst	gnarled staff	weapon	normal	staf	slam	6	12	6	15	0	cst	8cs	6cs
+unique	712	Strange Alchemy		1		bst	battle staff	weapon	normal	staf	slam	12	17	5	23	0	bst	8bs	6bs
+unique	59	The Salamander		1		bst	Battle Staff	weapon	normal	staf	slam	12	17	5	21	0	bst	8bs	6bs
+unique	707	Puppeteer's Staff		1		lst	long staff	weapon	normal	staf	slam	4	8	4	12	0	lst	8ls	6ls
+unique	713	Warmth of Ash		1		wst	war staff	weapon	normal	staf	slam	25	24	-1	40	0	wst	8ws	6ws
+unique	711	Staff of the Arch-Magus		1		bst	battle staff	weapon	normal	staf	slam	25	17	-8	36	0	bst	8bs	6bs
+unique	706	Touch of Evil		1		lst	long staff	weapon	normal	staf	slam	17	8	-9	29	0	lst	8ls	6ls
+unique	704	Invoker		1		sst	short staff	weapon	normal	staf	slam	12	1	-11	20	0	sst	8ss	6ss
+unique	709	Wizard's Rule		1		cst	gnarled staff	weapon	normal	staf	slam	25	12	-13	32	0	cst	8cs	6cs
+unique	549	Arctic Edge		1		gsd	great sword	weapon	normal	swor	slam	12	33	21	20	0	gsd	9gd	7gd
+unique	548	Demolisher		1		gsd	great sword	weapon	normal	swor	slam	12	33	21	27	0	gsd	9gd	7gd
+unique	40	The Patriarch		1		gsd	Great Sword	weapon	normal	swor	slam	12	33	21	16	0	gsd	9gd	7gd
+unique	507	Honor Guard		1		lsd	long sword	weapon	normal	swor	1wep	1	20	19	15	0	lsd	9ls	7ls
+unique	34	Culwen's Point		1		wsd	War Sword	weapon	normal	swor	1wep	10	27	17	25	0	wsd	9wd	7wd
+unique	541	Coaldark		1		clm	claymore	weapon	normal	swor	slam	1	17	16	10	0	clm	9cm	7cm
+unique	546	Gharbad's Cry		1		flb	flamberge	weapon	normal	swor	slam	12	27	15	15	0	flb	9fb	7fb
+unique	509	Orc Slayer		1		wsd	war sword	weapon	normal	swor	1wep	12	27	15	25	0	wsd	9wd	7wd
+unique	39	Ripsaw		1		flb	Flamberge	weapon	normal	swor	slam	12	27	15	13	0	flb	9fb	7fb
+unique	547	Warrior's Challenge		1		flb	flamberge	weapon	normal	swor	slam	12	27	15	18	0	flb	9fb	7fb
+unique	38	Blacktongue		1		bsw	Bastard Sword	weapon	normal	swor	slam	10	24	14	26	0	bsw	9b9	7b7
+unique	506	Conquistador		1		bsd	Broad Sword	weapon	normal	swor	1wep	1	15	14	10	0	bsd	9bs	7bs
+unique	542	Ettercap		1		gis	giant sword	weapon	normal	swor	slam	10	21	11	25	0	gis	9gs	7gs
+unique	543	Hell's Messenger		1		gis	giant sword	weapon	normal	swor	slam	10	21	11	20	0	gis	9gs	7gs
+unique	501	Fiendslayer		1		flc	Falchion	weapon	normal	swor	1wep	1	11	10	15	0	flc	9fc	7fc
+unique	30	Gleamscythe		1		flc	Falchion	weapon	normal	swor	1wep	1	11	10	13	0	flc	9fc	7fc
+unique	545	Elder Curse		1		bsw	bastard sword	weapon	normal	swor	slam	15	24	9	27	0	bsw	9b9	7b7
+unique	544	Yuan-Ti's Venom		1		bsw	bastard sword	weapon	normal	swor	slam	15	24	9	30	0	bsw	9b9	7b7
+unique	33	Hellplague		1		lsd	Long Sword	weapon	normal	swor	1wep	12	20	8	22	0	lsd	9ls	7ls
+unique	508	Winterswipe		1		lsd	long sword	weapon	normal	swor	1wep	12	20	8	18	0	lsd	9ls	7ls
+unique	499	Chromablade		1		sbr	sabre	weapon	normal	swor	1wep	1	8	7	15	0	sbr	9sb	7sb
+unique	498	Sajorn Jinx		1		sbr	sabre	weapon	normal	swor	1wep	1	8	7	16	0	sbr	9sb	7sb
+unique	29	Skewer of Krintiz		1		sbr	Saber	weapon	normal	swor	1wep	1	8	7	10	0	sbr	9sb	7sb
+unique	540	Blink Dog		1		clm	claymore	weapon	normal	swor	slam	12	17	5	15	0	clm	9cm	7cm
+unique	538	Cloaker Beast		1		2hs	2-handed sword	weapon	normal	swor	slam	5	10	5	15	0	2hs	92h	72h
+unique	504	Simpering Sword		1		crs	Crystal Sword	weapon	normal	swor	1wep	6	11	5	13	0	crs	9cr	7cr
+unique	496	Anadek's Sword		1		scm	scimitar	weapon	normal	swor	1wep	1	5	4	15	0	scm	9sm	7sm
+unique	28	Blood Crescent		1		scm	Scimitar	weapon	normal	swor	1wep	1	5	4	7	0	scm	9sm	7sm
+unique	497	Briarblade		1		scm	scimitar	weapon	normal	swor	1wep	1	5	4	8	0	scm	9sm	7sm
+unique	539	Deathlust		1		2hs	2-handed sword	weapon	normal	swor	slam	6	10	4	12	0	2hs	92h	72h
+unique	32	Griswold's Edge		1		bsd	Broad Sword	weapon	normal	swor	1wep	12	15	3	17	0	bsd	9bs	7bs
+unique	505	Omni-Slash		1		bsd	Broad Sword	weapon	normal	swor	1wep	12	15	3	20	0	bsd	9bs	7bs
+unique	510	Warrior Untamed		1		wsd	war sword	weapon	normal	swor	1wep	25	27	2	30	0	wsd	9wd	7wd
+unique	502	Quartz Star		1		crs	crystal sword	weapon	normal	swor	1wep	10	11	1	15	0	crs	9cr	7cr
+unique	31	Akara's Wrath		1		crs	Crystal Sword	weapon	normal	swor	1wep	12	11	-1	13	0	crs	9cr	7cr
+unique	500	Qikadar's Laughter		1		flc	Falchion	weapon	normal	swor	1wep	12	11	-1	20	0	flc	9fc	7fc
+unique	35	Shadowfang		1		2hs	2-Handed Sword	weapon	normal	swor	slam	12	10	-2	12	0	2hs	92h	72h
+unique	37	Kinemil's Awl		1		gis	Giant Sword	weapon	normal	swor	slam	31	21	-10	23	0	gis	9gs	7gs
+unique	865	Solstice Edge		1		tax	Throwing Axe	weapon	normal	taxe	1wep	1	7	6	6	0	tax	9ta	7ta
+unique	864	Tonguecutter		1		tax	throwing axe	weapon	normal	taxe	1wep	1	7	6	10	0	tax	9ta	7ta
+unique	863	Spectral Slayer		1		bal	Balanced Axe	weapon	normal	taxe	1wep	12	16	4	20	0	bal	9b8	7b8
+unique	867	Timbersplitter		1		bal	balanced axe	weapon	normal	taxe	1wep	12	16	4	27	0	bal	9b8	7b8
+unique	868	Spleen Feaster		1		tax	throwing axe	weapon	normal	taxe	1wep	12	7	-5	16	0	tax	9ta	7ta
+unique	866	Oakplume		1		bal	balanced axe	weapon	normal	taxe	1wep	25	16	-9	30	0	bal	9b8	7b8
+unique	881	Dead Scoffer		1		bkf	Balanced Knife	weapon	normal	tkni	1wep	1	13	12	12	0	bkf	9bk	7bk
+unique	876	Sheera's Knives		1		tkf	throwing knife	weapon	normal	tkni	1wep	1	2	1	11	0	tkf	9tk	7tk
+unique	878	Splinterbeam		1		tkf	Throwing Knife	weapon	normal	tkni	1wep	1	2	1	4	0	tkf	9tk	7tk
+unique	877	Subtle Slice		1		tkf	throwing knife	weapon	normal	tkni	1wep	1	2	1	7	0	tkf	9tk	7tk
+unique	880	Tidrik's Initiator		1		bkf	balanced knife	weapon	normal	tkni	1wep	12	13	1	15	0	bkf	9bk	7bk
+unique	736	Ire of Astaroth		1		ywn	yew wand	weapon	normal	wand	1wep	1	12	11	12	0	ywn	9yw	7yw
+unique	13	Maelstrom		1		ywn	Yew Wand	weapon	normal	wand	1wep	1	12	11	14	0	ywn	9yw	7yw
+unique	738	Child's Laughter		1		bwn	bone wand	weapon	normal	wand	1wep	12	18	6	26	0	bwn	9bw	7bw
+unique	14	Gravenspine		1		bwn	Bone Wand	weapon	normal	wand	1wep	12	18	6	20	0	bwn	9bw	7bw
+unique	15	Ume's Lament		1		gwn	Grim Wand	weapon	normal	wand	1wep	20	26	6	28	0	gwn	9gw	7gw
+unique	740	Scream of Despair		1		gwn	grim wand	weapon	normal	wand	1wep	22	26	4	32	0	gwn	9gw	7gw
+unique	734	Bitter Sorrow		1		wnd	wand	weapon	normal	wand	1wep	1	2	1	9	0	wnd	9wn	7wn
+unique	739	Dracolich Fang		1		gwn	grim wand	weapon	normal	wand	1wep	25	26	1	35	0	gwn	9gw	7gw
+unique	12	Torch of Iro		1		wnd	Wand	weapon	normal	wand	1wep	1	2	1	5	0	wnd	9wn	7wn
+unique	737	Skeleton's Claw		1		bwn	bone wand	weapon	normal	wand	1wep	20	18	-2	33	0	bwn	9bw	7bw
+unique	735	Ladrina's Enchantment		1		ywn	yew wand	weapon	normal	wand	1wep	25	12	-13	30	0	ywn	9yw	7yw
+unique	733	Acolyte's Wand		1		wnd	wand	weapon	normal	wand	1wep	17	2	-15	25	0	wnd	9wn	7wn
+unique	72	Doomslinger		1		rxb	Repeating Crossbow	weapon	normal	xbow		17	33	16	28	0	rxb	8rx	6rx
+unique	807	Spikethrower		1		hxb	heavy crossbow	weapon	normal	xbow		12	24	12	24	0	hxb	8hx	6hx
+unique	805	Janglebright		1		mxb	crossbow	weapon	normal	xbow		6	15	9	18	0	mxb	8mx	6mx
+unique	809	King's Nail		1		rxb	repeating crossbow	weapon	normal	xbow		25	33	8	30	0	rxb	8rx	6rx
+unique	808	Synthalus		1		rxb	repeating crossbow	weapon	normal	xbow		25	33	8	35	0	rxb	8rx	6rx
+unique	71	Hellcast		1		hxb	Heavy Crossbow	weapon	normal	xbow		17	24	7	27	0	hxb	8hx	6hx
+unique	69	Leadcrow		1		lxb	Light Crossbow	weapon	normal	xbow		1	6	5	9	0	lxb	8lx	6lx
+unique	803	Nail Flinger		1		lxb	light crossbow	weapon	normal	xbow		1	6	5	12	0	lxb	8lx	6lx
+unique	70	Ichorsting		1		mxb	Crossbow	weapon	normal	xbow		12	15	3	18	0	mxb	8mx	6mx
+unique	806	Harpo Bogglinn		1		hxb	heavy crossbow	weapon	normal	xbow		25	24	-1	32	0	hxb	8hx	6hx
+unique	804	Piercing Bolt		1		mxb	crossbow	weapon	normal	xbow		17	15	-2	25	0	mxb	8mx	6mx
+unique	802	Rethral Bolt		1		lxb	light crossbow	weapon	normal	xbow		17	6	-11	25	0	lxb	8lx	6lx
