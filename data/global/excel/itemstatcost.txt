@@ -438,3 +438,104 @@ extra_skelemages	435		1	16														16	10	16	10																298	19		extra
 progressive_poison	436		1	3																																															0
 item_gambleDummy	437		1	12										0	8	2		8	0	8	0																														0
 item_greaterAffixMarker	438		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffixMarker	GreaterAffixMarker										0
+greater_armorclass	439		1	16											17	10		10	10	11	10																71	19		GreaterAffix_armorclass_ModStr1i	GreaterAffix_armorclass_ModStr1i										0
+greater_coldlength	440		1	16											77	4		8	0	8	0											1																			0
+greater_coldmaxdam	441		1	16											128	340		8	0	9	0											1					95	19		GreaterAffix_coldmaxdam_ModStr1s	GreaterAffix_coldmaxdam_ModStr1s										0
+greater_coldmindam	442		1	16											451	512		6	0	8	0											1					96	19		GreaterAffix_coldmindam_ModStr1t	GreaterAffix_coldmindam_ModStr1t										0
+greater_coldresist	443		1	9											43	20		8	0	9	200																40	19		GreaterAffix_coldresist_ModStr1k	GreaterAffix_coldresist_ModStr1k		2	19		GreaterAffix_coldresist_strModAllResistances	GreaterAffix_coldresist_strModAllResistances				0
+greater_damageresist	444		1	9											152	68		8	0	9	200																22	19		GreaterAffix_damageresist_ModStr2uPercent	GreaterAffix_damageresist_ModStr2uPercent									2	0
+greater_dexterity	445	1		11			1	0	10			1	1		125	55		7	32	7	32																65	19		GreaterAffix_dexterity_ModStr1b	GreaterAffix_dexterity_ModStr1b		1	19		GreaterAffix_dexterity_Moditem2allattrib	GreaterAffix_dexterity_Moditem2allattrib				0
+greater_energy	446			11			1	0	10			1	1		100	55		7	32	7	32			8			maxmana										61	19		GreaterAffix_energy_ModStr1d	GreaterAffix_energy_ModStr1d		1	19		GreaterAffix_energy_Moditem2allattrib	GreaterAffix_energy_Moditem2allattrib				0
+greater_firemaxdam	447		1	16											19	10		8	0	9	0											1					101	19		GreaterAffix_firemaxdam_ModStr1o	GreaterAffix_firemaxdam_ModStr1o										0
+greater_firemindam	448		1	16											11	10		8	0	8	0											1					102	19		GreaterAffix_firemindam_ModStr1p	GreaterAffix_firemindam_ModStr1p										0
+greater_fireresist	449		1	9											43	20		8	0	9	200																36	19		GreaterAffix_fireresist_ModStr1j	GreaterAffix_fireresist_ModStr1j		2	19		GreaterAffix_fireresist_strModAllResistances	GreaterAffix_fireresist_strModAllResistances				0
+greater_heal_afterhit	450		1	7							1				30	101		3	0	7	0												domeleedamage	28	domissiledamage	28	16	1	1	GreaterAffix_heal_afterhit_healperhit	GreaterAffix_heal_afterhit_healperhit										0
+greater_hpregen	451														451	410		6	30	6	30																56	19		GreaterAffix_hpregen_ModStr2l	GreaterAffix_hpregen_ModStr2w									2	0
+greater_item_absorbcold_percent	452		1	7											5486	102		7	0	7	0																25	19		GreaterAffix_item_absorbcold_percent_ModStr5m	GreaterAffix_item_absorbcold_percent_ModStr5m									2	0
+greater_item_absorbfire_percent	453		1	7											5486	102		7	0	7	0																23	19		GreaterAffix_item_absorbfire_percent_ModStr5g	GreaterAffix_item_absorbfire_percent_ModStr5g									2	0
+greater_item_absorblight_percent	454		1	7											5486	102		7	0	7	0																24	19		GreaterAffix_item_absorblight_percent_ModStr5i	GreaterAffix_item_absorblight_percent_ModStr5i									2	0
+greater_item_addclassskills	455		1	4	3						1				49523	1560		3	0	3	0	3															150	13		GreaterAffix_item_addclassskills_ModStr3a	GreaterAffix_item_addclassskills_ModStr3a										0
+greater_item_addexperience	456		1	9											36015	519		3	0	9	50																11	19		GreaterAffix_item_addexperience_Moditem2ExpG	GreaterAffix_item_addexperience_Moditem2ExpG									2	0
+greater_item_addskill_tab	457		1	3	6						1				11042	768		10	0	3	0	16															151	14		GreaterAffix_item_addskill_tab_StrSklTabItem1	GreaterAffix_item_addskill_tab_StrSklTabItem1										0
+greater_item_allskills	458		1	8							1				15123	4096		3	0	3	0																158	19		GreaterAffix_item_allskills_ModStr3k	GreaterAffix_item_allskills_ModStr3k										0
+greater_item_armor_percent	459		1	11											47	20		9	0	9	0			13			armorclass										74	19		GreaterAffix_item_armor_percent_Modstr2v	GreaterAffix_item_armor_percent_Modstr2v										0
+greater_item_attackertakesdamage	460		1	16							1				112	128		7	0	7	0												attackedinmelee	6	damagedbymissile	6	13	19		GreaterAffix_item_attackertakesdamage_ModStr1v	GreaterAffix_item_attackertakesdamage_ModStr1v									2	0
+greater_item_aura	461		1								1							7	0	5	0	9															159	16	0	GreaterAffix_item_aura_ModitemAura	GreaterAffix_item_aura_ModitemAura									2	0
+greater_item_crushingblow	462		1	7							1				98	40		7	0	7	0											1	domeleedamage	16	domissiledamage	16	87	19		GreaterAffix_item_crushingblow_ModStr5c	GreaterAffix_item_crushingblow_ModStr5c									2	0
+greater_item_damagetomana	463		1	7							1				43	20		6	0	6	0												damagedinmelee	13	damagedbymissile	13	11	19		GreaterAffix_item_damagetomana_ModStr3w	GreaterAffix_item_damagetomana_ModStr3w									2	0
+greater_item_deadlystrike	464		1	7											31	25		7	0	7	0											1					85	19		GreaterAffix_item_deadlystrike_ModStr5q	GreaterAffix_item_deadlystrike_ModStr5q									2	0
+greater_item_demon_tohit	465		1	13											15	7		10	128	10	128											1					110	19		GreaterAffix_item_demon_tohit_ModStr4j	GreaterAffix_item_demon_tohit_ModStr4j										0
+greater_item_demondamage_percent	466		1	12											19	12		9	20	9	20											1					112	19		GreaterAffix_item_demondamage_percent_ModStr4e	GreaterAffix_item_demondamage_percent_ModStr4e									2	0
+greater_item_dexterity_percent	467		1	8								1	1		125	55		7	63	7	63			11			dexterity										67	19		GreaterAffix_item_dexterity_percent_ModAttDexPercent	GreaterAffix_item_dexterity_percent_ModAttDexPercent										0
+greater_item_dexterity_perlevel	468		1	6											132	128		6	0	6	0			2	3	level	dexterity										64	19		GreaterAffix_item_dexterity_perlevel_ModStr1b	GreaterAffix_item_dexterity_perlevel_ModStr1b	increaseswithplaylevelX									0
+greater_item_energy_percent	469		1	8								1	1		125	55		7	63	7	63			11			energy										67	19		GreaterAffix_item_energy_percent_ModAttEnrPercent	GreaterAffix_item_energy_percent_ModAttEnrPercent										0
+greater_item_fasterattackrate	470	1	1	9											1042	156		7	20	7	20											1					145	19		GreaterAffix_item_fasterattackrate_ModStr4m	GreaterAffix_item_fasterattackrate_ModStr4m									2	0
+greater_item_fasterblockrate	471	1	1	9											1484	72		7	20	7	20																136	19		GreaterAffix_item_fasterblockrate_ModStr4y	GreaterAffix_item_fasterblockrate_ModStr4y									2	0
+greater_item_fastercastrate	472	1	1	9											3876	156		7	20	7	20																142	19		GreaterAffix_item_fastercastrate_ModStr4v	GreaterAffix_item_fastercastrate_ModStr4v									2	0
+greater_item_fastergethitrate	473	1	1	9											1065	72		7	20	7	20																139	19		GreaterAffix_item_fastergethitrate_ModStr4p	GreaterAffix_item_fastergethitrate_ModStr4p									2	0
+greater_item_fastermovevelocity	474	1	1	9											4083	156		7	20	7	20																148	19		GreaterAffix_item_fastermovevelocity_ModStr4s	GreaterAffix_item_fastermovevelocity_ModStr4s									2	0
+greater_item_goldbonus	475		1	12											187	34		9	100	9	100																10	19		GreaterAffix_item_goldbonus_ModStr1w	GreaterAffix_item_goldbonus_ModStr1w									2	0
+greater_item_healafterkill	476		1	7							1				30	101		3	0	7	0												kill	28			16	19		GreaterAffix_item_healafterkill_ModitemHPaK	GreaterAffix_item_healafterkill_ModitemHPaK									2	0
+greater_item_hp_perlevel	477		1	6											92	64	8	6	0	6	0			2	3	level	maxhp										57	19		GreaterAffix_item_hp_perlevel_ModStr1u	GreaterAffix_item_hp_perlevel_ModStr1u	increaseswithplaylevelX									0
+greater_item_kickdamage	478		1	7											77	51		7	0	7	0																121	19		GreaterAffix_item_kickdamage_ModStr5e	GreaterAffix_item_kickdamage_ModStr5e										0
+greater_item_magicbonus	479		1	12											577	102		8	100	9	100																8	19		GreaterAffix_item_magicbonus_ModStr1x	GreaterAffix_item_magicbonus_ModStr1x									2	0
+greater_item_mana_perlevel	480		1	6											90	128	8	6	0	6	0			2	3	level	maxmana										53	19		GreaterAffix_item_mana_perlevel_ModStr1e	GreaterAffix_item_mana_perlevel_ModStr1e	increaseswithplaylevelX									0
+greater_item_manaafterkill	481		1	7							1				17	102		7	0	7	0												kill	17			16	19		GreaterAffix_item_manaafterkill_ModStr5f	GreaterAffix_item_manaafterkill_ModStr5f									2	0
+greater_item_maxdamage_perlevel	482		1	6											54	204		6	0	6	0			4	3	level	maxdamage	secondary_maxdamage	item_throw_maxdamage			1					125	19		GreaterAffix_item_maxdamage_perlevel_ModStr1f	GreaterAffix_item_maxdamage_perlevel_ModStr1f	increaseswithplaylevelX									0
+greater_item_openwounds	483		1	7							1				23	10		7	0	7	0											1	domeleedamage	15	domissiledamage	15	83	19		GreaterAffix_item_openwounds_ModStr3m	GreaterAffix_item_openwounds_ModStr3m									2	0
+greater_item_pierce	484		1	7											1924	2048		7	0	7	0											1					132	19		GreaterAffix_item_pierce_ModStr6g	GreaterAffix_item_pierce_ModStr6g									2	0
+greater_item_reanimate	485			7	10						1							7	0	7	0	10										1	kill	31			17	23		GreaterAffix_item_reanimate_Moditemreanimas	GreaterAffix_item_reanimate_Moditemreanimas									2	0
+greater_item_replenish_durability	486		1	6											106	256		5	0	6	0																3	11		GreaterAffix_item_replenish_durability_ModStre9t	GreaterAffix_item_replenish_durability_ModStre9t										0
+greater_item_resist_cold_perlevel	487		1	6											101	128		6	0	6	0			2	3	level	coldresist										39	19		GreaterAffix_item_resist_cold_perlevel_ModStr1k	GreaterAffix_item_resist_cold_perlevel_ModStr1k	increaseswithplaylevelX									0
+greater_item_resist_fire_perlevel	488		1	6											101	128		6	0	6	0			2	3	level	fireresist										35	19		GreaterAffix_item_resist_fire_perlevel_ModStr1j	GreaterAffix_item_resist_fire_perlevel_ModStr1j	increaseswithplaylevelX									0
+greater_item_resist_ltng_perlevel	489		1	6											101	128		6	0	6	0			2	3	level	lightresist										37	19		GreaterAffix_item_resist_ltng_perlevel_ModStr1l	GreaterAffix_item_resist_ltng_perlevel_ModStr1l	increaseswithplaylevelX									0
+greater_item_resist_pois_perlevel	490		1	6											101	128		6	0	6	0			2	3	level	poisonresist										33	19		GreaterAffix_item_resist_pois_perlevel_ModStr1n	GreaterAffix_item_resist_pois_perlevel_ModStr1n	increaseswithplaylevelX									0
+greater_item_singleskill	491		1	15	9						1			1	181	256		14	0	3	0	9															81	27		GreaterAffix_item_singleskill_ItemModifierClassSkill	GreaterAffix_item_singleskill_ItemModifierClassSkill										0
+greater_item_skillonhit	492		1	7	16						1			2	190	256		21	0	7	0	16										1	domeleedamage	20	domissiledamage	20	160	15		GreaterAffix_item_skillonhit_ItemExpansiveChanc1	GreaterAffix_item_skillonhit_ItemExpansiveChanc1									2	0
+greater_item_slow	493		1	7							1				101	40		7	0	7	0											1	domeleedamage	19	domissiledamage	19	77	19		GreaterAffix_item_slow_ModStr5r	GreaterAffix_item_slow_ModStr5r									2	0
+greater_item_staminadrainpct	494		1	7											102	20		7	20	7	20											1					49	19		GreaterAffix_item_staminadrainpct_ModStr6e	GreaterAffix_item_staminadrainpct_ModStr6e									2	0
+greater_item_strength_percent	495		1	8								1	1		125	55		7	63	7	63			11			strength										67	19		GreaterAffix_item_strength_percent_ModAttStrPercent	GreaterAffix_item_strength_percent_ModAttStrPercent										0
+greater_item_strength_perlevel	496		1	6											132	128		6	0	6	0			2	3	level	strength										66	19		GreaterAffix_item_strength_perlevel_ModStr1a	GreaterAffix_item_strength_perlevel_ModStr1a	increaseswithplaylevelX									0
+greater_item_stupidity	497		1	8							1				332	1024		7	0	7	0											1	domeleedamage	9	domissiledamage	9	80	12	2	GreaterAffix_item_stupidity_ModStr6d	GreaterAffix_item_stupidity_ModStr6d									2	0
+greater_item_thorns_perlevel	498		1	6											55	256		6	0	5	0			2	3	level	item_attackertakesdamage										12	19		GreaterAffix_item_thorns_perlevel_ModStr1v	GreaterAffix_item_thorns_perlevel_ModStr1v	increaseswithplaylevelX									0
+greater_item_tohit_percent	499		1	12											981	40		9	20	9	20											1					117	19		GreaterAffix_item_tohit_percent_ModStr4c	GreaterAffix_item_tohit_percent_ModStr4c										0
+greater_item_undead_tohit	500		1	13											11	7		10	128	10	128											1					106	19		GreaterAffix_item_undead_tohit_ModStr4k	GreaterAffix_item_undead_tohit_ModStr4k										0
+greater_item_undeaddamage_percent	501		1	12											13	12		9	20	9	20											1					108	19		GreaterAffix_item_undeaddamage_percent_ModStr4f	GreaterAffix_item_undeaddamage_percent_ModStr4f									2	0
+greater_item_vitality_percent	502		1	8								1	1		125	55		7	63	7	63			11			vitality										67	19		GreaterAffix_item_vitality_percent_ModAttVitPercent	GreaterAffix_item_vitality_percent_ModAttVitPercent										0
+greater_lifedrainmindam	503		1	16											1044	341		7	0	7	0											1					88	19		GreaterAffix_lifedrainmindam_ModStr2z	GreaterAffix_lifedrainmindam_ModStr2z									2	0
+greater_lightmaxdam	504		1	16											17	10		9	0	10	0											1					98	19		GreaterAffix_lightmaxdam_ModStr1q	GreaterAffix_lightmaxdam_ModStr1q										0
+greater_lightmindam	505		1	16											12	10		6	0	6	0											1					99	19		GreaterAffix_lightmindam_ModStr1r	GreaterAffix_lightmindam_ModStr1r										0
+greater_lightresist	506		1	9											43	20		8	0	9	200																38	19		GreaterAffix_lightresist_ModStr1l	GreaterAffix_lightresist_ModStr1l		2	19		GreaterAffix_lightresist_strModAllResistances	GreaterAffix_lightresist_strModAllResistances				0
+greater_magic_damage_reduction	507		1	10											397	340		6	0	6	0																21	19		GreaterAffix_magic_damage_reduction_ModStr2t	GreaterAffix_magic_damage_reduction_ModStr2t									2	0
+greater_magicmaxdam	508		1	16											183	20		7	0	9	0											1					103	19		GreaterAffix_magicmaxdam_strModMagicDamage	GreaterAffix_magicmaxdam_strModMagicDamage										0
+greater_magicmindam	509		1	16											196	20		6	0	8	0											1					104	19		GreaterAffix_magicmindam_strModMagicDamage	GreaterAffix_magicmindam_strModMagicDamage										0
+greater_magicresist	510		1	9											164	68		8	0	9	200																41	19		GreaterAffix_magicresist_ModStr1m	GreaterAffix_magicresist_ModStr1m									2	0
+greater_manadrainmindam	511		1	16											1179	341		7	0	7	0											1					89	19		GreaterAffix_manadrainmindam_ModStr2y	GreaterAffix_manadrainmindam_ModStr2y									2	0
+greater_maxcoldresist	512		1	9											584	256		5	0	5	0																44	19		GreaterAffix_maxcoldresist_ModStr5v	GreaterAffix_maxcoldresist_ModStr5v		5	19		GreaterAffix_maxcoldresist_ModStrAllMaxRes	GreaterAffix_maxcoldresist_ModStrAllMaxRes				0
+greater_maxdamage	513		1	16											94	16		7	0	9	0											1					126	19		GreaterAffix_maxdamage_ModStr1f	GreaterAffix_maxdamage_ModStr1f										0
+greater_maxdurability	514		1	9											9	4		8	0	8	0																														0
+greater_maxfireresist	515		1	9											584	256		5	0	5	0																42	19		GreaterAffix_maxfireresist_ModStr5u	GreaterAffix_maxfireresist_ModStr5u		5	19		GreaterAffix_maxfireresist_ModStrAllMaxRes	GreaterAffix_maxfireresist_ModStrAllMaxRes				0
+greater_maxhp	516			32			1	0	21		1	1	1		56	20	8	8	32	9	32																59	19		GreaterAffix_maxhp_ModStr1u	GreaterAffix_maxhp_ModStr1u										0
+greater_maxlightresist	517		1	9											584	256		5	0	5	0																43	19		GreaterAffix_maxlightresist_ModStr5w	GreaterAffix_maxlightresist_ModStr5w		5	19		GreaterAffix_maxlightresist_ModStrAllMaxRes	GreaterAffix_maxlightresist_ModStrAllMaxRes				0
+greater_maxmana	518			32			1	0	21		1	1	0		81	20	8	8	32	8	32																55	19		GreaterAffix_maxmana_ModStr1e	GreaterAffix_maxmana_ModStr1e										0
+greater_maxpoisonresist	519		1	9											526	256		5	0	5	0																45	19		GreaterAffix_maxpoisonresist_ModStr5y	GreaterAffix_maxpoisonresist_ModStr5y		5	19		GreaterAffix_maxpoisonresist_ModStrAllMaxRes	GreaterAffix_maxpoisonresist_ModStrAllMaxRes				0
+greater_mindamage	520		1	16											122	25		6	0	8	0											1					127	19		GreaterAffix_mindamage_ModStr1g	GreaterAffix_mindamage_ModStr1g										0
+greater_normal_damage_reduction	521		1	10											188	200		6	0	6	0																22	19		GreaterAffix_normal_damage_reduction_ModStr2u	GreaterAffix_normal_damage_reduction_ModStr2u									2	0
+greater_passive_cold_mastery	522		1	12											1295	379		8	0	9	50																88	19		GreaterAffix_passive_cold_mastery_ModitemdamColdsk	GreaterAffix_passive_cold_mastery_ModitemdamColdsk		3	19		GreaterAffix_passive_cold_mastery_allelemskilldmg	GreaterAffix_passive_cold_mastery_allelemskilldmg			2	0
+greater_passive_cold_pierce	523		1	9												1984		8	0	8	0																88	19		GreaterAffix_passive_cold_pierce_Moditemenrescoldsk	GreaterAffix_passive_cold_pierce_Moditemenrescoldsk		4	19		GreaterAffix_PenetrateElePen	GreaterAffix_PenetrateElePen			2	0
+greater_passive_dmg_pierce	524		1	9												2812		8	0	8	0																88	19		GreaterAffix_passive_dmg_pierce_ModStrDamPierce	GreaterAffix_passive_dmg_pierce_ModStrDamPierce									2	0
+greater_passive_fire_mastery	525		1	12											1117	415		8	0	9	50																88	19		GreaterAffix_passive_fire_mastery_ModitemdamFiresk	GreaterAffix_passive_fire_mastery_ModitemdamFiresk		3	19		GreaterAffix_passive_fire_mastery_allelemskilldmg	GreaterAffix_passive_fire_mastery_allelemskilldmg			2	0
+greater_passive_fire_pierce	526		1	9												2578		8	0	8	0																88	19		GreaterAffix_passive_fire_pierce_Moditemenresfiresk	GreaterAffix_passive_fire_pierce_Moditemenresfiresk		4	19		GreaterAffix_PenetrateElePen	GreaterAffix_PenetrateElePen			2	0
+greater_passive_ltng_mastery	527		1	12											1054	408		8	0	9	50																88	19		GreaterAffix_passive_ltng_mastery_ModitemdamLtngsk	GreaterAffix_passive_ltng_mastery_ModitemdamLtngsk		3	19		GreaterAffix_passive_ltng_mastery_allelemskilldmg	GreaterAffix_passive_ltng_mastery_allelemskilldmg			2	0
+greater_passive_ltng_pierce	528		1	9												2493		8	0	8	0																88	19		GreaterAffix_passive_ltng_pierce_Moditemenresltngsk	GreaterAffix_passive_ltng_pierce_Moditemenresltngsk		4	19		GreaterAffix_PenetrateElePen	GreaterAffix_PenetrateElePen			2	0
+greater_passive_mag_pierce	529		1	9												2812		8	0	8	0																88	19		GreaterAffix_passive_mag_pierce_ModStrMagPierce	GreaterAffix_passive_mag_pierce_ModStrMagPierce									2	0
+greater_passive_pois_mastery	530		1	12											978	394		8	0	9	50																88	19		GreaterAffix_passive_pois_mastery_ModitemdamPoissk	GreaterAffix_passive_pois_mastery_ModitemdamPoissk		3	19		GreaterAffix_passive_pois_mastery_allelemskilldmg	GreaterAffix_passive_pois_mastery_allelemskilldmg			2	0
+greater_passive_pois_pierce	531		1	9												2345		8	0	8	0																88	19		GreaterAffix_passive_pois_pierce_Moditemenrespoissk	GreaterAffix_passive_pois_pierce_Moditemenrespoissk		4	19		GreaterAffix_PenetrateElePen	GreaterAffix_PenetrateElePen			2	0
+greater_poisonlength	532		1	16											0	4		8	0	9	0											1																			0
+greater_poisonmaxdam	533		1	19											11	34		9	0	10	0											1					91	19		GreaterAffix_poisonmaxdam_ModStr4h	GreaterAffix_poisonmaxdam_ModStr4h										0
+greater_poisonmindam	534		1	19											12	28		9	0	10	0											1					92	19		GreaterAffix_poisonmindam_ModStr4i	GreaterAffix_poisonmindam_ModStr4i										0
+greater_poisonresist	535		1	9											43	20		8	0	9	200																34	19		GreaterAffix_poisonresist_ModStr1n	GreaterAffix_poisonresist_ModStr1n		2	19		GreaterAffix_poisonresist_strModAllResistances	GreaterAffix_poisonresist_strModAllResistances				0
+greater_strength	536	1		11			1	0	10			1	1		125	55		7	32	8	32																67	19		GreaterAffix_strength_ModStr1a	GreaterAffix_strength_ModStr1a		1	19		GreaterAffix_strength_Moditem2allattrib	GreaterAffix_strength_Moditem2allattrib		6		0
+greater_toblock	537		1	10											89	204		7	0	7	0																134	19		GreaterAffix_toblock_ModStr3g	GreaterAffix_toblock_ModStr3g										0
+greater_tohit	538		1	16											15	10		10		10												1					115	19		GreaterAffix_tohit_ModStr1h	GreaterAffix_tohit_ModStr1h										0
+greater_vitality	539			11			1	0	10			1	1		100	55		7	32	7	32			9			maxhp	maxstamina									63	19		GreaterAffix_vitality_ModStr1c	GreaterAffix_vitality_ModStr1c		1	19		GreaterAffix_vitality_Moditem2allattrib	GreaterAffix_vitality_Moditem2allattrib				0

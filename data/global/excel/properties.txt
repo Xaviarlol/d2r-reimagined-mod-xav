@@ -433,228 +433,228 @@ extra_skelewarriors	429	1	1	extra_skelewarriors																												+# to
 extra_skelemages	430	1	1	extra_skelemages																												+# to Max Skeletal Mages		min	max	none	0
 gambleDummy	431	1	1	item_gambleDummy																														1	1	none	0
 greater-affix-marker	432	1	1	item_greaterAffixMarker																														1	1	Greater Affix tooltip marker	0
-greater_abs-cold%	433	1	1	item_absorbcold_percent																												+# Cold Absorb		Min #	Max #	greater-affix wrapper	0
-greater_m_abs-cold%	434	1	1	item_absorbcold_percent			1	item_greaterAffixMarker																								+# Cold Absorb		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_abs-fire%	435	1	1	item_absorbfire_percent																												+# Fire Absorb		Min #	Max #	greater-affix wrapper	0
-greater_m_abs-fire%	436	1	1	item_absorbfire_percent			1	item_greaterAffixMarker																								+# Fire Absorb		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_abs-ltng%	437	1	1	item_absorblight_percent																												+# Lightning Absorb		Min #	Max #	greater-affix wrapper	0
-greater_m_abs-ltng%	438	1	1	item_absorblight_percent			1	item_greaterAffixMarker																								+# Lightning Absorb		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_ac	439	1	1	armorclass																												+# Defense		Min #	Max #	greater-affix wrapper	0
-greater_m_ac	440	1	1	armorclass			1	item_greaterAffixMarker																								+# Defense		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_ac%	441	1	2	item_armor_percent																												+#% Enhanced Defense		Min %	Max %	greater-affix wrapper	0
-greater_m_ac%	442	1	2	item_armor_percent			1	item_greaterAffixMarker																								+#% Enhanced Defense		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_addxp	443	1	1	item_addexperience																												+#% to Experience Gained		Min %	Max %	greater-affix wrapper	0
-greater_m_addxp	444	1	1	item_addexperience			1	item_greaterAffixMarker																								+#% to Experience Gained		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_allskills	445	1	1	item_allskills																												+# to All Skills		Min #	Max #	greater-affix wrapper	0
-greater_m_allskills	446	1	1	item_allskills			1	item_greaterAffixMarker																								+# to All Skills		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_all-stats	447	1	1	strength			3	energy			3	dexterity			3	vitality																+# to all Attributes		Min #	Max #	greater-affix wrapper	0
-greater_m_all-stats	448	1	1	strength			3	energy			3	dexterity			3	vitality			1	item_greaterAffixMarker												+# to all Attributes		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_ama	449	1	21	item_addclassskills		0																										+# to Amazon Skill Levels		Min #	Max #	greater-affix wrapper	0
-greater_m_ama	450	1	21	item_addclassskills		0	1	item_greaterAffixMarker																								+# to Amazon Skill Levels		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_ass	451	1	21	item_addclassskills		6																										+# to Assassin Skill Levels		Min #	Max #	greater-affix wrapper	0
-greater_m_ass	452	1	21	item_addclassskills		6	1	item_greaterAffixMarker																								+# to Assassin Skill Levels		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_att	453	1	1	tohit																												+# to Attack Rating		Min #	Max #	greater-affix wrapper	0
-greater_m_att	454	1	1	tohit			1	item_greaterAffixMarker																								+# to Attack Rating		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_att%	455	1	1	item_tohit_percent																												#% Bonus to Attack Rating		Min %	Max %	greater-affix wrapper	0
-greater_m_att%	456	1	1	item_tohit_percent			1	item_greaterAffixMarker																								#% Bonus to Attack Rating		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_att-demon	457	1	1	item_demon_tohit																												+# to Attack Rating against Demons		Min #	Max #	greater-affix wrapper	0
-greater_m_att-demon	458	1	1	item_demon_tohit			1	item_greaterAffixMarker																								+# to Attack Rating against Demons		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_att-undead	459	1	1	item_undead_tohit																												+# to Attack Rating against Undead		Min #	Max #	greater-affix wrapper	0
-greater_m_att-undead	460	1	1	item_undead_tohit			1	item_greaterAffixMarker																								+# to Attack Rating against Undead		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_aura	461	1	22	item_aura																												Level # [Skill] Aura When Equipped	Skill	Min #	Max #	greater-affix wrapper	0
-greater_m_aura	462	1	22	item_aura			1	item_greaterAffixMarker																								Level # [Skill] Aura When Equipped	Skill	Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_balance1	463	1	8	item_fastergethitrate																												+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper	0
-greater_m_balance1	464	1	8	item_fastergethitrate			1	item_greaterAffixMarker																								+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_balance2	465	1	8	item_fastergethitrate																												+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper	0
-greater_m_balance2	466	1	8	item_fastergethitrate			1	item_greaterAffixMarker																								+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_balance3	467	1	8	item_fastergethitrate																												+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper	0
-greater_m_balance3	468	1	8	item_fastergethitrate			1	item_greaterAffixMarker																								+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_bar	469	1	21	item_addclassskills		4																										+#  to Barbarian Skill Levels		Min #	Max #	greater-affix wrapper	0
-greater_m_bar	470	1	21	item_addclassskills		4	1	item_greaterAffixMarker																								+#  to Barbarian Skill Levels		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_block	471	1	1	toblock																												#% Increased Chance of Blocking		Min %	Max %	greater-affix wrapper	0
-greater_m_block	472	1	1	toblock			1	item_greaterAffixMarker																								#% Increased Chance of Blocking		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_block2	473	1	8	item_fasterblockrate																												+#% Faster Block Rate		Min %	Max %	greater-affix wrapper	0
-greater_m_block2	474	1	8	item_fasterblockrate			1	item_greaterAffixMarker																								+#% Faster Block Rate		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_cast1	475	1	8	item_fastercastrate																												+#% Faster Cast Rate		Min %	Max %	greater-affix wrapper	0
-greater_m_cast1	476	1	8	item_fastercastrate			1	item_greaterAffixMarker																								+#% Faster Cast Rate		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_cast3	477	1	8	item_fastercastrate																												+#% Faster Cast Rate		Min %	Max %	greater-affix wrapper	0
-greater_m_cast3	478	1	8	item_fastercastrate			1	item_greaterAffixMarker																								+#% Faster Cast Rate		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_cold-len	479	1	1	coldlength																														Min #	Max #	# of Frames (25 Frames = 1 Second) greater-affix wrapper	0
-greater_m_cold-len	480	1	1	coldlength			1	item_greaterAffixMarker																										Min #	Max #	# of Frames (25 Frames = 1 Second) greater-affix wrapper with embedded marker	0
-greater_cold-max	481	1	1	coldmaxdam																												+# to Maximum Cold Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_cold-max	482	1	1	coldmaxdam			1	item_greaterAffixMarker																								+# to Maximum Cold Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_cold-min	483	1	1	coldmindam																												+# to Minimum Cold Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_cold-min	484	1	1	coldmindam			1	item_greaterAffixMarker																								+# to Minimum Cold Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_crush	485	1	1	item_crushingblow																												#% Chance of Crushing Blow		Min %	Max %	greater-affix wrapper	0
-greater_m_crush	486	1	1	item_crushingblow			1	item_greaterAffixMarker																								#% Chance of Crushing Blow		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_deadly	487	1	1	item_deadlystrike																												#% Deadly Strike		Min #	Max #	greater-affix wrapper	0
-greater_m_deadly	488	1	1	item_deadlystrike			1	item_greaterAffixMarker																								#% Deadly Strike		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_dex	489	1	1	dexterity																												+# to Dexterity		Min #	Max #	greater-affix wrapper	0
-greater_m_dex	490	1	1	dexterity			1	item_greaterAffixMarker																								+# to Dexterity		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_dex%	491	1	1	item_dexterity_percent																																greater-affix wrapper	0
-greater_m_dex%	492	1	1	item_dexterity_percent			1	item_greaterAffixMarker																												greater-affix wrapper with embedded marker	0
-greater_dex/lvl	493	1	17	item_dexterity_perlevel																											1	+# to Dexterity (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_dex/lvl	494	1	17	item_dexterity_perlevel			1	item_greaterAffixMarker																							1	+# to Dexterity (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_dmg%	495	1	7																													+#% Enhanced Damage		Min %	Max %	greater-affix wrapper	0
-greater_m_dmg%	496	1	7				1	item_greaterAffixMarker																								+#% Enhanced Damage		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_dmg/lvl	497	1	17	item_maxdamage_perlevel																											1	+# to Maximum Damage (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_dmg/lvl	498	1	17	item_maxdamage_perlevel			1	item_greaterAffixMarker																							1	+# to Maximum Damage (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_dmg-demon	499	1	1	item_demondamage_percent																												+#% Damage to Demons		Min %	Max %	greater-affix wrapper	0
-greater_m_dmg-demon	500	1	1	item_demondamage_percent			1	item_greaterAffixMarker																								+#% Damage to Demons		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_dmg-elem	501	1	15	firemindam			16	firemaxdam			15	lightmindam			16	lightmaxdam			15	coldmindam			16	coldmaxdam			17	coldlength				Adds #-# Fire/Lightning/Cold Damage		Min #	Max #	greater-affix wrapper	0
-greater_dmg-mag	502	1	15	magicmindam			16	magicmaxdam																								Adds #-# Magic Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_dmg-mag	503	1	15	magicmindam			16	magicmaxdam			1	item_greaterAffixMarker																				Adds #-# Magic Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_dmg-max	504	1	6																													+# to Maximum Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_dmg-max	505	1	6				1	item_greaterAffixMarker																								+# to Maximum Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_dmg-min	506	1	5																													+# to Minimum Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_dmg-min	507	1	5				1	item_greaterAffixMarker																								+# to Minimum Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_dmg-norm	508	1	15	mindamage			16	maxdamage																								Adds #-# Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_dmg-norm	509	1	15	mindamage			16	maxdamage			1	item_greaterAffixMarker																				Adds #-# Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_dmg-pois	510	1	15	poisonmindam			16	poisonmaxdam			17	poisonlength																				Adds #-# Poison Damage Over # Seconds	Length (Frames)	Min #	Max #	# of Frames (25 Frames = 1 Second) greater-affix wrapper	0
-greater_m_dmg-pois	511	1	15	poisonmindam			16	poisonmaxdam			17	poisonlength			1	item_greaterAffixMarker																Adds #-# Poison Damage Over # Seconds	Length (Frames)	Min #	Max #	# of Frames (25 Frames = 1 Second) greater-affix wrapper with embedded marker	0
-greater_dmg-to-mana	512	1	1	item_damagetomana																												#% Damage Taken Goes To Mana		Min %	Max %	greater-affix wrapper	0
-greater_m_dmg-to-mana	513	1	1	item_damagetomana			1	item_greaterAffixMarker																								#% Damage Taken Goes To Mana		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_dmg-undead	514	1	1	item_undeaddamage_percent																												+#% Damage to Undead		Min %	Max %	greater-affix wrapper	0
-greater_m_dmg-undead	515	1	1	item_undeaddamage_percent			1	item_greaterAffixMarker																								+#% Damage to Undead		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_dru	516	1	21	item_addclassskills		5																										+# to Druid Skill Levels		Min #	Max #	greater-affix wrapper	0
-greater_m_dru	517	1	21	item_addclassskills		5	1	item_greaterAffixMarker																								+# to Druid Skill Levels		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_dur	518	1	1	maxdurability																												Durability: # of #		Min #	Max #	greater-affix wrapper	0
-greater_m_dur	519	1	1	maxdurability			1	item_greaterAffixMarker																								Durability: # of #		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_enr	520	1	1	energy																												+# to Energy		Min #	Max #	greater-affix wrapper	0
-greater_m_enr	521	1	1	energy			1	item_greaterAffixMarker																								+# to Energy		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_enr%	522	1	1	item_energy_percent																																greater-affix wrapper	0
-greater_m_enr%	523	1	1	item_energy_percent			1	item_greaterAffixMarker																												greater-affix wrapper with embedded marker	0
-greater_ethereal	524	1	23																													Ethereal		1	1	greater-affix wrapper	0
-greater_m_ethereal	525	1	23				1	item_greaterAffixMarker																								Ethereal		1	1	greater-affix wrapper with embedded marker	0
-greater_extra-cold	526	1	1	passive_cold_mastery																												+#% to Cold Skill Damage		Min %	Max %	greater-affix wrapper	0
-greater_m_extra-cold	527	1	1	passive_cold_mastery			1	item_greaterAffixMarker																								+#% to Cold Skill Damage		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_extra-fire	528	1	1	passive_fire_mastery																												+#% to Fire Skill Damage		Min %	Max %	greater-affix wrapper	0
-greater_m_extra-fire	529	1	1	passive_fire_mastery			1	item_greaterAffixMarker																								+#% to Fire Skill Damage		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_extra-ltng	530	1	1	passive_ltng_mastery																												+#% to Lightning Skill Damage		Min %	Max %	greater-affix wrapper	0
-greater_m_extra-ltng	531	1	1	passive_ltng_mastery			1	item_greaterAffixMarker																								+#% to Lightning Skill Damage		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_extra-pois	532	1	1	passive_pois_mastery																												+#% to Poison Skill Damage		Min %	Max %	greater-affix wrapper	0
-greater_m_extra-pois	533	1	1	passive_pois_mastery			1	item_greaterAffixMarker																								+#% to Poison Skill Damage		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_fire-max	534	1	1	firemaxdam																												+# to Maximum Fire Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_fire-max	535	1	1	firemaxdam			1	item_greaterAffixMarker																								+# to Maximum Fire Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_fire-min	536	1	1	firemindam																												+# to Minimum Fire Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_fire-min	537	1	1	firemindam			1	item_greaterAffixMarker																								+# to Minimum Fire Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_gold%	538	1	1	item_goldbonus																												#% Extra Gold from Monsters		Min %	Max %	greater-affix wrapper	0
-greater_m_gold%	539	1	1	item_goldbonus			1	item_greaterAffixMarker																								#% Extra Gold from Monsters		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_heal-kill	540	1	1	item_healafterkill																												+# Life after each Kill		Min #	Max #	greater-affix wrapper	0
-greater_m_heal-kill	541	1	1	item_healafterkill			1	item_greaterAffixMarker																								+# Life after each Kill		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_healperhit	542	1	1	heal_afterhit																												Life gained after each hit				none greater-affix wrapper	0
-greater_m_healperhit	543	1	1	heal_afterhit			1	item_greaterAffixMarker																								Life gained after each hit				none greater-affix wrapper with embedded marker	0
-greater_hit-skill	544	1	11	item_skillonhit																											6	#% Chance to cast level # [Skill] on striking	Skill	% Chance (If 0, then default to 5)	Skill Level	greater-affix wrapper	0
-greater_m_hit-skill	545	1	11	item_skillonhit			1	item_greaterAffixMarker																							6	#% Chance to cast level # [Skill] on striking	Skill	% Chance (If 0, then default to 5)	Skill Level	greater-affix wrapper with embedded marker	0
-greater_hp	546	1	1	maxhp																												+# to Life		Min #	Max #	greater-affix wrapper	0
-greater_m_hp	547	1	1	maxhp			1	item_greaterAffixMarker																								+# to Life		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_hp/lvl	548	1	17	item_hp_perlevel																											1	+# to Life (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_hp/lvl	549	1	17	item_hp_perlevel			1	item_greaterAffixMarker																							1	+# to Life (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_kick	550	1	1	item_kickdamage																												+# Kick Damage		Min %	Max %	greater-affix wrapper	0
-greater_m_kick	551	1	1	item_kickdamage			1	item_greaterAffixMarker																								+# Kick Damage		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_lifesteal	552	1	1	lifedrainmindam																												#% Life stolen per hit		Min #	Max #	greater-affix wrapper	0
-greater_m_lifesteal	553	1	1	lifedrainmindam			1	item_greaterAffixMarker																								#% Life stolen per hit		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_ltng-max	554	1	1	lightmaxdam																												+# to Maximum Lightning Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_ltng-max	555	1	1	lightmaxdam			1	item_greaterAffixMarker																								+# to Maximum Lightning Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_ltng-min	556	1	1	lightmindam																												+# to Minimum Lightning Damage		Min #	Max #	greater-affix wrapper	0
-greater_m_ltng-min	557	1	1	lightmindam			1	item_greaterAffixMarker																								+# to Minimum Lightning Damage		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_mag%	558	1	1	item_magicbonus																												#% Better Chance of Getting Magic Items		Min %	Max %	greater-affix wrapper	0
-greater_m_mag%	559	1	1	item_magicbonus			1	item_greaterAffixMarker																								#% Better Chance of Getting Magic Items		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_mana	560	1	1	maxmana																												+# to Mana		Min #	Max #	greater-affix wrapper	0
-greater_m_mana	561	1	1	maxmana			1	item_greaterAffixMarker																								+# to Mana		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_mana/lvl	562	1	17	item_mana_perlevel																											1	+# to Mana (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_mana/lvl	563	1	17	item_mana_perlevel			1	item_greaterAffixMarker																							1	+# to Mana (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_mana-kill	564	1	1	item_manaafterkill																												+# to Mana after each Kill		Min #	Max #	greater-affix wrapper	0
-greater_m_mana-kill	565	1	1	item_manaafterkill			1	item_greaterAffixMarker																								+# to Mana after each Kill		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_manasteal	566	1	1	manadrainmindam																												#% Mana stolen per hit		Min #	Max #	greater-affix wrapper	0
-greater_m_manasteal	567	1	1	manadrainmindam			1	item_greaterAffixMarker																								#% Mana stolen per hit		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_move3	568	1	8	item_fastermovevelocity																												+#% Faster Run/Walk		Min %	Max %	greater-affix wrapper	0
-greater_m_move3	569	1	8	item_fastermovevelocity			1	item_greaterAffixMarker																								+#% Faster Run/Walk		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_nec	570	1	21	item_addclassskills		2																										+# to Necromancer Skill Levels		Min #	Max #	greater-affix wrapper	0
-greater_m_nec	571	1	21	item_addclassskills		2	1	item_greaterAffixMarker																								+# to Necromancer Skill Levels		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_openwounds	572	1	1	item_openwounds																												#% Chance of Open Wounds		Min %	Max %	greater-affix wrapper	0
-greater_m_openwounds	573	1	1	item_openwounds			1	item_greaterAffixMarker																								#% Chance of Open Wounds		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_pal	574	1	21	item_addclassskills		3																										+# to Paladin Skill Levels		Min #	Max #	greater-affix wrapper	0
-greater_m_pal	575	1	21	item_addclassskills		3	1	item_greaterAffixMarker																								+# to Paladin Skill Levels		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_pierce	576	1	1	item_pierce																												Piercing Attack		Min %	Max %	greater-affix wrapper	0
-greater_m_pierce	577	1	1	item_pierce			1	item_greaterAffixMarker																								Piercing Attack		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_pierce-cold	578	1	1	passive_cold_pierce																												-#% to Enemy Cold Resistance		Min %	Max %	greater-affix wrapper	0
-greater_m_pierce-cold	579	1	1	passive_cold_pierce			1	item_greaterAffixMarker																								-#% to Enemy Cold Resistance		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_pierce-dmg	580	1	1	passive_dmg_pierce																												-#% to Enemy Lightning Resistance		Min %	Max %	greater-affix wrapper	0
-greater_m_pierce-dmg	581	1	1	passive_dmg_pierce			1	item_greaterAffixMarker																								-#% to Enemy Lightning Resistance		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_pierce-elem	582	1	1	passive_fire_pierce			3	passive_ltng_pierce			3	passive_cold_pierce			3	passive_pois_pierce																-# % Enemy Elemental Resistances		Min%	Max %	greater-affix wrapper	0
-greater_m_pierce-elem	583	1	1	passive_fire_pierce			3	passive_ltng_pierce			3	passive_cold_pierce			3	passive_pois_pierce			1	item_greaterAffixMarker												-# % Enemy Elemental Resistances		Min%	Max %	greater-affix wrapper with embedded marker	0
-greater_pierce-fire	584	1	1	passive_fire_pierce																												-#% to Enemy Fire Resistance		Min %	Max %	greater-affix wrapper	0
-greater_m_pierce-fire	585	1	1	passive_fire_pierce			1	item_greaterAffixMarker																								-#% to Enemy Fire Resistance		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_pierce-ltng	586	1	1	passive_ltng_pierce																												-#% to Enemy Lightning Resistance		Min %	Max %	greater-affix wrapper	0
-greater_m_pierce-ltng	587	1	1	passive_ltng_pierce			1	item_greaterAffixMarker																								-#% to Enemy Lightning Resistance		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_pierce-mag	588	1	1	passive_mag_pierce																												-#% to Enemy Fire Resistance		Min %	Max %	greater-affix wrapper	0
-greater_m_pierce-mag	589	1	1	passive_mag_pierce			1	item_greaterAffixMarker																								-#% to Enemy Fire Resistance		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_pierce-pois	590	1	1	passive_pois_pierce																												-#% to Enemy Poison Resistance		Min %	Max %	greater-affix wrapper	0
-greater_m_pierce-pois	591	1	1	passive_pois_pierce			1	item_greaterAffixMarker																								-#% to Enemy Poison Resistance		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_reanimate	592	1	24	item_reanimate																												Reanimate As: [Returned]	monstats.txt hcIdx	Min %	Max %	greater-affix wrapper	0
-greater_m_reanimate	593	1	24	item_reanimate			1	item_greaterAffixMarker																								Reanimate As: [Returned]	monstats.txt hcIdx	Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_red-dmg	594	1	1	normal_damage_reduction																												Damage Reduced by #		Min #	Max #	greater-affix wrapper	0
-greater_m_red-dmg	595	1	1	normal_damage_reduction			1	item_greaterAffixMarker																								Damage Reduced by #		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_red-dmg%	596	1	1	damageresist																												Damage Reduced by #%		Min %	Max %	greater-affix wrapper	0
-greater_m_red-dmg%	597	1	1	damageresist			1	item_greaterAffixMarker																								Damage Reduced by #%		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_red-mag	598	1	1	magic_damage_reduction																												Magic Damage Reduced by #		Min #	Max #	greater-affix wrapper	0
-greater_m_red-mag	599	1	1	magic_damage_reduction			1	item_greaterAffixMarker																								Magic Damage Reduced by #		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_regen	600	1	1	hpregen																												Replenish Life +#		Min #	Max #	greater-affix wrapper	0
-greater_m_regen	601	1	1	hpregen			1	item_greaterAffixMarker																								Replenish Life +#		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_rep-dur	602	1	17	item_replenish_durability																												Repairs 1 durability in # seconds	Repair Speed			Repair 1 Durability every 100/[Repair Speed] seconds greater-affix wrapper	0
-greater_m_rep-dur	603	1	17	item_replenish_durability			1	item_greaterAffixMarker																								Repairs 1 durability in # seconds	Repair Speed			Repair 1 Durability every 100/[Repair Speed] seconds greater-affix wrapper with embedded marker	0
-greater_res-all	604	1	1	fireresist			3	lightresist			3	coldresist			3	poisonresist																All Resistances +#		Min %	Max %	greater-affix wrapper	0
-greater_m_res-all	605	1	1	fireresist			3	lightresist			3	coldresist			3	poisonresist			1	item_greaterAffixMarker												All Resistances +#		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_res-all-max	606	1	1	maxfireresist			3	maxlightresist			3	maxcoldresist			3	maxpoisonresist																		Min %	Max %	#% All Maximum Resistances greater-affix wrapper	0
-greater_m_res-all-max	607	1	1	maxfireresist			3	maxlightresist			3	maxcoldresist			3	maxpoisonresist			1	item_greaterAffixMarker														Min %	Max %	#% All Maximum Resistances greater-affix wrapper with embedded marker	0
-greater_res-cold	608	1	1	coldresist																												Cold Resist +#%		Min %	Max %	greater-affix wrapper	0
-greater_m_res-cold	609	1	1	coldresist			1	item_greaterAffixMarker																								Cold Resist +#%		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_res-cold/lvl	610	1	17	item_resist_cold_perlevel																											1	Cold Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_res-cold/lvl	611	1	17	item_resist_cold_perlevel			1	item_greaterAffixMarker																							1	Cold Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_res-fire	612	1	1	fireresist																												Fire Resist +#%		Min %	Max %	greater-affix wrapper	0
-greater_m_res-fire	613	1	1	fireresist			1	item_greaterAffixMarker																								Fire Resist +#%		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_res-fire/lvl	614	1	17	item_resist_fire_perlevel																											1	Fire Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_res-fire/lvl	615	1	17	item_resist_fire_perlevel			1	item_greaterAffixMarker																							1	Fire Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_res-ltng	616	1	1	lightresist																												Lightning Resist +#%		Min %	Max %	greater-affix wrapper	0
-greater_m_res-ltng	617	1	1	lightresist			1	item_greaterAffixMarker																								Lightning Resist +#%		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_res-ltng/lvl	618	1	17	item_resist_ltng_perlevel																											1	Lightning Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_res-ltng/lvl	619	1	17	item_resist_ltng_perlevel			1	item_greaterAffixMarker																							1	Lightning Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_res-mag	620	1	1	magicresist																												Magic Resist +#%		Min %	Max %	greater-affix wrapper	0
-greater_m_res-mag	621	1	1	magicresist			1	item_greaterAffixMarker																								Magic Resist +#%		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_res-pois	622	1	1	poisonresist																												Poison Resist +#%		Min %	Max %	greater-affix wrapper	0
-greater_m_res-pois	623	1	1	poisonresist			1	item_greaterAffixMarker																								Poison Resist +#%		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_res-pois/lvl	624	1	17	item_resist_pois_perlevel																											1	Poison Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_res-pois/lvl	625	1	17	item_resist_pois_perlevel			1	item_greaterAffixMarker																							1	Poison Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_skill-rand	626	1	12	item_singleskill																											2	+# to [Skill] ([Class] only)	Skill Level	Min Skill ID	Max Skill ID	greater-affix wrapper	0
-greater_m_skill-rand	627	1	12	item_singleskill			1	item_greaterAffixMarker																							2	+# to [Skill] ([Class] only)	Skill Level	Min Skill ID	Max Skill ID	greater-affix wrapper with embedded marker	0
-greater_skilltab	628	1	10	item_addskill_tab																												+# to [Class Skill Tab] Skills	Class Skill Tab ID	Min #	Max #	[Class Skill Tab ID] = (Amazon = 0-2, Sorceress = 3-5, Necromancer = 6-8, Paladin = 9-11, Barbarian = 12-14, Druid = 15-17,  Assassin = 18-20) greater-affix wrapper	0
-greater_m_skilltab	629	1	10	item_addskill_tab			1	item_greaterAffixMarker																								+# to [Class Skill Tab] Skills	Class Skill Tab ID	Min #	Max #	[Class Skill Tab ID] = (Amazon = 0-2, Sorceress = 3-5, Necromancer = 6-8, Paladin = 9-11, Barbarian = 12-14, Druid = 15-17,  Assassin = 18-20) greater-affix wrapper with embedded marker	0
-greater_slow	630	1	1	item_slow																												Slows Target by #%		Min #	Max #	greater-affix wrapper	0
-greater_m_slow	631	1	1	item_slow			1	item_greaterAffixMarker																								Slows Target by #%		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_sor	632	1	21	item_addclassskills		1																										+# to Sorceress Skill Levels		Min #	Max #	greater-affix wrapper	0
-greater_m_sor	633	1	21	item_addclassskills		1	1	item_greaterAffixMarker																								+# to Sorceress Skill Levels		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_stamdrain	634	1	1	item_staminadrainpct																												#% Slower Stamina Drain		Min #	Max #	greater-affix wrapper	0
-greater_m_stamdrain	635	1	1	item_staminadrainpct			1	item_greaterAffixMarker																								#% Slower Stamina Drain		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_str	636	1	1	strength																												+# to Strength		Min #	Max #	greater-affix wrapper	0
-greater_m_str	637	1	1	strength			1	item_greaterAffixMarker																								+# to Strength		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_str%	638	1	1	item_strength_percent																																greater-affix wrapper	0
-greater_m_str%	639	1	1	item_strength_percent			1	item_greaterAffixMarker																												greater-affix wrapper with embedded marker	0
-greater_str/lvl	640	1	17	item_strength_perlevel																											1	+# to Strength (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_str/lvl	641	1	17	item_strength_perlevel			1	item_greaterAffixMarker																							1	+# to Strength (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_stupidity	642	1	1	item_stupidity																												Hit Blinds Target +#		Min #	Max #	greater-affix wrapper	0
-greater_m_stupidity	643	1	1	item_stupidity			1	item_greaterAffixMarker																								Hit Blinds Target +#		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_swing1	644	1	8	item_fasterattackrate																												+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper	0
-greater_m_swing1	645	1	8	item_fasterattackrate			1	item_greaterAffixMarker																								+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_swing2	646	1	8	item_fasterattackrate																												+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper	0
-greater_m_swing2	647	1	8	item_fasterattackrate			1	item_greaterAffixMarker																								+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_swing3	648	1	8	item_fasterattackrate																												+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper	0
-greater_m_swing3	649	1	8	item_fasterattackrate			1	item_greaterAffixMarker																								+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper with embedded marker	0
-greater_thorns	650	1	1	item_attackertakesdamage																												Attacker Takes Damage of #		Min #	Max #	greater-affix wrapper	0
-greater_m_thorns	651	1	1	item_attackertakesdamage			1	item_greaterAffixMarker																								Attacker Takes Damage of #		Min #	Max #	greater-affix wrapper with embedded marker	0
-greater_thorns/lvl	652	1	17	item_thorns_perlevel																											1	Attacker Takes Damage of # (Based on Character Level)	#/8 per Level			greater-affix wrapper	0
-greater_m_thorns/lvl	653	1	17	item_thorns_perlevel			1	item_greaterAffixMarker																							1	Attacker Takes Damage of # (Based on Character Level)	#/8 per Level			greater-affix wrapper with embedded marker	0
-greater_vit%	654	1	1	item_vitality_percent																																greater-affix wrapper	0
-greater_m_vit%	655	1	1	item_vitality_percent			1	item_greaterAffixMarker																												greater-affix wrapper with embedded marker	0
-greater_war	656	1	21	item_addclassskills		7																										+# to Warlock Skill Levels		Min #	Max #	greater-affix wrapper	0
-greater_m_war	657	1	21	item_addclassskills		7	1	item_greaterAffixMarker																								+# to Warlock Skill Levels		Min #	Max #	greater-affix wrapper with embedded marker	0
+greater_abs-cold%	433	1	1	greater_item_absorbcold_percent																												+# Cold Absorb		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_abs-cold%	434	1	1	greater_item_absorbcold_percent																												+# Cold Absorb		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_abs-fire%	435	1	1	greater_item_absorbfire_percent																												+# Fire Absorb		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_abs-fire%	436	1	1	greater_item_absorbfire_percent																												+# Fire Absorb		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_abs-ltng%	437	1	1	greater_item_absorblight_percent																												+# Lightning Absorb		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_abs-ltng%	438	1	1	greater_item_absorblight_percent																												+# Lightning Absorb		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_ac	439	1	1	greater_armorclass																												+# Defense		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_ac	440	1	1	greater_armorclass																												+# Defense		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_ac%	441	1	2	greater_item_armor_percent																												+#% Enhanced Defense		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_ac%	442	1	2	greater_item_armor_percent																												+#% Enhanced Defense		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_addxp	443	1	1	greater_item_addexperience																												+#% to Experience Gained		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_addxp	444	1	1	greater_item_addexperience																												+#% to Experience Gained		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_allskills	445	1	1	greater_item_allskills																												+# to All Skills		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_allskills	446	1	1	greater_item_allskills																												+# to All Skills		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_all-stats	447	1	1	greater_strength			3	greater_energy			3	greater_dexterity			3	greater_vitality																+# to all Attributes		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_all-stats	448	1	1	greater_strength			3	greater_energy			3	greater_dexterity			3	greater_vitality																+# to all Attributes		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_ama	449	1	21	greater_item_addclassskills		0																										+# to Amazon Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_ama	450	1	21	greater_item_addclassskills		0																										+# to Amazon Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_ass	451	1	21	greater_item_addclassskills		6																										+# to Assassin Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_ass	452	1	21	greater_item_addclassskills		6																										+# to Assassin Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_att	453	1	1	greater_tohit																												+# to Attack Rating		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_att	454	1	1	greater_tohit																												+# to Attack Rating		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_att%	455	1	1	greater_item_tohit_percent																												#% Bonus to Attack Rating		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_att%	456	1	1	greater_item_tohit_percent																												#% Bonus to Attack Rating		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_att-demon	457	1	1	greater_item_demon_tohit																												+# to Attack Rating against Demons		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_att-demon	458	1	1	greater_item_demon_tohit																												+# to Attack Rating against Demons		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_att-undead	459	1	1	greater_item_undead_tohit																												+# to Attack Rating against Undead		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_att-undead	460	1	1	greater_item_undead_tohit																												+# to Attack Rating against Undead		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_aura	461	1	22	greater_item_aura																												Level # [Skill] Aura When Equipped	Skill	Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_aura	462	1	22	greater_item_aura																												Level # [Skill] Aura When Equipped	Skill	Min #	Max #	greater-affix wrapper colored stat display	0
+greater_balance1	463	1	8	greater_item_fastergethitrate																												+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_balance1	464	1	8	greater_item_fastergethitrate																												+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_balance2	465	1	8	greater_item_fastergethitrate																												+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_balance2	466	1	8	greater_item_fastergethitrate																												+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_balance3	467	1	8	greater_item_fastergethitrate																												+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_balance3	468	1	8	greater_item_fastergethitrate																												+#% Faster Hit Recovery		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_bar	469	1	21	greater_item_addclassskills		4																										+#  to Barbarian Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_bar	470	1	21	greater_item_addclassskills		4																										+#  to Barbarian Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_block	471	1	1	greater_toblock																												#% Increased Chance of Blocking		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_block	472	1	1	greater_toblock																												#% Increased Chance of Blocking		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_block2	473	1	8	greater_item_fasterblockrate																												+#% Faster Block Rate		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_block2	474	1	8	greater_item_fasterblockrate																												+#% Faster Block Rate		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_cast1	475	1	8	greater_item_fastercastrate																												+#% Faster Cast Rate		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_cast1	476	1	8	greater_item_fastercastrate																												+#% Faster Cast Rate		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_cast3	477	1	8	greater_item_fastercastrate																												+#% Faster Cast Rate		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_cast3	478	1	8	greater_item_fastercastrate																												+#% Faster Cast Rate		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_cold-len	479	1	1	greater_coldlength																														Min #	Max #	# of Frames (25 Frames = 1 Second) greater-affix wrapper colored stat display	0
+greater_m_cold-len	480	1	1	greater_coldlength																														Min #	Max #	# of Frames (25 Frames = 1 Second) greater-affix wrapper colored stat display	0
+greater_cold-max	481	1	1	greater_coldmaxdam																												+# to Maximum Cold Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_cold-max	482	1	1	greater_coldmaxdam																												+# to Maximum Cold Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_cold-min	483	1	1	greater_coldmindam																												+# to Minimum Cold Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_cold-min	484	1	1	greater_coldmindam																												+# to Minimum Cold Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_crush	485	1	1	greater_item_crushingblow																												#% Chance of Crushing Blow		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_crush	486	1	1	greater_item_crushingblow																												#% Chance of Crushing Blow		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_deadly	487	1	1	greater_item_deadlystrike																												#% Deadly Strike		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_deadly	488	1	1	greater_item_deadlystrike																												#% Deadly Strike		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_dex	489	1	1	greater_dexterity																												+# to Dexterity		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_dex	490	1	1	greater_dexterity																												+# to Dexterity		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_dex%	491	1	1	greater_item_dexterity_percent																																greater-affix wrapper colored stat display	0
+greater_m_dex%	492	1	1	greater_item_dexterity_percent																																greater-affix wrapper colored stat display	0
+greater_dex/lvl	493	1	17	greater_item_dexterity_perlevel																											1	+# to Dexterity (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_dex/lvl	494	1	17	greater_item_dexterity_perlevel																											1	+# to Dexterity (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_dmg%	495	1	7																													+#% Enhanced Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_dmg%	496	1	7																													+#% Enhanced Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_dmg/lvl	497	1	17	greater_item_maxdamage_perlevel																											1	+# to Maximum Damage (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_dmg/lvl	498	1	17	greater_item_maxdamage_perlevel																											1	+# to Maximum Damage (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_dmg-demon	499	1	1	greater_item_demondamage_percent																												+#% Damage to Demons		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_dmg-demon	500	1	1	greater_item_demondamage_percent																												+#% Damage to Demons		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_dmg-elem	501	1	15	greater_firemindam			16	greater_firemaxdam			15	greater_lightmindam			16	greater_lightmaxdam			15	greater_coldmindam			16	greater_coldmaxdam			17	greater_coldlength				Adds #-# Fire/Lightning/Cold Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_dmg-mag	502	1	15	greater_magicmindam			16	greater_magicmaxdam																								Adds #-# Magic Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_dmg-mag	503	1	15	greater_magicmindam			16	greater_magicmaxdam																								Adds #-# Magic Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_dmg-max	504	1	6																													+# to Maximum Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_dmg-max	505	1	6																													+# to Maximum Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_dmg-min	506	1	5																													+# to Minimum Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_dmg-min	507	1	5																													+# to Minimum Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_dmg-norm	508	1	15	greater_mindamage			16	greater_maxdamage																								Adds #-# Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_dmg-norm	509	1	15	greater_mindamage			16	greater_maxdamage																								Adds #-# Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_dmg-pois	510	1	15	greater_poisonmindam			16	greater_poisonmaxdam			17	greater_poisonlength																				Adds #-# Poison Damage Over # Seconds	Length (Frames)	Min #	Max #	# of Frames (25 Frames = 1 Second) greater-affix wrapper colored stat display	0
+greater_m_dmg-pois	511	1	15	greater_poisonmindam			16	greater_poisonmaxdam			17	greater_poisonlength																				Adds #-# Poison Damage Over # Seconds	Length (Frames)	Min #	Max #	# of Frames (25 Frames = 1 Second) greater-affix wrapper colored stat display	0
+greater_dmg-to-mana	512	1	1	greater_item_damagetomana																												#% Damage Taken Goes To Mana		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_dmg-to-mana	513	1	1	greater_item_damagetomana																												#% Damage Taken Goes To Mana		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_dmg-undead	514	1	1	greater_item_undeaddamage_percent																												+#% Damage to Undead		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_dmg-undead	515	1	1	greater_item_undeaddamage_percent																												+#% Damage to Undead		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_dru	516	1	21	greater_item_addclassskills		5																										+# to Druid Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_dru	517	1	21	greater_item_addclassskills		5																										+# to Druid Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_dur	518	1	1	greater_maxdurability																												Durability: # of #		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_dur	519	1	1	greater_maxdurability																												Durability: # of #		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_enr	520	1	1	greater_energy																												+# to Energy		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_enr	521	1	1	greater_energy																												+# to Energy		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_enr%	522	1	1	greater_item_energy_percent																																greater-affix wrapper colored stat display	0
+greater_m_enr%	523	1	1	greater_item_energy_percent																																greater-affix wrapper colored stat display	0
+greater_ethereal	524	1	23																													Ethereal		1	1	greater-affix wrapper colored stat display	0
+greater_m_ethereal	525	1	23																													Ethereal		1	1	greater-affix wrapper colored stat display	0
+greater_extra-cold	526	1	1	greater_passive_cold_mastery																												+#% to Cold Skill Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_extra-cold	527	1	1	greater_passive_cold_mastery																												+#% to Cold Skill Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_extra-fire	528	1	1	greater_passive_fire_mastery																												+#% to Fire Skill Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_extra-fire	529	1	1	greater_passive_fire_mastery																												+#% to Fire Skill Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_extra-ltng	530	1	1	greater_passive_ltng_mastery																												+#% to Lightning Skill Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_extra-ltng	531	1	1	greater_passive_ltng_mastery																												+#% to Lightning Skill Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_extra-pois	532	1	1	greater_passive_pois_mastery																												+#% to Poison Skill Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_extra-pois	533	1	1	greater_passive_pois_mastery																												+#% to Poison Skill Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_fire-max	534	1	1	greater_firemaxdam																												+# to Maximum Fire Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_fire-max	535	1	1	greater_firemaxdam																												+# to Maximum Fire Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_fire-min	536	1	1	greater_firemindam																												+# to Minimum Fire Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_fire-min	537	1	1	greater_firemindam																												+# to Minimum Fire Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_gold%	538	1	1	greater_item_goldbonus																												#% Extra Gold from Monsters		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_gold%	539	1	1	greater_item_goldbonus																												#% Extra Gold from Monsters		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_heal-kill	540	1	1	greater_item_healafterkill																												+# Life after each Kill		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_heal-kill	541	1	1	greater_item_healafterkill																												+# Life after each Kill		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_healperhit	542	1	1	greater_heal_afterhit																												Life gained after each hit				none greater-affix wrapper colored stat display	0
+greater_m_healperhit	543	1	1	greater_heal_afterhit																												Life gained after each hit				none greater-affix wrapper colored stat display	0
+greater_hit-skill	544	1	11	greater_item_skillonhit																											6	#% Chance to cast level # [Skill] on striking	Skill	% Chance (If 0, then default to 5)	Skill Level	greater-affix wrapper colored stat display	0
+greater_m_hit-skill	545	1	11	greater_item_skillonhit																											6	#% Chance to cast level # [Skill] on striking	Skill	% Chance (If 0, then default to 5)	Skill Level	greater-affix wrapper colored stat display	0
+greater_hp	546	1	1	greater_maxhp																												+# to Life		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_hp	547	1	1	greater_maxhp																												+# to Life		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_hp/lvl	548	1	17	greater_item_hp_perlevel																											1	+# to Life (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_hp/lvl	549	1	17	greater_item_hp_perlevel																											1	+# to Life (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_kick	550	1	1	greater_item_kickdamage																												+# Kick Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_kick	551	1	1	greater_item_kickdamage																												+# Kick Damage		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_lifesteal	552	1	1	greater_lifedrainmindam																												#% Life stolen per hit		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_lifesteal	553	1	1	greater_lifedrainmindam																												#% Life stolen per hit		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_ltng-max	554	1	1	greater_lightmaxdam																												+# to Maximum Lightning Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_ltng-max	555	1	1	greater_lightmaxdam																												+# to Maximum Lightning Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_ltng-min	556	1	1	greater_lightmindam																												+# to Minimum Lightning Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_ltng-min	557	1	1	greater_lightmindam																												+# to Minimum Lightning Damage		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_mag%	558	1	1	greater_item_magicbonus																												#% Better Chance of Getting Magic Items		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_mag%	559	1	1	greater_item_magicbonus																												#% Better Chance of Getting Magic Items		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_mana	560	1	1	greater_maxmana																												+# to Mana		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_mana	561	1	1	greater_maxmana																												+# to Mana		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_mana/lvl	562	1	17	greater_item_mana_perlevel																											1	+# to Mana (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_mana/lvl	563	1	17	greater_item_mana_perlevel																											1	+# to Mana (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_mana-kill	564	1	1	greater_item_manaafterkill																												+# to Mana after each Kill		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_mana-kill	565	1	1	greater_item_manaafterkill																												+# to Mana after each Kill		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_manasteal	566	1	1	greater_manadrainmindam																												#% Mana stolen per hit		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_manasteal	567	1	1	greater_manadrainmindam																												#% Mana stolen per hit		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_move3	568	1	8	greater_item_fastermovevelocity																												+#% Faster Run/Walk		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_move3	569	1	8	greater_item_fastermovevelocity																												+#% Faster Run/Walk		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_nec	570	1	21	greater_item_addclassskills		2																										+# to Necromancer Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_nec	571	1	21	greater_item_addclassskills		2																										+# to Necromancer Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_openwounds	572	1	1	greater_item_openwounds																												#% Chance of Open Wounds		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_openwounds	573	1	1	greater_item_openwounds																												#% Chance of Open Wounds		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_pal	574	1	21	greater_item_addclassskills		3																										+# to Paladin Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_pal	575	1	21	greater_item_addclassskills		3																										+# to Paladin Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_pierce	576	1	1	greater_item_pierce																												Piercing Attack		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_pierce	577	1	1	greater_item_pierce																												Piercing Attack		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_pierce-cold	578	1	1	greater_passive_cold_pierce																												-#% to Enemy Cold Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_pierce-cold	579	1	1	greater_passive_cold_pierce																												-#% to Enemy Cold Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_pierce-dmg	580	1	1	greater_passive_dmg_pierce																												-#% to Enemy Lightning Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_pierce-dmg	581	1	1	greater_passive_dmg_pierce																												-#% to Enemy Lightning Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_pierce-elem	582	1	1	greater_passive_fire_pierce			3	greater_passive_ltng_pierce			3	greater_passive_cold_pierce			3	greater_passive_pois_pierce																-# % Enemy Elemental Resistances		Min%	Max %	greater-affix wrapper colored stat display	0
+greater_m_pierce-elem	583	1	1	greater_passive_fire_pierce			3	greater_passive_ltng_pierce			3	greater_passive_cold_pierce			3	greater_passive_pois_pierce																-# % Enemy Elemental Resistances		Min%	Max %	greater-affix wrapper colored stat display	0
+greater_pierce-fire	584	1	1	greater_passive_fire_pierce																												-#% to Enemy Fire Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_pierce-fire	585	1	1	greater_passive_fire_pierce																												-#% to Enemy Fire Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_pierce-ltng	586	1	1	greater_passive_ltng_pierce																												-#% to Enemy Lightning Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_pierce-ltng	587	1	1	greater_passive_ltng_pierce																												-#% to Enemy Lightning Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_pierce-mag	588	1	1	greater_passive_mag_pierce																												-#% to Enemy Fire Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_pierce-mag	589	1	1	greater_passive_mag_pierce																												-#% to Enemy Fire Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_pierce-pois	590	1	1	greater_passive_pois_pierce																												-#% to Enemy Poison Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_pierce-pois	591	1	1	greater_passive_pois_pierce																												-#% to Enemy Poison Resistance		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_reanimate	592	1	24	greater_item_reanimate																												Reanimate As: [Returned]	monstats.txt hcIdx	Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_reanimate	593	1	24	greater_item_reanimate																												Reanimate As: [Returned]	monstats.txt hcIdx	Min %	Max %	greater-affix wrapper colored stat display	0
+greater_red-dmg	594	1	1	greater_normal_damage_reduction																												Damage Reduced by #		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_red-dmg	595	1	1	greater_normal_damage_reduction																												Damage Reduced by #		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_red-dmg%	596	1	1	greater_damageresist																												Damage Reduced by #%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_red-dmg%	597	1	1	greater_damageresist																												Damage Reduced by #%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_red-mag	598	1	1	greater_magic_damage_reduction																												Magic Damage Reduced by #		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_red-mag	599	1	1	greater_magic_damage_reduction																												Magic Damage Reduced by #		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_regen	600	1	1	greater_hpregen																												Replenish Life +#		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_regen	601	1	1	greater_hpregen																												Replenish Life +#		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_rep-dur	602	1	17	greater_item_replenish_durability																												Repairs 1 durability in # seconds	Repair Speed			Repair 1 Durability every 100/[Repair Speed] seconds greater-affix wrapper colored stat display	0
+greater_m_rep-dur	603	1	17	greater_item_replenish_durability																												Repairs 1 durability in # seconds	Repair Speed			Repair 1 Durability every 100/[Repair Speed] seconds greater-affix wrapper colored stat display	0
+greater_res-all	604	1	1	greater_fireresist			3	greater_lightresist			3	greater_coldresist			3	greater_poisonresist																All Resistances +#		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_res-all	605	1	1	greater_fireresist			3	greater_lightresist			3	greater_coldresist			3	greater_poisonresist																All Resistances +#		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_res-all-max	606	1	1	greater_maxfireresist			3	greater_maxlightresist			3	greater_maxcoldresist			3	greater_maxpoisonresist																		Min %	Max %	#% All Maximum Resistances greater-affix wrapper colored stat display	0
+greater_m_res-all-max	607	1	1	greater_maxfireresist			3	greater_maxlightresist			3	greater_maxcoldresist			3	greater_maxpoisonresist																		Min %	Max %	#% All Maximum Resistances greater-affix wrapper colored stat display	0
+greater_res-cold	608	1	1	greater_coldresist																												Cold Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_res-cold	609	1	1	greater_coldresist																												Cold Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_res-cold/lvl	610	1	17	greater_item_resist_cold_perlevel																											1	Cold Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_res-cold/lvl	611	1	17	greater_item_resist_cold_perlevel																											1	Cold Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_res-fire	612	1	1	greater_fireresist																												Fire Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_res-fire	613	1	1	greater_fireresist																												Fire Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_res-fire/lvl	614	1	17	greater_item_resist_fire_perlevel																											1	Fire Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_res-fire/lvl	615	1	17	greater_item_resist_fire_perlevel																											1	Fire Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_res-ltng	616	1	1	greater_lightresist																												Lightning Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_res-ltng	617	1	1	greater_lightresist																												Lightning Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_res-ltng/lvl	618	1	17	greater_item_resist_ltng_perlevel																											1	Lightning Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_res-ltng/lvl	619	1	17	greater_item_resist_ltng_perlevel																											1	Lightning Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_res-mag	620	1	1	greater_magicresist																												Magic Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_res-mag	621	1	1	greater_magicresist																												Magic Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_res-pois	622	1	1	greater_poisonresist																												Poison Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_res-pois	623	1	1	greater_poisonresist																												Poison Resist +#%		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_res-pois/lvl	624	1	17	greater_item_resist_pois_perlevel																											1	Poison Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_res-pois/lvl	625	1	17	greater_item_resist_pois_perlevel																											1	Poison Resist +#% (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_skill-rand	626	1	12	greater_item_singleskill																											2	+# to [Skill] ([Class] only)	Skill Level	Min Skill ID	Max Skill ID	greater-affix wrapper colored stat display	0
+greater_m_skill-rand	627	1	12	greater_item_singleskill																											2	+# to [Skill] ([Class] only)	Skill Level	Min Skill ID	Max Skill ID	greater-affix wrapper colored stat display	0
+greater_skilltab	628	1	10	greater_item_addskill_tab																												+# to [Class Skill Tab] Skills	Class Skill Tab ID	Min #	Max #	[Class Skill Tab ID] = (Amazon = 0-2, Sorceress = 3-5, Necromancer = 6-8, Paladin = 9-11, Barbarian = 12-14, Druid = 15-17,  Assassin = 18-20) greater-affix wrapper colored stat display	0
+greater_m_skilltab	629	1	10	greater_item_addskill_tab																												+# to [Class Skill Tab] Skills	Class Skill Tab ID	Min #	Max #	[Class Skill Tab ID] = (Amazon = 0-2, Sorceress = 3-5, Necromancer = 6-8, Paladin = 9-11, Barbarian = 12-14, Druid = 15-17,  Assassin = 18-20) greater-affix wrapper colored stat display	0
+greater_slow	630	1	1	greater_item_slow																												Slows Target by #%		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_slow	631	1	1	greater_item_slow																												Slows Target by #%		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_sor	632	1	21	greater_item_addclassskills		1																										+# to Sorceress Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_sor	633	1	21	greater_item_addclassskills		1																										+# to Sorceress Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_stamdrain	634	1	1	greater_item_staminadrainpct																												#% Slower Stamina Drain		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_stamdrain	635	1	1	greater_item_staminadrainpct																												#% Slower Stamina Drain		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_str	636	1	1	greater_strength																												+# to Strength		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_str	637	1	1	greater_strength																												+# to Strength		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_str%	638	1	1	greater_item_strength_percent																																greater-affix wrapper colored stat display	0
+greater_m_str%	639	1	1	greater_item_strength_percent																																greater-affix wrapper colored stat display	0
+greater_str/lvl	640	1	17	greater_item_strength_perlevel																											1	+# to Strength (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_str/lvl	641	1	17	greater_item_strength_perlevel																											1	+# to Strength (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_stupidity	642	1	1	greater_item_stupidity																												Hit Blinds Target +#		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_stupidity	643	1	1	greater_item_stupidity																												Hit Blinds Target +#		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_swing1	644	1	8	greater_item_fasterattackrate																												+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_swing1	645	1	8	greater_item_fasterattackrate																												+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_swing2	646	1	8	greater_item_fasterattackrate																												+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_swing2	647	1	8	greater_item_fasterattackrate																												+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_swing3	648	1	8	greater_item_fasterattackrate																												+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_m_swing3	649	1	8	greater_item_fasterattackrate																												+#% Increased Attack Speed		Min %	Max %	greater-affix wrapper colored stat display	0
+greater_thorns	650	1	1	greater_item_attackertakesdamage																												Attacker Takes Damage of #		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_thorns	651	1	1	greater_item_attackertakesdamage																												Attacker Takes Damage of #		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_thorns/lvl	652	1	17	greater_item_thorns_perlevel																											1	Attacker Takes Damage of # (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_m_thorns/lvl	653	1	17	greater_item_thorns_perlevel																											1	Attacker Takes Damage of # (Based on Character Level)	#/8 per Level			greater-affix wrapper colored stat display	0
+greater_vit%	654	1	1	greater_item_vitality_percent																																greater-affix wrapper colored stat display	0
+greater_m_vit%	655	1	1	greater_item_vitality_percent																																greater-affix wrapper colored stat display	0
+greater_war	656	1	21	greater_item_addclassskills		7																										+# to Warlock Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
+greater_m_war	657	1	21	greater_item_addclassskills		7																										+# to Warlock Skill Levels		Min #	Max #	greater-affix wrapper colored stat display	0
