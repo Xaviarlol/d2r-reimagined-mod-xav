@@ -1139,6 +1139,23 @@
         "zhCN": "%+d%% 强化防御"
     },
     {
+        "id": 60000,
+        "Key": "GreaterAffix_item_armor_percent_Modstr2v",
+        "enUS": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "zhTW": "ÿc8%+d%% 防禦強化ÿc3",
+        "deDE": "ÿc8%+d%% verbesserte Verteidigungÿc3",
+        "esES": "ÿc8%+d%% de defensa mejoradaÿc3",
+        "frFR": "ÿc8Défense augmentée de %+d%% ÿc3",
+        "itIT": "ÿc8%+d%% difesaÿc3",
+        "koKR": "ÿc8방어력 %+d%% 증가ÿc3",
+        "plPL": "ÿc8%+d%% do obronyÿc3",
+        "esMX": "ÿc8%+d%% de defensa mejoradaÿc3",
+        "jaJP": "ÿc8防御力を強化（%+d%%）ÿc3",
+        "ptBR": "ÿc8%+d%% de defesa aprimoradaÿc3",
+        "ruRU": "ÿc8%+d%% к защитеÿc3",
+        "zhCN": "ÿc8%+d%% 强化防御ÿc3"
+    },
+    {
         "id": 3521,
         "Key": "ModStr2w",
         "enUS": "Drain %d Life per 10 Seconds",

@@ -442,7 +442,7 @@ greater_m_abs-ltng%	438	1	1	item_absorblight_percent			1	item_greaterAffixMarker
 greater_ac	439	1	1	armorclass																												+# Defense		Min #	Max #	greater-affix wrapper	0
 greater_m_ac	440	1	1	armorclass			1	item_greaterAffixMarker																								+# Defense		Min #	Max #	greater-affix wrapper with embedded marker	0
 greater_ac%	441	1	2	item_armor_percent																												+#% Enhanced Defense		Min %	Max %	greater-affix wrapper	0
-greater_m_ac%	442	1	2	item_armor_percent			1	item_greaterAffixMarker																								+#% Enhanced Defense		Min %	Max %	greater-affix wrapper with embedded marker	0
+greater_m_ac%	442	1	2	greater_item_armor_percent			1	item_greaterAffixMarker																								+#% Enhanced Defense		Min %	Max %	greater-affix wrapper with embedded marker	0
 greater_addxp	443	1	1	item_addexperience																												+#% to Experience Gained		Min %	Max %	greater-affix wrapper	0
 greater_m_addxp	444	1	1	item_addexperience			1	item_greaterAffixMarker																								+#% to Experience Gained		Min %	Max %	greater-affix wrapper with embedded marker	0
 greater_allskills	445	1	1	item_allskills																												+# to All Skills		Min #	Max #	greater-affix wrapper	0

@@ -438,3 +438,4 @@ extra_skelemages	435		1	16														16	10	16	10																298	19		extra
 progressive_poison	436		1	3																																															0
 item_gambleDummy	437		1	12										0	8	2		8	0	8	0																														0
 item_greaterAffixMarker	438		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffixMarker	GreaterAffixMarker										0
+greater_item_armor_percent	439		1	11											47	20		9	0	9	0			13			armorclass										74	19		GreaterAffix_item_armor_percent_Modstr2v	GreaterAffix_item_armor_percent_Modstr2v										0
