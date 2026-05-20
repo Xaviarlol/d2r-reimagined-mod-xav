@@ -274,6 +274,13 @@ If these tables are regenerated from upstream, keep the gamble dummy appended ra
 
 The rare affix rework is now split into two phases.
 
+Implementation status as of 2026-05-20:
+
+- Both phases are implemented in active and `/base/` `magicprefix.txt` / `magicsuffix.txt`.
+- `magicprefix.txt`: 918 rare rows compressed, 170 source rows split, 510 Greater rows added.
+- `magicsuffix.txt`: 726 rare rows compressed, 133 source rows split, 399 Greater rows added.
+- Validation summary: `docs/rare-affix-implementation-summary-2026-05-20.tsv`.
+
 Phase 1 is proportional rare affix level compression:
 
 - Lower the effective availability gate for affixes by about 30%, using `round_half_up(original_level * 0.70)`.

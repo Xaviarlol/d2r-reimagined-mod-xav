@@ -323,37 +323,24 @@ For `itemratio.txt`, the d2rdoc source was useful for confirming the `Uber` fiel
 
 ## Suggested Next Steps For The Next Session
 
-1. If continuing the rare overhaul, do not start with bulk edits.
-2. Treat `docs/rare-item-rework-design-2026-05-18.md` as the canonical rare rework design doc.
-3. The 2.5x `Uber=1` rare rarity pass is already implemented; test before moving to 3x.
-4. Generate a rare affix family audit before editing `magicprefix.txt` or `magicsuffix.txt`.
-5. For Phase 1:
-   - calculate compressed level values using the 70% formula
-   - leave existing maxlevel values unchanged
-   - calculate compressed levelreq values using the 85% formula
-   - validate that each affix family remains ordered correctly
-   - use direct shared-row edits; magic item availability may move earlier too
-   - add the top-affix early/late split for each target family
-6. For Phase 2 Greater Affix families:
-   - identify the existing normal affix `group`
-   - add adjacent early/mid/late Greater bands using source-apex-derived `1/2/3` frequency ratios
-   - set Greater `levelreq` to the compressed source apex `levelreq`
-   - include `greater-affix-marker` when a row has a spare mod slot
-   - normalize family frequencies only if Greater odds are too common or too rare
-7. Validate with TSV-aware scripts:
+1. Treat `docs/rare-item-rework-design-2026-05-18.md` as the canonical rare rework design doc.
+2. The 2.5x `Uber=1` rare rarity pass is already implemented; test before moving to 3x.
+3. The Phase 1 + Phase 2 rare affix rework is implemented as of 2026-05-20.
+4. Use `docs/rare-affix-implementation-summary-2026-05-20.tsv` for the implementation checkpoint.
+5. Validate with TSV-aware scripts after any follow-up tuning:
    - active/base files identical where expected
    - column counts unchanged
    - property codes exist in `properties.txt`
    - Greater rows have `spawnable=0`, `rare=1`, non-empty `group`, non-zero `frequency`
    - Greater rows have non-empty `levelreq` copied from the compressed source apex requirement
-8. Install to live with:
+6. Install to live with:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\install-local.ps1 -D2RPath "E:\Diablo II Resurrected" -ModName "XavReimagined"
 ```
 
-9. Hash-check live files against repo files after install.
-10. Commit and push every completed implementation checkpoint to `origin/xav-custom`.
+7. Hash-check live files against repo files after install.
+8. Commit and push every completed implementation checkpoint to `origin/xav-custom`.
 
 ## Working Practices To Preserve
 

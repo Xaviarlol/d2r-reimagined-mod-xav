@@ -21,10 +21,11 @@ Reference context:
   - `item_greaterAffixMarker` in `itemstatcost.txt`
   - `greater-affix-marker` in `properties.txt`
   - `GreaterAffixMarker` in `item-modifiers.json`
-- Phase 1 affix level compression is not implemented yet.
-- Phase 2 Greater Affix rows are not implemented yet.
+- 2026-05-20: Phase 1 affix level compression is implemented in active and base `magicprefix.txt` / `magicsuffix.txt`.
+- 2026-05-20: Phase 2 Greater Affix rows are implemented in active and base `magicprefix.txt` / `magicsuffix.txt`.
 - 2026-05-19: Added a full generated apex audit and draft Greater Affix chance report: `docs/rare-greater-affix-apex-audit-2026-05-19.md`.
 - 2026-05-20: Locked the Phase 2 Greater policy after review: keep the 3-band model, make bands non-overlapping and adjacent, and set Greater `levelreq` from the source apex row after the same 15% reduction used by Phase 1.
+- 2026-05-20: Implementation summary is written to `docs/rare-affix-implementation-summary-2026-05-20.tsv`.
 
 ## Current Data Constraints
 
@@ -445,3 +446,19 @@ The in-game test should focus on:
 - Top affix chance at high levels not increasing accidentally.
 - Greater Affixes appearing rarely enough that they feel special once Phase 2 is implemented.
 - No low-level item becoming absurd because an early-access top affix has too low a `levelreq`.
+
+## Implementation Summary
+
+The 2026-05-20 implementation pass changed both active and `/base/` affix tables:
+
+| File | Original Rows | Output Rows | Rare Rows Compressed | Source Rows Split | Greater Rows Added |
+|---|---:|---:|---:|---:|---:|
+| `magicprefix.txt` | 1117 | 1797 | 918 | 170 | 510 |
+| `magicsuffix.txt` | 823 | 1355 | 726 | 133 | 399 |
+
+Validation results:
+
+- Active and `/base/` copies are byte-identical after the pass.
+- All four written TXT files have 40 columns on every row.
+- All Greater rows are `spawnable=0`, `rare=1`, have non-empty `level`, `levelreq`, `group`, and positive `frequency`.
+- Greater bands are exactly Early `50-65`, Mid `66-80`, Late `81+`.
