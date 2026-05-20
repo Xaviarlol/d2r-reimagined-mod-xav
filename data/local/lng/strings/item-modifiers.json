@@ -7499,18 +7499,18 @@
     {
         "id": 48070,
         "Key": "GreaterAffixMarker",
-        "enUS": "ÿc4** Greater Affixÿc3",
-        "zhTW": "ÿc4** Greater Affixÿc3",
-        "deDE": "ÿc4** Greater Affixÿc3",
-        "esES": "ÿc4** Greater Affixÿc3",
-        "frFR": "ÿc4** Greater Affixÿc3",
-        "itIT": "ÿc4** Greater Affixÿc3",
-        "koKR": "ÿc4** Greater Affixÿc3",
-        "plPL": "ÿc4** Greater Affixÿc3",
-        "esMX": "ÿc4** Greater Affixÿc3",
-        "jaJP": "ÿc4** Greater Affixÿc3",
-        "ptBR": "ÿc4** Greater Affixÿc3",
-        "ruRU": "ÿc4** Greater Affixÿc3",
-        "zhCN": "ÿc4** Greater Affixÿc3"
+        "enUS": "** Greater Affix",
+        "zhTW": "** Greater Affix",
+        "deDE": "** Greater Affix",
+        "esES": "** Greater Affix",
+        "frFR": "** Greater Affix",
+        "itIT": "** Greater Affix",
+        "koKR": "** Greater Affix",
+        "plPL": "** Greater Affix",
+        "esMX": "** Greater Affix",
+        "jaJP": "** Greater Affix",
+        "ptBR": "** Greater Affix",
+        "ruRU": "** Greater Affix",
+        "zhCN": "** Greater Affix"
     }
 ]
