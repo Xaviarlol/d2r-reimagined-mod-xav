@@ -1,0 +1,108 @@
+table	line	name	set	item_code	item_name	lvl	lvl_req	gap
+set	134	Warlord's Authority	Warlord's Glory	hbl	Plated Belt	100	1	99
+set	130	Warlord's Conquest	Warlord's Glory	hgl	Gauntlets	100	1	99
+set	133	Warlord's Crushers	Warlord's Glory	hbt	Greaves	100	1	99
+set	131	Warlord's Lust	Warlord's Glory	ghm	Great Helm	100	1	99
+set	132	Warlord's Mantle	Warlord's Glory	ful	Full Plate Mail	100	1	99
+unique	398	Autumn Facet		jew	jewel	85	49	36
+unique	401	Burnt Facet		jew	jewel	85	49	36
+unique	400	Rime Facet		jew	jewel	85	49	36
+unique	395	Spring Facet		jew	jewel	85	49	36
+unique	397	Summer Facet		jew	jewel	85	49	36
+unique	399	Thunder Facet		jew	jewel	85	49	36
+unique	402	Toxic Facet		jew	jewel	85	49	36
+unique	396	Winter Facet		jew	jewel	85	49	36
+unique	384	Annihilus		cm1	charm	110	75	35
+unique	423	Defender's Bile		cjw	jewel	110	75	35
+unique	426	Defender's Fire		cjw	jewel	110	75	35
+unique	428	Guardian's Light		cjw	jewel	110	75	35
+unique	424	Guardian's Thunder		cjw	jewel	110	75	35
+unique	425	Protector's Frost		cjw	jewel	110	75	35
+unique	427	Protector's Stone		cjw	jewel	110	75	35
+set	125	Naj's Circlet	Naj's Ancient Vestige	ci0	Circlet	43	28	15
+unique	275	Mara's Kaleidoscope		amu	Amulet	80	67	13
+set	110	Whitstan's Guard	Orphan's Call	xml	Round Shield	41	29	12
+set	105	Haemosu's Adamant	Heaven's Brethren	xrs	Cuirass	55	44	11
+set	296	Kingpin's Wrap	Treasure Hunter	ztb	Battle Belt	35	25	10
+set	100	Rite of Passage	The Disciple	xlb	Demonhide Boots	39	29	10
+unique	1304	Eagle Eyes		drc	sun spirit	80	70	10
+unique	124	The Stone of Jordan		rin	Ring	39	29	10
+set	98	Telling of Beads	The Disciple	amu	Amulet	39	30	9
+set	75	Immortal King's Detail	Immortal King	zhb	War Belt	37	29	8
+unique	332	Alma Negra		pac	sacred rondache	85	77	8
+unique	367	Dracul's Grasp		uvg	vampirebone gloves	84	76	8
+unique	415	Dreadfang		72h	legend sword	69	61	8
+unique	339	Griffon's Eye		ci3	diadem	84	76	8
+unique	393	Head Hunter's Glory		ush	troll nest	83	75	8
+unique	279	Highlord's Wrath		amu	Amulet	73	65	8
+unique	309	Horizon's Tornado		7fl	scourge	72	64	8
+unique	37	Kinemil's Awl		gis	Giant Sword	31	23	8
+unique	352	Medusa's Gaze		uow	aegis	84	76	8
+unique	353	Ravenlore		dre	sky spirit	82	74	8
+unique	305	Seraph's Hymn		amu	amulet	73	65	8
+unique	315	Soul Drainer		umg	vambraces	82	74	8
+unique	295	Warshrike		7bk	winged knife	83	75	8
+unique	322	Wisp Projector		rin	ring	84	76	8
+set	122	Cow King's Hooves	Cow King's Leathers	vbt	Heavy Boots	20	13	7
+set	107	Guillaume's Face	Orphan's Call	xhm	Winged Helm	41	34	7
+set	76	Immortal King's Forge	Immortal King	xhg	War Gauntlets	37	30	7
+unique	376	Arachnid Mesh		ulc	spiderweb sash	87	80	7
+unique	381	Carrion Wind		rin	ring	67	60	7
+set	77	Immortal King's Pillar	Immortal King	xhb	War Boots	37	31	6
+unique	335	Blood Raven's Charge		amb	matriarchal bow	81	75	6
+unique	1144	Ecstacy of Ishtar		utc	Troll Belt	86	80	6
+unique	358	Wolfhowl		bac	fury visor	85	79	6
+set	149	Calming Embrace	Nature's Grove	hla	Hard Leather Armor	12	7	5
+set	145	Jakira's Hood	Midnight Calling	skp	Skull Cap	10	5	5
+unique	1175	Amanda's Point		ame	matriarchal pike	85	80	5
+unique	879	Butcher's Paring Knives		7bk	winged knife	85	80	5
+unique	887	Fallen Glory		7tk	flying knife	85	80	5
+unique	362	Gheed's Fortune		cm3	charm	60	55	5
+unique	1166	Pegasus Wing		amf	matriarchal javelin	85	80	5
+set	170	Greyhawk's Viser	Greyhawk's Mantle	fhl	Full Helm	17	13	4
+set	109	Magnus' Skin	Orphan's Call	xvg	Sharkskin Gloves	41	37	4
+set	264	Soulstone of Power	Chaos Energy	amu	Amulet	85	81	4
+unique	1282	Archon's Ache		baf	guardian crown	85	81	4
+unique	385	Arioc's Needle		7sr	hyperion spear	85	81	4
+unique	1353	Biteblade		7lw	feral claws	85	81	4
+unique	1303	Call of the Wild		drb	blood spirit	85	81	4
+unique	350	Dragonscale		pae	zakarum shield	84	80	4
+unique	1197	Haven of Light		obb	heavenly stone	85	81	4
+unique	325	Mang Song's Lesson		6ws	archon staff	86	82	4
+unique	378	Metalgrid		amu	amulet	85	81	4
+unique	1006	Overlord's Helm		uh9	bone visage	85	81	4
+unique	1160	Quicksilver		amc	Grand Matron Bow	85	81	4
+unique	363	Stormlash		7fl	scourge	86	82	4
+unique	264	The Grandfather		7gd	Colossus Blade	85	81	4
+unique	1381	The Vanquisher		amu	amulet	85	81	4
+unique	554	Thunderclap		72h	legend sword	85	81	4
+unique	1110	Zero Effect		utb	mirrored boots	85	81	4
+set	208	Elven Grace	Mishy's Avatar	xvb	Sharkskin Boots	35	32	3
+set	168	Greyhawk's Icebrand	Greyhawk's Mantle	scp	Scepter	17	14	3
+set	219	Night's Caress	JBouley's Scion	xlg	Demonhide Gloves	35	32	3
+unique	371	Firelizard's Talons		7lw	feral claws	84	81	3
+unique	81	Greyform		qui	Quilted Armor	10	7	3
+unique	314	Tyrael's Might		uar	sacred armor	87	84	3
+set	121	Cow King's Hide	Cow King's Leathers	stu	Studded Leather	20	18	2
+set	169	Greyhawk's Deflector	Greyhawk's Mantle	pa3	Heraldic Shield	17	15	2
+set	154	Grimlock's Belt	Grimlock's Grave	mbl	Belt	11	9	2
+set	212	Maiden's Kiss	Mishy's Avatar	xmg	Heavy Bracers	35	33	2
+set	161	Sheena's Elven Mail	Sheena's Grace	scl	Scale Mail	16	14	2
+unique	348	Andariel's Visage		usk	demonhead	85	83	2
+unique	210	Blackhorn's Face		xsk	Death Mask	43	41	2
+unique	354	Boneshade		7bw	lich wand	85	83	2
+unique	1317	Cold of Winter		7ar	Suwayyah	85	83	2
+unique	219	Duriel's Shell		xrs	Cuirass	43	41	2
+unique	1091	Hellhunger		utg	Crusader Gauntlets	85	83	2
+unique	301	Tomb Reaver		7pa	cryptic axe	86	84	2
+unique	211	Vampire Gaze		xh9	Grim Helm	43	41	2
+set	183	Autumn's Decay	Four Seasons	tgl	Light Gauntlets	20	19	1
+set	146	Jakira's Leather Jerkin	Midnight Calling	stu	Studded Leather Armor	10	9	1
+set	319	Twilight of Evil	Darque Necromancy	9yw	Petrified Wand	30	29	1
+set	193	Wrath of Brother Laz	Insight of Brother Laz	9sc	Rune Scepter	30	29	1
+unique	1030	Cacophony		bsh	bone shield	25	24	1
+unique	1434	Conclave of Elements		cm3	charm	81	80	1
+unique	327	Ethereal Edge		7ba	silver-edged axe	82	81	1
+unique	303	Nature's Peace		rin	ring	70	69	1
+unique	1385	Remembrance of Glory		cm1	charm	81	80	1
+unique	220	Skullder's Ire		xpl	Russet Armor	43	42	1
