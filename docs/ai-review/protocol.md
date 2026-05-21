@@ -28,6 +28,18 @@ Use the `opus` model alias so the CLI selects the latest Opus model available to
 Recommended code-review invocation pattern:
 
 ```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\invoke-claude-review.ps1 -PromptPath <prompt.md> -ReviewName <short-name>
+```
+
+The wrapper stores prompts, raw results, rendered reviews, metadata, mirrored session transcripts, and mirrored Claude project memory under:
+
+```text
+docs\ai-review\claude-cli-history\
+```
+
+Use the raw `claude` command only when debugging the wrapper. The canonical raw command is:
+
+```powershell
 claude --model opus --name d2r-codex-reviewer --permission-mode dontAsk --tools Read,Glob,Grep -p "<review prompt>" --output-format json
 ```
 
@@ -54,6 +66,8 @@ CLI consensus is reached only when:
 - Codex has re-run Claude after required fixes when Claude requested changes.
 
 Before committing, Codex should record the last Claude verdict and session/run id in its final work notes or commit summary.
+
+Before committing, Codex should also make sure the relevant `docs\ai-review\claude-cli-history\...` files for the review are included in version control unless Eric explicitly asks not to store that review history. Sanity-check the mirrored `session.jsonl` and `memory\*.md` files before pushing because they preserve review context exactly and are not auto-redacted.
 
 The older `docs\ai-review\tasks\...` queue format may still be useful for archived design records, but it is no longer the primary mechanism for new reviews unless Eric explicitly asks to use the file queue.
 

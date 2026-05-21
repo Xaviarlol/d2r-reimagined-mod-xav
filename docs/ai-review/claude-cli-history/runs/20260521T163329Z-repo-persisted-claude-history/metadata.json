@@ -1,0 +1,13 @@
+﻿{
+    "schema":  "claude-cli-review-run-v1",
+    "created_at":  "2026-05-21T16:36:37Z",
+    "review_name":  "repo-persisted-claude-history",
+    "model":  "opus",
+    "reviewer_name":  "d2r-codex-reviewer",
+    "requested_session_id":  "da1ceeba-3d9c-44b1-a65f-fbcd0eb0950e",
+    "effective_session_id":  "da1ceeba-3d9c-44b1-a65f-fbcd0eb0950e",
+    "run_dir":  "C:\\Dropbox\\AI projects\\d2r\\d2r-reimagined-fresh\\docs\\ai-review\\claude-cli-history\\runs\\20260521T163329Z-repo-persisted-claude-history",
+    "claude_project_dir":  "C:\\Users\\ericb\\.claude\\projects\\C--Dropbox-AI-projects-d2r-d2r-reimagined-fresh",
+    "result_uuid":  "1057a493-c695-496b-9a7c-0dc2ebc08ed6",
+    "verdict_recorded_by_claude":  null
+}

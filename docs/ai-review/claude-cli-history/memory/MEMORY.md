@@ -1,0 +1,5 @@
+- [Eric — D2R modder](user_eric_d2r_modder.md) — Mod is XavReimagined; repo + live folder paths, branch xav-custom, launch args -mod XavReimagined -txt, TSV conventions
+- [Reviewer-only role](feedback_reviewer_role.md) — Never edit gameplay files, never publish to live, never commit/push/revert; only write review files
+- [AI review queue protocol](reference_ai_review_queue.md) — Triggered by "Check pending review requests"; queue at docs\ai-review\tasks\; full claim, frontmatter, and review-file spec
+- [D2R modding reference resources](reference_d2r_modding_resources.md) — eezstreet d2rdoc per-file URL pattern, D2R Reimagined wiki structure, public source repo on GitHub, fetch tips
+- [spawnable=0 rare=1 does not spawn](feedback_d2r_spawnable_rare_only.md) — `spawnable=0` blocks the affix entirely in this engine even with `rare=1`; Greater Affix rework is currently broken because of this
