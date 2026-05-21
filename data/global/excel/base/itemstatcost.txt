@@ -487,3 +487,4 @@ ga_marker_aureole_conviction	484		1	4								1	0	0	1	0		4	0	4	0																9
 ga_marker_aureole_holy_freeze	485		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_aureole_holy_freeze	GreaterAffix_aureole_holy_freeze										0
 ga_marker_aureole_meditation	486		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_aureole_meditation	GreaterAffix_aureole_meditation										0
 ga_marker_aureole_vigor	487		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_aureole_vigor	GreaterAffix_aureole_vigor										0
+item_salvageDummy	488		1	12										0	8	2		8	0	8	0																														0
