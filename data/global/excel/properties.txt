@@ -486,3 +486,5 @@ ga_aureole_holy_freeze	483	1	1	ga_marker_aureole_holy_freeze																				
 ga_aureole_meditation	484	1	1	ga_marker_aureole_meditation																												Greater Affix marker: Aureole Meditation				top-50 Greater Affix marker	0
 ga_aureole_vigor	485	1	1	ga_marker_aureole_vigor																												Greater Affix marker: Aureole Vigor				top-50 Greater Affix marker	0
 salvageDummy	486	1	1	item_salvageDummy																														1	1	none	0
+ga_godly_ac%	487	1	2	greater_godly_item_armor_percent																												+#% Enhanced Defense		Min %	Max %	Greater Godly colored Enhanced Defense	0
+ga_godly_red-dmg%	488	1	1	greater_godly_damageresist																												Damage Reduced by #%		Min %	Max %	Greater Godly colored Physical Damage Reduction	0

@@ -8362,5 +8362,39 @@
         "ptBR": "ÿc8Greater Affix: Aureole Vigorÿc3",
         "ruRU": "ÿc8Greater Affix: Aureole Vigorÿc3",
         "zhCN": "ÿc8Greater Affix: Aureole Vigorÿc3"
+    },
+    {
+        "id": 60122,
+        "Key": "GreaterAffix_godly_item_armor_percent_Modstr2v",
+        "enUS": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "zhTW": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "deDE": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "esES": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "frFR": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "itIT": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "koKR": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "plPL": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "esMX": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "jaJP": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "ptBR": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "ruRU": "ÿc8%+d%% Enhanced Defenseÿc3",
+        "zhCN": "ÿc8%+d%% Enhanced Defenseÿc3"
+    },
+    {
+        "id": 60123,
+        "Key": "GreaterAffix_godly_damageresist_ModStr2uPercent",
+        "enUS": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "zhTW": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "deDE": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "esES": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "frFR": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "itIT": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "koKR": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "plPL": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "esMX": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "jaJP": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "ptBR": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "ruRU": "ÿc8%+d%% Physical Damage Reductionÿc3",
+        "zhCN": "ÿc8%+d%% Physical Damage Reductionÿc3"
     }
 ]

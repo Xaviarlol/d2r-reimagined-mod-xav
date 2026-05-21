@@ -1301,15 +1301,15 @@ Greater Grandmaster's	Greater Grandmaster's [late; marker=ga_grandmasters]	100	1
 Greater Wraithly Weapon	Greater Wraithly Weapon [early; marker=ga_wraithly_weapon]	100	1	1	50	65	68				1	111	ga_h_wraithly_weapon_dmg		500	500	ethereal		1	1	rep-dur	10			whit	weap							orb	wand				0	0
 Greater Wraithly Weapon	Greater Wraithly Weapon [mid; marker=ga_wraithly_weapon]	100	1	1	66	80	68				3	111	ga_h_wraithly_weapon_dmg		500	500	ethereal		1	1	rep-dur	10			whit	weap							orb	wand				0	0
 Greater Wraithly Weapon	Greater Wraithly Weapon [late; marker=ga_wraithly_weapon]	100	1	1	81		68				4	111	ga_h_wraithly_weapon_dmg		500	500	ethereal		1	1	rep-dur	10			whit	weap							orb	wand				0	0
-Greater Godly	Greater Godly [early; marker=ga_godly]	100	1	1	50	65	64				37	101	ga_godly		1	1	ac%		300	300	red-dmg%		30	30	dgld	armo	shld											0	0
-Greater Godly	Greater Godly [mid; marker=ga_godly]	100	1	1	66	80	64				73	101	ga_godly		1	1	ac%		300	300	red-dmg%		30	30	dgld	armo	shld											0	0
-Greater Godly	Greater Godly [late; marker=ga_godly]	100	1	1	81		64				110	101	ga_godly		1	1	ac%		300	300	red-dmg%		30	30	dgld	armo	shld											0	0
+Greater Godly	Greater Godly [early; colored-stats]	100	1	1	50	65	64				37	101	ga_godly_ac%		300	300	ga_godly_red-dmg%		30	30					dgld	armo	shld											0	0
+Greater Godly	Greater Godly [mid; colored-stats]	100	1	1	66	80	64				73	101	ga_godly_ac%		300	300	ga_godly_red-dmg%		30	30					dgld	armo	shld											0	0
+Greater Godly	Greater Godly [late; colored-stats]	100	1	1	81		64				110	101	ga_godly_ac%		300	300	ga_godly_red-dmg%		30	30					dgld	armo	shld											0	0
 Greater Wraithly Armor	Greater Wraithly Armor [early; marker=ga_wraithly_armor]	100	1	1	50	65	64				1	101	ga_h_wraithly_armor_ac		300	300	ethereal		1	1	rep-dur	10			whit	armo												0	0
 Greater Wraithly Armor	Greater Wraithly Armor [mid; marker=ga_wraithly_armor]	100	1	1	66	80	64				3	101	ga_h_wraithly_armor_ac		300	300	ethereal		1	1	rep-dur	10			whit	armo												0	0
 Greater Wraithly Armor	Greater Wraithly Armor [late; marker=ga_wraithly_armor]	100	1	1	81		64				4	101	ga_h_wraithly_armor_ac		300	300	ethereal		1	1	rep-dur	10			whit	armo												0	0
-Greater Godly	Greater Godly [early; marker=ga_godly]	100	1	1	50	65	71				1	101	ga_godly		1	1	ac%		300	300	red-dmg%		30	30		tors	shld											0	0
-Greater Godly	Greater Godly [mid; marker=ga_godly]	100	1	1	66	80	71				3	101	ga_godly		1	1	ac%		300	300	red-dmg%		30	30		tors	shld											0	0
-Greater Godly	Greater Godly [late; marker=ga_godly]	100	1	1	81		71				4	101	ga_godly		1	1	ac%		300	300	red-dmg%		30	30		tors	shld											0	0
+Greater Godly	Greater Godly [early; colored-stats]	100	1	1	50	65	71				1	101	ga_godly_ac%		300	300	ga_godly_red-dmg%		30	30						tors	shld											0	0
+Greater Godly	Greater Godly [mid; colored-stats]	100	1	1	66	80	71				3	101	ga_godly_ac%		300	300	ga_godly_red-dmg%		30	30						tors	shld											0	0
+Greater Godly	Greater Godly [late; colored-stats]	100	1	1	81		71				4	101	ga_godly_ac%		300	300	ga_godly_red-dmg%		30	30						tors	shld											0	0
 Greater Gritty	Greater Gritty [early; marker=ga_gritty]	100	1	1	50	65	55				5	105	ga_gritty		1	1	dmg/lvl	21							whit	weap							orb	wand	orb			0	0
 Greater Gritty	Greater Gritty [mid; marker=ga_gritty]	100	1	1	66	80	55				9	105	ga_gritty		1	1	dmg/lvl	21							whit	weap							orb	wand	orb			0	0
 Greater Gritty	Greater Gritty [late; marker=ga_gritty]	100	1	1	81		55				14	105	ga_gritty		1	1	dmg/lvl	21							whit	weap							orb	wand	orb			0	0
