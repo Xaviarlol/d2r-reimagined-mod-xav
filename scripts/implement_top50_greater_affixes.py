@@ -524,14 +524,23 @@ def assign_ids(rows: list[dict[str, str]], id_col: str) -> None:
 
 def append_marker_strings() -> None:
     data = json.loads(STRINGS.read_text(encoding="utf-8"))
+    active_keys = {marker_key(slug) for slug in FAMILIES}
+    data = [
+        entry
+        for entry in data
+        if not entry.get("Key", "").startswith("GreaterAffix_") or entry.get("Key", "") in active_keys
+    ]
     existing = {entry["Key"] for entry in data}
     max_id = max(int(entry.get("id", 0)) for entry in data)
     for slug, label in FAMILIES.items():
         key = marker_key(slug)
+        text = f"\u00ffc8Greater Affix: {label}\u00ffc3"
         if key in existing:
+            entry = next(entry for entry in data if entry["Key"] == key)
+            for locale in LOCALES:
+                entry[locale] = text
             continue
         max_id += 1
-        text = f"\u00ffc4Greater Affix: {label}\u00ffc3"
         entry = {"id": max_id, "Key": key}
         for locale in LOCALES:
             entry[locale] = text
