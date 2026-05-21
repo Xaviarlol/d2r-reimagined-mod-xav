@@ -1,25 +1,25 @@
 ---
 schema: ai-review-task-v1
 id: 2026-05-21-0144-top50-greater-affix-redesign
-status: consensus_reached
-phase: design_review
-round: 2
+status: ready_for_claude
+phase: code_review
+round: 3
 max_rounds: 3
 created_by: codex
 created_at: 2026-05-20T23:44:29Z
-updated_at: 2026-05-21T09:16:32Z
+updated_at: 2026-05-21T09:58:34Z
 repo: C:\Dropbox\AI projects\d2r\d2r-reimagined-fresh
 branch: xav-custom
 base_ref: 6dca8854
 head_ref: xav-custom
 original_user_request_included: true
 live_publish_allowed: false
-last_review: claude-review-r02.md
-last_verdict: approved
+last_review:
+last_verdict:
 last_response: codex-response-r02.md
-claimed_by: claude
-claimed_at: 2026-05-21T02:20:00Z
-reviewed_at: 2026-05-21T02:35:00Z
+claimed_by:
+claimed_at:
+reviewed_at:
 ---
 
 # Review Request
@@ -32,15 +32,15 @@ ok, create a plan to do them for review by claude. You will need to reweight all
 
 ## Goal
 
-Review a plan to replace the current broad Greater Affix implementation with a focused top-50 Greater family system, including frequency reweighting and a safer colored-tooltip marker strategy.
+Review the implementation of the approved top-50 Greater Affix redesign.
 
 ## Phase
 
-design_review
+code_review
 
 ## Scope
 
-- Future implementation will affect:
+- Implementation affects:
   - `data/global/excel/magicprefix.txt`
   - `data/global/excel/base/magicprefix.txt`
   - `data/global/excel/magicsuffix.txt`
@@ -49,22 +49,27 @@ design_review
   - `data/global/excel/base/properties.txt`
   - `data/global/excel/itemstatcost.txt`
   - `data/global/excel/base/itemstatcost.txt`
-  - possibly localized strings for marker tooltip text
-- This review is design-only; no gameplay files have been changed for this redesign yet.
+- `data/local/lng/strings/item-modifiers.json`
+- `scripts/implement_top50_greater_affixes.py`
 - Existing Phase 1 rare-affix level and requirement changes should be preserved.
 - The prior 511-ID itemstatcost crash path must be avoided.
+- This is not live-published yet.
 
 ## Design Or Diff
 
-Review `design.md` in this task folder, especially the "Round 2 Clarifications After Claude Review" section. Codex also wrote `codex-response-r01.md`.
+Review:
+
+- `implementation-summary.md`
+- `diff.patch`
+- `scripts/implement_top50_greater_affixes.py`
+- `design.md`, especially the "Round 2 Clarifications After Claude Review" section
 
 ## Review Questions
 
-1. Does the selected top-50 list match Eric's "elite gamer" intent and avoid low-impact Greater affixes?
-2. Is the plan to rebuild from current non-Greater rows safer than checking out full old prefix/suffix files?
-3. Is the one-marker-stat-per-family colored tooltip strategy safe under the 511 itemstatcost ID limit?
-4. Does the proposed frequency model correctly reweight Greater affixes after most Greater rows are removed?
-5. Should the frequency model use a single apex row or sum equivalent apex rows for split families?
-6. Are any selected affixes technically unsafe because they need too many mods plus marker properties?
-7. Are the aura Greater affixes, especially Might/Fanaticism/Conviction/Holy Freeze/Meditation/Vigor, safe and sensible?
-8. Are active/base synchronization and TSV structure validation sufficiently covered?
+1. Does the implementation match the approved top-50 design?
+2. Are all broad/old Greater rows and `greater_m_` colored gameplay wrappers removed safely?
+3. Do the 50 marker stats/properties stay under the `itemstatcost.txt` hard limit?
+4. Are active/base files synchronized and TSV structures valid?
+5. Are the selected aura IDs correct and is the old broken `mod1param=126` state gone?
+6. Are the generated Greater rows correctly marked `spawnable=1`, `rare=1`, and banded as 50/65, 66/80, 81+?
+7. Is the tooltip marker strategy likely safe to publish/playtest?

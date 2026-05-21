@@ -437,76 +437,53 @@ extra_skelewarriors	434		1	16														16	10	16	10																298	19		ex
 extra_skelemages	435		1	16														16	10	16	10																298	19		extra_skele_mages	extra_skele_mages										0
 progressive_poison	436		1	3																																															0
 item_gambleDummy	437		1	12										0	8	2		8	0	8	0																														0
-item_greaterAffixMarker	438		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffixMarker	GreaterAffixMarker										0
-greater_item_armor_percent	439		1	11											47	20		9	0	9	0			13			armorclass										74	19		GreaterAffix_item_armor_percent_Modstr2v	GreaterAffix_item_armor_percent_Modstr2v										0
-greater_item_addclassskills	440		1	4	3						1				49523	1560		3	0	3	0	3															150	13		GreaterAffix_item_addclassskills_ModStr3a	GreaterAffix_item_addclassskills_ModStr3a										0
-greater_item_addskill_tab	441		1	3	6						1				11042	768		10	0	3	0	16															151	14		GreaterAffix_item_addskill_tab_StrSklTabItem1	GreaterAffix_item_addskill_tab_StrSklTabItem1										0
-greater_coldresist	442		1	9											43	20		8	0	9	200																40	19		GreaterAffix_coldresist_ModStr1k	GreaterAffix_coldresist_ModStr1k		2	19		strModAllResistances	strModAllResistances				0
-greater_lightresist	443		1	9											43	20		8	0	9	200																38	19		GreaterAffix_lightresist_ModStr1l	GreaterAffix_lightresist_ModStr1l		2	19		strModAllResistances	strModAllResistances				0
-greater_poisonresist	444		1	9											43	20		8	0	9	200																34	19		GreaterAffix_poisonresist_ModStr1n	GreaterAffix_poisonresist_ModStr1n		2	19		strModAllResistances	strModAllResistances				0
-greater_fireresist	445		1	9											43	20		8	0	9	200																36	19		GreaterAffix_fireresist_ModStr1j	GreaterAffix_fireresist_ModStr1j		2	19		strModAllResistances	strModAllResistances				0
-greater_coldmaxdam	446		1	16											128	340		8	0	9	0											1					95	19		GreaterAffix_coldmaxdam_ModStr1s	GreaterAffix_coldmaxdam_ModStr1s										0
-greater_coldmindam	447		1	16											451	512		6	0	8	0											1					96	19		GreaterAffix_coldmindam_ModStr1t	GreaterAffix_coldmindam_ModStr1t										0
-greater_firemaxdam	448		1	16											19	10		8	0	9	0											1					101	19		GreaterAffix_firemaxdam_ModStr1o	GreaterAffix_firemaxdam_ModStr1o										0
-greater_firemindam	449		1	16											11	10		8	0	8	0											1					102	19		GreaterAffix_firemindam_ModStr1p	GreaterAffix_firemindam_ModStr1p										0
-greater_lightmaxdam	450		1	16											17	10		9	0	10	0											1					98	19		GreaterAffix_lightmaxdam_ModStr1q	GreaterAffix_lightmaxdam_ModStr1q										0
-greater_lightmindam	451		1	16											12	10		6	0	6	0											1					99	19		GreaterAffix_lightmindam_ModStr1r	GreaterAffix_lightmindam_ModStr1r										0
-greater_item_magicbonus	452		1	12											577	102		8	100	9	100																8	19		GreaterAffix_item_magicbonus_ModStr1x	GreaterAffix_item_magicbonus_ModStr1x									2	0
-greater_item_singleskill	453		1	15	9						1			1	181	256		14	0	3	0	9															81	27		GreaterAffix_item_singleskill_ItemModifierClassSkill	GreaterAffix_item_singleskill_ItemModifierClassSkill										0
-greater_lifedrainmindam	454		1	16											1044	341		7	0	7	0											1					88	19		GreaterAffix_lifedrainmindam_ModStr2z	GreaterAffix_lifedrainmindam_ModStr2z									2	0
-greater_manadrainmindam	455		1	16											1179	341		7	0	7	0											1					89	19		GreaterAffix_manadrainmindam_ModStr2y	GreaterAffix_manadrainmindam_ModStr2y									2	0
-greater_maxmana	456			32			1	0	21		1	1	0		81	20	8	8	32	8	32																55	19		GreaterAffix_maxmana_ModStr1e	GreaterAffix_maxmana_ModStr1e										0
-greater_poisonmaxdam	457		1	19											11	34		9	0	10	0											1					91	19		GreaterAffix_poisonmaxdam_ModStr4h	GreaterAffix_poisonmaxdam_ModStr4h										0
-greater_poisonmindam	458		1	19											12	28		9	0	10	0											1					92	19		GreaterAffix_poisonmindam_ModStr4i	GreaterAffix_poisonmindam_ModStr4i										0
-greater_tohit	459		1	16											15	10		10		10												1					115	19		GreaterAffix_tohit_ModStr1h	GreaterAffix_tohit_ModStr1h										0
-greater_energy	460			11			1	0	10			1	1		100	55		7	32	7	32			8			maxmana										61	19		GreaterAffix_energy_ModStr1d	GreaterAffix_energy_ModStr1d		1	19		Moditem2allattrib	Moditem2allattrib				0
-greater_maxhp	461			32			1	0	21		1	1	1		56	20	8	8	32	9	32																59	19		GreaterAffix_maxhp_ModStr1u	GreaterAffix_maxhp_ModStr1u										0
-greater_strength	462	1		11			1	0	10			1	1		125	55		7	32	8	32																67	19		GreaterAffix_strength_ModStr1a	GreaterAffix_strength_ModStr1a		1	19		Moditem2allattrib	Moditem2allattrib		6		0
-greater_dexterity	463	1		11			1	0	10			1	1		125	55		7	32	7	32																65	19		GreaterAffix_dexterity_ModStr1b	GreaterAffix_dexterity_ModStr1b		1	19		Moditem2allattrib	Moditem2allattrib				0
-greater_hpregen	464														451	410		6	30	6	30																56	19		GreaterAffix_hpregen_ModStr2l	GreaterAffix_hpregen_ModStr2l									2	0
-greater_item_fasterattackrate	465	1	1	9											1042	156		7	20	7	20											1					145	19		GreaterAffix_item_fasterattackrate_ModStr4m	GreaterAffix_item_fasterattackrate_ModStr4m									2	0
-greater_item_fastergethitrate	466	1	1	9											1065	72		7	20	7	20																139	19		GreaterAffix_item_fastergethitrate_ModStr4p	GreaterAffix_item_fastergethitrate_ModStr4p									2	0
-greater_item_goldbonus	467		1	12											187	34		9	100	9	100																10	19		GreaterAffix_item_goldbonus_ModStr1w	GreaterAffix_item_goldbonus_ModStr1w									2	0
-greater_magicresist	468		1	9											164	68		8	0	9	200																41	19		GreaterAffix_magicresist_ModStr1m	GreaterAffix_magicresist_ModStr1m									2	0
-greater_item_addexperience	469		1	9											36015	519		3	0	9	50																11	19		GreaterAffix_item_addexperience_Moditem2ExpG	GreaterAffix_item_addexperience_Moditem2ExpG									2	0
-greater_item_allskills	470		1	8							1				15123	4096		3	0	3	0																158	19		GreaterAffix_item_allskills_ModStr3k	GreaterAffix_item_allskills_ModStr3k										0
-greater_item_deadlystrike	471		1	7											31	25		7	0	7	0											1					85	19		GreaterAffix_item_deadlystrike_ModStr5q	GreaterAffix_item_deadlystrike_ModStr5q									2	0
-greater_item_fastermovevelocity	472	1	1	9											4083	156		7	20	7	20																148	19		GreaterAffix_item_fastermovevelocity_ModStr4s	GreaterAffix_item_fastermovevelocity_ModStr4s									2	0
-greater_item_hp_perlevel	473		1	6											92	64	8	6	0	6	0			2	3	level	maxhp										57	19		GreaterAffix_item_hp_perlevel_ModStr1u	GreaterAffix_item_hp_perlevel_ModStr1u	increaseswithplaylevelX									0
-greater_item_mana_perlevel	474		1	6											90	128	8	6	0	6	0			2	3	level	maxmana										53	19		GreaterAffix_item_mana_perlevel_ModStr1e	GreaterAffix_item_mana_perlevel_ModStr1e	increaseswithplaylevelX									0
-greater_item_skillonhit	475		1	7	16						1			2	190	256		21	0	7	0	16										1	domeleedamage	20	domissiledamage	20	160	15		GreaterAffix_item_skillonhit_ItemExpansiveChanc1	GreaterAffix_item_skillonhit_ItemExpansiveChanc1									2	0
-greater_normal_damage_reduction	476		1	10											188	200		6	0	6	0																22	19		GreaterAffix_normal_damage_reduction_ModStr2u	GreaterAffix_normal_damage_reduction_ModStr2u									2	0
-greater_passive_cold_pierce	477		1	9												1984		8	0	8	0																88	19		GreaterAffix_passive_cold_pierce_Moditemenrescoldsk	GreaterAffix_passive_cold_pierce_Moditemenrescoldsk		4	19		PenetrateElePen	PenetrateElePen			2	0
-greater_passive_fire_pierce	478		1	9												2578		8	0	8	0																88	19		GreaterAffix_passive_fire_pierce_Moditemenresfiresk	GreaterAffix_passive_fire_pierce_Moditemenresfiresk		4	19		PenetrateElePen	PenetrateElePen			2	0
-greater_passive_ltng_pierce	479		1	9												2493		8	0	8	0																88	19		GreaterAffix_passive_ltng_pierce_Moditemenresltngsk	GreaterAffix_passive_ltng_pierce_Moditemenresltngsk		4	19		PenetrateElePen	PenetrateElePen			2	0
-greater_passive_pois_pierce	480		1	9												2345		8	0	8	0																88	19		GreaterAffix_passive_pois_pierce_Moditemenrespoissk	GreaterAffix_passive_pois_pierce_Moditemenrespoissk		4	19		PenetrateElePen	PenetrateElePen			2	0
-greater_damageresist	481		1	9											152	68		8	0	9	200																22	19		GreaterAffix_damageresist_ModStr2uPercent	GreaterAffix_damageresist_ModStr2uPercent									2	0
-greater_item_attackertakesdamage	482		1	16							1				112	128		7	0	7	0												attackedinmelee	6	damagedbymissile	6	13	19		GreaterAffix_item_attackertakesdamage_ModStr1v	GreaterAffix_item_attackertakesdamage_ModStr1v									2	0
-greater_item_crushingblow	483		1	7							1				98	40		7	0	7	0											1	domeleedamage	16	domissiledamage	16	87	19		GreaterAffix_item_crushingblow_ModStr5c	GreaterAffix_item_crushingblow_ModStr5c									2	0
-greater_item_damagetomana	484		1	7							1				43	20		6	0	6	0												damagedinmelee	13	damagedbymissile	13	11	19		GreaterAffix_item_damagetomana_ModStr3w	GreaterAffix_item_damagetomana_ModStr3w									2	0
-greater_item_demon_tohit	485		1	13											15	7		10	128	10	128											1					110	19		GreaterAffix_item_demon_tohit_ModStr4j	GreaterAffix_item_demon_tohit_ModStr4j										0
-greater_item_demondamage_percent	486		1	12											19	12		9	20	9	20											1					112	19		GreaterAffix_item_demondamage_percent_ModStr4e	GreaterAffix_item_demondamage_percent_ModStr4e									2	0
-greater_item_fastercastrate	487	1	1	9											3876	156		7	20	7	20																142	19		GreaterAffix_item_fastercastrate_ModStr4v	GreaterAffix_item_fastercastrate_ModStr4v									2	0
-greater_item_manaafterkill	488		1	7							1				17	102		7	0	7	0												kill	17			16	19		GreaterAffix_item_manaafterkill_ModStr5f	GreaterAffix_item_manaafterkill_ModStr5f									2	0
-greater_item_openwounds	489		1	7							1				23	10		7	0	7	0											1	domeleedamage	15	domissiledamage	15	83	19		GreaterAffix_item_openwounds_ModStr3m	GreaterAffix_item_openwounds_ModStr3m									2	0
-greater_item_replenish_durability	490		1	6											106	256		5	0	6	0																3	11		GreaterAffix_item_replenish_durability_ModStre9t	GreaterAffix_item_replenish_durability_ModStre9t										0
-greater_item_resist_cold_perlevel	491		1	6											101	128		6	0	6	0			2	3	level	coldresist										39	19		GreaterAffix_item_resist_cold_perlevel_ModStr1k	GreaterAffix_item_resist_cold_perlevel_ModStr1k	increaseswithplaylevelX									0
-greater_item_resist_fire_perlevel	492		1	6											101	128		6	0	6	0			2	3	level	fireresist										35	19		GreaterAffix_item_resist_fire_perlevel_ModStr1j	GreaterAffix_item_resist_fire_perlevel_ModStr1j	increaseswithplaylevelX									0
-greater_item_resist_ltng_perlevel	493		1	6											101	128		6	0	6	0			2	3	level	lightresist										37	19		GreaterAffix_item_resist_ltng_perlevel_ModStr1l	GreaterAffix_item_resist_ltng_perlevel_ModStr1l	increaseswithplaylevelX									0
-greater_item_slow	494		1	7							1				101	40		7	0	7	0											1	domeleedamage	19	domissiledamage	19	77	19		GreaterAffix_item_slow_ModStr5r	GreaterAffix_item_slow_ModStr5r									2	0
-greater_item_undead_tohit	495		1	13											11	7		10	128	10	128											1					106	19		GreaterAffix_item_undead_tohit_ModStr4k	GreaterAffix_item_undead_tohit_ModStr4k										0
-greater_item_undeaddamage_percent	496		1	12											13	12		9	20	9	20											1					108	19		GreaterAffix_item_undeaddamage_percent_ModStr4f	GreaterAffix_item_undeaddamage_percent_ModStr4f									2	0
-greater_passive_cold_mastery	497		1	12											1295	379		8	0	9	50																88	19		GreaterAffix_passive_cold_mastery_ModitemdamColdsk	GreaterAffix_passive_cold_mastery_ModitemdamColdsk		3	19		allelemskilldmg	allelemskilldmg			2	0
-greater_passive_fire_mastery	498		1	12											1117	415		8	0	9	50																88	19		GreaterAffix_passive_fire_mastery_ModitemdamFiresk	GreaterAffix_passive_fire_mastery_ModitemdamFiresk		3	19		allelemskilldmg	allelemskilldmg			2	0
-greater_passive_ltng_mastery	499		1	12											1054	408		8	0	9	50																88	19		GreaterAffix_passive_ltng_mastery_ModitemdamLtngsk	GreaterAffix_passive_ltng_mastery_ModitemdamLtngsk		3	19		allelemskilldmg	allelemskilldmg			2	0
-greater_passive_pois_mastery	500		1	12											978	394		8	0	9	50																88	19		GreaterAffix_passive_pois_mastery_ModitemdamPoissk	GreaterAffix_passive_pois_mastery_ModitemdamPoissk		3	19		allelemskilldmg	allelemskilldmg			2	0
-greater_armorclass	501		1	16											17	10		10	10	11	10																71	19		GreaterAffix_armorclass_ModStr1i	GreaterAffix_armorclass_ModStr1i										0
-greater_toblock	502		1	10											89	204		7	0	7	0																134	19		GreaterAffix_toblock_ModStr3g	GreaterAffix_toblock_ModStr3g										0
-greater_item_fasterblockrate	503	1	1	9											1484	72		7	20	7	20																136	19		GreaterAffix_item_fasterblockrate_ModStr4y	GreaterAffix_item_fasterblockrate_ModStr4y									2	0
-greater_item_kickdamage	504		1	7											77	51		7	0	7	0																121	19		GreaterAffix_item_kickdamage_ModStr5e	GreaterAffix_item_kickdamage_ModStr5e										0
-greater_item_aura	505		1								1							7	0	5	0	9															159	16	0	GreaterAffix_item_aura_ModitemAura	GreaterAffix_item_aura_ModitemAura									2	0
-greater_item_pierce	506		1	7											1924	2048		7	0	7	0											1					132	19		GreaterAffix_item_pierce_ModStr6g	GreaterAffix_item_pierce_ModStr6g									2	0
-greater_item_healafterkill	507		1	7							1				30	101		3	0	7	0												kill	28			16	19		GreaterAffix_item_healafterkill_ModitemHPaK	GreaterAffix_item_healafterkill_ModitemHPaK									2	0
-greater_item_absorbfire_percent	508		1	7											5486	102		7	0	7	0																23	19		GreaterAffix_item_absorbfire_percent_ModStr5g	GreaterAffix_item_absorbfire_percent_ModStr5g									2	0
-greater_item_absorblight_percent	509		1	7											5486	102		7	0	7	0																24	19		GreaterAffix_item_absorblight_percent_ModStr5i	GreaterAffix_item_absorblight_percent_ModStr5i									2	0
-greater_item_absorbcold_percent	510		1	7											5486	102		7	0	7	0																25	19		GreaterAffix_item_absorbcold_percent_ModStr5m	GreaterAffix_item_absorbcold_percent_ModStr5m									2	0
+ga_marker_grandmasters	438		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_grandmasters	GreaterAffix_grandmasters										0
+ga_marker_wraithly_weapon	439		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_wraithly_weapon	GreaterAffix_wraithly_weapon										0
+ga_marker_wraithly_armor	440		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_wraithly_armor	GreaterAffix_wraithly_armor										0
+ga_marker_godly	441		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_godly	GreaterAffix_godly										0
+ga_marker_jewelers	442		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_jewelers	GreaterAffix_jewelers										0
+ga_marker_visionary	443		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_visionary	GreaterAffix_visionary										0
+ga_marker_gritty	444		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_gritty	GreaterAffix_gritty										0
+ga_marker_evisceration	445		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_evisceration	GreaterAffix_evisceration										0
+ga_marker_transcendence_damage	446		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_transcendence_damage	GreaterAffix_transcendence_damage										0
+ga_marker_quickness	447		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_quickness	GreaterAffix_quickness										0
+ga_marker_alacrity	448		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_alacrity	GreaterAffix_alacrity										0
+ga_marker_fervor	449		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_fervor	GreaterAffix_fervor										0
+ga_marker_deflecting	450		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_deflecting	GreaterAffix_deflecting										0
+ga_marker_chromatic	451		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_chromatic	GreaterAffix_chromatic										0
+ga_marker_scintillating	452		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_scintillating	GreaterAffix_scintillating										0
+ga_marker_four_seasons	453		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_four_seasons	GreaterAffix_four_seasons										0
+ga_marker_elements	454		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_elements	GreaterAffix_elements										0
+ga_marker_magus	455		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_magus	GreaterAffix_magus										0
+ga_marker_apprentice	456		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_apprentice	GreaterAffix_apprentice										0
+ga_marker_equilibrium	457		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_equilibrium	GreaterAffix_equilibrium										0
+ga_marker_traveling_speed	458		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_traveling_speed	GreaterAffix_traveling_speed										0
+ga_marker_omniscient	459		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_omniscient	GreaterAffix_omniscient										0
+ga_marker_sages	460		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_sages	GreaterAffix_sages										0
+ga_marker_arch_angels	461		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_arch_angels	GreaterAffix_arch_angels										0
+ga_marker_witch_hunters	462		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_witch_hunters	GreaterAffix_witch_hunters										0
+ga_marker_valkyries	463		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_valkyries	GreaterAffix_valkyries										0
+ga_marker_priests	464		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_priests	GreaterAffix_priests										0
+ga_marker_berserkers	465		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_berserkers	GreaterAffix_berserkers										0
+ga_marker_necromancers	466		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_necromancers	GreaterAffix_necromancers										0
+ga_marker_hierophants	467		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_hierophants	GreaterAffix_hierophants										0
+ga_marker_arch_devils	468		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_arch_devils	GreaterAffix_arch_devils										0
+ga_marker_cunning	469		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_cunning	GreaterAffix_cunning										0
+ga_marker_rose_branded	470		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_rose_branded	GreaterAffix_rose_branded										0
+ga_marker_pyromaniacs_damage	471		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_pyromaniacs_damage	GreaterAffix_pyromaniacs_damage										0
+ga_marker_pyromaniacs_pierce	472		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_pyromaniacs_pierce	GreaterAffix_pyromaniacs_pierce										0
+ga_marker_zeuss_damage	473		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_zeuss_damage	GreaterAffix_zeuss_damage										0
+ga_marker_zeuss_pierce	474		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_zeuss_pierce	GreaterAffix_zeuss_pierce										0
+ga_marker_frost_wyrms_damage	475		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_frost_wyrms_damage	GreaterAffix_frost_wyrms_damage										0
+ga_marker_frost_wyrms_pierce	476		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_frost_wyrms_pierce	GreaterAffix_frost_wyrms_pierce										0
+ga_marker_manticores_damage	477		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_manticores_damage	GreaterAffix_manticores_damage										0
+ga_marker_manticores_pierce	478		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_manticores_pierce	GreaterAffix_manticores_pierce										0
+ga_marker_lich	479		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_lich	GreaterAffix_lich										0
+ga_marker_transcendence_amp	480		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_transcendence_amp	GreaterAffix_transcendence_amp										0
+ga_marker_transcendence_lower_resist	481		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_transcendence_lower_resist	GreaterAffix_transcendence_lower_resist										0
+ga_marker_aureole_might	482		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_aureole_might	GreaterAffix_aureole_might										0
+ga_marker_aureole_fanaticism	483		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_aureole_fanaticism	GreaterAffix_aureole_fanaticism										0
+ga_marker_aureole_conviction	484		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_aureole_conviction	GreaterAffix_aureole_conviction										0
+ga_marker_aureole_holy_freeze	485		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_aureole_holy_freeze	GreaterAffix_aureole_holy_freeze										0
+ga_marker_aureole_meditation	486		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_aureole_meditation	GreaterAffix_aureole_meditation										0
+ga_marker_aureole_vigor	487		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_aureole_vigor	GreaterAffix_aureole_vigor										0
