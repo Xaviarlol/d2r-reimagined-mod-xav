@@ -1,0 +1,136 @@
+﻿GIT STATUS --SHORT:
+M  data/global/excel/base/cubemain.txt
+M  data/global/excel/base/itemstatcost.txt
+M  data/global/excel/base/properties.txt
+M  data/global/excel/cubemain.txt
+M  data/global/excel/itemstatcost.txt
+M  data/global/excel/properties.txt
+ M docs/ai-review/tasks/2026-05-16-2115-orb-rank-implementation/request.md
+ M docs/ai-review/tasks/2026-05-19-1052-greater-apex-affix-design/request.md
+ M docs/ai-review/tasks/2026-05-20-0024-rare-affix-implementation-code-review/request.md
+ M docs/ai-review/tasks/2026-05-20-1334-greater-unique-affix-design/request.md
+ M docs/ai-review/tasks/2026-05-20-1958-restore-greater-affix-frequencies/request.md
+ M docs/greater-affix-colored-stats-followup-2026-05-20.md
+?? docs/ai-review/REVIEWER_INSTRUCTIONS.md
+?? docs/ai-review/claude-cli-history/review-inputs/
+?? docs/ai-review/claude-cli-history/runs/20260521T170425Z-revert-salvage-dummy-startup-crash/
+?? docs/ai-review/claude-cli-history/runs/20260521T171225Z-revert-salvage-dummy-startup-crash-v2/
+?? docs/ai-review/tasks/2026-05-16-2115-orb-rank-implementation/claude-review-r01.md
+?? docs/ai-review/tasks/2026-05-19-1052-greater-apex-affix-design/claude-review-r01.md
+?? docs/ai-review/tasks/2026-05-20-0024-rare-affix-implementation-code-review/claude-review-r01.md
+?? docs/ai-review/tasks/2026-05-20-1334-greater-unique-affix-design/claude-review-r01.md
+?? docs/ai-review/tasks/2026-05-20-1958-restore-greater-affix-frequencies/claude-review-r01.md
+?? docs/top-unique-by-slot-tooltips-2026-05-21.md
+
+GIT LOG --ONELINE -12:
+0a2b6c77 Persist Claude CLI review history in repo
+fc2779cb Document direct Claude CLI review workflow
+01a3b111 Reapply "Randomize salvage outputs via dedicated salvageDummy stat"
+dd15ba9f Revert "Randomize salvage outputs via dedicated salvageDummy stat"
+411c3a8f Randomize salvage outputs via dedicated salvageDummy stat
+e19e1336 Clean greater affix marker strings
+ba1e94f9 Record rare affix frequency proof approval
+72305936 Queue rare affix frequency proof review
+a779c55a Verify rare affix frequency math
+ebd57892 Implement top 50 greater affix redesign
+3c797cdd Mark top 50 greater affix design approved
+bc40b5bf Address top 50 greater affix design review
+
+GIT DIFF --CACHED --STAT:
+ data/global/excel/base/cubemain.txt     | 112 ++++----------------------------
+ data/global/excel/base/itemstatcost.txt |   1 -
+ data/global/excel/base/properties.txt   |   1 -
+ data/global/excel/cubemain.txt          | 112 ++++----------------------------
+ data/global/excel/itemstatcost.txt      |   1 -
+ data/global/excel/properties.txt        |   1 -
+ 6 files changed, 24 insertions(+), 204 deletions(-)
+
+VALIDATION:
+data/global/excel/itemstatcost.txt rows=489 cols=52 badRows=0 salvageDummy=False
+data/global/excel/base/itemstatcost.txt rows=489 cols=52 badRows=0 salvageDummy=False
+data/global/excel/properties.txt rows=487 cols=38 badRows=0 salvageDummy=False
+data/global/excel/base/properties.txt rows=487 cols=38 badRows=0 salvageDummy=False
+data/global/excel/cubemain.txt rows=15719 cols=106 badRows=0 salvageDummy=False
+data/global/excel/base/cubemain.txt rows=15719 cols=106 badRows=0 salvageDummy=False
+
+LAST BLZ LOG TAIL:
+5/21 18:20:14.658  [SaveSystem/4] [<>:0]: Created save file Starter - Amz.fltr in container Settings
+5/21 18:20:14.658  [SaveSystem/4] [<>:0]: Created save file Starter - Asn.fltr in container Settings
+5/21 18:20:14.658  [SaveSystem/4] [<>:0]: Created save file Starter - Barb.fltr in container Settings
+5/21 18:20:14.658  [SaveSystem/4] [<>:0]: Created save file Starter - Dru.fltr in container Settings
+5/21 18:20:14.658  [SaveSystem/4] [<>:0]: Created save file Starter - Nec.fltr in container Settings
+5/21 18:20:14.658  [SaveSystem/4] [<>:0]: Created save file Starter - Pal.fltr in container Settings
+5/21 18:20:14.658  [SaveSystem/4] [<>:0]: Created save file Starter - Sorc.fltr in container Settings
+5/21 18:20:14.658  [SaveSystem/4] [<>:0]: Created save file Starter - War.fltr in container Settings
+5/21 18:20:14.659  [SaveSystem/4] [<>:0]: Mounting Ass at c:/Users/ericb/Saved Games/Diablo II Resurrected/mods/XavReimagined/ in mode 2
+5/21 18:20:14.660  [SaveSystem/4] [<>:0]: Unmounting Ass
+5/21 18:20:14.661  [SaveSystem/4] [<>:0]: Mounting Settings at c:/Users/ericb/Saved Games/Diablo II Resurrected/mods/XavReimagined/ in mode 2
+5/21 18:20:14.662  [SaveSystem/4] [<>:0]: Unmounting Settings
+5/21 18:20:14.663  [SaveSystem/4] [<>:0]: Mounting ModernSharedStashSoftCoreV2 at c:/Users/ericb/Saved Games/Diablo II Resurrected/mods/XavReimagined/ in mode 2
+5/21 18:20:14.663  [SaveSystem/4] [<>:0]: Unmounting ModernSharedStashSoftCoreV2
+5/21 18:20:14.973  [FJSONUtils/4] [<>:0]: Failed to find: data/hd/pak_manifest.json
+5/21 18:20:17.307  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Help
+5/21 18:20:17.313  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: InviteSentList
+5/21 18:20:17.313  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: InviteReceivedList
+5/21 18:20:17.318  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: List
+5/21 18:20:17.318  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Add
+5/21 18:20:17.318  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Remove
+5/21 18:20:17.318  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: InviteAccept
+5/21 18:20:17.318  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: InviteReject
+5/21 18:20:17.318  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: InviteSentRevoke
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnoreNotifications
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnoreWhisper
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignoreWhisper
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnorePrivate
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignorePrivate
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnorePublic
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignorePublic
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignoreNotifications
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignoreWhisper
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnoreWhisper
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignorePrivate
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnorePrivate
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignorePublic
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnorePublic
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: NotifyToggle
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnoreWhisper
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignoreWhisper
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnorePrivate
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignorePrivate
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: IgnorePublic
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UnignorePublic
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Dnd
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Away
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Online
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Offline
+5/21 18:20:17.319  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Dnd
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Away
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Online
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Offline
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: WhoAmI
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: WhoIs
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Time
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Ladder
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: UberDiablo
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: DesecratedOnline
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: DesecratedOffline
+5/21 18:20:17.320  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Desecrated
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: SendMessage
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: SendMessage
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Ignore
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Unignore
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: InviteReceivedList
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: List
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Join
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Leave
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Private
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Invite
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Kick
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Designate
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Resign
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Accept
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Reject
+5/21 18:20:17.321  [CommandDefinition/4] [<>:0]: Could not find ExecuteCommandCallback: Who
+5/21 18:20:17.672  [ACSDK/4] [<>:0]: NetEase Anticheat is disabled on global regions.
+5/21 18:20:20.448  [BGSEnvironmentMap/4] [<>:0]: Environment Status: PROD - eu.actual.battle.net - Release
+5/21 18:20:21.024  [D2BackendServices/4] [<>:0]: D2BackendServices: error: 7 Error Source: 0 Error Value: 7 String: Cannot Connect to Server
