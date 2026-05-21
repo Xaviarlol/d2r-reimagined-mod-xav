@@ -1,8 +1,61 @@
 # AI Review Protocol
 
-This file is the durable coordination contract between Eric, Codex, Claude, and any Codex subagents working on this Diablo II Resurrected mod repository.
+This file is the durable coordination contract between Eric, Codex, Claude CLI, and any Codex subagents working on this Diablo II Resurrected mod repository.
 
 If a conversation restarts, read this file before starting risky design or code/data work.
+
+## Current Review Mechanism
+
+As of 2026-05-21, Claude review is performed by direct Claude CLI invocation from Codex. Do not rely on a separate Claude desktop/app session as the normal workflow.
+
+Claude CLI is available as:
+
+```text
+C:\Users\ericb\.local\bin\claude.exe
+```
+
+The initialized reviewer session is:
+
+```text
+name: d2r-codex-reviewer
+session_id: da1ceeba-3d9c-44b1-a65f-fbcd0eb0950e
+model: opus
+observed_model: claude-opus-4-7
+```
+
+Use the `opus` model alias so the CLI selects the latest Opus model available to the account. Resume the existing session when practical, but do not assume Claude has complete prior conversation memory. Every review prompt must include the original user request, current git status, relevant durable docs, and the exact diff or design being reviewed.
+
+Recommended code-review invocation pattern:
+
+```powershell
+claude --model opus --name d2r-codex-reviewer --permission-mode dontAsk --tools Read,Glob,Grep -p "<review prompt>" --output-format json
+```
+
+These flags were verified against `claude --help` for Claude Code 2.1.146 and the command was successfully run from Codex on 2026-05-21.
+
+If resuming the existing reviewer session, use:
+
+```powershell
+claude --resume da1ceeba-3d9c-44b1-a65f-fbcd0eb0950e --model opus --permission-mode dontAsk --tools Read,Glob,Grep -p "<review prompt>" --output-format json
+```
+
+If resume fails or the session is not available, start a fresh CLI review and pass full context in the prompt.
+
+For multi-line prompts, build the prompt as a PowerShell here-string and pass it with `-p $prompt`; do not paste a large diff directly inside quoted command text.
+
+Claude CLI is a read-only reviewer. Do not give Claude edit/write/publish tools for normal reviews. Codex implements changes, then re-runs Claude CLI until consensus is reached.
+
+CLI consensus is reached only when:
+
+- Claude CLI's latest verdict is `APPROVED` or `approved_with_notes`.
+- Claude reports zero Critical findings.
+- Claude reports zero High findings.
+- Codex has implemented every required fix or has explicitly documented why a remaining finding is intentionally rejected.
+- Codex has re-run Claude after required fixes when Claude requested changes.
+
+Before committing, Codex should record the last Claude verdict and session/run id in its final work notes or commit summary.
+
+The older `docs\ai-review\tasks\...` queue format may still be useful for archived design records, but it is no longer the primary mechanism for new reviews unless Eric explicitly asks to use the file queue.
 
 ## Paths
 
@@ -30,7 +83,7 @@ Launch arguments:
 -mod XavReimagined -txt
 ```
 
-Review queue root:
+Legacy review queue root:
 
 ```text
 C:\Dropbox\AI projects\d2r\d2r-reimagined-fresh\docs\ai-review
@@ -44,9 +97,9 @@ docs\ai-review\tasks\<task-id>\
 
 ## Purpose
 
-Codex is the primary implementer. Claude is an independent reviewer. The review loop exists to catch design mistakes, data-table risks, tooltip/gameplay mismatches, unsafe TSV edits, and cases where a change technically modifies files but misses Eric's gameplay intent.
+Codex is the primary implementer. Claude CLI is an independent reviewer. The review loop exists to catch design mistakes, data-table risks, tooltip/gameplay mismatches, unsafe TSV edits, and cases where a change technically modifies files but misses Eric's gameplay intent.
 
-For small obvious edits, Codex may skip the queue. For skill changes, missile changes, cube recipes, itemization passes, treasure classes, TSV-wide changes, live-publish-sensitive work, or anything with tooltip/gameplay mismatch risk, use this queue.
+For small obvious edits, Codex may skip Claude review. For skill changes, missile changes, cube recipes, itemization passes, treasure classes, TSV-wide changes, live-publish-sensitive work, or anything with tooltip/gameplay mismatch risk, run direct Claude CLI review before committing.
 
 ## Roles
 
@@ -59,18 +112,19 @@ Eric:
 Codex:
 
 - Writes designs, patches, code, data changes, docs, commits, pushes, and live publishes when appropriate.
-- Creates review tasks for Claude.
-- Includes Eric's original request verbatim in every task.
+- Runs direct Claude CLI review before committing risky work.
+- Includes Eric's original request verbatim in every review prompt.
+- Includes current git status, relevant docs, and the exact diff or design in every review prompt.
 - Reads Claude reviews, writes Codex responses, and either fixes issues or explains why findings are rejected.
 - Marks consensus reached.
 
-Claude:
+Claude CLI:
 
 - Reviews only.
 - Does not edit gameplay/data/code files.
 - Does not publish to the live game folder.
 - Does not commit or push.
-- Writes structured Markdown reviews into task folders.
+- Returns structured review findings to Codex.
 
 Codex subagents:
 
@@ -78,9 +132,13 @@ Codex subagents:
 - Do not bypass Claude for risky work.
 - Do not publish, push, or touch the live game folder unless the parent Codex agent explicitly assigns that responsibility.
 
-## Folder Layout
+## Legacy Review Queue
 
-Each task lives in its own folder:
+The sections below describe the older file-queue mechanism. Do not use them for new reviews unless Eric explicitly asks to use the queue.
+
+### Folder Layout
+
+Legacy queue tasks live in their own folder:
 
 ```text
 docs\ai-review\tasks\<task-id>\
@@ -100,7 +158,7 @@ Completed or obsolete tasks may be moved to:
 docs\ai-review\archive\
 ```
 
-## Task Statuses
+### Task Statuses
 
 Use these `request.md` frontmatter statuses:
 
@@ -129,9 +187,9 @@ consensus_reached
 
 Claude never marks a task `consensus_reached`. Codex does that after reading Claude's latest review and writing a Codex response.
 
-## Consensus
+### Legacy Queue Consensus
 
-Consensus is reached when:
+Legacy queue consensus is reached when:
 
 - Claude's latest verdict is `approved` or `approved_with_notes`.
 - There are zero Critical findings.
@@ -140,7 +198,7 @@ Consensus is reached when:
 
 If `max_rounds` is reached and serious issues remain, Codex should mark the task `blocked_needs_user` and ask Eric to decide.
 
-## Request File Format
+### Request File Format
 
 `request.md` must include YAML frontmatter:
 
@@ -187,7 +245,7 @@ Every `request.md` must include Eric's original request exactly:
 
 Claude validates both the flag and this section. If the section is missing or empty, Claude marks the task `blocked_needs_user`.
 
-## Request Body Template
+### Request Body Template
 
 Use this body shape:
 
@@ -228,7 +286,7 @@ Point to `design.md`, `diff.patch`, commits, or both.
 6. Is this safe to publish/playtest?
 ````
 
-## Claude Lock File
+### Claude Lock File
 
 Claude uses `claude.lock` to avoid duplicate automated reviews.
 
@@ -248,7 +306,7 @@ Lock rules:
 - If `claude.lock` is 2 hours old or older, Claude may replace it and note that in the review.
 - Claude removes the lock after writing its review and updating `request.md`.
 
-## Claude Startup Behavior
+### Claude Startup Behavior
 
 Claude should:
 
@@ -264,7 +322,7 @@ No pending review requests.
 
 Missing queue root is treated as an empty queue.
 
-## Claude Allowed Writes
+### Claude Allowed Writes
 
 Claude may write only:
 
@@ -284,7 +342,7 @@ git branches or refs
 source/game/mod files outside docs\ai-review\tasks\<task-id>
 ```
 
-## Claude Review Format
+### Claude Review Format
 
 Claude writes `claude-review-rXX.md`, where `XX` is the current round.
 
@@ -363,7 +421,7 @@ Exact actions for Codex.
 Practical script or in-game tests.
 ```
 
-## Codex Response Format
+### Codex Response Format
 
 Codex writes `codex-response-rXX.md` after reading Claude's review.
 
@@ -414,13 +472,13 @@ After writing a Codex response:
 - If re-review is needed, Codex increments `round`, updates `updated_at`, sets `status: ready_for_claude`, and updates `base_ref` / `head_ref` / `diff.patch` as needed.
 - If consensus is reached, Codex sets `status: consensus_reached`.
 
-## Design Review Versus Code Review
+## Review Timing
 
-Use `phase: design_review` before implementation when the approach itself is uncertain.
+Use design review before implementation when the approach itself is uncertain.
 
-Use `phase: code_review` after implementation when Claude should inspect a diff, commit, or patch.
+Use code review after implementation when Claude should inspect a diff, commit, or patch.
 
-Use `phase: re_review` when Codex has responded to Claude findings and wants Claude to check the new round.
+Use re-review when Codex has responded to Claude findings and wants Claude to check the new round.
 
 For risky work, the preferred sequence is:
 
@@ -470,7 +528,8 @@ Claude does not commit or push.
 When Codex launches subagents:
 
 - Tell them this protocol exists.
-- Give them the task ID if one exists.
+- Under the CLI mechanism, give them the reviewer session name/id when relevant: `d2r-codex-reviewer` / `da1ceeba-3d9c-44b1-a65f-fbcd0eb0950e`.
+- Give them the legacy queue task ID only if one exists.
 - Tell them not to edit review files outside their assigned task.
 - Tell them not to publish or push unless explicitly assigned.
 - Tell them not to bypass Claude review for risky changes.
