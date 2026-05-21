@@ -321,9 +321,7 @@ of Knowledge	+# to Energy	100	1	1	17		15				360	23	enr		4	6										jewl							
 of Knowledge	+# to Energy	100	1	1	29	40	28				180	23	enr		7	9										jewl												0	0
 of Knowledge	+# to Energy	100	1	1	41		28				360	23	enr		7	9										jewl												0	0
 of Energy	+# to Energy	100	1	1	1	4	1				480	23	enr		1	1										amul	orb	circ	wand	staf	helm	ring						0	0
-of Grace	+# to Dexterity (Based on Character Level)	100	1	1	1	1	1				60	42	dex/lvl	3											dgld	helm	amul											0	0
 of Grace	+# to Dexterity (Based on Character Level)	100	1	1	1		1				120	42	dex/lvl	3											dgld	helm	amul											0	0
-of Power	+# to Strength (Based on Character Level)	100	1	1	1	1	1				60	42	str/lvl	3											dgld	belt	amul											0	0
 of Power	+# to Strength (Based on Character Level)	100	1	1	1		1				120	42	str/lvl	3											dgld	belt	amul											0	0
 of Grace and Power	+# to Strength (Based on Character Level) & +# to Dexterity (Based on Character Level)	100	1	1	35		41				120	42	str/lvl	3			dex/lvl	3							dgld	amul												0	0
 of Agility2	+%# to Dexterity	100	0	1	25	55	30				120	42	dex%		5	10										weap	boot											0	0
@@ -454,11 +452,9 @@ of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	18	35	16				240	22
 of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	35		40				240	22	mag%		11	15										jewl												0	0
 of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	56	79	64				60	22	mag%		16	20										jewl												0	0
 of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	80		64				120	22	mag%		16	20										jewl												0	0
-of Greed	#% Extra Gold from Monsters	100	1	1	1	1	1				240	21	gold%		25	40										ring	amul	circ										0	0
 of Greed	#% Extra Gold from Monsters	100	1	1	1		1				480	21	gold%		25	40										ring	amul	circ										0	0
 of Wealth	#% Extra Gold from Monsters	100	1	1	12	16	10				240	21	gold%		41	80									lgld	boot	glov	belt	amul	circ								0	0
 of Wealth	#% Extra Gold from Monsters	100	1	1	17		10				480	21	gold%		41	80									lgld	boot	glov	belt	amul	circ								0	0
-of Avarice	#% Extra Gold from Monsters	100	1	1	1	1	1				240	21	gold%		10	30										jewl												0	0
 of Avarice	#% Extra Gold from Monsters	100	1	1	1		1				480	21	gold%		10	30										jewl												0	0
 of Simplicity	Requirements -#%	100	1	1	18		15				240	30	ease		-30	-30										tors	weap	shld					rod	orb				0	0
 of Ease	Requirements -#%	100	1	1	11		9				360	30	ease		-20	-20										tors	weap	shld					rod	orb				0	0

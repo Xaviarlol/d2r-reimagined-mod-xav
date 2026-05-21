@@ -849,10 +849,32 @@ index 9b50dab5..05f12314 100644
 +Greater Aureole Vigor	Greater Vigor Aura [mid; marker=ga_aureole_vigor]	100	1	1	66	80	21				1	207	ga_aureole_vigor		1	1	aura	115	4	4					dyel	tors												0	0
 +Greater Aureole Vigor	Greater Vigor Aura [late; marker=ga_aureole_vigor]	100	1	1	81		21				2	207	ga_aureole_vigor		1	1	aura	115	4	4					dyel	tors												0	0
 diff --git a/data/global/excel/base/magicsuffix.txt b/data/global/excel/base/magicsuffix.txt
-index 5bd625df..6bfb430e 100644
+index 5bd625df..ce9abdd1 100644
 --- a/data/global/excel/base/magicsuffix.txt
 +++ b/data/global/excel/base/magicsuffix.txt
-@@ -955,402 +955,57 @@ of Transcendence	ctc amp damage	100	1	1	59	84	68				10	206	hit-skill	Amplify Dam
+@@ -321,9 +321,7 @@ of Knowledge	+# to Energy	100	1	1	17		15				360	23	enr		4	6										jewl
+ of Knowledge	+# to Energy	100	1	1	29	40	28				180	23	enr		7	9										jewl												0	0
+ of Knowledge	+# to Energy	100	1	1	41		28				360	23	enr		7	9										jewl												0	0
+ of Energy	+# to Energy	100	1	1	1	4	1				480	23	enr		1	1										amul	orb	circ	wand	staf	helm	ring						0	0
+-of Grace	+# to Dexterity (Based on Character Level)	100	1	1	1	1	1				60	42	dex/lvl	3											dgld	helm	amul											0	0
+ of Grace	+# to Dexterity (Based on Character Level)	100	1	1	1		1				120	42	dex/lvl	3											dgld	helm	amul											0	0
+-of Power	+# to Strength (Based on Character Level)	100	1	1	1	1	1				60	42	str/lvl	3											dgld	belt	amul											0	0
+ of Power	+# to Strength (Based on Character Level)	100	1	1	1		1				120	42	str/lvl	3											dgld	belt	amul											0	0
+ of Grace and Power	+# to Strength (Based on Character Level) & +# to Dexterity (Based on Character Level)	100	1	1	35		41				120	42	str/lvl	3			dex/lvl	3							dgld	amul												0	0
+ of Agility2	+%# to Dexterity	100	0	1	25	55	30				120	42	dex%		5	10										weap	boot											0	0
+@@ -454,11 +452,9 @@ of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	18	35	16				240	22
+ of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	35		40				240	22	mag%		11	15										jewl												0	0
+ of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	56	79	64				60	22	mag%		16	20										jewl												0	0
+ of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	80		64				120	22	mag%		16	20										jewl												0	0
+-of Greed	#% Extra Gold from Monsters	100	1	1	1	1	1				240	21	gold%		25	40										ring	amul	circ										0	0
+ of Greed	#% Extra Gold from Monsters	100	1	1	1		1				480	21	gold%		25	40										ring	amul	circ										0	0
+ of Wealth	#% Extra Gold from Monsters	100	1	1	12	16	10				240	21	gold%		41	80									lgld	boot	glov	belt	amul	circ								0	0
+ of Wealth	#% Extra Gold from Monsters	100	1	1	17		10				480	21	gold%		41	80									lgld	boot	glov	belt	amul	circ								0	0
+-of Avarice	#% Extra Gold from Monsters	100	1	1	1	1	1				240	21	gold%		10	30										jewl												0	0
+ of Avarice	#% Extra Gold from Monsters	100	1	1	1		1				480	21	gold%		10	30										jewl												0	0
+ of Simplicity	Requirements -#%	100	1	1	18		15				240	30	ease		-30	-30										tors	weap	shld					rod	orb				0	0
+ of Ease	Requirements -#%	100	1	1	11		9				360	30	ease		-20	-20										tors	weap	shld					rod	orb				0	0
+@@ -955,402 +951,57 @@ of Transcendence	ctc amp damage	100	1	1	59	84	68				10	206	hit-skill	Amplify Dam
  of Transcendence	ctc amp damage	100	1	1	85		68				10	206	hit-skill	Amplify Damage	10	10	pierce-dmg		10	15						misl												0	0
  of Transcendence	ctc weaken	100	1	1	59	84	68				10	206	hit-skill	Weaken	10	10	pierce-mag		10	15						misl												0	0
  of Transcendence	ctc weaken	100	1	1	85		68				10	206	hit-skill	Weaken	10	10	pierce-mag		10	15						misl												0	0
@@ -3071,10 +3093,32 @@ index 9b50dab5..05f12314 100644
 +Greater Aureole Vigor	Greater Vigor Aura [mid; marker=ga_aureole_vigor]	100	1	1	66	80	21				1	207	ga_aureole_vigor		1	1	aura	115	4	4					dyel	tors												0	0
 +Greater Aureole Vigor	Greater Vigor Aura [late; marker=ga_aureole_vigor]	100	1	1	81		21				2	207	ga_aureole_vigor		1	1	aura	115	4	4					dyel	tors												0	0
 diff --git a/data/global/excel/magicsuffix.txt b/data/global/excel/magicsuffix.txt
-index 5bd625df..6bfb430e 100644
+index 5bd625df..ce9abdd1 100644
 --- a/data/global/excel/magicsuffix.txt
 +++ b/data/global/excel/magicsuffix.txt
-@@ -955,402 +955,57 @@ of Transcendence	ctc amp damage	100	1	1	59	84	68				10	206	hit-skill	Amplify Dam
+@@ -321,9 +321,7 @@ of Knowledge	+# to Energy	100	1	1	17		15				360	23	enr		4	6										jewl
+ of Knowledge	+# to Energy	100	1	1	29	40	28				180	23	enr		7	9										jewl												0	0
+ of Knowledge	+# to Energy	100	1	1	41		28				360	23	enr		7	9										jewl												0	0
+ of Energy	+# to Energy	100	1	1	1	4	1				480	23	enr		1	1										amul	orb	circ	wand	staf	helm	ring						0	0
+-of Grace	+# to Dexterity (Based on Character Level)	100	1	1	1	1	1				60	42	dex/lvl	3											dgld	helm	amul											0	0
+ of Grace	+# to Dexterity (Based on Character Level)	100	1	1	1		1				120	42	dex/lvl	3											dgld	helm	amul											0	0
+-of Power	+# to Strength (Based on Character Level)	100	1	1	1	1	1				60	42	str/lvl	3											dgld	belt	amul											0	0
+ of Power	+# to Strength (Based on Character Level)	100	1	1	1		1				120	42	str/lvl	3											dgld	belt	amul											0	0
+ of Grace and Power	+# to Strength (Based on Character Level) & +# to Dexterity (Based on Character Level)	100	1	1	35		41				120	42	str/lvl	3			dex/lvl	3							dgld	amul												0	0
+ of Agility2	+%# to Dexterity	100	0	1	25	55	30				120	42	dex%		5	10										weap	boot											0	0
+@@ -454,11 +452,9 @@ of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	18	35	16				240	22
+ of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	35		40				240	22	mag%		11	15										jewl												0	0
+ of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	56	79	64				60	22	mag%		16	20										jewl												0	0
+ of Prosperity	#% Better Chance of Getting Magic Items	100	1	1	80		64				120	22	mag%		16	20										jewl												0	0
+-of Greed	#% Extra Gold from Monsters	100	1	1	1	1	1				240	21	gold%		25	40										ring	amul	circ										0	0
+ of Greed	#% Extra Gold from Monsters	100	1	1	1		1				480	21	gold%		25	40										ring	amul	circ										0	0
+ of Wealth	#% Extra Gold from Monsters	100	1	1	12	16	10				240	21	gold%		41	80									lgld	boot	glov	belt	amul	circ								0	0
+ of Wealth	#% Extra Gold from Monsters	100	1	1	17		10				480	21	gold%		41	80									lgld	boot	glov	belt	amul	circ								0	0
+-of Avarice	#% Extra Gold from Monsters	100	1	1	1	1	1				240	21	gold%		10	30										jewl												0	0
+ of Avarice	#% Extra Gold from Monsters	100	1	1	1		1				480	21	gold%		10	30										jewl												0	0
+ of Simplicity	Requirements -#%	100	1	1	18		15				240	30	ease		-30	-30										tors	weap	shld					rod	orb				0	0
+ of Ease	Requirements -#%	100	1	1	11		9				360	30	ease		-20	-20										tors	weap	shld					rod	orb				0	0
+@@ -955,402 +951,57 @@ of Transcendence	ctc amp damage	100	1	1	59	84	68				10	206	hit-skill	Amplify Dam
  of Transcendence	ctc amp damage	100	1	1	85		68				10	206	hit-skill	Amplify Damage	10	10	pierce-dmg		10	15						misl												0	0
  of Transcendence	ctc weaken	100	1	1	59	84	68				10	206	hit-skill	Weaken	10	10	pierce-mag		10	15						misl												0	0
  of Transcendence	ctc weaken	100	1	1	85		68				10	206	hit-skill	Weaken	10	10	pierce-mag		10	15						misl												0	0
@@ -5304,10 +5348,10 @@ index aa4b78b4..01ea91de 100644
  ]
 diff --git a/docs/ai-review/tasks/2026-05-21-0144-top50-greater-affix-redesign/implementation-summary.md b/docs/ai-review/tasks/2026-05-21-0144-top50-greater-affix-redesign/implementation-summary.md
 new file mode 100644
-index 00000000..fe788451
+index 00000000..ec5dce56
 --- /dev/null
 +++ b/docs/ai-review/tasks/2026-05-21-0144-top50-greater-affix-redesign/implementation-summary.md
-@@ -0,0 +1,84 @@
+@@ -0,0 +1,109 @@
 +# Implementation Summary
 +
 +## Scope
@@ -5326,6 +5370,9 @@ index 00000000..fe788451
 +- `data/global/excel/base/itemstatcost.txt`
 +- `data/local/lng/strings/item-modifiers.json`
 +- `scripts/implement_top50_greater_affixes.py`
++- `scripts/implement_rare_affix_rework.py`
++- `docs/affix-chance-simulation-summary-2026-05-21.md`
++- `docs/affix-chance-simulation-2026-05-21.tsv`
 +
 +## What Changed
 +
@@ -5344,6 +5391,11 @@ index 00000000..fe788451
 +  - Fanaticism `122`
 +  - Conviction `123`
 +- Added localized marker strings such as `GreaterAffix_grandmasters`, displayed as `Greater Affix: Grandmaster's`.
++- Fixed a Phase 1 split edge case where four level-1 suffixes had overlapping early/late rows and therefore 15x baseline frequency instead of 10x:
++  - `of Grace`
++  - `of Power`
++  - `of Greed`
++  - `of Avarice`
 +
 +## Validation Run
 +
@@ -5361,7 +5413,7 @@ index 00000000..fe788451
 +
 +```text
 +data/global/excel/magicprefix.txt rows 1488 cols 40 bad []
-+data/global/excel/magicsuffix.txt rows 1010 cols 40 bad []
++data/global/excel/magicsuffix.txt rows 1006 cols 40 bad []
 +data/global/excel/properties.txt rows 486 cols 38 bad []
 +data/global/excel/itemstatcost.txt rows 488 cols 52 bad []
 +magicprefix.txt active_base_identical True
@@ -5385,6 +5437,23 @@ index 00000000..fe788451
 +
 +No matches.
 +
++Frequency sanity simulation against the pre-rare-rework baseline (`00337b07^`) is recorded in:
++
++- `docs/affix-chance-simulation-summary-2026-05-21.md`
++- `docs/affix-chance-simulation-2026-05-21.tsv`
++
++Key results:
++
++```text
++Original spawnable rare affix fingerprints missing from current non-Greater rows: 0
++Original-level current frequency mismatches vs expected vanilla frequency * 10: 0
++Split-row overlap cases detected from levels 1-100: 0
++Endgame sample max absolute non-Greater-only delta at alvl 90/100: 0.000000000000%
++Endgame sample max absolute full-pool delta at alvl 90/100: 1.901975%
++```
++
++The low/mid-level same-alvl deltas are expected because the Phase 1 design intentionally lowers affix levels by 30%, causing higher affixes to enter earlier item-level pools. At alvl 90/100, non-Greater affix proportions are exactly preserved; the remaining full-pool dilution is from adding eligible Greater rows.
++
 +## Known Existing Data Issue Not Changed
 +
 +The implementation script originally found pre-existing group `307` rows referencing property codes such as `Breaching-Affix1`, `Gelid-Affix1`, and similar names that do not exist in `properties.txt`. Those rows predate this change and are outside the Greater Affix implementation, so validation is scoped to the new Greater rows and their new marker/hybrid properties.
@@ -5392,103 +5461,26 @@ index 00000000..fe788451
 +## Publish Status
 +
 +Not published to the live game folder. This should receive Claude `code_review` first, then publish only after approval or explicit override.
-diff --git a/docs/ai-review/tasks/2026-05-21-0144-top50-greater-affix-redesign/request.md b/docs/ai-review/tasks/2026-05-21-0144-top50-greater-affix-redesign/request.md
-index 754ab6e6..74ff2ed3 100644
---- a/docs/ai-review/tasks/2026-05-21-0144-top50-greater-affix-redesign/request.md
-+++ b/docs/ai-review/tasks/2026-05-21-0144-top50-greater-affix-redesign/request.md
-@@ -1,25 +1,25 @@
- ---
- schema: ai-review-task-v1
- id: 2026-05-21-0144-top50-greater-affix-redesign
--status: consensus_reached
--phase: design_review
--round: 2
-+status: ready_for_claude
-+phase: code_review
-+round: 3
- max_rounds: 3
- created_by: codex
- created_at: 2026-05-20T23:44:29Z
--updated_at: 2026-05-21T09:16:32Z
-+updated_at: 2026-05-21T09:58:34Z
- repo: C:\Dropbox\AI projects\d2r\d2r-reimagined-fresh
- branch: xav-custom
- base_ref: 6dca8854
- head_ref: xav-custom
- original_user_request_included: true
- live_publish_allowed: false
--last_review: claude-review-r02.md
--last_verdict: approved
-+last_review:
-+last_verdict:
- last_response: codex-response-r02.md
--claimed_by: claude
--claimed_at: 2026-05-21T02:20:00Z
--reviewed_at: 2026-05-21T02:35:00Z
-+claimed_by:
-+claimed_at:
-+reviewed_at:
- ---
+diff --git a/scripts/implement_rare_affix_rework.py b/scripts/implement_rare_affix_rework.py
+index 2458e770..94ed3564 100644
+--- a/scripts/implement_rare_affix_rework.py
++++ b/scripts/implement_rare_affix_rework.py
+@@ -375,13 +375,13 @@ def phase1_existing_row(row: dict[str, str], line_key: tuple[str, int], split_so
+     if row.get("rare") != "1":
+         return [deepcopy(row)]
  
- # Review Request
-@@ -32,15 +32,15 @@ ok, create a plan to do them for review by claude. You will need to reweight all
+-    if line_key not in split_sources:
++    original_level = parse_int(row.get("level", ""))
++    if line_key not in split_sources or original_level is None or original_level <= 1:
+         out = deepcopy(row)
+         out["level"] = compressed_level(row.get("level", ""))
+         out["levelreq"] = compressed_levelreq(row.get("levelreq", ""))
+         return [out]
  
- ## Goal
- 
--Review a plan to replace the current broad Greater Affix implementation with a focused top-50 Greater family system, including frequency reweighting and a safer colored-tooltip marker strategy.
-+Review the implementation of the approved top-50 Greater Affix redesign.
- 
- ## Phase
- 
--design_review
-+code_review
- 
- ## Scope
- 
--- Future implementation will affect:
-+- Implementation affects:
-   - `data/global/excel/magicprefix.txt`
-   - `data/global/excel/base/magicprefix.txt`
-   - `data/global/excel/magicsuffix.txt`
-@@ -49,22 +49,27 @@ design_review
-   - `data/global/excel/base/properties.txt`
-   - `data/global/excel/itemstatcost.txt`
-   - `data/global/excel/base/itemstatcost.txt`
--  - possibly localized strings for marker tooltip text
--- This review is design-only; no gameplay files have been changed for this redesign yet.
-+- `data/local/lng/strings/item-modifiers.json`
-+- `scripts/implement_top50_greater_affixes.py`
- - Existing Phase 1 rare-affix level and requirement changes should be preserved.
- - The prior 511-ID itemstatcost crash path must be avoided.
-+- This is not live-published yet.
- 
- ## Design Or Diff
- 
--Review `design.md` in this task folder, especially the "Round 2 Clarifications After Claude Review" section. Codex also wrote `codex-response-r01.md`.
-+Review:
-+
-+- `implementation-summary.md`
-+- `diff.patch`
-+- `scripts/implement_top50_greater_affixes.py`
-+- `design.md`, especially the "Round 2 Clarifications After Claude Review" section
- 
- ## Review Questions
- 
--1. Does the selected top-50 list match Eric's "elite gamer" intent and avoid low-impact Greater affixes?
--2. Is the plan to rebuild from current non-Greater rows safer than checking out full old prefix/suffix files?
--3. Is the one-marker-stat-per-family colored tooltip strategy safe under the 511 itemstatcost ID limit?
--4. Does the proposed frequency model correctly reweight Greater affixes after most Greater rows are removed?
--5. Should the frequency model use a single apex row or sum equivalent apex rows for split families?
--6. Are any selected affixes technically unsafe because they need too many mods plus marker properties?
--7. Are the aura Greater affixes, especially Might/Fanaticism/Conviction/Holy Freeze/Meditation/Vigor, safe and sensible?
--8. Are active/base synchronization and TSV structure validation sufficiently covered?
-+1. Does the implementation match the approved top-50 design?
-+2. Are all broad/old Greater rows and `greater_m_` colored gameplay wrappers removed safely?
-+3. Do the 50 marker stats/properties stay under the `itemstatcost.txt` hard limit?
-+4. Are active/base files synchronized and TSV structures valid?
-+5. Are the selected aura IDs correct and is the old broken `mod1param=126` state gone?
-+6. Are the generated Greater rows correctly marked `spawnable=1`, `rare=1`, and banded as 50/65, 66/80, 81+?
-+7. Is the tooltip marker strategy likely safe to publish/playtest?
+-    original_level = parse_int(row.get("level", ""))
+     early = deepcopy(row)
+     early["level"] = compressed_level(row.get("level", ""))
+     early["levelreq"] = compressed_levelreq(row.get("levelreq", ""))
 diff --git a/scripts/implement_top50_greater_affixes.py b/scripts/implement_top50_greater_affixes.py
 new file mode 100644
 index 00000000..dc18582e

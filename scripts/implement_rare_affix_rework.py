@@ -375,13 +375,13 @@ def phase1_existing_row(row: dict[str, str], line_key: tuple[str, int], split_so
     if row.get("rare") != "1":
         return [deepcopy(row)]
 
-    if line_key not in split_sources:
+    original_level = parse_int(row.get("level", ""))
+    if line_key not in split_sources or original_level is None or original_level <= 1:
         out = deepcopy(row)
         out["level"] = compressed_level(row.get("level", ""))
         out["levelreq"] = compressed_levelreq(row.get("levelreq", ""))
         return [out]
 
-    original_level = parse_int(row.get("level", ""))
     early = deepcopy(row)
     early["level"] = compressed_level(row.get("level", ""))
     early["levelreq"] = compressed_levelreq(row.get("levelreq", ""))
