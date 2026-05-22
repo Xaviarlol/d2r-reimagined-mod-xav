@@ -432,59 +432,6 @@ extra_firegolems	429	1	1	extra_firegolems																												+# to Max F
 extra_skelewarriors	430	1	1	extra_skelewarriors																												+# to Max Skeleton Warriors		min	max	none	0
 extra_skelemages	431	1	1	extra_skelemages																												+# to Max Skeletal Mages		min	max	none	0
 gambleDummy	432	1	1	item_gambleDummy																														1	1	none	0
-ga_h_wraithly_weapon_dmg	433	1	7				1	ga_marker_wraithly_weapon																								+#% Enhanced Damage		Min %	Max %	Greater Affix hybrid marker for Wraithly Weapon	0
-ga_h_wraithly_armor_ac	434	1	2	item_armor_percent			1	ga_marker_wraithly_armor																								+#% Enhanced Defense		Min %	Max %	Greater Affix hybrid marker for Wraithly Armor	0
-ga_h_elements_res_cold_lvl	435	1	17	item_resist_cold_perlevel			1	ga_marker_elements																							1	Cold Resist +#% (Based on Character Level)	#/8 per Level			Greater Affix hybrid marker for Elements	0
-ga_grandmasters	436	1	1	ga_marker_grandmasters																												Greater Affix marker: Grandmaster's				top-50 Greater Affix marker	0
-ga_wraithly_weapon	437	1	1	ga_marker_wraithly_weapon																												Greater Affix marker: Wraithly Weapon				top-50 Greater Affix marker	0
-ga_wraithly_armor	438	1	1	ga_marker_wraithly_armor																												Greater Affix marker: Wraithly Armor				top-50 Greater Affix marker	0
-ga_godly	439	1	1	ga_marker_godly																												Greater Affix marker: Godly				top-50 Greater Affix marker	0
-ga_jewelers	440	1	1	ga_marker_jewelers																												Greater Affix marker: Jeweler's				top-50 Greater Affix marker	0
-ga_visionary	441	1	1	ga_marker_visionary																												Greater Affix marker: Visionary				top-50 Greater Affix marker	0
-ga_gritty	442	1	1	ga_marker_gritty																												Greater Affix marker: Gritty				top-50 Greater Affix marker	0
-ga_evisceration	443	1	1	ga_marker_evisceration																												Greater Affix marker: Evisceration				top-50 Greater Affix marker	0
-ga_transcendence_damage	444	1	1	ga_marker_transcendence_damage																												Greater Affix marker: Transcendence Damage				top-50 Greater Affix marker	0
-ga_quickness	445	1	1	ga_marker_quickness																												Greater Affix marker: Quickness				top-50 Greater Affix marker	0
-ga_alacrity	446	1	1	ga_marker_alacrity																												Greater Affix marker: Alacrity				top-50 Greater Affix marker	0
-ga_fervor	447	1	1	ga_marker_fervor																												Greater Affix marker: Fervor				top-50 Greater Affix marker	0
-ga_deflecting	448	1	1	ga_marker_deflecting																												Greater Affix marker: Deflecting				top-50 Greater Affix marker	0
-ga_chromatic	449	1	1	ga_marker_chromatic																												Greater Affix marker: Chromatic				top-50 Greater Affix marker	0
-ga_scintillating	450	1	1	ga_marker_scintillating																												Greater Affix marker: Scintillating				top-50 Greater Affix marker	0
-ga_four_seasons	451	1	1	ga_marker_four_seasons																												Greater Affix marker: Four Seasons				top-50 Greater Affix marker	0
-ga_elements	452	1	1	ga_marker_elements																												Greater Affix marker: Elements				top-50 Greater Affix marker	0
-ga_magus	453	1	1	ga_marker_magus																												Greater Affix marker: Magus				top-50 Greater Affix marker	0
-ga_apprentice	454	1	1	ga_marker_apprentice																												Greater Affix marker: Apprentice				top-50 Greater Affix marker	0
-ga_equilibrium	455	1	1	ga_marker_equilibrium																												Greater Affix marker: Equilibrium				top-50 Greater Affix marker	0
-ga_traveling_speed	456	1	1	ga_marker_traveling_speed																												Greater Affix marker: Traveling / Speed				top-50 Greater Affix marker	0
-ga_omniscient	457	1	1	ga_marker_omniscient																												Greater Affix marker: Omniscient				top-50 Greater Affix marker	0
-ga_sages	458	1	1	ga_marker_sages																												Greater Affix marker: Sage's				top-50 Greater Affix marker	0
-ga_arch_angels	459	1	1	ga_marker_arch_angels																												Greater Affix marker: Arch-Angel's				top-50 Greater Affix marker	0
-ga_witch_hunters	460	1	1	ga_marker_witch_hunters																												Greater Affix marker: Witch-hunter's				top-50 Greater Affix marker	0
-ga_valkyries	461	1	1	ga_marker_valkyries																												Greater Affix marker: Valkyrie's				top-50 Greater Affix marker	0
-ga_priests	462	1	1	ga_marker_priests																												Greater Affix marker: Priest's				top-50 Greater Affix marker	0
-ga_berserkers	463	1	1	ga_marker_berserkers																												Greater Affix marker: Berserker's				top-50 Greater Affix marker	0
-ga_necromancers	464	1	1	ga_marker_necromancers																												Greater Affix marker: Necromancer's				top-50 Greater Affix marker	0
-ga_hierophants	465	1	1	ga_marker_hierophants																												Greater Affix marker: Hierophant's				top-50 Greater Affix marker	0
-ga_arch_devils	466	1	1	ga_marker_arch_devils																												Greater Affix marker: Arch-Devil's				top-50 Greater Affix marker	0
-ga_cunning	467	1	1	ga_marker_cunning																												Greater Affix marker: Cunning				top-50 Greater Affix marker	0
-ga_rose_branded	468	1	1	ga_marker_rose_branded																												Greater Affix marker: Rose Branded				top-50 Greater Affix marker	0
-ga_pyromaniacs_damage	469	1	1	ga_marker_pyromaniacs_damage																												Greater Affix marker: Pyromaniac's Damage				top-50 Greater Affix marker	0
-ga_pyromaniacs_pierce	470	1	1	ga_marker_pyromaniacs_pierce																												Greater Affix marker: Pyromaniac's Pierce				top-50 Greater Affix marker	0
-ga_zeuss_damage	471	1	1	ga_marker_zeuss_damage																												Greater Affix marker: Zeus's Damage				top-50 Greater Affix marker	0
-ga_zeuss_pierce	472	1	1	ga_marker_zeuss_pierce																												Greater Affix marker: Zeus's Pierce				top-50 Greater Affix marker	0
-ga_frost_wyrms_damage	473	1	1	ga_marker_frost_wyrms_damage																												Greater Affix marker: Frost Wyrm's Damage				top-50 Greater Affix marker	0
-ga_frost_wyrms_pierce	474	1	1	ga_marker_frost_wyrms_pierce																												Greater Affix marker: Frost Wyrm's Pierce				top-50 Greater Affix marker	0
-ga_manticores_damage	475	1	1	ga_marker_manticores_damage																												Greater Affix marker: Manticore's Damage				top-50 Greater Affix marker	0
-ga_manticores_pierce	476	1	1	ga_marker_manticores_pierce																												Greater Affix marker: Manticore's Pierce				top-50 Greater Affix marker	0
-ga_lich	477	1	1	ga_marker_lich																												Greater Affix marker: Lich				top-50 Greater Affix marker	0
-ga_transcendence_amp	478	1	1	ga_marker_transcendence_amp																												Greater Affix marker: Transcendence Amp				top-50 Greater Affix marker	0
-ga_transcendence_lower_resist	479	1	1	ga_marker_transcendence_lower_resist																												Greater Affix marker: Transcendence Lower Resist				top-50 Greater Affix marker	0
-ga_aureole_might	480	1	1	ga_marker_aureole_might																												Greater Affix marker: Aureole Might				top-50 Greater Affix marker	0
-ga_aureole_fanaticism	481	1	1	ga_marker_aureole_fanaticism																												Greater Affix marker: Aureole Fanaticism				top-50 Greater Affix marker	0
-ga_aureole_conviction	482	1	1	ga_marker_aureole_conviction																												Greater Affix marker: Aureole Conviction				top-50 Greater Affix marker	0
-ga_aureole_holy_freeze	483	1	1	ga_marker_aureole_holy_freeze																												Greater Affix marker: Aureole Holy Freeze				top-50 Greater Affix marker	0
-ga_aureole_meditation	484	1	1	ga_marker_aureole_meditation																												Greater Affix marker: Aureole Meditation				top-50 Greater Affix marker	0
-ga_aureole_vigor	485	1	1	ga_marker_aureole_vigor																												Greater Affix marker: Aureole Vigor				top-50 Greater Affix marker	0
-salvageDummy	486	1	1	item_salvageDummy																														1	1	none	0
-ga_godly_ac%	487	1	2	greater_godly_item_armor_percent																												+#% Enhanced Defense		Min %	Max %	Greater Godly colored Enhanced Defense	0
-ga_godly_red-dmg%	488	1	1	greater_godly_damageresist																												Damage Reduced by #%		Min %	Max %	Greater Godly colored Physical Damage Reduction	0
+salvageDummy	433	1	1	item_salvageDummy																														1	1	none	0
+ga_godly_ac%	434	1	2	greater_godly_item_armor_percent																												+#% Enhanced Defense		Min %	Max %	Greater Godly colored Enhanced Defense	0
+ga_godly_red-dmg%	435	1	1	greater_godly_damageresist																												Damage Reduced by #%		Min %	Max %	Greater Godly colored Physical Damage Reduction	0
