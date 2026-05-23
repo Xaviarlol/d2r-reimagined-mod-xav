@@ -7701,6 +7701,23 @@
         "zhCN": "ÿc8Greater Affix: Alacrityÿc3"
     },
     {
+        "id": 60124,
+        "Key": "GreaterAffix_swiftness",
+        "enUS": "ÿc8Greater Affix: Swiftnessÿc3",
+        "zhTW": "ÿc8Greater Affix: Swiftnessÿc3",
+        "deDE": "ÿc8Greater Affix: Swiftnessÿc3",
+        "esES": "ÿc8Greater Affix: Swiftnessÿc3",
+        "frFR": "ÿc8Greater Affix: Swiftnessÿc3",
+        "itIT": "ÿc8Greater Affix: Swiftnessÿc3",
+        "koKR": "ÿc8Greater Affix: Swiftnessÿc3",
+        "plPL": "ÿc8Greater Affix: Swiftnessÿc3",
+        "esMX": "ÿc8Greater Affix: Swiftnessÿc3",
+        "jaJP": "ÿc8Greater Affix: Swiftnessÿc3",
+        "ptBR": "ÿc8Greater Affix: Swiftnessÿc3",
+        "ruRU": "ÿc8Greater Affix: Swiftnessÿc3",
+        "zhCN": "ÿc8Greater Affix: Swiftnessÿc3"
+    },
+    {
         "id": 60083,
         "Key": "GreaterAffix_fervor",
         "enUS": "ÿc8Greater Affix: Fervorÿc3",

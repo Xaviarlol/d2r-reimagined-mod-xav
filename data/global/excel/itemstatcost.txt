@@ -490,3 +490,4 @@ ga_marker_aureole_vigor	487		1	4								1	0	0	1	0		4	0	4	0																999	19
 item_salvageDummy	488		1	12										0	8	2		8	0	8	0																														0
 greater_godly_item_armor_percent	489		1	11											47	20		9	0	9	0			13			armorclass										74	19		GreaterAffix_godly_item_armor_percent_Modstr2v	GreaterAffix_godly_item_armor_percent_Modstr2v										0
 greater_godly_damageresist	490		1	9											152	68		8	0	9	200																22	19		GreaterAffix_godly_damageresist_ModStr2uPercent	GreaterAffix_godly_damageresist_ModStr2uPercent									2	0
+ga_marker_swiftness	491		1	4								1	0	0	1	0		4	0	4	0																999	19	0	GreaterAffix_swiftness	GreaterAffix_swiftness										0
